@@ -17,7 +17,7 @@ metaphors:
   families:
   - Governance metaphors
   mappings:
-  - source_role: see_err
+  - source_role: seer
     target_role: evaluator
   - source_role: seen_object
     target_role: behavior
@@ -38,7 +38,7 @@ metaphors:
   families:
   - Mind metaphors
   mappings:
-  - source_role: see_er
+  - source_role: seer
     target_role: evaluator
   - source_role: seen_object
     target_role: evaluee
@@ -63,7 +63,7 @@ metaphors:
   mappings:
   - source_role: seer
     target_role: knower
-  - source_role: object_seen
+  - source_role: seen_object
     target_role: knowledge
   examples:
   - The US is blind to the limits of Palestinian politics.
@@ -1121,7 +1121,7 @@ metaphors:
   - Grady primary metaphors
   - Object event structure metaphors
   mappings:
-  - source_role: posessor
+  - source_role: possessor
     target_role: entity
   - source_role: possession
     target_role: attribute
@@ -1137,8 +1137,6 @@ metaphors:
   - source: possess does not have possession
     target: state/attribute standard is not associated with entity
 - name: ATTRIBUTES_OF_GOVERNMENT_ARE_ENTITIES
-  source_frame: '-'
-  target_frame: '-'
   families:
   - Governance metaphors
   examples:
@@ -1338,7 +1336,7 @@ metaphors:
     target_role: believer
   - source_role: possess_relation_status
     target_role: belief_relation_status
-  - source_role: possession_relation
+  - source_role: possess_relation
     target_role: belief_relation
   examples:
   - Hold on to your beliefs and never let them go.
@@ -2402,7 +2400,7 @@ metaphors:
   - Morality metaphors
   mappings:
   - source_role: destructive_process
-    target_role: corrupting_activities
+    target_role: corrupt_activities
   - source_role: destroyed_entity
     target_role: corruption_affectee
   - source_role: destructive_effect
@@ -2450,7 +2448,7 @@ metaphors:
   - source_role: decayed_entity
     target_role: corruption_affectee
   - source_role: decaying_effect
-    target_role: corrupting_effect
+    target_role: corruption_effect
   examples:
   - Stopping the rot in public life.
   relations:
@@ -2465,12 +2463,12 @@ metaphors:
   families:
   - Governance metaphors
   mappings:
-  - source_role: eroding_process
+  - source_role: erosion_process
     target_role: corrupt_activities
   - source_role: eroded_entity
     target_role: corruption_affectee
   - source_role: eroding_effect
-    target_role: corrupting_effect
+    target_role: corruption_effect
   examples:
   - Corruption is eroding the public trust in government.
   entailments:
@@ -2930,9 +2928,9 @@ metaphors:
   - source_role: battlefield
     target_role: body
   - source_role: weapons
-    target_role: medical_tools_and_medicines
+    target_role: medical_tools_and_medicine
   - source_role: war_strategy
-    target_role: treatment_strategy
+    target_role: treatment_strategies
   - source_role: fighting
     target_role: applying_treatment
   examples:
@@ -3376,8 +3374,8 @@ metaphors:
   families:
   - Emotion metaphors
   mappings:
-  - source_role: substances
-    target_role: emotions
+  - source_role: substance
+    target_role: emotion
   - source_role: container_for_substances
     target_role: body
   examples:
@@ -4265,7 +4263,7 @@ metaphors:
   - source_role: functional_status
     target_role: functional_status
   - source_role: purpose
-    target_role: responsibilites
+    target_role: responsibilities
   - source_role: operating_x_schema
     target_role: functions
   examples:
@@ -4469,7 +4467,7 @@ metaphors:
   - source_role: leader_motion_x_schema
     target_role: governing_actions
   - source_role: leader_goal
-    target_role: govenor_objectives
+    target_role: governor_objectives
   examples:
   - '"In my view, the federal government should lead the way.  The bill we’ve introduced requires the
     federal government to increase its use of renewable electricity and reduce its overall energy consumption
@@ -4714,7 +4712,7 @@ metaphors:
   mappings:
   - source_role: whole
     target_role: group
-  - source_role: part
+  - source_role: parts
     target_role: members
   examples:
   - Earth is part of the group of "terrestrial" planets.
@@ -5822,8 +5820,6 @@ metaphors:
     entailed_by:
     - IDEAS_ARE_FOOD
 - name: INTERNATIONAL_ASSOCIATION_IS_CONNECTION
-  source_frame: '-'
-  target_frame: '-'
   families:
   - Governance metaphors
   examples:
@@ -5846,7 +5842,7 @@ metaphors:
     target_role: international_relation_nation1
   - source_role: relationship_related_entity2
     target_role: international_relations_nation2
-  - source_role: relationship_relationship_whole
+  - source_role: relationship_whole
     target_role: international_relations_international_relationship
   examples:
   - "Which country is your country's best friend? \n\nBut as much as the U.S. wants to be close-knit friends\
@@ -5901,11 +5897,11 @@ metaphors:
   - Grady primary metaphors
   - Mind metaphors
   mappings:
-  - source_role: see_er
+  - source_role: seer
     target_role: knower
   - source_role: eyes
     target_role: mind
-  - source_role: visiual_ability
+  - source_role: visual_ability
     target_role: knowledge_capacity
   - source_role: seen_object
     target_role: knowledge
@@ -6074,7 +6070,7 @@ metaphors:
     target_role: nation_whole
   - source_role: vehicle_passengers
     target_role: nation_citizens
-  - source_role: vehicle_drivers
+  - source_role: vehicle_driver
     target_role: nation_leaders
   examples:
   - The president drove the nation into a ditch.
@@ -7044,8 +7040,8 @@ metaphors:
   - Governance metaphors
   - Ontological metaphors
   mappings:
-  - source_role: person_person
-    target_role: nation_nation_whole
+  - source_role: person
+    target_role: nation_whole
   examples:
   - We must rouse our nation from its slumber.
 - name: NATION_IS_A_SYSTEM
@@ -7248,7 +7244,7 @@ metaphors:
   - source_role: functional_status
     target_role: organizational_efficacy
   - source_role: purpose_of_machine
-    target_role: ogranization_mission
+    target_role: organization_mission
   - source_role: operator_of_machine
     target_role: head_of_organization
   - source_role: operating_x_schema
@@ -8277,7 +8273,7 @@ metaphors:
   - source_role: tactile_input
     target_role: visual_input
   - source_role: toucher
-    target_role: see_er
+    target_role: seer
   examples:
   - His eyes scoured the horizon.
   entailments:
@@ -8531,7 +8527,7 @@ metaphors:
     target_role: immoral_citizen
   - source_role: bodily_healing_system
     target_role: social_program
-  - source_role: health_status
+  - source_role: health_state
     target_role: social_functioning
   - source_role: doctor
     target_role: authority
@@ -9055,7 +9051,7 @@ metaphors:
   families:
   - Mind metaphors
   mappings:
-  - source_role: objects
+  - source_role: object
     target_role: ideas
   examples:
   - Let's toss some ideas around.

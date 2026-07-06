@@ -1,5 +1,4 @@
 frames:
-- name: '-'
 - name: ability-to-act
   frame_type:
   - Cog
@@ -5033,7 +5032,7 @@ frames:
     role_type: Quantity
   - name: force_originator
     role_type: Entity
-  - name: force_reciever
+  - name: force_receiver
     role_type: Entity
   relations:
     incorporates_as_role:
@@ -5466,7 +5465,7 @@ frames:
   - name: authority_structure
   - name: functional_status
   - name: functions
-  - name: goverment_whole
+  - name: government_whole
   - name: position_duties
   - name: position_holders
   - name: position_relations
@@ -9030,7 +9029,7 @@ frames:
   - name: perceived_thing
   - name: perceiver
     role_type: AnimateEntity
-  - name: pereception_x_schema
+  - name: perception_x_schema
   relations:
     subcase_of:
     - process
@@ -10840,11 +10839,11 @@ frames:
   - Perception frames
   roles:
   - name: eyes
-  - name: see_er
-    role_type: Entity
   - name: seen_object
     role_type: Entity
   - name: seen_object_perceived_elements
+  - name: seer
+    role_type: Entity
   - name: vision_x_schema
   - name: visual_ability
   lexical_units:
