@@ -52,9 +52,8 @@ change to the data, assert; if it's just useful visibility into a known gap, war
 
 `dataset/metaphors.yaml`, `dataset/frames.yaml`, `dataset/metaphor-families.yaml`, and
 `dataset/frame-families.yaml` are hand- and agent-edited directly -- there is no build/regenerate
-step. `data/build_curated.py` is a historical, one-time script kept for provenance only; do not run
-it, since it would regenerate the dataset from the original ontology and silently discard any edits
-made since it last ran.
+step. The dataset was originally derived, once, from the raw ontology by a one-time script that
+isn't part of this repo -- there's nothing to run or regenerate from it.
 
 When adding or editing YAML data, run `make check` and skim the warnings summary for regressions
 before committing.

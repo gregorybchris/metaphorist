@@ -1,9 +1,9 @@
 frame_families:
-- name: Access to Education frames
+- name: Access to education frames
   members:
   - access-to-education
   - access-to-knowledge
-- name: Act on Object frames
+- name: Act on object frames
   members:
   - attach
   - create-object
@@ -96,7 +96,7 @@ frame_families:
   - change-of-state
   - possession-change
   - self-initiated-state-change
-- name: Cognition Frames
+- name: Cognition frames
   members:
   - access-to-knowledge
   - becoming-aware
@@ -115,7 +115,7 @@ frame_families:
   - theory
   - thinking-about
   - understanding
-- name: Communication Frames
+- name: Communication frames
   members:
   - argument
   - communication
@@ -226,7 +226,7 @@ frame_families:
   - physical-affliction
   - surgery
   - treating-a-physical-affliction
-- name: Eating Frames
+- name: Eating frames
   members:
   - chewing
   - consume
@@ -240,7 +240,7 @@ frame_families:
   - overeating
   - rich-food
   - starvation
-- name: Economic Frames
+- name: Economic frames
   members:
   - business
   - corporation
@@ -260,7 +260,7 @@ frame_families:
   - sanction
   - supply-and-demand
   - value
-- name: Economic Inequality frames
+- name: Economic inequality frames
   members:
   - economic-status
   - improving-economic-status
@@ -279,7 +279,7 @@ frame_families:
   - election
   - voting
   - voting-rights
-- name: Emotion Frames
+- name: Emotion frames
   members:
   - affection
   - anger
@@ -345,14 +345,14 @@ frame_families:
   - textile
   - vehicle
   - weed
-- name: Evaluation Frames
+- name: Evaluation frames
   members:
   - analysis
   - evaluation
   - judgment
   - moral-evaluation
   - visual-evaluation
-- name: Event Structure frames
+- name: Event structure frames
   members:
   - ability-to-act
   - force
@@ -439,7 +439,7 @@ frame_families:
   - force-application
   - forced-movement
   - object-propulsion
-- name: Function of Government frames
+- name: Function of government frames
   members:
   - government-institution-us
 - name: Governance frames
@@ -601,7 +601,7 @@ frame_families:
   - killing
   - natural-disaster
   - vehicular-accident
-- name: Image Schemas
+- name: Image schemas
   members:
   - axis
   - center-periphery
@@ -737,7 +737,7 @@ frame_families:
   - morality
   - parent
   - worship
-- name: Motion Frames
+- name: Motion frames
   members:
   - across
   - affected-motion
@@ -945,7 +945,7 @@ frame_families:
   - natural-process
   - plants
   - restore-to-life
-- name: Object Event Structure frames
+- name: Object event structure frames
   members:
   - access-to-an-object
   - pressure
@@ -1020,7 +1020,7 @@ frame_families:
   - being-at-a-low-location
   - being-in-a-bounded-region
   - vertical-position
-- name: Possession Frames
+- name: Possession frames
   members:
   - gain-possession
   - lose-possession
@@ -1068,7 +1068,7 @@ frame_families:
 - name: Regulations frames
   members:
   - regulation
-- name: Resource Frames
+- name: Resource frames
   members:
   - amassing
   - assets
@@ -1089,7 +1089,7 @@ frame_families:
   - right-to-life
   - rights
   - voting-rights
-- name: Scale Frames
+- name: Scale frames
   members:
   - being-high-on-a-scale
   - being-in-the-middle-of-a-scale
@@ -1119,7 +1119,7 @@ frame_families:
   - topological-scale
   - verticality
   - weight
-- name: Social Class frames
+- name: Social class frames
   members:
   - social-class
 - name: Social frames
@@ -1173,14 +1173,14 @@ frame_families:
 - name: Taxes frames
   members:
   - taxes
-- name: The Law frames
+- name: The law frames
   members:
   - law
   - legality
-- name: The Poor frames
+- name: The poor frames
   members:
   - impoverished
-- name: The Rich frames
+- name: The rich frames
   members:
   - wealthy-people
 - name: Translational motion frames
@@ -1224,7 +1224,7 @@ frame_families:
   - steering-a-boat
   - vehicle
   - vehicular-motion
-- name: Wealth and Social Class frames
+- name: Wealth and social class frames
   members:
   - economic-status
   - employment
@@ -1245,17 +1245,15 @@ frame_families:
   - process-end
   - process-initial-state
   - process-pause
+  - process-start
   - process-stop
   - process-stopped-state
   - process-uncompleted-state
   - x-schema
   - x-schema-continue
-- name: Zealotry Insanity Worship frame family
+- name: Zealotry insanity worship frame family
   members:
   - deity
   - insanity
   - worship
   - zealotry
-- name: x-schema family
-  members:
-  - process-start

@@ -5,7 +5,7 @@ frames:
   - Cog
   frame_families:
   - Action frames
-  - Event Structure frames
+  - Event structure frames
   - Excluded frames
   lexical_units:
   - ability
@@ -17,7 +17,6 @@ frames:
     - x-schema
 - name: ability-to-move
 - name: absorption
-  definition: an object becomes saturated by a fluid
   frame_type:
   - Frame
   frame_families:
@@ -80,7 +79,7 @@ frames:
   frame_families:
   - Concealment/Protection frames
   - Impediment and enablement frames
-  - Object Event Structure frames
+  - Object event structure frames
   roles:
   - name: accessed_object
   - name: accessor
@@ -94,11 +93,10 @@ frames:
     uses:
     - object
 - name: access-to-education
-  definition: We must note the metaphoric use of "Access" here (Oana).
   frame_type:
   - Frame
   frame_families:
-  - Access to Education frames
+  - Access to education frames
   relations:
     uses:
     - education
@@ -107,8 +105,8 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Access to Education frames
-  - Cognition Frames
+  - Access to education frames
+  - Cognition frames
   relations:
     uses:
     - knowledge
@@ -127,16 +125,11 @@ frames:
     uses:
     - leadership
 - name: across
-  definition: 'See Dodge and Lakoff 2005.
-
-    Prototypically landmark is long and thin.
-
-    This may need to be a construction.'
   frame_type:
   - Cog
   - Composed
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Moving entity frames
   - Spatial relations
   lexical_units:
@@ -148,7 +141,6 @@ frames:
     - motion-along-a-path
     - trajector-landmark
 - name: action
-  definition: An action performed by an animate entity, prototypically involving motor-control.
   frame_type:
   - Cog
   - Primary
@@ -177,7 +169,6 @@ frames:
   - Action frames
 - name: actor
 - name: addiction
-  definition: person is addicted to a substance or activity
   frame_type:
   - Frame
   frame_families:
@@ -215,8 +206,6 @@ frames:
     incorporates_as_role:
     - poverty
 - name: addressing-social-problems
-  definition: A social group or institution [Problem_solvers] acts so as to try to reduce extent or severity
-    of a social problem [social_problem].
   frame_type:
   - Composed
   - Frame
@@ -242,7 +231,6 @@ frames:
     - governing-action
     - social-problems
 - name: adoption
-  definition: Adoption of a child into a family.
   frame_type:
   - Frame
   - Primary
@@ -286,16 +274,13 @@ frames:
   - proponence.n
   - proponent.n
 - name: affected-motion
-  definition: Very broad notion of "Caused Motion" which applies both to internal and external causal
-    sources/forces, and in which the 'cause' can affect the (potential) mover in any one of various ways,
-    including enabling, initiating, helping, impeding, or preventing that (potential) mover's motion.
   frame_type:
   - Cog
   - Composed
   frame_families:
   - Affected movement frames
   - Causation frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   roles:
@@ -316,7 +301,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Emotion Frames
+  - Emotion frames
   roles:
   - name: affection_feeler
   - name: degree_of_affection
@@ -344,7 +329,7 @@ frames:
   - Frame
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   - Motion-affecting frames
   lexical_units:
   - foothold.n
@@ -372,10 +357,9 @@ frames:
     uses:
     - action
 - name: aids-to-downward-motion
-  definition: objects that facilitate downward motion
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   - Motion-affecting frames
   lexical_units:
   - chute.n
@@ -392,15 +376,11 @@ frames:
     uses:
     - downward-motion
 - name: aids-to-motion
-  definition: 'Could refer either to aids to motion or aiding motion.
-
-
-    All of the LUs here need to be reassigned to Aids to upward motion and Aids to forward motion.'
   frame_type:
   - Frame
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   - Motion-affecting frames
   lexical_units:
   - accelerate.v
@@ -420,7 +400,7 @@ frames:
 - name: air-motion
   frame_families:
   - Internal motion frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Mover-specific movement frames
   - Moving entity frames
@@ -444,7 +424,7 @@ frames:
 - name: alliances
 - name: amassing
   frame_families:
-  - Resource Frames
+  - Resource frames
   lexical_units:
   - accrue.v
   - accumulate.v
@@ -466,7 +446,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Evaluation Frames
+  - Evaluation frames
   - Excluded frames
   roles:
   - name: analytic_conclusion
@@ -486,13 +466,11 @@ frames:
     uses:
     - evaluation
 - name: anger
-  definition: The FN frame Experiencer_obj is close but pertains to emotions in response to stimuli and
-    is not specific to anger.
   frame_type:
   - Composed
   - Frame
   frame_families:
-  - Emotion Frames
+  - Emotion frames
   roles:
   - name: anger
   - name: anger_level
@@ -549,8 +527,6 @@ frames:
     subcase_of:
     - animate-entity
 - name: animal-life-cycle
-  definition: This is meant to handle life-stage and maturation distinctions in animals as opposed to
-    humans (or plants). It may be useful for things like "the hatching of democratic ideology".
   frame_type:
   - Frame
   frame_families:
@@ -578,7 +554,6 @@ frames:
     uses:
     - animal
 - name: animate-entity
-  definition: A living entity that has the ability to move part(s) and/or all of its body
   frame_type:
   - Cog
   frame_families:
@@ -620,7 +595,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Communication Frames
+  - Communication frames
   - Excluded frames
   roles:
   - name: arguers
@@ -640,10 +615,6 @@ frames:
     - reasoning
 - name: arithmetic
 - name: artifact
-  definition: 'Objects created or altered for some purpose
-
-
-    A basic frame for ojbects that are created or modified in order to be put to some use.'
   frame_type:
   - Frame
   frame_families:
@@ -661,11 +632,10 @@ frames:
     uses:
     - purposeful-action
 - name: assets
-  definition: financial assets
   frame_type:
   - Frame
   frame_families:
-  - Resource Frames
+  - Resource frames
   lexical_units:
   - asset
   - holdings
@@ -678,7 +648,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   lexical_units:
   - adhere.v
   - adjoin.v
@@ -700,10 +670,6 @@ frames:
     scalar_opposition_to:
     - detach
 - name: attacking
-  definition: 'Attacking actions performed on another animate entity
-
-
-    one person attacks another, typically with the objective of hurting the other person'
   frame_type:
   - Frame
   frame_families:
@@ -776,12 +742,6 @@ frames:
     uses:
     - state
 - name: authority
-  definition: An Authority_entity has legitimate control over one or more variables of entities/processes/situations
-    that are within the Authority_entity's (legitimate) domain_of_authority.  This frame is a more specific
-    subcase of Control, with added constraints relating to the legitimacy of the source of the Authority's
-    power, the ways this control may be exercised, and which types of things can be controlled.  Note
-    that "legitimacy" may be granted and/or assessed in different ways. With authority comes the implied
-    responsibility to exercise that authority when needed.
   frame_type:
   - Frame
   frame_families:
@@ -861,7 +821,7 @@ frames:
   - Cog
   - Primary
   frame_families:
-  - Image Schemas
+  - Image schemas
   roles:
   - name: axis
   - name: frame_of_reference
@@ -871,7 +831,7 @@ frames:
   - Primary
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Moving entity frames
   - Translational motion frames
   roles:
@@ -901,16 +861,6 @@ frames:
     related_to:
     - negatively-evaluated-condition
 - name: barrier
-  definition: 'A physical object or landscape feature that prevents or makes it difficult for a mover
-    to move in some (desired) direction
-
-
-    The ''path'' role in this frame is intended to be the mover''s ''projected'' or ''potential'' path(s)
-    -- the path the mover is expected to or wants to take.  This is not necessarily a physical path object,
-    such as a road, nor the mover''s actual trajectory of motion (i.e. where the mover actually goes).
-
-
-    See "Barrier on a path" and "Gap in a path" for specific variations.'
   frame_type:
   - Frame
   frame_families:
@@ -948,17 +898,6 @@ frames:
     uses:
     - motion-along-a-path
 - name: barrier-on-a-path
-  definition: 'Barriers that are located on physical paths, e.g. road blocks
-
-
-    Aka, external barrier on a path.
-
-
-    Sisters include:
-
-    Confinement
-
-    Barrier to accessing a location'
   frame_type:
   - Cog
   - Composed
@@ -969,14 +908,6 @@ frames:
     subcase_of:
     - barrier
 - name: barrier-to-accessing-a-location
-  definition: 'Obstacles_to_accessing_a_location was removed; LUs moved here.
-
-
-    Sisters include:
-
-    Barrier on a path
-
-    Confinement'
   frame_type:
   - Cog
   frame_families:
@@ -1011,7 +942,7 @@ frames:
   frame_type:
   - Primary
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   roles:
   - name: cognizer
   - name: content
@@ -1121,11 +1052,10 @@ frames:
     scalar_opposition_to:
     - being-at-a-high-location
 - name: being-high-on-a-scale
-  definition: '''Higher class'' and ''upper class'' were listed at LUs here. ''Class'' was removed.'
   frame_type:
   - Cog
   frame_families:
-  - Scale Frames
+  - Scale frames
 - name: being-in-a-bounded-region
   frame_families:
   - Location frames
@@ -1154,7 +1084,7 @@ frames:
     - bounded-entity
 - name: being-in-the-middle-of-a-scale
   frame_families:
-  - Scale Frames
+  - Scale frames
   lexical_units:
   - median.a
   - median.n
@@ -1165,7 +1095,7 @@ frames:
   - middling
 - name: being-low-on-a-scale
   frame_families:
-  - Scale Frames
+  - Scale frames
   relations:
     subcase_of:
     - scale
@@ -1208,11 +1138,10 @@ frames:
     related_to:
     - unstable
 - name: belief
-  definition: Still need to add relations to other types of mental experiences
   frame_type:
   - Cog
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   - Excluded frames
   roles:
   - name: belief
@@ -1229,12 +1158,6 @@ frames:
   frame_type:
   - Frame
 - name: biological-entity
-  definition: Biological entities can be distinguished from other (non-biological) entities by a cluster
-    of typically-present "properties" relating to their life cycle (birth, growth, development, death),
-    metabolism, and reproduction.  They also tend to have specialized parts and internal mechanisms that
-    fill various functions.  Different kinds of entities (e.g. species) tend to fill particular environmental
-    niches, and can evolve over generations.  Additionally, as with other physical entities, biological
-    entities have size, shape, and other physical properties.
   frame_families:
   - Entity frames
   roles:
@@ -1251,12 +1174,6 @@ frames:
     - ingestion
     - life-cycle
 - name: bird
-  definition: 'Do not delete!
-
-    We need some of these LUs. We may re-assign them later.
-
-    Also, each of these LUs will be relevant for various source domain inferences (life cycle, speed,
-    etc).'
   frame_type:
   - Frame
   frame_families:
@@ -1277,7 +1194,6 @@ frames:
     subcase_of:
     - animate-entity
 - name: birth
-  definition: beginning or first phase/process of life cycle
   frame_type:
   - Frame
   roles:
@@ -1374,7 +1290,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Mover-specific movement frames
   - Moving entity frames
@@ -1392,8 +1308,6 @@ frames:
   - on course.prep
   - sail.v
 - name: boat-on-the-rocks
-  definition: This is a very specific scene drawing on several interacting frames. It is called up as
-    a specific scenario in the context of ROMANTIC RELATIONSHIPS ARE A JOURNEY metaphor.
   frame_type:
   - Composed
   - Frame
@@ -1466,11 +1380,6 @@ frames:
     - animate-entity
     - part-whole
 - name: body-of-water
-  definition: 'natural or manmade bodies of water
-
-
-    FrameNet has a general Natural features frame that covers both this and other geographic features
-    like mountains, valleys, beaches, etc'
   frame_type:
   - Frame
   frame_families:
@@ -1536,9 +1445,6 @@ frames:
     - bounded-region
     - part-whole
 - name: bounded-region
-  definition: this frame does not include the Ground or Surface FE's of FNet Bounded-region frame.  However,
-    note that this frame does inherit the 'background' role of the Region frame.  Also, this frame could
-    be elaborated by binding each of the current roles to a (different)'location' role in the Region frame.
   frame_type:
   - Cog
   frame_families:
@@ -1628,11 +1534,6 @@ frames:
     uses:
     - containing
 - name: bully
-  definition: 'individual or group of individuals who intimidate, harass, torment, etc. another person
-    or group
-
-
-    tough.n temporarily deleted'
   frame_type:
   - Frame
   frame_families:
@@ -1652,8 +1553,6 @@ frames:
     uses:
     - harm-to-living-entity
 - name: burden
-  definition: is currently both Burden and the perspective of "being burdened" (whereas "remove burden"
-    is a separate frame)
   frame_type:
   - Frame
   frame_families:
@@ -1755,7 +1654,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   lexical_units:
   - business.n
   - company.n
@@ -1765,7 +1664,6 @@ frames:
     - finance
     - wealth
 - name: cancer
-  definition: A frame for the disease of cancer itself, containing cancer-specific LUs
   frame_type:
   - Frame
   frame_families:
@@ -1812,7 +1710,6 @@ frames:
     subcase_of:
     - disease
 - name: cancer-patient
-  definition: person afflicted with cancer
   frame_type:
   - Frame
   frame_families:
@@ -1825,7 +1722,6 @@ frames:
     uses:
     - cancer
 - name: cancer-treatment
-  definition: different means for treating cancer
   frame_families:
   - Disease frame family
   lexical_units:
@@ -1879,17 +1775,6 @@ frames:
   frame_type:
   - Frame
 - name: causation
-  definition: 'This is intended to be a very general schema that specifies a causal relation between two
-    situations (a ''cause'' and an ''effect'').  Perhaps prototypically, cause and effect occur as part
-    of a scenario in which the ''process'' (casual_process) associated with one entity (the causer) is
-    conceptualized as somehow affecting the process (affected_process) associated with another entity
-    (affected).  This very general frame is meant to encompass many different types of causes (including,
-    e.g., both force-application and the lack thereof), different types of ''causal'' relations (e.g.
-    cause, prevent, enable, help, hinder), and different types of ''affected processes'' (including, e.g.,  the
-    motion, location, or state of the affected entity).
-
-
-    FrameNet frames temporarily removed: Causation, Intentionally_affect'
   frame_type:
   - Cog
   - Composed
@@ -1973,17 +1858,12 @@ frames:
     uses:
     - change-of-state
 - name: caused-downward-motion
-  definition: 'Movement of an entity in a downward direction that is caused by some other entity or natural
-    force
-
-
-    some LUs in this frame seem to actually describe ''caused motion into a bounded region'''
   frame_type:
   - Cog
   frame_families:
   - Affected movement frames
   - Forced movement frame family
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   lexical_units:
@@ -2015,7 +1895,7 @@ frames:
   frame_families:
   - Affected movement frames
   - Forced movement frame family
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   lexical_units:
@@ -2050,7 +1930,7 @@ frames:
   frame_type:
   - Cog
   frame_families:
-  - Image Schemas
+  - Image schemas
   - Spatial relations
   lexical_units:
   - center.n
@@ -2071,7 +1951,6 @@ frames:
     uses:
     - being-at-a-location
 - name: change-of-state
-  definition: current frame includes both an initial and a final state
   frame_type:
   - Cog
   frame_families:
@@ -2095,7 +1974,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   - Food frame family
   lexical_units:
   - bite.n
@@ -2114,8 +1993,6 @@ frames:
   - nibble.v
   - ruminate.v
 - name: child-care
-  definition: A child care provider (e.g. nanny, babysitter, grandmother, or parent) is responsible for
-    the safety, health and well-being of one or more children.
   roles:
   - name: children
   - name: childcare_duties
@@ -2135,7 +2012,6 @@ frames:
     uses:
     - authority
 - name: circular-path
-  definition: Path that goes in a circle; hence, it leads back to where it starts and the source = goal.
   frame_families:
   - Translational motion frames
   lexical_units:
@@ -2161,8 +2037,6 @@ frames:
     related_to:
     - situation
 - name: citizen-evaluation-of-government
-  definition: This is the Evaluation frame applied to Government - the governed citizens are the evaluators
-    of their government.
   frame_type:
   - Composed
   frame_families:
@@ -2179,12 +2053,6 @@ frames:
     uses:
     - government
 - name: citizen-participation
-  definition: Democracies require the involvement of citizens in the decision-making and in the information
-    flow within their community and the society at large. They do so via civic institutions, both local
-    and national. Participation occurs in the context of institutions, in political parties, campaigns,
-    and issues-based organizations (e.g., NGOs, petitions, focus groups, issues-based service organizations).
-    There are also volunteer-based institutions (e.g., stonemasons). Individual participation can also
-    make use of the internet (e.g. blogging, social networking, forums).
   frame_type:
   - Frame
   frame_families:
@@ -2212,7 +2080,6 @@ frames:
     incorporates_as_role:
     - citizen-participation
 - name: civil-social-political-community
-  definition: This is the designated location of the LU 'civic'.
   frame_type:
   - Frame
   frame_families:
@@ -2238,7 +2105,6 @@ frames:
     related_to:
     - purity
 - name: clear-paths-to-accessing-a-location
-  definition: This means the active version of 'remove obstacles along a path'
   frame_families:
   - Impediment and enablement frames
   - Location frames
@@ -2258,9 +2124,6 @@ frames:
     uses:
     - physical-path
 - name: closing-a-portal
-  definition: 'actually more like a subprocess of Portal.
-
-    there''s no correlate Opening a Portal frame'
   frame_families:
   - Impediment and enablement frames
   - Motion impediments frames
@@ -2281,7 +2144,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   roles:
   - name: cognizer
     role_type: Person
@@ -2290,12 +2153,11 @@ frames:
     uses:
     - person
 - name: cold
-  definition: this frame is the scalar opposite of the Heat frame
   frame_type:
   - Cog
   - Primary
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: entity
   - name: temperature_level
@@ -2323,7 +2185,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Communication Frames
+  - Communication frames
   roles:
   - name: addressee
   - name: communicator
@@ -2376,8 +2238,6 @@ frames:
     subcase_of:
     - organization
 - name: competition
-  definition: Generic frame for any type of competition in which there are at least two sides competing
-    for some advantageous outcome. See sub-cases for different types of competitions.
   frame_type:
   - Composed
   - Frame
@@ -2427,14 +2287,6 @@ frames:
     uses:
     - evaluation
 - name: competitive-sport
-  definition: 'Any kind of sport which involves direct competition, either between individuals (e.g. singles
-    tennis) or teams (eg. football). This frame does not include other forms of recreational competition
-    that involve judges (e.g. figure skating) or timed events such as races.
-
-
-    This frame does not currently have any subcases for more specific kinds of competitive sports(e.g.
-    Football, Boxing match).  Therefore, relevant LUs for various sports have been listed in this frame.
-    If subcases are defined in the future, LUs should moved, as appropriate.'
   frame_type:
   - Composed
   - Frame
@@ -2463,14 +2315,6 @@ frames:
     subcase_of:
     - recreational-competition
 - name: complex-physical-object
-  definition: 'Physical objects with internal structure, e.g. part-whole structure
-
-
-    This frame captures physical objects characterized by part-whole structure, including biological entities.
-
-
-    It is NOT necessarily functional. See its special case, Physical_structure, for the first place where
-    Functionality plays a role.'
   frame_type:
   - Cog
   - Composed
@@ -2552,7 +2396,6 @@ frames:
     subcase_of:
     - machine
 - name: concentration
-  definition: Let's define concentration. Is it concentration of resources? Of a substance?
   frame_type:
   - Frame
   lexical_units:
@@ -2574,11 +2417,10 @@ frames:
     - substance
 - name: condition
 - name: condition-of-physical-object
-  definition: property or state of physical object
   frame_type:
   - Frame
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: physical_object
   - name: state_of_object
@@ -2639,7 +2481,6 @@ frames:
     - inability-to-access-a-location
 - name: connection
 - name: consciousness
-  definition: 'This may need to be two frames: awake vs. asleep and a more general understanding of consciousness.'
   frame_type:
   - Frame
   roles:
@@ -2647,7 +2488,6 @@ frames:
   - name: state_of_consciousness
 - name: constituents
 - name: constitution
-  definition: Needed for Gun Debate.
   frame_families:
   - Governance frames
   - Gun debate
@@ -2752,7 +2592,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   roles:
   - name: consume_x_schema
   - name: consumed_thing
@@ -2765,7 +2605,6 @@ frames:
   - devour.v
   - eat.v
 - name: contact
-  definition: Locative_relation is the closest, but it is too broad to put as a closest frame.
   frame_type:
   - Cog
   - Primary
@@ -2791,10 +2630,6 @@ frames:
     - proximal
     - touching
 - name: containing
-  definition: 'A container object holds some sort of content object(s) or substance within its boundaries.
-
-
-    This is a frame for a container and its contents'
   frame_type:
   - Cog
   - Composed
@@ -2816,11 +2651,6 @@ frames:
     - containment
     - trajector-landmark
 - name: containment
-  definition: 'A bounded region or object whose boundaries'' physical properties prevent or impede motion
-
-
-    needs to be clarified when to use "containing" vs "containment"  - might want to re-name Containment
-    to Container.'
   frame_type:
   - Cog
   frame_families:
@@ -2847,8 +2677,6 @@ frames:
 - name: contents
 - name: contracts
 - name: control
-  definition: A type of force-dynamic situation in which one person (the controlling entity) has the ability/power
-    to act on and affect one or more variables of a dependent_entity's situation/actions
   frame_type:
   - Frame
   roles:
@@ -2874,14 +2702,11 @@ frames:
     - force-dynamic-interaction
     - relation
 - name: controlled-motion
-  definition: 'Central case:  A person physically controls the speed and/or direction of motion of a self-propelled
-    mover (e.g. walking a dog on a leash). Control of vehicular motion is represented in a specific subcase
-    of this frame (Controlled vehicular motion).'
   frame_type:
   - Composed
   frame_families:
   - Affected movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   roles:
@@ -2898,7 +2723,7 @@ frames:
 - name: controlled-vehicular-motion
   frame_families:
   - Affected movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Mover-specific movement frames
   - Moving entity frames
@@ -2922,7 +2747,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   roles:
   - name: chief_executive_officer
   - name: corporation_functions
@@ -2941,8 +2766,6 @@ frames:
     subcase_of:
     - institution
 - name: corruption
-  definition: Institutional corruption frame.  Corrupt activities deviate from the norm, are performed
-    for the benefit of the corrupt actor, and harm the entity that should have benefited from those actions..
   frame_type:
   - Composed
   - Frame
@@ -2965,7 +2788,6 @@ frames:
     - government-institution
     - social-problems
 - name: country
-  definition: Cultural scope checked for Persian--Aria
   frame_type:
   - Frame
   frame_families:
@@ -3006,14 +2828,10 @@ frames:
     uses:
     - artifact
 - name: create-object
-  definition: 'An actor intentionally creates some sort of object, using some sort of materials/components.
-
-
-    LU ''make'' temporarily remove. Please add back later.'
   frame_type:
   - Frame
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   - Object frames
   roles:
   - name: components
@@ -3040,8 +2858,6 @@ frames:
     - object
 - name: creating
 - name: crime
-  definition: A criminal commits a crime (something that is not permitted by the laws of society).  This
-    crime may involve a victim who is in some way harmed by this crime.
   frame_type:
   - Frame
   frame_families:
@@ -3082,8 +2898,6 @@ frames:
     - legality
     - social-problems
 - name: criminal-gun-violence
-  definition: This is intended as a purposeful form of criminal gun violence, as opposed to Injurious
-    gun use, which is differnt in that it also includes accidental gun 'violence'.
   frame_type:
   - Frame
   frame_families:
@@ -3110,7 +2924,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Communication Frames
+  - Communication frames
   - Excluded frames
   roles:
   - name: critic
@@ -3202,7 +3016,6 @@ frames:
     - force-application
     - physical-harm
 - name: cycle
-  definition: Took out 'cycle' LU for tests. Put back later.
   frame_type:
   - Cog
   relations:
@@ -3210,7 +3023,6 @@ frames:
     - process
     - source-path-goal
 - name: danger
-  definition: An entity or situation that potentially imperils a person or thing
   frame_type:
   - Frame
   frame_families:
@@ -3248,7 +3060,7 @@ frames:
 - name: darkness
   frame_families:
   - Perception frames
-  - Scale Frames
+  - Scale frames
   lexical_units:
   - blackness.n
   - caliginous.a
@@ -3282,10 +3094,6 @@ frames:
     scalar_opposition_to:
     - lightness
 - name: death
-  definition: 'The highest common level for death, to be further split into perspectives later.
-
-
-    last phase/process in Life cycle; can be interrupted by the Restore to Life sub-process'
   frame_type:
   - Frame
   roles:
@@ -3320,7 +3128,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Communication Frames
+  - Communication frames
   relations:
     subcase_of:
     - discussing
@@ -3376,10 +3184,6 @@ frames:
     subcase_of:
     - destructive-natural-process
 - name: decision-making
-  definition: 'This has specific types of decision-making scenarios (Government, Judicial, etc.).
-
-    Eve: There is too much specific stuff here - standards etc - decision-making may not prominently feature
-    those - but it DOES necessarily involve an ACTION on the part of the decider....'
   frame_type:
   - Frame
   frame_families:
@@ -3403,12 +3207,11 @@ frames:
   - decide.v
   - decision.n
 - name: decrease-size
-  definition: LUs reduce.v and reduction.n temporarily removed. Please add back later.
   frame_type:
   - Frame
   frame_families:
   - Physical properties frame family
-  - Scale Frames
+  - Scale frames
   lexical_units:
   - compress.v
   - condense.v
@@ -3430,7 +3233,6 @@ frames:
     scalar_opposition_to:
     - increase-size
 - name: deforming
-  definition: causing object to change shape (and be damaged) via force application
   frame_type:
   - Frame
   frame_families:
@@ -3472,7 +3274,7 @@ frames:
 - name: deity
   frame_families:
   - Morality frames
-  - Zealotry Insanity Worship frame family
+  - Zealotry insanity worship frame family
   roles:
   - name: believer
   - name: deity
@@ -3494,20 +3296,10 @@ frames:
     subcase_of:
     - moral-authority
 - name: delegation-of-trust
-  definition: Why this and Entrusting?
   relations:
     subcase_of:
     - trust
 - name: democracy
-  definition: 'This refers to the very notion of democracy. It is based on the 7 concepts submitted by
-    us to IARPA in January 2014.
-
-
-    This is a macro-concept for the frames it subsumes.
-
-
-    The other 6 are Freedom, Equality, Democratic_institutions, Representation_and_decision-making, Organization_of_power,
-    Citizen_participation'
   frame_type:
   - Frame
   frame_families:
@@ -3516,7 +3308,6 @@ frames:
   - democracy.n
   - democratic.a
 - name: democratic-government
-  definition: Created to reflect insights from site visit April 2014.
   frame_type:
   - Frame
   frame_families:
@@ -3529,7 +3320,6 @@ frames:
     subcase_of:
     - government
 - name: democratic-ideology
-  definition: Created to reflect insights from site visit April 2014.
   frame_type:
   - Frame
   frame_families:
@@ -3540,15 +3330,6 @@ frames:
     uses:
     - democracy
 - name: democratic-institution
-  definition: "Created to reflect insights from site visit April 2014.\n\n\nDemocratic institutions are\
-    \ numerous formal and informal conventional practices, laws, rules, and norms that are crucial for\
-    \ democratic laws and principles (along with the equality and freedom associated with democracy) to\
-    \ be practiced. Representation and decision-making are amongst the valued institutions of a recognized\
-    \ democracy, in addition to free economic institutions \n(including capitalism), political institutions,\
-    \ and social institutions.\n\nThe relevant democratic institutions which are relevant to a comparative\
-    \ cross-linguistic and cross-cultural study of metaphors include: free speech/freedom of expression,\
-    \ freedom of the press, unions, elections, educational institutions, health and welfare institutions,\
-    \ property rights, assembly and political parties, judicial and legal institutions."
   frame_type:
   - Frame
   frame_families:
@@ -3562,11 +3343,10 @@ frames:
     - democracy
 - name: desire
 - name: desiring
-  definition: Should this exist?
   frame_type:
   - Cog
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   roles:
   - name: desired_content
   - name: experiencer
@@ -3574,10 +3354,6 @@ frames:
     subcase_of:
     - cognizing
 - name: destroying
-  definition: 'Damaging or destroying a physical entity
-
-
-    see Killing for a similar frame for animate entities'
   frame_type:
   - Frame
   frame_families:
@@ -3638,10 +3414,6 @@ frames:
     subcase_of:
     - force
 - name: destructive-natural-process
-  definition: 'Some entity undergoes a destructive natural process
-
-
-    Some inanimate entity experiences the effects of a destructive natural process'
   frame_type:
   - Frame
   frame_families:
@@ -3667,7 +3439,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   lexical_units:
   - detach.v
   - unbind.v
@@ -3711,7 +3483,6 @@ frames:
   frame_type:
   - Frame
 - name: difficulties-in-action
-  definition: factor(s) that negatively affect actor's ability to achieve objective
   frame_type:
   - Frame
   frame_families:
@@ -3746,7 +3517,7 @@ frames:
   - negotiation
 - name: directed-emotion
   frame_families:
-  - Emotion Frames
+  - Emotion frames
   roles:
   - name: circumstance
   - name: degree
@@ -3769,11 +3540,10 @@ frames:
     related_to:
     - seeing
 - name: discard
-  definition: Created to house LUs. May revise later (Oana).
   frame_type:
   - Frame
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   lexical_units:
   - discard.v
   - dispense.v
@@ -3796,17 +3566,12 @@ frames:
 - name: discovery
 - name: discussing
   frame_families:
-  - Communication Frames
+  - Communication frames
   - Excluded frames
   lexical_units:
   - converse.v
   - discuss.v
 - name: disease
-  definition: 'Why does Disease make use of Containing?? Why all the bindings to the roles of Containing??
-    Isn''t the conceptualization of a disease as ''contained'' in the body metaphoric? (Oana)
-
-
-    7/17/15 -- deleted relation to Containing (Ellen)'
   frame_type:
   - Frame
   frame_families:
@@ -3851,10 +3616,6 @@ frames:
     subcase_of:
     - physical-affliction
 - name: disease-spread
-  definition: 'Spread of disease within a population; diseases which spread
-
-
-    Maybe this should be considered ''Spreadable disease'', and defined as a subcase of Disease. EKD 3/19/15'
   frame_type:
   - Frame
   frame_families:
@@ -3884,8 +3645,6 @@ frames:
     uses:
     - disease
 - name: disease-treatment
-  definition: All Disease treatment LUs were moved to Treating_a_physical_affliction. Cure, treat, assuage,
-    etc. are all pertinent to general treatment of physical ailments, and are not specific to diseases.
   frame_type:
   - Composed
   - Frame
@@ -3955,7 +3714,6 @@ frames:
     subcase_of:
     - impurity
 - name: disorderly-group
-  definition: group of individuals whose intention is to cause violence, trouble, and disorder
   frame_type:
   - Frame
   frame_families:
@@ -3972,7 +3730,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Resource Frames
+  - Resource frames
   lexical_units:
   - allocate.n
   - allocation.n
@@ -4025,7 +3783,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Image Schemas
+  - Image schemas
   lexical_units:
   - a long way from
   - distance
@@ -4056,7 +3814,7 @@ frames:
   - Composed
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -4116,7 +3874,6 @@ frames:
 - name: draw-a-picture
 - name: driving-a-vehicle
 - name: drugs
-  definition: removed some polysemous slang LUs, e.g. crack, weed, blow, acid.
   frame_type:
   - Frame
   frame_families:
@@ -4186,7 +3943,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   roles:
   - name: eaten_object
   - name: eater
@@ -4214,8 +3971,6 @@ frames:
     incorporates_as_role:
     - food
 - name: economic-competition
-  definition: Competition between two entities (which may be people, corporations, countries, etc) over
-    economic resources.
   frame_type:
   - Composed
   - Frame
@@ -4233,7 +3988,7 @@ frames:
   - Composed
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   - Poverty frames
   roles:
   - name: actor
@@ -4250,7 +4005,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   lexical_units:
   - fund.v
   - funds.n
@@ -4263,10 +4018,10 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
-  - Economic Inequality frames
+  - Economic frames
+  - Economic inequality frames
   - Poverty-related frame network
-  - Wealth and Social Class frames
+  - Wealth and social class frames
   roles:
   - name: financial_resources
   - name: intermediate_status
@@ -4291,7 +4046,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   roles:
   - name: activity_level
     role_type: Scale
@@ -4327,8 +4082,6 @@ frames:
     uses:
     - bounded-region
 - name: education
-  definition: NOT the educational institution sense. This frame refers to the acquisition of knowledge,
-    experience, and a any degrees or credentials that represent that acquisition of knowledge and experience.
   frame_type:
   - Frame
   frame_families:
@@ -4385,12 +4138,6 @@ frames:
     uses:
     - education
 - name: election
-  definition: "An election is a decision-making process using VOTING to decide on the identity of an official\
-    \ office-holder in some Institution (often a Government Institution). The Voters are members (adult\
-    \ members...) of the governed population of the relevant Government Institution. Normally there are\
-    \ multiple (at least two) Candidates for an Office. The Outcome of the Voting is a decision about\
-    \ the identity of the office-holder who will fill that institutional function. \nSo links to Institution,\
-    \ Government Institution, and Voting, for sure."
   frame_type:
   - Composed
   - Frame
@@ -4430,12 +4177,11 @@ frames:
     related_to:
     - government
 - name: emotion
-  definition: Folk theory of emotion
   frame_type:
   - Cog
   - Primary
   frame_families:
-  - Emotion Frames
+  - Emotion frames
   roles:
   - name: bodily_effect
   - name: body
@@ -4459,8 +4205,8 @@ frames:
   - Cog
   - Primary
   frame_families:
-  - Emotion Frames
-  - Scale Frames
+  - Emotion frames
+  - Scale frames
   roles:
   - name: emotional_intensity_scale
   - name: emotional_intensity_x_schema
@@ -4470,12 +4216,10 @@ frames:
     uses:
     - scale
 - name: employment
-  definition: An employer employs an employee.  Employee agrees to perform certain duties that achieve
-    employer-determined objectives, and employer compensates employee for performing these duties.
   frame_type:
   - Frame
   frame_families:
-  - Wealth and Social Class frames
+  - Wealth and social class frames
   roles:
   - name: employee
     role_type: Person
@@ -4511,14 +4255,6 @@ frames:
     uses:
     - access-to-a-location
 - name: enablement
-  definition: 'Refers to Enablement in the domain of motion as opposed to action. (should be renamed to
-    Enablement_of_motion).
-
-
-    This very general frame encapsulates both: active aids to motion, and lack of impediments to motion.
-
-
-    For the two versions see specifically: Aids to motion, and Lack of impediments to motion'
   frame_type:
   - Cog
   frame_families:
@@ -4533,11 +4269,10 @@ frames:
   - enablement.n
   - enabling.adj
 - name: energy
-  definition: A general frame for various types of energy sources, e.g. electricity, fuel,
   frame_type:
   - Frame
   frame_families:
-  - Resource Frames
+  - Resource frames
   roles:
   - name: amount
   - name: type
@@ -4554,8 +4289,6 @@ frames:
     subcase_of:
     - resource
 - name: entity
-  definition: Per frameNet, an entity is "a thing (either abstract or physical) that exsists with some
-    degree of permanence".
   frame_type:
   - Cog
   - Primary
@@ -4565,13 +4298,11 @@ frames:
   - name: entity
 - name: entrapment
 - name: entrusting
-  definition: Entrusting is the giving of power/control to someone to potentially harm you.
   roles:
   - name: entrusted_entity
   - name: entrusting_entity
   - name: thing_entrusted
 - name: environmental-harm
-  definition: harm to the environment, such as pollution
   frame_type:
   - Frame
   frame_families:
@@ -4588,7 +4319,6 @@ frames:
     subcase_of:
     - harm
 - name: environmental-restraints
-  definition: natural causes of restrains on motion
   frame_type:
   - Frame
   frame_families:
@@ -4618,29 +4348,6 @@ frames:
     subcase_of:
     - restraints
 - name: equality
-  definition: 'Entered per the request after the April 2014 site visit.
-
-
-    It is based on the 7 concepts submitted by us to IARPA in January 2014.
-
-
-    The other 6 are Freedom, Equality, Democratic_institutions, Representation_and_decision-making, Organization_of_power,
-
-
-
-    Equality comes down to all members of a group or society having access to the same resources, without
-    some members being valued less than others (Plato: ‘Friends have all things in common.’). In an equal
-    society, citizens receive equal treatment in the eyes of the law. The parameters according to which
-    equality is determined may vary.
-
-
-    The venue in which citizens are treated equally are varied as well: they may have an equal right to
-    vote (universal suffrage); equal right to opportunity (education, medical care).
-
-
-    Equality is linked to freedom. Equality yields freedom in all areas, so there is a causal relationship
-    between recognition of equal status (in whatever domain) and freedom (to expression, to resources)
-    in that domain, and in general.'
   frame_type:
   - Frame
   frame_families:
@@ -4651,10 +4358,6 @@ frames:
 - name: equalizing-quantities
 - name: erectness
 - name: erosion
-  definition: 'The process and experience of effects of erosion
-
-
-    Includes both causal process and experiencing of erosion'
   frame_type:
   - Frame
   frame_families:
@@ -4680,14 +4383,11 @@ frames:
     subcase_of:
     - destructive-natural-process
 - name: essence
-  definition: The abstract notion of 'essence' or 'the essential', as commonly used in the ESSENTIAL IS
-    INTERNAL metaphor.
   frame_type:
   - Frame
 - name: evaluation
-  definition: see discussion
   frame_families:
-  - Evaluation Frames
+  - Evaluation frames
   roles:
   - name: basis_of_evaluation
   - name: evaluation
@@ -4716,7 +4416,6 @@ frames:
     scalar_opposition_to:
     - moral-goodness
 - name: evil-creature
-  definition: Monsters of all types
   frame_type:
   - Frame
   frame_families:
@@ -4763,7 +4462,7 @@ frames:
   - Frame
   frame_families:
   - Aversion frames
-  - Eating Frames
+  - Eating frames
   lexical_units:
   - bilge
   - bloat
@@ -4782,7 +4481,6 @@ frames:
     uses:
     - increase-size
 - name: existence
-  definition: stasis
   frame_type:
   - Cog
   - Primary
@@ -4798,10 +4496,6 @@ frames:
     subcase_of:
     - process
 - name: experience-pain
-  definition: 'An animate entity experiences bodily injury or pain
-
-
-    Experience bodily harm is the FrameNet frame.'
   frame_type:
   - Frame
   frame_families:
@@ -4848,8 +4542,6 @@ frames:
     subcase_of:
     - experiencing-a-state
 - name: experiencing-a-state
-  definition: we may want to make this frame more general so as to include states/properties that are
-    not directly 'experienced' by the entity with which that state/property is associated. -- See Discussion
   frame_type:
   - Cog
   frame_families:
@@ -4869,13 +4561,12 @@ frames:
     uses:
     - state
 - name: experiencing-an-economic-status
-  definition: Cultural scope checked for Persian--Aria
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   - Poverty-related frame network
-  - Wealth and Social Class frames
+  - Wealth and social class frames
   roles:
   - name: financial_resources
   - name: standard_of_living
@@ -4906,8 +4597,6 @@ frames:
     related_to:
     - destroying
 - name: factory
-  definition: This refers to a prototypical physical factory and its prototypical functioning, and the
-    roles reflect this.
   frame_type:
   - Frame
   roles:
@@ -4930,8 +4619,6 @@ frames:
   frame_type:
   - Frame
 - name: family
-  definition: This is the most general culturally unspecific family frame. See individual cultural models
-    for family for e.g., nuclear family.
   frame_type:
   - Frame
   frame_families:
@@ -4962,9 +4649,6 @@ frames:
     - social-group
 - name: feeding
 - name: fierce-animal
-  definition: "animal known to be dangerous, possibly threat to humans\n\npossibly should be \"dangerous\
-    \ animal\"? \n\nOr, maybe this should be a Predation frame of some kind, and include a role for the\
-    \ (potential) harmful effects to the prey."
   frame_type:
   - Frame
   frame_families:
@@ -5024,7 +4708,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   lexical_units:
   - finance.n
   - financial.a
@@ -5035,9 +4719,9 @@ frames:
     - economy
 - name: financial-resource
   frame_families:
-  - Economic Frames
-  - Resource Frames
-  - Wealth and Social Class frames
+  - Economic frames
+  - Resource frames
+  - Wealth and social class frames
   roles:
   - name: amount
   - name: resource
@@ -5048,7 +4732,6 @@ frames:
     uses:
     - monetary-evaluation
 - name: financial-transaction
-  definition: 'LUs temporarily removed, add back later: pay, buy.'
   frame_type:
   - Frame
 - name: fire
@@ -5115,11 +4798,10 @@ frames:
     scalar_opposition_to:
     - lax
 - name: firmness
-  definition: the state of relative firmness or solidity of a complex physical object
   frame_type:
   - Frame
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: firmness_entity
     role_type: ComplexPhysicalObject
@@ -5136,17 +4818,11 @@ frames:
     incorporates_as_role:
     - complex-physical-object
 - name: fit
-  definition: 'The fit of one object against/next to another object.
-
-
-    Defined as the fit of one object to another.
-
-    Meant for certain gun debate CMs, but generally useful.'
   frame_type:
   - Frame
   frame_families:
   - Physical properties frame family
-  - Scale Frames
+  - Scale frames
   lexical_units:
   - fit.n
   - fit.v
@@ -5154,7 +4830,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   lexical_units:
   - fix.n
   - fix.v
@@ -5181,7 +4857,6 @@ frames:
     uses:
     - object
 - name: fluid-containment
-  definition: Fluid is in container
   frame_type:
   - Frame
   frame_families:
@@ -5199,13 +4874,12 @@ frames:
     related_to:
     - release-liquid
 - name: fluid-motion
-  definition: Motion of a fluid, along a path or within/across some area
   frame_type:
   - Frame
   frame_families:
   - Fluid frame family
   - Internal motion frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Mover-specific movement frames
   - Moving entity frames
@@ -5260,11 +4934,10 @@ frames:
     incorporates_as_role:
     - liquid
 - name: food
-  definition: Is 'portion' metaphoric, evoking Food source frame?
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   - Food frame family
   roles:
   - name: amount
@@ -5292,7 +4965,7 @@ frames:
   frame_type:
   - Cog
   frame_families:
-  - Event Structure frames
+  - Event structure frames
   - Force dynamic frames
   - Force frames
   roles:
@@ -5303,10 +4976,6 @@ frames:
   - power.n
   - pressure.n
 - name: force-application
-  definition: 'Action which involves transfer of force to another entity
-
-
-    actors action transfers force from actor to acted upon'
   frame_type:
   - Cog
   frame_families:
@@ -5338,11 +5007,6 @@ frames:
     - contact
     - force-transfer
 - name: force-dynamic-interaction
-  definition: One entity (the force_originator) transfers force to another entity (force_reciever), which
-    results in some outcome with respect to one or both enitities.  This is a general frame with more
-    specific subcases that differ as to the intentions of the entities (when sentient), the details of
-    the force-interaction, the relative strengths of the two entities, and the outcomes that result from
-    the interaction.
   frame_type:
   - Cog
   frame_families:
@@ -5375,12 +5039,11 @@ frames:
     incorporates_as_role:
     - force
 - name: forced-motion
-  definition: An entity applies force to another entity, causing the second entity to move
   frame_type:
   - Composed
   frame_families:
   - Affected movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   roles:
@@ -5415,7 +5078,7 @@ frames:
   - Affected movement frames
   - Causation frames
   - Forced movement frame family
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   roles:
@@ -5452,8 +5115,8 @@ frames:
     - motion-along-a-path
 - name: forming-words
   frame_families:
-  - Cognition Frames
-  - Communication Frames
+  - Cognition frames
+  - Communication frames
   roles:
   - name: cognition_process
   - name: cognizer
@@ -5470,7 +5133,7 @@ frames:
   - Primary
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -5488,34 +5151,6 @@ frames:
     scalar_opposition_to:
     - backward-motion
 - name: freedom
-  definition: 'The ideology of freedom rather than the physical impediment to motion
-
-
-    Entered per the request after the April 2014 site visit.
-
-
-    This refers to the ideology of freedom, rather than to the physical lack of impediment to motion.
-    This is a target domain frame, whereas the latter is a source domain frame.
-
-
-    It is based on the 7 concepts submitted by us to IARPA in January 2014.
-
-
-    The other 6 are Freedom, Equality, Democratic_institutions, Representation_and_decision-making, Organization_of_power,
-    Citizen_participation.
-
-
-    Lack of impediment to action (“the absence of opposition” as Thomas Hobbs says) as it applies to groups
-    of people in a society or nation. This refers to things such as free speech, free elections, free
-    association.
-
-
-    The scope of freedom of action (i.e. who may have freedom, who typically tends to be excluded from
-    free activities, etc.).
-
-
-    Freedom is often understood as empowerment to seek resources, opportunities, and venues to express
-    opinions.'
   frame_type:
   - Frame
   frame_families:
@@ -5554,7 +5189,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: functional_entity
     role_type: ComplexPhysicalObject
@@ -5576,12 +5211,11 @@ frames:
     uses:
     - education
 - name: gain-possession
-  definition: Recipient acquires Possession from some Source (location or person)
   frame_type:
   - Cog
   frame_families:
   - Excluded frames
-  - Possession Frames
+  - Possession frames
   roles:
   - name: getting_x_schema
     role_type: XSchema
@@ -5635,8 +5269,6 @@ frames:
     subcase_of:
     - recreational-competition
 - name: game
-  definition: This is the competitive version of game, where there are at least two players and there
-    is an outcome with a winner and loser.
   frame_type:
   - Composed
   - Frame
@@ -5663,13 +5295,8 @@ frames:
     subcase_of:
     - recreational-competition
 - name: gap-in-path
-  definition: 'A gap or geographic void that impedes or prevents motion along that path
-
-
-    This frame is used as source in Economic Inequality metaphors such as those about the gap between
-    the rich and the poor'
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Motion impediments frames
   - Motion-affecting frames
   lexical_units:
@@ -5706,7 +5333,6 @@ frames:
     subcase_of:
     - object
 - name: geographic-void
-  definition: Deep holes and chasms
   frame_type:
   - Frame
   frame_families:
@@ -5751,11 +5377,6 @@ frames:
     - judgment
     - process
 - name: government
-  definition: A Governing entity (an official government institution) has exclusive legitimate authority
-    to govern the people (governed) who are physically present in a particular geographic region (jurisdiction).
-    The domain of authority includes a broad range of functional domains(governed-activities). For a given
-    region/level of government, it is generally the case that a single 'government' governs that region
-    (e.g. there are not competing state governments within a state).
   frame_type:
   - Frame
   frame_families:
@@ -5817,7 +5438,6 @@ frames:
     - evaluation
     - purposeful-action
 - name: government-executive-action
-  definition: Modeled on US exec branch
   frame_type:
   - Frame
   frame_families:
@@ -5835,11 +5455,6 @@ frames:
     subcase_of:
     - governing-action
 - name: government-institution
-  definition: 'Somewhere (in this or related frame) need to add a role for the ''type'' of government
-    system, e.g. democracy, autocracy
-
-
-    There really should not be any LUs at this level.'
   frame_type:
   - Composed
   - Frame
@@ -5870,14 +5485,10 @@ frames:
     uses:
     - government
 - name: government-institution-us
-  definition: The U.S. government is an example (salient subcase) of the Government institution frame.
-    It includes particular structures such as executive, judicial and legislative branches. It is NOT
-    a parliamentary system, where the elected head of state is the majority leader in parliament; instead
-    it is a presidential system.  Frames for these two subclasses should also be created.
   frame_type:
   - Frame
   frame_families:
-  - Function of Government frames
+  - Function of government frames
   - Governance frames
   - Government frames
   roles:
@@ -5916,7 +5527,7 @@ frames:
   - Cog
   - Composed
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   - Impediment and enablement frames
   - Object frames
   lexical_units:
@@ -5947,16 +5558,12 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Emotion Frames
+  - Emotion frames
   lexical_units:
   - avarice.a
   - greed.n
   - greedy.a
 - name: group
-  definition: A set of entities that are seen as related and/or similar in one or more respects.  Prototypically,
-    these entities are the same 'kind' of thing and are spatially proximate to one another.  Different
-    metaphorical construals of groups are possible, involving Posssession, Containment, and/or PartWhole
-    strucutre.
   frame_type:
   - Cog
   roles:
@@ -5986,8 +5593,6 @@ frames:
     subcase_of:
     - category
 - name: guided-motion
-  definition: 'Central case: Two people are moving along the same path, with one person''s motion (the
-    leader) serving as the ''guide'' to the other person''s motion (the follower).'
   frame_type:
   - Frame
   - Primary
@@ -5995,7 +5600,7 @@ frames:
   - Affected movement frames
   - Guided motion frame family
   - Leadership frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   roles:
@@ -6019,8 +5624,6 @@ frames:
     subcase_of:
     - affected-motion
 - name: gun-control
-  definition: A general frame for governmental controls on gun (and/or ammunition) ownership, use, sale,
-    distribution, etc.
   frame_type:
   - Frame
   frame_families:
@@ -6164,8 +5767,6 @@ frames:
     uses:
     - gun-control
 - name: gun-debate
-  definition: supposed to capture only the debate aspect of the case study, and is intended to be neutral
-    with respect to viewpoint
   frame_type:
   - Frame
   frame_families:
@@ -6184,7 +5785,6 @@ frames:
     uses:
     - debating
 - name: gun-industry
-  definition: The manufacturing and sale of guns, any aspect of the industry.
   frame_type:
   - Frame
   frame_families:
@@ -6207,8 +5807,6 @@ frames:
     - gun-possession
 - name: gun-law-decision-making
 - name: gun-legislation
-  definition: Not specifically Gun rights legislation or Gun control legislation, but a neutral form of
-    gun legislation, of which the latter are subcases. No LUs here please. (Oana)
   frame_families:
   - Gun debate
   - Legislation frames
@@ -6218,8 +5816,6 @@ frames:
     uses:
     - personal-weapon
 - name: gun-ownership
-  definition: 'There''s a sister frame to this: Gun possession. For now let''s keep both, we''ll consolidate
-    them soon. oana'
   frame_type:
   - Frame
   frame_families:
@@ -6237,8 +5833,6 @@ frames:
     related_to:
     - gun-rights
 - name: gun-possession
-  definition: 'There''s a sister frame to this: Gun ownership. For now let''s keep both, we''ll consolidate
-    them soon. oana'
   frame_type:
   - Frame
   frame_families:
@@ -6268,12 +5862,6 @@ frames:
     incorporates_as_role:
     - personal-weapon
 - name: gun-rights
-  definition: 'We may want to have separate frames for ''right to bear arms'' (gun rights) and the ''right
-    to self-defense''.
-
-
-    We may also want to keep Gun rights separate from Gun possession; the latter metonymically triggers
-    the former. The roles in this frame should be all about the rights, not the guns. (Oana)'
   frame_type:
   - Frame
   frame_families:
@@ -6409,7 +5997,6 @@ frames:
     - gun-rights
     - personal-weapon
 - name: gun-use
-  definition: Different from Gun Possession.
   frame_type:
   - Frame
   frame_families:
@@ -6425,7 +6012,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Emotion Frames
+  - Emotion frames
   roles:
   - name: bodily_effect
   - name: body
@@ -6440,13 +6027,6 @@ frames:
     - emotion
 - name: hardness
 - name: harm
-  definition: 'Scenario: negative impact to some entity, and the process that causes that harm
-
-
-    This is a high level domain, do not include LMs here.
-
-
-    This frame is used by: Experience_harm, Cause_harm, etc. Include LUs there.'
   frame_type:
   - Frame
   frame_families:
@@ -6471,7 +6051,6 @@ frames:
     subcase_of:
     - causation
 - name: harm-to-living-entity
-  definition: Physical harm to a living entity
   frame_type:
   - Frame
   frame_families:
@@ -6537,7 +6116,7 @@ frames:
   - Frame
   - Primary
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: degree_of_health
   - name: domain_of_health
@@ -6610,13 +6189,11 @@ frames:
     subcase_of:
     - perception
 - name: heat
-  definition: need to decide if we want to separate internal body temperature from external temperature
-    (i.e. AFFECTION IS WARMTH)
   frame_type:
   - Cog
   - Primary
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: entity
     role_type: Entity
@@ -6725,12 +6302,10 @@ frames:
     subcase_of:
     - rights
 - name: hunger
-  definition: This entry is dedicated to the cog corresponding to the internal sensation of hunger, rather
-    than the frame that would be the external behavioral correlates of hunger.
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   roles:
   - name: experiencer
   - name: hunger_sensation
@@ -6750,7 +6325,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   - Excluded frames
   roles:
   - name: idea_cognizer
@@ -6792,8 +6367,6 @@ frames:
     scalar_opposition_to:
     - morality
 - name: impact
-  definition: A scene describing one trajector moving towards a landmark and making inpact with it, or
-    two trajectors moving towards each other and meeting each other with some force.
   frame_type:
   - Frame
   frame_families:
@@ -6824,23 +6397,11 @@ frames:
     - force-application
     - physical-harm
 - name: impediment-to-motion
-  definition: 'This is a general frame that encapsulates both: active impediments of any kind (a subframe
-    called Motion_impediments), and FAILURE TO enable (a subframe called Lack_of_enablement).
-
-    Scenario: motion is impeded either by some barrier or antagonistic force; or by the failure to aid/enable
-    motion
-
-
-    It refers to impediments in the domain of Motion, as opposed to impediments in the domain of Action.
-    See Impediment_to_action for the latter.
-
-
-    This is a high level frame. Do NOT add LUs here, but either to Motion_impediments or Lack_of_enablement.'
   frame_type:
   - Cog
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   roles:
   - name: impeded_entity
   - name: impediment
@@ -6848,10 +6409,9 @@ frames:
     subcase_of:
     - affected-motion
 - name: impeding-downward-motion
-  definition: Objects that impede the downward motion of another entity.
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   - Motion-affecting frames
   lexical_units:
   - net.n
@@ -6863,10 +6423,6 @@ frames:
     uses:
     - downward-motion
 - name: importance
-  definition: 'FN definition: A Factor affects the outcome of an Undertaking, which can be a goal-oriented
-    activity or the maintenance of a desirable state, the work in a Field, or something portrayed as affecting
-    an Interested_party. A Reason may be given for the importance of the Factor. The Degree of importance
-    may also be specified.'
   frame_type:
   - Frame
   roles:
@@ -6878,12 +6434,9 @@ frames:
   - name: importance_scale
     role_type: Scale
 - name: impoverished
-  definition: The LUs for this frame refer either to poor people (e.g. the indigent) or to the state of
-    being impoverished (e.g. penniless).  These elaborate the 'experiencer' and the 'impoverishment' roles
-    of this frame, respectively.
   frame_families:
   - Poverty-related frame network
-  - The Poor frames
+  - The poor frames
   roles:
   - name: economic_state
   - name: experiencer
@@ -6927,7 +6480,7 @@ frames:
     - change-of-state
 - name: improving-economic-status
   frame_families:
-  - Economic Inequality frames
+  - Economic inequality frames
   - Poverty-related frame network
   relations:
     subcase_of:
@@ -6977,13 +6530,12 @@ frames:
     subcase_of:
     - access-to-a-location
 - name: income
-  definition: earned income, as in from a salary/wages; cf Investment
   frame_type:
   - Frame
   frame_families:
   - Excluded frames
-  - Resource Frames
-  - Wealth and Social Class frames
+  - Resource frames
+  - Wealth and social class frames
   lexical_units:
   - compensate.v
   - compensation.n
@@ -7010,7 +6562,7 @@ frames:
 - name: increase-ease-of-motion
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   lexical_units:
   - grease.n
   - grease.v the wheel.n
@@ -7021,15 +6573,11 @@ frames:
     uses:
     - motion
 - name: increase-size
-  definition: 'some LUs may belong in more specific frames (e.g. ''explosion'').
-
-
-    There was an additional Growth frame. I deleted it. OAD'
   frame_type:
   - Frame
   frame_families:
   - Physical properties frame family
-  - Scale Frames
+  - Scale frames
   lexical_units:
   - amplification.n
   - amplify.v
@@ -7070,7 +6618,7 @@ frames:
   - Frame
   - Primary
   frame_families:
-  - Eating Frames
+  - Eating frames
   roles:
   - name: ingestibles
   - name: ingestion_process
@@ -7092,9 +6640,6 @@ frames:
     subcase_of:
     - bodily-functioning
 - name: injurious-gun-use
-  definition: This general frame is intended to represent the commonalities across a range of contexts
-    in which the discharge of a gun (potentially) results in injury to a person. Specific contexts, such
-    as criminal use of guns, and sanctioned use of guns (e.g. by the police) can be elaborated in subcases.
   frame_families:
   - Gun debate
   roles:
@@ -7122,7 +6667,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Zealotry Insanity Worship frame family
+  - Zealotry insanity worship frame family
   roles:
   - name: agitation_level
   - name: agitation_limit
@@ -7163,9 +6708,6 @@ frames:
     subcase_of:
     - mental-state
 - name: institution
-  definition: An institution is a collection of roles which can (but need not be) filled in by specific
-    members. Also, institutions have rules/policies that 'govern' the actions of the institution's different
-    roles (and the people who fill them).
   frame_type:
   - Frame
   frame_families:
@@ -7203,10 +6745,6 @@ frames:
     - authority
     - institution
 - name: instrument
-  definition: 'Created for IARPA testing, see LUs and Spanish.
-
-
-    Defined as some object used in order to carry out some action.'
   frame_type:
   - Frame
   frame_families:
@@ -7224,7 +6762,6 @@ frames:
     uses:
     - purposeful-action
 - name: insurmountable-differences-in-distance
-  definition: do we really need this?
   lexical_units:
   - canyon
   - chasm
@@ -7233,7 +6770,6 @@ frames:
     subcase_of:
     - differences-in-distance
 - name: international-relations
-  definition: Needs plenty of development
   frame_type:
   - Frame
   frame_families:
@@ -7270,13 +6806,11 @@ frames:
     - source-path-goal
 - name: intoxicants
 - name: investment
-  definition: This refers to the strictly financial sense of investment. Other meanings of investment
-    will make use of this core meaning.
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
-  - Resource Frames
+  - Economic frames
+  - Resource frames
   roles:
   - name: invested_value
   - name: investment_goal
@@ -7303,7 +6837,6 @@ frames:
     - financial-resource
     - trust
 - name: journey
-  definition: 'Definition of a Journey: a long sequence of motions to one or more destinations.'
   frame_type:
   - Composed
   - Frame
@@ -7339,9 +6872,8 @@ frames:
     uses:
     - traveling
 - name: judgment
-  definition: Evaluation with scalar sense of good/bad
   frame_families:
-  - Evaluation Frames
+  - Evaluation frames
   - Excluded frames
   roles:
   - name: judged_action
@@ -7359,10 +6891,6 @@ frames:
     subcase_of:
     - evaluation
 - name: judicial-action
-  definition: 'This frame is modeled after the US judicial system
-
-
-    Cultural scope checked for Persian--Aria'
   frame_type:
   - Frame
   frame_families:
@@ -7395,10 +6923,6 @@ frames:
     uses:
     - judicial-action
 - name: judicial-decision-making
-  definition: 'Based on US judicial system
-
-
-    Cultural scope checked for Persian--Aria'
   frame_type:
   - Frame
   frame_families:
@@ -7476,9 +7000,8 @@ frames:
     causal_relation_with:
     - death
 - name: knowing
-  definition: need to decide if this frame includes 'coming to know', or only the state of knowing
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   roles:
   - name: knower
   - name: knowing_x_schema
@@ -7490,7 +7013,7 @@ frames:
     - cognizing
 - name: knowledge
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   - Education frames
   relations:
     uses:
@@ -7512,7 +7035,7 @@ frames:
   - Cog
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   relations:
     subcase_of:
     - enablement
@@ -7522,7 +7045,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   relations:
     subcase_of:
     - market
@@ -7563,7 +7086,7 @@ frames:
   - Frame
   frame_families:
   - Governance frames
-  - The Law frames
+  - The law frames
   roles:
   - name: illegal_actions
     role_type: Actions
@@ -7609,7 +7132,6 @@ frames:
     scalar_opposition_to:
     - firm
 - name: leadership
-  definition: Entered to match Heather's target families.
   frame_type:
   - Frame
   frame_families:
@@ -7635,7 +7157,7 @@ frames:
   - Composed
   - Frame
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   - Education frames
   - Excluded frames
   roles:
@@ -7653,15 +7175,10 @@ frames:
     uses:
     - knowing
 - name: leftover-food
-  definition: 'This is meant to refer to undesirable scraps of food
-
-
-    I am not entirely sure about the name of this one but it is meant to account for the cluster of LU''s
-    such as "leftovers" "scraps" "sliver of the pie" and "crumbs".'
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   lexical_units:
   - crumb.n
   - dreg.n
@@ -7678,7 +7195,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - The Law frames
+  - The law frames
   roles:
   - name: action
   - name: actor
@@ -7736,7 +7253,6 @@ frames:
     related_to:
     - legislation-drafting
 - name: legislative-action
-  definition: this frame is modeled on US government
   frame_type:
   - Frame
   frame_families:
@@ -7768,8 +7284,6 @@ frames:
     subcase_of:
     - governing-action
 - name: legislative-branch
-  definition: Many kinds of government, though not all, have legislative branches, which do Legislative-action,
-    a subclass of government action.
   frame_type:
   - Frame
   frame_families:
@@ -7803,22 +7317,16 @@ frames:
   frame_type:
   - Frame
 - name: liberal-market
-  definition: 'Companies are supposed to allow: living wages, regulations for safety, worker rights, regulation
-    for taxes, controls on investment banks and trading. See Dodd-Frank law.'
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   lexical_units:
   - market.n
   relations:
     subcase_of:
     - market
 - name: life
-  definition: 'A person''s life, not the state of being alive.
-
-
-    Defined as a sequence of actions performed over a lifetime.'
   frame_type:
   - Frame
   roles:
@@ -7834,10 +7342,6 @@ frames:
     subcase_of:
     - sequence-of-actions
 - name: life-cycle
-  definition: 'Life stages can be viewed as a cycle or a linear path.
-
-    Note: we may want to change this to ''Life developmental stages'', which can be metaphorically understood
-    in various ways.'
   frame_type:
   - Frame
   roles:
@@ -7853,7 +7357,6 @@ frames:
     subcase_of:
     - cycle
 - name: light-source
-  definition: light emitted from an object or other light source
   lexical_units:
   - aurora.n
   - beacon.n
@@ -7876,10 +7379,9 @@ frames:
     uses:
     - luminosity
 - name: lightness
-  definition: have high level or increase level of lightness
   frame_families:
   - Perception frames
-  - Scale Frames
+  - Scale frames
   lexical_units:
   - bright.a
   - brighten.v
@@ -7903,7 +7405,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Communication Frames
+  - Communication frames
 - name: liquid
   frame_type:
   - Frame
@@ -7920,7 +7422,6 @@ frames:
     subcase_of:
     - substance
 - name: living
-  definition: second phase/process of life cycle
   frame_type:
   - Frame
   roles:
@@ -7957,12 +7458,10 @@ frames:
     scalar_opposition_to:
     - tight-fit
 - name: lose-possession
-  definition: 'Loss of possession of an object: at initial stage, donor possesses object, while at final
-    stage donor does not possess object'
   frame_type:
   - Frame
   frame_families:
-  - Possession Frames
+  - Possession frames
   roles:
   - name: donor
   - name: lose_possession_x_schema
@@ -7980,15 +7479,11 @@ frames:
     incorporates_as_role:
     - possessable-object
 - name: losing
-  definition: Coming to no longer be in possession of an object, and also being unable to identify the
-    location of that object during the moment of loss. There is no visible cause of the loss (i.e. no
-    forceful removal of the object by an external agent, or removal of the object by a non-volitional
-    force).
   frame_type:
   - Frame
   - Primary
   frame_families:
-  - Possession Frames
+  - Possession frames
   roles:
   - name: loser
   - name: lost_object
@@ -7998,13 +7493,12 @@ frames:
     uses:
     - possession
 - name: luminosity
-  definition: Amount of light
   frame_type:
   - Cog
   - Composed
   frame_families:
   - Perception frames
-  - Scale Frames
+  - Scale frames
   roles:
   - name: light_level
   lexical_units:
@@ -8100,12 +7594,10 @@ frames:
     - causation
 - name: making
 - name: market
-  definition: We need to formulate a high level market frame, from which we will create special case market
-    frames (particular industries, job market, etc.). Roles are needed here.
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   lexical_units:
   - market.n
   relations:
@@ -8122,12 +7614,11 @@ frames:
     - relationship
 - name: mass
 - name: mass-motion
-  definition: Aggregate motion of a collection of entities acting as one
   frame_type:
   - Frame
   frame_families:
   - Internal motion frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   lexical_units:
@@ -8143,7 +7634,6 @@ frames:
     subcase_of:
     - motion
 - name: maze
-  definition: pathways that are confusing or difficult to navigate
   frame_families:
   - Motion impediments frames
   - Motion-affecting frames
@@ -8162,7 +7652,6 @@ frames:
   frame_type:
   - Frame
 - name: media
-  definition: Created to respond to demand for more target frames (May 2014).
   frame_type:
   - Frame
   frame_families:
@@ -8196,7 +7685,6 @@ frames:
     - communication
 - name: meeting
 - name: membership
-  definition: Not specifically social group membership (see Related frame).
   frame_type:
   - Frame
   lexical_units:
@@ -8208,7 +7696,6 @@ frames:
 - name: memorization
 - name: mental-state
 - name: military-leadership
-  definition: Created in order to store military-specific leader types.
   frame_type:
   - Frame
   lexical_units:
@@ -8232,14 +7719,13 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   relations:
     uses:
     - cognizing
     related_to:
     - sentient-entity
 - name: misfortune
-  definition: Unexpected negative events or circumstances
   frame_type:
   - Frame
   frame_families:
@@ -8264,11 +7750,10 @@ frames:
   frame_families:
   - Vehicle frames
 - name: monetary-evaluation
-  definition: evaluating the worth of a resource
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   roles:
   - name: evaluator
   - name: resource
@@ -8283,9 +7768,9 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   - Money frames
-  - Resource Frames
+  - Resource frames
   lexical_units:
   - banknote.n
   - bucks
@@ -8341,7 +7826,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Evaluation Frames
+  - Evaluation frames
   roles:
   - name: behavior
   - name: evaluee
@@ -8382,16 +7867,11 @@ frames:
     scalar_opposition_to:
     - immorality
 - name: motion
-  definition: "This is the most general Motion frame.  \n\nFrame description: All or part of an entity\
-    \ (mover) moves with respect to some landmark or background. This general frame encompasses both \"\
-    motion-in-place\" (movement that can occur within a fixed location, e.g. spinning) and translational\
-    \ motion (in which the mover occupies a series of different locations over time -- see Motion_Along_A_Path).\
-    \  This frame could also be used to specify lack of motion (i.e. speed = 0)."
   frame_type:
   - Cog
   - Primary
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8417,13 +7897,11 @@ frames:
     uses:
     - physical-entity
 - name: motion-affecting-actors
-  definition: An animate entity acts on a potential mover (an object or other animate entity), negatively
-    affecting that mover's ability to move.
   frame_type:
   - Cog
   - Composed
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Motion-affecting frames
   roles:
   - name: actor
@@ -8433,34 +7911,11 @@ frames:
     - force-application
     - motion-affecting-external-factors
 - name: motion-affecting-external-factors
-  definition: 'This is a very high level frame. It refers to things/factors/processes/entities/conditions
-    etc. external to a mover or moving entity, that can (either positively or negatively, unspecified)
-    affect the mover''s motion (motion here being unspecified as to whether or not it''s on a path or
-    goal-directed).
-
-
-    Children of this frame include:
-
-    Motion-affecting objects (e.g. burdens and restraints)
-
-    Motion-affecting actors (people acting directly on the mover)
-
-    Motion-affecting forces (non-agentive, non-entity forces acting on the mover, e.g. winds)
-
-    Motion-affecting properties of the landscape (e.g. smooth/rocky paths)
-
-
-    None of these are specified for negative/positive affect or outcome.
-
-    Go to each of the above frames for descriptions.
-
-
-    Do not add any more LUs here; rather, add LUs in specific subcases of this general frame.'
   frame_type:
   - Composed
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   - Motion-affecting frames
   roles:
   - name: affected_motion
@@ -8480,7 +7935,7 @@ frames:
   - Cog
   - Composed
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Motion-affecting frames
   relations:
     subcase_of:
@@ -8506,27 +7961,18 @@ frames:
   - Composed
   frame_families:
   - Impediment and enablement frames
-  - Motion Frames
+  - Motion frames
   - Motion-affecting frames
   relations:
     subcase_of:
     - motion-affecting-external-factors
 - name: motion-along-a-path
-  definition: 'A moving entity  starts out in one place and ends up in another, having traversed the distance
-    between these places
-
-
-    A moving entity (the mover) starts out in one place (Source), and ends up in another place (Goal),
-    having covered some space between these two (Path)
-
-
-    I removed the LU ''go'' for now (11/7/2014), to help extraction. We can add it back later! (Oana)'
   frame_type:
   - Cog
   - Composed
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8558,14 +8004,12 @@ frames:
     incorporates_as_role:
     - physical-path
 - name: motion-away-from-a-bounded-region
-  definition: Translational motion of some entity, with motion starting inside some (bounded) area, and
-    ending outside that area
   frame_type:
   - Cog
   - Composed
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8590,14 +8034,13 @@ frames:
     scalar_opposition_to:
     - motion-to-a-bounded-region
 - name: motion-away-from-a-location
-  definition: Translational motion of some entity, away from some location
   frame_type:
   - Cog
   - Primary
   frame_families:
   - Directional movement frames
   - Location frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8632,7 +8075,7 @@ frames:
   - Frame
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8647,12 +8090,11 @@ frames:
     subcase_of:
     - motion-with-respect-to-an-undesirable-entity
 - name: motion-back-and-forth
-  definition: non-circular motion about a fixed location
   frame_type:
   - Frame
   frame_families:
   - Internal motion frames
-  - Motion Frames
+  - Motion frames
   - Moving entity frames
   roles:
   - name: direction
@@ -8688,15 +8130,6 @@ frames:
     - non-translational-motion
 - name: motion-impediment
 - name: motion-impediments
-  definition: "This is a generic frame that captures all kinds of impediments, whether they are obstacles\
-    \ in one's way, restraints, barriers, etc. This frame is unspecified as to the type of impediment.\n\
-    \nThis is a generic frame that captures all kinds of impediments, whether they are obstacles in one's\
-    \ way, restraints, barriers, etc. This frame is unspecified as to the type of impediment. \n\nIt is\
-    \ also unspecified for type of motion (so not necessarily motion along a path). There was another\
-    \ frame called Difficulties_in_reaching_a_destination which was specified for the type of motion,\
-    \ namely Motion_along_a_path. However this was deleted for now. It can be recreated again in the future\
-    \ if necessary.\n\nIt has other special cases, specialized by type of impediment.\n\nIts opposite\
-    \ is Enablement."
   frame_type:
   - Cog
   - Composed
@@ -8741,17 +8174,12 @@ frames:
     uses:
     - motion
 - name: motion-out-of-a-location
-  definition: 'Translational motion of some entity, with motion starting inside some (bounded) area, and
-    ending outside that area
-
-
-    "leave" is temporarily removed because it''s producing bad LMs.'
   frame_type:
   - Cog
   frame_families:
   - Directional movement frames
   - Location frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8782,14 +8210,12 @@ frames:
     incorporates_as_role:
     - bounded-region
 - name: motion-to-a-bounded-region
-  definition: Translational motion of some entity, with motion starting outside of some (bounded) area,
-    and ending inside that area
   frame_type:
   - Frame
   frame_families:
   - Directional movement frames
   - Location frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8823,13 +8249,12 @@ frames:
     scalar_opposition_to:
     - motion-away-from-a-bounded-region
 - name: motion-to-a-destination
-  definition: No LUs here please!
   frame_type:
   - Cog
   - Composed
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   roles:
   - name: destination
@@ -8845,7 +8270,7 @@ frames:
   - Composed
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8872,17 +8297,11 @@ frames:
     scalar_opposition_to:
     - motion-away-from-a-location
 - name: motion-to-avoid-a-destination
-  definition: 'Motion in order to avoid being at some location (which entails motion to some other destination).  Note
-    that Avoiding in FrameNet refers to situations, not to locations.
-
-
-    Need to decide if this is essentially a duplicate of the Avoiding obstacles frame.  Removed LU ''avoid''
-    (12/2/14)'
   frame_type:
   - Composed
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Translational motion frames
   roles:
@@ -8898,13 +8317,12 @@ frames:
     uses:
     - proximal-distal
 - name: motion-with-respect-to-an-undesirable-entity
-  definition: Mover moves so as to not be co-located with an undesirable entity.
   frame_type:
   - Composed
   - Frame
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8917,7 +8335,7 @@ frames:
     - self-propelled-motion
 - name: moving-backward
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Moving entity frames
   roles:
   - name: backward_direction
@@ -8939,7 +8357,7 @@ frames:
   - Cog
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8955,14 +8373,12 @@ frames:
     subcase_of:
     - motion-along-a-path
 - name: moving-into-a-bounded-region
-  definition: Translational motion of some entity, with motion starting outside of some (bounded) area,
-    and ending inside that area
   frame_type:
   - Frame
   frame_families:
   - Directional movement frames
   - Location frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -8997,20 +8413,17 @@ frames:
     scalar_opposition_to:
     - motion-out-of-a-location
 - name: moving-object
-  definition: No LUs here, this is highest level!
   frame_families:
-  - Motion Frames
+  - Motion frames
   relations:
     uses:
     - motion-along-a-path
     - object
 - name: moving-out-of-an-undesirable-location
-  definition: Might change this to 'Moving away from an undesirable location', and change subcase relation
-    as well.
   frame_families:
   - Directional movement frames
   - Location frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -9025,7 +8438,6 @@ frames:
     - motion-out-of-a-location
 - name: multiplex
 - name: narrowing-width-of-bounded-region
-  definition: needs further work -- add roles and more LUs if we keep this frame
   frame_families:
   - Impediment and enablement frames
   lexical_units:
@@ -9111,7 +8523,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Resource Frames
+  - Resource frames
   relations:
     subcase_of:
     - resource
@@ -9120,8 +8532,6 @@ frames:
   frame_type:
   - Frame
 - name: negatively-evaluated-condition
-  definition: This frame should be subcase of some sort of "Valence-Evaluated Condition" frame, which
-    would itself make use of a "ValenceEvaluation" frame.  These other frames have not yet been created.
   frame_families:
   - Poverty-related frame network
   - Social problem frames
@@ -9131,7 +8541,6 @@ frames:
     uses:
     - evaluation
 - name: negotiation
-  definition: Created to house LUs.
   frame_type:
   - Frame
   lexical_units:
@@ -9143,8 +8552,6 @@ frames:
   - negotiation.n
   - negotiator.n
 - name: neighbor
-  definition: "People who live near each other are Neighbors. \nIn some canonical frame, they also help\
-    \ each other or are supportive of each other in a community."
   frame_type:
   - Frame
   roles:
@@ -9167,12 +8574,11 @@ frames:
     related_to:
     - system
 - name: non-translational-motion
-  definition: Non-lexical frame for motion that does not involve SPG; types of motion-in-place
   frame_type:
   - Cog
   - Primary
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   roles:
@@ -9184,7 +8590,6 @@ frames:
     - motion
 - name: noticing
 - name: nuclear-family
-  definition: A family group consisting of two parents and their children
   frame_type:
   - Frame
   frame_families:
@@ -9231,7 +8636,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   lexical_units:
   - healthy food
   - nutrition.n
@@ -9241,16 +8646,6 @@ frames:
     subcase_of:
     - food
 - name: object
-  definition: "A bounded physical entity\n\nSome of the roles in this frame (size, shape, substance, weight)\
-    \ are properties whose values are used to classify and/or distinguish between different types of objects.\
-    \ The current list of roles is not intended to be exhaustive.  For a given instance or type of object,\
-    \ the values of at least some of these properties tend to stay the same over time.  And, differences\
-    \ in values are one means to distinguish between objects. \n\nAs indicated by the incorporation of\
-    \ the Bounded region schema (and the roles, 'object_interior' and 'object_exterior_surface'), Objects\
-    \ are occupy a relatively continuous, bounded region of space.  But, the specific location they occupy\
-    \ may vary (i.e. location is not necessarily a defining property of Objects); in fact, common fate\
-    \ when changing location (i.e. the object remains together when it moves) is probably another important\
-    \ criteria for categorizing something as an object."
   frame_type:
   - Cog
   - Primary
@@ -9281,7 +8676,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   lexical_units:
   - drill.v
   - embed.v
@@ -9306,10 +8701,8 @@ frames:
     subcase_of:
     - object-manipulation
 - name: object-manipulation
-  definition: Actor acts on an object, typically with hand(s). E.g. grasp, squeeze, hold.  Actor's action
-    may enable him to control location and/or orientation of object.
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   - Action frames
   - Force dynamic frames
   roles:
@@ -9326,7 +8719,7 @@ frames:
   - Cog
   - Composed
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   - Forced movement frame family
   - Movement frames
   - Moving entity frames
@@ -9357,7 +8750,6 @@ frames:
     uses:
     - object-manipulation
 - name: obscenity
-  definition: Renamed from Indecent situation
   frame_type:
   - Frame
   frame_families:
@@ -9379,7 +8771,6 @@ frames:
     - immorality
 - name: ocean
 - name: open
-  definition: Separation without loss of integrity.
   frame_type:
   - Frame
   frame_families:
@@ -9400,13 +8791,12 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Act on Object frames
+  - Act on object frames
   - Machine frames
   lexical_units:
   - operate.v
   - run.v
 - name: opportunities
-  definition: High-level abstract opportunity frame.
   frame_type:
   - Frame
   lexical_units:
@@ -9414,8 +8804,6 @@ frames:
   - opportunities
   - opportunity
 - name: organization
-  definition: An organization is an intentionally formed human social group of members, with internal
-    structure and various possible relations between memebers.
   frame_type:
   - Frame
   frame_families:
@@ -9437,10 +8825,6 @@ frames:
     subcase_of:
     - social-group
 - name: organization-of-power
-  definition: Democracies in different countries strike different balances as to the organization of power
-    within the governmental structure of the state. This usually pertains to the balance of judicial,
-    executive, and legislative powers, along with external authorities such as religious organizations,
-    the military, and private corporations.
   frame_type:
   - Frame
   frame_families:
@@ -9480,7 +8864,7 @@ frames:
   - Frame
   frame_families:
   - Aversion frames
-  - Eating Frames
+  - Eating frames
   roles:
   - name: degree_of_overeating
   - name: food
@@ -9521,11 +8905,10 @@ frames:
     related_to:
     - excess-body-weight
 - name: ownership
-  definition: How does this frame differ from the Possession frame?
   frame_type:
   - Frame
   frame_families:
-  - Possession Frames
+  - Possession frames
   lexical_units:
   - own.v
   - owner.n
@@ -9551,10 +8934,6 @@ frames:
     subcase_of:
     - blood-sucking-creature
 - name: parent
-  definition: Instead of having an individual Parent frame, it may be better to define this as a role
-    within one or more Family frames (e.g. Family, nuclear).  If we do want to keep this frame, we could
-    have a 'parental duties/responsibilities' role, but shouldn't list LUs for each of these duties within
-    this frame (e.g. provide, protect).
   frame_type:
   - Frame
   frame_families:
@@ -9582,7 +8961,7 @@ frames:
   - Cog
   - Primary
   frame_families:
-  - Image Schemas
+  - Image schemas
   roles:
   - name: part_1
   - name: part_2
@@ -9600,10 +8979,9 @@ frames:
 - name: passion
 - name: path
 - name: paths-out-of-a-location
-  definition: A pathway that starts in a (bounded) area and ends outside of that area
   frame_families:
   - Location frames
-  - Motion Frames
+  - Motion frames
   - Moving entity frames
   - Translational motion frames
   lexical_units:
@@ -9624,7 +9002,6 @@ frames:
     subcase_of:
     - physical-path
 - name: payment
-  definition: 'Let''s think about where to put: toll, fee, cost, tariff.'
   frame_type:
   - Frame
   frame_families:
@@ -9660,9 +9037,6 @@ frames:
     incorporates_as_role:
     - animate-entity
 - name: performance
-  definition: 'Created to accommodate LUs needed for extraction in June 2014.
-
-    Hmm, what source concept should ''stage'' be in (as in ''the electoral stage'')?'
   frame_type:
   - Frame
   lexical_units:
@@ -9709,14 +9083,6 @@ frames:
     - purposeful-action
 - name: personal-preferance
 - name: personal-weapon
-  definition: 'We may want to restrict this to Firearms (or Personal firearms), which would mean excluding
-    things such as knives and bombs.
-
-
-    Created for IARPA case study oy2.
-
-
-    ammo, ammunition, bullet, weapon, explosive removed as LUs.'
   frame_type:
   - Frame
   frame_families:
@@ -9744,7 +9110,6 @@ frames:
     related_to:
     - gun-debate
 - name: pest
-  definition: insect, small animal, or fungus that is annoying or harmful and destructive
   frame_type:
   - Frame
   frame_families:
@@ -9842,7 +9207,6 @@ frames:
     subcase_of:
     - attribute
 - name: physical-combat
-  definition: Figthing between two or more people
   frame_type:
   - Frame
   frame_families:
@@ -9891,8 +9255,6 @@ frames:
   - wrangle.v
   - wrestle.v
 - name: physical-competition
-  definition: Competition between two entities that involves physical contact; often with the goal of
-    achieving a resource such as territory
   frame_type:
   - Frame
   frame_families:
@@ -9915,13 +9277,10 @@ frames:
     subcase_of:
     - competition
 - name: physical-connection
-  definition: 'Physical connections between two (or more) objects. Roles in the frame support two possible
-    perspectives: (1) Two items ("connected_items" role) attached together by a connector; (2) one item
-    (item1) attached to a fixed object by a connector'
   frame_type:
   - Frame
   frame_families:
-  - Event Structure frames
+  - Event structure frames
   roles:
   - name: connected_items
   - name: connector
@@ -9944,11 +9303,6 @@ frames:
   - strap.v
   - tie.n
 - name: physical-entity
-  definition: 'Physically percievable object or substance
-
-
-    Physical entities have one or more perceivable properties (e.g. color, smell, texture), and ''force-dynamic''
-    properties (e.g. mass, hardness, etc.), and exist over some span of time.'
   frame_type:
   - Cog
   frame_families:
@@ -10011,15 +9365,11 @@ frames:
     - source-path-goal
 - name: physical-restraining-of-mouth
 - name: physical-strength
-  definition: 'This frame is for the ''strong'' end of the physical strength scale.
-
-
-    Removed "fortitude"...reconsider if we need to add it back.'
   frame_type:
   - Frame
   frame_families:
   - Physical properties frame family
-  - Scale Frames
+  - Scale frames
   lexical_units:
   - backbone.n
   - brawn.n
@@ -10041,19 +9391,15 @@ frames:
     perspective_on:
     - physical-strength-scale
 - name: physical-strength-scale
-  definition: High level. No LUs please.
   frame_type:
   - Frame
   frame_families:
   - Physical properties frame family
-  - Scale Frames
+  - Scale frames
   relations:
     subcase_of:
     - scale
 - name: physical-structure
-  definition: A complex physical structure whose parts have some sort of "structural" relation to one
-    another (e.g. parts are physically attached to one another) and which has been purposely constructed
-    with some functionality in mind.
   frame_type:
   - Composed
   - Frame
@@ -10113,7 +9459,6 @@ frames:
     scalar_opposition_to:
     - physical-strength
 - name: placing-in-a-protected-location
-  definition: Pertains specifically to the types of LUs listed here.
   frame_type:
   - Frame
   frame_families:
@@ -10166,15 +9511,6 @@ frames:
     incorporates_as_role:
     - plants
 - name: plants
-  definition: 'Please note: there exist the following frames: Plants, Weeds, Tending to plants, Plant
-    life cycle. Add LUs accordingly.
-
-
-
-    This frame assumes a knowledge system that distinguishes between animal and plant life, or sentient
-    and non-sentient living entities. Our Linnean taxonomy of plants also structures to a great extent
-    our plant-life categorization, so for the purpose of metaphor mapping, some plants will be more plant-like
-    than others (e.g. flowers more-so than seaweed), and the selective mapping will reflect this categorization.'
   frame_type:
   - Frame
   frame_families:
@@ -10211,7 +9547,6 @@ frames:
     - gardening
     - plant-life-cycle
 - name: plurality
-  definition: Multiple entities of a given 'kind'
   frame_type:
   - Cog
   roles:
@@ -10228,7 +9563,6 @@ frames:
   - police.v
   - policeman.n
 - name: political-competition
-  definition: Competition between two or more (groups of) people within a political context.
   frame_type:
   - Frame
   frame_families:
@@ -10244,11 +9578,6 @@ frames:
     subcase_of:
     - competition
 - name: political-equality
-  definition: 'Equal rights in political participation and being treated equally to other citizens under
-    the law; having equal access to voicing opinions and freedoms.
-
-
-    should really be related to political participation and citizenship frames'
   frame_type:
   - Frame
   frame_families:
@@ -10261,7 +9590,6 @@ frames:
     - rights
 - name: political-party
 - name: political-region
-  definition: a tentative frame for countries and other geopolitical regions.
   frame_type:
   - Frame
   frame_families:
@@ -10298,7 +9626,6 @@ frames:
   - politician.n
   - politics.n
 - name: portals
-  definition: is this Portal or Make Use of Portal or Open Portal?
   frame_families:
   - Impediment and enablement frames
   - Motion impediments frames
@@ -10345,12 +9672,11 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Scale Frames
+  - Scale frames
 - name: possessable-object
-  definition: This frame is created to be a role in the Possession frame.
   frame_families:
   - Entity frames
-  - Possession Frames
+  - Possession frames
   roles:
   - name: possessable_object
   relations:
@@ -10359,19 +9685,12 @@ frames:
     uses:
     - possession
 - name: possession
-  definition: 'Relation between a Possessor and a Possession
-
-
-    LUs have.v and hold.v temporarily removed. Please add back later.
-
-
-    Have we definitively established that Possession is the same as owning?'
   frame_type:
   - Cog
   - Primary
   frame_families:
   - Excluded frames
-  - Possession Frames
+  - Possession frames
   roles:
   - name: possess_relation
   - name: possess_relation_status
@@ -10393,11 +9712,9 @@ frames:
     incorporates_as_role:
     - possessable-object
 - name: possession-change
-  definition: this frame includes both getting (change from not having to having a possession) and losing
-    possession (change from having to not having a possession)
   frame_families:
   - Change-related frames
-  - Possession Frames
+  - Possession frames
   roles:
   - name: possession
   - name: possessor
@@ -10441,7 +9758,6 @@ frames:
     scalar_opposition_to:
     - wealth
 - name: power
-  definition: Cultural scope checked for Persian--Aria
   frame_type:
   - Frame
   frame_families:
@@ -10461,18 +9777,12 @@ frames:
   - name: predicate
   - name: subject
 - name: pressure
-  definition: 'A primitive frame defined relative to the amount of force and the rate of change in amount
-    of force perceived when that force is applied by an entity to another entity. May or may not involve
-    contact.
-
-
-    Pressure is essentially sustained force application.'
   frame_type:
   - Cog
   - Composed
   frame_families:
   - Force dynamic frames
-  - Object Event Structure frames
+  - Object event structure frames
   roles:
   - name: entity_applying_force_of_pressure
   - name: entity_receiving_force_of_pressure
@@ -10491,10 +9801,6 @@ frames:
     - fluid-containment
     - pressure
 - name: problem
-  definition: 'An undesirable situation that may require some solution
-
-
-    This frame was created to help identify phrases such as ''problem of poverty'' as non-metphoric'
   frame_type:
   - Frame
   lexical_units:
@@ -10549,42 +9855,35 @@ frames:
     subcase_of:
     - x-schema-continue
 - name: process-end
-  definition: '[Test frame. I''m trying something out (Oana).]'
   frame_families:
   - Excluded frames
   - X-schema family
   roles:
   - name: process_end
 - name: process-initial-state
-  definition: '[Test frame. I''m trying something out (Oana).]'
   frame_families:
   - Excluded frames
   - X-schema family
 - name: process-pause
-  definition: '[Test frame. I''m trying something out (Oana).]'
   frame_families:
   - Excluded frames
   - X-schema family
 - name: process-resume
 - name: process-start
-  definition: '[Test frame. I''m trying something out (Oana).]'
   frame_families:
   - Excluded frames
-  - x-schema family
+  - X-schema family
   roles:
   - name: process_start
 - name: process-stop
-  definition: '[Test frame. I''m trying something out (Oana).]'
   frame_families:
   - Excluded frames
   - X-schema family
 - name: process-stopped-state
-  definition: '[Test frame. I''m trying something out (Oana).]'
   frame_families:
   - Excluded frames
   - X-schema family
 - name: process-uncompleted-state
-  definition: '[Test frame. I''m trying something out (Oana).]'
   frame_families:
   - Excluded frames
   - X-schema family
@@ -10646,7 +9945,7 @@ frames:
     - harm
 - name: proximal
   frame_families:
-  - Image Schemas
+  - Image schemas
   lexical_units:
   - adjacent
   - approachable
@@ -10671,7 +9970,7 @@ frames:
   - Cog
   - Composed
   frame_families:
-  - Image Schemas
+  - Image schemas
   roles:
   - name: boundary
   - name: center
@@ -10683,14 +9982,12 @@ frames:
     uses:
     - proximity
 - name: proximity
-  definition: Refers to the proximity scale, and not solely to 'being close', which is only one end of
-    the scale.
   frame_type:
   - Cog
   - Primary
   frame_families:
-  - Image Schemas
-  - Scale Frames
+  - Image schemas
+  - Scale frames
   roles:
   - name: degree_of_proximity
   - name: ground
@@ -10706,7 +10003,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   relations:
     uses:
     - mind
@@ -10719,7 +10016,6 @@ frames:
     subcase_of:
     - harm
 - name: public-trust
-  definition: Cultural scope checked for Persian--Aria
   frame_type:
   - Frame
   frame_families:
@@ -10731,8 +10027,6 @@ frames:
     subcase_of:
     - trust-relationship
 - name: punishment
-  definition: This frame should probably be linked to some kind of Transgression or Crime frame (the reason
-    the person is being punished), and also have some relation to a Reward frame
   frame_families:
   - Crime frames
   - Harm
@@ -10776,7 +10070,6 @@ frames:
   - pure.a
   - purity.n
 - name: purposeful-action
-  definition: An action an actor performs with the intent of achieving some objective
   frame_type:
   - Composed
   frame_families:
@@ -10795,11 +10088,10 @@ frames:
     uses:
     - desiring
 - name: pursue
-  definition: Created to house LUs needed for extraction (June 2014).
   frame_type:
   - Frame
   frame_families:
-  - Motion Frames
+  - Motion frames
   - Moving entity frames
   lexical_units:
   - chase.n
@@ -10844,7 +10136,7 @@ frames:
   - Cog
   frame_families:
   - Excluded frames
-  - Scale Frames
+  - Scale frames
   roles:
   - name: entity
   - name: entity_amount
@@ -10868,7 +10160,6 @@ frames:
     uses:
     - scale
 - name: race
-  definition: Two or more racers compete to finish a physical course first.
   frame_type:
   - Frame
   frame_families:
@@ -10907,16 +10198,10 @@ frames:
     subcase_of:
     - recreational-competition
 - name: reasoning
-  definition: Based on the roles currently in this frame, this seems to be about the cognizer-internal
-    process of 'directed cognition'. As such, itcould be used as the source frame for Reasoning is Motion
-    toward a destination.  But, it doesn't seem that it should be used as the source frame in Proving
-    is Showing (as is currently the case). Nor does it seem like 'prove' should be an LU.  Might want
-    to make a separate Proving frame for the scenario in which a person (or situation) causes a cognizer
-    to reach a conclusion.
   frame_type:
   - Frame
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   - Excluded frames
   roles:
   - name: conclusion
@@ -10931,7 +10216,6 @@ frames:
     - cognizing
 - name: reciprocal-motion
 - name: reciprocation
-  definition: 'Provenance: PITF, p. 293.'
   frame_type:
   - Frame
   roles:
@@ -10945,8 +10229,6 @@ frames:
     uses:
     - reciprocal-motion
 - name: recreational-competition
-  definition: Situations in which two or more (groups of) people compete for the entertainment of themselves
-    and/or an audience
   frame_type:
   - Frame
   frame_families:
@@ -10962,7 +10244,6 @@ frames:
     subcase_of:
     - competition
 - name: region
-  definition: A spatial expanse, with potentially differentiable sub-regions/locations
   frame_families:
   - Bounding
   - Location frames
@@ -10971,9 +10252,6 @@ frames:
   - name: location_relations
   - name: locations
 - name: regulation
-  definition: Based on the associated metaphors, "Regulation" seems to be referring specifically to governmental
-    regulation (i.e., regulation by the government). The associated Spanish frame name captures this more
-    specific meaning.
   frame_type:
   - Frame
   frame_families:
@@ -11083,7 +10361,6 @@ frames:
     uses:
     - liquid
 - name: remove-burden
-  definition: possibly merge with Burden
   frame_families:
   - Endangerment frames
   - Impediment and enablement frames
@@ -11105,21 +10382,6 @@ frames:
     perspective_on:
     - burden
 - name: representation-and-decision-making
-  definition: 'Refers to representation and decision-making in the domain of governance and government,
-    specifically.
-
-
-    Entered per the request after the April 2014 site visit.
-
-
-    The institutionalized process that enables the governed to make decisions about their representation,
-    whether through a representative body or directly.
-
-
-    This includes voting and the campaigns and elections surrounding voting.
-
-
-    In a democracy, things are decided by vote, not by force.'
   frame_type:
   - Frame
   frame_families:
@@ -11135,7 +10397,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Resource Frames
+  - Resource frames
   roles:
   - name: amount_of_resource
     role_type: Quantity
@@ -11152,7 +10414,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Resource Frames
+  - Resource frames
   roles:
   - name: resource
   - name: resource_consumer
@@ -11164,11 +10426,9 @@ frames:
     uses:
     - resource
 - name: resource-container
-  definition: This frame was created to include LUs for items used to contain money and other valuable
-    resources.
   frame_families:
   - Entity frames
-  - Resource Frames
+  - Resource frames
   lexical_units:
   - ark.n
   - backpack.n
@@ -11206,17 +10466,13 @@ frames:
 - name: resource-holder
 - name: resource-transfer
   frame_families:
-  - Resource Frames
+  - Resource frames
   relations:
     subcase_of:
     - transfer-scenario
     uses:
     - resource
 - name: responsibility
-  definition: 'We need to figure out a family for this.
-
-
-    Really high-level. Specifics would be stated in subcases and other related frames.'
   frame_type:
   - Frame
   frame_families:
@@ -11242,9 +10498,6 @@ frames:
     related_to:
     - person
 - name: restaurant
-  definition: 'Fillmore 1982
-
-    Closest FN frame is Locale_by_use, but too many irrelevant LUs.'
   frame_type:
   - Frame
   roles:
@@ -11264,10 +10517,8 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Act on Object frames
+  - Act on object frames
 - name: restore-to-life
-  definition: intermediate phase/process that inhibits Death process, or final phase/process that may
-    occur after Death process
   frame_type:
   - Frame
   frame_families:
@@ -11339,7 +10590,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   lexical_units:
   - cake.n
   - cheese.n
@@ -11384,9 +10635,6 @@ frames:
     uses:
     - self-defense
 - name: rights
-  definition: 'needs work
-
-    For right now, top of cascade, not in any "is a subcase of" relation above it.'
   frame_type:
   - Frame
   frame_families:
@@ -11440,7 +10688,7 @@ frames:
 - name: rotation
   frame_families:
   - Internal motion frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   lexical_units:
@@ -11474,7 +10722,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Emotion Frames
+  - Emotion frames
   roles:
   - name: bodily_effect
   - name: body
@@ -11486,9 +10734,6 @@ frames:
     subcase_of:
     - emotion
 - name: safety
-  definition: 'Needed for gun debate.
-
-    Unsure which of the three subfamilies it belongs to in Gun Debate family.'
   frame_type:
   - Frame
   frame_families:
@@ -11503,17 +10748,16 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   lexical_units:
   - embargo.n
   - sanction.n
 - name: scale
-  definition: Please do not also create a 'Linear scale' frame. This is automatically linear.
   frame_type:
   - Cog
   frame_families:
   - Property-related frames
-  - Scale Frames
+  - Scale frames
   roles:
   - name: intermediate_values
   - name: maximal_value
@@ -11569,8 +10813,6 @@ frames:
     - vehicle
 - name: searching
 - name: second-amendment
-  definition: viewpoint of the Second Amendment of the Constitution, which guarantees the "right to keep
-    and bear arms", as Constitutional protection of gun rights
   frame_type:
   - Frame
   frame_families:
@@ -11591,13 +10833,6 @@ frames:
     - rights
 - name: sedation
 - name: seeing
-  definition: "This frame is specific to visiual perception of some entity or situation\n\nThe LU 'see'\
-    \ may be problematic for extraction\n\nUnlike FrameNet's 'Perception_experience' frame, this frame\
-    \ is specific to vision.\nParameters that affect the See-er's ability to see an object include:\n\
-    - light conditions around seen_object\n- degree of obstruction\n- visual acuity of See-er\n- distance\
-    \ between See-er and Seen_object\n- perspective from which See-er sees seen_object\n- visually-accessible\
-    \ parts of the Object_seen\n- See-er’s visual area (focal area, and overall field of vision) \n- distance\
-    \ between See-er and seen_object"
   frame_type:
   - Cog
   - Primary
@@ -11627,11 +10862,10 @@ frames:
     related_to:
     - luminosity
 - name: selection
-  definition: Selecting something from a range of options.
   frame_type:
   - Primary
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   roles:
   - name: options
   - name: selected_option
@@ -11658,7 +10892,6 @@ frames:
     uses:
     - attacking
 - name: self-initiated-state-change
-  definition: Experiencer of state acts so as to change that state.
   frame_families:
   - Action frames
   - Change-related frames
@@ -11676,17 +10909,13 @@ frames:
     - change-of-state
     - purposeful-action
 - name: self-propelled-motion
-  definition: 'Moving entity supplies its own energy for its movement (along a path)
-
-
-    a type of translational motion'
   frame_type:
   - Cog
   - Primary
   frame_families:
   - Action frames
   - Affected movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -11720,7 +10949,6 @@ frames:
     incorporates_as_role:
     - animate-entity
 - name: self-propelled-motion-to-a-destination
-  definition: Person moves towards a desirable location (or entity located there)
   frame_type:
   - Cog
   - Composed
@@ -11728,7 +10956,7 @@ frames:
   - Action frames
   - Affected movement frames
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   roles:
@@ -11760,7 +10988,7 @@ frames:
     - consciousness
 - name: separation
   frame_families:
-  - Image Schemas
+  - Image schemas
   lexical_units:
   - divide.v
   - division.n
@@ -11787,7 +11015,6 @@ frames:
     subcase_of:
     - action
 - name: servant
-  definition: A person or people who are under the authority of a master
   frame_type:
   - Frame
   roles:
@@ -11834,7 +11061,6 @@ frames:
     uses:
     - authority
 - name: servitude-authority
-  definition: The person or people who are in control of servants or slaves
   frame_type:
   - Frame
   roles:
@@ -11860,8 +11086,6 @@ frames:
     perspective_on:
     - servitude
 - name: shepherding
-  definition: This frame could be augmented via relations to other frames (e.g. protecting from harm,
-    leading, care-taking)
   roles:
   - name: objectives
   - name: sheep
@@ -11875,16 +11099,11 @@ frames:
     subcase_of:
     - work-scenario
 - name: silencing
-  definition: 'An agent acts so as to stop or prevent a speaker from speaking.
-
-
-    In some cases, cause can be physical, e.g. by gagging speaker or otherwise stopping speaker''s airflow
-    (see Stop airflow frame).'
   frame_type:
   - Composed
   - Frame
   frame_families:
-  - Communication Frames
+  - Communication frames
   roles:
   - name: agent
   - name: agent_action
@@ -11909,15 +11128,12 @@ frames:
   frame_type:
   - Frame
 - name: size
-  definition: The size of a bounded object or region, mostly conceptualized in terms of the amount of
-    space it occupies. Particular sizes are generally defined in relation to some norm, and can be represented
-    as positions on a 'size scale'.
   frame_type:
   - Cog
   - Primary
   frame_families:
   - Physical properties frame family
-  - Scale Frames
+  - Scale frames
   roles:
   - name: entity
     role_type: Object
@@ -11967,7 +11183,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Social Class frames
+  - Social class frames
   lexical_units:
   - class
   - have-nots
@@ -12003,7 +11219,6 @@ frames:
     subcase_of:
     - group
 - name: social-obligation
-  definition: All obligation is social (even obligation to yourself, metaphorically, or with God).
   frame_type:
   - Frame
   frame_families:
@@ -12017,8 +11232,6 @@ frames:
     related_to:
     - purposeful-action
 - name: social-problems
-  definition: '''homelessness'' was an LU here. Removed. This is a high-level frame. No LUs here please.
-    (Oana)'
   frame_type:
   - Composed
   - Frame
@@ -12038,7 +11251,6 @@ frames:
     uses:
     - negatively-evaluated-condition
 - name: social-status
-  definition: Cultural scope checked for Persian--Aria
   frame_type:
   - Frame
   frame_families:
@@ -12063,11 +11275,6 @@ frames:
     - social-group
 - name: solving-a-problem
 - name: source-path-goal
-  definition: 'A sequence of locations (source, path, and goal) occupied by an entity (trajector) over
-    time.  Locations are defined with respect to another entity (landmark).
-
-
-    Neurally, SPG is a topographic map.'
   frame_type:
   - Cog
   - Primary
@@ -12101,7 +11308,7 @@ frames:
   - Cog
   - Primary
   frame_families:
-  - Communication Frames
+  - Communication frames
   - Excluded frames
   roles:
   - name: addressee
@@ -12124,7 +11331,7 @@ frames:
     - bodily-functioning
 - name: speech-act
   frame_families:
-  - Communication Frames
+  - Communication frames
   - Excluded frames
   roles:
   - name: addressee
@@ -12144,13 +11351,6 @@ frames:
   - talk.v
   - tell.v
 - name: speech-in-society
-  definition: "Created to refer to the 'speech' in 'free speech' and 'we have a voice in society'. Name\
-    \ can be changed (hard to get away from source domain).\n\nThis is a TARGET frame; there just isn't\
-    \ a metaphor-free name for it; it's LUs are found in the source in which the metaphor lies (Speaking).\n\
-    \nFor extraction purposes, LUs such as 'speech' and 'voice' have to be associated with this target\
-    \ frame, in order to extract LMs such as 'freedom of speech', 'have a voice', 'silence our voice'\
-    \ etc. For our purposes, we know these are source terms. \n\nFor this reason, the LUs 'speech' and\
-    \ 'voice' are temporarily here, to be moved once we decide what to do about this problem."
   frame_type:
   - Frame
   lexical_units:
@@ -12167,11 +11367,10 @@ frames:
     - democracy
 - name: spelling
 - name: stability
-  definition: property denoting the relative state of being stable; includes stable and unstable
   frame_type:
   - Frame
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: stability_scale
   - name: stablity_entity
@@ -12214,7 +11413,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Eating Frames
+  - Eating frames
   lexical_units:
   - emaciate.v
   - emaciated.a
@@ -12233,14 +11432,6 @@ frames:
     perspective_on:
     - hunger
 - name: state
-  definition: This frame represents the association/relation between an entity (state_holder) and a property/state
-    (state_type). Specific entities will differ as to which set of properties/states they can or are likely
-    to be associated with.  The current frame does not include a temporal component, and thus cannot be
-    directly used to indicate the duration of a given state, or the change of states over time; these
-    are handled by 'subcases' of this frame, such as Change of state and Experiencing a state, which do
-    include temporal structure. In at least some cases, the properties may also be represented as separate,
-    individual frames (e.g. Temperature, Size) which elaborate the internal structure and set of potential
-    values of that property.
   frame_type:
   - Cog
   frame_families:
@@ -12312,7 +11503,6 @@ frames:
     subcase_of:
     - resource-holder
 - name: stop-airflow
-  definition: Impede breathing, e.g. "suffocate" or "asphyxiate"
   frame_type:
   - Frame
   frame_families:
@@ -12365,7 +11555,6 @@ frames:
     subcase_of:
     - path
 - name: straightness
-  definition: The property of being linearly straight.
   frame_type:
   - Cog
   frame_families:
@@ -12399,12 +11588,7 @@ frames:
     related_to:
     - nurturant-parent-family
 - name: subsidy
-  definition: created for link with Persian wiki
 - name: substance
-  definition: 'An unbounded physical entity
-
-
-    a substance is an internally undifferentiated entity, often of indeterminate bounding'
   frame_type:
   - Cog
   frame_families:
@@ -12461,7 +11645,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   relations:
     uses:
     - value
@@ -12503,7 +11687,6 @@ frames:
     uses:
     - health-treatment
 - name: survival
-  definition: added this frame for cancer testing
   frame_type:
   - Frame
   lexical_units:
@@ -12560,7 +11743,6 @@ frames:
     subcase_of:
     - perception
 - name: taxation
-  definition: need to add links to money and transfer of money
   frame_type:
   - Frame
   frame_families:
@@ -12604,7 +11786,6 @@ frames:
     - legislation-enactment
     - negatively-evaluated-condition
 - name: taxes
-  definition: amount and type of taxes
   frame_type:
   - Frame
   frame_families:
@@ -12631,8 +11812,6 @@ frames:
     perspective_on:
     - taxation
 - name: team-names
-  definition: This frame was created to analyze text in which teams are referred to by name or by the
-    city they are associated with. This is essentially a hack used in the analysis of UK sports headlines.
   roles:
   - name: team
   lexical_units:
@@ -12658,7 +11837,7 @@ frames:
   frame_type:
   - Cog
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: temperature_scale
   lexical_units:
@@ -12711,7 +11890,6 @@ frames:
     subcase_of:
     - bounded-region
 - name: test2
-  definition: created for testing wiki to rdf updates
   relations:
     related_to:
     - process
@@ -12805,7 +11983,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   - Excluded frames
   roles:
   - name: theoretical_arguments
@@ -12829,7 +12007,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   roles:
   - name: thinker
   - name: thinking_content
@@ -12842,8 +12020,6 @@ frames:
     perspective_on:
     - cognizing
 - name: ticket
-  definition: 'Ticket is understood to be metonymic for the frame of paper granting permission to travel
-    in some fashion (ie: passports, visas, etc)'
   frame_type:
   - Frame
   lexical_units:
@@ -12909,7 +12085,7 @@ frames:
   frame_type:
   - Cog
   frame_families:
-  - Scale Frames
+  - Scale frames
   relations:
     subcase_of:
     - scale
@@ -12949,13 +12125,10 @@ frames:
     related_to:
     - spatial-relation
 - name: transfer-scenario
-  definition: There used to also be an Object_transfer frame (in addition to Gain_possession and Lose_possession).
-    It was unclear how that differed from Transfer_scenario. Object_transfer was deleted, and its LUs
-    are here now. If needed, it can be brought back. It was causing too much confusion. (Oana)
   frame_type:
   - Cog
   frame_families:
-  - Possession Frames
+  - Possession frames
   roles:
   - name: transfer_recipient
   - name: transfer_recipient_process
@@ -12976,8 +12149,6 @@ frames:
 - name: traveling
 - name: treaties
 - name: treating-a-physical-affliction
-  definition: There is also a Disease treatment frame. Consider which LUs are more general (and belong
-    here) and which are specific to diseases and belong there.
   frame_type:
   - Frame
   frame_families:
@@ -13071,7 +12242,7 @@ frames:
   - Frame
 - name: trust-emotion
   frame_families:
-  - Emotion Frames
+  - Emotion frames
   roles:
   - name: trust_emotion
   - name: trust_reason
@@ -13083,11 +12254,6 @@ frames:
     uses:
     - trust-relationship
 - name: trust-relationship
-  definition: 'Trust relationship is a condition for entrusting someone with something.
-
-    The trusting_entity has confidence that the trusted_entity will not harm them. The basis for this
-    confidence comes from the trusting_entity''s evaluation of the trusted_entity''s character and/or
-    behavior.'
   frame_type:
   - Frame
   frame_families:
@@ -13121,7 +12287,6 @@ frames:
     - judgment
     - trust-emotion
 - name: tyranny
-  definition: Needed for gun debate. Currently, it is very heterogeneous, will need to be broken up later.
   frame_type:
   - Frame
   lexical_units:
@@ -13154,7 +12319,7 @@ frames:
   - Frame
   - Primary
   frame_families:
-  - Cognition Frames
+  - Cognition frames
   - Excluded frames
   roles:
   - name: understanding_person
@@ -13171,7 +12336,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Wealth and Social Class frames
+  - Wealth and social class frames
   lexical_units:
   - jobless
   - joblessness
@@ -13238,7 +12403,7 @@ frames:
   - Composed
   frame_families:
   - Directional movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Moving entity frames
   - Translational motion frames
@@ -13312,7 +12477,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Economic Frames
+  - Economic frames
   lexical_units:
   - value
   - worth
@@ -13400,7 +12565,7 @@ frames:
   - Frame
   frame_families:
   - Affected movement frames
-  - Motion Frames
+  - Motion frames
   - Movement frames
   - Mover-specific movement frames
   - Moving entity frames
@@ -13449,20 +12614,10 @@ frames:
     - verticality
 - name: vertical-structure
 - name: verticality
-  definition: 'Highest level
-
-
-    location on a vertical scale.
-
-    See Discussion.
-
-
-    Closest FrameNet frames have many LUs not relevant to this frame. They are Position_on_a_scale, Change_position_on_a_scale.
-    They were temporarily removed from the above field for computing reasons.'
   frame_type:
   - Cog
   frame_families:
-  - Scale Frames
+  - Scale frames
   roles:
   - name: scalar_position
   - name: vertical_axis
@@ -13491,7 +12646,7 @@ frames:
   - Composed
   - Frame
   frame_families:
-  - Motion Frames
+  - Motion frames
   roles:
   - name: cognizer
   - name: ending_locus_of_attention
@@ -13511,11 +12666,10 @@ frames:
     subcase_of:
     - path
 - name: visual-evaluation
-  definition: Evaluator's evaluation of a thing based upon its visually-accessible features
   frame_type:
   - Composed
   frame_families:
-  - Evaluation Frames
+  - Evaluation frames
   - Perception frames
   roles:
   - name: difficulties_in_evaluating
@@ -13533,12 +12687,6 @@ frames:
     - visual-obstruction
 - name: visual-field
 - name: visual-obstruction
-  definition: 'an entity that is between the see-er and the seen_object affects the see-er''s ability
-    to see all or part of that object (e.g. an obstructing entity prevents see-er from seeing something).
-
-
-    Currently includes LU for ''transparent'', which indicates an object is not a visual obstruction.  Will
-    have to decide if we want to make a separate frame for this.'
   frame_type:
   - Frame
   frame_families:
@@ -13624,19 +12772,6 @@ frames:
     uses:
     - voting
 - name: war
-  definition: 'The Hostile_encounter FN frame describes a hostile encounter between two opposing forces.
-
-
-    Eve: I added side1 and side2. Eventually this has to be overhauled, so that there is a NONVIEWPOINTED
-    War frame as well as a viewpointed one that is Invaded good guys vs. Invader bad guys.  But side1
-    and side2 are being linked to Competition.competitors.
-
-    ALSO War should have an x-schema that can be mapped onto the Competition x-schema, and winner and
-    loser roles that map onto the winner and loser roles in the Competition frame, and an Outcome that
-    maps onto Outcome in Competition, and...
-
-
-    Elise: now that the Competition frames are revamped, this needs to be overhauled as well.'
   frame_type:
   - Composed
   - Frame
@@ -13710,8 +12845,6 @@ frames:
     uses:
     - physical-combat
 - name: water-confinement
-  definition: Person is in water or watery substance.  This situation makes motion difficult (e.g. mire)
-    and may also be dangerous to that person (they might drown)
   frame_type:
   - Frame
   frame_families:
@@ -13762,13 +12895,6 @@ frames:
     subcase_of:
     - confinement
 - name: wealth
-  definition: 'We had a Being_wealthy frame, and that had the LUs wealthy and rich. We need to think carefully
-    whether we want various subcases of Experiencing an economic status (e.g., we didn''t have Being_poor
-    or Being_impoverished). (Oana)
-
-
-    Removed ''treasure'' as an LU because it tends to refer to physical entities (e.g. treasure collection,
-    treasure hunter, dig for treasure).  [Ellen]'
   frame_type:
   - Frame
   frame_families:
@@ -13810,7 +12936,7 @@ frames:
   frame_type:
   - Frame
   frame_families:
-  - Wealth and Social Class frames
+  - Wealth and social class frames
   lexical_units:
   - allocate
   - allot
@@ -13825,9 +12951,8 @@ frames:
     subcase_of:
     - resource-transfer
 - name: wealthy-people
-  definition: Individuals who possess a large amount of wealth
   frame_families:
-  - The Rich frames
+  - The rich frames
   lexical_units:
   - affluent.n
   - billionaire.n
@@ -13873,14 +12998,6 @@ frames:
     uses:
     - wealth
 - name: weapons-handling
-  definition: 'Created to handle case study oy2.
-
-
-    We may not want this as ''makes use of'' Personal weapon, because the latter is usually treated as
-    a target frame, and Weapons_handling needs to appear as a source frame.
-
-
-    Don''t include the LU "bombard" here, that should be with War.'
   frame_type:
   - Frame
   frame_families:
@@ -13902,7 +13019,6 @@ frames:
     subcase_of:
     - object-manipulation
 - name: wearable-disguises
-  definition: Created to account for subtle frame differences in Disguise frame.
   frame_type:
   - Frame
   frame_families:
@@ -13922,7 +13038,6 @@ frames:
     uses:
     - visual-obstruction
 - name: weather
-  definition: Created to house LUs.
   frame_type:
   - Frame
   lexical_units:
@@ -13935,8 +13050,6 @@ frames:
   - temperature.n
   - weather.n
 - name: weed
-  definition: 'Very specific inferences as opposed to plants in general: weeds spread, they are malicious
-    and cause Harm and pose a threat to the surrounding fauna. (The aspect of spread is shared with Diseases).'
   frame_type:
   - Frame
   frame_families:
@@ -13954,7 +13067,7 @@ frames:
   - Frame
   frame_families:
   - Physical properties frame family
-  - Scale Frames
+  - Scale frames
   lexical_units:
   - weight.n
   relations:
@@ -13977,12 +13090,6 @@ frames:
     - upright-posture
     - wealth
 - name: wet
-  definition: 'Needed for some economic inequality etc. metaphors
-
-
-    E.g.
-
-    "How Increasing Inequality is Dampening U.S. Economic Growth, and Possible Ways to Change the Tide.”'
   frame_type:
   - Frame
   lexical_units:
@@ -13994,7 +13101,6 @@ frames:
   - wet.a
   - wet.v
 - name: wilderness
-  definition: a rural location, inhospitable to human habitation
   frame_type:
   - Frame
   frame_families:
@@ -14035,9 +13141,6 @@ frames:
   - name: word_form
   - name: word_meaning
 - name: work-scenario
-  definition: This is a very general frame meant to encompass a variety of different work scenarios, some
-    of which may invovlve additional workers (with various possible relations between these workers).  A
-    worker may have a seperate employer, or may be self-employed
   frame_type:
   - Frame
   frame_families:
@@ -14071,10 +13174,9 @@ frames:
     - income
     - purposeful-action
 - name: worship
-  definition: Use of the language of religion to talk about dedication to an object/phenomenon.
   frame_families:
   - Morality frames
-  - Zealotry Insanity Worship frame family
+  - Zealotry insanity worship frame family
   roles:
   - name: worshipped_thing
   - name: worshipper
@@ -14106,7 +13208,6 @@ frames:
     - deity
 - name: writing
 - name: x-schema
-  definition: X-schema is different from Process; Process inherits x-schema stages.
   frame_type:
   - Primary
   frame_families:
@@ -14137,7 +13238,6 @@ frames:
     - x-schema-stopped-state
     - x-schema-uncompleted-state
 - name: x-schema-continue
-  definition: x-schema and its substages is different from Process.
   frame_type:
   - Cog
   - Frame
@@ -14151,11 +13251,10 @@ frames:
 - name: x-schema-stopped-state
 - name: x-schema-uncompleted-state
 - name: zealotry
-  definition: wildly excessive or irrational devotion, dedication, or enthusiasm
   frame_type:
   - Frame
   frame_families:
-  - Zealotry Insanity Worship frame family
+  - Zealotry insanity worship frame family
   lexical_units:
   - crusade.n
   - crusader.n
