@@ -56,7 +56,14 @@ Every metaphor has a `type`, describing how it was arrived at:
 - **`Composed/complex`** — built by combining primary metaphors. `ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER` is Composed/complex — it elaborates `ANGER_IS_HEAT` with a whole container-and-pressure scenario borrowed from other primary metaphors (see Relations, below).
 - **`Entailed`** — follows automatically from another metaphor, rather than being independently grounded. `HAPPY_IS_UP` ("My spirits rose.") is Entailed from `HAPPINESS_IS_VERTICALITY`, a Primary metaphor whose own entailments are "being upright → being happy" and "being low/horizontal → being sad." `HAPPY_IS_UP` (and its sibling `SAD_IS_DOWN`) just split that Primary metaphor's two directions out into their own named entries.
 
-Frames have a loosely analogous `frame_type` tag list (`Frame`, `Cog`, `Composed`, `Primary`) — e.g. `heating-fluid` is tagged `[Composed, Frame]` — but it's a coarser, less consistently-applied classification than a metaphor's `type`.
+Frames have a loosely analogous `frame_type` tag list, but it's a coarser, less consistently-applied classification than a metaphor's `type`: 213 of 554 frames carry no tag at all, and the rest carry one or more of:
+
+- **`Frame`** — an ordinary, FrameNet-style scenario invoked by its own lexical units, e.g. `election` (`elect.v`, `electoral.a`) or `disease-treatment` (`doctor.n`, `patient.n`). This is the majority case (430 frames) and, alone, mostly just means "a regular content frame" rather than anything more specific.
+- **`Cog`** — a "cognitive" frame: a basic image-schematic or relational category (`bounded-region`, `animate-entity`, `causation`, `entity`) used for reasoning about mappings rather than a scenario evoked by its own vocabulary — several `Cog` frames (`entity`, `animate-entity`, `bounded-entity`) have no lexical units at all.
+- **`Primary`** — basic and not decomposed further, the frame-level analogue of a metaphor's `Primary` type. Paired with `Cog` it marks foundational image schemas (`motion`, `heat`, `contact`, `entity`); paired with plain `Frame` it marks basic embodied scenarios that are still ordinary lexical frames (`ingestion`, `perception`, `understanding`).
+- **`Composed`** — built by combining other frames, the frame-level analogue of a metaphor's `Composed/complex` type. Paired with `Cog` it marks compound schemas (`agentive-causation` = agent + causation, `affected-motion` = motion + causation); paired with plain `Frame` it marks complex real-world scenarios assembled from simpler frames (`election`, `disease-treatment`, `economic-competition`).
+
+Tags combine freely — `heating-fluid` is tagged `[Composed, Frame]` — except that `Primary` and `Composed` never co-occur on the same frame.
 
 ## Families
 
