@@ -147,6 +147,9 @@ frames:
   - Action frames
   - Excluded frames
   roles:
+  - name: action_means
+  - name: action_purpose
+  - name: action_self
   - name: action_x_schema
     role_type: XSchema
   - name: actor
@@ -216,6 +219,8 @@ frames:
   - name: extent_of_problem
   - name: honest_citizens
   - name: immoral_citizens
+  - name: police_weapons
+  - name: power_to_solve_problems
   - name: problem_solvers
   - name: public_officials
   - name: social_problem
@@ -474,6 +479,7 @@ frames:
   - name: anger
   - name: anger_level
   - name: anger_limit
+  - name: anger_x_schema
   - name: angry_action
   - name: body
   - name: body_agitation
@@ -613,6 +619,18 @@ frames:
     related_to:
     - reasoning
 - name: arithmetic
+  roles:
+  - name: addition
+  - name: arithmetic_operation
+  - name: arithmetic_operation_result
+  - name: greater
+  - name: less
+  - name: number_size
+  - name: number_whole
+  - name: numbers
+  - name: one
+  - name: smaller
+  - name: subtraction
 - name: artifact
   frame_type:
   - Frame
@@ -1310,6 +1328,10 @@ frames:
   frame_type:
   - Composed
   - Frame
+  roles:
+  - name: boat
+  - name: boat_passengers
+  - name: path_of_boat
   lexical_units:
   - shoal.n
   relations:
@@ -1325,8 +1347,12 @@ frames:
   frame_families:
   - Entity frames
   roles:
+  - name: bodily_capacity
   - name: body
+  - name: body_structure
   - name: bodypart
+  - name: cognizing_x_schema
+  - name: mind
   relations:
     uses:
     - part-whole
@@ -1451,10 +1477,12 @@ frames:
   - Location frames
   roles:
   - name: boundary
+  - name: center
   - name: exterior
     role_type: Region
   - name: interior
     role_type: Region
+  - name: proximal_region
   lexical_units:
   - boundary.n
   - expansive.a
@@ -1492,6 +1520,7 @@ frames:
   - name: builder
   - name: building_foundation
   - name: building_framework
+  - name: building_inhabitants
   - name: building_integrity
   - name: building_parts
   - name: building_stability
@@ -1828,9 +1857,11 @@ frames:
   - Excluded frames
   - Perception frames
   roles:
+  - name: object_seen
   - name: perception_causer
   - name: perception_event
   - name: perception_perciever
+  - name: shower
   lexical_units:
   - show.v
   relations:
@@ -2093,6 +2124,8 @@ frames:
 - name: cleanliness
   frame_type:
   - Frame
+  roles:
+  - name: clean_substance
   lexical_units:
   - clean.a
   - clean.v
@@ -2145,9 +2178,14 @@ frames:
   frame_families:
   - Cognition frames
   roles:
+  - name: bodily_functioning_x_schema
+  - name: body
   - name: cognizer
     role_type: Person
   - name: content
+  - name: mental_capacticy
+  - name: mind_structure
+  - name: mind_whole
   relations:
     uses:
     - person
@@ -2757,6 +2795,7 @@ frames:
   - name: corporation_rules
   - name: corporation_structure
   - name: corporation_whole
+  - name: rights_of_corporation
   lexical_units:
   - corporate.a
   - corporation.n
@@ -2865,6 +2904,7 @@ frames:
   - Harm to living entity
   - Social problem frames
   roles:
+  - name: crime
   - name: criminal
     role_type: Person
   - name: criminal_activity
@@ -3341,6 +3381,11 @@ frames:
     uses:
     - democracy
 - name: desire
+  roles:
+  - name: desire
+  - name: desire_x_schema
+  - name: desired_object
+  - name: desirer
 - name: desiring
   frame_type:
   - Cog
@@ -3407,6 +3452,9 @@ frames:
   - Force dynamic frames
   - Harm
   - Harmful encounters frames
+  roles:
+  - name: destroyed_entity
+  - name: destructive_force
   lexical_units:
   - destructive.a
   relations:
@@ -3579,9 +3627,13 @@ frames:
   - Harm
   - Harm to living entity
   roles:
+  - name: bodily_healing_system
   - name: body_part
   - name: disease
+  - name: diseased_cell
+  - name: doctor
   - name: health_state
+  - name: healthy_cell
   - name: infection_process
   - name: patient
   - name: symptom
@@ -3650,6 +3702,7 @@ frames:
   frame_families:
   - Disease frame family
   roles:
+  - name: applying_treatment
   - name: body
   - name: cure
   - name: disease
@@ -3871,6 +3924,9 @@ frames:
     scalar_opposition_to:
     - upward-motion
 - name: draw-a-picture
+  roles:
+  - name: audience
+  - name: drawer
 - name: driving-a-vehicle
 - name: drugs
   frame_type:
@@ -4050,8 +4106,12 @@ frames:
   - name: activity_level
     role_type: Scale
   - name: economic_activity
+  - name: economic_efficiency
   - name: economic_region
+  - name: economy_participants
+  - name: economy_whole
   - name: market_type
+  - name: purpose_of_economy
   - name: sector
   lexical_units:
   - economy.n
@@ -4600,6 +4660,7 @@ frames:
   - Frame
   roles:
   - name: conveyor_belt_production
+  - name: factory
   - name: factory_bosses
   - name: factory_building
   - name: factory_sectors
@@ -4626,6 +4687,7 @@ frames:
   - name: family_member_relations
   - name: family_members
   - name: family_whole
+  - name: parents
   lexical_units:
   - aunt.n
   - brother.n
@@ -4960,6 +5022,9 @@ frames:
     related_to:
     - resource
 - name: food-preparation
+  roles:
+  - name: food
+  - name: food_preparer
 - name: force
   frame_type:
   - Cog
@@ -5050,8 +5115,11 @@ frames:
   - name: direction
   - name: forceful_action
     role_type: ForceApplicationFrame
+  - name: goal
   - name: motion_x_schema
   - name: mover
+  - name: path
+  - name: source
   - name: speed
   lexical_units:
   - drag.v
@@ -5580,6 +5648,9 @@ frames:
 - name: group-membership
   frame_type:
   - Frame
+  roles:
+  - name: member
+  - name: membership_fee
   relations:
     subcase_of:
     - membership
@@ -5720,6 +5791,7 @@ frames:
   - Gun debate
   - Legislation frames
   roles:
+  - name: affected_people
   - name: legislation
   - name: opponenent_of_legislation
   - name: proponent_of_legislation
@@ -6197,6 +6269,7 @@ frames:
   - name: entity
     role_type: Entity
   - name: heat_level
+  - name: heat_x_schema
   lexical_units:
   - heat up.v
   - heat.n
@@ -6262,6 +6335,11 @@ frames:
   - shroud.n
   - stow.v away
 - name: hierarchy
+  roles:
+  - name: hierarchical_structure
+  - name: inferior_points_in_hierarchy
+  - name: item_in_hierarchy
+  - name: superior_points_in_hierarchy
 - name: hosting
 - name: human-life-cycle
   frame_type:
@@ -6309,6 +6387,7 @@ frames:
   - name: experiencer
   - name: hunger_sensation
   - name: hunger_x_schema
+  - name: object_hungered_for
   lexical_units:
   - appetite.n
   - hunger.n
@@ -6402,6 +6481,7 @@ frames:
   - Impediment and enablement frames
   - Motion frames
   roles:
+  - name: affected_motion
   - name: impeded_entity
   - name: impediment
   relations:
@@ -6673,6 +6753,7 @@ frames:
   - name: cause_of_insanity
   - name: insane_behavior
   - name: insane_person
+  - name: insanity
   lexical_units:
   - crazy.a
   - deranged.a
@@ -6716,6 +6797,7 @@ frames:
   - name: authority_structure
   - name: functional_status
   - name: functions
+  - name: institution_heads
   - name: institution_structure
   - name: institution_whole
   - name: mission
@@ -6848,12 +6930,17 @@ frames:
     role_type: XSchema
   - name: journey_companion
     role_type: Entity
+  - name: journey_difficulties
   - name: journey_end
     role_type: XSchema
+  - name: journey_event
   - name: journey_means
     role_type: XSchema
+  - name: journey_stops
   - name: journeyer
     role_type: Entity
+  - name: locations_along_journey
+  - name: obstacles_impediments_in_journey
   lexical_units:
   - course.n
   - journey.n
@@ -7007,6 +7094,7 @@ frames:
   - name: knowledge
   - name: knowledge_capacity
   - name: knowledge_status
+  - name: mind
   relations:
     subcase_of:
     - cognizing
@@ -7137,6 +7225,10 @@ frames:
   - Guided motion frame family
   - Leaders frames
   - Leadership frames
+  roles:
+  - name: leader
+  - name: leader_goal
+  - name: leader_motion_x_schema
   lexical_units:
   - chaperone.n
   - escort.v
@@ -7160,6 +7252,7 @@ frames:
   - Education frames
   - Excluded frames
   roles:
+  - name: benefits_of_learning
   - name: learned_material
   - name: learner
   - name: learning_x_schema
@@ -7329,6 +7422,7 @@ frames:
   frame_type:
   - Frame
   roles:
+  - name: course_of_life
   - name: life_companion
   - name: life_difficulties
   - name: life_goals
@@ -7337,6 +7431,7 @@ frames:
   - name: life_span
   - name: life_stages
   - name: lifestyle
+  - name: short_term_life_goals
   relations:
     subcase_of:
     - sequence-of-actions
@@ -7514,10 +7609,13 @@ frames:
   roles:
   - name: functional_status
   - name: machine_entity
+  - name: machine_hardware
+  - name: machine_software
   - name: operating_x_schema
   - name: operator_of_machine
   - name: parts
   - name: power_source
+  - name: procedures_for_operation
   - name: purpose
   lexical_units:
   - apparatus.n
@@ -7770,6 +7868,8 @@ frames:
   - Economic frames
   - Money frames
   - Resource frames
+  roles:
+  - name: money
   lexical_units:
   - banknote.n
   - bucks
@@ -7792,6 +7892,8 @@ frames:
   frame_families:
   - Action frames
   - Morality frames
+  roles:
+  - name: moral_actor
   relations:
     subcase_of:
     - purposeful-action
@@ -7816,6 +7918,9 @@ frames:
   - Frame
   frame_families:
   - Governance frames
+  roles:
+  - name: corrupt_activities
+  - name: corruption_affectee
   relations:
     subcase_of:
     - corruption
@@ -7843,6 +7948,9 @@ frames:
   - Frame
   frame_families:
   - Morality frames
+  roles:
+  - name: good_person
+  - name: goodness
   relations:
     uses:
     - goodness
@@ -7859,6 +7967,12 @@ frames:
   - Frame
   frame_families:
   - Morality frames
+  roles:
+  - name: immoral_person
+  - name: moral_condition
+  - name: moral_entity
+  - name: moral_person
+  - name: morality
   lexical_units:
   - moral
   - morality
@@ -7976,10 +8090,12 @@ frames:
   - Moving entity frames
   - Translational motion frames
   roles:
+  - name: course_of_motion
   - name: direction
   - name: goal
     role_type: Location
   - name: landmark
+  - name: location_of_observer
   - name: motion_x_schema
     role_type: Process
   - name: mover
@@ -7987,8 +8103,11 @@ frames:
   - name: path
   - name: pathway
     role_type: PhysicalPath
+  - name: person_who_sets_trajector_in_motion
   - name: source
     role_type: Location
+  - name: space_in_back_of_observer
+  - name: space_in_front_of_observer
   - name: speed
   lexical_units:
   - creep.v
@@ -8459,6 +8578,7 @@ frames:
   - name: nation_infrastructure
   - name: nation_leaders
   - name: nation_member_regions
+  - name: nation_traits
   - name: nation_whole
   - name: national_government
   - name: state_of_nation
@@ -8636,6 +8756,9 @@ frames:
   - Frame
   frame_families:
   - Eating frames
+  roles:
+  - name: benefits_of_getting_nutrients
+  - name: nurtitious_food
   lexical_units:
   - healthy food
   - nutrition.n
@@ -8670,7 +8793,26 @@ frames:
     - size
     - weight
 - name: object-collection
+  roles:
+  - name: bigger
+  - name: collection_size
+  - name: combining_collections
+  - name: less
+  - name: object_collections
+  - name: removing_collection
+  - name: smallest_collection
 - name: object-construction
+  roles:
+  - name: bigger
+  - name: constructed_object
+  - name: construction_act
+  - name: object_size
+  - name: object_whole
+  - name: objects
+  - name: putting_together
+  - name: smaller
+  - name: smallest_object
+  - name: taking_apart
 - name: object-insertion
   frame_type:
   - Frame
@@ -8808,9 +8950,11 @@ frames:
   frame_families:
   - Governance frames
   roles:
+  - name: head_of_organization
   - name: organization_external_relations
   - name: organization_functions
   - name: organization_internal_structure
+  - name: organization_management_x_schema
   - name: organization_members
     role_type: Person
   - name: organization_mission
@@ -8819,6 +8963,8 @@ frames:
   - name: organization_roles
   - name: organization_sub_groups
   - name: organization_whole
+  - name: organization_x_schema
+  - name: organizational_efficacy
   - name: organizational_structure
   relations:
     subcase_of:
@@ -8954,6 +9100,9 @@ frames:
     - family
     - responsibility
 - name: parental-authority
+  roles:
+  - name: child
+  - name: parent
 - name: part-piece
 - name: part-whole
   frame_type:
@@ -9057,8 +9206,11 @@ frames:
   - name: actions
   - name: body
   - name: body_parts
+  - name: health_of_person
+  - name: human_mind
   - name: objectives
   - name: person
+  - name: rights_of_person
   lexical_units:
   - I.n
   - he.n
@@ -9114,6 +9266,8 @@ frames:
   frame_families:
   - Disease frame family
   - Entity frames
+  roles:
+  - name: pest
   lexical_units:
   - blight.n
   - blight.v
@@ -9410,6 +9564,7 @@ frames:
   - name: foundation_of_structure
   - name: functional_status
   - name: parts_relations
+  - name: physical_structure_x_schema
   - name: structural_framework
   - name: structural_integrity
     role_type: Scale
@@ -9678,6 +9833,7 @@ frames:
   - Possession frames
   roles:
   - name: possessable_object
+  - name: possessor
   relations:
     subcase_of:
     - object
@@ -10034,6 +10190,7 @@ frames:
   - name: punishee
     role_type: Entity
   - name: punisher
+  - name: punishment
   - name: reason_for_punishment
   - name: results_of_punishment
   - name: type_of_punishment
@@ -10292,13 +10449,19 @@ frames:
   - Composed
   - Frame
   roles:
+  - name: change_in_relationship_intensity
   - name: inter_relation
+  - name: related_entities
   - name: related_entity_1
   - name: related_entity_2
+  - name: relation_basis
   - name: relation_e1_e2
   - name: relation_e2_e1
+  - name: relation_framework
   - name: relation_type_e1_e2
   - name: relation_type_e2_e1
+  - name: relationship_intensity
+  - name: relationship_participants
   - name: relationship_status
     role_type: Scale
   - name: relationship_whole
@@ -10418,6 +10581,7 @@ frames:
   - name: resource
   - name: resource_consumer
   - name: resource_consumption_x_schema
+  - name: resulting_state_of_over_consumption
   lexical_units:
   - consumption.n
   - resource.n
@@ -10678,6 +10842,8 @@ frames:
   - Frame
   roles:
   - name: course_of_romantic_relationship
+  - name: difficulties_in_a_relationship
+  - name: relationship
   - name: romantic_relationship_participants
   lexical_units:
   - break-up.n
@@ -10811,6 +10977,10 @@ frames:
     subcase_of:
     - vehicle
 - name: searching
+  roles:
+  - name: looking_for_object_x_schema
+  - name: seeker_of_some_object
+  - name: sought_object
 - name: second-amendment
   frame_type:
   - Frame
@@ -11238,11 +11408,16 @@ frames:
   - Poverty-related frame network
   - Social problem frames
   roles:
+  - name: authority
+  - name: honest_citizen
+  - name: immoral_citizen
   - name: problem_cause
   - name: result_of_problem
   - name: severity_of_problem
     role_type: Scale
+  - name: social_functioning
   - name: social_problem
+  - name: social_program
   - name: society
   relations:
     subcase_of:
@@ -11448,6 +11623,10 @@ frames:
   frame_families:
   - Government frames
   - Leaders frames
+  roles:
+  - name: nation_citizens
+  - name: nation_leaders
+  - name: nation_whole
   lexical_units:
   - chancellor.n
   - despot.n
@@ -11550,6 +11729,7 @@ frames:
   - Cog
   roles:
   - name: path
+  - name: person_moving_along_straight_line
   relations:
     subcase_of:
     - path
@@ -11558,6 +11738,10 @@ frames:
   - Cog
   frame_families:
   - Property-related frames
+  roles:
+  - name: property_of_being_straight
+  - name: straight_object
+  - name: straight_person
   lexical_units:
   - bent.a
   - crooked.a
@@ -11593,6 +11777,9 @@ frames:
   frame_families:
   - Entity frames
   roles:
+  - name: amount_of_substance
+  - name: container_for_substances
+  - name: size_of_amount_of_substance
   - name: substance
   relations:
     subcase_of:
@@ -12056,6 +12243,13 @@ frames:
 - name: time
   frame_type:
   - Frame
+  roles:
+  - name: duration_of_time
+  - name: extent_of_duration_of_time
+  - name: future_time
+  - name: past_time
+  - name: present_time
+  - name: time
   lexical_units:
   - Friday.n
   - Monday.n
@@ -12099,6 +12293,7 @@ frames:
   - name: touch_input
   - name: touched_thing
   - name: toucher
+  - name: touching_x_schema
   lexical_units:
   - touch.n
   - touch.v
@@ -12136,6 +12331,7 @@ frames:
   - name: transferor_process
     role_type: LosePossession
   - name: transferred_object
+  - name: vehicle_for_transfer
   lexical_units:
   - transfer.n
   - transfer.v
@@ -12155,6 +12351,9 @@ frames:
   - Harm
   - Harm to living entity
   roles:
+  - name: cure
+  - name: medical_professionals
+  - name: spread_of_disease
   - name: treated_affliction
   - name: treatment_procedure
   - name: treatment_provider
@@ -12325,6 +12524,7 @@ frames:
     role_type: Entity
   - name: understanding_x_schema
     role_type: XSchema
+  - name: understood_idea
   lexical_units:
   - comprehend
   - understand
@@ -12573,12 +12773,14 @@ frames:
   - name: direction
   - name: motion_x_schema
     role_type: Process
+  - name: passengers
   - name: speed
   - name: vehicle
     role_type: Machine
   - name: vehicle_control_x_schema
   - name: vehicle_driver
     role_type: Person
+  - name: vehicle_passengers
   lexical_units:
   - brake.v
   - brakes.n
@@ -12612,6 +12814,11 @@ frames:
     uses:
     - verticality
 - name: vertical-structure
+  roles:
+  - name: higher_positions_in_structure
+  - name: lower_points_in_structure
+  - name: position_in_structure
+  - name: vertical_physical_structure
 - name: verticality
   frame_type:
   - Cog
@@ -12789,6 +12996,7 @@ frames:
   - name: fighting
     role_type: XSchemaPhase
   - name: generals
+  - name: power_of_weapons
   - name: side_1
   - name: side_2
   - name: victory

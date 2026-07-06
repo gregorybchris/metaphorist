@@ -112,7 +112,7 @@ metaphors:
     target_role: actor
   - source_role: getting_x_schema
     target_role: action_x_schema
-  - source_role: possession
+  - source_role: possessable_object
     target_role: objective
   examples:
   - They just handed him the job.
@@ -132,7 +132,7 @@ metaphors:
   mappings:
   - source_role: recipient
     target_role: actor
-  - source_role: possession
+  - source_role: possessable_object
     target_role: objective
   - source_role: getting_x_schema
     target_role: action_x_schema
@@ -156,8 +156,8 @@ metaphors:
     target_role: actor
   - source_role: self_motion_x_schema
     target_role: action_x_schema
-  - source_role: destination
-    target_role: purpose
+  - source_role: goal
+    target_role: objective
   examples:
   - We've reached the end.
   - We are seeing the light at the end of the tunnel.
@@ -210,12 +210,12 @@ metaphors:
   - Mind metaphors
   - Primary metaphors
   mappings:
-  - source_role: food
-    target_role: ideas
+  - source_role: eaten_object
+    target_role: thinking_content
   - source_role: eater
     target_role: thinker
   - source_role: digesting
-    target_role: considering
+    target_role: thinking_process
   examples:
   - We pitched them the idea and they ate it right up.
   - He's been feeding her lies all these years.
@@ -290,9 +290,9 @@ metaphors:
     target_role: actor
   - source_role: course_of_motion
     target_role: action_self
-  - source_role: goal_of_motion
+  - source_role: goal
     target_role: action_purpose
-  - source_role: path_of_motion
+  - source_role: path
     target_role: action_means
   examples:
   - Devastation from the hurricane thrust the nation into recession.
@@ -421,13 +421,13 @@ metaphors:
   - Poverty as a social problem metaphors
   - Poverty metaphors
   mappings:
-  - source_role: disease
+  - source_role: treated_affliction
     target_role: poverty
   - source_role: medical_professionals
     target_role: policy_makers
-  - source_role: body
+  - source_role: treatment_recipient
     target_role: impoverished
-  - source_role: treatment_strategies
+  - source_role: treatment_procedure
     target_role: policies
   examples:
   - Improving access to education is the only sure way to cure us of poverty.
@@ -462,17 +462,17 @@ metaphors:
   - Physical afflictions metaphors
   - Poverty as a social problem metaphors
   mappings:
-  - source_role: disease
+  - source_role: treated_affliction
     target_role: social_problem
   - source_role: spread_of_disease
     target_role: spread_of_problem
   - source_role: cure
     target_role: solving_problem
-  - source_role: doctors
+  - source_role: treatment_provider
     target_role: authorities
   - source_role: medical_professionals
     target_role: public_officials
-  - source_role: body
+  - source_role: treatment_recipient
     target_role: society
   examples:
   - 'Debt Ceiling Deal: Wrong Diagnosis Leads to Wrong Treatment for What Ails the Economy'
@@ -1079,7 +1079,7 @@ metaphors:
   mappings:
   - source_role: recipient
     target_role: controlling_entity
-  - source_role: possession
+  - source_role: possessable_object
     target_role: ability_to_control
   - source_role: getting_x_schema_finish
     target_role: control_relation_status_start
@@ -1205,7 +1205,7 @@ metaphors:
   - Orientational metaphors
   - Strict father morality metaphors
   mappings:
-  - source_role: upright_person
+  - source_role: upright_entity
     target_role: good_person
   - source_role: upright_position
     target_role: goodness
@@ -1219,7 +1219,7 @@ metaphors:
   - Orientational metaphors
   - Strict father morality metaphors
   mappings:
-  - source_role: person_in_low_position
+  - source_role: vertical_entity
     target_role: immoral_person
   examples:
   - I refuse to stoop to that kind of behavior.
@@ -1568,7 +1568,7 @@ metaphors:
   - Object event structure metaphors
   mappings:
   - source_role: transferor
-    target_role: agent
+    target_role: causer
   - source_role: transfer_recipient
     target_role: affected
   - source_role: transferred_object
@@ -1713,9 +1713,9 @@ metaphors:
   families:
   - Governance metaphors
   mappings:
-  - source_role: transferred_possession
+  - source_role: transferred_object
     target_role: ability_to_control
-  - source_role: donor
+  - source_role: transferor
     target_role: controlling_entity
   - source_role: transfer_recipient
     target_role: controlling_entity
@@ -1736,7 +1736,7 @@ metaphors:
   mappings:
   - source_role: recipient
     target_role: experiencer
-  - source_role: possession
+  - source_role: possessable_object
     target_role: final_state
   examples:
   - I got a headache.
@@ -2076,7 +2076,7 @@ metaphors:
   mappings:
   - source_role: shower
     target_role: communicator
-  - source_role: seeer
+  - source_role: perception_perciever
     target_role: addressee
   - source_role: object_seen
     target_role: message
@@ -2164,9 +2164,9 @@ metaphors:
   - Orientational metaphors
   - Primary metaphors
   mappings:
-  - source_role: upright_entity
+  - source_role: vertical_entity
     target_role: conscious_entity
-  - source_role: state_of_uprightness
+  - source_role: scalar_position
     target_role: state_of_consciousness
   examples:
   - I'm up!
@@ -2185,9 +2185,9 @@ metaphors:
   - Primary metaphors
   - Well-being metaphors
   mappings:
-  - source_role: upright_entity
+  - source_role: vertical_entity
     target_role: conscious_entity
-  - source_role: state_of_uprightness
+  - source_role: scalar_position
     target_role: state_of_consciousness
   examples:
   - Wake up!
@@ -2327,7 +2327,7 @@ metaphors:
   - Grady primary metaphors
   - Orientational metaphors
   mappings:
-  - source_role: higher_positioned_entity
+  - source_role: vertical_entity
     target_role: controlling_entity
   examples:
   - I am on top of the situation.
@@ -2375,7 +2375,7 @@ metaphors:
   target_frame: corporation
   mappings:
   - source_role: person
-    target_role: corporation
+    target_role: corporation_whole
   - source_role: rights_of_person
     target_role: rights_of_corporation
 - name: CORRECTING_CORRUPTION_IS_TREATING_DISEASE
@@ -2524,7 +2524,7 @@ metaphors:
     target_role: crime
   - source_role: endangering_action
     target_role: criminal_activity
-  - source_role: prey
+  - source_role: endangered_entity
     target_role: victim
   examples:
   - Crime is a beast ravaging the city.
@@ -2741,7 +2741,7 @@ metaphors:
   mappings:
   - source_role: hunger
     target_role: desire
-  - source_role: hungry_person
+  - source_role: experiencer
     target_role: desirer
   - source_role: object_hungered_for
     target_role: desired_object
@@ -3051,7 +3051,7 @@ metaphors:
     target_role: economy_whole
   - source_role: functional_status
     target_role: economic_efficiency
-  - source_role: purpose_of_machine
+  - source_role: purpose
     target_role: purpose_of_economy
   - source_role: machine_users
     target_role: economy_participants
@@ -3235,7 +3235,7 @@ metaphors:
   - source_role: race_event
     target_role: voting_event
   - source_role: prize
-    target_role: election_office
+    target_role: office
   examples:
   - 'The GOP presidential race has a new front-runner: Gov. Rick Perry.'
   - This year's US presidential election is shaping up to be a very close race, with the incumbent currently
@@ -3635,13 +3635,13 @@ metaphors:
   - Economics metaphors
   - Poverty as an individual problem metaphors
   mappings:
-  - source_role: being_at_a_location_experiencer
+  - source_role: experiencer
     target_role: status_holder
-  - source_role: being_at_a_location_current_location
+  - source_role: current_location
     target_role: status
-  - source_role: being_at_a_location_landmark
+  - source_role: landmark
     target_role: standard_of_living
-  - source_role: being_at_a_location_x_schema
+  - source_role: x_schema
     target_role: stative_x_schema
   relations:
     subcase_of_target:
@@ -3913,7 +3913,7 @@ metaphors:
   mappings:
   - source_role: recipient
     target_role: job_holder
-  - source_role: possession
+  - source_role: possessable_object
     target_role: position
   examples:
   - This job just fell into my lap.
@@ -4242,7 +4242,7 @@ metaphors:
     target_role: authority_structure
   - source_role: building_stability
     target_role: functional_status
-  - source_role: foundation_of_structure
+  - source_role: building_foundation
     target_role: authority_base
   relations:
     subcase_of_source:
@@ -4424,8 +4424,8 @@ metaphors:
   families:
   - Governance metaphors
   mappings:
-  - source_role: motion_controller
-    target_role: governor
+  - source_role: vehicle_driver
+    target_role: governing_actor
   - source_role: vehicle
     target_role: affected_jurisdiction
   - source_role: passengers
@@ -4768,7 +4768,7 @@ metaphors:
   - Gun debate metaphors
   mappings:
   - source_role: disease
-    target_role: weapon
+    target_role: weapon_whole
   examples:
   - ‘America's gun disease is a national security issue'
 - name: GUNS_ARE_A_NATURAL_DISASTER
@@ -4786,7 +4786,7 @@ metaphors:
   - Gun debate metaphors
   mappings:
   - source_role: addicting_thing
-    target_role: weapon
+    target_role: weapon_whole
   examples:
   - The primary reason Americans are addicted to guns is due to the National Rifle Association's very
     effective — and immoral — campaign to instill fear into the heart of our citizens, which has paralyzed
@@ -4802,7 +4802,7 @@ metaphors:
   - Gun debate metaphors
   mappings:
   - source_role: magical_object
-    target_role: weapon
+    target_role: weapon_whole
   relations:
     subcase_of_source:
     - GUNS_ARE_TARGETS_OF_PSYCHOLOGICAL_FIXATION
@@ -4832,7 +4832,7 @@ metaphors:
   - Gun debate metaphors
   mappings:
   - source_role: pest
-    target_role: weapon
+    target_role: weapon_whole
   examples:
   - gun-infested state
   relations:
@@ -4933,8 +4933,8 @@ metaphors:
   mappings:
   - source_role: possessor
     target_role: gun_rights_owner
-  - source_role: possession
-    target_role: right
+  - source_role: possessable_object
+    target_role: right_to_own_guns
   relations:
     subcase_of_target:
     - CITIZEN_RIGHTS_ARE_POSSESSIONS
@@ -5031,9 +5031,9 @@ metaphors:
   - Primary metaphors
   - Well-being metaphors
   mappings:
-  - source_role: upright_entity
-    target_role: healthy_entity
-  - source_role: state_of_uprightness
+  - source_role: vertical_entity
+    target_role: entity_possessing_health
+  - source_role: scalar_position
     target_role: state_of_health
   examples:
   - He's down with the flu.
@@ -5634,7 +5634,7 @@ metaphors:
   families:
   - Legislation metaphors
   mappings:
-  - source_role: mover
+  - source_role: impeded_entity
     target_role: bill
   - source_role: affected_motion
     target_role: bill_status_change
@@ -5732,10 +5732,10 @@ metaphors:
   mappings:
   - source_role: factory
     target_role: institution_whole
-  - source_role: factory_managers
+  - source_role: factory_bosses
     target_role: institution_heads
   - source_role: factory_workers
-    target_role: institution_holders
+    target_role: position_holders
   examples:
   - Society's great institutions are factories of ideas, regularly churning out new frameworks, insights,
     and understanding.
@@ -5839,9 +5839,9 @@ metaphors:
   - Governance metaphors
   mappings:
   - source_role: related_entity_1
-    target_role: international_relation_nation1
+    target_role: nation1
   - source_role: related_entity_2
-    target_role: international_relations_nation2
+    target_role: nation2
   - source_role: relationship_whole
     target_role: international_relationship
   examples:
@@ -5948,10 +5948,10 @@ metaphors:
     target_role: knower
   - source_role: touching_x_schema
     target_role: knowing_x_schema
-  - source_role: limbs
+  - source_role: touch_bodypart
     target_role: mind
-  - source_role: object
-    target_role: idea
+  - source_role: touched_thing
+    target_role: knowledge
   examples:
   - I've almost got an idea, but I can't quite put my finger on it.
   - I could never put my finger on what the problem was. I felt crazy at times and there were so many
@@ -6111,7 +6111,7 @@ metaphors:
   mappings:
   - source_role: recipient
     target_role: learner
-  - source_role: possession
+  - source_role: possessable_object
     target_role: learned_material
   - source_role: getting_x_schema
     target_role: learning_x_schema
@@ -6131,7 +6131,7 @@ metaphors:
   - Education metaphors
   mappings:
   - source_role: nurtitious_food
-    target_role: learned_knoweledge
+    target_role: learned_material
   - source_role: benefits_of_getting_nutrients
     target_role: benefits_of_learning
 - name: LEGISLATIVE_ACTIVITY_IS_MAKING_OBJECTS
@@ -6221,11 +6221,11 @@ metaphors:
     target_role: life_liver
   - source_role: journey_event
     target_role: life_span
-  - source_role: journey_destination
+  - source_role: journey_end
     target_role: life_goals
   - source_role: journey_stops
     target_role: short_term_life_goals
-  - source_role: path_traced_by_sequence_of_motion
+  - source_role: course_of_journey
     target_role: course_of_life
   - source_role: locations_along_journey
     target_role: life_stages
@@ -6354,12 +6354,12 @@ metaphors:
   mappings:
   - source_role: person
     target_role: machine_entity
-  - source_role: human_body
+  - source_role: body
     target_role: machine_hardware
   - source_role: human_mind
     target_role: machine_software
   - source_role: health_of_person
-    target_role: good_functioning_of_machine
+    target_role: functional_status
   examples:
   - The engine is dying; we need to repair it.
 - name: MAINTAINING_HIGHER_SOCIAL_STATUS_IS_MAINTAINING_HOLD_ON_PHYSICAL_POSITION
@@ -6752,9 +6752,9 @@ metaphors:
   - Morality metaphors
   mappings:
   - source_role: parent
-    target_role: moral_authority_holder
+    target_role: moral_authority_entity
   - source_role: child
-    target_role: obeyer
+    target_role: moral_authority_obeyer
 - name: MORAL_CHARACTER_IS_THE_SUBSTANCE_AN_OBJECT_IS_MADE_OF
   type: Composed/complex
   source_frame: object
@@ -7243,13 +7243,13 @@ metaphors:
     target_role: organization_whole
   - source_role: functional_status
     target_role: organizational_efficacy
-  - source_role: purpose_of_machine
+  - source_role: purpose
     target_role: organization_mission
   - source_role: operator_of_machine
     target_role: head_of_organization
   - source_role: operating_x_schema
     target_role: organization_management_x_schema
-  - source_role: machine_parts
+  - source_role: parts
     target_role: organization_sub_groups
   - source_role: procedures_for_operation
     target_role: organization_procedures
@@ -7266,7 +7266,7 @@ metaphors:
   families:
   - Grady primary metaphors
   mappings:
-  - source_role: physical_structure
+  - source_role: structure_whole
     target_role: organizational_structure
   - source_role: physical_structure_x_schema
     target_role: organization_x_schema
@@ -7583,9 +7583,9 @@ metaphors:
   - Mind metaphors
   mappings:
   - source_role: food
-    target_role: ideas
+    target_role: content
   - source_role: food_preparer
-    target_role: thinker
+    target_role: cognizer
   examples:
   - They're just half-baked ideas.
   - Just give me the raw facts.
@@ -7805,7 +7805,7 @@ metaphors:
   - source_role: self_motion_x_schema
     target_role: action_x_schema
   - source_role: path
-    target_role: action_x_schema_kind
+    target_role: action_type
   examples:
   - She made great strides in her dissertation.
   - We are sliding backward.
@@ -8043,7 +8043,7 @@ metaphors:
     target_role: related_entity_2
   - source_role: structural_stability
     target_role: relationship_status
-  - source_role: base_support
+  - source_role: foundation_of_structure
     target_role: relation_basis
   - source_role: structural_framework
     target_role: relation_framework
@@ -8099,7 +8099,7 @@ metaphors:
   mappings:
   - source_role: possessor
     target_role: rights_holder
-  - source_role: possession
+  - source_role: possessable_object
     target_role: right
   relations:
     subcase_of_source:
@@ -8191,7 +8191,7 @@ metaphors:
   mappings:
   - source_role: journeyer
     target_role: romantic_relationship_participants
-  - source_role: co_journeyer
+  - source_role: journey_companion
     target_role: romantic_relationship_participants
   - source_role: vehicle
     target_role: relationship
@@ -8312,7 +8312,7 @@ metaphors:
   - source_role: candidates
     target_role: options
   - source_role: adoptee
-    target_role: selection_option
+    target_role: selected_option
   examples:
   - They adopted the customs of their neighbors.
 - name: SELF_INITIATED_STATE_CHANGE_IS_SELF_PROPELLED_MOTION
@@ -8358,8 +8358,8 @@ metaphors:
   families:
   - Event structure metaphors
   mappings:
-  - source_role: moving_entity
-    target_role: acting_entity
+  - source_role: mover
+    target_role: actor
   examples:
   - Create a complete, measurable, action plan which includes all the steps necessary to achieve your
     goal.
@@ -8380,8 +8380,8 @@ metaphors:
   - Primary metaphors
   - Well-being metaphors
   mappings:
-  - source_role: supine_entity
-    target_role: sick_entity
+  - source_role: vertical_entity
+    target_role: entity_possessing_health
   examples:
   - He's sinking fast.
   - He came down with the flu.
@@ -8518,8 +8518,8 @@ metaphors:
   - Social problems metaphors
   mappings:
   - source_role: disease
-    target_role: problem
-  - source_role: person
+    target_role: social_problem
+  - source_role: patient
     target_role: society
   - source_role: healthy_cell
     target_role: honest_citizen
@@ -8735,7 +8735,7 @@ metaphors:
   - Primary metaphors
   mappings:
   - source_role: vertical_entity
-    target_role: subjugated_entity
+    target_role: dependent_entity
   examples:
   - He is under my control.
   - He fell from power.
@@ -8804,9 +8804,9 @@ metaphors:
   families:
   - Taxation metaphors
   mappings:
-  - source_role: agent
+  - source_role: cause_of_harm
     target_role: taxer
-  - source_role: victim
+  - source_role: harmed_entity
     target_role: tax_payer
   - source_role: harmful_effect_result
     target_role: tax_payment
@@ -9052,7 +9052,7 @@ metaphors:
   - Mind metaphors
   mappings:
   - source_role: object
-    target_role: ideas
+    target_role: thinking_content
   examples:
   - Let's toss some ideas around.
   entailments:
@@ -9249,14 +9249,14 @@ metaphors:
     target_role: relationship_intensity
   - source_role: building_stability
     target_role: relationship_status
-  - source_role: base_support
+  - source_role: building_foundation
     target_role: basis_of_trust
   - source_role: building_framework
     target_role: trust_framework
   - source_role: foundation_material
     target_role: trust_emotion
   - source_role: change_in_integrity
-    target_role: change_in_relationship_integrity
+    target_role: change_in_relationship_intensity
   examples:
   - We are working hard to rebuild the trust of our customers.
   - The scandals have shaken the foundations of trust in the market.
@@ -9276,7 +9276,7 @@ metaphors:
   - Orientational metaphors
   - Primary metaphors
   mappings:
-  - source_role: supine_entity
+  - source_role: vertical_entity
     target_role: unconscious_entity
   examples:
   - He fell into a coma.
@@ -9328,9 +9328,9 @@ metaphors:
   - Grady primary metaphors
   - Mind metaphors
   mappings:
-  - source_role: grasping_person
+  - source_role: actor
     target_role: understanding_person
-  - source_role: grasped_object
+  - source_role: object
     target_role: understood_idea
   examples:
   - He just can't seem to grasp the concept.
@@ -9355,15 +9355,15 @@ metaphors:
   mappings:
   - source_role: person_who_sets_trajector_in_motion
     target_role: cognizer
-  - source_role: trajector
+  - source_role: mover
     target_role: locus_of_cognizers_attention
   - source_role: course_of_motion
     target_role: pathway_scanned
-  - source_role: source_of_motion
+  - source_role: source
     target_role: starting_locus_of_attention
-  - source_role: path_of_motion
+  - source_role: path
     target_role: intermediate_loci_of_attention
-  - source_role: goal_of_motion
+  - source_role: goal
     target_role: ending_locus_of_attention
   examples:
   - California has been moving toward the left even though much of the country has been moving toward
