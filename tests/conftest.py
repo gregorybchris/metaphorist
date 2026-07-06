@@ -3,11 +3,11 @@ from pathlib import Path
 import pytest
 import yaml
 
-ROOT = Path(__file__).parent.parent
+DATASET_DIR = Path(__file__).parent.parent / "dataset"
 
 
 def _load(name):
-    with open(ROOT / name) as f:
+    with open(DATASET_DIR / name) as f:
         return yaml.safe_load(f)
 
 

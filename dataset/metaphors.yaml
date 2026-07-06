@@ -33,14 +33,6 @@ metaphors:
     - ABILITY_TO_EVALUATE_IS_ABILITY_TO_SEE
 - name: ABILITY_TO_EVALUATE_IS_ABILITY_TO_SEE
   type: Composed/complex
-  definition: 'Evaluating is visual inspection of an object.
-
-
-    In order to evaluate an evaluee''s actions or other properties, the evaluator has to know about these
-    actions/properties. This metaphor uses the more general metaphor KNOWING IS SEEING.
-
-
-    Cultural scope checked for Persian--Aria'
   source_frame: seeing
   target_frame: evaluation
   families:
@@ -64,8 +56,6 @@ metaphors:
     - ABILITY_TO_KNOW_IS_ABILITY_TO_SEE
 - name: ABILITY_TO_KNOW_IS_ABILITY_TO_SEE
   type: Entailed
-  definition: "The target domain for this specific metaphor seems to be about the ability to learn (i.e.\
-    \ 'coming to know'), rather than the state of knowing something.  \n\nCultural scope checked for Persian--Aria"
   source_frame: seeing
   target_frame: knowing
   families:
@@ -112,8 +102,6 @@ metaphors:
   - Education metaphors
 - name: ACHIEVING_A_PURPOSE_IS_ACQUIRING_A_DESIRED_OBJECT
   type: Composed/complex
-  definition: We could also make a metaphor in which the actor's objective is to get rid of an undesirable
-    object.
   source_frame: gain-possession
   target_frame: purposeful-action
   families:
@@ -137,8 +125,6 @@ metaphors:
     - CHANGE_IS_ACQUISITION
     - EXPERIENCING_A_STATE_IS_POSSESSING_AN_OBJECT
 - name: ACHIEVING_A_PURPOSE_IS_GETTING_SOMETHING_TO_EAT
-  definition: This metaphor is related to ACHIEVING A PURPOSE IS ACQUIRING A DESIRED OBJECT, with the
-    desired object here specifically being food.
   source_frame: gain-possession
   target_frame: purposeful-action
   families:
@@ -158,10 +144,6 @@ metaphors:
     - ACHIEVING_A_PURPOSE_IS_ACQUIRING_A_DESIRED_OBJECT
 - name: ACHIEVING_A_PURPOSE_IS_REACHING_A_DESTINATION
   type: Entailed
-  definition: 'DEMO.
-
-
-    see discussion'
   source_frame: self-propelled-motion-to-a-destination
   target_frame: purposeful-action
   families:
@@ -196,7 +178,6 @@ metaphors:
     entailed_by:
     - PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
 - name: ACHIEVING_GUN_RIGHTS_IS_REACHING_A_DESTINATION
-  definition: DEMO.
   source_frame: motion-to-a-location
   target_frame: gun-rights
   families:
@@ -223,7 +204,6 @@ metaphors:
     - CONTROL_IS_UP
 - name: ACQUIRING_IDEAS_IS_EATING
   type: Primary
-  definition: See the numerous subcases of this metaphor for the relevant examples.
   source_frame: eating
   target_frame: thinking-about
   families:
@@ -251,17 +231,12 @@ metaphors:
     - IDEAS_ARE_FOOD
     - TESTING_THE_NATURE_OF_IDEAS_IS_SMELLING_OR_TASTING
 - name: ACQUIRING_RESOURCE_IS_CONSUMING_FOOD
-  definition: 'Changed Source frame from Consuming food (autoimport) to Eating (already existing frame)
-
-
-    Need to add mappings'
   source_frame: eating
   target_frame: resource-consumption
   families:
   - Wealth metaphors
 - name: ACTION_IS_BEING_IN_A_LOCATION
   type: Primary
-  definition: The Target domain for the current metaphor is one of active processes and actions.
   source_frame: being-at-a-location
   target_frame: action
   families:
@@ -289,13 +264,6 @@ metaphors:
     target: expecting to perform an action in the future
 - name: ACTION_IS_MOTION
   type: Primary
-  definition: 'What is the appropriate Source frame here?  We are currently using a very general Motion
-    frame (mover could be any type of entity, motion is not necessarily controlled by the mover).  But,
-    is the motion here actually ''animate motion'' (i.e. mover is also an actor), with the experiential
-    correlation that most (volitional) actions also involve (volitional) self-initiated/controlled motion?
-
-
-    Cultural scope checked for Persian--Aria'
   source_frame: motion
   target_frame: action
   families:
@@ -312,8 +280,6 @@ metaphors:
   - This computer program turns the power on and off.
 - name: ACTION_IS_MOTION_ALONG_A_PATH
   type: Primary
-  definition: What used to be ACTION IS MOTION or ACTION IS MOVEMENT is now broken up into a finer-grained
-    distinction based on the structure of the source domain frame.
   source_frame: motion-along-a-path
   target_frame: action
   families:
@@ -343,11 +309,6 @@ metaphors:
     - ACTION_IS_MOTION
 - name: ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH
   type: Primary
-  definition: '"actions are seen as movements that an agent carries out under the agent''s own force"
-    (PITF, p. 187)
-
-    The current metaphor is defined for motion that involves a change in the mover''s location (i.e. motion
-    along a path).'
   source_frame: self-propelled-motion
   target_frame: action
   families:
@@ -394,7 +355,6 @@ metaphors:
   - Bayonne City Council meeting may arouse protest from those opposed to SID management switch
 - name: ACTIVITIES_ARE_BOUNDED_REGIONS_IN_SPACE
   type: Primary
-  definition: Cultural scope checked for Persian--Aria
   source_frame: bounded-region
   target_frame: activity
   families:
@@ -435,8 +395,6 @@ metaphors:
     - CRIME_IS_AN_ANIMAL
 - name: ADDRESSING_ECONOMIC_PROBLEMS_IS_TREATING_AN_ILLNESS
   type: Composed/complex
-  definition: '''Economics problems'' is taken here to refer to society-level problems, like national
-    debt or inflation.'
   source_frame: treating-a-physical-affliction
   target_frame: addressing-social-problems
   families:
@@ -445,7 +403,6 @@ metaphors:
     subcase_of_target:
     - ADDRESSING_SOCIAL_PROBLEMS_IS_TREATING_AN_ILLNESS
 - name: ADDRESSING_GUN_VIOLENCE_IS_WAGING_WAR
-  definition: DEMO.
   source_frame: war
   target_frame: injurious-gun-use
   families:
@@ -457,7 +414,6 @@ metaphors:
     - ADDRESSING_SOCIAL_PROBLEMS_IS_WAGING_WAR
 - name: ADDRESSING_POVERTY_IS_TREATING_AN_ILLNESS
   type: Composed/complex
-  definition: e.g. "cure us of poverty"
   source_frame: treating-a-physical-affliction
   target_frame: addressing-poverty
   families:
@@ -482,7 +438,6 @@ metaphors:
     - POVERTY_IS_A_DISEASE
 - name: ADDRESSING_POVERTY_IS_WAGING_WAR
   type: Composed/complex
-  definition: e.g. "combat poverty"
   source_frame: physical-combat
   target_frame: addressing-poverty
   families:
@@ -500,11 +455,6 @@ metaphors:
     - ADDRESSING_SOCIAL_PROBLEMS_IS_WAGING_WAR
 - name: ADDRESSING_SOCIAL_PROBLEMS_IS_TREATING_AN_ILLNESS
   type: Composed/complex
-  definition: "e.g. \"curing poverty\"\n\n*what is the difference between this metaphor and the higher\
-    \ level metaphor ADDRESSING SOCIAL PROBLEMS IS TREATING A PHYSICAL AFFLICTION?? \n-> also, do we need\
-    \ to move verb LUs related to Disease treatment back into this source frame from Treating a physical\
-    \ affliction?\n\nswitched Source Frame from Treating a physical affliction to Disease treatment -\
-    \ Karie Feb 2015"
   source_frame: treating-a-physical-affliction
   target_frame: addressing-social-problems
   families:
@@ -534,7 +484,6 @@ metaphors:
     entailed_by:
     - SOCIAL_PROBLEMS_ARE_DISEASES
 - name: ADDRESSING_SOCIAL_PROBLEMS_IS_TREATING_A_PHYSICAL_AFFLICTION
-  definition: e.g. "education is the best medicine for poverty"
   source_frame: treating-a-physical-affliction
   target_frame: addressing-social-problems
   families:
@@ -622,7 +571,6 @@ metaphors:
   - Of course, gun control fanatics pay little attention to facts.
 - name: AFFECTION_IS_WARMTH
   type: Primary
-  definition: Cultural scope checked for Persian--Aria
   source_frame: heat
   target_frame: affection
   families:
@@ -667,11 +615,6 @@ metaphors:
     - AIDS_TO_ACHIEVING_A_PURPOSE_ARE_AIDS_TO_REACHING_A_DESTINATION
 - name: AIDS_TO_IMPROVING_ECONOMIC_STATUS_ARE_TICKETS_TO_A_DESTINATION
   type: Composed/complex
-  definition: 'e.g. "education is your ticket out of poverty"
-
-
-    NOTE: this is part of the higher level stuff about purposes being destinations - BUT "ticket" is not
-    used for every other kind of purposive action!!!'
   source_frame: ticket
   target_frame: aids-to-action
   families:
@@ -682,7 +625,6 @@ metaphors:
     - AIDS_TO_ACHIEVING_A_PURPOSE_ARE_TICKETS_TO_A_DESTINATION
 - name: AIDS_TO_IMPROVING_ECONOMIC_STATUS_IS_AID_TO_UPWARD_MOTION
   type: Composed/complex
-  definition: e.g. "ladder out of poverty"
   source_frame: aid-to-upward-motion
   target_frame: improving-economic-status
   families:
@@ -776,10 +718,6 @@ metaphors:
     subcase_of_target:
     - AMOUNT_OF_STATE_IS_SIZE_OF_OBJECT
 - name: AMOUNT_OF_POVERTY_IS_SIZE_OF_GEOGRAPHIC_FEATURE
-  definition: 'e.g. "islands of prosperity next to oceans of poverty"
-
-
-    This is an umbrella for oceans of poverty, swamps of poverty, sea, deep water, etc'
   source_frame: geographic-feature
   target_frame: poverty
   families:
@@ -792,10 +730,6 @@ metaphors:
     - AMOUNT_OF_POVERTY_IS_SIZE
 - name: AMOUNT_OF_PROBLEM_IS_SIZE
   type: Composed/complex
-  definition: Added this metaphor for testing identification of poverty metaphors.  If we keep this metaphor,
-    we should add roles, mappings, and entailments. Plus, there should probably be a more general metaphor
-    relating abstract  concepts like problems to physical objects, with the entailment that the size of
-    the physical entity maps to the 'amount' of the abstract entity. [EKD 7/24/15]
   source_frame: size
   target_frame: problem
 - name: AMOUNT_OF_PROGRESS_IS_AMOUNT_OF_DISTANCE_MOVED
@@ -824,7 +758,6 @@ metaphors:
     entailed_by:
     - ENACTING_LEGISLATION_IS_CAUSING_MOTION_ALONG_A_PATH
 - name: AMOUNT_OF_RESOURCE_IS_BODY_WEIGHT
-  definition: Body weight amount is mapped to Resource amount
   source_frame: body-weight
   target_frame: resource
   families:
@@ -843,7 +776,6 @@ metaphors:
     entailed_by:
     - STATES_ARE_PHYSICAL_OBJECTS
 - name: ANALYSIS_OF_SOCIAL_PROBLEMS_IS_DIAGNOSIS_OF_AFFLICTION
-  definition: e.g. "symptoms of poverty"
   source_frame: diagnosis-of-affliction
   target_frame: social-problems
   families:
@@ -911,10 +843,6 @@ metaphors:
     - ANGER_IS_HEAT
 - name: ANGER_IS_HEAT
   type: Primary
-  definition: 'The most general metaphor for anger.
-
-
-    Cultural scope checked for Persian--Aria'
   source_frame: heat
   target_frame: anger
   families:
@@ -1048,7 +976,6 @@ metaphors:
     - ARGUMENT_IS_PHYSICAL_COMBAT
 - name: ARITHMETIC_IS_OBJECT_COLLECTION
   type: Primary
-  definition: Where mathematics comes from (2000)
   source_frame: object-collection
   target_frame: arithmetic
   families:
@@ -1077,7 +1004,6 @@ metaphors:
     - MORE_IS_BIG
 - name: ARITHMETIC_IS_OBJECT_CONSTRUCTION
   type: Primary
-  definition: Where Mathematics Comes from (2000)
   source_frame: object-construction
   target_frame: arithmetic
   families:
@@ -1173,7 +1099,6 @@ metaphors:
     - CONTROL_IS_A_POSSESSION
 - name: ATTRIBUTES_ARE_ENTITIES
   type: Primary
-  definition: Cultural scope checked for Persian--Aria
   source_frame: entity
   target_frame: attribute
   families:
@@ -1212,7 +1137,6 @@ metaphors:
   - source: possess does not have possession
     target: state/attribute standard is not associated with entity
 - name: ATTRIBUTES_OF_GOVERNMENT_ARE_ENTITIES
-  definition: Cultural scope checked for Persian--Aria
   source_frame: '-'
   target_frame: '-'
   families:
@@ -1226,8 +1150,6 @@ metaphors:
   - Many citizens underestimate the federal government's efficiency.
   - The government has a responsibility to do something about the economic downturn.
 - name: AUGMENTING_ECONOMIC_ASSETS_IS_CREATING_OBJECTS
-  definition: Changed Source frame from Creating objects (auto import) to Create object.  Need to evaluate
-    metaphor relations
   source_frame: create-object
   target_frame: economic-resource
   families:
@@ -1251,7 +1173,6 @@ metaphors:
   examples:
   - Scientists didn't notice the mistake in their calculations until the satellite was put into orbit.
 - name: BECOMING_IMPOVERISHED_IS_MOVING_DOWNWARDS
-  definition: e.g., "fall into poverty", "slide into poverty"
   source_frame: downward-motion
   target_frame: impoverished
   families:
@@ -1308,7 +1229,6 @@ metaphors:
     entailed_by:
     - MORALITY_IS_UPRIGHTNESS
 - name: BEING_IMPOVERISHED_IS_BEING_AT_A_LOW_LOCATION
-  definition: e.g. She lives in the pits of poverty
   source_frame: being-at-a-low-location
   target_frame: impoverished
   families:
@@ -1330,7 +1250,6 @@ metaphors:
     subcase_of_source:
     - BEING_IMPOVERISHED_IS_BEING_IN_A_BOUNDED_REGION
 - name: BEING_IMPOVERISHED_IS_BEING_IN_A_BOUNDED_REGION
-  definition: e.g., "They live/remain in poverty"
   source_frame: being-in-a-bounded-region
   target_frame: impoverished
   families:
@@ -1339,7 +1258,6 @@ metaphors:
   - Poverty metaphors
 - name: BEING_IN_A_HIGH_SOCIAL_CLASS_IS_BEING_HIGH_ON_A_SCALE
   type: Composed/complex
-  definition: source and target frames need to be fixed - done (Oana)
   source_frame: being-high-on-a-scale
   target_frame: social-class
   families:
@@ -1351,7 +1269,6 @@ metaphors:
     - WEALTH_IS_LINEAR_SPATIAL_SCALE
 - name: BEING_IN_A_LOW_SOCIAL_CLASS_IS_BEING_LOW_ON_A_SCALE
   type: Composed/complex
-  definition: Source and target frames need to be fixed
   source_frame: being-low-on-a-scale
   target_frame: social-class
   families:
@@ -1368,7 +1285,6 @@ metaphors:
   families:
   - Wealth metaphors
 - name: BEING_IN_A_STATE_IS_BEING_AT_A_POINT_ON_A_LINEAR_SCALE
-  definition: should be 'being in a state is being at a point on a scale'
   source_frame: scale
   target_frame: experiencing-a-state
   relations:
@@ -1389,8 +1305,6 @@ metaphors:
   examples:
   - I heard her out and became convinced of her arguments.
 - name: BEING_TAXED_IS_CRIME
-  definition: not sure if we need this, or if TAXATION IS A CRIME is sufficient? this just privileges
-    the victim's perspective.
   source_frame: crime
   target_frame: taxation
   families:
@@ -1466,22 +1380,6 @@ metaphors:
   - The creation of this board of unelected bureaucrats is yet another tentacle of the Obama Administration
     digging its way into the doctors-patient relationship.
 - name: BUREACRACY_IS_A_MAZE
-  definition: "GL: Cascade for Bureaucracy Is A Maze\n\nFRAME: Bureaucracy; \nROLES: Proposer; Proposal;\
-    \ Bureaucrats; Bureaucratic Process. \nAn X-schema characterizes the stages of the process. \nAt each\
-    \ stage, a Bureaucrat Evaluates the Proposal, and either Approves, Rejects, or Delays. \nProposer’s\
-    \ Goal is Approval at all stages.\n\nISA: A Bureaucracy is an institution. \n\nFRAME: An Institution\
-    \ has functions.\n\nM4: Carrying out a function Is An action process.\n\nM4: Actions are Motions\n\
-    \nM4: Processes Are Motion Sequences\n\nM4: Achieving a purpose is Reaching a destination.\n\nM4:\
-    \ An institution is a building.\n\nM4: A position in an institution is a location in a building.\n\
-    \nISA: A bureaucrat is someone who occupies a position in a bureaucracy.\n\nISA: A building is a structure\
-    \ with pathways. \n\nM4: Efficiency is Minimizing resources and Maximizing speed.\n\nISA: A Maze is\
-    \ a network; Locations are Network nodes; Paths Are Network lines.\n\nFRAME: A maze Has Confusingly\
-    \ intersecting paths that one tends to get lost on and where there is a low probability of reaching\
-    \ a destination. A maze uses more energy and is slower than a direct path.\n \nMR4 INFERENCE: Trying\
-    \ to achieve a purpose in a bureaucracy is trying to reach a destination in a maze.\n\nM4 INFERENCE:\
-    \ A person trying to achieve a purpose in a bureaucracy has to enter a maze.\n\nM4 INFERENCE: Bureaucracies\
-    \ Are Inefficient.\n\nM4 INFERENCE: A person trying to achieve a purpose in a bureaucracy has a low\
-    \ probability of achieving that purpose efficiently."
   source_frame: maze
   target_frame: bureaucracy
   families:
@@ -1619,19 +1517,12 @@ metaphors:
     - SIMILARITY_IS_PROXIMITY
 - name: CAUSATION_IS_AGENTIVE_CAUSATION
   type: Primary
-  definition: 'Generic is specific: prototypical causation is agentive causation.'
   source_frame: agentive-causation
   target_frame: causation
   families:
   - Primary metaphors
 - name: CAUSATION_IS_FORCED_MOVEMENT
   type: Composed/complex
-  definition: 'see discussion
-
-
-    This metaphor has two listings: it is listed as both an entailment of CHANGE OF STATE IS CHANGE OF
-    LOCATION and as a composed metaphor that combines CAUSES ARE FORCES and EXPERIENCING A STATE IS BEING
-    AT A LOCATION.'
   source_frame: forced-motion
   target_frame: caused-change-of-state
   families:
@@ -1690,7 +1581,6 @@ metaphors:
     related:
     - FORCE_TRANSFER_IS_OBJECT_TRANSFER
 - name: CAUSED_IMPOVERISHMENT_IS_CAUSED_DOWNWARD_MOTION
-  definition: pushed down into poverty CHECK!
   source_frame: caused-downward-motion
   target_frame: poverty
   families:
@@ -1700,7 +1590,6 @@ metaphors:
     entailed_by:
     - BECOMING_IMPOVERISHED_IS_MOVING_DOWNWARDS
 - name: CAUSED_IMPROVED_ECONOMIC_STATUS_IS_CAUSED_UPWARD_MOTION
-  definition: e.g., "lift someone out of poverty"
   source_frame: caused-upward-motion
   target_frame: improving-economic-status
   families:
@@ -1727,7 +1616,6 @@ metaphors:
     - PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
 - name: CAUSES_ARE_FORCES
   type: Primary
-  definition: see Discussion
   source_frame: force
   target_frame: causation
   families:
@@ -1771,12 +1659,6 @@ metaphors:
     - ADDRESSING_SOCIAL_PROBLEMS_IS_TREATING_AN_ILLNESS
 - name: CAUSING_ECONOMIC_HARDSHIP_IS_CAUSING_PHYSICAL_HARM
   type: Composed/complex
-  definition: 'e.g. "Poverty will cripple the economy"
-
-    CLASSIFY?
-
-
-    merged with analysis from CAUSING ECONOMIC DIFFICULTY IS INFLICTING HARM'
   source_frame: harm-to-living-entity
   target_frame: economic-difficulty
   families:
@@ -1848,8 +1730,6 @@ metaphors:
     target: willingness to transfer control
 - name: CHANGE_IS_ACQUISITION
   type: Primary
-  definition: In this metaphor, the onset of possessing an object (e.g. getting) is mapped to the onset
-    of 'experiencing' a particular state
   source_frame: gain-possession
   target_frame: change-of-state
   families:
@@ -1872,10 +1752,6 @@ metaphors:
     - CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
 - name: CHANGE_IS_LOSS
   type: Composed/complex
-  definition: 'The loss of possession is mapped to the offset of ''experiencing'' a particular state
-
-
-    Relevant state is initial_state (i.e. is change out of a state)'
   source_frame: lose-possession
   target_frame: change-of-state
   families:
@@ -1898,7 +1774,6 @@ metaphors:
     entailed_by:
     - CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
 - name: CHANGE_OF_STATE_IS_CHANGE_OF_LOCATION
-  definition: Cultural scope checked for Persian--Aria
   source_frame: motion-along-a-path
   target_frame: change-of-state
   families:
@@ -1939,7 +1814,6 @@ metaphors:
     target: state can be changed by 'self'/experiencer
 - name: CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
   type: Composed/complex
-  definition: Cultural scope checked for Persian--Aria
   source_frame: possession-change
   target_frame: change-of-state
   families:
@@ -2056,7 +1930,6 @@ metaphors:
     subcase_of_target:
     - RIGHTS_ARE_SHIELDS_FROM_HARM
 - name: CITIZEN_RIGHTS_ARE_TERRITORIES
-  definition: Cultural scope checked for Persian--Aria
   source_frame: territory
   target_frame: rights
   families:
@@ -2094,11 +1967,6 @@ metaphors:
     target: a well-functioning/non-functioning mind
 - name: COGNIZING_IS_EATING
   type: Primary
-  definition: 'A general metaphor, subsumed by MIND AS BODY metaphors.
-
-
-    ''Eating'' in the metaphor title is a cover term for all food ingestion-related processes, and does
-    not refer to the Eating frame.'
   source_frame: eating
   target_frame: cognizing
   families:
@@ -2236,7 +2104,6 @@ metaphors:
     - SOCIAL_GROUP_IS_A_FAMILY
 - name: COMPANY_IS_A_COMPLEX_STRUCTURE
   type: Composed/complex
-  definition: Kovecses 2005
   source_frame: complex-physical-object
   target_frame: company
   examples:
@@ -2368,7 +2235,6 @@ metaphors:
     - CONSUMING_RESOURCES_IS_EATING
 - name: CONTROL_IS_A_BOUNDED_REGION
   type: Primary
-  definition: Cultural scope checked for Persian--Aria
   source_frame: bounded-region
   target_frame: control
   families:
@@ -2398,7 +2264,6 @@ metaphors:
     related:
     - STATES_ARE_LOCATIONS
 - name: CONTROL_IS_A_POSSESSION
-  definition: A given entity's ability to control is a possession possessed by that entity.
   source_frame: possession
   target_frame: control
   families:
@@ -2458,11 +2323,6 @@ metaphors:
     - CONTROL_IS_OBJECT_MANIPULATION
 - name: CONTROL_IS_UP
   type: Entailed
-  definition: This entry is the entry for the entailed metaphor CONTROL IS UP, a scalar entailment of
-    CONTROL IS VERTICALITY. The word 'control' in CONTROL IS UP picks out one end of the scale, while
-    the word 'control' in CONTROL IS VERTICALITY is a term covering the entire scale ranging from 'having
-    control over' to 'being subject to control'. For the latter generic metaphor please see its own separate
-    entry under 'related metaphors' below.
   source_frame: verticality
   target_frame: control
   families:
@@ -2513,7 +2373,6 @@ metaphors:
   - Only a few years ago the United States was not considered a good neighbor by Latin America.
 - name: CORPORATIONS_ARE_PEOPLE
   type: Composed/complex
-  definition: Particularly relevant in legislature pertaining to the rights of corporations under law.
   source_frame: person
   target_frame: corporation
   mappings:
@@ -2581,7 +2440,6 @@ metaphors:
     - CORRUPTION_IS_A_DESTRUCTIVE_NATURAL_PROCESS
 - name: CORRUPTION_IS_DECAY
   type: Composed/complex
-  definition: Cultural scope for Persian checked
   source_frame: decay
   target_frame: corruption
   families:
@@ -2749,7 +2607,6 @@ metaphors:
   - Credit card debt has been growing significantly
 - name: DEBT_IS_PHYSICAL_IMPEDIMENTS_TO_MOTION
   type: Composed/complex
-  definition: e.g., "buried in debt"
   source_frame: motion-impediments
   target_frame: debt
   families:
@@ -2833,20 +2690,6 @@ metaphors:
   - democracy spreads its wings
 - name: DEMOCRACY_IS_A_FACADE
   type: Composed/complex
-  definition: '"Interior-exterior" taken out of Source frame
-
-
-    There are two dimensions to consider:
-
-    1. Whether there is a different interior vs. exterior (facade, farce); whether there is an exterior
-    while having an empty interior (husks, shells); Interior is understood as the ''expected interior''
-    in the relevant frame.
-
-
-    2. Whether the ''fooling'' is intentional or not (there is an Evaluation frame).
-
-
-    Source frame is a placeholder.'
   source_frame: visual-obstruction
   target_frame: democracy
   families:
@@ -2884,7 +2727,6 @@ metaphors:
   - Democracy metaphors
 - name: DEMOCRATIC_IDEOLOGY_IS_A_COMMODITY
   type: Composed/complex
-  definition: Cultural scope checked for Persian--Aria
   source_frame: commodity
   target_frame: democratic-ideology
   families:
@@ -2893,9 +2735,6 @@ metaphors:
   - democracy for sale
 - name: DESIRE_IS_HUNGER
   type: Primary
-  definition: 'The inferential mapping is not complete: the physical sensation of hunger is usually not
-    targeted towards specific foods (but craving is), however desire is targeted specifically towards
-    certain objects of desire.'
   source_frame: hunger
   target_frame: desire
   families:
@@ -2927,7 +2766,6 @@ metaphors:
   families:
   - Education metaphors
 - name: DIFFERENCES_IN_SUCCESS_ARE_DISTANCES_BETWEEN_LOCATIONS
-  definition: renamed to more general metaphor
   source_frame: distances-between-locations
   target_frame: differences-in-state
   families:
@@ -2958,7 +2796,6 @@ metaphors:
     - PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
 - name: DIFFERING_IDEOLOGIES_ARE_ADVERSARIES
   type: Composed/complex
-  definition: By request for more target concepts and their metaphors April 2014.
   source_frame: physical-combat
   target_frame: ideology
 - name: DIFFICULTIES_ARE_IMPEDIMENTS_TO_MOVEMENT
@@ -2988,8 +2825,6 @@ metaphors:
     related_by_target:
     - IMPEDIMENTS_TO_ACTION_ARE_PHYSICAL_IMPEDIMENTS_TO_MOTION
 - name: DIFFICULTIES_IN_ACTION_ARE_PHYSICAL_BURDENS
-  definition: Changed Source frame from Physical Burden (autoimport frame) to Burden (previously existing
-    frame)
   source_frame: burden
   target_frame: difficulties-in-action
   families:
@@ -3009,7 +2844,6 @@ metaphors:
   - We have a lot of hurdles to get over in our relationship.
 - name: DIFFICULTIES_IN_KNOWING_ARE_VISUAL_OBSTRUCTIONS
   type: Entailed
-  definition: Cultural scope checked for Persian--Aria
   source_frame: visual-obstruction
   target_frame: knowing
   families:
@@ -3177,7 +3011,6 @@ metaphors:
     - ECONOMIC_RESOURCES_ARE_PHYSICAL_ENTITIES
 - name: ECONOMIC_STATUS_IS_A_POINT_ON_A_SCALE
   type: Composed/complex
-  definition: e.g. "income level"
   source_frame: scale
   target_frame: economic-status
   families:
@@ -3357,7 +3190,6 @@ metaphors:
     - ELECTION_IS_A_GAME
 - name: ELECTION_IS_A_BOXING_MATCH
   type: Composed/complex
-  definition: Need to add Boxing Match frame (subcase of Sports competition)
   source_frame: physical-competition
   target_frame: election
   families:
@@ -3522,9 +3354,6 @@ metaphors:
   - They're very close.
 - name: EMOTIONS_ARE_OBJECTS
   type: Primary
-  definition: This is a supraordinate source frame to cover both objects and substances for those linguistic
-    expressions that are underspecifying for object type. For linguistic metaphors illustrating EMOTIONS
-    as SUBSTANCES, see the related EMOTIONS ARE SUBSTANCES metaphor.
   source_frame: object
   target_frame: emotion
   families:
@@ -3574,10 +3403,6 @@ metaphors:
     - BODY_IS_A_CONTAINER_FOR_EMOTIONS
     - EMOTIONS_ARE_SUBSTANCES
 - name: ENABLEMENT_OF_WORSENING_OF_ECONOMIC_CONDITION_IS_ENABLEMENT_OF_DOWNWARD_MOTION
-  definition: 'e.g., "allow whole families to fall into poverty"
-
-
-    Cultural scope checked for Persian'
   source_frame: aids-to-downward-motion
   target_frame: poverty
   families:
@@ -3623,7 +3448,6 @@ metaphors:
     - LEGISLATIVE_ACTIVITY_IS_MOTION_ALONG_A_PATH
 - name: END_OF_AN_ACTION_IS_THE_END_OF_A_PATH
   type: Entailed
-  definition: Cultural scope checked for Persian--Aria
   source_frame: motion-to-a-location
   target_frame: action
   families:
@@ -3684,7 +3508,6 @@ metaphors:
     services.
 - name: ESSENTIAL_IS_INTERNAL
   type: Primary
-  definition: Called "atemporal relations" (Grady 1998)
   source_frame: containment
   target_frame: essence
   families:
@@ -3705,7 +3528,6 @@ metaphors:
   - Right now our government stinks.
 - name: EVENTS_ARE_OBJECTS
   type: Primary
-  definition: This is specifically about moving objects. We may want to distinguish. (oana)
   source_frame: object
   target_frame: event
   families:
@@ -3732,7 +3554,6 @@ metaphors:
   - If this government continues its spending spree, it'll go bankrupt.
   - Our country can't keep living off its credit cards.
 - name: EXCESS_WEALTH_IS_DISGUSTING
-  definition: An amount of financial resources which exceeds societal norm (value on scale) is disgusting.
   source_frame: disgusting
   target_frame: wealth
   families:
@@ -3769,8 +3590,6 @@ metaphors:
   examples:
   - All the bridges that used to span this river are now gone.
 - name: EXPERIENCED_STATE_IS_A_PROXIMATE_OBJECT
-  definition: State is a (self-) moving object, and experience of that state is most intense when object
-    is proximate to experiencer
   source_frame: trajector-landmark
   target_frame: experiencing-a-state
   families:
@@ -3791,10 +3610,6 @@ metaphors:
     - STATES_ARE_PHYSICAL_OBJECTS
 - name: EXPERIENCE_OF_A_STATE_IS_SPATIAL_RELATION_WITH_AN_ENTITY
   type: Primary
-  definition: This is a non-perspectivized view of the spatial relation. One perspectivized view is experiencer
-    as trajector and state as landmark (EXPERIENCING A STATE IS BEING AT A LOCATION). The reversed view
-    (state as trajector) is present in EXPERIENCING A STATE IS POSSESSING AN OBJECT and EXPERIENCED STATE
-    IS A PROXIMATE OBJECT
   source_frame: spatial-relation
   target_frame: experiencing-a-state
   families:
@@ -3844,11 +3659,6 @@ metaphors:
   - Taxation metaphors
 - name: EXPERIENCING_A_STATE_IS_BEING_AT_A_LOCATION
   type: Primary
-  definition: 'proposed variation of States Are Locations.
-
-
-    See discussion in "Experiencing a state" frame about changes we may want to make so as to include
-    states that are not directly "experienced" by the entity associated with a particular state/property.'
   source_frame: being-at-a-location
   target_frame: experiencing-a-state
   families:
@@ -3893,7 +3703,6 @@ metaphors:
     - CIRCUMSTANCES_ARE_SURROUNDINGS
 - name: EXPERIENCING_A_STATE_IS_POSSESSING_AN_OBJECT
   type: Primary
-  definition: Cultural scope checked for Persian--Aria
   source_frame: possession
   target_frame: experiencing-a-state
   families:
@@ -3926,7 +3735,6 @@ metaphors:
     attempting to help themselves?
 - name: EXTENT_OF_SOCIAL_PROBLEMS_IS_EXTENT_OF_AFFLICTION
   type: Composed/complex
-  definition: e.g., "The epidemic of poverty is spreading in America"
   source_frame: disease-spread
   target_frame: social-problems
   families:
@@ -3959,8 +3767,6 @@ metaphors:
   - Again, if by any chance, we should ultimately win out in such a war, what would it cost us in treasure
     and in blood?
 - name: FORCES_ARE_OBJECTS
-  definition: this is not really an object event structure metaphor, but will temporarily class it as
-    such
   source_frame: object
   target_frame: force
   families:
@@ -4054,8 +3860,6 @@ metaphors:
   - Follow the letter of the law.
 - name: FUNCTIONALITY_IS_VERTICALITY
   type: Primary
-  definition: We need to decide if we want to distinguish FUNCTIONALITY IS VERTICALITY from FUNCTIONALITY
-    IS ERECTNESS. This distinction is made in morality metaphors. (Oana)
   source_frame: verticality
   target_frame: functionality
   families:
@@ -4119,8 +3923,6 @@ metaphors:
     related_by_source:
     - GAINING_POWER_IS_GAINING_A_POSSESSION
 - name: GAINING_EXCESS_WEALTH_IS_EATING_TO_EXCESS
-  definition: Changed Source frame from Eating to excess (autoimport) to Overeating (previously existing
-    frame).
   source_frame: overeating
   target_frame: financial-resource
   families:
@@ -4657,8 +4459,6 @@ metaphors:
     - POLITICAL_REGION_IS_A_VEHICLE
     - STATE_OF_NATION_IS_LOCATION_ALONG_PATH
 - name: GOVERNMENT_IS_A_LEADER
-  definition: Various enities may be conceptualized as followers, e.g the governed citizens, the business
-    community, other governments.
   source_frame: leadership
   target_frame: government
   families:
@@ -4726,7 +4526,6 @@ metaphors:
   - The government is infected with corruption.
 - name: GOVERNMENT_IS_A_PERSON
   type: Composed/complex
-  definition: Cultural scope checked for Persian--Aria
   source_frame: person
   target_frame: government
   families:
@@ -4866,7 +4665,6 @@ metaphors:
   - Small business in the United States is literally being suffocated by red tape.
 - name: GREATER_DEGREE_OF_GUN_CONTROL_IS_STRONGER_PHYSICAL_RESTRAINT
   type: Composed/complex
-  definition: DEMO.
   source_frame: physical-strength
   target_frame: gun-control-legislation
   families:
@@ -4921,7 +4719,6 @@ metaphors:
   examples:
   - Earth is part of the group of "terrestrial" planets.
 - name: GROUPS_ARE_POSSESSORS
-  definition: 'Transitive metaphor:  Groups are Wholes are Possessors'
   source_frame: possession
   target_frame: group
   families:
@@ -4947,8 +4744,6 @@ metaphors:
 - name: GROUP_OF_COUNTRIES_IS_A_FAMILY
 - name: GUIDED_ACTION_IS_GUIDED_MOTION_ALONG_A_PATH
   type: Composed/complex
-  definition: Changed to specific, since there is imagery, and non-primary, since no experiential basis
-    is given
   source_frame: guided-motion
   target_frame: action
   families:
@@ -4968,8 +4763,6 @@ metaphors:
     - PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
 - name: GUNS_ARE_A_DISEASE
   type: Composed/complex
-  definition: This is actually more complex than the source and target suggest (the mappings don't work).
-    There is a metonymy in the target domain.
   source_frame: disease
   target_frame: personal-weapon
   families:
@@ -5005,7 +4798,6 @@ metaphors:
     - GUNS_ARE_TARGETS_OF_PSYCHOLOGICAL_FIXATION
 - name: GUNS_ARE_LIVING_ENTITIES
 - name: GUNS_ARE_MAGICAL
-  definition: Pro-gun control's view of pro-gun right's relation with guns
   source_frame: magic
   target_frame: personal-weapon
   families:
@@ -5018,8 +4810,6 @@ metaphors:
     - GUNS_ARE_TARGETS_OF_PSYCHOLOGICAL_FIXATION
 - name: GUNS_ARE_OBJECTS_OF_WORSHIP
   type: Composed/complex
-  definition: This metaphor reflects the 'government oversight' perspective's metaphorical conceptualization
-    of gun owners (esp. people who are avidly pro-gun rights/anti-gun control).
   source_frame: worship
   target_frame: gun-possession
   families:
@@ -5038,7 +4828,6 @@ metaphors:
     - GUNS_ARE_TARGETS_OF_PSYCHOLOGICAL_FIXATION
 - name: GUNS_ARE_PESTS
   type: Composed/complex
-  definition: Suffers from same metonymy issues as others in this family.
   source_frame: pest
   target_frame: personal-weapon
   families:
@@ -5052,15 +4841,12 @@ metaphors:
     subcase_of_source:
     - GUNS_ARE_LIVING_ENTITIES
 - name: GUNS_ARE_TARGETS_OF_PSYCHOLOGICAL_FIXATION
-  definition: This source-side higher-level pulls together GUNS ARE DRUGS, GUNS ARE OBJECTS OF WORSHIP,
-    GUNS ARE MAGICAL, (and maybe GUNS ARE VALUABLE POSSESSIONS, but not for now).
   source_frame: psychological-fixation
   target_frame: personal-weapon
   families:
   - Gun debate metaphors
 - name: GUN_CONTROL_ADVOCACY_IS_PHYSICAL_HARM
   type: Composed/complex
-  definition: Made use of by both Gun Rights and Gun Control.
   source_frame: physical-harm
   target_frame: advocacy
   families:
@@ -5072,7 +4858,6 @@ metaphors:
     - ADVOCACY_IS_PHYSICAL_HARM
 - name: GUN_CONTROL_IS_PHYSICAL_RESTRAINT
   type: Composed/complex
-  definition: DEMO.
   source_frame: constructed-restraints
   target_frame: gun-control
   families:
@@ -5085,7 +4870,6 @@ metaphors:
     - CONTROL_IS_PHYSICAL_RESTRAINT
     - LAWS_ARE_PHYSICAL_RESTRAINTS
 - name: GUN_CONTROL_LEGISLATION_IS_PHYSICAL_RESTRAINT
-  definition: DEMO.
   source_frame: restraints
   target_frame: gun-control-legislation
   families:
@@ -5112,7 +4896,6 @@ metaphors:
     - SOCIAL_PROBLEMS_ARE_DISEASES
 - name: GUN_CONTROL_REGULATION_IS_A_MOTION_IMPEDIMENT
   type: Composed/complex
-  definition: DEMO.
   source_frame: motion-affecting-objects
   target_frame: gun-control-legislation
   families:
@@ -5143,11 +4926,6 @@ metaphors:
   families:
   - Gun debate metaphors
 - name: GUN_RIGHTS_ARE_VALUABLE_POSSESSIONS
-  definition: 'DEMO.
-
-
-    Any lack of clarity in the source domain name for this metaphor is a mirror image of the lack of clarity
-    in the source frame network. It results from the intuition that possessions are inherently valuable.'
   source_frame: possessable-object
   target_frame: gun-rights
   families:
@@ -5271,10 +5049,6 @@ metaphors:
     - WELL_BEING_IS_VERTICALITY
 - name: HELP_IS_PHYSICAL_SUPPORT
   type: Primary
-  definition: 'Target frame used to be Help. We deleted it.
-
-
-    There was an ASSISTANCE IS SUPPORT metaphor, but we deleted it.'
   source_frame: support
   target_frame: aids-to-action
   families:
@@ -5327,7 +5101,6 @@ metaphors:
   - Governance metaphors
 - name: IDEAS_ARE_FOOD
   type: Primary
-  definition: Merged with KNOWLEDGE IS FOOD
   source_frame: food
   target_frame: idea
   families:
@@ -5416,7 +5189,6 @@ metaphors:
     subcase_of_source:
     - IDEAS_ARE_LIVING_ENTITIES
 - name: IDEAS_ARE_POSSESSIONS
-  definition: Merged with HAVE KNOWLEDGE IS HAVE AN OBJECT, as well as with THOUGHTS ARE POSSESSIONS.
   source_frame: possession
   target_frame: idea
   families:
@@ -5451,8 +5223,6 @@ metaphors:
     subcase_of_source:
     - IDEOLOGIES_ARE_COMPLEX_PHYSICAL_OBJECTS
 - name: ILLEGAL_ACTIVITY_IS_BREAKING_A_PHYSICAL_OBJECT
-  definition: This seems a fairly lexically restricted mapping.  BREAK is the most common lexeme, SHATTER
-    also occurs, but many "break" verbs don't.
   families:
   - Governance metaphors
   examples:
@@ -5522,10 +5292,6 @@ metaphors:
   - Taxation metaphors
 - name: IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_CONFUSING_PATHS_TO_MOVING_OUT_OF_A_LOCATION
   type: Composed/complex
-  definition: 'e.g., "maze of poverty"
-
-
-    changed frame from Paths out of poverty to Maze - KMM feb 2015'
   source_frame: maze
   target_frame: improving-economic-status
   families:
@@ -5533,7 +5299,6 @@ metaphors:
   - Poverty metaphors
 - name: IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_CONSTRUCTED_CONFINEMENT
   type: Composed/complex
-  definition: e.g. "prison of poverty"
   source_frame: constructed-confinement
   target_frame: improving-economic-status
   families:
@@ -5541,7 +5306,6 @@ metaphors:
   - Poverty metaphors
 - name: IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_CONSTRUCTED_RESTRAINTS
   type: Composed/complex
-  definition: e.g. "poverty trap" "hobbled by poverty"
   source_frame: constructed-restraints
   target_frame: improving-economic-status
   families:
@@ -5549,7 +5313,6 @@ metaphors:
   - Poverty metaphors
 - name: IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_ENVIRONMENTAL_CONFINEMENT
   type: Composed/complex
-  definition: e.g., "black hole of poverty", "abyss of poverty"
   source_frame: confinement
   target_frame: improving-economic-status
   families:
@@ -5557,7 +5320,6 @@ metaphors:
   - Poverty metaphors
 - name: IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_ENVIRONMENTAL_RESTRAINTS
   type: Composed/complex
-  definition: e.g., "entangled in poverty", "quicksand of poverty"
   source_frame: environmental-restraints
   target_frame: improving-economic-status
   families:
@@ -5571,10 +5333,6 @@ metaphors:
   - Taxation metaphors
 - name: IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_PHYSICAL_BURDEN
   type: Composed/complex
-  definition: 'e.g., "weighed down by poverty"
-
-
-    Changed Source frame from Physical Burden (auto import) to Burden (a previously existing frame)'
   source_frame: burden
   target_frame: improving-economic-status
   families:
@@ -5582,11 +5340,6 @@ metaphors:
   - Poverty metaphors
 - name: IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_PHYSICAL_IMPEDIMENTS_TO_MOTION
   type: Composed/complex
-  definition: 'e.g., "tax avalanche", "obstacles to getting rich"
-
-
-    While the examples all relate to Taxation, as this frame is currently defined it could also apply
-    to other targets within Economic inequality'
   source_frame: motion-impediments
   target_frame: improving-economic-status
   families:
@@ -5595,7 +5348,6 @@ metaphors:
   - Taxation metaphors
 - name: IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_WATER_CONFINEMENT
   type: Composed/complex
-  definition: e.g. "You are barely keeping your head above water"
   source_frame: water-confinement
   target_frame: improving-economic-status
   families:
@@ -5613,7 +5365,6 @@ metaphors:
   - Education metaphors
 - name: IMPORTANCE_IS_SIZE
   type: Primary
-  definition: Size is a property of objects or entities.
   source_frame: size
   target_frame: importance
   families:
@@ -5668,26 +5419,18 @@ metaphors:
   - States are locations metaphors
   - Taxation metaphors
 - name: IMPROVING_ECONOMIC_STATUS_IS_MOVING_OUT_OF_AN_UNDESIRABLE_LOCATION
-  definition: e.g. digging oneself out of debt
   source_frame: motion-away-from-an-undesirable-location
   target_frame: improving-economic-status
   families:
   - Poverty as an individual problem metaphors
   - Poverty metaphors
 - name: IMPROVING_ECONOMIC_STATUS_IS_MOVING_OUT_OF_A_LOCATION
-  definition: 'e.g., "get out of poverty"
-
-
-    More specifically, this is about moving out of undesirable locations.
-
-    Cultural scope checked for Persian--Aria'
   source_frame: motion-away-from-a-location
   target_frame: improving-economic-status
   families:
   - Poverty as an individual problem metaphors
   - Poverty metaphors
 - name: IMPROVING_ECONOMIC_STATUS_IS_UPWARD_MOTION
-  definition: e.g., "climb out of poverty"
   source_frame: upward-motion
   target_frame: improving-economic-status
   families:
@@ -5700,8 +5443,6 @@ metaphors:
   - Education metaphors
 - name: IMPROVING_SOCIAL_CLASS_IS_MOVING_FORWARD_AND_UPWARD_ALONG_A_PATH
   type: Composed/complex
-  definition: Delete this metaphor once we can assign the sentence to IMPROVING SOCIAL CLASS IS MOVING
-    UPWARD (ALONG A PATH).
   source_frame: forward-motion
   target_frame: social-class
   families:
@@ -5756,7 +5497,6 @@ metaphors:
     his state''s House passed Thursday after a four-year battle, allowing permit holders to bring their
     firearms to work if they keep them locked in their vehicles.'
 - name: INCREASE_EASE_OF_ACTION_IS_INCREASE_EASE_OF_MOTION
-  definition: autoimport
   source_frame: increase-ease-of-motion
   target_frame: increase-ease-of-action
   families:
@@ -6115,7 +5855,6 @@ metaphors:
     uses:
     - NATION_IS_A_PERSON
 - name: INTERRELATEDNESS_IS_PHYSICAL_INTERCONNECTEDNESS
-  definition: The actual Source and Target domains need revising.
   source_frame: physical-connection
   target_frame: spatial-relation
   examples:
@@ -6156,10 +5895,6 @@ metaphors:
   - I have no idea what my friends are doing, they've kept me completely in the dark.
 - name: KNOWING_IS_SEEING
   type: Primary
-  definition: 'merged with UNDERSTANDING IS SEEING
-
-
-    Cultural scope checked for Persian--Aria'
   source_frame: seeing
   target_frame: knowing
   families:
@@ -6208,10 +5943,6 @@ metaphors:
     - THINKING_IS_PERCEIVING
 - name: KNOWING_IS_TOUCHING
   type: Composed/complex
-  definition: 'HOW MANY MAPPINGS ARE INVOLVED HERE?
-
-    I really think there is something like cognizing is physical interaction with objects, ideas of course
-    being objects - but TOUCH is not the best example to use.  Grasp, put your finger on it....EVE'
   source_frame: touching
   target_frame: knowing
   families:
@@ -6257,8 +5988,6 @@ metaphors:
   - Strict father morality metaphors
 - name: LAWS_ARE_LIVING_ENTITIES
   type: Composed/complex
-  definition: High-level metaphor, no sentences here please. See specific sub-cases for examples (LAWS
-    ARE PLANTS).
   source_frame: animate-entity
   target_frame: law
   families:
@@ -6273,7 +6002,6 @@ metaphors:
   - How to Build A Law
 - name: LAWS_ARE_PHYSICAL_RESTRAINTS
   type: Composed/complex
-  definition: DEMO.
   source_frame: restraints
   target_frame: law
   families:
@@ -6427,7 +6155,6 @@ metaphors:
   families:
   - Legislation metaphors
 - name: LEGISLATURE_IS_A_MACHINE
-  definition: Unclear what target should be here.
   source_frame: machine
   target_frame: legislative-branch
   families:
@@ -6438,7 +6165,6 @@ metaphors:
   target_frame: power
 - name: LESSER_DEGREE_OF_GUN_CONTROL_LEGISLATION_IS_WEAKER_PHYSICAL_RESTRAINT
   type: Composed/complex
-  definition: DEMO.
   source_frame: physical-weakness
   target_frame: gun-control-legislation
   families:
@@ -6450,7 +6176,6 @@ metaphors:
     - GREATER_DEGREE_OF_GUN_CONTROL_IS_STRONGER_PHYSICAL_RESTRAINT
 - name: LESS_IS_DOWN
   type: Entailed
-  definition: Cultural scope checked for Persian--Aria
   source_frame: verticality
   target_frame: quantity
   families:
@@ -6491,7 +6216,6 @@ metaphors:
   type: Composed/complex
 - name: LIFE_IS_A_JOURNEY
   type: Composed/complex
-  definition: Cultural scope checked for Persian--Aria
   source_frame: journey
   target_frame: life
   families:
@@ -6539,7 +6263,6 @@ metaphors:
     - ROMANTIC_RELATIONSHIP_IS_A_JOURNEY
 - name: LIFE_IS_A_PRECIOUS_POSSESSION
   type: Composed/complex
-  definition: Kovecses 2005, p. 84
   source_frame: possession
   target_frame: life
   families:
@@ -6547,9 +6270,6 @@ metaphors:
   - Possession metaphors
 - name: LIFE_IS_A_SEQUENCE_OF_MOTIONS
   type: Composed/complex
-  definition: 'Metaphors and entailments resulting in this metaphor: Action is motion -> a sequence of
-    actions is a sequence of movements -> (metonymy in target domain) life is a sequence of actions ->
-    (resulting entailment in source domain) life is a sequence of movements.'
   source_frame: motion-along-a-path
   target_frame: life
   families:
@@ -6679,7 +6399,6 @@ metaphors:
     - RELATIONSHIPS_ARE_COMPLEX_STRUCTURES
 - name: MANNER_OF_ACTION_IS_MANNER_OF_MOVEMENT
   type: Entailed
-  definition: action parameters are motion parameters
   source_frame: self-propelled-motion
   target_frame: action
   families:
@@ -6742,10 +6461,6 @@ metaphors:
     mapping_within:
     - ACHIEVING_A_PURPOSE_IS_REACHING_A_DESTINATION
 - name: MEANS_OF_IMPROVING_ECONOMIC_STATUS_ARE_PATHS_TO_MOVING_OUT_OF_A_LOCATION
-  definition: 'e.g. "path out of poverty"
-
-
-    changed source frame to paths out of a location - Karie feb 2015'
   source_frame: paths-out-of-a-location
   target_frame: improving-economic-status
   families:
@@ -6771,9 +6486,6 @@ metaphors:
 - name: MIND_IS_AN_OBJECT
 - name: MIND_IS_A_BODY
   type: Entailed
-  definition: This metaphor picks out the mapping MIND is a BODY in the generic metaphor COGNIZING IS
-    BODILY FUNCTIONING. The label "MIND IS A BODY" is also generally used to refer to the metaphor family
-    as a whole. In this database, MIND IS A BODY picks out an entailed metaphor.
   source_frame: bodily-functioning
   target_frame: cognizing
   families:
@@ -6899,7 +6611,6 @@ metaphors:
   families:
   - Governance metaphors
 - name: MONEY_IS_A_SUBSTANCE
-  definition: Changed source domain to Substance and renamed
   source_frame: substance
   target_frame: money
   families:
@@ -6949,8 +6660,6 @@ metaphors:
     - IMMORALITY_IS_IMPURITY
 - name: MORALITY_IS_STRAIGHTNESS
   type: Primary
-  definition: This is the generic metaphor that encompasses the morality scale and the straightness scale.
-    See entailments for entailed ends of the scales.
   source_frame: straightness
   target_frame: morality
   families:
@@ -7123,7 +6832,6 @@ metaphors:
     - QUANTITY_IS_SIZE
 - name: MORE_IS_UP
   type: Entailed
-  definition: Cultural scope checked for Persian--Aria
   source_frame: verticality
   target_frame: quantity
   families:
@@ -7386,7 +7094,6 @@ metaphors:
   examples:
   - Our nation contains some of the best entrepreneurs in the world.
 - name: NATURE_IS_AN_AGENT
-  definition: source and target frames need to be double-checked
   source_frame: agentive-causation
   target_frame: natural-process
   examples:
@@ -7406,7 +7113,6 @@ metaphors:
   - To start with, everything we are made of and everything we make comes from the environment.
 - name: NATURE_IS_A_STRICT_FATHER
   type: Composed/complex
-  definition: Social Darwinist model of nature.
   source_frame: strict-father-family
   target_frame: nature
   relations:
@@ -7458,7 +7164,6 @@ metaphors:
     entailed_by:
     - BUREAUCRACY_IS_A_MACHINE
 - name: NONFUNCTIONAL_LEGISLATURE_IS_A_BROKEN_MACHINE
-  definition: Target frame needs consideration here. Also, others like it.
   source_frame: machine
   target_frame: legislative-branch
   families:
@@ -7468,7 +7173,6 @@ metaphors:
     - LEGISLATURE_IS_A_MACHINE
 - name: NONVISUAL_PERCEPTUAL_SPACE_IS_PHYSICAL_SPACE
   type: Primary
-  definition: Lakoff, case study 3
   source_frame: space
   target_frame: perception
   families:
@@ -7486,7 +7190,6 @@ metaphors:
     - TAXATION_IS_IMPEDIMENTS_TO_MOTION
 - name: NOW_IS_HERE
   type: Primary
-  definition: Figure out source and target domain frames. (Oana)
   source_frame: being-at-a-location
   target_frame: time
   families:
@@ -7496,7 +7199,6 @@ metaphors:
     related_by_target:
     - EXISTING_IS_BEING_PHYSICALLY_AT_THIS_LOCATION
 - name: ONGOING_CAUSATION_IS_NOURISHING
-  definition: needs to be renamed in all caps; check S and T frames
   source_frame: food
   target_frame: causation
   examples:
@@ -7510,7 +7212,6 @@ metaphors:
     - OPPORTUNITIES_ARE_OBJECTS
 - name: OPPORTUNITIES_ARE_OBJECTS
   type: Primary
-  definition: We may want to distinguish amongst these source domains. (Oana)
   source_frame: object
   target_frame: opportunities
   families:
@@ -7520,7 +7221,6 @@ metaphors:
   - I've squandered every opportunity to advance my career.
 - name: OPPORTUNITIES_ARE_PATHS
   type: Primary
-  definition: see discussion
   source_frame: physical-path
   target_frame: opportunities
   families:
@@ -7661,7 +7361,6 @@ metaphors:
     - MULTIPLICITY_IS_MASS
 - name: POLICE_ARE_ARMS
   type: Composed/complex
-  definition: There is metonymy here that needs to be resolved. Has been tagged as metonymy.
   source_frame: body
   target_frame: police
   families:
@@ -7723,8 +7422,6 @@ metaphors:
   - Governance metaphors
 - name: POLITICAL_REGION_IS_A_VEHICLE
   type: Composed/complex
-  definition: Captures commonality of fate and is independent of GOVERNMENT IS A DRIVER because this metaphor
-    does not require there to be a driver.
   source_frame: vehicle
   target_frame: political-region
   families:
@@ -7764,7 +7461,6 @@ metaphors:
   - Primary metaphors
 - name: POVERTY_IS_A_CRIME
   type: Composed/complex
-  definition: e.g. "poverty is a crime"
   source_frame: crime
   target_frame: poverty
   families:
@@ -7777,15 +7473,6 @@ metaphors:
     it from being poor.
 - name: POVERTY_IS_A_DISEASE
   type: Composed/complex
-  definition: 'e.g. "epidemic of poverty"
-
-
-    Right now, it is not worth while to distinguish between POVERTY as a DISEASE, ILLNESS, or PHYSICAL
-    AFFLICTION, even though we do have these distinctions in the frame network. For now, POVERTY IS A
-    DISEASE is a cover for all metaphors using any of these source frames.
-
-
-    Cultural scope checked for Persian--Aria'
   source_frame: disease
   target_frame: poverty
   families:
@@ -7810,10 +7497,6 @@ metaphors:
     - SOCIAL_PROBLEMS_ARE_DISEASES
 - name: POVERTY_IS_A_FIERCE_CREATURE
   type: Composed/complex
-  definition: 'e.g. "Measuring Poverty: A many-headed beast"
-
-
-    Cultural scope checked for Persian--Aria'
   source_frame: fierce-animal
   target_frame: poverty
   families:
@@ -7830,8 +7513,6 @@ metaphors:
     related_by_source:
     - POVERTY_IS_PHYSICAL_HARM
 - name: POVERTY_IS_A_MOTION_IMPEDIMENT
-  definition: "e.g. \"chained by poverty\"\n\nNeeds full mappings. \nIs the overarching case for Poverty\
-    \ is a Burden, Poverty is a Chain, Poverty is Confinement..."
   source_frame: motion-impediments
   target_frame: poverty
   families:
@@ -7851,17 +7532,12 @@ metaphors:
     - PREVENTED_CHANGE_OF_STATE_IS_PREVENTED_CHANGE_OF_LOCATION
 - name: POVERTY_IS_A_PLANT
   type: Composed/complex
-  definition: 'e.g.  the roots of poverty
-
-
-    Common general metaphor, do not add examples here. See specific metaphors for examples. (Oana)'
   source_frame: plants
   target_frame: poverty
   families:
   - Poverty as a social problem metaphors
   - Poverty metaphors
 - name: POVERTY_IS_A_WEED
-  definition: e.g. "the strangling weeds of poverty"
   source_frame: weed
   target_frame: poverty
   families:
@@ -7875,7 +7551,6 @@ metaphors:
     subcase_of_source:
     - POVERTY_IS_A_PLANT
 - name: POVERTY_IS_PHYSICAL_HARM
-  definition: An umbrella for Poverty is Addiction, Poverty is Disease...
   source_frame: physical-harm
   target_frame: poverty
   families:
@@ -7893,8 +7568,6 @@ metaphors:
     - ECONOMIC_HARDSHIP_IS_PHYSICAL_HARM
 - name: POWER_IS_A_POSSESSED_OBJECT
   type: Composed/complex
-  definition: this metaphor is similar to CONTROL IS A POSSESSION -- may want to delete this one and list
-    this name as an alias under other metaphor?
   source_frame: possession
   target_frame: power
   families:
@@ -7944,7 +7617,6 @@ metaphors:
     entailed_by:
     - CHANGE_OF_STATE_IS_CHANGE_OF_LOCATION
 - name: PREVENTING_ACHIEVEMENT_OF_GUN_RIGHTS_IS_RESTRAINING_MOTION_TO_A_DESTINATION
-  definition: DEMO.
   source_frame: motion-to-a-destination
   target_frame: gun-rights
   families:
@@ -7982,7 +7654,6 @@ metaphors:
     entailed_by:
     - INABILITY_TO_UTILIZE_EDUCATIONAL_OPPORTUNITY_IS_INABILITY_TO_ACCESS_A_LOCATION
 - name: PREVENTION_OF_BECOMING_IMPOVERISHED_IS_IMPEDING_DOWNWARD_MOTION
-  definition: e.g., "rescuing many more families and children from falling into poverty"
   source_frame: impeding-downward-motion
   target_frame: impoverished
   families:
@@ -8025,7 +7696,6 @@ metaphors:
     - PROGRESSING_THROUGH_LIFE_IS_MOVING_ALONG_A_PATH
 - name: PROGRESS_IS_FORWARD_MOTION_ALONG_A_PATH
   type: Entailed
-  definition: Cultural scope checked for Persian--Aria
   source_frame: motion-along-a-path
   target_frame: action
   families:
@@ -8096,7 +7766,6 @@ metaphors:
   - Increased transparency has increased the public's confidence in government.
 - name: PURIFYING_IS_CLEANSING
   type: Composed/complex
-  definition: often found in the term "ethnic cleansing"
   source_frame: cleanliness
   target_frame: purity
   families:
@@ -8106,9 +7775,6 @@ metaphors:
   - The impure must be washed clean through contrition.
 - name: PURITY_IS_CLEANLINESS
   type: Primary
-  definition: Note that this metaphor itself doesn't suggest anything regarding good/bad; there can be
-    "pure evil." See related metaphors MORALITY IS PURITY and MORALITY IS CLEANLINESS for the full cascade
-    of good, pure, and clean.
   source_frame: cleanliness
   target_frame: purity
   families:
@@ -8128,9 +7794,6 @@ metaphors:
     - MORALITY_IS_PURITY
 - name: PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
   type: Entailed
-  definition: "This is a GENERIC IS SPECIFIC metaphor since the Self propelled purposeful motion frame\
-    \ incorporates the structure of the Purposeful action frame. \n\nIn general, this metaphor assumes\
-    \ that the 'goal' location is in some sense more desirable than the 'source' location."
   source_frame: self-propelled-motion-to-a-destination
   target_frame: purposeful-action
   families:
@@ -8222,7 +7885,6 @@ metaphors:
     target: lesser quantities
 - name: QUANTITY_IS_VERTICALITY
   type: Primary
-  definition: Commonly referred to by one of its entailed metaphors, MORE IS UP.
   source_frame: verticality
   target_frame: quantity
   families:
@@ -8357,13 +8019,6 @@ metaphors:
     - RELATIONSHIPS_ARE_OBJECTS
 - name: RELATIONSHIPS_ARE_OBJECTS
   type: Primary
-  definition: 'This is a supraordinate-level metaphor for all conceptualizations of relationships as objects,
-    which mostly manifest linguistically as very specific source-domain scenarios: rocks, brittle objects,
-    vehicles, etc. A supraordinate-level metaphor is set up here in order to account for those linguistic
-    metaphors which cannot be readily categorized as any one particular specific case, e.g., "He''s been
-    treating their relationship very carelessly." Most inferences about the generic Object frame will
-    not carry over into the target frame, including all change-of-state and object manipulation and transfer
-    related inferences.'
   source_frame: object
   target_frame: relationship
   families:
@@ -8430,7 +8085,6 @@ metaphors:
   - The coup toppled the brutal dictatorship.
   - The Revolutionary and Napoleonic Wars tore down the ancient structure of Europe
 - name: RIGHTS_ARE_PHYSICAL_ENTITIES
-  definition: Do we still want to keep ontological metaphors as a family? (Oana)
   source_frame: physical-entity
   target_frame: rights
   families:
@@ -8442,7 +8096,6 @@ metaphors:
   - source_role: physical_entity_whole
     target_role: right
 - name: RIGHTS_ARE_POSSESSIONS
-  definition: High-level common metaphor. No examples here please.
   source_frame: possessable-object
   target_frame: rights
   families:
@@ -8478,7 +8131,6 @@ metaphors:
     target_role: rights_holder
 - name: ROMANTIC_RELATIONSHIPS_ARE_VEHICLES
   type: Entailed
-  definition: This metaphor is also a role mapping in ROMANTIC RELATIONSHIP IS A JOURNEY.
   source_frame: vehicle
   target_frame: romantic-relationship
   families:
@@ -8705,7 +8357,6 @@ metaphors:
   - Object event structure metaphors
 - name: SEQUENCE_OF_ACTIONS_IS_A_SEQUENCE_OF_MOVEMENTS
   type: Composed/complex
-  definition: Cultural scope checked for Persian--Aria
   source_frame: motion-along-a-path
   target_frame: action
   families:
@@ -8813,7 +8464,6 @@ metaphors:
   families:
   - Primary metaphors
 - name: SOCIAL_GROUP_IS_A_FABRIC
-  definition: This metaphor focus on the relations between the members of a social group.
   source_frame: textile
   target_frame: social-group
   mappings:
@@ -8856,7 +8506,6 @@ metaphors:
     - PEOPLE_ARE_PLANTS
 - name: SOCIAL_PROBLEMS_ARE_ANIMATE_ENTITIES
   type: Composed/complex
-  definition: Do not add examples here; there are special cases where examples can go.
   source_frame: animate-entity
   target_frame: social-problems
   families:
@@ -8901,9 +8550,6 @@ metaphors:
     - IMMORALITY_IS_DISEASE
 - name: SOCIAL_PROBLEMS_ARE_PHYSICAL_AFFLICTIONS
   type: Composed/complex
-  definition: 'e.g., "Poverty is a cancer"
-
-    This  may need to have the examples taken out and put in the POVERTY-specific metaphor.'
   source_frame: physical-affliction
   target_frame: social-problems
   families:
@@ -8961,7 +8607,6 @@ metaphors:
     whole society. Society is more than the sum of its parts; rather, ...
 - name: SOCIETY_IS_A_PERSON
   type: Composed/complex
-  definition: Cultural scope checked for Persian--Aria
   source_frame: person
   target_frame: society
   families:
@@ -9011,13 +8656,6 @@ metaphors:
     target_role: outcome
 - name: STATES_ARE_LOCATIONS
   type: Primary
-  definition: '"The derivation for STATES ARE LOCATIONS would imply that permanent ''states'' - i.e.,
-    essential properties - should be harder to conceptualize as locations, since our understanding of
-    these properties does not involve change. E.g. ?These cliffs are in/at a state of verticality. ?My
-    dog is in a state of mammalhood." (Grady 1998:p. 107)
-
-
-    See Discussion for comments on 9/4/13 revision'
   source_frame: trajector-landmark
   target_frame: state
   families:
@@ -9118,7 +8756,6 @@ metaphors:
     international NGOs, G8 leaders and the multilateral institutions respectively).
 - name: SYMPATHY_IS_WARMTH
   type: Primary
-  definition: need to decide on the proper source and target frames for this metaphor
   source_frame: heat
   target_frame: sympathy
   families:
@@ -9127,7 +8764,6 @@ metaphors:
   - She's cold as ice.
 - name: TAXATION_IS_A_BURDEN
   type: Composed/complex
-  definition: Cultural scope checked for Persian--Aria
   source_frame: burden
   target_frame: taxation
   families:
@@ -9210,7 +8846,6 @@ metaphors:
     subcase_of_source:
     - TAXATION_IS_RESOURCE_TRANSFER
 - name: TAXATION_IS_PUNISHMENT
-  definition: Need to create Punishment frame (and Rewards frame as well)
   source_frame: punishment
   target_frame: taxation
   families:
@@ -9294,8 +8929,6 @@ metaphors:
     - SOCIAL_PROBLEMS_ARE_DISEASES
 - name: TAXES_ARE_DUES
   type: Composed/complex
-  definition: This is a very specific metaphor; unclear what the source frame is (without creating a very
-    specific Dues frame).
   source_frame: group-membership
   target_frame: taxation
   families:
@@ -9438,7 +9071,6 @@ metaphors:
     - REMEMBERING_IS_RETRIEVAL
 - name: THINKING_IS_PERCEIVING
   type: Primary
-  definition: S and T frames need to be double-checked
   source_frame: perception
   target_frame: thinking-about
   families:
@@ -9470,7 +9102,6 @@ metaphors:
     - THINKING_IS_LINGUISTIC_ACTIVITY
 - name: THINKING_OVER_IS_CHEWING
 - name: TIME_IS_AN_ENTITY
-  definition: time has properties of physical entities
   source_frame: physical-entity
   target_frame: time
   families:
@@ -9529,7 +9160,6 @@ metaphors:
     - TIME_IS_A_LANDSCAPE_THROUGH_WHICH_THE_OBSERVER_MOVES
 - name: TIME_IS_A_RESOURCE
   type: Composed/complex
-  definition: Relate this somehow to OPPORTUNITIES ARE RESOURCES.
   source_frame: resource
   target_frame: time
   families:
@@ -9577,7 +9207,6 @@ metaphors:
     - TIME_IS_A_RESOURCE
 - name: TIME_PERIODS_ARE_CONTAINERS
   type: Primary
-  definition: Resolve source and target frames.
   source_frame: containment
   target_frame: time
   families:
@@ -9800,7 +9429,6 @@ metaphors:
     target_role: degree_of_wealth
 - name: WEALTH_IS_A_SUBSTANCE
   type: Composed/complex
-  definition: No examples here. See more specific cases.
   source_frame: substance
   target_frame: wealth
   families:
