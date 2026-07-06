@@ -51,6 +51,23 @@ def test_frame_roles_used_by_a_mapping(metaphors, frames):
         )
 
 
+def test_frames_used_by_a_metaphor(metaphors, frames):
+    used = set()
+    for m in metaphors:
+        if m.get("source_frame"):
+            used.add(m["source_frame"])
+        if m.get("target_frame"):
+            used.add(m["target_frame"])
+
+    unused = [f["name"] for f in frames if f["name"] not in used]
+    if unused:
+        warnings.warn(
+            f"{len(unused)} frame(s) not used as a source_frame or target_frame by any "
+            f"metaphor: {unused[:5]}",
+            stacklevel=2,
+        )
+
+
 def test_metaphors_have_mappings(metaphors):
     empty = [m["name"] for m in metaphors if not m.get("mappings")]
     if empty:
