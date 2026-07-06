@@ -286,9 +286,6 @@ frames:
   - proponence.n
   - proponent.n
 - name: affected-motion
-  aliases:
-  - Affect motion
-  - Affect movement
   definition: Very broad notion of "Caused Motion" which applies both to internal and external causal
     sources/forces, and in which the 'cause' can affect the (potential) mover in any one of various ways,
     including enabling, initiating, helping, impeding, or preventing that (potential) mover's motion.
@@ -523,8 +520,6 @@ frames:
     related_to:
     - bodily-functioning
 - name: animal
-  aliases:
-  - Beast
   frame_type:
   - Frame
   frame_families:
@@ -906,8 +901,6 @@ frames:
     related_to:
     - negatively-evaluated-condition
 - name: barrier
-  aliases:
-  - Boundary
   definition: 'A physical object or landscape feature that prevents or makes it difficult for a mover
     to move in some (desired) direction
 
@@ -1886,8 +1879,6 @@ frames:
   frame_type:
   - Frame
 - name: causation
-  aliases:
-  - Cause-effect
   definition: 'This is intended to be a very general schema that specifies a causal relation between two
     situations (a ''cause'' and an ''effect'').  Perhaps prototypically, cause and effect occur as part
     of a scenario in which the ''process'' (casual_process) associated with one entity (the causer) is
@@ -2080,8 +2071,6 @@ frames:
     uses:
     - being-at-a-location
 - name: change-of-state
-  aliases:
-  - Experiencing a change of state
   definition: current frame includes both an initial and a final state
   frame_type:
   - Cog
@@ -2190,9 +2179,6 @@ frames:
     uses:
     - government
 - name: citizen-participation
-  aliases:
-  - civic engagement
-  - civic involvement
   definition: Democracies require the involvement of citizens in the decision-making and in the information
     flow within their community and the society at large. They do so via civic institutions, both local
     and national. Participation occurs in the context of institutions, in political parties, campaigns,
@@ -2292,8 +2278,6 @@ frames:
     subcase_of:
     - portals
 - name: cognizing
-  aliases:
-  - Cogitation
   frame_type:
   - Frame
   frame_families:
@@ -2479,8 +2463,6 @@ frames:
     subcase_of:
     - recreational-competition
 - name: complex-physical-object
-  aliases:
-  - Complex physical object
   definition: 'Physical objects with internal structure, e.g. part-whole structure
 
 
@@ -2834,8 +2816,6 @@ frames:
     - containment
     - trajector-landmark
 - name: containment
-  aliases:
-  - Container
   definition: 'A bounded region or object whose boundaries'' physical properties prevent or impede motion
 
 
@@ -3582,8 +3562,6 @@ frames:
     - democracy
 - name: desire
 - name: desiring
-  aliases:
-  - Desire
   definition: Should this exist?
   frame_type:
   - Cog
@@ -4138,8 +4116,6 @@ frames:
 - name: draw-a-picture
 - name: driving-a-vehicle
 - name: drugs
-  aliases:
-  - Drug use
   definition: removed some polysemous slang LUs, e.g. crack, weed, blow, acid.
   frame_type:
   - Frame
@@ -4207,8 +4183,6 @@ frames:
     subcase_of:
     - building
 - name: eating
-  aliases:
-  - Consuming food
   frame_type:
   - Frame
   frame_families:
@@ -4537,8 +4511,6 @@ frames:
     uses:
     - access-to-a-location
 - name: enablement
-  aliases:
-  - Enablement of motion
   definition: 'Refers to Enablement in the domain of motion as opposed to action. (should be renamed to
     Enablement_of_motion).
 
@@ -4744,8 +4716,6 @@ frames:
     scalar_opposition_to:
     - moral-goodness
 - name: evil-creature
-  aliases:
-  - Monster
   definition: Monsters of all types
   frame_type:
   - Frame
@@ -5229,8 +5199,6 @@ frames:
     related_to:
     - release-liquid
 - name: fluid-motion
-  aliases:
-  - Motion of water
   definition: Motion of a fluid, along a path or within/across some area
   frame_type:
   - Frame
@@ -5407,10 +5375,6 @@ frames:
     incorporates_as_role:
     - force
 - name: forced-motion
-  aliases:
-  - Cause change of location
-  - Cause motion
-  - Caused motion
   definition: An entity applies force to another entity, causing the second entity to move
   frame_type:
   - Composed
@@ -5444,10 +5408,6 @@ frames:
     uses:
     - force-application
 - name: forced-movement
-  aliases:
-  - Cause change of location
-  - Cause motion
-  - Caused motion
   frame_type:
   - Cog
   - Composed
@@ -6012,8 +5972,6 @@ frames:
     uses:
     - plurality
 - name: group-membership
-  aliases:
-  - Social group membership
   frame_type:
   - Frame
   relations:
@@ -6679,8 +6637,6 @@ frames:
     perspective_on:
     - temperature
 - name: heating-fluid
-  aliases:
-  - Heat_of_fluid_in_a_container
   frame_type:
   - Composed
   - Frame
@@ -6763,8 +6719,6 @@ frames:
     subcase_of:
     - life-cycle
 - name: human-rights
-  aliases:
-  - Basic human rights
   frame_type:
   - Frame
   relations:
@@ -6870,8 +6824,6 @@ frames:
     - force-application
     - physical-harm
 - name: impediment-to-motion
-  aliases:
-  - Impeding motion
   definition: 'This is a general frame that encapsulates both: active impediments of any kind (a subframe
     called Motion_impediments), and FAILURE TO enable (a subframe called Lack_of_enablement).
 
@@ -6926,8 +6878,6 @@ frames:
   - name: importance_scale
     role_type: Scale
 - name: impoverished
-  aliases:
-  - Being impoverished
   definition: The LUs for this frame refer either to poor people (e.g. the indigent) or to the state of
     being impoverished (e.g. penniless).  These elaborate the 'experiencer' and the 'impoverishment' roles
     of this frame, respectively.
@@ -7071,8 +7021,6 @@ frames:
     uses:
     - motion
 - name: increase-size
-  aliases:
-  - Growth
   definition: 'some LUs may belong in more specific frames (e.g. ''explosion'').
 
 
@@ -7144,8 +7092,6 @@ frames:
     subcase_of:
     - bodily-functioning
 - name: injurious-gun-use
-  aliases:
-  - Gun violence
   definition: This general frame is intended to represent the commonalities across a range of contexts
     in which the discharge of a gun (potentially) results in injury to a person. Specific contexts, such
     as criminal use of guns, and sanctioned use of guns (e.g. by the police) can be elaborated in subcases.
@@ -7217,8 +7163,6 @@ frames:
     subcase_of:
     - mental-state
 - name: institution
-  aliases:
-  - Governing institution
   definition: An institution is a collection of roles which can (but need not be) filled in by specific
     members. Also, institutions have rules/policies that 'govern' the actions of the institution's different
     roles (and the people who fill them).
@@ -7615,8 +7559,6 @@ frames:
     uses:
     - size
 - name: law
-  aliases:
-  - Law System
   frame_type:
   - Frame
   frame_families:
@@ -8180,8 +8122,6 @@ frames:
     - relationship
 - name: mass
 - name: mass-motion
-  aliases:
-  - Aggregate motion
   definition: Aggregate motion of a collection of entities acting as one
   frame_type:
   - Frame
@@ -8222,10 +8162,6 @@ frames:
   frame_type:
   - Frame
 - name: media
-  aliases:
-  - Journalism
-  - News
-  - The press
   definition: Created to respond to demand for more target frames (May 2014).
   frame_type:
   - Frame
@@ -8576,9 +8512,6 @@ frames:
     subcase_of:
     - motion-affecting-external-factors
 - name: motion-along-a-path
-  aliases:
-  - Directional motion
-  - Translational motion
   definition: 'A moving entity  starts out in one place and ends up in another, having traversed the distance
     between these places
 
@@ -9251,9 +9184,6 @@ frames:
     - motion
 - name: noticing
 - name: nuclear-family
-  aliases:
-  - Elementary family
-  - Nuclear family
   definition: A family group consisting of two parents and their children
   frame_type:
   - Frame
@@ -9311,9 +9241,6 @@ frames:
     subcase_of:
     - food
 - name: object
-  aliases:
-  - bounded physical entity
-  - physical object
   definition: "A bounded physical entity\n\nSome of the roles in this frame (size, shape, substance, weight)\
     \ are properties whose values are used to classify and/or distinguish between different types of objects.\
     \ The current list of roles is not intended to be exhaustive.  For a given instance or type of object,\
@@ -9487,9 +9414,6 @@ frames:
   - opportunities
   - opportunity
 - name: organization
-  aliases:
-  - Organized Social Group
-  - Social Organization
   definition: An organization is an intentionally formed human social group of members, with internal
     structure and various possible relations between memebers.
   frame_type:
@@ -9719,8 +9643,6 @@ frames:
     perspective_on:
     - financial-transaction
 - name: perception
-  aliases:
-  - Perceiving
   frame_type:
   - Frame
   - Primary
@@ -9753,8 +9675,6 @@ frames:
   - standing.a ovation.n
 - name: persistence
 - name: person
-  aliases:
-  - People
   frame_type:
   - Frame
   frame_families:
@@ -10298,8 +10218,6 @@ frames:
   - name: individual_entities
   - name: plurality_entity
 - name: police
-  aliases:
-  - Law Enforcement
   frame_type:
   - Frame
   lexical_units:
@@ -10584,8 +10502,6 @@ frames:
   - predicament.n
   - problem.n
 - name: process
-  aliases:
-  - X-schema
   frame_type:
   - Cog
   - Primary
@@ -10623,8 +10539,6 @@ frames:
   roles:
   - name: process_completed_state
 - name: process-continue
-  aliases:
-  - Process ongoing
   frame_type:
   - Cog
   - Primary
@@ -11218,8 +11132,6 @@ frames:
     uses:
     - decision-making
 - name: resource
-  aliases:
-  - Physical resource
   frame_type:
   - Frame
   frame_families:
@@ -11596,8 +11508,6 @@ frames:
   - embargo.n
   - sanction.n
 - name: scale
-  aliases:
-  - Linear scale
   definition: Please do not also create a 'Linear scale' frame. This is automatically linear.
   frame_type:
   - Cog
@@ -11681,8 +11591,6 @@ frames:
     - rights
 - name: sedation
 - name: seeing
-  aliases:
-  - Vision
   definition: "This frame is specific to visiual perception of some entity or situation\n\nThe LU 'see'\
     \ may be problematic for extraction\n\nUnlike FrameNet's 'Perception_experience' frame, this frame\
     \ is specific to vision.\nParameters that affect the See-er's ability to see an object include:\n\
@@ -11768,9 +11676,6 @@ frames:
     - change-of-state
     - purposeful-action
 - name: self-propelled-motion
-  aliases:
-  - Self-propelled movement
-  - Self_propelled_motion_along_a_path
   definition: 'Moving entity supplies its own energy for its movement (along a path)
 
 
@@ -11815,10 +11720,6 @@ frames:
     incorporates_as_role:
     - animate-entity
 - name: self-propelled-motion-to-a-destination
-  aliases:
-  - Goal-directed motion
-  - Purposeful self-propelled motion
-  - Self-propelled purposeful motion
   definition: Person moves towards a desirable location (or entity located there)
   frame_type:
   - Cog
@@ -12102,8 +12003,6 @@ frames:
     subcase_of:
     - group
 - name: social-obligation
-  aliases:
-  - Obligation
   definition: All obligation is social (even obligation to yourself, metaphorically, or with God).
   frame_type:
   - Frame
@@ -12164,8 +12063,6 @@ frames:
     - social-group
 - name: solving-a-problem
 - name: source-path-goal
-  aliases:
-  - SPG
   definition: 'A sequence of locations (source, path, and goal) occupied by an entity (trajector) over
     time.  Locations are defined with respect to another entity (landmark).
 
@@ -12247,8 +12144,6 @@ frames:
   - talk.v
   - tell.v
 - name: speech-in-society
-  aliases:
-  - Voice in society
   definition: "Created to refer to the 'speech' in 'free speech' and 'we have a voice in society'. Name\
     \ can be changed (hard to get away from source domain).\n\nThis is a TARGET frame; there just isn't\
     \ a metaphor-free name for it; it's LUs are found in the source in which the metaphor lies (Speaking).\n\
@@ -12821,9 +12716,6 @@ frames:
     related_to:
     - process
 - name: textile
-  aliases:
-  - Cloth
-  - Fabric
   frame_type:
   - Frame
   frame_families:
@@ -13057,8 +12949,6 @@ frames:
     related_to:
     - spatial-relation
 - name: transfer-scenario
-  aliases:
-  - Object transfer
   definition: There used to also be an Object_transfer frame (in addition to Gain_possession and Lose_possession).
     It was unclear how that differed from Transfer_scenario. Object_transfer was deleted, and its LUs
     are here now. If needed, it can be brought back. It was causing too much confusion. (Oana)
@@ -13506,8 +13396,6 @@ frames:
     - impact
     - vehicle
 - name: vehicular-motion
-  aliases:
-  - Driving a vehicle
   frame_type:
   - Frame
   frame_families:
@@ -13561,10 +13449,6 @@ frames:
     - verticality
 - name: vertical-structure
 - name: verticality
-  aliases:
-  - Down
-  - Up
-  - Vertical orientation
   definition: 'Highest level
 
 
@@ -13603,8 +13487,6 @@ frames:
   - violence.n
   - violent.a
 - name: virtual-motion
-  aliases:
-  - Fictive motion
   frame_type:
   - Composed
   - Frame

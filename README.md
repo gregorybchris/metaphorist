@@ -1,6 +1,8 @@
 # MetaNet Metaphor Repository (English) — Curated
 
-This is a cleaned-up, English-only export of the [MetaNet Metaphor Repository](https://metaphor.icsi.berkeley.edu/) built at UC Berkeley's ICSI, originally funded by IARPA to study how metaphor shapes political and economic reasoning. It's built on Conceptual Metaphor Theory (Lakoff & Johnson): the idea that we understand abstract concepts (argument, anger, time, government) systematically in terms of more concrete ones (war, heat, money, machines), and that this shows up as everyday patterns in language rather than just poetic flourish. `metaphors.yaml`, `frames.yaml`, `metaphor-families.yaml`, and `frame-families.yaml` are the data; `build_curated.py` regenerates them from the original ontology in `data/`; the `tests/` suite sanity-checks the output. Set up with `uv sync`, then run `uv run build_curated.py` to regenerate and `make test` (or `make check` to also lint) to validate.
+This is a cleaned-up, English-only export of the [MetaNet Metaphor Repository](https://metaphor.icsi.berkeley.edu/) built at UC Berkeley's ICSI, originally funded by IARPA to study how metaphor shapes political and economic reasoning. It's built on Conceptual Metaphor Theory (Lakoff & Johnson): the idea that we understand abstract concepts (argument, anger, time, government) systematically in terms of more concrete ones (war, heat, money, machines), and that this shows up as everyday patterns in language rather than just poetic flourish.
+
+`metaphors.yaml`, `frames.yaml`, `metaphor-families.yaml`, and `frame-families.yaml` are the dataset, and are hand- and agent-edited directly -- there's no build step. `data/build_curated.py` is kept for provenance only: it's the one-time script that originally derived these files from the raw ontology in `data/mr_en.owl` (name normalization, duplicate merging, field pruning), but running it again would regenerate from scratch and silently wipe out any edits made since. Set up with `uv sync`, then run `make test` (or `make check` to also lint) to validate the current data.
 
 ## Terminology
 
@@ -49,6 +51,6 @@ Both metaphors and frames carry a `relations` map, cross-referencing other entri
 - Frame names are `kebab-case` (`heating-fluid`).
 - Role names are `lower_snake_case` (`fluid_heat_level`).
 
-`build_curated.py` enforces these when regenerating the dataset, including merging source-ontology frames that only differed by casing/separators (e.g. `Physical entity` and `physical entity` both become `physical-entity`); the `tests/` suite flags anything that doesn't conform.
+These were enforced by `data/build_curated.py` when the dataset was originally derived, including merging source-ontology frames that only differed by casing/separators (e.g. `Physical entity` and `physical entity` both become `physical-entity`); the `tests/` suite flags anything that doesn't conform going forward, including in new hand- or agent-added entries.
 
 Some fields are sparse or inconsistent because this is a research database assembled by many contributors over time, not a finished product — run `make test` to see exactly where and how.

@@ -111,8 +111,6 @@ metaphors:
   families:
   - Education metaphors
 - name: ACHIEVING_A_PURPOSE_IS_ACQUIRING_A_DESIRED_OBJECT
-  aliases:
-  - ACHIEVING A PURPOSE IS ACQUIRING A DESIRED OBJECT
   type: Composed/complex
   definition: We could also make a metaphor in which the actor's objective is to get rid of an undesirable
     object.
@@ -139,8 +137,6 @@ metaphors:
     - CHANGE_IS_ACQUISITION
     - EXPERIENCING_A_STATE_IS_POSSESSING_AN_OBJECT
 - name: ACHIEVING_A_PURPOSE_IS_GETTING_SOMETHING_TO_EAT
-  aliases:
-  - ACHIEVING A PURPOSE IS GETTING SOMETHING TO EAT
   definition: This metaphor is related to ACHIEVING A PURPOSE IS ACQUIRING A DESIRED OBJECT, with the
     desired object here specifically being food.
   source_frame: gain-possession
@@ -161,9 +157,6 @@ metaphors:
     subcase_of_source:
     - ACHIEVING_A_PURPOSE_IS_ACQUIRING_A_DESIRED_OBJECT
 - name: ACHIEVING_A_PURPOSE_IS_REACHING_A_DESTINATION
-  aliases:
-  - PURPOSES ARE DESTINATIONS
-  - PURPOSES ARE PHYSICAL GOALS
   type: Entailed
   definition: 'DEMO.
 
@@ -229,8 +222,6 @@ metaphors:
     entailed_by:
     - CONTROL_IS_UP
 - name: ACQUIRING_IDEAS_IS_EATING
-  aliases:
-  - ACQUIRING IDEAS IS EATING
   type: Primary
   definition: See the numerous subcases of this metaphor for the relevant examples.
   source_frame: eating
@@ -269,9 +260,6 @@ metaphors:
   families:
   - Wealth metaphors
 - name: ACTION_IS_BEING_IN_A_LOCATION
-  aliases:
-  - AN ACTION IS BEING IN A LOCATION
-  - PERFORMING AN ACTION IS BEING AT A LOCATION
   type: Primary
   definition: The Target domain for the current metaphor is one of active processes and actions.
   source_frame: being-at-a-location
@@ -300,9 +288,6 @@ metaphors:
   - source: moving towards a landmark
     target: expecting to perform an action in the future
 - name: ACTION_IS_MOTION
-  aliases:
-  - ACTION IS MOTION
-  - ACTION IS MOVEMENT
   type: Primary
   definition: 'What is the appropriate Source frame here?  We are currently using a very general Motion
     frame (mover could be any type of entity, motion is not necessarily controlled by the mover).  But,
@@ -326,9 +311,6 @@ metaphors:
   examples:
   - This computer program turns the power on and off.
 - name: ACTION_IS_MOTION_ALONG_A_PATH
-  aliases:
-  - ACTION IS MOTION
-  - ACTION IS MOVEMENT
   type: Primary
   definition: What used to be ACTION IS MOTION or ACTION IS MOVEMENT is now broken up into a finer-grained
     distinction based on the structure of the source domain frame.
@@ -359,11 +341,7 @@ metaphors:
   relations:
     subcase_of_source:
     - ACTION_IS_MOTION
-- name: ACTION_IS_SELF_PROPELLED_MOTION
 - name: ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH
-  aliases:
-  - ACTION IS SELF-PROPELLED MOTION
-  - ACTIONS ARE SELF-PROPELLED MOVEMENTS
   type: Primary
   definition: '"actions are seen as movements that an agent carries out under the agent''s own force"
     (PITF, p. 187)
@@ -407,8 +385,6 @@ metaphors:
     subcase_of_source:
     - ACTION_IS_MOTION_ALONG_A_PATH
 - name: ACTIVATING_IS_AWAKENING
-  aliases:
-  - ACTIVATING IS AWAKENING
   type: Primary
   source_frame: awakening
   target_frame: activating
@@ -417,8 +393,6 @@ metaphors:
   examples:
   - Bayonne City Council meeting may arouse protest from those opposed to SID management switch
 - name: ACTIVITIES_ARE_BOUNDED_REGIONS_IN_SPACE
-  aliases:
-  - ACTIVITIES ARE CONTAINERS
   type: Primary
   definition: Cultural scope checked for Persian--Aria
   source_frame: bounded-region
@@ -432,8 +406,6 @@ metaphors:
   - I put a lot of energy into washing the windows.
   - I get a lot of satisfaction out of washing windows.
 - name: ACTIVITIES_ARE_JOURNEYS
-  aliases:
-  - ACTIVITIES ARE JOURNEYS
   type: Composed/complex
   source_frame: journey
   target_frame: activity
@@ -445,8 +417,6 @@ metaphors:
   - Follow along as I assemble this.
   - Follow these steps in assembly.
 - name: ADDRESSING_CRIME_IS_CONTROLLING_AN_ANIMAL
-  aliases:
-  - ADDRESSING CRIME IS CONTROLLING AN ANIMAL
   type: Composed/complex
   source_frame: animal
   target_frame: crime
@@ -511,8 +481,6 @@ metaphors:
     entailed_by:
     - POVERTY_IS_A_DISEASE
 - name: ADDRESSING_POVERTY_IS_WAGING_WAR
-  aliases:
-  - ADDRESSING POVERTY IS WAGING WAR
   type: Composed/complex
   definition: e.g. "combat poverty"
   source_frame: physical-combat
@@ -585,8 +553,6 @@ metaphors:
     entailed_by:
     - SOCIAL_PROBLEMS_ARE_PHYSICAL_AFFLICTIONS
 - name: ADDRESSING_SOCIAL_PROBLEMS_IS_WAGING_WAR
-  aliases:
-  - ADDRESSING SOCIAL PROBLEMS IS WAGING WAR
   type: Composed/complex
   source_frame: war
   target_frame: addressing-social-problems
@@ -655,8 +621,6 @@ metaphors:
   examples:
   - Of course, gun control fanatics pay little attention to facts.
 - name: AFFECTION_IS_WARMTH
-  aliases:
-  - AFFECTION IS WARMTH
   type: Primary
   definition: Cultural scope checked for Persian--Aria
   source_frame: heat
@@ -675,8 +639,6 @@ metaphors:
   examples:
   - All the different parties are united on this issue.
 - name: AGREEMENT_IS_PHYSICAL_PROXIMITY
-  aliases:
-  - AGREEMENT IS PHYSICAL PROXIMITY
   type: Composed/complex
   source_frame: proximity
   target_frame: agreement
@@ -735,8 +697,6 @@ metaphors:
   families:
   - Education metaphors
 - name: AID_TO_KNOWING_IS_A_LIGHT_SOURCE
-  aliases:
-  - AID TO KNOWING IS A LIGHT SOURCE
   type: Entailed
   source_frame: seeing
   target_frame: knowing
@@ -755,8 +715,6 @@ metaphors:
   examples:
   - There seems to be growing friendship between Shia Iran and its Sunni-dominated neighbours.
 - name: ALTERNATIVES_ARE_DIFFERENT_AVAILABLE_PATHS
-  aliases:
-  - ALTERNATIVES ARE DIFFERENT AVAILABLE PATHS(Grady (1998):115)
   type: Composed/complex
   source_frame: source-path-goal
   target_frame: decision-making
@@ -897,8 +855,6 @@ metaphors:
     entailed_by:
     - SOCIAL_PROBLEMS_ARE_PHYSICAL_AFFLICTIONS
 - name: ANALYZING_IS_DISSECTING
-  aliases:
-  - ANALYZING IS DISSECTING
   type: Composed/complex
   source_frame: dissect
   target_frame: analysis
@@ -915,8 +871,6 @@ metaphors:
   - The hallways are filled with the sounds of middle school students, primarily eighth graders, dissecting
     the second presidential debate from the evening before.
 - name: ANGER_IS_FIRE
-  aliases:
-  - ANGER IS FIRE
   type: Composed/complex
   source_frame: fire
   target_frame: anger
@@ -956,8 +910,6 @@ metaphors:
     subcase_of_source:
     - ANGER_IS_HEAT
 - name: ANGER_IS_HEAT
-  aliases:
-  - ANGER IS HEAT
   type: Primary
   definition: 'The most general metaphor for anger.
 
@@ -983,8 +935,6 @@ metaphors:
     related_by_target:
     - PASSION_IS_HEAT
 - name: ANGER_IS_INSANITY
-  aliases:
-  - ANGER IS INSANITY
   type: Composed/complex
   source_frame: insanity
   target_frame: anger
@@ -1035,9 +985,6 @@ metaphors:
     subcase_of_target:
     - EMOTION_IS_PRESSURE_IN_A_CONTAINER
 - name: ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER
-  aliases:
-  - ANGER IS A HOT FLUID IN A CONTAINER
-  - ANGER IS THE HEAT OF FLUID IN A CONTAINER
   type: Composed/complex
   source_frame: heating-fluid
   target_frame: anger
@@ -1075,10 +1022,6 @@ metaphors:
     - BODY_IS_A_CONTAINER_FOR_EMOTIONS
     - EMOTIONS_ARE_SUBSTANCES
 - name: ARGUMENT_IS_PHYSICAL_COMBAT
-  aliases:
-  - ARGUMENT IS PHYSICAL COMBAT
-  - ARGUMENT IS WAR
-  - ARGUMENTS ARE WAR
   type: Composed/complex
   source_frame: physical-combat
   target_frame: argument
@@ -1092,8 +1035,6 @@ metaphors:
   - If you use that strategy, he'll wipe you out.
   - He shot down all of my arguments.
 - name: ARGUMENT_IS_WAR
-  aliases:
-  - ARGUMENT IS WAR
   type: Primary
   source_frame: war
   target_frame: argument
@@ -1180,9 +1121,6 @@ metaphors:
   examples:
   - We need to know how big of a problem that is.
 - name: ASSISTANCE_IS_SUPPORT
-  aliases:
-  - ASSISTANCE IS SUPPORT(Grady (1998):null)
-  - HELP IS SUPPORT
   type: Primary
   source_frame: support
   target_frame: assistance
@@ -1234,8 +1172,6 @@ metaphors:
     entailed_by:
     - CONTROL_IS_A_POSSESSION
 - name: ATTRIBUTES_ARE_ENTITIES
-  aliases:
-  - ATTRIBUTES ARE ENTITIES
   type: Primary
   definition: Cultural scope checked for Persian--Aria
   source_frame: entity
@@ -1253,9 +1189,6 @@ metaphors:
     related_by_source:
     - ATTRIBUTES_ARE_POSSESSIONS
 - name: ATTRIBUTES_ARE_POSSESSIONS
-  aliases:
-  - ATTRIBUTES ARE POSSESSIONS(Grady (1998):null)
-  - STATES ARE POSSESSIONS
   type: Primary
   source_frame: possession
   target_frame: attribute
@@ -1301,8 +1234,6 @@ metaphors:
   - Economics metaphors
   - Wealth metaphors
 - name: BAD_IS_STINKY
-  aliases:
-  - BAD IS FOUL-SMELLING(Grady (1998):null)
   type: Primary
   source_frame: disgusting
   target_frame: badness
@@ -1449,8 +1380,6 @@ metaphors:
   examples:
   - The prescribing physician is in the best position to evaluate a patient's treatment history and options.
 - name: BEING_RECEPTIVE_IS_HEARING
-  aliases:
-  - BEING RECEPTIVE IS HEARING
   type: Entailed
   source_frame: hearing
   target_frame: being-receptive
@@ -1482,9 +1411,6 @@ metaphors:
     subcase_of_target:
     - FREEDOM_OF_ACTION_IS_THE_LACK_OF_IMPEDIMENTS_TO_MOVEMENT
 - name: BELIEFS_ARE_POSSESSIONS
-  aliases:
-  - BELIEFS ARE POSSESSIONS(Master Metaphor List (Lakoff
-  - Espenson & Schwartz 1991):102)
   type: Primary
   source_frame: possession
   target_frame: belief
@@ -1510,9 +1436,6 @@ metaphors:
   source_frame: resource
   target_frame: benefit
 - name: BODY_IS_A_CONTAINER_FOR_EMOTIONS
-  aliases:
-  - BODY IS A CONTAINER FOR EMOTIONS
-  - THE BODY IS A CONTAINER FOR THE EMOTIONS
   source_frame: fluid-containment
   target_frame: emotion
   families:
@@ -1702,11 +1625,13 @@ metaphors:
   families:
   - Primary metaphors
 - name: CAUSATION_IS_FORCED_MOVEMENT
-  aliases:
-  - CAUSATION IS FORCED MOVEMENT
-  - CAUSED CHANGE OF STATE IS CAUSED CHANGE OF LOCATION
   type: Composed/complex
-  definition: see discussion
+  definition: 'see discussion
+
+
+    This metaphor has two listings: it is listed as both an entailment of CHANGE OF STATE IS CHANGE OF
+    LOCATION and as a composed metaphor that combines CAUSES ARE FORCES and EXPERIENCING A STATE IS BEING
+    AT A LOCATION.'
   source_frame: forced-motion
   target_frame: caused-change-of-state
   families:
@@ -1729,6 +1654,8 @@ metaphors:
     target_role: final_state
   examples:
   - A sudden drop in prices hurled the farm belt into chaos.
+  - Her parents kept pushing her until she succeeded.
+  - She was forced into an arranged marriage.
   - The United States dragged its allies into a commitment to the Gulf War.
   - The invasion of Pearl Harbor flung the United States into World War II.
   entailments:
@@ -1739,6 +1666,10 @@ metaphors:
   relations:
     entailed_by:
     - CHANGE_OF_STATE_IS_CHANGE_OF_LOCATION
+    uses:
+    - CAUSATION_IS_OBJECT_TRANSFER
+    - CAUSES_ARE_FORCES
+    - EXPERIENCING_A_STATE_IS_BEING_AT_A_LOCATION
 - name: CAUSATION_IS_OBJECT_TRANSFER
   type: Composed/complex
   source_frame: transfer-scenario
@@ -1758,34 +1689,6 @@ metaphors:
   relations:
     related:
     - FORCE_TRANSFER_IS_OBJECT_TRANSFER
-- name: CAUSED_CHANGE_OF_STATE_IS_CAUSED_CHANGE_OF_LOCATION
-  type: Composed/complex
-  definition: 'This metaphor has two listings: it is listed as both an entailment of CHANGE OF STATE IS
-    CHANGE OF LOCATION and as a composed metaphor that combines CAUSES ARE FORCES and EXPERIENCING A STATE
-    IS BEING AT A LOCATION.'
-  source_frame: forced-motion
-  target_frame: caused-change-of-state
-  families:
-  - Location event structure metaphors
-  mappings:
-  - source_role: agent
-    target_role: agent
-  - source_role: mover
-    target_role: affected
-  - source_role: motion
-    target_role: state_change
-  - source_role: forceful_action
-    target_role: cause
-  examples:
-  - She was forced into an arranged marriage.
-  - Her parents kept pushing her until she succeeded.
-  relations:
-    uses:
-    - CAUSATION_IS_OBJECT_TRANSFER
-    - CAUSES_ARE_FORCES
-    - EXPERIENCING_A_STATE_IS_BEING_AT_A_LOCATION
-    entailed_by:
-    - CHANGE_OF_STATE_IS_CHANGE_OF_LOCATION
 - name: CAUSED_IMPOVERISHMENT_IS_CAUSED_DOWNWARD_MOTION
   definition: pushed down into poverty CHECK!
   source_frame: caused-downward-motion
@@ -1807,8 +1710,6 @@ metaphors:
     entailed_by:
     - IMPROVING_ECONOMIC_STATUS_IS_UPWARD_MOTION
 - name: CAUSED_INABILITY_TO_ACT_IS_PREVENTION_OF_MOTION_ALONG_A_PATH
-  aliases:
-  - CAUSED INABILITY TO ACT IS PREVENTION OF MOTION ALONG A PATH
   type: Entailed
   source_frame: motion-along-a-path
   target_frame: action
@@ -1825,8 +1726,6 @@ metaphors:
     entailed_by:
     - PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
 - name: CAUSES_ARE_FORCES
-  aliases:
-  - CAUSES ARE FORCES
   type: Primary
   definition: see Discussion
   source_frame: force
@@ -1850,7 +1749,7 @@ metaphors:
   - Primary metaphors
   relations:
     uses:
-    - CAUSED_CHANGE_OF_STATE_IS_CAUSED_CHANGE_OF_LOCATION
+    - CAUSATION_IS_FORCED_MOVEMENT
     entailed_by:
     - INCREASE_IN_QUANTITY_IS_UPWARD_MOTION
 - name: CAUSE_OF_DECREASED_EVALUABILITY_OF_GOVERNMENT_IS_OBSTACLE_TO_VISION
@@ -1871,8 +1770,6 @@ metaphors:
     subcase_of_target:
     - ADDRESSING_SOCIAL_PROBLEMS_IS_TREATING_AN_ILLNESS
 - name: CAUSING_ECONOMIC_HARDSHIP_IS_CAUSING_PHYSICAL_HARM
-  aliases:
-  - CAUSING ECONOMIC DIFFICULTY IS INFLICTING HARM
   type: Composed/complex
   definition: 'e.g. "Poverty will cripple the economy"
 
@@ -1921,8 +1818,6 @@ metaphors:
     much more subtle manner than if they gagged the media directly.'
   - The government should not muzzle the press.
 - name: CERTAIN_IS_FIRM
-  aliases:
-  - CERTAIN IS FIRM(Grady (1998):null)
   type: Primary
   source_frame: firmness
   target_frame: certainty
@@ -1952,9 +1847,6 @@ metaphors:
   - source: willingness to change possession
     target: willingness to transfer control
 - name: CHANGE_IS_ACQUISITION
-  aliases:
-  - CHANGE IS ACQUISITION
-  - CHANGE OF STATE IS GAINING A POSSESSION
   type: Primary
   definition: In this metaphor, the onset of possessing an object (e.g. getting) is mapped to the onset
     of 'experiencing' a particular state
@@ -1979,9 +1871,6 @@ metaphors:
     entailed_by:
     - CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
 - name: CHANGE_IS_LOSS
-  aliases:
-  - CHANGE IS LOSS
-  - CHANGE OF STATE IS LOSS OF A POSSESSION
   type: Composed/complex
   definition: 'The loss of possession is mapped to the offset of ''experiencing'' a particular state
 
@@ -2009,10 +1898,6 @@ metaphors:
     entailed_by:
     - CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
 - name: CHANGE_OF_STATE_IS_CHANGE_OF_LOCATION
-  aliases:
-  - CHANGE IS MOTION
-  - CHANGE OF STATE IS CHANGE OF LOCATION
-  - CHANGES ARE MOVEMENTS
   definition: Cultural scope checked for Persian--Aria
   source_frame: motion-along-a-path
   target_frame: change-of-state
@@ -2053,9 +1938,6 @@ metaphors:
   - source: location can be changed by 'self'/trajector (e.g. self-propelled motion)
     target: state can be changed by 'self'/experiencer
 - name: CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
-  aliases:
-  - CHANGE OF STATE IS CHANGE OF POSSESSION
-  - CHANGES ARE MOVEMENTS OF POSSESSIONS
   type: Composed/complex
   definition: Cultural scope checked for Persian--Aria
   source_frame: possession-change
@@ -2160,8 +2042,6 @@ metaphors:
     subcase_of_target:
     - RIGHTS_ARE_POSSESSIONS
 - name: CITIZEN_RIGHTS_ARE_SHIELDS_FROM_HARM
-  aliases:
-  - RIGHTS ARE SHIELDS FROM HARM
   type: Composed/complex
   source_frame: protecting
   target_frame: citizen-rights
@@ -2193,8 +2073,6 @@ metaphors:
   families:
   - Wealth and social class metaphors
 - name: COGNIZING_IS_BODILY_FUNCTIONING
-  aliases:
-  - MIND IS A BODY
   type: Primary
   source_frame: cognizing
   target_frame: bodily-functioning
@@ -2230,8 +2108,6 @@ metaphors:
   - source_role: eater
     target_role: cognizer
 - name: COMMUNICATING_IS_DRAWING_A_PICTURE
-  aliases:
-  - COMMUNICATING IS DRAWING A PICTURE
   type: Composed/complex
   source_frame: draw-a-picture
   target_frame: communication
@@ -2272,8 +2148,6 @@ metaphors:
     uses:
     - PROCESSES_ARE_MOVEMENTS
 - name: COMMUNICATING_IS_OBJECT_TRANSFER
-  aliases:
-  - COMMUNICATION IS OBJECT EXCHANGE
   type: Composed/complex
   source_frame: transfer-scenario
   target_frame: communication
@@ -2327,8 +2201,6 @@ metaphors:
     subcase_of_source:
     - COMMUNICATING_IS_SHOWING
 - name: COMMUNICATING_IS_SHOWING
-  aliases:
-  - COMMUNICATING IS SHOWING
   type: Primary
   source_frame: cause-to-see
   target_frame: communication
@@ -2379,9 +2251,6 @@ metaphors:
     subcase_of_target:
     - COMMUNITY_IS_A_FAMILY
 - name: COMPETITION_IS_A_RACE
-  aliases:
-  - A COMPETITION IS A RACE
-  - COMPETITION IS A RACE
   type: Composed/complex
   source_frame: race
   target_frame: competition
@@ -2411,8 +2280,6 @@ metaphors:
     subcase_of_target:
     - MACHINES_ARE_PEOPLE
 - name: CONDITION_IS_SHAPE
-  aliases:
-  - PSYCHOLOGICAL CONDITION IS SHAPE OF AN OBJECT
   type: Primary
   source_frame: object
   target_frame: condition
@@ -2424,9 +2291,6 @@ metaphors:
   examples:
   - It's impossible to navigate this labyrinth of complex codes and regulations.
 - name: CONSCIOUSNESS_IS_VERTICALITY
-  aliases:
-  - CONSCIOUS IS UP
-  - UNCONSCIOUS IS DOWN
   type: Primary
   source_frame: verticality
   target_frame: consciousness
@@ -2447,8 +2311,6 @@ metaphors:
   - source: Being physically not upright or horizontal
     target: Being unconscious (asleep)
 - name: CONSCIOUS_IS_UP
-  aliases:
-  - CONSCIOUS IS UP
   type: Entailed
   source_frame: verticality
   target_frame: consciousness
@@ -2477,8 +2339,6 @@ metaphors:
   examples:
   - “Your dead kids don’t trump my Constitutional rights.”
 - name: CONSTITUENTS_ARE_CONTENTS
-  aliases:
-  - CONSTITUENTS ARE CONTENTS(Grady (1998):121)
   type: Primary
   source_frame: contents
   target_frame: constituents
@@ -2586,9 +2446,6 @@ metaphors:
   examples:
   - He's putty in her hands.
 - name: CONTROL_IS_PHYSICAL_RESTRAINT
-  aliases:
-  - CONTROL OF ACTION IS PHYSICAL RESTRAINT
-  - PSYCHOLOGICAL CONTROL IS PHYSICAL RESTRAINT
   type: Composed/complex
   source_frame: object-manipulation
   target_frame: control
@@ -2600,9 +2457,6 @@ metaphors:
     subcase_of_source:
     - CONTROL_IS_OBJECT_MANIPULATION
 - name: CONTROL_IS_UP
-  aliases:
-  - BEING IN CONTROL IS BEING ABOVE(Grady (1998):290)
-  - CONTROL IS UP
   type: Entailed
   definition: This entry is the entry for the entailed metaphor CONTROL IS UP, a scalar entailment of
     CONTROL IS VERTICALITY. The word 'control' in CONTROL IS UP picks out one end of the scale, while
@@ -2627,10 +2481,6 @@ metaphors:
     entailed_by:
     - CONTROL_IS_VERTICALITY
 - name: CONTROL_IS_VERTICALITY
-  aliases:
-  - CONTROL IS UP
-  - CONTROL IS VERTICALITY
-  - DEGREE OF CONTROL IS VERTICALITY
   type: Primary
   source_frame: verticality
   target_frame: control
@@ -2685,8 +2535,6 @@ metaphors:
   examples:
   - The spread of corruption brought the provisional government to its knees.
 - name: CORRUPTION_IS_A_DESTRUCTIVE_NATURAL_PROCESS
-  aliases:
-  - CORRUPTION IS A DESTRUCTIVE NATURAL PROCESS
   type: Composed/complex
   source_frame: destructive-natural-process
   target_frame: corruption
@@ -2753,8 +2601,6 @@ metaphors:
     related_by_target:
     - CORRUPTION_IS_A_DISEASE
 - name: CORRUPTION_IS_EROSION
-  aliases:
-  - CORRUPTION IS EROSION
   type: Composed/complex
   source_frame: erosion
   target_frame: corruption
@@ -2804,9 +2650,6 @@ metaphors:
     entailed_by:
     - LAWS_ARE_PLANTS
 - name: CREATING_IS_MAKING
-  aliases:
-  - CREATING IS MAKING(Master Metaphor List (Lakoff
-  - Espenson & Schwartz 1991):null)
   type: Primary
   source_frame: making
   target_frame: creating
@@ -2815,10 +2658,6 @@ metaphors:
   examples:
   - The solution only created more problems.
 - name: CRIME_IS_AN_ANIMAL
-  aliases:
-  - 'Boroditsky L (2011) Metaphors We Think With: The Role of Metaphor in Reasoning. PLoS ONE 6(2):null)'
-  - CRIME IS A BEAST(Thibodeau PH
-  - CRIME IS AN ANIMAL
   type: Composed/complex
   source_frame: fierce-animal
   target_frame: crime
@@ -2844,9 +2683,6 @@ metaphors:
     related_by_source:
     - CRIME_IS_A_DISEASE
 - name: CRIME_IS_A_DISEASE
-  aliases:
-  - CRIME IS A DISEASE
-  - CRIMINAL ACTIVITY IS A DISEASE
   type: Composed/complex
   source_frame: disease
   target_frame: crime
@@ -2996,8 +2832,6 @@ metaphors:
   - fledgling democracy
   - democracy spreads its wings
 - name: DEMOCRACY_IS_A_FACADE
-  aliases:
-  - DEMOCRACY IS AN EXTERIOR SURFACE
   type: Composed/complex
   definition: '"Interior-exterior" taken out of Source frame
 
@@ -3058,9 +2892,6 @@ metaphors:
   examples:
   - democracy for sale
 - name: DESIRE_IS_HUNGER
-  aliases:
-  - DESIRE IS HUNGER(Master Metaphor List (Lakoff
-  - Espenson & Schwartz 1991):194)
   type: Primary
   definition: 'The inferential mapping is not complete: the physical sensation of hunger is usually not
     targeted towards specific foods (but craving is), however desire is targeted specifically towards
@@ -3108,8 +2939,6 @@ metaphors:
   - Orientational metaphors
   - Wealth metaphors
 - name: DIFFERENT_MEANS_OF_ACHIEVING_A_PURPOSE_ARE_DIFFERENT_PATHS_TO_A_DESTINATION
-  aliases:
-  - DIFFERENT MEANS OF ACHIEVING A PURPOSE ARE DIFFERENT PATHS TO A DESTINATION
   type: Entailed
   source_frame: self-propelled-motion-to-a-destination
   target_frame: purposeful-action
@@ -3133,8 +2962,6 @@ metaphors:
   source_frame: physical-combat
   target_frame: ideology
 - name: DIFFICULTIES_ARE_IMPEDIMENTS_TO_MOVEMENT
-  aliases:
-  - DIFFICULTIES ARE IMPEDIMENTS TO MOVEMENT
   type: Composed/complex
   source_frame: motion-impediments
   target_frame: difficulties-in-action
@@ -3210,8 +3037,6 @@ metaphors:
   examples:
   - This is a very hard problem to solve.
 - name: DIFFICULTY_IS_HEAVINESS
-  aliases:
-  - DIFFICULTY IS HEAVINESS(Grady (1998):null)
   type: Primary
   source_frame: weight
   target_frame: difficulties-in-action
@@ -3258,8 +3083,6 @@ metaphors:
   examples:
   - Americans are divided as to whether a third major party is needed in U.S. politics today
 - name: DISEASE_TREATMENT_IS_WAR
-  aliases:
-  - TREATING DISEASE IS WAGING WAR
   type: Composed/complex
   source_frame: war
   target_frame: disease-treatment
@@ -3285,8 +3108,6 @@ metaphors:
   - With nothing left in their leukemia-fighting arsenal, the doctors were down to Dilaudid, a derivative
     of morphine...
 - name: DISTINGUISHING_IS_DIVIDING
-  aliases:
-  - DISTINGUISHING IS DIVIDING(Sweetser (1987):null)
   type: Primary
   source_frame: dividing
   target_frame: distinguishing
@@ -3314,8 +3135,6 @@ metaphors:
   - Strict father morality metaphors
 - name: DYING_IS_DEPARTING_FROM_THIS_LOCATION
 - name: EASE_OF_ACTION_IS_EASE_OF_MOTION_ALONG_A_PATH
-  aliases:
-  - EASE OF ACTION IS EASE OF MOTION ALONG A PATH
   type: Entailed
   source_frame: motion-along-a-path
   target_frame: action
@@ -3371,8 +3190,6 @@ metaphors:
     subcase_of_target:
     - BEING_IN_A_STATE_IS_BEING_AT_A_POINT_ON_A_LINEAR_SCALE
 - name: ECONOMY_IS_A_BODY
-  aliases:
-  - ECONOMY IS A BODY
   type: Composed/complex
   source_frame: body
   target_frame: economy
@@ -3415,8 +3232,6 @@ metaphors:
     subcase_of_source:
     - ECONOMY_IS_A_COMPLEX_STRUCTURE
 - name: EDUCATIONAL_EVALUATION_IS_GAMBLING
-  aliases:
-  - TESTING IS BETTING
   type: Composed/complex
   source_frame: gambling
   target_frame: educational-evaluation
@@ -3671,8 +3486,6 @@ metaphors:
     entailed_by:
     - EMOTIONAL_INTENSITY_IS_TEMPERATURE
 - name: EMOTIONAL_INTENSITY_IS_TEMPERATURE
-  aliases:
-  - EMOTIONAL INTENSITY IS HEAT(Grady (1998):null)
   type: Primary
   source_frame: heat
   target_frame: emotional-intensity
@@ -3698,8 +3511,6 @@ metaphors:
     related:
     - ANGER_IS_HEAT
 - name: EMOTIONAL_INTIMACY_IS_PHYSICAL_PROXIMITY
-  aliases:
-  - INTIMACY IS CLOSENESS
   type: Primary
   source_frame: proximity
   target_frame: intimacy
@@ -3710,8 +3521,6 @@ metaphors:
   examples:
   - They're very close.
 - name: EMOTIONS_ARE_OBJECTS
-  aliases:
-  - EMOTIONS ARE OBJECTS
   type: Primary
   definition: This is a supraordinate source frame to cover both objects and substances for those linguistic
     expressions that are underspecifying for object type. For linguistic metaphors illustrating EMOTIONS
@@ -3732,8 +3541,6 @@ metaphors:
     related_by_source:
     - EMOTIONS_ARE_SUBSTANCES
 - name: EMOTIONS_ARE_SUBSTANCES
-  aliases:
-  - EMOTIONS ARE SUBSTANCES
   type: Composed/complex
   source_frame: substance
   target_frame: emotion
@@ -3748,8 +3555,6 @@ metaphors:
   - He's filled with jealousy.
   - She's overflowing with love.
 - name: EMOTION_IS_A_FORCE
-  aliases:
-  - EMOTION IS A FORCE
   source_frame: force
   target_frame: emotion
   families:
@@ -3813,12 +3618,10 @@ metaphors:
     target: legislator's objective is for bill to be enacted
   relations:
     subcase_of_target:
-    - CAUSED_CHANGE_OF_STATE_IS_CAUSED_CHANGE_OF_LOCATION
+    - CAUSATION_IS_FORCED_MOVEMENT
     entailed_by:
     - LEGISLATIVE_ACTIVITY_IS_MOTION_ALONG_A_PATH
 - name: END_OF_AN_ACTION_IS_THE_END_OF_A_PATH
-  aliases:
-  - END OF AN ACTION IS THE END OF A PATH
   type: Entailed
   definition: Cultural scope checked for Persian--Aria
   source_frame: motion-to-a-location
@@ -3858,8 +3661,6 @@ metaphors:
     subcase_of_target:
     - EXPLOITATION_OF_RESOURCES_IS_A_PARASITIC_INFECTION
 - name: ENVIRONMENTAL_HARM_IS_PHYSICAL_INJURY
-  aliases:
-  - ENVIRONMENTAL HARM IS PHYSICAL INJURY
   type: Primary
   source_frame: physical-harm
   target_frame: environmental-harm
@@ -3882,8 +3683,6 @@ metaphors:
   - In economic development, the equivalent of having a level playing field is equality of access to basic
     services.
 - name: ESSENTIAL_IS_INTERNAL
-  aliases:
-  - ESSENTIAL IS INTERNAL(Grady (1998):null)
   type: Primary
   definition: Called "atemporal relations" (Grady 1998)
   source_frame: containment
@@ -3905,9 +3704,6 @@ metaphors:
   examples:
   - Right now our government stinks.
 - name: EVENTS_ARE_OBJECTS
-  aliases:
-  - AN EVENT IS THE MOTION OF AN OBJECT(Grady (1998):null)
-  - EVENTS ARE MOVING OBJECTS
   type: Primary
   definition: This is specifically about moving objects. We may want to distinguish. (oana)
   source_frame: object
@@ -3965,8 +3761,6 @@ metaphors:
   examples:
   - The dodo disappeared in the 1600s.
 - name: EXISTING_IS_BEING_PHYSICALLY_AT_THIS_LOCATION
-  aliases:
-  - EXISTENCE IS LOCATION HERE(Grady (1998):null)
   type: Primary
   source_frame: being-at-a-location
   target_frame: existence
@@ -4049,8 +3843,6 @@ metaphors:
   - Poverty metaphors
   - Taxation metaphors
 - name: EXPERIENCING_A_STATE_IS_BEING_AT_A_LOCATION
-  aliases:
-  - EXPERIENCING A STATE IS BEING IN A LOCATION
   type: Primary
   definition: 'proposed variation of States Are Locations.
 
@@ -4100,8 +3892,6 @@ metaphors:
     related:
     - CIRCUMSTANCES_ARE_SURROUNDINGS
 - name: EXPERIENCING_A_STATE_IS_POSSESSING_AN_OBJECT
-  aliases:
-  - ATTRIBUTES ARE POSSESSIONS
   type: Primary
   definition: Cultural scope checked for Persian--Aria
   source_frame: possession
@@ -4169,8 +3959,6 @@ metaphors:
   - Again, if by any chance, we should ultimately win out in such a war, what would it cost us in treasure
     and in blood?
 - name: FORCES_ARE_OBJECTS
-  aliases:
-  - FORCES ARE OBJECTS
   definition: this is not really an object event structure metaphor, but will temporarily class it as
     such
   source_frame: object
@@ -4189,8 +3977,6 @@ metaphors:
   - source: bigger object
     target: more force
 - name: FORCE_TRANSFER_IS_OBJECT_TRANSFER
-  aliases:
-  - TRANSMISSION OF ENERGY IS TRANSFER OF OBJECTS
   type: Primary
   source_frame: transfer-scenario
   target_frame: force-transfer
@@ -4216,9 +4002,6 @@ metaphors:
   examples:
   - Welcome to the event that gave birth to a new nation called The United States of America!
 - name: FORMING_WORDS_IS_SHAPING
-  aliases:
-  - CREATING LINGUISTIC EXRESSIONS IS SHAPE MANIPULATION
-  - FORMING WORDS IS SHAPING
   type: Entailed
   source_frame: crafting
   target_frame: forming-words
@@ -4239,8 +4022,6 @@ metaphors:
   - Democracy metaphors
   - Possession metaphors
 - name: FREEDOM_OF_ACTION_IS_THE_LACK_OF_IMPEDIMENTS_TO_MOVEMENT
-  aliases:
-  - FREEDOM OF ACTION IS THE LACK OF IMPEDIMENTS TO MOVEMENT
   type: Entailed
   source_frame: physical-impediments-to-motion
   target_frame: freedom-of-action
@@ -4272,9 +4053,6 @@ metaphors:
   - The theory is spelled out in chapter 4.
   - Follow the letter of the law.
 - name: FUNCTIONALITY_IS_VERTICALITY
-  aliases:
-  - FUNCTIONALITY IS ERECTNESS(Grady (1998):null)
-  - VIABILITY IS ERECTNESS(Grady (1998):null)
   type: Primary
   definition: We need to decide if we want to distinguish FUNCTIONALITY IS VERTICALITY from FUNCTIONALITY
     IS ERECTNESS. This distinction is made in morality metaphors. (Oana)
@@ -4326,8 +4104,6 @@ metaphors:
   - We will navigate the choppy waters of recession into smooth fiscal sailing.
   - '''Pakistan''s economy has ability to navigate through choppy waters'''
 - name: GAINING_A_ROLE_IS_ACQUIRING_A_POSSESSION
-  aliases:
-  - GAINING A ROLE IS ACQUIRING A POSSESSION
   source_frame: gain-possession
   target_frame: position
   families:
@@ -4382,9 +4158,6 @@ metaphors:
   families:
   - Primary metaphors
 - name: GOODNESS_IS_VERTICALITY
-  aliases:
-  - GOODNESS IS VERTICALITY
-  - The Moral Strength Metaphor
   type: Composed/complex
   source_frame: verticality
   target_frame: goodness
@@ -4713,8 +4486,6 @@ metaphors:
     subcase_of_target:
     - INSTITUTION_IS_A_MACHINE
 - name: GOVERNMENT_INSTITUTION_IS_A_PHYSICAL_STRUCTURE
-  aliases:
-  - GOVERNMENT INSTITUTION IS A PHYSICAL STRUCTURE
   type: Composed/complex
   source_frame: physical-structure
   target_frame: government-institution
@@ -4737,10 +4508,6 @@ metaphors:
     subcase_of_target:
     - INSTITUTION_IS_A_COMPLEX_PHYSICAL_OBJECT
 - name: GOVERNMENT_IS_AN_ORGANISM
-  aliases:
-  - GOVERNMENT IS A BIOLOGICAL ENTITY
-  - GOVERNMENT IS A LIVING THING
-  - GOVERNMENT IS AN ORGANISM
   type: Composed/complex
   source_frame: biological-entity
   target_frame: government-institution
@@ -4782,8 +4549,6 @@ metaphors:
     subcase_of_target:
     - INSTITUTION_IS_A_BUSINESS
 - name: GOVERNMENT_IS_A_CHILDCARE_PROVIDER
-  aliases:
-  - GOVERNMENT IS A NANNY
   type: Composed/complex
   source_frame: child-care
   target_frame: government
@@ -4853,9 +4618,6 @@ metaphors:
   examples:
   - to promote his fantasy that big government can cure our nation's ills.
 - name: GOVERNMENT_IS_A_DRIVER
-  aliases:
-  - GOVERNING IS CONTROLLING VEHICLUAR MOTION
-  - GOVERNMENT IS A DRIVER
   type: Composed/complex
   source_frame: vehicular-motion
   target_frame: governing-action
@@ -4963,8 +4725,6 @@ metaphors:
   - We must cure our ailing democracy with an infusion of new politicians.
   - The government is infected with corruption.
 - name: GOVERNMENT_IS_A_PERSON
-  aliases:
-  - GOVERNMENT IS A PERSON
   type: Composed/complex
   definition: Cultural scope checked for Persian--Aria
   source_frame: person
@@ -5105,8 +4865,6 @@ metaphors:
   - The entrepreneur was suffocated by the all the onerous regulations he had to follow.
   - Small business in the United States is literally being suffocated by red tape.
 - name: GREATER_DEGREE_OF_GUN_CONTROL_IS_STRONGER_PHYSICAL_RESTRAINT
-  aliases:
-  - GREATER DEGREE OF GUN CONTROL LEGISLATION IS STRONGER PHYSICAL RESTRAINT
   type: Composed/complex
   definition: DEMO.
   source_frame: physical-strength
@@ -5130,8 +4888,6 @@ metaphors:
     subcase_of_target:
     - DESIRE_IS_HUNGER
 - name: GROUPS_ARE_CONTAINERS
-  aliases:
-  - GROUPS ARE CONTAINERS
   type: Primary
   source_frame: containing
   target_frame: group
@@ -5152,8 +4908,6 @@ metaphors:
     transitive_subpart_2:
     - WHOLES_ARE_CONTAINERS
 - name: GROUPS_ARE_PART_WHOLE_STRUCTURES
-  aliases:
-  - GROUPS ARE PART-WHOLE STRUCTURES
   type: Primary
   source_frame: part-whole
   target_frame: group
@@ -5167,9 +4921,6 @@ metaphors:
   examples:
   - Earth is part of the group of "terrestrial" planets.
 - name: GROUPS_ARE_POSSESSORS
-  aliases:
-  - GROUP MEMBERS ARE POSSESSIONS
-  - GROUPS ARE POSSESSORS
   definition: 'Transitive metaphor:  Groups are Wholes are Possessors'
   source_frame: possession
   target_frame: group
@@ -5195,8 +4946,6 @@ metaphors:
   - Governance metaphors
 - name: GROUP_OF_COUNTRIES_IS_A_FAMILY
 - name: GUIDED_ACTION_IS_GUIDED_MOTION_ALONG_A_PATH
-  aliases:
-  - GUIDED ACTION IS GUIDED MOTION ALONG A PATH
   type: Composed/complex
   definition: Changed to specific, since there is imagery, and non-primary, since no experiential basis
     is given
@@ -5240,10 +4989,6 @@ metaphors:
   examples:
   - avalanche of guns
 - name: GUNS_ARE_DRUGS
-  aliases:
-  - A GUN IS A DRUG
-  - GUNS ARE AN ADDICTIVE SUBSTANCE
-  - GUNS ARE DRUGS
   source_frame: addiction
   target_frame: personal-weapon
   families:
@@ -5385,10 +5130,6 @@ metaphors:
   families:
   - Gun debate metaphors
 - name: GUN_DEBATE_IS_A_LIVING_ENTITY
-  aliases:
-  - GUN CONTROL DEBATE IS A LIVING ENTITY
-  - GUN DEBATE IS A LIVING ENTITY
-  - GUN-CONTROL DEBATE IS A LIVING ENTITY
   source_frame: biological-entity
   target_frame: gun-law-decision-making
   families:
@@ -5402,9 +5143,6 @@ metaphors:
   families:
   - Gun debate metaphors
 - name: GUN_RIGHTS_ARE_VALUABLE_POSSESSIONS
-  aliases:
-  - GUN RIGHTS ARE POSSESSIONS
-  - GUN RIGHTS ARE VALUABLE OBJECTS
   definition: 'DEMO.
 
 
@@ -5455,10 +5193,6 @@ metaphors:
     related:
     - GUN_VIOLENCE_IS_A_PHYSICAL_AFFLICTION
 - name: HAPPINESS_IS_VERTICALITY
-  aliases:
-  - HAPPINESS IS VERTICALITY
-  - HAPPY IS UP
-  - SAD IS DOWN
   type: Primary
   source_frame: verticality
   target_frame: happiness
@@ -5475,8 +5209,6 @@ metaphors:
   - source: Being physically not upright or horizontal
     target: Being sad or unhappy
 - name: HAPPY_IS_UP
-  aliases:
-  - HAPPY IS UP
   type: Entailed
   source_frame: verticality
   target_frame: happiness
@@ -5489,10 +5221,11 @@ metaphors:
   - My spirits rose.
   - You're in high spirits.
   - Thinking about her always gives me a lift.
+  relations:
+    entailed_by:
+    - HAPPINESS_IS_VERTICALITY
 - name: HARDSHIP_IS_PHYSICAL_HARM
 - name: HARM_IS_PHYSICAL_INJURY
-  aliases:
-  - HARM IS PHYSICAL INJURY
   type: Primary
   source_frame: physical-harm
   target_frame: harm
@@ -5500,8 +5233,6 @@ metaphors:
   - Primary metaphors
   - Well-being metaphors
 - name: HEALTH_IS_UP
-  aliases:
-  - HEALTHY IS UP
   type: Entailed
   source_frame: verticality
   target_frame: health
@@ -5516,11 +5247,6 @@ metaphors:
     entailed_by:
     - HEALTH_IS_VERTICALITY
 - name: HEALTH_IS_VERTICALITY
-  aliases:
-  - HEALTH IS UP
-  - HEALTHY IS UP
-  - SICK IS DOWN
-  - SICKNESS IS DOWN
   type: Primary
   source_frame: verticality
   target_frame: health
@@ -5544,9 +5270,6 @@ metaphors:
     subcase_of_target:
     - WELL_BEING_IS_VERTICALITY
 - name: HELP_IS_PHYSICAL_SUPPORT
-  aliases:
-  - ASSISTANCE IS SUPPORT(Grady (1998):null)
-  - HELP IS SUPPORT
   type: Primary
   definition: 'Target frame used to be Help. We deleted it.
 
@@ -5581,8 +5304,6 @@ metaphors:
     uses:
     - CONTROL_IS_VERTICALITY
 - name: HIGH_STATUS_IS_UP
-  aliases:
-  - HIGH STATUS IS UP
   type: Entailed
   source_frame: verticality
   target_frame: status
@@ -5605,9 +5326,6 @@ metaphors:
   families:
   - Governance metaphors
 - name: IDEAS_ARE_FOOD
-  aliases:
-  - IDEAS ARE FOOD
-  - KNOWLEDGE IS FOOD
   type: Primary
   definition: Merged with KNOWLEDGE IS FOOD
   source_frame: food
@@ -5652,8 +5370,6 @@ metaphors:
 - name: IDEAS_ARE_LIVING_ENTITIES
 - name: IDEAS_ARE_LOCATIONS
 - name: IDEAS_ARE_OBJECTS
-  aliases:
-  - IDEAS ARE OBJECTS
   type: Primary
   source_frame: object
   target_frame: idea
@@ -5681,8 +5397,6 @@ metaphors:
     - THINKING_IS_OBJECT_MANIPULATION
     - UNDERSTANDING_IS_GRASPING
 - name: IDEAS_ARE_PEOPLE
-  aliases:
-  - IDEAS ARE PEOPLE
   type: Composed/complex
   source_frame: person
   target_frame: idea
@@ -5702,9 +5416,6 @@ metaphors:
     subcase_of_source:
     - IDEAS_ARE_LIVING_ENTITIES
 - name: IDEAS_ARE_POSSESSIONS
-  aliases:
-  - KNOWLEDGE IS A POSSESSION
-  - THOUGHTS ARE POSSESSIONS
   definition: Merged with HAVE KNOWLEDGE IS HAVE AN OBJECT, as well as with THOUGHTS ARE POSSESSIONS.
   source_frame: possession
   target_frame: idea
@@ -5755,8 +5466,6 @@ metaphors:
   examples:
   - The consequence of idolatry is the moral disintegration of human society.
 - name: IMMORALITY_IS_DISEASE
-  aliases:
-  - IMMORALITY IS DISEASE
   source_frame: disease
   target_frame: morality
   families:
@@ -5903,8 +5612,6 @@ metaphors:
   families:
   - Education metaphors
 - name: IMPORTANCE_IS_SIZE
-  aliases:
-  - IMPORTANCE IS SIZE
   type: Primary
   definition: Size is a property of objects or entities.
   source_frame: size
@@ -5932,8 +5639,6 @@ metaphors:
     related:
     - QUANTITY_IS_SIZE
 - name: IMPORTANCE_IS_WEIGHT
-  aliases:
-  - IMPORTANCE IS MASS(Grady (1998):null)
   type: Primary
   source_frame: object
   target_frame: importance
@@ -6172,8 +5877,6 @@ metaphors:
   - Germany Leads the World
   - China leads successful wildlife crime crackdown
 - name: INFORMATION_IS_CONTENTS
-  aliases:
-  - INFORMATION IS CONTENTS(Grady (1998):124)
   type: Primary
   source_frame: contents
   target_frame: information
@@ -6431,8 +6134,6 @@ metaphors:
   families:
   - Taxation metaphors
 - name: KNOWING_IS_PERCEIVING
-  aliases:
-  - KNOWING IS PERCEIVING
   type: Primary
   source_frame: perception
   target_frame: knowing
@@ -6454,8 +6155,6 @@ metaphors:
   - Listen to what your father tells you.
   - I have no idea what my friends are doing, they've kept me completely in the dark.
 - name: KNOWING_IS_SEEING
-  aliases:
-  - UNDERSTANDING IS SEEING(Grady (1998):296)
   type: Primary
   definition: 'merged with UNDERSTANDING IS SEEING
 
@@ -6508,8 +6207,6 @@ metaphors:
     mapping_within:
     - THINKING_IS_PERCEIVING
 - name: KNOWING_IS_TOUCHING
-  aliases:
-  - KNOWING IS TOUCHING
   type: Composed/complex
   definition: 'HOW MANY MAPPINGS ARE INVOLVED HERE?
 
@@ -6639,8 +6336,6 @@ metaphors:
     subcase_of_source:
     - LEADING_IS_A_FORCE_MOVING_AN_OBJECT_FORWARD
 - name: LEADING_A_NATION_IS_DRIVING_A_VEHICLE
-  aliases:
-  - LEADING A NATION IS DRIVING A VEHICLE
   type: Composed/complex
   source_frame: vehicular-motion
   target_frame: state-leadership
@@ -6682,8 +6377,6 @@ metaphors:
     subcase_of_target:
     - CAUSATION_IS_FORCED_MOVEMENT
 - name: LEARNING_IS_ACQUIRING
-  aliases:
-  - LEARNING IS ACQUIRING(Grady (1998):127)
   type: Primary
   source_frame: gain-possession
   target_frame: learning
@@ -6756,8 +6449,6 @@ metaphors:
     related:
     - GREATER_DEGREE_OF_GUN_CONTROL_IS_STRONGER_PHYSICAL_RESTRAINT
 - name: LESS_IS_DOWN
-  aliases:
-  - QUANTITY IS VERTICALITY
   type: Entailed
   definition: Cultural scope checked for Persian--Aria
   source_frame: verticality
@@ -6799,9 +6490,6 @@ metaphors:
 - name: LIFE_IS_A_COMPLEX_STRUCTURE
   type: Composed/complex
 - name: LIFE_IS_A_JOURNEY
-  aliases:
-  - HUMAN LIFE IS A JOURNEY(Kovecses
-  - 'Metaphor: A Practical Introduction:9)'
   type: Composed/complex
   definition: Cultural scope checked for Persian--Aria
   source_frame: journey
@@ -6858,8 +6546,6 @@ metaphors:
   - Life metaphors
   - Possession metaphors
 - name: LIFE_IS_A_SEQUENCE_OF_MOTIONS
-  aliases:
-  - LIFE IS A SEQUENCE OF MOTIONS
   type: Composed/complex
   definition: 'Metaphors and entailments resulting in this metaphor: Action is motion -> a sequence of
     actions is a sequence of movements -> (metonymy in target domain) life is a sequence of actions ->
@@ -6876,8 +6562,6 @@ metaphors:
     - LIFE_IS_A_JOURNEY
     - SEQUENCE_OF_ACTIONS_IS_A_SEQUENCE_OF_MOVEMENTS
 - name: LIFE_IS_VERTICALITY
-  aliases:
-  - LIFE IS VERTICALITY
   type: Primary
   source_frame: verticality
   target_frame: life-cycle
@@ -6937,8 +6621,6 @@ metaphors:
     entailed_by:
     - ELECTION_IS_WAR
 - name: LOW_STATUS_IS_DOWN
-  aliases:
-  - LOW STATUS IS DOWN
   source_frame: verticality
   target_frame: status
   families:
@@ -6996,8 +6678,6 @@ metaphors:
     related:
     - RELATIONSHIPS_ARE_COMPLEX_STRUCTURES
 - name: MANNER_OF_ACTION_IS_MANNER_OF_MOVEMENT
-  aliases:
-  - MANNER OF ACTION IS MANNER OF MOVEMENT
   type: Entailed
   definition: action parameters are motion parameters
   source_frame: self-propelled-motion
@@ -7045,8 +6725,6 @@ metaphors:
   source_frame: textile
   target_frame: marriage
 - name: MEANS_ARE_PATHS
-  aliases:
-  - MEANS ARE PATHS
   type: Entailed
   source_frame: self-propelled-motion-to-a-destination
   target_frame: purposeful-action
@@ -7092,8 +6770,6 @@ metaphors:
   - Governance metaphors
 - name: MIND_IS_AN_OBJECT
 - name: MIND_IS_A_BODY
-  aliases:
-  - MIND IS A BODY
   type: Entailed
   definition: This metaphor picks out the mapping MIND is a BODY in the generic metaphor COGNIZING IS
     BODILY FUNCTIONING. The label "MIND IS A BODY" is also generally used to refer to the metaphor family
@@ -7125,8 +6801,6 @@ metaphors:
     mapping_within:
     - COGNIZING_IS_BODILY_FUNCTIONING
 - name: MIND_IS_A_BRITTLE_OBJECT
-  aliases:
-  - MIND IS A BRITTLE OBJECT
   type: Composed/complex
   source_frame: object
   target_frame: mind
@@ -7163,8 +6837,6 @@ metaphors:
     subcase_of_source:
     - MIND_IS_A_MACHINE
 - name: MIND_IS_A_CONTAINER
-  aliases:
-  - MIND IS A CONTAINER FOR THOUGHTS
   type: Primary
   source_frame: containment
   target_frame: mind
@@ -7179,8 +6851,6 @@ metaphors:
     related:
     - MIND_IS_A_BODY
 - name: MIND_IS_A_MACHINE
-  aliases:
-  - MIND IS A MACHINE
   type: Composed/complex
   source_frame: machine
   target_frame: mind
@@ -7200,9 +6870,6 @@ metaphors:
   families:
   - Mind metaphors
 - name: MONEY_IS_A_LIQUID
-  aliases:
-  - CASH IS A LIQUID(Master Metaphor List (Lakoff
-  - Espenson & Schwartz 1991):183)
   type: Composed/complex
   source_frame: liquid
   target_frame: money
@@ -7281,9 +6948,6 @@ metaphors:
     related:
     - IMMORALITY_IS_IMPURITY
 - name: MORALITY_IS_STRAIGHTNESS
-  aliases:
-  - Espenson & Schwartz 1991):185)
-  - MORALITY IS STRAIGHTNESS(Master Metaphor List (Lakoff
   type: Primary
   definition: This is the generic metaphor that encompasses the morality scale and the straightness scale.
     See entailments for entailed ends of the scales.
@@ -7563,8 +7227,6 @@ metaphors:
     own. It is about to be dismembered.
   - Iowa is the heart of the nation, where everyone greets you with a smile and you wave at strangers!
 - name: NATION_IS_A_BUILDING
-  aliases:
-  - NATION IS A BUILDING
   type: Composed/complex
   source_frame: building
   target_frame: nation
@@ -7604,8 +7266,6 @@ metaphors:
   families:
   - Governance metaphors
 - name: NATION_IS_A_COMPLEX_STRUCTURE
-  aliases:
-  - NATION IS A COMPLEX PHYSICAL OBJECT
   type: Composed/complex
   source_frame: complex-physical-object
   target_frame: nation
@@ -7643,9 +7303,6 @@ metaphors:
   examples:
   - Our national arguments are family arguments, we still talk to each other at the end of the day.
 - name: NATION_IS_A_MACHINE
-  aliases:
-  - COUNTRY IS A MACHINE
-  - NATION IS A MACHINE
   type: Composed/complex
   source_frame: machine
   target_frame: nation
@@ -7693,8 +7350,6 @@ metaphors:
     related_by_source:
     - NATION_IS_A_COMPLEX_STRUCTURE
 - name: NATION_IS_A_VEHICLE
-  aliases:
-  - NATION IS A CAR
   type: Composed/complex
   source_frame: vehicle
   target_frame: nation
@@ -7723,8 +7378,6 @@ metaphors:
     uses:
     - STATE_OF_NATION_IS_LOCATION_ALONG_PATH
 - name: NATION_IS_CONTAINER
-  aliases:
-  - NATION IS A CONTAINER
   source_frame: resource-container
   target_frame: nation
   families:
@@ -7856,9 +7509,6 @@ metaphors:
     dual_of:
     - OPPORTUNITIES_ARE_OBJECTS
 - name: OPPORTUNITIES_ARE_OBJECTS
-  aliases:
-  - OPPORTUNITIES ARE POSSESSIONS
-  - OPPORTUNITIES ARE RESOURCES(Grady (1998):null)
   type: Primary
   definition: We may want to distinguish amongst these source domains. (Oana)
   source_frame: object
@@ -7869,8 +7519,6 @@ metaphors:
   - We've got plenty of chances left.
   - I've squandered every opportunity to advance my career.
 - name: OPPORTUNITIES_ARE_PATHS
-  aliases:
-  - OPPORTUNITIES ARE PATHS
   type: Primary
   definition: see discussion
   source_frame: physical-path
@@ -7916,10 +7564,6 @@ metaphors:
     subcase_of_target:
     - ORGANIZATION_IS_PHYSICAL_STRUCTURE
 - name: ORGANIZATION_IS_PHYSICAL_STRUCTURE
-  aliases:
-  - ABSTRACT STRUCTURE IS PHYSICAL STRUCTURE
-  - LOGICAL ORGANIZATION IS PHYSICAL STRUCTURE
-  - ORGANIZATION IS PHYSICAL STRUCTURE
   type: Primary
   source_frame: physical-structure
   target_frame: organization
@@ -7962,8 +7606,6 @@ metaphors:
   source_frame: animal
   target_frame: person
 - name: PEOPLE_ARE_PLANTS
-  aliases:
-  - PEOPLE ARE PLANTS
   type: Composed/complex
   source_frame: plants
   target_frame: person
@@ -7979,8 +7621,6 @@ metaphors:
   source_frame: persistence
   target_frame: erectness
 - name: PERSONAL_PREFERENCE_IS_TASTE
-  aliases:
-  - PERSONAL PREFERENCE IS TASTE
   source_frame: taste
   target_frame: personal-preferance
 - name: PHASE_OF_AN_ELECTION_IS_LEG_IN_A_RACE
@@ -7998,11 +7638,6 @@ metaphors:
     entailed_by:
     - ELECTION_IS_A_RACE
 - name: PHYSICAL_STRENGTH_IS_VERTICALITY
-  aliases:
-  - PHYSICAL STRENGTH IS UP
-  - PHYSICAL STRENGTH IS VERTICALITY
-  - STRENGTH IS UP
-  - STRONG IS UP
   source_frame: verticality
   target_frame: physical-strength
   families:
@@ -8087,8 +7722,6 @@ metaphors:
   families:
   - Governance metaphors
 - name: POLITICAL_REGION_IS_A_VEHICLE
-  aliases:
-  - POLITICAL REGION IS A VEHICLE
   type: Composed/complex
   definition: Captures commonality of fate and is independent of GOVERNMENT IS A DRIVER because this metaphor
     does not require there to be a driver.
@@ -8123,8 +7756,6 @@ metaphors:
   families:
   - Governance metaphors
 - name: POSITIVITY_IS_VERTICALITY
-  aliases:
-  - POSITIVITY IS VERTICALITY
   type: Primary
   source_frame: verticality
   target_frame: positivity-scale
@@ -8145,9 +7776,6 @@ metaphors:
   - He appealed to logos (logic) by trying to analyze why poverty is a crime and tries to differentiate
     it from being poor.
 - name: POVERTY_IS_A_DISEASE
-  aliases:
-  - POVERTY IS A PHYSICAL AFFLICTION
-  - POVERTY IS AN ILLNESS
   type: Composed/complex
   definition: 'e.g. "epidemic of poverty"
 
@@ -8274,8 +7902,6 @@ metaphors:
   examples:
   - He holds all the power.
 - name: POWER_IS_CENTRALITY
-  aliases:
-  - INFLUENCE IS CENTRALITY
   source_frame: center-periphery
   target_frame: power
   families:
@@ -8384,8 +8010,6 @@ metaphors:
     related:
     - PROGRESSING_THROUGH_LIFE_IS_MOVING_THROUGH_A_TERRAIN
 - name: PROGRESSING_THROUGH_LIFE_IS_MOVING_THROUGH_A_TERRAIN
-  aliases:
-  - PROGRESSING THROUGH LIFE IS MOVING THROUGH A TERRAIN
   type: Composed/complex
   source_frame: forward-motion
   target_frame: life
@@ -8400,9 +8024,6 @@ metaphors:
     subcase_of_source:
     - PROGRESSING_THROUGH_LIFE_IS_MOVING_ALONG_A_PATH
 - name: PROGRESS_IS_FORWARD_MOTION_ALONG_A_PATH
-  aliases:
-  - PROGRESS IS FORWARD MOTION
-  - PROGRESS IS FORWARD MOVEMENT
   type: Entailed
   definition: Cultural scope checked for Persian--Aria
   source_frame: motion-along-a-path
@@ -8452,8 +8073,6 @@ metaphors:
   families:
   - Primary metaphors
 - name: PSYCHOLOGICAL_HARM_IS_PHYSICAL_INJURY
-  aliases:
-  - PSYCHOLOGICAL HARM IS PHYSICAL INJURY
   type: Primary
   source_frame: physical-harm
   target_frame: psychological-harm
@@ -8476,8 +8095,6 @@ metaphors:
   examples:
   - Increased transparency has increased the public's confidence in government.
 - name: PURIFYING_IS_CLEANSING
-  aliases:
-  - PURIFYING IS CLEANSING
   type: Composed/complex
   definition: often found in the term "ethnic cleansing"
   source_frame: cleanliness
@@ -8488,10 +8105,6 @@ metaphors:
   - You must cleanse your soul of sin.
   - The impure must be washed clean through contrition.
 - name: PURITY_IS_CLEANLINESS
-  aliases:
-  - PURE IS CLEAN
-  - PURITY IS CLEANLINESS(Metaphors We Live By
-  - Philosophy in the Flesh:307)
   type: Primary
   definition: Note that this metaphor itself doesn't suggest anything regarding good/bad; there can be
     "pure evil." See related metaphors MORALITY IS PURITY and MORALITY IS CLEANLINESS for the full cascade
@@ -8514,9 +8127,6 @@ metaphors:
     related:
     - MORALITY_IS_PURITY
 - name: PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
-  aliases:
-  - PURPOSEFUL ACTION IS GOAL-DIRECTED MOTION
-  - PURPOSEFUL ACTION IS SELF-PROPELLED MOTION TO A DESTINATION
   type: Entailed
   definition: "This is a GENERIC IS SPECIFIC metaphor since the Self propelled purposeful motion frame\
     \ incorporates the structure of the Purposeful action frame. \n\nIn general, this metaphor assumes\
@@ -8564,8 +8174,6 @@ metaphors:
     related:
     - MEANS_ARE_PATHS
 - name: PURPOSEFUL_THINKING_IS_GOAL_DIRECTED_MOTION
-  aliases:
-  - PURPOSEFUL THINKING IS GOAL-DIRECTED MOTION
   type: Entailed
   source_frame: self-propelled-motion-to-a-destination
   target_frame: thinking-about
@@ -8579,8 +8187,6 @@ metaphors:
   examples:
   - We are trying to find the most elegant approach to solving this problem.
 - name: QUALITIES_ARE_SUBSTANCES
-  aliases:
-  - QUALITIES ARE SUBSTANCES
   type: Primary
   source_frame: substance
   target_frame: quality
@@ -8591,10 +8197,6 @@ metaphors:
   - He has a lot of smarts.
   - He's devoid of common sense.
 - name: QUANTITY_IS_SIZE
-  aliases:
-  - AMOUNT IS SIZE
-  - QUANTITY IS SIZE
-  - QUANTITY IS VOLUME
   type: Primary
   source_frame: size
   target_frame: quantity
@@ -8619,10 +8221,6 @@ metaphors:
   - source: smaller sizes
     target: lesser quantities
 - name: QUANTITY_IS_VERTICALITY
-  aliases:
-  - MORE IS UP
-  - QUANTITY IS VERTICAL ELEVATION(Grady (1998):null)
-  - QUANTITY IS VERTICALITY
   type: Primary
   definition: Commonly referred to by one of its entailed metaphors, MORE IS UP.
   source_frame: verticality
@@ -8664,9 +8262,6 @@ metaphors:
   examples:
   - Cuts in benefits hurt the poor.
 - name: REENACTING_A_GUN_LAW_IS_BRINGING_AN_ENTITY_BACK_TO_LIFE
-  aliases:
-  - REENACTING A GUN LAW IS BRINGING AN ENTITY BACK TO LIFE
-  - REENACTING A GUN LAW IS RESTORING LIFE TO AN ENTITY
   source_frame: restore-to-life
   target_frame: gun-control-legislation
   families:
@@ -8722,8 +8317,6 @@ metaphors:
     related:
     - SIMILARITY_IS_PROXIMITY
 - name: RELATIONSHIPS_ARE_COMPLEX_STRUCTURES
-  aliases:
-  - RELATIONSHIPS ARE COMPLEX PHYSICAL OBJECTS
   type: Composed/complex
   source_frame: complex-physical-object
   target_frame: relationship
@@ -8745,9 +8338,6 @@ metaphors:
     subcase_of_target:
     - ORGANIZATION_IS_PHYSICAL_STRUCTURE
 - name: RELATIONSHIPS_ARE_CONTAINERS
-  aliases:
-  - A RELATIONSHIP IS A CONTAINER
-  - RELATIONSHIPS ARE CONTAINERS
   type: Composed/complex
   source_frame: containing
   target_frame: relationship
@@ -8766,8 +8356,6 @@ metaphors:
     subcase_of_source:
     - RELATIONSHIPS_ARE_OBJECTS
 - name: RELATIONSHIPS_ARE_OBJECTS
-  aliases:
-  - RELATIONSHIPS ARE OBJECTS
   type: Primary
   definition: 'This is a supraordinate-level metaphor for all conceptualizations of relationships as objects,
     which mostly manifest linguistically as very specific source-domain scenarios: rocks, brittle objects,
@@ -8792,8 +8380,6 @@ metaphors:
     mapping_within:
     - LIFE_IS_A_JOURNEY
 - name: RELATIONSHIPS_ARE_PHYSICAL_STRUCTURES
-  aliases:
-  - RELATIONSHIPS ARE PHYSICAL STRUCTURES
   type: Composed/complex
   source_frame: physical-structure
   target_frame: relationship
@@ -8891,8 +8477,6 @@ metaphors:
   - source_role: owner
     target_role: rights_holder
 - name: ROMANTIC_RELATIONSHIPS_ARE_VEHICLES
-  aliases:
-  - ROMANTIC RELATIONSHIPS ARE VEHICLES
   type: Entailed
   definition: This metaphor is also a role mapping in ROMANTIC RELATIONSHIP IS A JOURNEY.
   source_frame: vehicle
@@ -8913,8 +8497,6 @@ metaphors:
     related_by_source:
     - ROMANTIC_RELATIONSHIP_IS_A_JOURNEY
 - name: ROMANTIC_RELATIONSHIP_ENCOUNTERING_DIFFICULTIES_IS_A_BOAT_ON_THE_ROCKS
-  aliases:
-  - A RELATIONSHIP ENCOUNTERING DIFFICULTIES IS A BOAT ON THE ROCKS
   type: Composed/complex
   source_frame: boat-on-the-rocks
   target_frame: romantic-relationship
@@ -8942,8 +8524,6 @@ metaphors:
     subcase_of_source:
     - ROMANTIC_RELATIONSHIP_ENCOUNTERING_DIFFICULTIES_IS_A_VEHICLE_ENCOUNTERING_OBSTACLES
 - name: ROMANTIC_RELATIONSHIP_ENCOUNTERING_DIFFICULTIES_IS_A_VEHICLE_ENCOUNTERING_OBSTACLES
-  aliases:
-  - ROMANTIC RELATIONSHIP ENCOUNTERING DIFFICULTIES IS A VEHICLE ENCOUNTERING OBSTACLES
   type: Composed/complex
   source_frame: journey
   target_frame: romantic-relationship
@@ -8955,10 +8535,6 @@ metaphors:
     entailed_by:
     - ROMANTIC_RELATIONSHIPS_ARE_VEHICLES
 - name: ROMANTIC_RELATIONSHIP_IS_A_JOURNEY
-  aliases:
-  - 2006); Gibbs & Matlock (2008):null)
-  - LOVE IS A JOURNEY
-  - ROMANTIC RELATIONSHIP IS A JOURNEY(Gibbs (1994
   type: Composed/complex
   source_frame: journey
   target_frame: romantic-relationship
@@ -8990,8 +8566,6 @@ metaphors:
     related_by_target:
     - LIFE_IS_A_JOURNEY
 - name: SAD_IS_DOWN
-  aliases:
-  - SAD IS DOWN
   type: Entailed
   source_frame: verticality
   target_frame: sadness
@@ -9005,6 +8579,9 @@ metaphors:
   - He's really low these days.
   - I fell into a depression.
   - My spirits sank.
+  relations:
+    entailed_by:
+    - HAPPINESS_IS_VERTICALITY
 - name: SCALES_ARE_PATHS
   type: Primary
   source_frame: source-path-goal
@@ -9033,10 +8610,6 @@ metaphors:
   families:
   - Governance metaphors
 - name: SEEING_IS_TOUCHING
-  aliases:
-  - SEEING IS TOUCHING
-  - VISION IS PHYSICAL CONTACT(Grady (1998):null)
-  - VISUAL ATTENTION IS CONTACT
   type: Primary
   source_frame: touching
   target_frame: seeing
@@ -9062,8 +8635,6 @@ metaphors:
     related:
     - VIRTUAL_MOTION_IS_ACTUAL_MOTION
 - name: SEEKING_KNOWLEDGE_IS_SEARCHING
-  aliases:
-  - SEEKING KNOWLEDGE IS SEARCHING
   type: Composed/complex
   source_frame: searching
   target_frame: knowing
@@ -9085,8 +8656,6 @@ metaphors:
     entailed_by:
     - KNOWING_IS_SEEING
 - name: SELECTION_IS_ADOPTION
-  aliases:
-  - SELECTION IS ADOPTION
   source_frame: adoption
   target_frame: selection
   mappings:
@@ -9123,8 +8692,6 @@ metaphors:
     subcase_of_target:
     - PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
 - name: SENSING_IS_SMELLING
-  aliases:
-  - SENSING IS SMELLING
   type: Composed/complex
   source_frame: smelling
   target_frame: perception
@@ -9137,8 +8704,6 @@ metaphors:
   families:
   - Object event structure metaphors
 - name: SEQUENCE_OF_ACTIONS_IS_A_SEQUENCE_OF_MOVEMENTS
-  aliases:
-  - SEQUENCE OF ACTIONS IS A SEQUENCE OF MOVEMENTS
   type: Composed/complex
   definition: Cultural scope checked for Persian--Aria
   source_frame: motion-along-a-path
@@ -9160,8 +8725,6 @@ metaphors:
   families:
   - Object event structure metaphors
 - name: SICKNESS_IS_DOWN
-  aliases:
-  - SICKNESS IS DOWN
   type: Entailed
   source_frame: verticality
   target_frame: health
@@ -9186,8 +8749,6 @@ metaphors:
   - Grady primary metaphors
 - name: SIMILARITY_IS_CLOSENESS
 - name: SIMILARITY_IS_PROXIMITY
-  aliases:
-  - SIMILARITY IS PROXIMITY
   type: Primary
   source_frame: proximal-distal
   target_frame: similarity
@@ -9234,8 +8795,6 @@ metaphors:
   - source_role: object_part_relations
     target_role: member_relation
 - name: SOCIAL_GROUPS_ARE_CONTAINERS
-  aliases:
-  - SOCIAL GROUPS ARE CONTAINERS
   type: Composed/complex
   source_frame: containment
   target_frame: social-group
@@ -9254,8 +8813,6 @@ metaphors:
   families:
   - Primary metaphors
 - name: SOCIAL_GROUP_IS_A_FABRIC
-  aliases:
-  - SOCIAL GROUP IS A TEXTILE
   definition: This metaphor focus on the relations between the members of a social group.
   source_frame: textile
   target_frame: social-group
@@ -9286,8 +8843,6 @@ metaphors:
   - source_role: family_whole
     target_role: social_group_whole
 - name: SOCIAL_ORGANIZATIONS_ARE_PLANTS
-  aliases:
-  - SOCIAL ORGANIZATIONS ARE PLANTS
   type: Composed/complex
   source_frame: plants
   target_frame: organization
@@ -9308,9 +8863,6 @@ metaphors:
   - Poverty as a social problem metaphors
   - Social problems metaphors
 - name: SOCIAL_PROBLEMS_ARE_DISEASES
-  aliases:
-  - ADDRESSING SOCIAL PROBLEMS IS TREATING A DISEASE
-  - SOCIAL PROBLEMS ARE DISEASES
   type: Composed/complex
   source_frame: disease
   target_frame: social-problems
@@ -9408,8 +8960,6 @@ metaphors:
   - Functionalism interprets each part of society in terms of how it contributes to the stability of the
     whole society. Society is more than the sum of its parts; rather, ...
 - name: SOCIETY_IS_A_PERSON
-  aliases:
-  - SOCIETY IS A PERSON
   type: Composed/complex
   definition: Cultural scope checked for Persian--Aria
   source_frame: person
@@ -9430,9 +8980,6 @@ metaphors:
   - 'Pam Gulleson: “Social Security Isn’t Broken”'
   - Hempsted Building Department is broken
 - name: SPEECH_ACTS_ARE_FORCES
-  aliases:
-  - SPEECH ACT FORCE IS A PHYSICAL FORCE
-  - SPEECH ACTS ARE FORCES
   source_frame: forced-motion
   target_frame: speech-act
   mappings:
@@ -9463,10 +9010,6 @@ metaphors:
   - source_role: outcome
     target_role: outcome
 - name: STATES_ARE_LOCATIONS
-  aliases:
-  - STATE VALUES ARE LOCATIONS
-  - STATES ARE LANDMARKS
-  - STATES ARE LOCATIONS
   type: Primary
   definition: '"The derivation for STATES ARE LOCATIONS would imply that permanent ''states'' - i.e.,
     essential properties - should be harder to conceptualize as locations, since our understanding of
@@ -9526,9 +9069,6 @@ metaphors:
     subcase_of_target:
     - STATES_ARE_LOCATIONS
 - name: STATUS_IS_VERTICALITY
-  aliases:
-  - HIGH STATUS IS UP
-  - STATUS IS VERTICALITY
   type: Primary
   source_frame: verticality
   target_frame: status
@@ -9553,8 +9093,6 @@ metaphors:
     related_by_target:
     - CONTROL_IS_VERTICALITY
 - name: SUBJUGATION_IS_DOWN
-  aliases:
-  - BEING SUBJECT TO CONTROL IS DOWN
   type: Entailed
   source_frame: verticality
   target_frame: control
@@ -9803,8 +9341,6 @@ metaphors:
   - Today, five years after Tom DeLay’s fall from power, his trial ...is finally slated to begin.
 - name: TESTING_THE_NATURE_OF_IDEAS_IS_SMELLING_OR_TASTING
 - name: THEORIES_ARE_BUILDINGS
-  aliases:
-  - THEORIES ARE BUILDINGS
   type: Composed/complex
   source_frame: building
   target_frame: theory
@@ -9828,9 +9364,6 @@ metaphors:
     subcase_of_source:
     - THEORIES_ARE_COMPLEX_STRUCTURES
 - name: THEORIES_ARE_COMPLEX_STRUCTURES
-  aliases:
-  - THEORIES ARE COMPLEX PHYSICAL STRUCTURES
-  - THEORIES ARE COMPLEX STRUCTURES
   type: Composed/complex
   source_frame: complex-physical-object
   target_frame: theory
@@ -9842,8 +9375,6 @@ metaphors:
     subcase_of_target:
     - LOGICAL_STRUCTURES_ARE_ERECT_COMPLEX_STRUCTURES
 - name: THINKING_IS_LINGUISTIC_ACTIVITY
-  aliases:
-  - THINKING IS LINGUISTIC ACTIVITY
   type: Primary
   source_frame: linguistic-activity
   target_frame: cognizing
@@ -9860,8 +9391,6 @@ metaphors:
     - MEMORIZATION_IS_WRITING
     - THINKING_IS_SPEAKING
 - name: THINKING_IS_MOVING
-  aliases:
-  - THOUGHT IS MOTION
   type: Primary
   source_frame: motion
   target_frame: thinking-about
@@ -9882,13 +9411,11 @@ metaphors:
     target: Being able to think about different things
   relations:
     related:
-    - ACTION_IS_SELF_PROPELLED_MOTION
+    - ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH
     - COGNIZING_IS_BODILY_FUNCTIONING
     - IDEAS_ARE_LOCATIONS
     - SIMILARITY_IS_CLOSENESS
 - name: THINKING_IS_OBJECT_MANIPULATION
-  aliases:
-  - THINKING IS OBJECT MANIPULATION
   type: Composed/complex
   source_frame: object-manipulation
   target_frame: thinking-about
@@ -9952,8 +9479,6 @@ metaphors:
   - Time heals all wounds.
   - Tempus edax rerum. 'Time, which devours all things.'
 - name: TIME_IS_A_COMMODITY
-  aliases:
-  - TIME IS A VALUABLE COMMODITY
   type: Composed/complex
   source_frame: commodity
   target_frame: time
@@ -9965,8 +9490,6 @@ metaphors:
     subcase_of_source:
     - TIME_IS_A_RESOURCE
 - name: TIME_IS_A_LANDSCAPE_THROUGH_WHICH_THE_OBSERVER_MOVES
-  aliases:
-  - The Time Orientation Metaphor
   type: Primary
   source_frame: motion-along-a-path
   target_frame: time
@@ -9989,10 +9512,6 @@ metaphors:
     dual_of:
     - TIME_IS_A_MOVING_OBJECT
 - name: TIME_IS_A_MOVING_OBJECT
-  aliases:
-  - MOMENTS IN TIME ARE OBJECTS IN MOTION ALONG A PATH(Grady (1998):null)
-  - TIME IS A MOVING OBJECT
-  - The Moving Time Metaphor
   type: Primary
   source_frame: moving-object
   target_frame: time
@@ -10009,9 +9528,6 @@ metaphors:
     dual_of:
     - TIME_IS_A_LANDSCAPE_THROUGH_WHICH_THE_OBSERVER_MOVES
 - name: TIME_IS_A_RESOURCE
-  aliases:
-  - TIME IS A LIMITED RESOURCE
-  - TIME IS A RESOURCE
   type: Composed/complex
   definition: Relate this somehow to OPPORTUNITIES ARE RESOURCES.
   source_frame: resource
@@ -10048,8 +9564,6 @@ metaphors:
     related_by_source:
     - TIME_IS_A_MOVING_OBJECT
 - name: TIME_IS_MONEY
-  aliases:
-  - TIME IS MONEY
   type: Composed/complex
   source_frame: money
   target_frame: time
@@ -10062,8 +9576,6 @@ metaphors:
     subcase_of_source:
     - TIME_IS_A_RESOURCE
 - name: TIME_PERIODS_ARE_CONTAINERS
-  aliases:
-  - TIME PERIODS IN OUR LIVES ARE CONTAINERS(Grady (1998):null)
   type: Primary
   definition: Resolve source and target frames.
   source_frame: containment
@@ -10098,8 +9610,6 @@ metaphors:
     subcase_of_target:
     - TRUST_RELATIONSHIPS_ARE_BUILDINGS
 - name: TRUST_RELATIONSHIPS_ARE_BUILDINGS
-  aliases:
-  - TRUST RELATIONSHIPS ARE BUILDINGS
   type: Composed/complex
   source_frame: building
   target_frame: trust-relationship
@@ -10133,8 +9643,6 @@ metaphors:
   - source: caused change in structural_integrity
     target: caused change in intensity
 - name: UNCONSCIOUS_IS_DOWN
-  aliases:
-  - UNCONSCIOUS IS DOWN
   type: Entailed
   source_frame: verticality
   target_frame: consciousness
@@ -10151,8 +9659,6 @@ metaphors:
     entailed_by:
     - CONSCIOUSNESS_IS_VERTICALITY
 - name: UNCONTROLLED_CRIME_IS_A_RAMPAGING_ANIMAL
-  aliases:
-  - UNCONTROLLED CRIME IS A RAMPAGING ANIMAL
   type: Composed/complex
   source_frame: animal
   target_frame: crime
@@ -10168,8 +9674,6 @@ metaphors:
     entailed_by:
     - CRIME_IS_AN_ANIMAL
 - name: UNDERSTANDING_IS_DIGESTING
-  aliases:
-  - FULLY COMPREHENDING IS DIGESTING
   type: Primary
   source_frame: digestion
   target_frame: understanding
@@ -10184,8 +9688,6 @@ metaphors:
     - COMMUNICATING_IS_FEEDING
     - THINKING_OVER_IS_CHEWING
 - name: UNDERSTANDING_IS_FOLLOWING
-  aliases:
-  - UNDERSTANDING IS FOLLOWING
   source_frame: guided-motion
   target_frame: understanding
   families:
@@ -10194,9 +9696,6 @@ metaphors:
   - I don't follow you.
   - This lecture will be fast-paced, so try to keep up!
 - name: UNDERSTANDING_IS_GRASPING
-  aliases:
-  - Grady:null)
-  - UNDERSTANDING IS GRASPING(Metaphors We Live By
   type: Primary
   source_frame: object-manipulation
   target_frame: understanding
@@ -10223,10 +9722,6 @@ metaphors:
     subcase_of_target:
     - SEQUENCES_OF_EVENTS_ARE_FLUIDS
 - name: VIRTUAL_MOTION_IS_ACTUAL_MOTION
-  aliases:
-  - The Fictive Motion metaphor
-  - The Virtual Motion metaphor
-  - VIRTUAL MOTION IS ACTUAL MOTION
   type: Primary
   source_frame: motion-along-a-path
   target_frame: virtual-motion
@@ -10253,8 +9748,6 @@ metaphors:
     - SEEING_IS_TOUCHING
     - THINKING_IS_MOVING
 - name: VISUAL_FIELD_IS_A_CONTAINER
-  aliases:
-  - VISUAL FIELD IS A BOUNDED REGION
   type: Primary
   source_frame: containment
   target_frame: visual-field
@@ -10327,9 +9820,6 @@ metaphors:
   families:
   - Wealth metaphors
 - name: WELL_BEING_IS_VERTICALITY
-  aliases:
-  - WELL-BEING IS UP
-  - WELL-BEING IS VERTICALITY
   type: Primary
   source_frame: verticality
   target_frame: well-being
@@ -10349,9 +9839,6 @@ metaphors:
     - GOODNESS_IS_VERTICALITY
     - QUANTITY_IS_VERTICALITY
 - name: WELL_BEING_IS_WEALTH
-  aliases:
-  - The Moral Accounting Metaphor
-  - WELL-BEING IS WEALTH(Lakoff (Moral Politics):44)
   type: Composed/complex
   source_frame: wealth
   target_frame: well-being
@@ -10443,9 +9930,6 @@ metaphors:
     entailed_by:
     - ELECTION_IS_WAR
 - name: WORDS_ARE_CONTAINERS
-  aliases:
-  - LINGUISTIC EXPRESSIONS ARE CONTAINERS (FOR MEANING)
-  - WORDS ARE CONTAINERS FOR MEANING
   type: Primary
   source_frame: containing
   target_frame: word
