@@ -1,0 +1,30 @@
+[project]
+name = "metaphor"
+version = "0.1.0"
+description = "Curated English export of the MetaNet Metaphor Repository"
+requires-python = ">=3.11"
+dependencies = [
+    "rdflib>=7.0",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.15.20",
+    "ty>=0.0.56",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["data/"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ty.src]
+exclude = ["data/"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
