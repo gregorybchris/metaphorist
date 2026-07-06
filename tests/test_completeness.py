@@ -29,23 +29,68 @@ def test_mapping_roles_present_in_frame_roles(metaphors, frame_roles):
         )
 
 
-def test_metaphors_have_content(metaphors):
-    empty = [
-        m["name"]
-        for m in metaphors
-        if not m.get("mappings") and not m.get("examples") and not m.get("entailments")
+def test_frame_roles_used_by_a_mapping(metaphors, frames):
+    used = {}
+    for m in metaphors:
+        for mp in m.get("mappings", []):
+            if m.get("source_frame") and mp.get("source_role"):
+                used.setdefault(m["source_frame"], set()).add(mp["source_role"])
+            if m.get("target_frame") and mp.get("target_role"):
+                used.setdefault(m["target_frame"], set()).add(mp["target_role"])
+
+    unused = [
+        f"{f['name']}.{r['name']}"
+        for f in frames
+        for r in f.get("roles", [])
+        if r["name"] not in used.get(f["name"], set())
     ]
-    if empty:
+    if unused:
         warnings.warn(
-            f"{len(empty)} metaphor(s) with no mappings, examples, or entailments: {empty[:5]}",
+            f"{len(unused)} frame role(s) not used by any metaphor mapping: {unused[:5]}",
             stacklevel=2,
         )
 
 
-def test_frames_have_content(frames):
-    empty = [f["name"] for f in frames if not f.get("roles") and not f.get("lexical_units")]
+def test_metaphors_have_mappings(metaphors):
+    empty = [m["name"] for m in metaphors if not m.get("mappings")]
     if empty:
         warnings.warn(
-            f"{len(empty)} frame(s) with no roles and no lexical units: {empty[:5]}",
+            f"{len(empty)} metaphor(s) with no mappings: {empty[:5]}",
+            stacklevel=2,
+        )
+
+
+def test_metaphors_have_examples(metaphors):
+    empty = [m["name"] for m in metaphors if not m.get("examples")]
+    if empty:
+        warnings.warn(
+            f"{len(empty)} metaphor(s) with no examples: {empty[:5]}",
+            stacklevel=2,
+        )
+
+
+def test_metaphors_have_entailments(metaphors):
+    empty = [m["name"] for m in metaphors if not m.get("entailments")]
+    if empty:
+        warnings.warn(
+            f"{len(empty)} metaphor(s) with no entailments: {empty[:5]}",
+            stacklevel=2,
+        )
+
+
+def test_frames_have_roles(frames):
+    empty = [f["name"] for f in frames if not f.get("roles")]
+    if empty:
+        warnings.warn(
+            f"{len(empty)} frame(s) with no roles: {empty[:5]}",
+            stacklevel=2,
+        )
+
+
+def test_frames_have_lexical_units(frames):
+    empty = [f["name"] for f in frames if not f.get("lexical_units")]
+    if empty:
+        warnings.warn(
+            f"{len(empty)} frame(s) with no lexical units: {empty[:5]}",
             stacklevel=2,
         )
