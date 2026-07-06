@@ -197,7 +197,7 @@ metaphors:
   examples:
   - Hitler's rise to power cannot be attributed to one event, but a mixture of factors including events
     happening outside Germany...
-  - Regensburg’s political influence reached its peak when Regensburg was city of the Perpetual Diet or
+  - Regensburg's political influence reached its peak when Regensburg was city of the Perpetual Diet or
     General Assembly of the Imperial Estates of the Holy Roman Empire from 1663 to 1806.
   relations:
     entailed_by:
@@ -1880,7 +1880,7 @@ metaphors:
   examples:
   - This new slavery is a total dependence by individuals and families on government for the materials
     and funds necessary to maintain a minimum standard of living.
-  - '...the people of America’s needs and priorities become second to the needs of the state and the people
+  - '...the people of America''s needs and priorities become second to the needs of the state and the people
     of America become enslaved to the state.'
 - name: CITIZENS_ARE_STOCKHOLDERS
   source_frame: stockholders
@@ -2121,8 +2121,8 @@ metaphors:
   target_frame: competition
   examples:
   - The arms race.
-  - We’ve been playing chess for years, and he’s finally pulling ahead of me.
-  - He’s a better writer than I am, and he’s widening the distance.
+  - We've been playing chess for years, and he's finally pulling ahead of me.
+  - He's a better writer than I am, and he's widening the distance.
 - name: COMPLEX_IDEAS_ARE_SENTENCES
   type: Composed/complex
   source_frame: sentence
@@ -2202,7 +2202,7 @@ metaphors:
   - Gun debate metaphors
   - Rights metaphors
   examples:
-  - “Your dead kids don’t trump my Constitutional rights.”
+  - “Your dead kids don't trump my Constitutional rights.”
 - name: CONSTITUENTS_ARE_CONTENTS
   type: Primary
   source_frame: contents
@@ -3069,7 +3069,7 @@ metaphors:
   families:
   - Education metaphors
   examples:
-  - Apparently, I’m not the only parent who’s concerned about high stakes testing.
+  - Apparently, I'm not the only parent who's concerned about high stakes testing.
   entailments:
   - source: High-stakes betting
     target: Taking an important test
@@ -4367,7 +4367,7 @@ metaphors:
   examples:
   - I believe in personal responsibility and the government shouldn't be a babysitter but I also believe
     in compassion for less advantageous people.
-  - Can I decide what size soda I want to drink? No, that’s the nanny state’s job.
+  - Can I decide what size soda I want to drink? No, that's the nanny state's job.
   entailments:
   - source: Childcare provider has control over what the children can or cannot do
     target: Government has control over what the citizens can or cannot do
@@ -4469,9 +4469,9 @@ metaphors:
   - source_role: leader_goal
     target_role: governor_objectives
   examples:
-  - '"In my view, the federal government should lead the way.  The bill we’ve introduced requires the
+  - '"In my view, the federal government should lead the way.  The bill we''ve introduced requires the
     federal government to increase its use of renewable electricity and reduce its overall energy consumption
-    in federal buildings, both new and old.  We can’t expect consumers to embrace energy efficient technology
+    in federal buildings, both new and old.  We can''t expect consumers to embrace energy efficient technology
     if their government does not do the same."'
   - Parents are so uneducated about health that they will follow the government down any misguided path.
   relations:
@@ -4537,7 +4537,7 @@ metaphors:
   - source_role: objectives
     target_role: governor_objectives
   examples:
-  - The US government loves you. In fact, it loves you so much that it’s willing shackle your legs together.
+  - The US government loves you. In fact, it loves you so much that it's willing shackle your legs together.
     Just to protect you – tough love, baby. Now, it may hurt a bit but just try to breathe through the
     pain. Remember – it hurts the government more than it hurts you.
   relations:
@@ -4550,7 +4550,7 @@ metaphors:
   - Function of government metaphors
   - Governance metaphors
   examples:
-  - A proper government is only a policeman, acting as an agent of man’s self-defense, and, as such, may
+  - A proper government is only a policeman, acting as an agent of man's self-defense, and, as such, may
     resort to force only against those who start the use of force.
   relations:
     subcase_of_source:
@@ -4770,7 +4770,7 @@ metaphors:
   - source_role: disease
     target_role: weapon
   examples:
-  - ‘America’s gun disease is a national security issue’
+  - ‘America's gun disease is a national security issue'
 - name: GUNS_ARE_A_NATURAL_DISASTER
   type: Composed/complex
   source_frame: natural-disaster
@@ -5241,11 +5241,11 @@ metaphors:
   - Morality metaphors
   - Physical afflictions metaphors
   examples:
-  - '''It’s sick and disgusting that a painting like this can go on show so soon after my daughter was
+  - '''It''s sick and disgusting that a painting like this can go on show so soon after my daughter was
     murdered.
 
 
-    ''Some of Rebecca’s school friends were due to go to the exhibition - they would have been in tears
+    ''Some of Rebecca''s school friends were due to go to the exhibition - they would have been in tears
     if they had seen this vile picture.'''
 - name: IMMORALITY_IS_IMPURITY
   source_frame: impurity
@@ -5465,7 +5465,7 @@ metaphors:
   families:
   - Governance metaphors
   examples:
-  - The World Bank has issued its latest index of corruption and transparency. The world’s largest democracy,
+  - The World Bank has issued its latest index of corruption and transparency. The world's largest democracy,
     India, is looking a bit red-faced.
 - name: INABILITY_TO_UTILIZE_EDUCATIONAL_OPPORTUNITY_IS_INABILITY_TO_ACCESS_A_LOCATION
   type: Composed/complex
@@ -5537,7 +5537,7 @@ metaphors:
   families:
   - Governance metaphors
   examples:
-  - Stay up to date on Sunlight’s work in D.C., throughout the country and around the world, as well as
+  - Stay up to date on Sunlight's work in D.C., throughout the country and around the world, as well as
     the latest open government, transparency and technology news.
 - name: INCREASING_EVALUABILITY_OF_GOVERNMENT_IS_INCREASING_TRANSPARENCY
   families:
@@ -5580,8 +5580,8 @@ metaphors:
   - Governance metaphors
   examples:
   - The point, however, is that saying that government is inefficient because it does not turn a profit
-    is the equivalent of saying that Peyton Manning is a poor quarterback because he doesn’t hit enough
-    home runs. He’s not supposed to.
+    is the equivalent of saying that Peyton Manning is a poor quarterback because he doesn't hit enough
+    home runs. He's not supposed to.
   - The business of municipal government is, in general, the most poorly managed business in the world.
   relations:
     entailed_by:
@@ -5737,7 +5737,7 @@ metaphors:
   - source_role: factory_workers
     target_role: institution_holders
   examples:
-  - Society’s great institutions are factories of ideas, regularly churning out new frameworks, insights,
+  - Society's great institutions are factories of ideas, regularly churning out new frameworks, insights,
     and understanding.
   - In this view, educational instititions are factories that take less productive workers as their raw
     materials, apply doses of training, and create more productive workers as outputs.
@@ -6876,7 +6876,7 @@ metaphors:
   families:
   - Governance metaphors
   examples:
-  - 'But Scott Brown’s win in the Massachusetts Senate race does raise a bigger question: is the system
+  - 'But Scott Brown''s win in the Massachusetts Senate race does raise a bigger question: is the system
     broken? I fear the answer is yes.'
 - name: NATIONAL_POLITICS_IS_A_BATTLEFIELD
   families:
@@ -6983,7 +6983,7 @@ metaphors:
   - source_role: object_location
     target_role: nation_geographic_area
   examples:
-  - '"Are They Parts of Our Nation? Tanzanian and Zambian University Students’ Attitude to the European
+  - '"Are They Parts of Our Nation? Tanzanian and Zambian University Students'' Attitude to the European
     and South Asian Minorities Compared"'
   - No one built this country on their own. This nation is great because we built it together.
   entailments:
@@ -7749,7 +7749,7 @@ metaphors:
   - It was a traumatic experience.
   - Her death hurt him.
   - The accusation wounded her.
-  - He’s mentally ill/fit.
+  - He's mentally ill/fit.
   - My pride was wounded.
   - She recovered from the wound to her psyche, but scars remained.
   relations:
@@ -8618,7 +8618,7 @@ metaphors:
   source_frame: fixing
   target_frame: solving-a-problem
   examples:
-  - 'Pam Gulleson: “Social Security Isn’t Broken”'
+  - 'Pam Gulleson: “Social Security Isn''t Broken”'
   - Hempsted Building Department is broken
 - name: SPEECH_ACTS_ARE_FORCES
   source_frame: forced-motion
@@ -8967,7 +8967,7 @@ metaphors:
   families:
   - Governance metaphors
   examples:
-  - Today, five years after Tom DeLay’s fall from power, his trial ...is finally slated to begin.
+  - Today, five years after Tom DeLay's fall from power, his trial ...is finally slated to begin.
 - name: TESTING_THE_NATURE_OF_IDEAS_IS_SMELLING_OR_TASTING
 - name: THEORIES_ARE_BUILDINGS
   type: Composed/complex
