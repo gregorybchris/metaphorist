@@ -42,6 +42,12 @@ This is what says heat corresponds to anger specifically — not to something el
 - **examples** — real sentences the metaphor is attested in: `"You make my blood boil."`, `"I had reached the boiling point."`
 - **entailments** — what you're implicitly committed to believing once you accept the metaphor, given as a `source`/`target` pair. For this metaphor: more `fluid_heat_level` entails more `container_heat` and `fluid_agitation` on the source side — carried across the mapping, that becomes more `anger_level` entails more `body_heat` and `body_agitation` on the target side.
 
+### X-schema roles
+
+Many frames declare a role named `<something>_x_schema` (87 of them across the dataset) — short for **executing schema**, a term from Srini Narayanan's work at ICSI Berkeley, the same lab this repository comes from. An x-schema models the general control structure of any goal-directed action — starting, being in progress, getting interrupted, resuming, completing — independent of what the action actually is. It's the piece a FrameNet-style role list doesn't cover: a frame's other roles describe *who's involved* (a mover, a container, an actor); its x-schema role describes *how the action unfolds over time*.
+
+That's why mappings so often pair one frame's x-schema role with another's, e.g. `self_motion_x_schema -> action_x_schema` in `ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH`. That isn't mapping a participant onto a participant — it's claiming that abstract *action* inherits the entire temporal shape of physical *self-propelled motion*. You can see it directly in that metaphor's entailments: `manner of movement -> manner of action`, `stage of movement -> stage of action`, `speed of motion -> rate of action`, `impediments to motion -> impediments to action`. Every pair is aspectual vocabulary (manner, stage, speed, obstacles), not "who did what to whom" — that's the x-schema mapping doing its job.
+
 ### Type
 
 Every metaphor has a `type`, describing how it was arrived at:
