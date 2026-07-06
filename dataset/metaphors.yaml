@@ -426,7 +426,7 @@ metaphors:
   - source_role: medical_professionals
     target_role: policy_makers
   - source_role: body
-    target_role: impoverished_entity
+    target_role: impoverished
   - source_role: treatment_strategies
     target_role: policies
   examples:
@@ -927,7 +927,7 @@ metaphors:
     target_role: mind
   - source_role: fluid_heat_level
     target_role: anger_level
-  - source_role: container_internal_pressure
+  - source_role: container_pressure
     target_role: body_pressure
   - source_role: container_pressure_limit
     target_role: anger_limit
@@ -1717,7 +1717,7 @@ metaphors:
     target_role: ability_to_control
   - source_role: donor
     target_role: controlling_entity
-  - source_role: recipient
+  - source_role: transfer_recipient
     target_role: controlling_entity
   examples:
   - The US handed over control of the prisoners to Afghan authorities.
@@ -2929,7 +2929,7 @@ metaphors:
     target_role: body
   - source_role: weapons
     target_role: medical_tools_and_medicine
-  - source_role: war_strategy
+  - source_role: war_strategies
     target_role: treatment_strategies
   - source_role: fighting
     target_role: applying_treatment
@@ -3258,9 +3258,9 @@ metaphors:
   families:
   - Election metaphors
   mappings:
-  - source_role: war_side1
+  - source_role: side_1
     target_role: candidate1
-  - source_role: war_side2
+  - source_role: side_2
     target_role: candidate2
   examples:
   - '...the fight for the White House is being waged on intensely local terrain...'
@@ -4932,7 +4932,7 @@ metaphors:
   - Rights metaphors
   mappings:
   - source_role: possessor
-    target_role: rights_holder
+    target_role: gun_rights_owner
   - source_role: possession
     target_role: right
   relations:
@@ -5731,7 +5731,7 @@ metaphors:
   - Governance metaphors
   mappings:
   - source_role: factory
-    target_role: institution
+    target_role: institution_whole
   - source_role: factory_managers
     target_role: institution_heads
   - source_role: factory_workers
@@ -5838,12 +5838,12 @@ metaphors:
   families:
   - Governance metaphors
   mappings:
-  - source_role: relationship_related_entity_1
+  - source_role: related_entity_1
     target_role: international_relation_nation1
-  - source_role: relationship_related_entity2
+  - source_role: related_entity_2
     target_role: international_relations_nation2
   - source_role: relationship_whole
-    target_role: international_relations_international_relationship
+    target_role: international_relationship
   examples:
   - "Which country is your country's best friend? \n\nBut as much as the U.S. wants to be close-knit friends\
     \ with Canada, Canada ... Same can't be said about many other countries in the world that ..."
@@ -6222,7 +6222,7 @@ metaphors:
   - source_role: journey_event
     target_role: life_span
   - source_role: journey_destination
-    target_role: main_life_goal
+    target_role: life_goals
   - source_role: journey_stops
     target_role: short_term_life_goals
   - source_role: path_traced_by_sequence_of_motion
@@ -6236,7 +6236,7 @@ metaphors:
   - source_role: journey_companion
     target_role: life_companion
   - source_role: vehicles_in_journey
-    target_role: relationships_in_life
+    target_role: life_relationships
   examples:
   - She hasn't gone as far in life as her parents had hoped.
   - His life has taken a good course.
@@ -6353,7 +6353,7 @@ metaphors:
   target_frame: machine
   mappings:
   - source_role: person
-    target_role: machine
+    target_role: machine_entity
   - source_role: human_body
     target_role: machine_hardware
   - source_role: human_mind
@@ -7001,7 +7001,7 @@ metaphors:
   - source_role: family_whole
     target_role: nation_whole
   - source_role: family_members
-    target_role: citizens
+    target_role: nation_citizens
   - source_role: parents
     target_role: nation_leaders
   examples:
@@ -7125,7 +7125,7 @@ metaphors:
   families:
   - Legislation metaphors
   mappings:
-  - source_role: physically_harmed_entity
+  - source_role: harmed_entity
     target_role: law
   relations:
     entailed_by:
@@ -7250,7 +7250,7 @@ metaphors:
   - source_role: operating_x_schema
     target_role: organization_management_x_schema
   - source_role: machine_parts
-    target_role: organization_subparts
+    target_role: organization_sub_groups
   - source_role: procedures_for_operation
     target_role: organization_procedures
   examples:
@@ -7267,7 +7267,7 @@ metaphors:
   - Grady primary metaphors
   mappings:
   - source_role: physical_structure
-    target_role: organized_structure
+    target_role: organizational_structure
   - source_role: physical_structure_x_schema
     target_role: organization_x_schema
   examples:
@@ -7425,7 +7425,7 @@ metaphors:
   mappings:
   - source_role: vehicle
     target_role: governing_institution
-  - source_role: passengers
+  - source_role: vehicle_passengers
     target_role: population
   examples:
   - They are rocking the ship of state.
@@ -7840,7 +7840,7 @@ metaphors:
   - source_role: self_mover
     target_role: thinker
   - source_role: self_motion_x_schema
-    target_role: thinking_x_frame
+    target_role: thinking_process
   - source_role: goal
     target_role: desiredknowledge
   examples:
@@ -8004,7 +8004,7 @@ metaphors:
   - Ontological metaphors
   mappings:
   - source_role: container
-    target_role: relationship
+    target_role: relationship_whole
   - source_role: contents
     target_role: relationship_participants
   examples:
@@ -8023,7 +8023,7 @@ metaphors:
   - Primary metaphors
   mappings:
   - source_role: object_entity
-    target_role: relation
+    target_role: inter_relation
   examples:
   - Our relationship is rock solid.
   - She has a fragile relationship with her mother as it is.
@@ -8036,7 +8036,7 @@ metaphors:
   target_frame: relationship
   mappings:
   - source_role: structure_whole
-    target_role: relationship
+    target_role: relationship_whole
   - source_role: structure_creator
     target_role: related_entity_1
   - source_role: structure_creator
@@ -8154,9 +8154,9 @@ metaphors:
   - source_role: boat
     target_role: relationship
   - source_role: boat_passengers
-    target_role: relationship_co_participants
+    target_role: romantic_relationship_participants
   - source_role: path_of_boat
-    target_role: course_of_relationship
+    target_role: course_of_romantic_relationship
   examples:
   - Their relationship is on the rocks.
   entailments:
@@ -8190,13 +8190,13 @@ metaphors:
   - LOVE IS A JOURNEY cascade
   mappings:
   - source_role: journeyer
-    target_role: relationship_participant
+    target_role: romantic_relationship_participants
   - source_role: co_journeyer
-    target_role: relationship_co_participant
+    target_role: romantic_relationship_participants
   - source_role: vehicle
     target_role: relationship
-  - source_role: path_of_journey
-    target_role: course_of_relationship
+  - source_role: course_of_journey
+    target_role: course_of_romantic_relationship
   - source_role: obstacles_impediments_in_journey
     target_role: difficulties_in_a_relationship
   examples:
@@ -8270,7 +8270,7 @@ metaphors:
     target_role: visual_ability
   - source_role: touched_thing
     target_role: seen_object
-  - source_role: tactile_input
+  - source_role: touch_input
     target_role: visual_input
   - source_role: toucher
     target_role: seer
@@ -8292,7 +8292,7 @@ metaphors:
   - source_role: seeker_of_some_object
     target_role: knowledge_seeker
   - source_role: sought_object
-    target_role: sought_knowledge
+    target_role: knowledge
   - source_role: looking_for_object_x_schema
     target_role: seeking_to_know_x_schema
   examples:
@@ -8734,7 +8734,7 @@ metaphors:
   - Orientational metaphors
   - Primary metaphors
   mappings:
-  - source_role: vertically_lower_entity
+  - source_role: vertical_entity
     target_role: subjugated_entity
   examples:
   - He is under my control.
@@ -8808,7 +8808,7 @@ metaphors:
     target_role: taxer
   - source_role: victim
     target_role: tax_payer
-  - source_role: harmful_effect
+  - source_role: harmful_effect_result
     target_role: tax_payment
   examples:
   - High sales taxes hurt local small businesses.
@@ -8849,7 +8849,7 @@ metaphors:
   mappings:
   - source_role: punisher
     target_role: taxer
-  - source_role: punished_person
+  - source_role: punishee
     target_role: tax_payer
   - source_role: punishment
     target_role: tax

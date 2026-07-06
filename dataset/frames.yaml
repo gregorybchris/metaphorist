@@ -12789,8 +12789,8 @@ frames:
   - name: fighting
     role_type: XSchemaPhase
   - name: generals
-  - name: side1
-  - name: side2
+  - name: side_1
+  - name: side_2
   - name: victory
     role_type: XSchemaState
   - name: war_strategies
