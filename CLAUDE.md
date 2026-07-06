@@ -10,8 +10,8 @@ runtime and dev dependency groups (`pyyaml`, `rdflib`, `pytest`, `ruff`, `ty`).
 
 ## Common commands
 
-- `make test` — run the pytest suite (`tests/`) against `metaphors.yaml`, `frames.yaml`,
-  `metaphor-families.yaml`, `frame-families.yaml`.
+- `make test` — run the pytest suite (`tests/`) against `dataset/metaphors.yaml`,
+  `dataset/frames.yaml`, `dataset/metaphor-families.yaml`, `dataset/frame-families.yaml`.
 - `make lint` — `ruff check`, `ruff format --check`, and `ty check`.
 - `make format` — auto-fix formatting and lint issues in place.
 - `make check` — lint + test; run this before considering a change to the YAML data or the Python
@@ -50,10 +50,11 @@ change to the data, assert; if it's just useful visibility into a known gap, war
 
 ## Data model changes
 
-`metaphors.yaml`, `frames.yaml`, `metaphor-families.yaml`, and `frame-families.yaml` are hand- and
-agent-edited directly -- there is no build/regenerate step. `data/build_curated.py` is a historical,
-one-time script kept for provenance only; do not run it, since it would regenerate the dataset from
-the original ontology and silently discard any edits made since it last ran.
+`dataset/metaphors.yaml`, `dataset/frames.yaml`, `dataset/metaphor-families.yaml`, and
+`dataset/frame-families.yaml` are hand- and agent-edited directly -- there is no build/regenerate
+step. `data/build_curated.py` is a historical, one-time script kept for provenance only; do not run
+it, since it would regenerate the dataset from the original ontology and silently discard any edits
+made since it last ran.
 
 When adding or editing YAML data, run `make check` and skim the warnings summary for regressions
 before committing.

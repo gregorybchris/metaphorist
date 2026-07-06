@@ -2,7 +2,7 @@
 
 This is a cleaned-up, English-only export of the [MetaNet Metaphor Repository](https://metaphor.icsi.berkeley.edu/) built at UC Berkeley's ICSI, originally funded by IARPA to study how metaphor shapes political and economic reasoning. It's built on Conceptual Metaphor Theory (Lakoff & Johnson): the idea that we understand abstract concepts (argument, anger, time, government) systematically in terms of more concrete ones (war, heat, money, machines), and that this shows up as everyday patterns in language rather than just poetic flourish.
 
-`metaphors.yaml`, `frames.yaml`, `metaphor-families.yaml`, and `frame-families.yaml` are the dataset, and are hand- and agent-edited directly -- there's no build step. `data/build_curated.py` is kept for provenance only: it's the one-time script that originally derived these files from the raw ontology in `data/mr_en.owl` (name normalization, duplicate merging, field pruning), but running it again would regenerate from scratch and silently wipe out any edits made since. Set up with `uv sync`, then run `make test` (or `make check` to also lint) to validate the current data.
+`dataset/metaphors.yaml`, `dataset/frames.yaml`, `dataset/metaphor-families.yaml`, and `dataset/frame-families.yaml` are the dataset, and are hand- and agent-edited directly -- there's no build step. `data/build_curated.py` is kept for provenance only: it's the one-time script that originally derived these files from the raw ontology in `data/mr_en.owl` (name normalization, duplicate merging, field pruning), but running it again would regenerate from scratch and silently wipe out any edits made since. Set up with `uv sync`, then run `make test` (or `make check` to also lint) to validate the current data.
 
 ## Terminology
 
@@ -11,7 +11,7 @@ This is a cleaned-up, English-only export of the [MetaNet Metaphor Repository](h
 - **mappings** — the role-by-role correspondences within one metaphor (`fluid → anger`, `container → body`, ...).
 - **examples** — real sentences the metaphor is attested in (`"You make my blood boil."`).
 - **entailments** — what you're implicitly committed to believing once you accept the metaphor (e.g. more heat entails more pressure, on both the source and target side).
-- **families** — named thematic groupings (`Anger metaphors`, `Governance metaphors`), one per metaphor or frame, each with a `members` list for easy lookup. Live in their own files: `metaphor-families.yaml`, `frame-families.yaml`.
+- **families** — named thematic groupings (`Anger metaphors`, `Governance metaphors`), one per metaphor or frame, each with a `members` list for easy lookup. Live in their own files: `dataset/metaphor-families.yaml`, `dataset/frame-families.yaml`.
 - **type** — `Primary` (a basic, experientially-grounded metaphor), `Composed/complex` (built out of primary metaphors), or `Entailed` (follows from another metaphor).
 
 ## Relations
