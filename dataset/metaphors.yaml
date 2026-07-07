@@ -268,9 +268,9 @@ metaphors:
       - source_role: landmark
         target_role: action_x_schema
     examples:
-      - I'm going to leave.
+      - She's in the middle of drafting the proposal.
       - She's close to resigning.
-      - The car is in motion.
+      - They're deep into renovating the old house.
     entailments:
       - source: The trajector's location (profiled_region) is at/in the landmark
         target: Action is ongoing
@@ -295,7 +295,7 @@ metaphors:
       - source_role: motion_x_schema
         target_role: action_x_schema
     examples:
-      - This computer program turns the power on and off.
+      - He got the ball rolling on the new initiative.
       - Let's get moving on this project.
       - She set the whole plan in motion.
   - name: ACTION_IS_MOTION_ALONG_A_PATH
@@ -2161,7 +2161,7 @@ metaphors:
     examples:
       - Citizens deserve a say in how their tax dollars are invested.
       - Taxpayers expect a return on their investment in public schools.
-      - Residents want more transparency in how the city spends their money.
+      - Residents expect a seat on the board when the city makes big spending decisions.
   - name: CITIZEN_RIGHTS_ARE_PHYSICAL_STRUCTURES
     type: Composed/complex
     source_frame: physical-structure
@@ -4057,9 +4057,9 @@ metaphors:
       - Harm metaphors
       - Primary metaphors
     examples:
-      - The oil spill has caused a shock to the environment.
-      - Smog pollution is an environmental malaise.
-      - Ecologists are nursing the bay back to health.
+      - The oil spill left a deep wound on the coastline.
+      - Decades of industrial dumping have scarred the river.
+      - The forest was left battered and stripped bare after the clear-cutting.
     relations:
       subcase_of_target:
         - HARM_IS_PHYSICAL_INJURY
@@ -4443,7 +4443,7 @@ metaphors:
     examples:
       - You should form your words carefully.
       - This is a well-crafted sentence.
-      - Promises should be articulated clearly.
+      - He shaped his argument to win over the skeptics.
     relations:
       entailed_by:
         - WORDS_ARE_CONTAINERS
@@ -4489,7 +4489,7 @@ metaphors:
     examples:
       - Do I need to spell it out for you?
       - The theory is spelled out in chapter 4.
-      - Follow the letter of the law.
+      - He spelled out his reasoning, step by step, so there'd be no confusion.
   - name: FUNCTIONALITY_IS_VERTICALITY
     type: Primary
     source_frame: verticality
@@ -4585,7 +4585,7 @@ metaphors:
     examples:
       - The rebels wrested control of the capital from the ruling party.
       - She finally grabbed the reins of power after the election.
-      - He clawed his way to the top of the party.
+      - He snatched the nomination away from the front-runner.
     relations:
       subcase_of_target:
         - ACHIEVING_A_PURPOSE_IS_ACQUIRING_A_DESIRED_OBJECT
@@ -5842,16 +5842,6 @@ metaphors:
     relations:
       subcase_of_target:
         - WELL_BEING_IS_VERTICALITY
-  - name: HELP_IS_PHYSICAL_SUPPORT
-    type: Primary
-    source_frame: support
-    target_frame: aids-to-action
-    families:
-      - Grady primary metaphors
-    examples:
-      - The charity's overseas work is supported entirely by donations.
-      - Our conservation program needs your support.
-      - I've really been leaning on my friends the past few months.
   - name: HIERARCHY_IS_A_VERTICAL_STRUCTURE
     type: Composed/complex
     source_frame: vertical-structure
@@ -6869,7 +6859,7 @@ metaphors:
       - source_role: seen_object
         target_role: knowledge
     examples:
-      - I see what you mean.
+      - He's finally starting to see reason.
       - I can't see why he'd do that.
       - Now I see the whole picture.
     entailments:
@@ -7042,7 +7032,7 @@ metaphors:
       - Governance metaphors
     examples:
       - She's the head of the department, and everyone looks to her for direction.
-      - Without a head, the committee just spun its wheels.
+      - The organization felt headless after the CEO's sudden departure.
       - He leads the team the same way a head directs the body.
   - name: LEADING_A_GROUP_IS_DRIVING_A_VEHICLE
     type: Composed/complex
@@ -7955,7 +7945,7 @@ metaphors:
       - source_role: straight_person
         target_role: moral_person
     examples:
-      - Be straight with me.
+      - He refused to bend the rules, no matter the pressure.
       - He's always kept to the straight and narrow.
       - She never strays from what she believes is right.
     relations:
@@ -8327,7 +8317,7 @@ metaphors:
       - Governance metaphors
     examples:
       - Canada is by far the closest of all our neighbors.
-      - The two countries have been good neighbors for generations.
+      - The two nations are neighbors, separated only by a shared border.
       - Border disputes have strained relations with the neighboring country.
   - name: NEGATIVELY_AFFECTING_A_LAW_IS_CAUSING_HARM_TO_A_PHYSICAL_STRUCTURE
     source_frame: physical-harm
@@ -8448,7 +8438,7 @@ metaphors:
     examples:
       - Steady funding nourished the project for years.
       - Public support fed the movement's steady growth.
-      - Constant practice fueled her rapid improvement.
+      - A steady diet of encouragement sustained her motivation through months of practice.
   - name: OPPORTUNITIES_ARE_LOCATIONS
     source_frame: location
     target_frame: opportunities
@@ -8512,7 +8502,7 @@ metaphors:
       - source_role: procedures_for_operation
         target_role: organization_procedures
     examples:
-      - The three branches of government have been working together smoothly.
+      - The three branches of government function like interlocking gears, each driving the others forward.
       - New management got the whole department running like a well-oiled machine.
       - Budget cuts have thrown a wrench into the agency's operations.
     relations:
@@ -11107,7 +11097,7 @@ metaphors:
     families:
       - Well-being metaphors
     examples:
-      - Was it worth it in the end?
+      - A close-knit family is one of the richest things a person can have.
       - The human cost of that disaster is enormous.
       - Her happiness is worth more than any paycheck.
     entailments:
