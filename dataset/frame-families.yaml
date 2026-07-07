@@ -3,7 +3,7 @@ frame_families:
     members:
       - access-to-education
       - access-to-knowledge
-  - name: Act on object frames
+  - name: Act on an object frames
     members:
       - attach
       - create-object
@@ -140,7 +140,7 @@ frame_families:
       - race
       - recreational-competition
       - war
-  - name: Concealment/Protection frames
+  - name: Concealment and protection frames
     members:
       - access-to-an-object
       - burial
@@ -1251,7 +1251,7 @@ frame_families:
       - process-uncompleted-state
       - x-schema
       - x-schema-continue
-  - name: Zealotry insanity worship frame family
+  - name: Zealotry, insanity, and worship frames
     members:
       - deity
       - insanity

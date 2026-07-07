@@ -77,9 +77,9 @@ metaphors:
     entailments:
       - source: The quality of the seer's vision affects how well he can see an object
         target: Knower's personal ability to know things affects how well he can learn about something
-      - source: Lighting conditions affect how well the see-er can see an object
+      - source: Lighting conditions affect how well the seer can see an object
         target: The ease with which the knower can access knowledge affects how easily he can learn something
-      - source: The presence/absence of obstructions affects how well the see-er can see an object
+      - source: The presence/absence of obstructions affects how well the seer can see an object
         target: The ease with which the knower can access knowledge affects how easily he can learn something
       - source: Change in ability to see
         target: Change in ability to know
@@ -742,7 +742,7 @@ metaphors:
     source_frame: source-path-goal
     target_frame: decision-making
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Life metaphors
     examples:
       - He started down a bad path with that decision.
@@ -1551,7 +1551,7 @@ metaphors:
     relations:
       uses:
         - EMOTIONS_ARE_SUBSTANCES
-  - name: BUREACRACY_IS_AN_OCTOPUS
+  - name: BUREAUCRACY_IS_AN_OCTOPUS
     source_frame: fierce-animal
     target_frame: bureaucracy
     families:
@@ -1561,7 +1561,7 @@ metaphors:
       - The agency's tentacles reach into every part of daily life.
       - New offices kept sprouting like tentacles from the central bureaucracy.
       - Once it gets a grip on a case, the bureaucracy never lets go.
-  - name: BUREACRACY_IS_A_MAZE
+  - name: BUREAUCRACY_IS_A_MAZE
     source_frame: maze
     target_frame: bureaucracy
     families:
@@ -2371,7 +2371,7 @@ metaphors:
     mappings:
       - source_role: shower
         target_role: communicator
-      - source_role: perception_perciever
+      - source_role: perception_perceiver
         target_role: addressee
       - source_role: object_seen
         target_role: message
@@ -2825,11 +2825,11 @@ metaphors:
       - The scandal chipped away at whatever credibility the agency had left.
     entailments:
       - source:
-          The process of erosion while imperceptible on a small time scale can cause large scale destructive
+          The process of erosion, while imperceptible on a small time scale, can cause large scale destructive
           effects on an entity over a long period of time
         target:
-          Corrupt activities while they may not have immediately perceptible effect can yield large
-          scale harmful effects over long period of time
+          Corrupt activities, while they may not have an immediately perceptible effect, can yield large
+          scale harmful effects over a long period of time
     relations:
       subcase_of_source:
         - CORRUPTION_IS_A_DESTRUCTIVE_NATURAL_PROCESS
@@ -2926,8 +2926,8 @@ metaphors:
       - Violence spread through the neighborhood like a virus.
       - The city finally found a cure for its worst crime-ridden blocks.
     entailments:
-      - source: As disease spreads throughout body, person becomes sicker
-        target: As crime spreads throughout society, social functions more poorly
+      - source: As disease spreads throughout the body, person becomes sicker
+        target: As crime spreads throughout society, society functions more poorly
     relations:
       subcase_of_target:
         - SOCIAL_PROBLEMS_ARE_DISEASES
@@ -3300,7 +3300,7 @@ metaphors:
     source_frame: motion-impediment
     target_frame: romantic-relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
     examples:
       - We have a lot of hurdles to get over in our relationship.
       - Something's blocking us from moving forward together.
@@ -3323,7 +3323,7 @@ metaphors:
     source_frame: motion-along-a-path
     target_frame: life
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Life metaphors
     examples:
       - My life is going nowhere, I'm just spinning my wheels.
@@ -3890,7 +3890,7 @@ metaphors:
     target_frame: intimacy
     families:
       - Emotion metaphors
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Orientational metaphors
     examples:
       - They're very close.
@@ -4092,7 +4092,7 @@ metaphors:
       - The kids are competing for the top spot in class rank.
       - She's racing to keep her GPA ahead of the curve.
       - Only the highest scorers make it to the next round of scholarships.
-  - name: EVALUTION_OF_GOVERNMENT_IS_SENSORY_EVALUATION
+  - name: EVALUATION_OF_GOVERNMENT_IS_SENSORY_EVALUATION
     families:
       - Governance metaphors
     examples:
@@ -4232,7 +4232,7 @@ metaphors:
         target: Change of experience of a state
       - source: Co-location of entity_1 and entity_2
         target: Co-incidence of experienced_state_value and value standard
-      - source: Difference in location of entity 1 and 2
+      - source: Difference in location of entity_1 and entity_2
         target: Difference between experienced_state_value and standard
   - name: EXPERIENCING_AN_ECONOMIC_STATUS_IS_BEING_AT_A_LOCATION
     source_frame: being-at-a-location
@@ -5083,7 +5083,7 @@ metaphors:
       - source: Childcare provider has control over what the children can or cannot do
         target: Government has control over what the citizens can or cannot do
       - source: Childcare provider's duties are to ensure the health, safety, and well-being of the children
-        target: Government's responsibility is to ensure the health, safety and well-being of the citizens
+        target: Government's responsibility is to ensure the health, safety, and well-being of the citizens
       - source: Children are not capable of taking care of themselves without the help of a childcare provider
         target: The citizens are not capable of taking care of themselves without the help of the government
     relations:
@@ -5304,7 +5304,7 @@ metaphors:
       - A good shepherd looks after the flock, and a good government looks after its people.
     entailments:
       - source: If shepherd successfully performs actions, sheep will flourish
-        target: If government successfully performs action, people will flourish
+        target: If government successfully performs actions, people will flourish
       - source: Shepherd makes decisions, sheep do what shepherd wants them to
         target: Government makes decisions, people do what government wants them to
       - source: Sheep are not capable of flourishing on their own (without shepherd)
@@ -5403,7 +5403,7 @@ metaphors:
     source_frame: hunger
     target_frame: greed
     examples:
-      - He salivated with the thought of earning more money.
+      - He salivated at the thought of earning more money.
       - The robber baron hungered for even greater profits.
       - The company's hunger for market share never seems satisfied.
     relations:
@@ -5449,7 +5449,7 @@ metaphors:
     source_frame: possession
     target_frame: group
     families:
-      - Possession
+      - Possession metaphors
     mappings:
       - source_role: possessor
         target_role: group
@@ -6448,7 +6448,7 @@ metaphors:
         - DECREASE_IN_QUANTITY_IS_DOWNWARD_MOTION
       entailed_by:
         - MORE_IS_UP
-  - name: INCREASE_IN_TAXATION_IS_OCCURENCE_OF_SUDDEN_DESTRUCTIVE_NATURAL_FORCE
+  - name: INCREASE_IN_TAXATION_IS_OCCURRENCE_OF_SUDDEN_DESTRUCTIVE_NATURAL_FORCE
     source_frame: destructive-natural-process
     target_frame: taxation
     families:
@@ -6492,7 +6492,7 @@ metaphors:
       - Critics say raising taxes on success just punishes hard work.
       - Some voters see the new tax bracket as a penalty for doing well.
       - Small business owners feel like they're being punished for growing too fast.
-  - name: INDICATIONS_OF_SOCIAL_PROBLEMS_IS_PHYSICAL_AFFLICATION
+  - name: INDICATIONS_OF_SOCIAL_PROBLEMS_IS_PHYSICAL_AFFLICTION
     source_frame: physical-affliction
     target_frame: social-problems
     families:
@@ -6559,7 +6559,7 @@ metaphors:
       - Red tape kept the project from moving forward.
       - A lack of funding stalled the initiative before it could start.
       - Bureaucratic delays are slowing down the whole rollout.
-  - name: INHIBITTING_ENACTMENT_OF_LEGISLATION_IS_IMPEDING_MOTION
+  - name: INHIBITING_ENACTMENT_OF_LEGISLATION_IS_IMPEDING_MOTION
     type: Composed/complex
     source_frame: impediment-to-motion
     target_frame: legislation-enactment
@@ -6577,8 +6577,8 @@ metaphors:
     entailments:
       - source:
           Impediments can negatively affect mover's motion (e.g. slow or stop motion and/or increase
-          energy needed for mover to move)
-        target: Actions can inhibit progress of a bill, and may prevent its enactment
+          the energy needed for mover to move)
+        target: Actions can inhibit the progress of a bill, and may prevent its enactment
     relations:
       subcase_of_target:
         - DIFFICULTIES_ARE_IMPEDIMENTS_TO_MOVEMENT
@@ -7131,7 +7131,7 @@ metaphors:
     families:
       - Education metaphors
     mappings:
-      - source_role: nurtitious_food
+      - source_role: nutritious_food
         target_role: learned_material
       - source_role: benefits_of_getting_nutrients
         target_role: benefits_of_learning
@@ -7247,7 +7247,7 @@ metaphors:
     source_frame: journey
     target_frame: life
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
     mappings:
       - source_role: journeyer
         target_role: life_liver
@@ -7302,7 +7302,7 @@ metaphors:
     source_frame: motion-along-a-path
     target_frame: life
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Primary metaphors
     examples:
       - It's time to take the next big step in my life.
@@ -8044,7 +8044,7 @@ metaphors:
       - Roads and bridges are the foundation the whole economy is built on.
       - The country needs to shore up its crumbling infrastructure.
       - Investing in infrastructure lays the groundwork for future growth.
-  - name: NATIONAL_INFRUSTRUCTURE_MAINTENANCE_IS_BUILDING_MAINTENANCE
+  - name: NATIONAL_INFRASTRUCTURE_MAINTENANCE_IS_BUILDING_MAINTENANCE
     families:
       - Governance metaphors
     examples:
@@ -8591,7 +8591,7 @@ metaphors:
       - He refused to bend, no matter how hard they pushed.
   - name: PERSONAL_PREFERENCE_IS_TASTE
     source_frame: taste
-    target_frame: personal-preferance
+    target_frame: personal-preference
     examples:
       - That's just not to my taste.
       - He has a real taste for adventure.
@@ -9037,7 +9037,7 @@ metaphors:
     source_frame: motion-along-a-path
     target_frame: life
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Life metaphors
     examples:
       - She's come a long way since those difficult years.
@@ -9054,7 +9054,7 @@ metaphors:
     source_frame: forward-motion
     target_frame: life
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Life metaphors
     examples:
       - He's over the hill.
@@ -9139,7 +9139,7 @@ metaphors:
     relations:
       subcase_of_target:
         - HARM_IS_PHYSICAL_INJURY
-  - name: PUBLIC_EVALUABILITY_OF_GOVERMNENT_IS_TRANSPARENCY
+  - name: PUBLIC_EVALUABILITY_OF_GOVERNMENT_IS_TRANSPARENCY
     families:
       - Governance metaphors
     examples:
@@ -9182,7 +9182,7 @@ metaphors:
     target_frame: purposeful-action
     families:
       - Action is motion metaphors
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Location event structure metaphors
       - Primary metaphors
     mappings:
@@ -9212,7 +9212,7 @@ metaphors:
       - source: Mover stops moving when destination (end of path) is reached
         target: Actor stops acting when objective is accomplished
       - source: Another person can lead mover along path
-        target: Another person guide action
+        target: Another person guides action
     relations:
       entailed_by:
         - ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH
@@ -9228,7 +9228,7 @@ metaphors:
       - source_role: self_motion_x_schema
         target_role: thinking_process
       - source_role: goal
-        target_role: desiredknowledge
+        target_role: desired_knowledge
     examples:
       - We're trying to find the most elegant approach to this problem.
       - Her thoughts kept circling back to the same question.
@@ -9387,7 +9387,7 @@ metaphors:
     source_frame: complex-physical-object
     target_frame: relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
     mappings:
       - source_role: object_whole
         target_role: relationship_whole
@@ -9409,7 +9409,7 @@ metaphors:
     source_frame: containing
     target_frame: relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Ontological metaphors
     mappings:
       - source_role: container
@@ -9428,7 +9428,7 @@ metaphors:
     source_frame: object
     target_frame: relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Ontological metaphors
       - Primary metaphors
     mappings:
@@ -9474,7 +9474,7 @@ metaphors:
     source_frame: bounded-region
     target_frame: relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
       - Primary metaphors
     examples:
       - She's finally out of that relationship for good.
@@ -9576,7 +9576,7 @@ metaphors:
     source_frame: vehicle
     target_frame: romantic-relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
     mappings:
       - source_role: vehicle
         target_role: relationship
@@ -9597,7 +9597,7 @@ metaphors:
     source_frame: boat-on-the-rocks
     target_frame: romantic-relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
     mappings:
       - source_role: boat
         target_role: relationship
@@ -9628,7 +9628,7 @@ metaphors:
     source_frame: journey
     target_frame: romantic-relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
     examples:
       - Our relationship is losing steam.
       - Their marriage hit a major roadblock last year.
@@ -9641,7 +9641,7 @@ metaphors:
     source_frame: journey
     target_frame: romantic-relationship
     families:
-      - LOVE IS A JOURNEY cascade
+      - Love is a journey cascade
     mappings:
       - source_role: journeyer
         target_role: romantic_relationship_participants
@@ -9658,7 +9658,7 @@ metaphors:
       - Where are we in this relationship?
       - It feels like this relationship is going nowhere.
     entailments:
-      - source: Two people traveling together have a common destination a journey
+      - source: Two people traveling together have a common destination in a journey
         target: Two people in a relationship have compatible purposes in a romantic relationship
       - source: Obstacles to motion along a path
         target: Difficulties in a romantic relationship
@@ -10500,7 +10500,7 @@ metaphors:
     examples:
       - A steady stream of tax revenue keeps the city running.
       - New taxes diluted what little profit the shop had left.
-      - Tax relief poured much-needed relief into strained budgets.
+      - Tax relief poured much-needed funds into strained budgets.
   - name: TERMINATION_OF_CONTROL_IS_LOSS_OF_A_POSSESSION
     type: Composed/complex
     source_frame: lose-possession

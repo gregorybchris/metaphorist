@@ -76,7 +76,7 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Concealment/Protection frames
+      - Concealment and protection frames
       - Impediment and enablement frames
       - Object event structure frames
     roles:
@@ -666,7 +666,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on object frames
+      - Act on an object frames
     lexical_units:
       - adhere.v
       - adjoin.v
@@ -803,7 +803,7 @@ frames:
       - dodger.n
       - duck.v
       - elude.v
-      - elusive.adj
+      - elusive.a
       - evade.v
       - evader.n
       - evasion.n
@@ -892,13 +892,13 @@ frames:
       - name: mover
       - name: path
     lexical_units:
-      - barred.adj
+      - barred.a
       - barrier.n
       - block.v
       - blockade.n
       - blockade.v
       - blockage.n
-      - blocked.adj
+      - blocked.a
       - border.n
       - bottleneck.n
       - boundary.n
@@ -942,9 +942,9 @@ frames:
       - dead-end.n
       - deadend.n
       - hurdle.n
-      - rocky.adj
+      - rocky.a
       - stand.v in the way of
-      - treacherous.adj
+      - treacherous.a
     relations:
       subcase_of:
         - barrier
@@ -983,7 +983,7 @@ frames:
       - highest level.n
       - highest peak.n
       - highest peak.n
-      - highest.adj
+      - highest.a
       - mountaintop.n
       - on top
       - peak.n
@@ -1045,7 +1045,7 @@ frames:
       - name: located_thing
       - name: low_landmark
     lexical_units:
-      - abysmal.adj
+      - abysmal.a
       - be.v under
       - bottom of the heap.n
       - bottom of the totem pole.n
@@ -1060,7 +1060,7 @@ frames:
       - lower.v
       - lowest.a
       - rock bottom.n
-      - rock-bottom.adj
+      - rock-bottom.a
       - the pits.n
     relations:
       subcase_of:
@@ -1667,7 +1667,7 @@ frames:
         - government-executive-action
   - name: burial
     frame_families:
-      - Concealment/Protection frames
+      - Concealment and protection frames
       - Motion-affecting frames
     lexical_units:
       - blanketed.n
@@ -1715,7 +1715,7 @@ frames:
       - malignant cell.n
       - melanoma.n
       - met.n
-      - metastase.n
+      - metastases.n
       - metastasis.n
       - metastasize.v
       - metastatic cancer.n
@@ -1861,7 +1861,7 @@ frames:
       - name: object_seen
       - name: perception_causer
       - name: perception_event
-      - name: perception_perciever
+      - name: perception_perceiver
       - name: shower
     lexical_units:
       - show.v
@@ -2074,7 +2074,7 @@ frames:
       - Governance frames
     roles:
       - name: behavior
-      - name: evaluaee
+      - name: evaluatee
       - name: evaluation
       - name: evaluator
       - name: standard
@@ -2283,7 +2283,7 @@ frames:
       - Competition frames
       - Physical combat frame family
     roles:
-      - name: competiition_outcome
+      - name: competition_outcome
       - name: competition_competitor1
       - name: competition_competitor2
       - name: competition_end
@@ -2508,7 +2508,7 @@ frames:
     lexical_units:
       - confine.v
       - confinement.n
-      - inescapable.adj
+      - inescapable.a
       - limitation.n
     relations:
       subcase_of:
@@ -2871,7 +2871,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on object frames
+      - Act on an object frames
       - Object frames
     roles:
       - name: components
@@ -3187,7 +3187,7 @@ frames:
       - bankrupt.a
       - bankruptcy.n
       - debt.n
-      - due.adj
+      - due.a
       - financial liability.n
       - financially liable
       - indebted.a
@@ -3236,7 +3236,7 @@ frames:
       - name: decision_maker_actions
       - name: decision_making_process
       - name: decision_making_standard
-      - name: decison_making_outcome
+      - name: decision_making_outcome
       - name: entity_under_consideration
       - name: entity_under_consideration_characteristics
       - name: entity_under_consideration_final_state
@@ -3315,7 +3315,7 @@ frames:
   - name: deity
     frame_families:
       - Morality frames
-      - Zealotry insanity worship frame family
+      - Zealotry, insanity, and worship frames
     roles:
       - name: believer
       - name: deity
@@ -3488,7 +3488,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on object frames
+      - Act on an object frames
     lexical_units:
       - detach.v
       - unbind.v
@@ -3592,7 +3592,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on object frames
+      - Act on an object frames
     lexical_units:
       - discard.v
       - dispense.v
@@ -4329,7 +4329,7 @@ frames:
     lexical_units:
       - enable.v
       - enablement.n
-      - enabling.adj
+      - enabling.a
   - name: energy
     frame_type:
       - Frame
@@ -4894,7 +4894,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on object frames
+      - Act on an object frames
     lexical_units:
       - fix.n
       - fix.v
@@ -5015,7 +5015,7 @@ frames:
       - nourish.v
       - nourishment.n
       - nutrition.n
-      - nutritional.adj
+      - nutritional.a
       - portion.n
     relations:
       subcase_of:
@@ -5244,13 +5244,13 @@ frames:
       - Impediment and enablement frames
       - Motion impediments frames
     lexical_units:
-      - autonomous.adj
+      - autonomous.a
       - autonomy.n
-      - free.adj
+      - free.a
       - free.v
-      - independent.adj
+      - independent.a
       - unfettered.a
-      - unimpeded.adj
+      - unimpeded.a
     relations:
       perspective_on:
         - action
@@ -5491,7 +5491,7 @@ frames:
       - name: decision_maker_actions
       - name: decision_making_process
       - name: decision_making_standard
-      - name: decison_making_outcome
+      - name: decision_making_outcome
       - name: entity_under_consideration
       - name: entity_under_consideration_characteristics
       - name: entity_under_consideration_final_state
@@ -5597,7 +5597,7 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Act on object frames
+      - Act on an object frames
       - Impediment and enablement frames
       - Object frames
     lexical_units:
@@ -5796,7 +5796,7 @@ frames:
     roles:
       - name: affected_people
       - name: legislation
-      - name: opponenent_of_legislation
+      - name: opponent_of_legislation
       - name: proponent_of_legislation
     lexical_units:
       - Brady bill.n
@@ -5972,7 +5972,7 @@ frames:
       - Gun debate
       - Gun rights family
     lexical_units:
-      - S.C.O.P.E .
+      - S.C.O.P.E.
       - gun advocacy
       - gun lobby.n
       - gun proponent.n
@@ -6054,7 +6054,7 @@ frames:
       - Legislation frames
     roles:
       - name: legislation
-      - name: oponent_of_legislation
+      - name: opponent_of_legislation
       - name: proponent_of_legislation
     lexical_units:
       - gun rights legislation.n
@@ -6152,7 +6152,7 @@ frames:
       - chomp.v
       - cripple.v
       - disembowel.v
-      - enviscerate.v
+      - eviscerate.v
       - flagellate.v
       - flog.v
       - hamstring.v
@@ -6277,10 +6277,10 @@ frames:
       - heat up.v
       - heat.n
       - heat.v
-      - hot.adj
+      - hot.a
       - overheat.v
       - warm up.v
-      - warm.adj
+      - warm.a
       - warm.v
       - warmth.n
     relations:
@@ -6319,7 +6319,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment/Protection frames
+      - Concealment and protection frames
       - Protecting frames
     lexical_units:
       - adumbrate.v
@@ -6672,7 +6672,7 @@ frames:
       - enlarge.v
       - enlarged.a
       - enlargement.n
-      - enlargening
+      - enlarging
       - expand.v
       - expansion.n
       - explode.v
@@ -6749,7 +6749,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Zealotry insanity worship frame family
+      - Zealotry, insanity, and worship frames
     roles:
       - name: agitation_level
       - name: agitation_limit
@@ -7209,7 +7209,7 @@ frames:
       - lax.a
       - limp.a
       - malleable.a
-      - moldeable.a
+      - moldable.a
       - mushy.a
       - pliable.a
       - slack.a
@@ -7688,7 +7688,7 @@ frames:
       - voodoo.n
       - wand.n
       - wizardry.n
-      - wtichraft.n
+      - witchcraft.n
     relations:
       related_to:
         - causation
@@ -7742,7 +7742,7 @@ frames:
       - convoluted.a
       - labyrinth.n
       - labyrinthian.a
-      - labyrinthine.adj
+      - labyrinthine.a
       - maze.n
       - obstacle course.n
     relations:
@@ -7807,7 +7807,7 @@ frames:
       - commodore.n
       - corporal.n
       - general.n
-      - liutenant.n
+      - lieutenant.n
       - major.n
       - marshal.n
       - officer.n
@@ -8243,7 +8243,7 @@ frames:
       - swing.v
       - teeter-totter.v
       - undulate.v
-      - vascillate.v
+      - vacillate.v
       - waggle.v
       - wobble.v
     relations:
@@ -8761,11 +8761,11 @@ frames:
       - Eating frames
     roles:
       - name: benefits_of_getting_nutrients
-      - name: nurtitious_food
+      - name: nutritious_food
     lexical_units:
       - healthy food
       - nutrition.n
-      - nutritional.adj
+      - nutritional.a
       - nutritious food
     relations:
       subcase_of:
@@ -8820,7 +8820,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on object frames
+      - Act on an object frames
     lexical_units:
       - drill.v
       - embed.v
@@ -8846,7 +8846,7 @@ frames:
         - object-manipulation
   - name: object-manipulation
     frame_families:
-      - Act on object frames
+      - Act on an object frames
       - Action frames
       - Force dynamic frames
     roles:
@@ -8863,7 +8863,7 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Act on object frames
+      - Act on an object frames
       - Forced movement frame family
       - Movement frames
       - Moving entity frames
@@ -8922,7 +8922,7 @@ frames:
       - Motion-affecting frames
     lexical_units:
       - gape.v
-      - gaping.adj
+      - gaping.a
       - open.a
       - open.v
       - opening.n
@@ -8935,7 +8935,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on object frames
+      - Act on an object frames
       - Machine frames
     lexical_units:
       - operate.v
@@ -9235,7 +9235,7 @@ frames:
         - sentient-entity
       uses:
         - purposeful-action
-  - name: personal-preferance
+  - name: personal-preference
   - name: personal-weapon
     frame_type:
       - Frame
@@ -9619,7 +9619,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment/Protection frames
+      - Concealment and protection frames
       - Location frames
       - Protecting frames
     lexical_units:
@@ -10049,7 +10049,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment/Protection frames
+      - Concealment and protection frames
       - Protecting frames
     lexical_units:
       - armor.n
@@ -10076,7 +10076,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment/Protection frames
+      - Concealment and protection frames
       - Protecting frames
     roles:
       - name: means_of_protection
@@ -10200,7 +10200,7 @@ frames:
     lexical_units:
       - arrest.n
       - arrest.v
-      - chastize.v
+      - chastise.v
       - condemn.v
       - condemnation.n
       - crack.v down
@@ -10284,9 +10284,9 @@ frames:
       - rocky path.n
       - rocky road.n
       - rocky terrain.n
-      - rocky.adj
+      - rocky.a
       - stumbling block.n
-      - treacherous.adj
+      - treacherous.a
     relations:
       subcase_of:
         - motion-affecting-properties-of-the-landscape
@@ -10312,8 +10312,8 @@ frames:
       - decrease.v
       - increase.n
       - increase.v
-      - less.adj
-      - more.adj
+      - less.a
+      - more.a
       - quantity.n
     relations:
       uses:
@@ -10683,7 +10683,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on object frames
+      - Act on an object frames
   - name: restore-to-life
     frame_type:
       - Frame
@@ -10791,7 +10791,6 @@ frames:
       - defensive use.n
       - right to self-protection.n
       - right.n to self-defence.n
-      - right.n to self-defense
       - right.n to self-defense.n
       - self-defence.n right.n
       - self-defense.n right.n
@@ -10967,14 +10966,14 @@ frames:
       - Entity frames
       - Vehicle frames
     lexical_units:
-      - aquatic.adj
+      - aquatic.a
       - boat.n
       - cruise.v
-      - marine.adj
-      - nautical.adj
-      - oceangoing.adj
-      - seafaring.adj
-      - seagoing.adj
+      - marine.a
+      - nautical.a
+      - oceangoing.a
+      - seafaring.a
+      - seagoing.a
       - ship.n
     relations:
       subcase_of:
@@ -11550,9 +11549,9 @@ frames:
       - Scale frames
     roles:
       - name: stability_scale
-      - name: stablity_entity
+      - name: stability_entity
         role_type: ComplexPhysicalObject
-      - name: stablity_status
+      - name: stability_status
     lexical_units:
       - instability.n
       - stability.n
@@ -11599,7 +11598,7 @@ frames:
       - famishment.n
       - fast.v
       - ravenous.a
-      - ravnousness.n
+      - ravenousness.n
       - starvation.n
       - starve.v
       - starving.a
@@ -11949,7 +11948,7 @@ frames:
       - Internal Revenue Service
       - income tax rate.n
       - income tax.n
-      - propety tax.n
+      - property tax.n
       - tax code.n
       - tax credit.n
       - tax dollar.n
@@ -12153,7 +12152,7 @@ frames:
       - shoplifter.n
       - steal.v
       - stealer.n
-      - stolen.adj
+      - stolen.a
       - stolen.v
       - swindle.v
       - swindler.n
@@ -12265,8 +12264,8 @@ frames:
       - eon.n
       - fortnight.n
       - future.n
-      - millenia.n
-      - millenium.n
+      - millennia.n
+      - millennium.n
       - month.n
       - past.n
       - present.n
@@ -12543,7 +12542,7 @@ frames:
       - jobless
       - joblessness
       - the unemployed.n
-      - unemployed.adj
+      - unemployed.a
       - unemployment
       - unemployment benefits
       - unemployment claims
@@ -13018,7 +13017,7 @@ frames:
       - battle.v
       - battlefield.n
       - battleground.n
-      - beseige.v
+      - besiege.v
       - blitz.n
       - blitz.v
       - blitzkrieg.n
@@ -13036,7 +13035,7 @@ frames:
       - minefield.n
       - plan of attack.n
       - revolution.n
-      - seige.n
+      - siege.n
       - skirmish.n
       - skirmish.v
       - soldier.n
@@ -13097,7 +13096,7 @@ frames:
       - tread.v water
       - undertow.n
       - undertow.v
-      - underwater.adj
+      - underwater.a
       - underwater.adv
       - went.v under
       - whirlpool.n
@@ -13199,7 +13198,7 @@ frames:
       - top 1 percent
       - top one %
       - top one percent
-      - top one%
+      - top one %
       - tycoon.n
       - upper crust
       - wealthy.n
@@ -13232,7 +13231,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment/Protection frames
+      - Concealment and protection frames
       - Protecting frames
     lexical_units:
       - cloak.n
@@ -13289,7 +13288,7 @@ frames:
       - Frame
     roles:
       - name: degree_of_well_being
-      - name: entity_posessing_well_being
+      - name: entity_possessing_well_being
       - name: state_of_well_being
     relations:
       uses:
@@ -13386,7 +13385,7 @@ frames:
   - name: worship
     frame_families:
       - Morality frames
-      - Zealotry insanity worship frame family
+      - Zealotry, insanity, and worship frames
     roles:
       - name: worshipped_thing
       - name: worshipper
@@ -13464,7 +13463,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Zealotry insanity worship frame family
+      - Zealotry, insanity, and worship frames
     lexical_units:
       - crusade.n
       - crusader.n
