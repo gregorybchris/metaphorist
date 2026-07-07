@@ -52,10 +52,10 @@ metaphors:
       - Try to look at the offer objectively before you decide.
       - She has a clear-eyed view of the risks involved.
     entailments:
-      - source: being able to see something
-        target: being able to evaluate an evaluee's action
-      - source: not being able to see something
-        target: being unable to evaluate an evaluee's action
+      - source: Being able to see something
+        target: Being able to evaluate an evaluee's action
+      - source: Not being able to see something
+        target: Being unable to evaluate an evaluee's action
     relations:
       subcase_of_target:
         - ABILITY_TO_KNOW_IS_ABILITY_TO_SEE
@@ -75,14 +75,14 @@ metaphors:
       - The truth finally came to light after the investigation.
       - Officials tried to cover up the real numbers.
     entailments:
-      - source: the quality of the Seer's vision affects how well he can see an object
+      - source: The quality of the seer's vision affects how well he can see an object
         target: Knower's personal ability to know things affects how well he can learn about something
-      - source: lighting conditions affect how well the See-er can see an object
-        target: the ease with which the Knower can access knowledge affects how easily he can learn something
-      - source: the presence/absence of obstructions affects how well the See-er can see an object
-        target: the ease with which the Knower can access knowledge affects how easily he can learn something
-      - source: change in ability to see
-        target: change in ability to know
+      - source: Lighting conditions affect how well the see-er can see an object
+        target: The ease with which the knower can access knowledge affects how easily he can learn something
+      - source: The presence/absence of obstructions affects how well the see-er can see an object
+        target: The ease with which the knower can access knowledge affects how easily he can learn something
+      - source: Change in ability to see
+        target: Change in ability to know
     relations:
       entailed_by:
         - KNOWING_IS_SEEING
@@ -237,8 +237,8 @@ metaphors:
       - He's been feeding her lies all these years.
       - This article is hard to digest.
     entailments:
-      - source: ingested food
-        target: acquired ideas
+      - source: Ingested food
+        target: Acquired ideas
     relations:
       related:
         - ACCEPTING_IS_SWALLOWING
@@ -274,14 +274,14 @@ metaphors:
       - She's close to resigning.
       - The car is in motion.
     entailments:
-      - source: the trajector's location (profiled_region) is at/in the landmark
-        target: action is ongoing
-      - source: the trajector is not at the landmark
-        target: the actor does not perform an action
+      - source: The trajector's location (profiled_region) is at/in the landmark
+        target: Action is ongoing
+      - source: The trajector is not at the landmark
+        target: The actor does not perform an action
       - source: "'closeness' to landmark"
         target: "'closeness' to performing an action"
-      - source: moving towards a landmark
-        target: expecting to perform an action in the future
+      - source: Moving towards a landmark
+        target: Expecting to perform an action in the future
   - name: ACTION_IS_MOTION
     type: Primary
     source_frame: motion
@@ -321,11 +321,11 @@ metaphors:
       - Congress's refusal to compromise is moving the country toward economic ruin.
       - There's more than one path to fixing this problem.
     entailments:
-      - source: impediments to motion along a path
-        target: things that increase difficulty of action
+      - source: Impediments to motion along a path
+        target: Things that increase difficulty of action
       - source: Prevention of motion along a path
         target: Caused inability to act
-      - source: ability to move along a path
+      - source: Ability to move along a path
         target: Ability to act
     relations:
       subcase_of_source:
@@ -348,20 +348,20 @@ metaphors:
       - She navigated her way through the negotiations.
       - He drank himself right out of the promotion.
     entailments:
-      - source: manner of self-propelled movement
-        target: manner of action
-      - source: stage of movement
-        target: stage of action
-      - source: speed of motion
-        target: rate of action
-      - source: presence/absence of conditions that affect motion
-        target: impediments to action/freedom to act
-      - source: external agents that affect motion
-        target: external agents that affect action
-      - source: presence/absence of conditions that affect motion
-        target: impediments to action/freedom to act
-      - source: sequence of actions
-        target: sequence of movements
+      - source: Manner of self-propelled movement
+        target: Manner of action
+      - source: Stage of movement
+        target: Stage of action
+      - source: Speed of motion
+        target: Rate of action
+      - source: Presence/absence of conditions that affect motion
+        target: Impediments to action/freedom to act
+      - source: External agents that affect motion
+        target: External agents that affect action
+      - source: Presence/absence of conditions that affect motion
+        target: Impediments to action/freedom to act
+      - source: Sequence of actions
+        target: Sequence of movements
     relations:
       subcase_of_source:
         - ACTION_IS_MOTION_ALONG_A_PATH
@@ -954,8 +954,8 @@ metaphors:
           angry (high anger_level)
       - source: A fire is dangerous to nearby_objects
         target: An anger experiencer is dangerous to other_people
-      - source: high fire_intensity can render burning_object_condition nonfunctional
-        target: high anger_level can render mind_condition nonfunctional
+      - source: High fire_intensity can render burning_object_condition nonfunctional
+        target: High anger_level can render mind_condition nonfunctional
     relations:
       subcase_of_source:
         - ANGER_IS_HEAT
@@ -1007,8 +1007,8 @@ metaphors:
     entailments:
       - source: An insane_person whose agitation_level is beyond their agitation_limit will exhibit insane_behavior
         target: An anger experiencer whose anger_level is beyond their anger_limit will exhibit angry_action
-      - source: an insane_person's insane_behavior can cause harm to other_people
-        target: an anger experiencer's angry_action can cause harm to other_people
+      - source: An insane_person's insane_behavior can cause harm to other_people
+        target: An anger experiencer's angry_action can cause harm to other_people
     relations:
       related_by_source:
         - ANGER_IS_HEAT
@@ -1208,10 +1208,10 @@ metaphors:
       - Rebels seized control of the capital within days.
       - She finally got a grip on her unruly department.
     entailments:
-      - source: initially, possessor does not possess object
-        target: initially, controlling_entity is not in control
-      - source: at end, possessor possesses object
-        target: at end, controlling_entity is in control
+      - source: Initially, possessor does not possess object
+        target: Initially, controlling_entity is not in control
+      - source: At end, possessor possesses object
+        target: At end, controlling_entity is in control
     relations:
       entailed_by:
         - CONTROL_IS_A_POSSESSION
@@ -1250,12 +1250,12 @@ metaphors:
       - This place has lost a lot of its charm.
       - The new mustache gave him an older appearance.
     entailments:
-      - source: possessor has possession
-        target: state/attribute value is associated with entity
-      - source: change in possession status
-        target: change in value of state/attribute
-      - source: possess does not have possession
-        target: state/attribute standard is not associated with entity
+      - source: Possessor has possession
+        target: State/attribute value is associated with entity
+      - source: Change in possession status
+        target: Change in value of state/attribute
+      - source: Possess does not have possession
+        target: State/attribute standard is not associated with entity
   - name: ATTRIBUTES_OF_GOVERNMENT_ARE_ENTITIES
     families:
       - Governance metaphors
@@ -1312,8 +1312,8 @@ metaphors:
       - His fortunes slid downhill after the divorce.
       - They fell into hard times during the recession.
     entailments:
-      - source: preventing downward motion
-        target: preventing becoming impoverished
+      - source: Preventing downward motion
+        target: Preventing becoming impoverished
     relations:
       entailed_by:
         - BEING_IMPOVERISHED_IS_BEING_AT_A_LOW_LOCATION
@@ -1382,12 +1382,12 @@ metaphors:
       - He hit rock bottom after losing his job.
       - They've been at the bottom of the economic ladder their whole lives.
     entailments:
-      - source: downward motion (motion towards a lower location)
-        target: becoming impoverished
-      - source: co-location with low entity
-        target: being impoverished
-      - source: motion upwards (away from a low location)
-        target: becoming less impoverished
+      - source: Downward motion (motion towards a lower location)
+        target: Becoming impoverished
+      - source: Co-location with low entity
+        target: Being impoverished
+      - source: Motion upwards (away from a low location)
+        target: Becoming less impoverished
     relations:
       subcase_of_source:
         - BEING_IMPOVERISHED_IS_BEING_IN_A_BOUNDED_REGION
@@ -1789,9 +1789,9 @@ metaphors:
       - Her parents kept pushing her until she succeeded.
       - The invasion dragged the whole region into war.
     entailments:
-      - source: motion would not have occurred without the application of a force
-        target: state change would not have occurred without a cause
-      - source: the application of force precedes or accompanies the movement
+      - source: Motion would not have occurred without the application of a force
+        target: State change would not have occurred without a cause
+      - source: The application of force precedes or accompanies the movement
         target: The occurrence of the cause precedes or accompanies the change of state
     relations:
       entailed_by:
@@ -1987,8 +1987,8 @@ metaphors:
       - The new owners wrested control of the company from its founders.
       - Control of the estate passed to the eldest son.
     entailments:
-      - source: willingness to change possession
-        target: willingness to transfer control
+      - source: Willingness to change possession
+        target: Willingness to transfer control
   - name: CHANGE_IS_ACQUISITION
     type: Primary
     source_frame: gain-possession
@@ -2006,10 +2006,10 @@ metaphors:
       - She caught a bad cold over the weekend.
       - He picked up a nasty habit after the move.
     entailments:
-      - source: at initial stage, possessor does not possess object
-        target: at initial stage, experiencer does not experience state
-      - source: at final stage, possessor possesses object
-        target: at final stage, experiencer experiences state
+      - source: At initial stage, possessor does not possess object
+        target: At initial stage, experiencer does not experience state
+      - source: At final stage, possessor possesses object
+        target: At final stage, experiencer experiences state
     relations:
       entailed_by:
         - CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
@@ -2029,10 +2029,10 @@ metaphors:
       - He lost his faith after the tragedy.
       - She shed her old fears once she started the new job.
     entailments:
-      - source: at initial stage, possessor possesses object
-        target: at initial stage, experiencer experiences state
-      - source: at final stage, possessor does not possess object
-        target: at final stage, experiencer no longer experiences state
+      - source: At initial stage, possessor possesses object
+        target: At initial stage, experiencer experiences state
+      - source: At final stage, possessor does not possess object
+        target: At final stage, experiencer no longer experiences state
     relations:
       entailed_by:
         - CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
@@ -2061,18 +2061,18 @@ metaphors:
       - She fell into a deep depression.
       - Things have gone from bad to worse lately.
     entailments:
-      - source: moving into a bounded region (goal)
-        target: starting to experience a state
-      - source: moving out of a bounded region (source)
-        target: no longer experiencing a state
-      - source: moving across the boundary of a bounded region
-        target: transition to a state
-      - source: location can be changed by external entity applying force
-        target: state change can be caused by an external entity
+      - source: Moving into a bounded region (goal)
+        target: Starting to experience a state
+      - source: Moving out of a bounded region (source)
+        target: No longer experiencing a state
+      - source: Moving across the boundary of a bounded region
+        target: Transition to a state
+      - source: Location can be changed by external entity applying force
+        target: State change can be caused by an external entity
       - source: Prevented change of location
         target: Prevented change of state
-      - source: location can be changed by 'self'/trajector (e.g. self-propelled motion)
-        target: state can be changed by 'self'/experiencer
+      - source: Location can be changed by 'self'/trajector (e.g. self-propelled motion)
+        target: State can be changed by 'self'/experiencer
   - name: CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
     type: Composed/complex
     source_frame: possession-change
@@ -2089,10 +2089,10 @@ metaphors:
       - He shook off his bad mood by lunchtime.
       - The company gained a solid reputation almost overnight.
     entailments:
-      - source: acquiring a possession
-        target: change into state
-      - source: losing a possession
-        target: change out of state
+      - source: Acquiring a possession
+        target: Change into state
+      - source: Losing a possession
+        target: Change out of state
   - name: CIRCUMSTANCES_ARE_SURROUNDINGS
     type: Primary
     source_frame: bounded-region
@@ -2249,10 +2249,10 @@ metaphors:
       - My mind is tired.
       - Her brain finally kicked into gear after the coffee.
     entailments:
-      - source: a body
-        target: the mind
-      - source: a healthy/unhealthy body
-        target: a well-functioning/non-functioning mind
+      - source: A body
+        target: The mind
+      - source: A healthy/unhealthy body
+        target: A well-functioning/non-functioning mind
   - name: COGNIZING_IS_EATING
     type: Primary
     source_frame: eating
@@ -2341,9 +2341,9 @@ metaphors:
         target: Understanding
       - source: Initially, transfer_recipient does not possess transferred_object
         target: Initially, addressee is not aware of message
-      - source: gaining possession of objects
-        target: acquiring ideas
-      - source: containers and vehicles via which objects are transferred
+      - source: Gaining possession of objects
+        target: Acquiring ideas
+      - source: Containers and vehicles via which objects are transferred
         target: Words and linguistic expressions
     relations:
       uses:
@@ -2591,7 +2591,7 @@ metaphors:
           The actions of an entity that is within the controlling_entity's scope_of_control can be controlled
           by that controlling_entity
       - source:
-          an entity located in the distal_region is distal from the center (and therefore not likely
+          An entity located in the distal_region is distal from the center (and therefore not likely
           to be accessible from the center)
         target:
           The actions of an entity that is not within a controlling_entity's scope_of_control are not
@@ -2619,16 +2619,16 @@ metaphors:
       - She regained control of the assembly.
       - He finally seized control of the family business.
     entailments:
-      - source: possessing a possession
-        target: being able to control a person or situation
-      - source: not having a possession
-        target: not being able to control a person or possession
-      - source: change in possession
-        target: change in ability to control a person or situation
-      - source: gaining a possession
-        target: attaining control
-      - source: loss of a possession
-        target: end of controller's control
+      - source: Possessing a possession
+        target: Being able to control a person or situation
+      - source: Not having a possession
+        target: Not being able to control a person or possession
+      - source: Change in possession
+        target: Change in ability to control a person or situation
+      - source: Gaining a possession
+        target: Attaining control
+      - source: Loss of a possession
+        target: End of controller's control
     relations:
       related_by_target:
         - ATTRIBUTES_ARE_POSSESSIONS
@@ -2832,10 +2832,10 @@ metaphors:
     entailments:
       - source:
           The process of erosion while imperceptible on a small time scale can cause large scale destructive
-          effects on an entity over a long period of time.
+          effects on an entity over a long period of time
         target:
           Corrupt activities while they may not have immediately perceptible effect can yield large
-          scale harmful effects over long period of time.
+          scale harmful effects over long period of time
     relations:
       subcase_of_source:
         - CORRUPTION_IS_A_DESTRUCTIVE_NATURAL_PROCESS
@@ -2932,8 +2932,8 @@ metaphors:
       - Violence spread through the neighborhood like a virus.
       - The city finally found a cure for its worst crime-ridden blocks.
     entailments:
-      - source: as disease spreads throughout body, person becomes sicker
-        target: as crime spreads throughout society, social functions more poorly
+      - source: As disease spreads throughout body, person becomes sicker
+        target: As crime spreads throughout society, social functions more poorly
     relations:
       subcase_of_target:
         - SOCIAL_PROBLEMS_ARE_DISEASES
@@ -3278,10 +3278,10 @@ metaphors:
       - What's holding you back from pursuing your dreams?
       - They hit a few bumps early in the marriage but got past them fast.
     entailments:
-      - source: barriers on path can prevent motion along that path to goal
-        target: difficulties can prevent completion of purposeful action
-      - source: barriers on path can increase time and effort needed to reach goal
-        target: difficulties can increase time and effort needed to accomplish objectives
+      - source: Barriers on path can prevent motion along that path to goal
+        target: Difficulties can prevent completion of purposeful action
+      - source: Barriers on path can increase time and effort needed to reach goal
+        target: Difficulties can increase time and effort needed to accomplish objectives
     relations:
       entailed_by:
         - PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
@@ -4005,8 +4005,8 @@ metaphors:
       - The Senate voted to move the bill forward to a full vote next week.
       - The committee is dragging its feet on getting the reform bill moving.
     entailments:
-      - source: agent's objective is for mover to reach goal
-        target: legislator's objective is for bill to be enacted
+      - source: Agent's objective is for mover to reach goal
+        target: Legislator's objective is for bill to be enacted
     relations:
       subcase_of_target:
         - CAUSATION_IS_FORCED_MOVEMENT
@@ -4234,12 +4234,12 @@ metaphors:
       - He's getting closer to a breakthrough.
       - They're not far off from an agreement.
     entailments:
-      - source: change of spatial relation
-        target: change of experience of a state
-      - source: co-location of entity_1 and entity_2
-        target: co-incidence of experienced_state_value and value standard
-      - source: difference in location of entity 1 and 2
-        target: difference between experienced_state_value and standard
+      - source: Change of spatial relation
+        target: Change of experience of a state
+      - source: Co-location of entity_1 and entity_2
+        target: Co-incidence of experienced_state_value and value standard
+      - source: Difference in location of entity 1 and 2
+        target: Difference between experienced_state_value and standard
   - name: EXPERIENCING_AN_ECONOMIC_STATUS_IS_BEING_AT_A_LOCATION
     source_frame: being-at-a-location
     target_frame: experiencing-an-economic-status
@@ -4301,14 +4301,14 @@ metaphors:
       - She's out of her depression.
       - He's at an advanced stage in his studies.
     entailments:
-      - source: being in a bounded region (at interior)
-        target: currently experiencing a state value
-      - source: being outside a bounded region (at exterior)
-        target: not currently experiencing a state value
-      - source: distance to boundary (from exterior)
-        target: imminence of experience of a particular state value
-      - source: current trajector location is profiled_region defined with respect to landmark
-        target: current experience is defined with respect to a particular state value
+      - source: Being in a bounded region (at interior)
+        target: Currently experiencing a state value
+      - source: Being outside a bounded region (at exterior)
+        target: Not currently experiencing a state value
+      - source: Distance to boundary (from exterior)
+        target: Imminence of experience of a particular state value
+      - source: Current trajector location is profiled_region defined with respect to landmark
+        target: Current experience is defined with respect to a particular state value
     relations:
       subcase_of_source:
         - EXPERIENCE_OF_A_STATE_IS_SPATIAL_RELATION_WITH_AN_ENTITY
@@ -4336,8 +4336,8 @@ metaphors:
       - She's got a real attitude problem lately.
       - He's had a cold for a whole week.
     entailments:
-      - source: lack of possession relation with a particular entity
-        target: experiencer is not experiencing a particular state
+      - source: Lack of possession relation with a particular entity
+        target: Experiencer is not experiencing a particular state
     relations:
       subcase_of_source:
         - EXPERIENCE_OF_A_STATE_IS_SPATIAL_RELATION_WITH_AN_ENTITY
@@ -4410,8 +4410,8 @@ metaphors:
       - He hit her with the full weight of his argument.
       - That's a lot of pressure to throw at someone all at once.
     entailments:
-      - source: bigger object
-        target: more force
+      - source: Bigger object
+        target: More force
   - name: FORCE_TRANSFER_IS_OBJECT_TRANSFER
     type: Primary
     source_frame: transfer-scenario
@@ -4477,12 +4477,12 @@ metaphors:
       - Workers of the world, throw off your chains!
       - She finally cut loose from the restrictions holding her back.
     entailments:
-      - source: lack of containment enables mover to move in many directions
-        target: freedom to act
-      - source: lack of restraints makes it easier for mover to move
-        target: freedom to act
-      - source: lack of barriers on path makes it possible for mover to move along path to goal
-        target: freedom to act and achieve objectives
+      - source: Lack of containment enables mover to move in many directions
+        target: Freedom to act
+      - source: Lack of restraints makes it easier for mover to move
+        target: Freedom to act
+      - source: Lack of barriers on path makes it possible for mover to move along path to goal
+        target: Freedom to act and achieve objectives
     relations:
       entailed_by:
         - ACTION_IS_MOTION_ALONG_A_PATH
@@ -4515,8 +4515,8 @@ metaphors:
       - The whole system went down right before the deadline.
       - Sales have been up and running smoothly since the update.
     entailments:
-      - source: change in vertical position
-        target: change in functionality
+      - source: Change in vertical position
+        target: Change in functionality
       - source: '"up" end of vertical scale'
         target: '"functional" end of functionality_scale'
       - source: '"down" end of vertical scale'
@@ -4871,8 +4871,8 @@ metaphors:
       - The government fell.
       - The coalition is teetering and could topple within weeks.
     entailments:
-      - source: change in verticality
-        target: change in government functional status
+      - source: Change in verticality
+        target: Change in government functional status
     relations:
       subcase_of_target:
         - FUNCTIONALITY_IS_VERTICALITY
@@ -4999,9 +4999,9 @@ metaphors:
       - The agency runs like a well-oiled machine when the budget is fully funded.
     entailments:
       - source:
-          the ability of the machine to function depends on the state of its physical structure (physical
+          The ability of the machine to function depends on the state of its physical structure (physical
           status), e.g. rusty, broken, well-oiled
-        target: the ability of the government to fulfill its responsibilities depends on its functional status
+        target: The ability of the government to fulfill its responsibilities depends on its functional status
     relations:
       subcase_of_source:
         - GOVERNMENT_INSTITUTION_IS_A_PHYSICAL_STRUCTURE
@@ -5088,10 +5088,10 @@ metaphors:
     entailments:
       - source: Childcare provider has control over what the children can or cannot do
         target: Government has control over what the citizens can or cannot do
-      - source: Childcare provider's duties are to ensure the health, safety, and well-being of the children.
-        target: Government's responsibility is to ensure the health, safety and well-being of the citizens.
-      - source: Children are not capable of taking care of themselves without the help of a childcare provider.
-        target: The citizens are not capable of taking care of themselves without the help of the government.
+      - source: Childcare provider's duties are to ensure the health, safety, and well-being of the children
+        target: Government's responsibility is to ensure the health, safety and well-being of the citizens
+      - source: Children are not capable of taking care of themselves without the help of a childcare provider
+        target: The citizens are not capable of taking care of themselves without the help of the government
     relations:
       subcase_of_source:
         - GOVERNMENT_IS_A_PERSON
@@ -5163,10 +5163,10 @@ metaphors:
           The driver controls the speed and direction of the vehicle's motion in order to get the vehicle
           to the intended destination
         target: The government acts so as to bring about desired states of the governed (e.g. populace, nation)
-      - source: a vehicle and its contents (driver and passengers) all move to the same locations
-        target: a jurisdiction and its populace all share a common fate
-      - source: passengers have desired goal location(s)
-        target: populace has desired (future) states
+      - source: A vehicle and its contents (driver and passengers) all move to the same locations
+        target: A jurisdiction and its populace all share a common fate
+      - source: Passengers have desired goal location(s)
+        target: Populace has desired (future) states
     relations:
       subcase_of_source:
         - GOVERNMENT_IS_A_PERSON
@@ -5225,10 +5225,10 @@ metaphors:
       - Regulators are always looking out for us, whether we like it or not.
       - The state stepped in like a guardian when the family couldn't cope.
     entailments:
-      - source: parents have some degree of control over children's actions
-        target: government has some degree of control over the actions of the governed
-      - source: parents are responsible for taking care of their children
-        target: the government is responsible for taking care of the governed
+      - source: Parents have some degree of control over children's actions
+        target: Government has some degree of control over the actions of the governed
+      - source: Parents are responsible for taking care of their children
+        target: The government is responsible for taking care of the governed
     relations:
       subcase_of_source:
         - GOVERNMENT_IS_A_PERSON
@@ -5311,10 +5311,10 @@ metaphors:
     entailments:
       - source: If shepherd successfully performs actions, sheep will flourish
         target: If government successfully performs action, people will flourish
-      - source: shepherd makes decisions, sheep do what shepherd wants them to
-        target: government makes decisions, people do what government wants them to
-      - source: Sheep are not capable of flourishing on their own (without shepherd).
-        target: Governed people are not capable of making decisions or protecting themselves.
+      - source: Shepherd makes decisions, sheep do what shepherd wants them to
+        target: Government makes decisions, people do what government wants them to
+      - source: Sheep are not capable of flourishing on their own (without shepherd)
+        target: Governed people are not capable of making decisions or protecting themselves
     relations:
       subcase_of_source:
         - GOVERNMENT_IS_A_PERSON
@@ -6587,9 +6587,9 @@ metaphors:
       - The filibuster ground the legislation to a halt just before the deadline.
     entailments:
       - source:
-          impediments can negatively affect mover's motion (e.g. slow or stop motion and/or increase
-          energy needed for mover to move).
-        target: actions can inhibit progress of a bill, and may prevent its enactment.
+          Impediments can negatively affect mover's motion (e.g. slow or stop motion and/or increase
+          energy needed for mover to move)
+        target: Actions can inhibit progress of a bill, and may prevent its enactment
     relations:
       subcase_of_target:
         - DIFFICULTIES_ARE_IMPEDIMENTS_TO_MOVEMENT
@@ -6904,8 +6904,8 @@ metaphors:
         target: Knowing from a perspective
       - source: Showing
         target: Giving knowledge (communicating)
-      - source: being poised to see
-        target: being poised to know
+      - source: Being poised to see
+        target: Being poised to know
     relations:
       subcase_of_source:
         - KNOWING_IS_PERCEIVING
@@ -7217,8 +7217,8 @@ metaphors:
       - Sales dipped again this quarter.
       - Crime rates have fallen sharply since last year.
     entailments:
-      - source: motion towards lower end of verticality scale
-        target: decreases in quantity
+      - source: Motion towards lower end of verticality scale
+        target: Decreases in quantity
     relations:
       entailed_by:
         - QUANTITY_IS_VERTICALITY
@@ -7233,8 +7233,8 @@ metaphors:
       - The number of available parking spaces continues to shrink.
       - His influence in the company has shrunk to almost nothing.
     entailments:
-      - source: decreases in size
-        target: decreases in quantity
+      - source: Decreases in size
+        target: Decreases in quantity
     relations:
       entailed_by:
         - QUANTITY_IS_SIZE
@@ -7287,8 +7287,8 @@ metaphors:
       - He took a wrong turn in life after college.
       - I've picked up a lot of friends along the way.
     entailments:
-      - source: Sequence of motions towards a destination in a journey.
-        target: A purposeful life.
+      - source: Sequence of motions towards a destination in a journey
+        target: A purposeful life
     relations:
       subcase_of_source:
         - LIFE_IS_A_SEQUENCE_OF_MOTIONS
@@ -7483,10 +7483,10 @@ metaphors:
       - I'm walking on egg shells.
       - We slogged through it.
     entailments:
-      - source: effortfulness of motion
-        target: effortfulness of action
-      - source: speed of motion
-        target: rate of motion
+      - source: Effortfulness of motion
+        target: Effortfulness of action
+      - source: Speed of motion
+        target: Rate of motion
     relations:
       entailed_by:
         - ACTION_IS_MOTION
@@ -7545,8 +7545,8 @@ metaphors:
       - There are many roads that lead to the same goal.
       - She found her own path to success.
     entailments:
-      - source: there are different paths one can take to reach a different destination
-        target: there are different means one can use to achieve a purpose
+      - source: There are different paths one can take to reach a different destination
+        target: There are different means one can use to achieve a purpose
     relations:
       mapping_within:
         - ACHIEVING_A_PURPOSE_IS_REACHING_A_DESTINATION
@@ -7610,14 +7610,14 @@ metaphors:
       - His mind felt sluggish after the long flight.
       - Reading every day keeps her mind healthy and strong.
     entailments:
-      - source: a healthy/unhealthy body
-        target: a well-functioning/non-functioning mind
-      - source: products of the body
-        target: products of the mind
-      - source: bodily processes
-        target: mental processes
-      - source: results of bodily processes
-        target: results of mental processes
+      - source: A healthy/unhealthy body
+        target: A well-functioning/non-functioning mind
+      - source: Products of the body
+        target: Products of the mind
+      - source: Bodily processes
+        target: Mental processes
+      - source: Results of bodily processes
+        target: Results of mental processes
     relations:
       mapping_within:
         - COGNIZING_IS_BODILY_FUNCTIONING
@@ -7717,14 +7717,14 @@ metaphors:
       - Cash flowed freely during the boom years.
       - He's just sponging off his parents.
     entailments:
-      - source: draining or leaking of liquid
-        target: loss of money
-      - source: state of being dry
-        target: state of having no money
-      - source: flow of liquid
-        target: transferring money
-      - source: allowing liquid to drain or leak
-        target: wasting money
+      - source: Draining or leaking of liquid
+        target: Loss of money
+      - source: State of being dry
+        target: State of having no money
+      - source: Flow of liquid
+        target: Transferring money
+      - source: Allowing liquid to drain or leak
+        target: Wasting money
     relations:
       subcase_of_source:
         - MONEY_IS_A_SUBSTANCE
@@ -7772,8 +7772,8 @@ metaphors:
       - She strayed after falling in with the wrong crowd.
       - He's always stayed on the right path, never once straying.
     entailments:
-      - source: walking along a straight path
-        target: being moral
+      - source: Walking along a straight path
+        target: Being moral
     relations:
       related_by_source:
         - MORALITY_IS_STRAIGHTNESS
@@ -7811,10 +7811,10 @@ metaphors:
       - He's a crooked businessman.
       - She's always played it straight, even when no one was watching.
     entailments:
-      - source: being straight
-        target: being moral
-      - source: being crooked
-        target: being immoral
+      - source: Being straight
+        target: Being moral
+      - source: Being crooked
+        target: Being immoral
     relations:
       related_by_source:
         - MORALITY_IS_A_STRAIGHT_PATH
@@ -8003,8 +8003,8 @@ metaphors:
       - The city keeps expanding its recycling program.
       - Her small paycheck grew into a big bonus this year.
     entailments:
-      - source: increase in size
-        target: increases in quantity
+      - source: Increase in size
+        target: Increases in quantity
     relations:
       entailed_by:
         - QUANTITY_IS_SIZE
@@ -8021,8 +8021,8 @@ metaphors:
       - My to-do list is piling up.
       - Crime rates have climbed every year since the recession.
     entailments:
-      - source: motion towards higher end of verticality scale
-        target: increases in quantity
+      - source: Motion towards higher end of verticality scale
+        target: Increases in quantity
     relations:
       entailed_by:
         - QUANTITY_IS_VERTICALITY
@@ -8157,12 +8157,12 @@ metaphors:
       - Roads and schools are the brick and mortar of the country's infrastructure.
       - Our nation is built on a bedrock of shared values.
     entailments:
-      - source: Building a building.
-        target: Creating a nation.
-      - source: Demolishing a building.
-        target: Destroying a nation.
-      - source: Fixing the structural problems of a building.
-        target: Fixing the problems of a nation.
+      - source: Building a building
+        target: Creating a nation
+      - source: Demolishing a building
+        target: Destroying a nation
+      - source: Fixing the structural problems of a building
+        target: Fixing the problems of a nation
     relations:
       subcase_of_source:
         - NATION_IS_A_COMPLEX_STRUCTURE
@@ -9213,20 +9213,20 @@ metaphors:
       - We keep sliding backward instead of moving ahead.
       - We've taken the first step, but there's a long way to go.
     entailments:
-      - source: distance moved towards goal
-        target: amount of progress
-      - source: reaching a destination
-        target: achieving a purpose
-      - source: lack of direction
-        target: lack of purpose
-      - source: forward motion toward goal
-        target: making progress
-      - source: amount of effort it takes to change location
-        target: amount of effort it takes to perform action
-      - source: mover stops moving when destination (end of path) is reached
-        target: actor stops acting when objective is accomplished
-      - source: another person can lead mover along path
-        target: another person guide action
+      - source: Distance moved towards goal
+        target: Amount of progress
+      - source: Reaching a destination
+        target: Achieving a purpose
+      - source: Lack of direction
+        target: Lack of purpose
+      - source: Forward motion toward goal
+        target: Making progress
+      - source: Amount of effort it takes to change location
+        target: Amount of effort it takes to perform action
+      - source: Mover stops moving when destination (end of path) is reached
+        target: Actor stops acting when objective is accomplished
+      - source: Another person can lead mover along path
+        target: Another person guide action
     relations:
       entailed_by:
         - ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH
@@ -9279,10 +9279,10 @@ metaphors:
       - The crowd was massive compared to last year's turnout.
       - Her workload just keeps getting bigger every week.
     entailments:
-      - source: larger sizes
-        target: greater quantities
-      - source: smaller sizes
-        target: lesser quantities
+      - source: Larger sizes
+        target: Greater quantities
+      - source: Smaller sizes
+        target: Lesser quantities
   - name: QUANTITY_IS_VERTICALITY
     type: Primary
     source_frame: verticality
@@ -9302,9 +9302,9 @@ metaphors:
       - Sales are up compared to this time last year.
     entailments:
       - source: Higher point(s) along a vertical scale
-        target: greater quantities
+        target: Greater quantities
       - source: Lower point(s) along a vertical scale
-        target: lesser quantities
+        target: Lesser quantities
     relations:
       uses:
         - CHANGE_OF_STATE_IS_CHANGE_OF_LOCATION
@@ -9624,10 +9624,10 @@ metaphors:
       - The marriage nearly capsized after the affair came out.
       - They managed to steer their relationship away from disaster.
     entailments:
-      - source: A boat on the rocks is immobilized as a consequence of being on the rocks.
+      - source: A boat on the rocks is immobilized as a consequence of being on the rocks
         target:
           A relationship encountering difficulties is prevented from proceeding forward as a consequence
-          of encountering relationship difficulties.
+          of encountering relationship difficulties
       - source: A boat on the rocks is immobilized but can be repaired and sent back on its way
         target: A relationship encountering difficulties is not necessarily a relationship that is over
       - source:
@@ -9720,8 +9720,8 @@ metaphors:
       - Prices have climbed steadily all year.
       - Fuel consumption rose to its highest point in twenty years.
     entailments:
-      - source: motion along a path involves incremental changes in locations along a path
-        target: scalar change involves incremental changes in scalar values
+      - source: Motion along a path involves incremental changes in locations along a path
+        target: Scalar change involves incremental changes in scalar values
   - name: SECESSION_IS_SPLITTING_OFF_FROM_WHOLE
     families:
       - Governance metaphors
@@ -9930,8 +9930,8 @@ metaphors:
       - Rising crime is a symptom of a sick society.
       - The community is finally healing after years of division.
     entailments:
-      - source: poor physical health leads to loss of function
-        target: social problems lead to loss of function
+      - source: Poor physical health leads to loss of function
+        target: Social problems lead to loss of function
   - name: SOCIAL_GROUPS_ARE_BUILDINGS
     type: Composed/complex
     source_frame: building
@@ -9991,16 +9991,16 @@ metaphors:
       - It will take years to reweave the torn fabric of this town.
       - Their friendship is woven into the fabric of the whole neighborhood.
     entailments:
-      - source: the strength of the fibers
-        target: the strength of social relations
+      - source: The strength of the fibers
+        target: The strength of social relations
       - source:
           The strength/integrity of the textile as a whole is dependent on the strength/integrity of
-          the individual fibers.
+          the individual fibers
         target:
-          the strength/integrity of the social group as a whole depends on the strength/integrity of
-          the relations between social members.
-      - source: processes that affect the strength of the fabric
-        target: processes that affect the strength of the social group
+          The strength/integrity of the social group as a whole depends on the strength/integrity of
+          the relations between social members
+      - source: Processes that affect the strength of the fabric
+        target: Processes that affect the strength of the social group
   - name: SOCIAL_GROUP_IS_A_FAMILY
     source_frame: family
     target_frame: social-group
@@ -10067,10 +10067,10 @@ metaphors:
       - Dishonesty has infected every level of the organization.
       - The city treated crime as a disease that needed a cure, not just punishment.
     entailments:
-      - source: people's actions can alleviate symptoms and cure disease
+      - source: People's actions can alleviate symptoms and cure disease
         target: Societal actions can help reduce or eliminate social problems
-      - source: inability to treat disease results in continued poor health
-        target: inability to address social problems results in continued poor function
+      - source: Inability to treat disease results in continued poor health
+        target: Inability to address social problems results in continued poor function
     relations:
       subcase_of_source:
         - SOCIAL_PROBLEMS_ARE_PHYSICAL_AFFLICTIONS
@@ -10096,14 +10096,14 @@ metaphors:
       - Poverty is a lingering affliction that no single policy has cured.
       - Researchers are looking for ways to treat the symptoms of urban decline.
     entailments:
-      - source: diagnosing the physical affliction
-        target: analyzing the cause, scope, etc of the social problem
-      - source: treating an illness should improve physical health
-        target: addressing a social problem should improve society's function
-      - source: curing affliction restores person to health
-        target: eliminating social problem restores social functioning
-      - source: extent of affliction
-        target: extent of social problem
+      - source: Diagnosing the physical affliction
+        target: Analyzing the cause, scope, etc of the social problem
+      - source: Treating an illness should improve physical health
+        target: Addressing a social problem should improve society's function
+      - source: Curing affliction restores person to health
+        target: Eliminating social problem restores social functioning
+      - source: Extent of affliction
+        target: Extent of social problem
     relations:
       uses:
         - NEGATIVELY_EVALUATED_CONDITIONS_ARE_HARMFUL_AGENTS
@@ -10124,10 +10124,10 @@ metaphors:
       - Old friendships can dissolve when nobody makes an effort.
       - Shared hardship welded the group together for life.
     entailments:
-      - source: connectors keep items together
-        target: relations keep the members (and group as a whole) together
-      - source: when connections are eliminated, items can move apart from each other
-        target: without social relations, group will not 'stick together'
+      - source: Connectors keep items together
+        target: Relations keep the members (and group as a whole) together
+      - source: When connections are eliminated, items can move apart from each other
+        target: Without social relations, group will not 'stick together'
   - name: SOCIETY_IS_A_COMPLEX_STRUCTURE
     type: Composed/complex
     source_frame: complex-physical-object
@@ -10148,8 +10148,8 @@ metaphors:
       - The nation is still healing from years of division.
       - Society grew up a lot after that difficult decade.
     entailments:
-      - source: people experience physical ailments
-        target: societies experience problems functioning
+      - source: People experience physical ailments
+        target: Societies experience problems functioning
   - name: SOLVING_A_PROBLEM_IS_FIXING_A_BROKEN_OBJECT
     type: Composed/complex
     source_frame: fixing
@@ -10230,8 +10230,8 @@ metaphors:
       - His confidence was fragile after the loss.
       - Their success was built to last.
     entailments:
-      - source: scalar
-        target: the degree to which a particular state is relevant to a given state_holder can differ
+      - source: Scalar
+        target: The degree to which a particular state is relevant to a given state_holder can differ
   - name: STATE_OF_NATION_IS_LOCATION_ALONG_PATH
     source_frame: bounded-region
     target_frame: nation
@@ -10245,12 +10245,12 @@ metaphors:
       - The nation is slowly moving out of a long recession.
       - Progress toward peace has stalled for months.
     entailments:
-      - source: current location on path
-        target: current state of nation
-      - source: future locations along a path
-        target: future states of nation
-      - source: past locations along a path
-        target: past states of nation
+      - source: Current location on path
+        target: Current state of nation
+      - source: Future locations along a path
+        target: Future states of nation
+      - source: Past locations along a path
+        target: Past states of nation
     relations:
       subcase_of_target:
         - STATES_ARE_LOCATIONS
@@ -10327,12 +10327,12 @@ metaphors:
       - The new tax plan would place a heavy load on small businesses.
       - Cutting taxes lifted a burden off working families.
     entailments:
-      - source: presence of burden negatively affects burdened_entity's ability to move or act
+      - source: Presence of burden negatively affects burdened_entity's ability to move or act
         target: (obligation of) paying taxes negatively affects the taxpayer
       - source:
-          weight of burden is related to degree of (negative) effect (heavier burdens have more effect
+          Weight of burden is related to degree of (negative) effect (heavier burdens have more effect
           than lighter ones)
-        target: amount of taxes is related to degree to which taxpayer is affected
+        target: Amount of taxes is related to degree to which taxpayer is affected
     relations:
       subcase_of_source:
         - TAXATION_IS_CAUSING_HARM
@@ -10447,8 +10447,8 @@ metaphors:
       - He feels enslaved to the taxman every April.
       - Critics call high taxes a modern form of servitude.
     entailments:
-      - source: slavery is involuntary obligation to work for master
-        target: taxation is involuntary payment to government
+      - source: Slavery is involuntary obligation to work for master
+        target: Taxation is involuntary payment to government
     relations:
       subcase_of_source:
         - TAXATION_IS_CAUSING_HARM
@@ -10533,10 +10533,10 @@ metaphors:
       - She lost her grip on the company after the merger.
       - He gave up control of the project once the new manager arrived.
     entailments:
-      - source: initially, possessor possesses object
-        target: initially, controlling entity is in control
-      - source: at end, possessor no longer possesses object
-        target: at end, controlling entity is no longer in control
+      - source: Initially, possessor possesses object
+        target: Initially, controlling entity is in control
+      - source: At end, possessor no longer possesses object
+        target: At end, controlling entity is no longer in control
     relations:
       entailed_by:
         - CONTROL_IS_A_POSSESSION
@@ -10616,15 +10616,15 @@ metaphors:
       - His thoughts kept circling back to the same problem.
       - Let's move on to the next idea.
     entailments:
-      - source: being unable to move from one place to another
+      - source: Being unable to move from one place to another
         target: Being unable to think about different things
       - source: Goal-directed motion
         target: Purposeful thinking
-      - source: Moving from one bounded region in space to another.
-        target: Changing topics of conversation.
-      - source: being in a bounded region of space
+      - source: Moving from one bounded region in space to another
+        target: Changing topics of conversation
+      - source: Being in a bounded region of space
         target: Thinking about a topic
-      - source: being able to move to different locations
+      - source: Being able to move to different locations
         target: Being able to think about different things
     relations:
       related:
@@ -10869,12 +10869,12 @@ metaphors:
       - The scandal shook the foundations of trust in the company.
       - Their partnership stands on a solid foundation of mutual respect.
     entailments:
-      - source: increase in structural_integrity
-        target: increase in relationship intensity
-      - source: decrease in structural_integrity
-        target: decrease in relationship intensity
-      - source: caused change in structural_integrity
-        target: caused change in intensity
+      - source: Increase in structural_integrity
+        target: Increase in relationship intensity
+      - source: Decrease in structural_integrity
+        target: Decrease in relationship intensity
+      - source: Caused change in structural_integrity
+        target: Caused change in intensity
   - name: UNCONSCIOUS_IS_DOWN
     type: Entailed
     source_frame: verticality
@@ -11014,8 +11014,8 @@ metaphors:
       - Her ballot was her way of speaking up for change.
       - The election gave everyday people a voice.
     entailments:
-      - source: not being able to speak
-        target: not being able to vote
+      - source: Not being able to speak
+        target: Not being able to vote
   - name: WEALTHY_PEOPLE_ARE_PARASITES
     source_frame: parasite
     target_frame: wealthy-people
@@ -11235,10 +11235,10 @@ metaphors:
       - Whatever she meant, it's still locked away in that cryptic little poem.
       - He writes in such a way as to seal up the meaning in every sentence.
     entailments:
-      - source: ability to access contents
-        target: ability to understand word meaning
-      - source: amount of contents
-        target: amount of meaning
+      - source: Ability to access contents
+        target: Ability to understand word meaning
+      - source: Amount of contents
+        target: Amount of meaning
     relations:
       mapping_within:
         - COMMUNICATING_IS_OBJECT_TRANSFER
