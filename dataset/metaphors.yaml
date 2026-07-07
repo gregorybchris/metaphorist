@@ -164,7 +164,6 @@ metaphors:
     target_frame: purposeful-action
     families:
       - Action is motion metaphors
-      - DEMO metaphors
       - Grady primary metaphors
       - Location event structure metaphors
     mappings:
@@ -194,7 +193,6 @@ metaphors:
     source_frame: motion-to-a-location
     target_frame: gun-rights
     families:
-      - DEMO metaphors
       - Gun debate metaphors
     examples:
       - Gun owners finally arrived at full concealed-carry rights after decades of court battles.
@@ -431,7 +429,6 @@ metaphors:
     source_frame: war
     target_frame: injurious-gun-use
     families:
-      - DEMO metaphors
       - Gun debate metaphors
       - Social problems metaphors
     examples:
@@ -2636,8 +2633,6 @@ metaphors:
     type: Composed/complex
     source_frame: object-manipulation
     target_frame: control
-    families:
-      - DEMO metaphors
     mappings:
       - source_role: actor
         target_role: controlling_entity
@@ -2652,7 +2647,6 @@ metaphors:
     source_frame: object-manipulation
     target_frame: control
     families:
-      - DEMO metaphors
       - Object event structure metaphors
       - Primary metaphors
     examples:
@@ -5394,7 +5388,6 @@ metaphors:
     source_frame: physical-strength
     target_frame: gun-control-legislation
     families:
-      - DEMO metaphors
       - Gun debate metaphors
     examples:
       - Tighter gun laws would put a stronger grip on who can buy a firearm.
@@ -5624,7 +5617,6 @@ metaphors:
     source_frame: constructed-restraints
     target_frame: gun-control
     families:
-      - DEMO metaphors
       - Gun debate metaphors
     examples:
       - Some call background checks the oppressive shackles of gun control.
@@ -5638,7 +5630,6 @@ metaphors:
     source_frame: restraints
     target_frame: gun-control-legislation
     families:
-      - DEMO metaphors
       - Gun debate metaphors
       - Legislation metaphors
     examples:
@@ -5670,7 +5661,6 @@ metaphors:
     source_frame: motion-affecting-objects
     target_frame: gun-control-legislation
     families:
-      - DEMO metaphors
       - Gun debate metaphors
     mappings:
       - source_role: mover
@@ -5711,7 +5701,6 @@ metaphors:
     source_frame: possessable-object
     target_frame: gun-rights
     families:
-      - DEMO metaphors
       - Gun debate metaphors
       - Rights metaphors
     mappings:
@@ -6990,7 +6979,6 @@ metaphors:
     source_frame: restraints
     target_frame: law
     families:
-      - DEMO metaphors
       - Legislation metaphors
     examples:
       - The new regulations tie the hands of small businesses.
@@ -7194,7 +7182,6 @@ metaphors:
     source_frame: physical-weakness
     target_frame: gun-control-legislation
     families:
-      - DEMO metaphors
       - Gun debate metaphors
       - Legislation metaphors
     examples:
@@ -8980,7 +8967,6 @@ metaphors:
     source_frame: motion-to-a-destination
     target_frame: gun-rights
     families:
-      - DEMO metaphors
       - Gun debate metaphors
     examples:
       - New restrictions are blocking gun owners from reaching full Second Amendment rights.
