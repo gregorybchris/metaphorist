@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@import "@fontsource/source-serif-4/latin-400.css";
+@import "@fontsource/source-serif-4/latin-400-italic.css";
+@import "@fontsource/source-serif-4/latin-600.css";
+@import "@fontsource/manrope/latin-400.css";
+@import "@fontsource/manrope/latin-500.css";
+@import "@fontsource/manrope/latin-600.css";
+@import "@fontsource/manrope/latin-700.css";
+@import "@fontsource/ibm-plex-mono/latin-400.css";
+@import "@fontsource/ibm-plex-mono/latin-500.css";
+
+/* Class-based dark mode toggle (in addition to the `dark:` variant matching it). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4", ui-serif, Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Neutral paper/ink — a cool, slightly green-grey archival tone, not warm cream. */
+  --color-paper-50: #fbfbf8;
+  --color-paper-100: #f2f2ec;
+  --color-paper-200: #e5e6dc;
+  --color-paper-300: #d3d5c6;
+
+  --color-ink-300: #b3b7a9;
+  --color-ink-400: #8a8f82;
+  --color-ink-500: #666b60;
+  --color-ink-700: #3a3f37;
+  --color-ink-900: #1d211c;
+
+  /* Clay — the source / concrete domain, and the "frame" entity kind. */
+  --color-clay-50: #fbf0ea;
+  --color-clay-100: #f6dfd1;
+  --color-clay-200: #ecc0a6;
+  --color-clay-300: #e0a07c;
+  --color-clay-400: #cb7752;
+  --color-clay-500: #b1512e;
+  --color-clay-600: #954226;
+  --color-clay-700: #78351d;
+  --color-clay-800: #5c2814;
+  --color-clay-900: #401c0d;
+
+  /* Indigo — the target / abstract domain, and the "metaphor" entity kind. */
+  --color-indigo-50: #eef0f8;
+  --color-indigo-100: #d6dcef;
+  --color-indigo-200: #aeb9dd;
+  --color-indigo-300: #8695c9;
+  --color-indigo-400: #5c6ca8;
+  --color-indigo-500: #3b4a83;
+  --color-indigo-600: #303c6b;
+  --color-indigo-700: #262f54;
+  --color-indigo-800: #1c233d;
+  --color-indigo-900: #131828;
+
+  /* Moss — families (both metaphor- and frame-families). */
+  --color-moss-50: #eff1ea;
+  --color-moss-100: #dce0d0;
+  --color-moss-200: #b9c2a5;
+  --color-moss-300: #97a47c;
+  --color-moss-400: #76835b;
+  --color-moss-500: #57624a;
+  --color-moss-600: #474f3c;
+  --color-moss-700: #373d2e;
+  --color-moss-800: #272b21;
+  --color-moss-900: #181a14;
+
+  /* Semantic, dark-mode-aware surface tokens. Components should reach for
+     these (bg-bg, bg-surface, text-text, ...) for chrome; use the raw
+     clay/indigo/moss scales directly for accent/semantic coloring. */
+  --color-bg: var(--color-paper-100);
+  --color-surface: var(--color-paper-50);
+  --color-surface-hover: var(--color-paper-200);
+  --color-border: var(--color-paper-300);
+  --color-text: var(--color-ink-900);
+  --color-text-muted: var(--color-ink-500);
+  --color-text-faint: var(--color-ink-400);
+}
+
+.dark {
+  --color-bg: #15170f;
+  --color-surface: #1d201a;
+  --color-surface-hover: #262922;
+  --color-border: #333629;
+  --color-text: #eae8dc;
+  --color-text-muted: #a3a696;
+  --color-text-faint: #7d8074;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-bg text-text;
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    @apply bg-clay-200 text-clay-900;
+  }
+  *:focus-visible {
+    outline: 2px solid var(--color-clay-500);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
