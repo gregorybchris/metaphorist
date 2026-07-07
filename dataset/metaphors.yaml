@@ -77,7 +77,7 @@ metaphors:
     entailments:
       - source: the quality of the Seer's vision affects how well he can see an object
         target: Knower's personal ability to know things affects how well he can learn about something
-      - source: lighting conditions affect how well the See-er can see an ob
+      - source: lighting conditions affect how well the See-er can see an object
         target: the ease with which the Knower can access knowledge affects how easily he can learn something
       - source: the presence/absence of obstructions affects how well the See-er can see an object
         target: the ease with which the Knower can access knowledge affects how easily he can learn something
@@ -952,7 +952,7 @@ metaphors:
         target:
           An anger experiencer can have low anger_level for a long time and then suddenly become very
           angry (high anger_level)
-      - source: A fire is dangerous to nearb_objects
+      - source: A fire is dangerous to nearby_objects
         target: An anger experiencer is dangerous to other_people
       - source: high fire_intensity can render burning_object_condition nonfunctional
         target: high anger_level can render mind_condition nonfunctional
@@ -1005,7 +1005,7 @@ metaphors:
       - You're driving me nuts!
       - He got so angry he went out of his mind.
     entailments:
-      - source: A insane_person who's agitation_level is beyond their agitation_limit will exhibit insane_behavior
+      - source: An insane_person whose agitation_level is beyond their agitation_limit will exhibit insane_behavior
         target: An anger experiencer whose anger_level is beyond their anger_limit will exhibit angry_action
       - source: an insane_person's insane_behavior can cause harm to other_people
         target: an anger experiencer's angry_action can cause harm to other_people
@@ -1056,7 +1056,7 @@ metaphors:
       - She was simmering with resentment all through dinner.
     entailments:
       - source:
-          The effect of increased fluid_heat_level is increased container_heat, container_internal_pressure,
+          The effect of increased fluid_heat_level is increased container_heat, container_pressure,
           and fluid_agitation
         target: The effect of increased anger_level is increased body_heat, body_pressure, and body_agitation
     relations:
@@ -1382,11 +1382,11 @@ metaphors:
       - He hit rock bottom after losing his job.
       - They've been at the bottom of the economic ladder their whole lives.
     entailments:
-      - source: downward motion; motion towards low(er) location
+      - source: downward motion (motion towards a lower location)
         target: becoming impoverished
       - source: co-location with low entity
         target: being impoverished
-      - source: motion upwards; motion away from a low location
+      - source: motion upwards (away from a low location)
         target: becoming less impoverished
     relations:
       subcase_of_source:
@@ -1790,7 +1790,7 @@ metaphors:
       - The invasion dragged the whole region into war.
     entailments:
       - source: motion would not have occurred without the application of a force
-        target: state change would not have occurred wihtout a cause
+        target: state change would not have occurred without a cause
       - source: the application of force precedes or accompanies the movement
         target: The occurrence of the cause precedes or accompanies the change of state
     relations:
@@ -2006,7 +2006,7 @@ metaphors:
       - She caught a bad cold over the weekend.
       - He picked up a nasty habit after the move.
     entailments:
-      - source: at intitial stage, possessor does not possess object
+      - source: at initial stage, possessor does not possess object
         target: at initial stage, experiencer does not experience state
       - source: at final stage, possessor possesses object
         target: at final stage, experiencer experiences state
@@ -2340,7 +2340,7 @@ metaphors:
       - source: Ability to accept objects
         target: Understanding
       - source: Initially, transfer_recipient does not possess transferred_object
-        target: Intially, addressee is not aware of message
+        target: Initially, addressee is not aware of message
       - source: gaining possession of objects
         target: acquiring ideas
       - source: containers and vehicles via which objects are transferred
@@ -2835,7 +2835,7 @@ metaphors:
           effects on an entity over a long period of time.
         target:
           Corrupt activities while they may not have immediately perceptible effect can yield large
-          scale harmful effects over long period of time
+          scale harmful effects over long period of time.
     relations:
       subcase_of_source:
         - CORRUPTION_IS_A_DESTRUCTIVE_NATURAL_PROCESS
@@ -4336,8 +4336,8 @@ metaphors:
       - She's got a real attitude problem lately.
       - He's had a cold for a whole week.
     entailments:
-      - source: lack of possession relation with a particular enity
-        target: experiencer is not experiencing a particualr state
+      - source: lack of possession relation with a particular entity
+        target: experiencer is not experiencing a particular state
     relations:
       subcase_of_source:
         - EXPERIENCE_OF_A_STATE_IS_SPATIAL_RELATION_WITH_AN_ENTITY
@@ -4515,7 +4515,7 @@ metaphors:
       - The whole system went down right before the deadline.
       - Sales have been up and running smoothly since the update.
     entailments:
-      - source: chnage in vertical position
+      - source: change in vertical position
         target: change in functionality
       - source: '"up" end of vertical scale'
         target: '"functional" end of functionality_scale'
@@ -4872,7 +4872,7 @@ metaphors:
       - The coalition is teetering and could topple within weeks.
     entailments:
       - source: change in verticality
-        target: change in government functional. status
+        target: change in government functional status
     relations:
       subcase_of_target:
         - FUNCTIONALITY_IS_VERTICALITY
@@ -5000,8 +5000,8 @@ metaphors:
     entailments:
       - source:
           the ability of the machine to function depends on the state of its physical structure (physical
-          status), e.g rusty, broken, well-oiled
-        target: the ability of the government to fulfill its responsibilites depends on its functional status
+          status), e.g. rusty, broken, well-oiled
+        target: the ability of the government to fulfill its responsibilities depends on its functional status
     relations:
       subcase_of_source:
         - GOVERNMENT_INSTITUTION_IS_A_PHYSICAL_STRUCTURE
@@ -5089,9 +5089,9 @@ metaphors:
       - source: Childcare provider has control over what the children can or cannot do
         target: Government has control over what the citizens can or cannot do
       - source: Childcare provider's duties are to ensure the health, safety, and well-being of the children.
-        target: Government's responsibility is to ensure the health, safety and well-being of the citizens
+        target: Government's responsibility is to ensure the health, safety and well-being of the citizens.
       - source: Children are not capable of taking care of themselves without the help of a childcare provider.
-        target: The citizens are not capable of taking care of themselves without the help of the government
+        target: The citizens are not capable of taking care of themselves without the help of the government.
     relations:
       subcase_of_source:
         - GOVERNMENT_IS_A_PERSON
@@ -5310,11 +5310,11 @@ metaphors:
       - A good shepherd looks after the flock, and a good government looks after its people.
     entailments:
       - source: If shepherd successfully performs actions, sheep will flourish
-        target: If government sucessfully performs action, people will flourish
-      - source: shepherd makes decsions; sheep do what shepherd wants them to
+        target: If government successfully performs action, people will flourish
+      - source: shepherd makes decisions, sheep do what shepherd wants them to
         target: government makes decisions, people do what government wants them to
       - source: Sheep are not capable of flourishing on their own (without shepherd).
-        target: Governed people are not capable of making decisions or protecting themselves
+        target: Governed people are not capable of making decisions or protecting themselves.
     relations:
       subcase_of_source:
         - GOVERNMENT_IS_A_PERSON
@@ -6589,7 +6589,7 @@ metaphors:
       - source:
           impediments can negatively affect mover's motion (e.g. slow or stop motion and/or increase
           energy needed for mover to move).
-        target: actions can inhibit progress of a bill, and may prevent its enactment
+        target: actions can inhibit progress of a bill, and may prevent its enactment.
     relations:
       subcase_of_target:
         - DIFFICULTIES_ARE_IMPEDIMENTS_TO_MOVEMENT
@@ -6884,7 +6884,7 @@ metaphors:
       - I can't see why he'd do that.
       - Now I see the whole picture.
     entailments:
-      - source: Onset of seeing; coming into sight
+      - source: Onset of seeing (coming into sight)
         target: Gaining knowledge
       - source: Aid to seeing
         target: Aid to knowing
@@ -6904,8 +6904,6 @@ metaphors:
         target: Knowing from a perspective
       - source: Showing
         target: Giving knowledge (communicating)
-      - source: Seeing from a short distance
-        target: Knowing in detail
       - source: being poised to see
         target: being poised to know
     relations:
@@ -7606,7 +7604,7 @@ metaphors:
       - source_role: body_structure
         target_role: mind_structure
       - source_role: bodily_capacity
-        target_role: mental_capacticy
+        target_role: mental_capacity
     examples:
       - Give your mind a good workout with today's puzzle.
       - His mind felt sluggish after the long flight.
@@ -9088,7 +9086,7 @@ metaphors:
       - Location event structure metaphors
       - Primary metaphors
     examples:
-      - He hadn't made much headway in writing the termpaper.
+      - He hadn't made much headway in writing the term paper.
       - Let's keep moving forward on this experiment.
       - I'm afraid I haven't gotten very far in grading the exams.
     relations:
@@ -9723,7 +9721,7 @@ metaphors:
       - Fuel consumption rose to its highest point in twenty years.
     entailments:
       - source: motion along a path involves incremental changes in locations along a path
-        target: scalar change inovovles incremental changes in scalar values
+        target: scalar change involves incremental changes in scalar values
   - name: SECESSION_IS_SPLITTING_OFF_FROM_WHOLE
     families:
       - Governance metaphors
@@ -10000,7 +9998,7 @@ metaphors:
           the individual fibers.
         target:
           the strength/integrity of the social group as a whole depends on the strength/integrity of
-          the relations between social members
+          the relations between social members.
       - source: processes that affect the strength of the fabric
         target: processes that affect the strength of the social group
   - name: SOCIAL_GROUP_IS_A_FAMILY
@@ -10332,8 +10330,8 @@ metaphors:
       - source: presence of burden negatively affects burdened_entity's ability to move or act
         target: (obligation of) paying taxes negatively affects the taxpayer
       - source:
-          weight of burden is related to degree of (negative) effect; heavy burdens have more effect
-          than lighter ones
+          weight of burden is related to degree of (negative) effect (heavier burdens have more effect
+          than lighter ones)
         target: amount of taxes is related to degree to which taxpayer is affected
     relations:
       subcase_of_source:
@@ -10536,7 +10534,7 @@ metaphors:
       - He gave up control of the project once the new manager arrived.
     entailments:
       - source: initially, possessor possesses object
-        target: intially, controlling entity is in  control
+        target: initially, controlling entity is in control
       - source: at end, possessor no longer possesses object
         target: at end, controlling entity is no longer in control
     relations:
@@ -10623,7 +10621,7 @@ metaphors:
       - source: Goal-directed motion
         target: Purposeful thinking
       - source: Moving from one bounded region in space to another.
-        target: Changing topics of conversation
+        target: Changing topics of conversation.
       - source: being in a bounded region of space
         target: Thinking about a topic
       - source: being able to move to different locations

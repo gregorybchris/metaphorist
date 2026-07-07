@@ -2184,7 +2184,7 @@ frames:
       - name: cognizer
         role_type: Person
       - name: content
-      - name: mental_capacticy
+      - name: mental_capacity
       - name: mind_structure
       - name: mind_whole
     relations:
