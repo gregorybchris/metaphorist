@@ -86,15 +86,6 @@ def test_metaphors_have_examples(metaphors):
         )
 
 
-def test_metaphors_have_entailments(metaphors):
-    empty = [m["name"] for m in metaphors if not m.get("entailments")]
-    if empty:
-        warnings.warn(
-            f"{len(empty)} metaphor(s) with no entailments: {empty[:5]}",
-            stacklevel=2,
-        )
-
-
 def test_frames_have_roles(frames):
     empty = [f["name"] for f in frames if not f.get("roles")]
     if empty:

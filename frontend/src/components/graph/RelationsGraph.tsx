@@ -23,8 +23,8 @@ export interface RelationsGraphEdge {
   source: string;
   /** node id */
   target: string;
-  /** humanized relation type, e.g. "subcase of (source)" */
-  label: string;
+  /** optional annotation for the edge; omitted when there's nothing to say */
+  label?: string;
 }
 
 export interface RelationsGraphProps {
@@ -120,13 +120,15 @@ export function RelationsGraph({
       }
       const key = [edge.source, edge.target].sort().join("::");
       const existing = byPair.get(key);
-      if (existing) existing.labels.push(edge.label);
-      else
+      if (existing) {
+        if (edge.label) existing.labels.push(edge.label);
+      } else {
         byPair.set(key, {
           source: edge.source,
           target: edge.target,
-          labels: [edge.label],
+          labels: edge.label ? [edge.label] : [],
         });
+      }
     }
     const simLinks = [...byPair.values()];
 
@@ -199,8 +201,8 @@ export function RelationsGraph({
                 strokeWidth={1.5}
                 className="stroke-border"
               />
-              <title>{label}</title>
-              {showEdgeLabels && (
+              {label && <title>{label}</title>}
+              {showEdgeLabels && label && (
                 <text
                   x={(x1 + x2) / 2}
                   y={(y1 + y2) / 2 - 4}

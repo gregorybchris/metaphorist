@@ -49,30 +49,6 @@ export function listPath(kind: EntityKind): string {
   return ENTITY_BASE_PATH[kind];
 }
 
-const RELATION_LABELS: Record<string, string> = {
-  entailed_by: "entailed by",
-  subcase_of_source: "subcase of (source)",
-  subcase_of_target: "subcase of (target)",
-  related: "related to",
-  uses: "uses",
-  dual_of: "dual of",
-  related_by_source: "related by source",
-  related_by_target: "related by target",
-  mapping_within: "mapping within",
-  transitive_subpart_1: "transitive subpart 1 of",
-  transitive_subpart_2: "transitive subpart 2 of",
-  subcase_of: "subcase of",
-  related_to: "related to",
-  scalar_opposition_to: "scalar opposition to",
-  incorporates_as_role: "incorporates as role",
-  perspective_on: "perspective on",
-  causal_relation_with: "causal relation with",
-};
-
-export function relationLabel(relation: string): string {
-  return RELATION_LABELS[relation] ?? relation.replace(/_/g, " ");
-}
-
 /** Pretty count, e.g. pluralize(3, "metaphor") -> "3 metaphors" */
 export function pluralize(count: number, noun: string): string {
   return `${count} ${noun}${count === 1 ? "" : "s"}`;

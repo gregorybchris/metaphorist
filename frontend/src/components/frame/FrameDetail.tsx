@@ -1,21 +1,14 @@
 import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Workflow } from "lucide-react";
+import { Workflow } from "lucide-react";
 import {
   frameByName,
   frameReverseRelations,
   metaphorsBySourceFrame,
   metaphorsByTargetFrame,
 } from "@/data";
-import {
-  entityPath,
-  frameDisplayName,
-  pluralize,
-  relationLabel,
-  roleDisplayName,
-} from "@/lib/format";
+import { entityPath, frameDisplayName, pluralize, roleDisplayName } from "@/lib/format";
 import { cn } from "@/lib/cn";
-import type { FrameRelationType } from "@/types";
 import { Badge } from "@/components/primitives/Badge";
 import { Breadcrumbs } from "@/components/primitives/Breadcrumbs";
 import { CollapsibleSection } from "@/components/primitives/CollapsibleSection";
@@ -49,19 +42,17 @@ export function FrameDetail({ name }: { name: string }) {
     });
     const graphEdges: RelationsGraphEdge[] = [];
 
-    for (const [relation, targets] of Object.entries(frame.relations ?? {})) {
-      for (const target of targets ?? []) {
-        if (!nodeMap.has(target)) {
-          nodeMap.set(target, { id: target, label: frameDisplayName(target), kind: "frame" });
-        }
-        graphEdges.push({ source: frame.name, target, label: relationLabel(relation) });
+    for (const target of frame.related ?? []) {
+      if (!nodeMap.has(target)) {
+        nodeMap.set(target, { id: target, label: frameDisplayName(target), kind: "frame" });
       }
+      graphEdges.push({ source: frame.name, target });
     }
-    for (const rev of reverse) {
-      if (!nodeMap.has(rev.name)) {
-        nodeMap.set(rev.name, { id: rev.name, label: frameDisplayName(rev.name), kind: "frame" });
+    for (const name of reverse) {
+      if (!nodeMap.has(name)) {
+        nodeMap.set(name, { id: name, label: frameDisplayName(name), kind: "frame" });
       }
-      graphEdges.push({ source: rev.name, target: frame.name, label: relationLabel(rev.relation) });
+      graphEdges.push({ source: name, target: frame.name });
     }
 
     return { nodes: Array.from(nodeMap.values()), edges: graphEdges };
@@ -84,12 +75,7 @@ export function FrameDetail({ name }: { name: string }) {
   const sourceUses = metaphorsBySourceFrame.get(frame.name) ?? [];
   const targetUses = metaphorsByTargetFrame.get(frame.name) ?? [];
 
-  const relationTypes = Array.from(
-    new Set<string>([
-      ...Object.keys(frame.relations ?? {}),
-      ...reverse.map((r) => r.relation),
-    ]),
-  ).sort();
+  const relatedNames = Array.from(new Set([...(frame.related ?? []), ...reverse])).sort();
 
   return (
     <div className="mx-auto max-w-3xl p-6">
@@ -207,47 +193,18 @@ export function FrameDetail({ name }: { name: string }) {
           </div>
         </CollapsibleSection>
 
-        {relationTypes.length > 0 && (
-          <CollapsibleSection title="Related frames" count={relationTypes.length}>
+        {relatedNames.length > 0 && (
+          <CollapsibleSection title="Related frames" count={relatedNames.length}>
             <RelationsGraph
               nodes={nodes}
               edges={edges}
               height={320}
               onNodeClick={(node) => navigate(entityPath(node.kind, node.id))}
             />
-            <div className="mt-6 flex flex-col gap-4">
-              {relationTypes.map((relation) => {
-                const forwardTargets =
-                  frame.relations?.[relation as FrameRelationType] ?? [];
-                const reverseSources = reverse
-                  .filter((r) => r.relation === relation)
-                  .map((r) => r.name);
-                return (
-                  <div key={relation}>
-                    <p className="mb-1.5 text-xs font-medium tracking-wide text-text-faint uppercase">
-                      {relationLabel(relation)}
-                    </p>
-                    <div className="flex flex-col gap-1.5">
-                      {forwardTargets.length > 0 && (
-                        <div className="flex flex-wrap items-center gap-1.5">
-                          <ArrowRight size={13} className="shrink-0 text-text-faint" />
-                          {forwardTargets.map((t) => (
-                            <EntityChip key={`fwd-${t}`} kind="frame" name={t} />
-                          ))}
-                        </div>
-                      )}
-                      {reverseSources.length > 0 && (
-                        <div className="flex flex-wrap items-center gap-1.5">
-                          <ArrowLeft size={13} className="shrink-0 text-text-faint" />
-                          {reverseSources.map((s) => (
-                            <EntityChip key={`rev-${s}`} kind="frame" name={s} />
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
+            <div className="mt-6 flex flex-wrap gap-1.5">
+              {relatedNames.map((n) => (
+                <EntityChip key={n} kind="frame" name={n} />
+              ))}
             </div>
           </CollapsibleSection>
         )}

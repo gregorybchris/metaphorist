@@ -30,7 +30,7 @@ individual pytest tests, split by concern:
 - `test_formats.py` — naming convention checks (metaphor `SCREAMING_SNAKE_CASE`, frame
   `kebab-case`, role `snake_case`) and known `type`/`frame_type` values.
 - `test_completeness.py` — mapping roles present in their frame's role list, and
-  per-field coverage checks (metaphors missing mappings/examples/entailments, frames
+  per-field coverage checks (metaphors missing mappings/examples, frames
   missing roles/lexical_units), each reported as its own warning.
 - `test_collection_sizes.py` — sanity bounds on collection sizes.
 - `conftest.py` — session-scoped fixtures that load each YAML file once (`metaphors`, `frames`,

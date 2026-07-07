@@ -1,28 +1,3 @@
-METAPHOR_RELATION_KEYS = [
-    "subcase_of_source",
-    "subcase_of_target",
-    "uses",
-    "dual_of",
-    "mapping_within",
-    "entailed_by",
-    "related",
-    "related_by_source",
-    "related_by_target",
-    "transitive_subpart_1",
-    "transitive_subpart_2",
-]
-
-FRAME_RELATION_KEYS = [
-    "subcase_of",
-    "uses",
-    "perspective_on",
-    "scalar_opposition_to",
-    "causal_relation_with",
-    "related_to",
-    "incorporates_as_role",
-]
-
-
 def test_no_dangling_source_frame(metaphors, frames):
     frame_names = {f["name"] for f in frames}
     dangling = [
@@ -57,10 +32,9 @@ def test_no_dangling_metaphor_family_ref(metaphors, metaphor_families):
 def test_no_dangling_metaphor_relations(metaphors):
     metaphor_names = {m["name"] for m in metaphors}
     dangling = [
-        f"{m['name']}.{key} -> {other}"
+        f"{m['name']}.related -> {other}"
         for m in metaphors
-        for key in METAPHOR_RELATION_KEYS
-        for other in m.get("relations", {}).get(key, [])
+        for other in m.get("related", [])
         if other not in metaphor_names
     ]
     assert not dangling, f"metaphor relations pointing to an unknown metaphor: {dangling}"
@@ -80,10 +54,9 @@ def test_no_dangling_frame_family_ref(frames, frame_families):
 def test_no_dangling_frame_relations(frames):
     frame_names = {f["name"] for f in frames}
     dangling = [
-        f"{f['name']}.{key} -> {other}"
+        f"{f['name']}.related -> {other}"
         for f in frames
-        for key in FRAME_RELATION_KEYS
-        for other in f.get("relations", {}).get(key, [])
+        for other in f.get("related", [])
         if other not in frame_names
     ]
     assert not dangling, f"frame relations pointing to an unknown frame: {dangling}"

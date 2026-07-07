@@ -10,10 +10,9 @@ frames:
       - ability
       - able
       - capability
-    relations:
-      uses:
-        - action
-        - x-schema
+    related:
+      - action
+      - x-schema
   - name: ability-to-move
   - name: absorption
     frame_type:
@@ -38,9 +37,8 @@ frames:
       - sponge.n
       - sponge.v
       - sponge.v up
-    relations:
-      incorporates_as_role:
-        - liquid
+    related:
+      - liquid
   - name: abstract-relatedness
   - name: access
     frame_type:
@@ -55,22 +53,18 @@ frames:
       - name: path_of_access
     lexical_units:
       - access.v
-    relations:
-      uses:
-        - barrier
+    related:
+      - barrier
   - name: access-to-a-location
     frame_type:
       - Cog
     frame_families:
       - Impediment and enablement frames
       - Location frames
-    relations:
-      subcase_of:
-        - access
-      uses:
-        - change-of-location
-      related_to:
-        - access-to-an-object
+    related:
+      - access
+      - access-to-an-object
+      - change-of-location
   - name: access-to-an-object
     frame_type:
       - Cog
@@ -86,31 +80,26 @@ frames:
       - name: path_of_access
     lexical_units:
       - access
-    relations:
-      subcase_of:
-        - access
-      uses:
-        - object
+    related:
+      - access
+      - object
   - name: access-to-education
     frame_type:
       - Frame
     frame_families:
       - Access to education frames
-    relations:
-      uses:
-        - education
-        - opportunities
+    related:
+      - education
+      - opportunities
   - name: access-to-knowledge
     frame_type:
       - Frame
     frame_families:
       - Access to education frames
       - Cognition frames
-    relations:
-      uses:
-        - knowledge
-      related_to:
-        - access-to-education
+    related:
+      - access-to-education
+      - knowledge
   - name: accompany
     frame_type:
       - Frame
@@ -120,9 +109,8 @@ frames:
       - accompaniment
       - accompany
       - together
-    relations:
-      uses:
-        - leadership
+    related:
+      - leadership
   - name: across
     frame_type:
       - Cog
@@ -134,11 +122,10 @@ frames:
     lexical_units:
       - across.prep
       - cross.v
-    relations:
-      uses:
-        - axis
-        - motion-along-a-path
-        - trajector-landmark
+    related:
+      - axis
+      - motion-along-a-path
+      - trajector-landmark
   - name: action
     frame_type:
       - Cog
@@ -160,9 +147,8 @@ frames:
       - act
       - action
       - actor
-    relations:
-      subcase_of:
-        - process
+    related:
+      - process
   - name: activating
   - name: activity
     frame_type:
@@ -184,11 +170,9 @@ frames:
       - addict.v
       - addiction.n
       - hooked.a
-    relations:
-      subcase_of:
-        - physical-affliction
-      uses:
-        - drugs
+    related:
+      - drugs
+      - physical-affliction
   - name: addressing-poverty
     frame_type:
       - Composed
@@ -202,11 +186,9 @@ frames:
       - name: problem_solvers
       - name: problem_solving_actions
         role_type: XSchema
-    relations:
-      subcase_of:
-        - addressing-social-problems
-      incorporates_as_role:
-        - poverty
+    related:
+      - addressing-social-problems
+      - poverty
   - name: addressing-social-problems
     frame_type:
       - Composed
@@ -229,12 +211,10 @@ frames:
       - name: solving_actions
         role_type: XSchema
       - name: solving_problem
-    relations:
-      subcase_of:
-        - causation
-      uses:
-        - governing-action
-        - social-problems
+    related:
+      - causation
+      - governing-action
+      - social-problems
   - name: adoption
     frame_type:
       - Frame
@@ -248,11 +228,9 @@ frames:
       - name: family_representative
     lexical_units:
       - adopt.v
-    relations:
-      subcase_of:
-        - selection
-      uses:
-        - family
+    related:
+      - family
+      - selection
   - name: advocacy
     frame_type:
       - Frame
@@ -297,11 +275,9 @@ frames:
         role_type: Object
       - name: path
       - name: source
-    relations:
-      subcase_of:
-        - causation
-      causal_relation_with:
-        - motion-along-a-path
+    related:
+      - causation
+      - motion-along-a-path
   - name: affection
     frame_type:
       - Frame
@@ -326,9 +302,8 @@ frames:
     lexical_units:
       - farm.n
       - farm.v
-    relations:
-      uses:
-        - tending-to-plants
+    related:
+      - tending-to-plants
   - name: aid-to-upward-motion
     frame_type:
       - Frame
@@ -347,20 +322,17 @@ frames:
       - staircase.n
       - stairway.n
       - trampoline.n
-    relations:
-      subcase_of:
-        - aids-to-motion
-      scalar_opposition_to:
-        - aids-to-downward-motion
+    related:
+      - aids-to-downward-motion
+      - aids-to-motion
   - name: aids-to-action
     frame_type:
       - Cog
     frame_families:
       - Action frames
       - Impediment and enablement frames
-    relations:
-      uses:
-        - action
+    related:
+      - action
   - name: aids-to-downward-motion
     frame_families:
       - Impediment and enablement frames
@@ -375,11 +347,9 @@ frames:
       - slope.v
       - trap door.n
       - trapdoor.n
-    relations:
-      subcase_of:
-        - aids-to-motion
-      uses:
-        - downward-motion
+    related:
+      - aids-to-motion
+      - downward-motion
   - name: aids-to-motion
     frame_type:
       - Frame
@@ -397,11 +367,9 @@ frames:
       - streamline.v
       - thrust.v
       - yank.v
-    relations:
-      subcase_of:
-        - enablement
-      uses:
-        - motion
+    related:
+      - enablement
+      - motion
   - name: air-motion
     frame_families:
       - Internal motion frames
@@ -422,9 +390,8 @@ frames:
       - gust.v
       - squall.n
       - wind.n
-    relations:
-      subcase_of:
-        - motion
+    related:
+      - motion
   - name: alignment
   - name: alliances
   - name: amassing
@@ -443,10 +410,9 @@ frames:
       - hoard.v
       - stockpile.n
       - stockpile.v
-    relations:
-      related_to:
-        - gain-possession
-        - resource-transfer
+    related:
+      - gain-possession
+      - resource-transfer
   - name: analysis
     frame_type:
       - Frame
@@ -465,11 +431,9 @@ frames:
       - criticize.v
       - scrutinize.v
       - study.n
-    relations:
-      subcase_of:
-        - reasoning
-      uses:
-        - evaluation
+    related:
+      - evaluation
+      - reasoning
   - name: anger
     frame_type:
       - Composed
@@ -498,11 +462,9 @@ frames:
       - furious.a
       - fury.n
       - rage.n
-    relations:
-      subcase_of:
-        - emotion
-      related_to:
-        - bodily-functioning
+    related:
+      - bodily-functioning
+      - emotion
   - name: animal
     frame_type:
       - Frame
@@ -529,9 +491,8 @@ frames:
       - swine.n
       - varmint.n
       - wallow.v
-    relations:
-      subcase_of:
-        - animate-entity
+    related:
+      - animate-entity
   - name: animal-life-cycle
     frame_type:
       - Frame
@@ -554,11 +515,9 @@ frames:
       - pup.n
       - spawn.n
       - spawn.v
-    relations:
-      subcase_of:
-        - life-cycle
-      uses:
-        - animal
+    related:
+      - animal
+      - life-cycle
   - name: animate-entity
     frame_type:
       - Cog
@@ -570,11 +529,9 @@ frames:
         role_type: Body
       - name: body_weight
       - name: specialized_parts
-    relations:
-      subcase_of:
-        - biological-entity
-      uses:
-        - self-propelled-motion
+    related:
+      - biological-entity
+      - self-propelled-motion
   - name: antagonistic-force
     frame_type:
       - Cog
@@ -594,9 +551,8 @@ frames:
       - pin.v down by
       - push.v away
       - turn.v away
-    relations:
-      subcase_of:
-        - force-application
+    related:
+      - force-application
   - name: argument
     frame_type:
       - Frame
@@ -616,9 +572,8 @@ frames:
       - claim.n
       - criticism.n
       - point.n
-    relations:
-      related_to:
-        - reasoning
+    related:
+      - reasoning
   - name: arithmetic
     roles:
       - name: addition
@@ -643,12 +598,10 @@ frames:
       - name: functional_status
       - name: material
       - name: purpose
-    relations:
-      subcase_of:
-        - object
-        - physical-entity
-      uses:
-        - purposeful-action
+    related:
+      - object
+      - physical-entity
+      - purposeful-action
   - name: assets
     frame_type:
       - Frame
@@ -657,9 +610,8 @@ frames:
     lexical_units:
       - asset
       - holdings
-    relations:
-      subcase_of:
-        - financial-resource
+    related:
+      - financial-resource
   - name: assistance
   - name: association
   - name: attach
@@ -684,9 +636,8 @@ frames:
       - glue.v
       - secure.v
       - stick.v
-    relations:
-      scalar_opposition_to:
-        - detach
+    related:
+      - detach
   - name: attacking
     frame_type:
       - Frame
@@ -736,13 +687,10 @@ frames:
       - thrashing.n
       - wallop.v
       - whack.v
-    relations:
-      subcase_of:
-        - harm-to-living-entity
-      perspective_on:
-        - physical-combat
-      incorporates_as_role:
-        - personal-weapon
+    related:
+      - harm-to-living-entity
+      - personal-weapon
+      - physical-combat
   - name: attention
     frame_type:
       - Frame
@@ -756,9 +704,8 @@ frames:
       - name: attributor
       - name: entity
       - name: value
-    relations:
-      uses:
-        - state
+    related:
+      - state
   - name: authority
     frame_type:
       - Frame
@@ -777,11 +724,9 @@ frames:
     lexical_units:
       - authoritative.a
       - authority.n
-    relations:
-      subcase_of:
-        - control
-      uses:
-        - trust
+    related:
+      - control
+      - trust
   - name: avoiding-obstacles
     frame_type:
       - Cog
@@ -811,9 +756,8 @@ frames:
       - side-step.v
       - sidestep.n
       - sidestep.v
-    relations:
-      subcase_of:
-        - motion-with-respect-to-an-undesirable-entity
+    related:
+      - motion-with-respect-to-an-undesirable-entity
   - name: awake
     frame_type:
       - Primary
@@ -830,10 +774,9 @@ frames:
       - name: waker
     lexical_units:
       - arouse.v
-    relations:
-      uses:
-        - animate-entity
-        - awake
+    related:
+      - animate-entity
+      - awake
   - name: axis
     frame_type:
       - Cog
@@ -864,20 +807,16 @@ frames:
       - pull.v back
       - recede.v
       - retreat.v
-    relations:
-      subcase_of:
-        - motion-along-a-path
-      scalar_opposition_to:
-        - forward-motion
+    related:
+      - forward-motion
+      - motion-along-a-path
   - name: badness
     lexical_units:
       - bad.a
       - badness.n
-    relations:
-      scalar_opposition_to:
-        - goodness
-      related_to:
-        - negatively-evaluated-condition
+    related:
+      - goodness
+      - negatively-evaluated-condition
   - name: barrier
     frame_type:
       - Frame
@@ -910,11 +849,9 @@ frames:
       - roadblock.n
       - threshold.n
       - wall.n
-    relations:
-      subcase_of:
-        - motion-affecting-properties-of-the-landscape
-      uses:
-        - motion-along-a-path
+    related:
+      - motion-affecting-properties-of-the-landscape
+      - motion-along-a-path
   - name: barrier-on-a-path
     frame_type:
       - Cog
@@ -922,9 +859,8 @@ frames:
     frame_families:
       - Impediment and enablement frames
       - Motion-affecting frames
-    relations:
-      subcase_of:
-        - barrier
+    related:
+      - barrier
   - name: barrier-to-accessing-a-location
     frame_type:
       - Cog
@@ -945,12 +881,10 @@ frames:
       - rocky.a
       - stand.v in the way of
       - treacherous.a
-    relations:
-      subcase_of:
-        - barrier
-      uses:
-        - access-to-a-location
-        - inability-to-access-a-location
+    related:
+      - access-to-a-location
+      - barrier
+      - inability-to-access-a-location
   - name: beauty
     frame_type:
       - Frame
@@ -964,11 +898,9 @@ frames:
     roles:
       - name: cognizer
       - name: content
-    relations:
-      uses:
-        - access-to-knowledge
-      perspective_on:
-        - knowing
+    related:
+      - access-to-knowledge
+      - knowing
   - name: being-at-a-high-location
     frame_type:
       - Cog
@@ -998,15 +930,11 @@ frames:
       - top one percent.n
       - top.a
       - upper.a
-    relations:
-      subcase_of:
-        - being-at-a-location
-      uses:
-        - vertical-position
-      scalar_opposition_to:
-        - being-at-a-low-location
-      related_to:
-        - upward-motion
+    related:
+      - being-at-a-location
+      - being-at-a-low-location
+      - upward-motion
+      - vertical-position
   - name: being-at-a-location
     frame_type:
       - Cog
@@ -1028,12 +956,10 @@ frames:
       - locate.v
       - location.n
       - place.n
-    relations:
-      subcase_of:
-        - process
-        - trajector-landmark
-      perspective_on:
-        - location
+    related:
+      - location
+      - process
+      - trajector-landmark
   - name: being-at-a-low-location
     frame_type:
       - Cog
@@ -1062,13 +988,10 @@ frames:
       - rock bottom.n
       - rock-bottom.a
       - the pits.n
-    relations:
-      subcase_of:
-        - being-at-a-location
-      uses:
-        - vertical-position
-      scalar_opposition_to:
-        - being-at-a-high-location
+    related:
+      - being-at-a-high-location
+      - being-at-a-location
+      - vertical-position
   - name: being-high-on-a-scale
     frame_type:
       - Cog
@@ -1095,11 +1018,9 @@ frames:
       - living in
       - remain.v in
       - reside.v in
-    relations:
-      subcase_of:
-        - being-at-a-location
-      uses:
-        - bounded-entity
+    related:
+      - being-at-a-location
+      - bounded-entity
   - name: being-in-the-middle-of-a-scale
     frame_families:
       - Scale frames
@@ -1114,9 +1035,8 @@ frames:
   - name: being-low-on-a-scale
     frame_families:
       - Scale frames
-    relations:
-      subcase_of:
-        - scale
+    related:
+      - scale
   - name: being-receptive
     frame_type:
       - Frame
@@ -1129,9 +1049,8 @@ frames:
     lexical_units:
       - anchor.v
       - balance.v
-    relations:
-      scalar_opposition_to:
-        - being-unstable
+    related:
+      - being-unstable
   - name: being-unstable
     frame_type:
       - Frame
@@ -1150,11 +1069,9 @@ frames:
       - totter.v
       - waver.v
       - wobble.v
-    relations:
-      scalar_opposition_to:
-        - being-stable
-      related_to:
-        - unstable
+    related:
+      - being-stable
+      - unstable
   - name: belief
     frame_type:
       - Cog
@@ -1169,9 +1086,8 @@ frames:
     lexical_units:
       - belief.n
       - believe.v
-    relations:
-      subcase_of:
-        - cognizing
+    related:
+      - cognizing
   - name: benefit
     frame_type:
       - Frame
@@ -1185,12 +1101,10 @@ frames:
       - name: organism
       - name: part_function
       - name: specialized_parts
-    relations:
-      subcase_of:
-        - complex-physical-object
-      uses:
-        - ingestion
-        - life-cycle
+    related:
+      - complex-physical-object
+      - ingestion
+      - life-cycle
   - name: bird
     frame_type:
       - Frame
@@ -1208,9 +1122,8 @@ frames:
       - hatch.v
       - talon.n
       - wings.n
-    relations:
-      subcase_of:
-        - animate-entity
+    related:
+      - animate-entity
   - name: birth
     frame_type:
       - Frame
@@ -1226,9 +1139,8 @@ frames:
       - childbirth.n
       - give.v birth
       - parturition.n
-    relations:
-      scalar_opposition_to:
-        - death
+    related:
+      - death
   - name: blood-flow
     frame_type:
       - Frame
@@ -1247,11 +1159,9 @@ frames:
       - pulse.n
       - staunch.v
       - vein.n
-    relations:
-      subcase_of:
-        - bodily-functioning
-      uses:
-        - liquid
+    related:
+      - bodily-functioning
+      - liquid
   - name: blood-sucking-creature
     frame_type:
       - Frame
@@ -1267,11 +1177,9 @@ frames:
       - snake.n
       - tick.n
       - vampire.n
-    relations:
-      subcase_of:
-        - animate-entity
-      uses:
-        - harm-to-living-entity
+    related:
+      - animate-entity
+      - harm-to-living-entity
   - name: boat
     frame_type:
       - Frame
@@ -1301,9 +1209,8 @@ frames:
       - rudderless.a
       - ship.n
       - tiller.n
-    relations:
-      subcase_of:
-        - seafaring-vehicle
+    related:
+      - seafaring-vehicle
   - name: boat-motion-x-schema
     frame_type:
       - Frame
@@ -1335,13 +1242,11 @@ frames:
       - name: path_of_boat
     lexical_units:
       - shoal.n
-    relations:
-      subcase_of:
-        - vehicular-accident
-      uses:
-        - boat
-        - boat-motion-x-schema
-        - rocks-along-shore
+    related:
+      - boat
+      - boat-motion-x-schema
+      - rocks-along-shore
+      - vehicular-accident
   - name: bodily-functioning
     frame_type:
       - Frame
@@ -1354,11 +1259,9 @@ frames:
       - name: bodypart
       - name: cognizing_x_schema
       - name: mind
-    relations:
-      uses:
-        - part-whole
-      related_to:
-        - bodily-sensation
+    related:
+      - bodily-sensation
+      - part-whole
   - name: bodily-sensation
     frame_type:
       - Frame
@@ -1401,10 +1304,9 @@ frames:
       - nerve.n
       - spine.n
       - tooth.n
-    relations:
-      uses:
-        - animate-entity
-        - part-whole
+    related:
+      - animate-entity
+      - part-whole
   - name: body-of-water
     frame_type:
       - Frame
@@ -1429,10 +1331,9 @@ frames:
       - seaway.n
       - strait.n
       - stream.n
-    relations:
-      subcase_of:
-        - fluid-containment
-        - geographic-feature
+    related:
+      - fluid-containment
+      - geographic-feature
   - name: body-weight
     frame_type:
       - Frame
@@ -1444,15 +1345,12 @@ frames:
     lexical_units:
       - body weight
       - bodyweight
-    relations:
-      subcase_of:
-        - weight
-      uses:
-        - bodily-functioning
-        - body
-      related_to:
-        - eating
-        - resource
+    related:
+      - bodily-functioning
+      - body
+      - eating
+      - resource
+      - weight
   - name: bounded-entity
     frame_type:
       - Cog
@@ -1464,12 +1362,10 @@ frames:
       - name: entity_boundary
       - name: entity_exterior
       - name: entity_interior
-    relations:
-      subcase_of:
-        - entity
-      uses:
-        - bounded-region
-        - part-whole
+    related:
+      - bounded-region
+      - entity
+      - part-whole
   - name: bounded-region
     frame_type:
       - Cog
@@ -1495,9 +1391,8 @@ frames:
       - outside.prep
       - sphere.n
       - within.prep
-    relations:
-      subcase_of:
-        - region
+    related:
+      - region
   - name: branches-of-government
     frame_type:
       - Frame
@@ -1508,9 +1403,8 @@ frames:
       - Composed
     frame_families:
       - Entity frames
-    relations:
-      uses:
-        - object
+    related:
+      - object
   - name: building
     frame_type:
       - Frame
@@ -1557,11 +1451,9 @@ frames:
       - tower.n
       - undermine.v
       - window.n
-    relations:
-      subcase_of:
-        - physical-structure
-      uses:
-        - containing
+    related:
+      - containing
+      - physical-structure
   - name: bully
     frame_type:
       - Frame
@@ -1578,9 +1470,8 @@ frames:
       - intimidate.v
       - ruffian.n
       - thug.n
-    relations:
-      uses:
-        - harm-to-living-entity
+    related:
+      - harm-to-living-entity
   - name: burden
     frame_type:
       - Frame
@@ -1633,11 +1524,9 @@ frames:
       - weigh.v down
       - weigh.v on
       - weight.n
-    relations:
-      subcase_of:
-        - motion-affecting-objects
-      uses:
-        - weight
+    related:
+      - motion-affecting-objects
+      - weight
   - name: bureaucracy
     frame_type:
       - Frame
@@ -1660,11 +1549,9 @@ frames:
       - red tape.n
       - red-tape.n
       - red.a tape.n
-    relations:
-      uses:
-        - legislative-action
-      related_to:
-        - government-executive-action
+    related:
+      - government-executive-action
+      - legislative-action
   - name: burial
     frame_families:
       - Concealment and protection frames
@@ -1676,9 +1563,8 @@ frames:
       - heap.n
       - heap.v
       - plow.v under
-    relations:
-      subcase_of:
-        - physical-obstacle
+    related:
+      - physical-obstacle
   - name: business
     frame_type:
       - Frame
@@ -1688,10 +1574,9 @@ frames:
       - business.n
       - company.n
       - industry.n
-    relations:
-      uses:
-        - finance
-        - wealth
+    related:
+      - finance
+      - wealth
   - name: cancer
     frame_type:
       - Frame
@@ -1735,9 +1620,8 @@ frames:
       - tumor marker.n
       - tumor.n
       - uterine cancer.n
-    relations:
-      subcase_of:
-        - disease
+    related:
+      - disease
   - name: cancer-patient
     frame_type:
       - Frame
@@ -1747,9 +1631,8 @@ frames:
       - cancer patient.n
       - cancer survivor.n
       - cancer victim.n
-    relations:
-      uses:
-        - cancer
+    related:
+      - cancer
   - name: cancer-treatment
     frame_families:
       - Disease frame family
@@ -1764,11 +1647,9 @@ frames:
       - immunotherapy.n
       - radiation therapy.n
       - radiation treatment.n
-    relations:
-      subcase_of:
-        - disease-treatment
-      uses:
-        - cancer
+    related:
+      - cancer
+      - disease-treatment
   - name: card-game
     frame_type:
       - Frame
@@ -1784,9 +1665,8 @@ frames:
       - game of cards.n
       - poker.n
       - trump.v
-    relations:
-      subcase_of:
-        - game
+    related:
+      - game
   - name: career
     frame_type:
       - Frame
@@ -1797,9 +1677,8 @@ frames:
     lexical_units:
       - career.n
       - job.n
-    relations:
-      uses:
-        - employment
+    related:
+      - employment
   - name: category
     frame_type:
       - Frame
@@ -1825,9 +1704,8 @@ frames:
       - cause.n
       - cause.v
       - effect.n
-    relations:
-      subcase_of:
-        - complex-process
+    related:
+      - complex-process
   - name: cause-contact
     frame_type:
       - Cog
@@ -1843,11 +1721,9 @@ frames:
     lexical_units:
       - apply.v
       - touch.v
-    relations:
-      subcase_of:
-        - causation
-      uses:
-        - contact
+    related:
+      - causation
+      - contact
   - name: cause-to-begin-existence
   - name: cause-to-perceive
   - name: cause-to-see
@@ -1865,9 +1741,8 @@ frames:
       - name: shower
     lexical_units:
       - show.v
-    relations:
-      causal_relation_with:
-        - seeing
+    related:
+      - seeing
   - name: caused-change-of-state
     frame_families:
       - Causation frames
@@ -1883,11 +1758,9 @@ frames:
       - name: state_change
         role_type: ChangeOfStateFrame
       - name: transition
-    relations:
-      subcase_of:
-        - causation
-      uses:
-        - change-of-state
+    related:
+      - causation
+      - change-of-state
   - name: caused-downward-motion
     frame_type:
       - Cog
@@ -1912,14 +1785,11 @@ frames:
     roles:
       - name: causer
       - name: mover
-    relations:
-      causal_relation_with:
-        - downward-motion
-      scalar_opposition_to:
-        - caused-upward-motion
-      subcase_of:
-        - forced-motion
-        - forced-movement
+    related:
+      - caused-upward-motion
+      - downward-motion
+      - forced-motion
+      - forced-movement
   - name: caused-upward-motion
     frame_type:
       - Cog
@@ -1948,14 +1818,11 @@ frames:
       - raise.v
       - yank.v out
       - yank.v up
-    relations:
-      causal_relation_with:
-        - upward-motion
-      scalar_opposition_to:
-        - caused-downward-motion
-      subcase_of:
-        - forced-motion
-        - forced-movement
+    related:
+      - caused-downward-motion
+      - forced-motion
+      - forced-movement
+      - upward-motion
   - name: censorship
   - name: center-periphery
     frame_type:
@@ -1969,18 +1836,16 @@ frames:
       - central.a
       - peripheral.a
       - periphery.n
-    relations:
-      uses:
-        - proximal
+    related:
+      - proximal
   - name: certainty
   - name: change-of-location
     frame_families:
       - Change-related frames
       - Location frames
       - Movement frames
-    relations:
-      uses:
-        - being-at-a-location
+    related:
+      - being-at-a-location
   - name: change-of-state
     frame_type:
       - Cog
@@ -1997,10 +1862,9 @@ frames:
       - name: state_change_process
         role_type: XSchema
       - name: transition
-    relations:
-      subcase_of:
-        - experiencing-a-state
-        - process
+    related:
+      - experiencing-a-state
+      - process
   - name: chewing
     frame_type:
       - Frame
@@ -2037,11 +1901,9 @@ frames:
       - mother.v
       - nanny.n
       - nanny.v
-    relations:
-      subcase_of:
-        - work-scenario
-      uses:
-        - authority
+    related:
+      - authority
+      - work-scenario
   - name: circular-path
     frame_families:
       - Translational motion frames
@@ -2058,15 +1920,13 @@ frames:
       - round-a-bout.n
       - roundabout.n
       - traffic circle.n
-    relations:
-      subcase_of:
-        - physical-path
+    related:
+      - physical-path
   - name: circumstances
     frame_type:
       - Frame
-    relations:
-      related_to:
-        - situation
+    related:
+      - situation
   - name: citizen-evaluation-of-government
     frame_type:
       - Composed
@@ -2078,11 +1938,9 @@ frames:
       - name: evaluation
       - name: evaluator
       - name: standard
-    relations:
-      subcase_of:
-        - evaluation
-      uses:
-        - government
+    related:
+      - evaluation
+      - government
   - name: citizen-participation
     frame_type:
       - Frame
@@ -2091,25 +1949,22 @@ frames:
     lexical_units:
       - citizenship.n
       - civic.a
-    relations:
-      uses:
-        - participation
+    related:
+      - participation
   - name: citizen-rights
     frame_type:
       - Frame
     frame_families:
       - Rights family
-    relations:
-      subcase_of:
-        - rights
+    related:
+      - rights
   - name: citizens
     frame_families:
       - Governance frames
     lexical_units:
       - citizen.n
-    relations:
-      incorporates_as_role:
-        - citizen-participation
+    related:
+      - citizen-participation
   - name: civil-social-political-community
     frame_type:
       - Frame
@@ -2118,10 +1973,9 @@ frames:
     lexical_units:
       - civic.a
       - civil.a
-    relations:
-      uses:
-        - citizen-participation
-        - community
+    related:
+      - citizen-participation
+      - community
   - name: cleanliness
     frame_type:
       - Frame
@@ -2134,9 +1988,8 @@ frames:
       - cleanliness.n
       - launder.v
       - wash.v
-    relations:
-      related_to:
-        - purity
+    related:
+      - purity
   - name: clear-paths-to-accessing-a-location
     frame_families:
       - Impediment and enablement frames
@@ -2151,11 +2004,9 @@ frames:
       - unhindered.a
       - unobstructed.a
       - vacate.v
-    relations:
-      subcase_of:
-        - access-to-a-location
-      uses:
-        - physical-path
+    related:
+      - access-to-a-location
+      - physical-path
   - name: closing-a-portal
     frame_families:
       - Impediment and enablement frames
@@ -2170,9 +2021,8 @@ frames:
       - shutter.v
       - slam.v
       - slam.v shut
-    relations:
-      subcase_of:
-        - portals
+    related:
+      - portals
   - name: cognizing
     frame_type:
       - Frame
@@ -2187,9 +2037,8 @@ frames:
       - name: mental_capacity
       - name: mind_structure
       - name: mind_whole
-    relations:
-      uses:
-        - person
+    related:
+      - person
   - name: cold
     frame_type:
       - Cog
@@ -2203,11 +2052,9 @@ frames:
       - chilly.a
       - cold.a
       - cold.n
-    relations:
-      perspective_on:
-        - temperature
-      scalar_opposition_to:
-        - heat
+    related:
+      - heat
+      - temperature
   - name: commercial-transaction
     frame_type:
       - Frame
@@ -2216,9 +2063,8 @@ frames:
       - Frame
     lexical_units:
       - commodity
-    relations:
-      uses:
-        - value
+    related:
+      - value
   - name: communication
     frame_type:
       - Frame
@@ -2251,30 +2097,26 @@ frames:
       - telegraph.v
       - telephone.n
       - telephone.v
-    relations:
-      subcase_of:
-        - communication
+    related:
+      - communication
   - name: community
     frame_type:
       - Frame
     frame_families:
       - Governance frames
       - Social frames
-    relations:
-      subcase_of:
-        - social-group
+    related:
+      - social-group
   - name: community-relationship
     frame_type:
       - Frame
-    relations:
-      subcase_of:
-        - relationship
+    related:
+      - relationship
   - name: company
     frame_type:
       - Frame
-    relations:
-      subcase_of:
-        - organization
+    related:
+      - organization
   - name: competition
     frame_type:
       - Composed
@@ -2321,9 +2163,8 @@ frames:
       - win.v
       - winner-take-all.a
       - winner.n
-    relations:
-      uses:
-        - evaluation
+    related:
+      - evaluation
   - name: competitive-sport
     frame_type:
       - Composed
@@ -2349,9 +2190,8 @@ frames:
       - scrum.n
       - team.n
       - umpire.n
-    relations:
-      subcase_of:
-        - recreational-competition
+    related:
+      - recreational-competition
   - name: complex-physical-object
     frame_type:
       - Cog
@@ -2366,11 +2206,9 @@ frames:
       - name: object_size
       - name: object_weight
       - name: object_whole
-    relations:
-      subcase_of:
-        - object
-      uses:
-        - part-whole
+    related:
+      - object
+      - part-whole
   - name: complex-process
     roles:
       - name: complex_x_schema
@@ -2381,9 +2219,8 @@ frames:
       - name: process_relation
       - name: protagonist1
       - name: protagonist2
-    relations:
-      subcase_of:
-        - process
+    related:
+      - process
   - name: complex-structure
     frame_type:
       - Composed
@@ -2392,11 +2229,9 @@ frames:
       - name: part_relations
       - name: structure_parts
       - name: structure_whole
-    relations:
-      uses:
-        - part-whole
-      related_to:
-        - cause-contact
+    related:
+      - cause-contact
+      - part-whole
   - name: component-of-building
     frame_families:
       - Entity frames
@@ -2408,10 +2243,9 @@ frames:
       - false front
       - roof.n
       - veneer.n
-    relations:
-      uses:
-        - building
-        - support
+    related:
+      - building
+      - support
   - name: compulsion
   - name: computer
     frame_type:
@@ -2430,9 +2264,8 @@ frames:
       - name: software
     lexical_units:
       - computer.n
-    relations:
-      subcase_of:
-        - machine
+    related:
+      - machine
   - name: concentration
     frame_type:
       - Frame
@@ -2448,11 +2281,9 @@ frames:
       - diffuse.a
       - diffuse.v
       - diffusion.n
-    relations:
-      subcase_of:
-        - mass
-      uses:
-        - substance
+    related:
+      - mass
+      - substance
   - name: condition
   - name: condition-of-physical-object
     frame_type:
@@ -2489,11 +2320,9 @@ frames:
       - weathered.a
       - worn out.a
       - worn-out.a
-    relations:
-      uses:
-        - scale
-      incorporates_as_role:
-        - complex-physical-object
+    related:
+      - complex-physical-object
+      - scale
   - name: confinement
     frame_type:
       - Frame
@@ -2510,13 +2339,11 @@ frames:
       - confinement.n
       - inescapable.a
       - limitation.n
-    relations:
-      subcase_of:
-        - motion-affecting-properties-of-the-landscape
-      uses:
-        - barrier
-        - being-in-a-bounded-region
-        - inability-to-access-a-location
+    related:
+      - barrier
+      - being-in-a-bounded-region
+      - inability-to-access-a-location
+      - motion-affecting-properties-of-the-landscape
   - name: connection
   - name: consciousness
     frame_type:
@@ -2535,12 +2362,10 @@ frames:
       - US constitution.n
       - constitution.n
       - constitutional.a
-    relations:
-      uses:
-        - government-institution-us
-        - rights
-      incorporates_as_role:
-        - second-amendment
+    related:
+      - government-institution-us
+      - rights
+      - second-amendment
   - name: constructed-confinement
     frame_type:
       - Frame
@@ -2573,10 +2398,9 @@ frames:
       - stockade.n
       - wall.n
       - walls.n
-    relations:
-      subcase_of:
-        - confinement
-        - physical-structure
+    related:
+      - confinement
+      - physical-structure
   - name: constructed-restraints
     frame_type:
       - Frame
@@ -2621,12 +2445,10 @@ frames:
       - vise.n
       - yoke.n
       - yoke.v
-    relations:
-      subcase_of:
-        - restraints
-      related_to:
-        - attach
-        - detach
+    related:
+      - attach
+      - detach
+      - restraints
   - name: consume
     frame_type:
       - Frame
@@ -2664,10 +2486,9 @@ frames:
       - tap.v
       - touch.n
       - touch.v
-    relations:
-      uses:
-        - proximal
-        - touching
+    related:
+      - proximal
+      - touching
   - name: containing
     frame_type:
       - Cog
@@ -2685,10 +2506,9 @@ frames:
       - name: fullness_degree
     lexical_units:
       - contain.v
-    relations:
-      uses:
-        - containment
-        - trajector-landmark
+    related:
+      - containment
+      - trajector-landmark
   - name: containment
     frame_type:
       - Cog
@@ -2707,12 +2527,10 @@ frames:
       - contain.v
       - container.n
       - containment.n
-    relations:
-      subcase_of:
-        - bounded-region
-      uses:
-        - barrier
-        - part-whole
+    related:
+      - barrier
+      - bounded-region
+      - part-whole
   - name: contents
   - name: contracts
   - name: control
@@ -2734,12 +2552,10 @@ frames:
       - control.n
       - control.v
       - power.n
-    relations:
-      subcase_of:
-        - complex-process
-      uses:
-        - force-dynamic-interaction
-        - relation
+    related:
+      - complex-process
+      - force-dynamic-interaction
+      - relation
   - name: controlled-motion
     frame_type:
       - Composed
@@ -2755,10 +2571,9 @@ frames:
       - name: motion_x_schema
       - name: mover
       - name: speed
-    relations:
-      uses:
-        - control
-        - motion-along-a-path
+    related:
+      - control
+      - motion-along-a-path
   - name: controlled-vehicular-motion
     frame_families:
       - Affected movement frames
@@ -2777,11 +2592,9 @@ frames:
     lexical_units:
       - brake.v
       - steer.v
-    relations:
-      subcase_of:
-        - controlled-motion
-      incorporates_as_role:
-        - vehicle
+    related:
+      - controlled-motion
+      - vehicle
   - name: corporation
     frame_type:
       - Frame
@@ -2802,9 +2615,8 @@ frames:
       - corporate.a
       - corporation.n
       - firm.n
-    relations:
-      subcase_of:
-        - institution
+    related:
+      - institution
   - name: corruption
     frame_type:
       - Composed
@@ -2822,11 +2634,10 @@ frames:
       - corrupt.a
       - corrupt.v
       - corruption.n
-    relations:
-      uses:
-        - crime
-        - government-institution
-        - social-problems
+    related:
+      - crime
+      - government-institution
+      - social-problems
   - name: country
     frame_type:
       - Frame
@@ -2843,11 +2654,9 @@ frames:
       - US
       - United States
       - country
-    relations:
-      subcase_of:
-        - nation
-      uses:
-        - political-region
+    related:
+      - nation
+      - political-region
   - name: crafting
     frame_type:
       - Frame
@@ -2862,11 +2671,9 @@ frames:
       - articulate.v
       - craft.v
       - form.v
-    relations:
-      subcase_of:
-        - purposeful-action
-      uses:
-        - artifact
+    related:
+      - artifact
+      - purposeful-action
   - name: create-object
     frame_type:
       - Frame
@@ -2889,13 +2696,10 @@ frames:
       - maker.n
       - produce.v
       - producer.n
-    relations:
-      subcase_of:
-        - complex-process
-      uses:
-        - purposeful-action
-      incorporates_as_role:
-        - object
+    related:
+      - complex-process
+      - object
+      - purposeful-action
   - name: creating
   - name: crime
     frame_type:
@@ -2932,12 +2736,11 @@ frames:
       - victim.n
       - wrongdoer.n
       - wrongdoing.n
-    relations:
-      uses:
-        - harm-to-living-entity
-        - immoral-action
-        - legality
-        - social-problems
+    related:
+      - harm-to-living-entity
+      - immoral-action
+      - legality
+      - social-problems
   - name: criminal-gun-violence
     frame_type:
       - Frame
@@ -2953,14 +2756,11 @@ frames:
       - gun related crime.n
       - gun related violent crime.n
       - handgun crime.n
-    relations:
-      subcase_of:
-        - injurious-gun-use
-      uses:
-        - crime
-        - violence
-      incorporates_as_role:
-        - personal-weapon
+    related:
+      - crime
+      - injurious-gun-use
+      - personal-weapon
+      - violence
   - name: criticizing
     frame_type:
       - Frame
@@ -2999,10 +2799,9 @@ frames:
       - yield crop
       - yield.n
       - yield.v
-    relations:
-      related_to:
-        - agriculture
-        - plants
+    related:
+      - agriculture
+      - plants
   - name: curriculum
     frame_type:
       - Frame
@@ -3014,13 +2813,10 @@ frames:
       - curricula
       - curricular
       - curriculum
-    relations:
-      subcase_of:
-        - group-of-related-ideas
-      perspective_on:
-        - educational-institution
-      related_to:
-        - education
+    related:
+      - education
+      - educational-institution
+      - group-of-related-ideas
   - name: cut
     frame_type:
       - Frame
@@ -3052,17 +2848,15 @@ frames:
       - slash.v
       - slice.v
       - trim.v
-    relations:
-      subcase_of:
-        - force-application
-        - physical-harm
+    related:
+      - force-application
+      - physical-harm
   - name: cycle
     frame_type:
       - Cog
-    relations:
-      uses:
-        - process
-        - source-path-goal
+    related:
+      - process
+      - source-path-goal
   - name: danger
     frame_type:
       - Frame
@@ -3095,9 +2889,8 @@ frames:
       - threatening.a
       - treacherous.a
       - unsafe.a
-    relations:
-      uses:
-        - physical-harm
+    related:
+      - physical-harm
   - name: darkness
     frame_families:
       - Perception frames
@@ -3129,11 +2922,9 @@ frames:
       - sunless.a
       - twilight.n
       - unlit.a
-    relations:
-      perspective_on:
-        - luminosity
-      scalar_opposition_to:
-        - lightness
+    related:
+      - lightness
+      - luminosity
   - name: death
     frame_type:
       - Frame
@@ -3158,25 +2949,19 @@ frames:
       - mourn.v
       - mourning.n
       - stillborn.a
-    relations:
-      subcase_of:
-        - caused-change-of-state
-      scalar_opposition_to:
-        - birth
-      incorporates_as_role:
-        - biological-entity
+    related:
+      - biological-entity
+      - birth
+      - caused-change-of-state
   - name: debating
     frame_type:
       - Frame
     frame_families:
       - Communication frames
-    relations:
-      subcase_of:
-        - discussing
-      uses:
-        - communication
-      related_to:
-        - argument
+    related:
+      - argument
+      - communication
+      - discussing
   - name: debt
     frame_type:
       - Frame
@@ -3198,9 +2983,8 @@ frames:
       - owe.v
       - owing
       - unpaid
-    relations:
-      related_to:
-        - money
+    related:
+      - money
   - name: decay
     frame_type:
       - Frame
@@ -3221,9 +3005,8 @@ frames:
       - rot.v
       - rust.n
       - rust.v
-    relations:
-      subcase_of:
-        - destructive-natural-process
+    related:
+      - destructive-natural-process
   - name: decision-making
     frame_type:
       - Frame
@@ -3268,11 +3051,9 @@ frames:
       - shrinking.n
       - shrunken.a
       - smaller.a
-    relations:
-      uses:
-        - size
-      scalar_opposition_to:
-        - increase-size
+    related:
+      - increase-size
+      - size
   - name: deforming
     frame_type:
       - Frame
@@ -3307,9 +3088,8 @@ frames:
       - twist.n
       - twist.v
       - warp.v
-    relations:
-      subcase_of:
-        - physical-harm
+    related:
+      - physical-harm
   - name: degeneration
   - name: degree
   - name: deity
@@ -3333,13 +3113,11 @@ frames:
       - idol.n
       - pantheon
       - sacred.a
-    relations:
-      subcase_of:
-        - moral-authority
+    related:
+      - moral-authority
   - name: delegation-of-trust
-    relations:
-      subcase_of:
-        - trust
+    related:
+      - trust
   - name: democracy
     frame_type:
       - Frame
@@ -3357,19 +3135,16 @@ frames:
       - name: democratic_governor
       - name: democratic_jurisdiction_region
       - name: governed_of_democratic_state
-    relations:
-      subcase_of:
-        - government
+    related:
+      - government
   - name: democratic-ideology
     frame_type:
       - Frame
     frame_families:
       - Democracy frames
-    relations:
-      subcase_of:
-        - ideology
-      uses:
-        - democracy
+    related:
+      - democracy
+      - ideology
   - name: democratic-institution
     frame_type:
       - Frame
@@ -3377,11 +3152,9 @@ frames:
       - Democratic institutions frames
     lexical_units:
       - democratic.a institution.n
-    relations:
-      subcase_of:
-        - government-institution
-      uses:
-        - democracy
+    related:
+      - democracy
+      - government-institution
   - name: desire
     roles:
       - name: desire
@@ -3396,9 +3169,8 @@ frames:
     roles:
       - name: desired_content
       - name: experiencer
-    relations:
-      subcase_of:
-        - cognizing
+    related:
+      - cognizing
   - name: destroying
     frame_type:
       - Frame
@@ -3443,9 +3215,8 @@ frames:
       - wipe.v out
       - wrack.v
       - wreck.v
-    relations:
-      subcase_of:
-        - physical-harm
+    related:
+      - physical-harm
   - name: destructive-force
     frame_type:
       - Frame
@@ -3459,9 +3230,8 @@ frames:
       - name: destructive_force
     lexical_units:
       - destructive.a
-    relations:
-      subcase_of:
-        - force
+    related:
+      - force
   - name: destructive-natural-process
     frame_type:
       - Frame
@@ -3478,12 +3248,10 @@ frames:
       - deteriorate.v
       - deterioration.n
       - disintegrate.v
-    relations:
-      subcase_of:
-        - destroying
-        - natural-process
-      uses:
-        - destructive-force
+    related:
+      - destroying
+      - destructive-force
+      - natural-process
   - name: detach
     frame_type:
       - Frame
@@ -3500,9 +3268,8 @@ frames:
       - unshackle.v
       - untether.v
       - untie.v
-    relations:
-      scalar_opposition_to:
-        - attach
+    related:
+      - attach
   - name: diagnosis-of-affliction
     frame_type:
       - Frame
@@ -3524,10 +3291,9 @@ frames:
       - apart
       - gap
       - step.n ahead
-    relations:
-      uses:
-        - length
-        - scale
+    related:
+      - length
+      - scale
   - name: differences-in-state
     frame_type:
       - Frame
@@ -3550,9 +3316,8 @@ frames:
       - difficulty.n
       - distress
       - hardship.n
-    relations:
-      uses:
-        - purposeful-action
+    related:
+      - purposeful-action
   - name: difficulty
   - name: digestion
   - name: diplomacy
@@ -3574,9 +3339,8 @@ frames:
       - name: experiencer
       - name: reason
       - name: target
-    relations:
-      subcase_of:
-        - emotion
+    related:
+      - emotion
   - name: directed-vision
     frame_type:
       - Frame
@@ -3585,9 +3349,8 @@ frames:
     lexical_units:
       - confront.v
       - face.v
-    relations:
-      related_to:
-        - seeing
+    related:
+      - seeing
   - name: discard
     frame_type:
       - Frame
@@ -3609,9 +3372,8 @@ frames:
       - scrap.v
       - throw.v away
       - trash.n
-    relations:
-      subcase_of:
-        - object-manipulation
+    related:
+      - object-manipulation
   - name: discovery
   - name: discussing
     frame_families:
@@ -3665,9 +3427,8 @@ frames:
       - symptom.n
       - virulent.a
       - virus.n
-    relations:
-      subcase_of:
-        - physical-affliction
+    related:
+      - physical-affliction
   - name: disease-spread
     frame_type:
       - Frame
@@ -3694,9 +3455,8 @@ frames:
       - pestilent.a
       - plague.n
       - plague.v
-    relations:
-      uses:
-        - disease
+    related:
+      - disease
   - name: disease-treatment
     frame_type:
       - Composed
@@ -3720,11 +3480,9 @@ frames:
       - medicine.n
       - patient.n
       - surgeon.n
-    relations:
-      subcase_of:
-        - treating-a-physical-affliction
-      uses:
-        - disease
+    related:
+      - disease
+      - treating-a-physical-affliction
   - name: disgusting
     frame_type:
       - Frame
@@ -3764,9 +3522,8 @@ frames:
       - stinky.a
       - unclean.a
       - vile.a
-    relations:
-      subcase_of:
-        - impurity
+    related:
+      - impurity
   - name: disorderly-group
     frame_type:
       - Frame
@@ -3777,9 +3534,8 @@ frames:
       - mob.n
       - posse.n
       - rabble.n
-    relations:
-      subcase_of:
-        - social-group
+    related:
+      - social-group
   - name: dispersal
     frame_type:
       - Frame
@@ -3803,10 +3559,9 @@ frames:
       - scatter.v
       - share.v
       - strew.v
-    relations:
-      related_to:
-        - lose-possession
-        - resource-transfer
+    related:
+      - lose-possession
+      - resource-transfer
   - name: dissect
     frame_type:
       - Frame
@@ -3824,12 +3579,10 @@ frames:
       - dismember.v
       - dissect.v
       - scalpel.n
-    relations:
-      subcase_of:
-        - cut
-      uses:
-        - biological-entity
-        - caused-change-of-state
+    related:
+      - biological-entity
+      - caused-change-of-state
+      - cut
   - name: distances-between-locations
     frame_families:
       - Location frames
@@ -3855,11 +3608,9 @@ frames:
       - remote
       - removed
       - unreachable
-    relations:
-      perspective_on:
-        - proximity
-      scalar_opposition_to:
-        - proximal
+    related:
+      - proximal
+      - proximity
   - name: distinguishing
   - name: dividing
   - name: downward-motion
@@ -3918,13 +3669,10 @@ frames:
       - topple.v
       - tumble.v
       - tumble.v
-    relations:
-      subcase_of:
-        - motion-along-a-path
-      uses:
-        - verticality
-      scalar_opposition_to:
-        - upward-motion
+    related:
+      - motion-along-a-path
+      - upward-motion
+      - verticality
   - name: draw-a-picture
     roles:
       - name: audience
@@ -3959,14 +3707,12 @@ frames:
       - pot.n
       - psilocybin.n
       - salvia.n
-    relations:
-      subcase_of:
-        - crime
-        - intoxicants
-        - physical-affliction
-        - social-problems
-      related_to:
-        - addiction
+    related:
+      - addiction
+      - crime
+      - intoxicants
+      - physical-affliction
+      - social-problems
   - name: duration
     frame_type:
       - Frame
@@ -3993,9 +3739,8 @@ frames:
       - hut.n
       - mansion.n
       - residence.n
-    relations:
-      subcase_of:
-        - building
+    related:
+      - building
   - name: eating
     frame_type:
       - Frame
@@ -4020,14 +3765,11 @@ frames:
       - nibble.v
       - snack.n
       - snack.v
-    relations:
-      subcase_of:
-        - consume
-        - ingestion
-      related_to:
-        - chewing
-      incorporates_as_role:
-        - food
+    related:
+      - chewing
+      - consume
+      - food
+      - ingestion
   - name: economic-competition
     frame_type:
       - Composed
@@ -4036,11 +3778,9 @@ frames:
       - Competition frames
     roles:
       - name: economic_prize
-    relations:
-      subcase_of:
-        - competition
-      uses:
-        - limited-resource
+    related:
+      - competition
+      - limited-resource
   - name: economic-difficulty
     frame_type:
       - Composed
@@ -4053,12 +3793,10 @@ frames:
       - name: cause_of_difficulty
       - name: difficulty
       - name: objective
-    relations:
-      subcase_of:
-        - difficulty
-      uses:
-        - economy
-        - experiencing-an-economic-status
+    related:
+      - difficulty
+      - economy
+      - experiencing-an-economic-status
   - name: economic-resource
     frame_type:
       - Frame
@@ -4069,9 +3807,8 @@ frames:
       - funds.n
       - subsidize.v
       - subsidy.n
-    relations:
-      subcase_of:
-        - resource
+    related:
+      - resource
   - name: economic-status
     frame_type:
       - Frame
@@ -4090,16 +3827,13 @@ frames:
         role_type: Entity
     lexical_units:
       - economic status
-    relations:
-      subcase_of:
-        - social-group
-        - status
-      uses:
-        - financial-resource
-        - possession
-        - scale
-      related_to:
-        - social-class
+    related:
+      - financial-resource
+      - possession
+      - scale
+      - social-class
+      - social-group
+      - status
   - name: economy
     frame_type:
       - Frame
@@ -4140,9 +3874,8 @@ frames:
       - rim.n
       - shore.n
       - verge.n
-    relations:
-      uses:
-        - bounded-region
+    related:
+      - bounded-region
   - name: education
     frame_type:
       - Frame
@@ -4160,17 +3893,14 @@ frames:
       - pedagogy
       - study
       - training
-    relations:
-      uses:
-        - knowledge
+    related:
+      - knowledge
   - name: educational-evaluation
     frame_families:
       - Education frames
-    relations:
-      subcase_of:
-        - evaluation
-      uses:
-        - education
+    related:
+      - education
+      - evaluation
   - name: educational-institution
     frame_type:
       - Frame
@@ -4186,19 +3916,15 @@ frames:
       - test
       - testing
       - university
-    relations:
-      subcase_of:
-        - institution
-      uses:
-        - education
+    related:
+      - education
+      - institution
   - name: educational-opportunities
     frame_type:
       - Frame
-    relations:
-      subcase_of:
-        - opportunities
-      uses:
-        - education
+    related:
+      - education
+      - opportunities
   - name: election
     frame_type:
       - Composed
@@ -4230,14 +3956,11 @@ frames:
       - electoral.a system.n
       - electorate.n
       - gerrymander.v
-    relations:
-      subcase_of:
-        - political-competition
-      uses:
-        - debating
-        - voting
-      related_to:
-        - government
+    related:
+      - debating
+      - government
+      - political-competition
+      - voting
   - name: emotion
     frame_type:
       - Cog
@@ -4257,11 +3980,9 @@ frames:
       - name: mind
     lexical_units:
       - emotion.n
-    relations:
-      subcase_of:
-        - experiencing-a-state
-      related_to:
-        - bodily-functioning
+    related:
+      - bodily-functioning
+      - experiencing-a-state
   - name: emotional-intensity
     frame_type:
       - Cog
@@ -4272,11 +3993,9 @@ frames:
     roles:
       - name: emotional_intensity_scale
       - name: emotional_intensity_x_schema
-    relations:
-      subcase_of:
-        - emotion
-      uses:
-        - scale
+    related:
+      - emotion
+      - scale
   - name: employment
     frame_type:
       - Frame
@@ -4296,10 +4015,9 @@ frames:
       - employee.n
       - employer.n
       - employment.n
-    relations:
-      uses:
-        - control
-        - work-scenario
+    related:
+      - control
+      - work-scenario
   - name: enable-ability-to-access-locations
     frame_families:
       - Impediment and enablement frames
@@ -4311,11 +4029,9 @@ frames:
       - open.v doors
       - pave.v the way
       - smooth.v the way
-    relations:
-      subcase_of:
-        - increase-ease-of-motion
-      uses:
-        - access-to-a-location
+    related:
+      - access-to-a-location
+      - increase-ease-of-motion
   - name: enablement
     frame_type:
       - Cog
@@ -4347,9 +4063,8 @@ frames:
       - fuel.v
       - voltage.n
       - wattage.n
-    relations:
-      subcase_of:
-        - resource
+    related:
+      - resource
   - name: entity
     frame_type:
       - Cog
@@ -4377,9 +4092,8 @@ frames:
       - pollute.v
       - pollution.n
       - smog.n
-    relations:
-      subcase_of:
-        - harm
+    related:
+      - harm
   - name: environmental-restraints
     frame_type:
       - Frame
@@ -4406,9 +4120,8 @@ frames:
       - tarpit.n
       - thicket.n
       - web.n
-    relations:
-      subcase_of:
-        - restraints
+    related:
+      - restraints
   - name: equality
     frame_type:
       - Frame
@@ -4441,9 +4154,8 @@ frames:
       - eat away.v
       - erode.v
       - erosion.n
-    relations:
-      subcase_of:
-        - destructive-natural-process
+    related:
+      - destructive-natural-process
   - name: essence
     frame_type:
       - Frame
@@ -4472,11 +4184,9 @@ frames:
       - loathsome
       - vicious
       - vile
-    relations:
-      uses:
-        - immorality
-      scalar_opposition_to:
-        - moral-goodness
+    related:
+      - immorality
+      - moral-goodness
   - name: evil-creature
     frame_type:
       - Frame
@@ -4513,12 +4223,10 @@ frames:
       - villain.n
       - werewolf.n
       - zombie.n
-    relations:
-      subcase_of:
-        - animate-entity
-      uses:
-        - harm-to-living-entity
-        - immorality
+    related:
+      - animate-entity
+      - harm-to-living-entity
+      - immorality
   - name: excess-body-weight
     frame_type:
       - Frame
@@ -4537,11 +4245,9 @@ frames:
       - obesity
       - opulent
       - puffed out
-    relations:
-      subcase_of:
-        - body-weight
-      uses:
-        - increase-size
+    related:
+      - body-weight
+      - increase-size
   - name: existence
     frame_type:
       - Cog
@@ -4554,9 +4260,8 @@ frames:
       - exist
       - existence
       - is
-    relations:
-      subcase_of:
-        - process
+    related:
+      - process
   - name: experience-pain
     frame_type:
       - Frame
@@ -4586,11 +4291,9 @@ frames:
       - suffer.v
       - suffering.n
       - twinge.n
-    relations:
-      subcase_of:
-        - experiencing-a-state
-      perspective_on:
-        - harm-to-living-entity
+    related:
+      - experiencing-a-state
+      - harm-to-living-entity
   - name: experiencing-a-negative-state
     frame_families:
       - State-related frames
@@ -4600,9 +4303,8 @@ frames:
       - name: standard
       - name: state_value
       - name: state_x_schema
-    relations:
-      subcase_of:
-        - experiencing-a-state
+    related:
+      - experiencing-a-state
   - name: experiencing-a-state
     frame_type:
       - Cog
@@ -4617,11 +4319,9 @@ frames:
       - name: state
       - name: stative_x_schema
         role_type: XSchema
-    relations:
-      subcase_of:
-        - process
-      uses:
-        - state
+    related:
+      - process
+      - state
   - name: experiencing-an-economic-status
     frame_type:
       - Frame
@@ -4636,11 +4336,9 @@ frames:
       - name: status
       - name: status_holder
         role_type: Person
-    relations:
-      subcase_of:
-        - experiencing-a-state
-      perspective_on:
-        - economic-status
+    related:
+      - economic-status
+      - experiencing-a-state
   - name: extinguish
     frame_type:
       - Frame
@@ -4651,13 +4349,10 @@ frames:
       - put out.v
       - quench.v
       - snuff out.v
-    relations:
-      subcase_of:
-        - caused-change-of-state
-      uses:
-        - fire
-      related_to:
-        - destroying
+    related:
+      - caused-change-of-state
+      - destroying
+      - fire
   - name: factory
     frame_type:
       - Frame
@@ -4674,10 +4369,9 @@ frames:
       - factory.n
       - factory.n worker.n
       - manufacture.v
-    relations:
-      uses:
-        - institution
-        - part-whole
+    related:
+      - institution
+      - part-whole
   - name: fairness
     frame_type:
       - Frame
@@ -4708,9 +4402,8 @@ frames:
       - sister.n
       - son.n
       - uncle.n
-    relations:
-      subcase_of:
-        - social-group
+    related:
+      - social-group
   - name: feeding
   - name: fierce-animal
     frame_type:
@@ -4761,13 +4454,11 @@ frames:
       - viciousness.n
       - viper.n
       - wolf.n
-    relations:
-      subcase_of:
-        - animal
-      uses:
-        - danger
-        - harm-to-living-entity
-        - part-whole
+    related:
+      - animal
+      - danger
+      - harm-to-living-entity
+      - part-whole
   - name: finance
     frame_type:
       - Frame
@@ -4778,9 +4469,8 @@ frames:
       - financial.a
       - fiscal.a
       - investment.n
-    relations:
-      uses:
-        - economy
+    related:
+      - economy
   - name: financial-resource
     frame_families:
       - Economic frames
@@ -4790,11 +4480,9 @@ frames:
       - name: amount
       - name: resource
       - name: type
-    relations:
-      subcase_of:
-        - resource
-      uses:
-        - monetary-evaluation
+    related:
+      - monetary-evaluation
+      - resource
   - name: financial-transaction
     frame_type:
       - Frame
@@ -4856,11 +4544,9 @@ frames:
       - staunch.a
       - stiff.a
       - unyielding.a
-    relations:
-      perspective_on:
-        - firmness
-      scalar_opposition_to:
-        - lax
+    related:
+      - firmness
+      - lax
   - name: firmness
     frame_type:
       - Frame
@@ -4874,13 +4560,10 @@ frames:
     lexical_units:
       - firmness.n
       - solidity.n
-    relations:
-      subcase_of:
-        - condition-of-physical-object
-      uses:
-        - scale
-      incorporates_as_role:
-        - complex-physical-object
+    related:
+      - complex-physical-object
+      - condition-of-physical-object
+      - scale
   - name: fit
     frame_type:
       - Frame
@@ -4907,19 +4590,16 @@ frames:
       - repairing.n
       - revamp.v
       - stitch.v up
-    relations:
-      subcase_of:
-        - restore
-      related_to:
-        - attach
+    related:
+      - attach
+      - restore
   - name: flexible-object
     frame_type:
       - Composed
     frame_families:
       - Entity frames
-    relations:
-      uses:
-        - object
+    related:
+      - object
   - name: fluid-containment
     frame_type:
       - Frame
@@ -4931,12 +4611,10 @@ frames:
       - name: fluid
         role_type: Liquid
       - name: fluid_level
-    relations:
-      uses:
-        - containing
-        - liquid
-      related_to:
-        - release-liquid
+    related:
+      - containing
+      - liquid
+      - release-liquid
   - name: fluid-motion
     frame_type:
       - Frame
@@ -4992,11 +4670,9 @@ frames:
       - trickle.v
       - waterfall.n
       - wave.n
-    relations:
-      subcase_of:
-        - motion
-      incorporates_as_role:
-        - liquid
+    related:
+      - liquid
+      - motion
   - name: food
     frame_type:
       - Frame
@@ -5017,13 +4693,10 @@ frames:
       - nutrition.n
       - nutritional.a
       - portion.n
-    relations:
-      subcase_of:
-        - physical-entity
-      uses:
-        - eating
-      related_to:
-        - resource
+    related:
+      - eating
+      - physical-entity
+      - resource
   - name: food-preparation
     roles:
       - name: food
@@ -5067,12 +4740,10 @@ frames:
       - push.v
       - ram.v
       - shove.v
-    relations:
-      subcase_of:
-        - action
-      uses:
-        - contact
-        - force-transfer
+    related:
+      - action
+      - contact
+      - force-transfer
   - name: force-dynamic-interaction
     frame_type:
       - Cog
@@ -5085,11 +4756,9 @@ frames:
       - name: force_receiver
       - name: forceful_process
       - name: second_process
-    relations:
-      subcase_of:
-        - complex-process
-      uses:
-        - force-transfer
+    related:
+      - complex-process
+      - force-transfer
   - name: force-transfer
     frame_families:
       - Force dynamic frames
@@ -5102,9 +4771,8 @@ frames:
         role_type: Entity
       - name: force_receiver
         role_type: Entity
-    relations:
-      incorporates_as_role:
-        - force
+    related:
+      - force
   - name: forced-motion
     frame_type:
       - Composed
@@ -5135,11 +4803,9 @@ frames:
       - swing.v
       - yank.v
       - yank.v into
-    relations:
-      subcase_of:
-        - affected-motion
-      uses:
-        - force-application
+    related:
+      - affected-motion
+      - force-application
   - name: forced-movement
     frame_type:
       - Cog
@@ -5176,13 +4842,10 @@ frames:
       - ram.v
       - shove.v
       - swing.v
-    relations:
-      subcase_of:
-        - causation
-      uses:
-        - force-application
-      causal_relation_with:
-        - motion-along-a-path
+    related:
+      - causation
+      - force-application
+      - motion-along-a-path
   - name: forming-words
     frame_families:
       - Cognition frames
@@ -5192,11 +4855,9 @@ frames:
       - name: cognizer
       - name: linguistic_expression
       - name: thoughts
-    relations:
-      subcase_of:
-        - cognizing
-      uses:
-        - word
+    related:
+      - cognizing
+      - word
   - name: forward-motion
     frame_type:
       - Cog
@@ -5215,11 +4876,9 @@ frames:
       - move.v forward
       - progress.n
       - progress.v
-    relations:
-      subcase_of:
-        - motion-along-a-path
-      scalar_opposition_to:
-        - backward-motion
+    related:
+      - backward-motion
+      - motion-along-a-path
   - name: freedom
     frame_type:
       - Frame
@@ -5232,10 +4891,9 @@ frames:
       - freedom.n
       - liberty.n
       - personal liberty.n
-    relations:
-      uses:
-        - control
-        - rights
+    related:
+      - control
+      - rights
   - name: freedom-of-action
     frame_type:
       - Frame
@@ -5251,9 +4909,8 @@ frames:
       - independent.a
       - unfettered.a
       - unimpeded.a
-    relations:
-      perspective_on:
-        - action
+    related:
+      - action
   - name: friendships
   - name: functionality
     frame_type:
@@ -5270,16 +4927,14 @@ frames:
     lexical_units:
       - functional.a
       - functionality.n
-    relations:
-      uses:
-        - need
-        - scale
+    related:
+      - need
+      - scale
   - name: funding-education
     frame_families:
       - Education frames
-    relations:
-      uses:
-        - education
+    related:
+      - education
   - name: gain-possession
     frame_type:
       - Cog
@@ -5307,11 +4962,9 @@ frames:
       - seize.v
       - snatch.v
       - take.v
-    relations:
-      perspective_on:
-        - possession
-      incorporates_as_role:
-        - possessable-object
+    related:
+      - possessable-object
+      - possession
   - name: gambling
     frame_type:
       - Frame
@@ -5335,9 +4988,8 @@ frames:
       - poker game.n
       - poker.n
       - roulette.n
-    relations:
-      subcase_of:
-        - recreational-competition
+    related:
+      - recreational-competition
   - name: game
     frame_type:
       - Composed
@@ -5361,9 +5013,8 @@ frames:
       - pawn.n
       - player.n
       - score.n
-    relations:
-      subcase_of:
-        - recreational-competition
+    related:
+      - recreational-competition
   - name: gap-in-path
     frame_families:
       - Motion frames
@@ -5379,10 +5030,9 @@ frames:
       - gulf.n
       - rift.n
       - schism.n
-    relations:
-      subcase_of:
-        - barrier
-        - geographic-void
+    related:
+      - barrier
+      - geographic-void
   - name: gardening
   - name: geographic-feature
     frame_type:
@@ -5399,26 +5049,23 @@ frames:
       - plateau.n
       - vale.n
       - valley.n
-    relations:
-      subcase_of:
-        - object
+    related:
+      - object
   - name: geographic-void
     frame_type:
       - Frame
     frame_families:
       - Entity frames
-    relations:
-      subcase_of:
-        - geographic-feature
+    related:
+      - geographic-feature
   - name: goodness
     frame_type:
       - Composed
       - Frame
     frame_families:
       - Morality frames
-    relations:
-      uses:
-        - morality
+    related:
+      - morality
   - name: governing-action
     frame_type:
       - Frame
@@ -5439,13 +5086,11 @@ frames:
       - name: normative_governing_actions
     lexical_units:
       - govern.v
-    relations:
-      subcase_of:
-        - purposeful-action
-      uses:
-        - government
-        - judgment
-        - process
+    related:
+      - government
+      - judgment
+      - process
+      - purposeful-action
   - name: government
     frame_type:
       - Frame
@@ -5470,14 +5115,12 @@ frames:
       - government.n
       - governmental.a
       - the state.n
-    relations:
-      subcase_of:
-        - organization
-      uses:
-        - authority
-        - government-institution
-        - political-region
-        - trust-relationship
+    related:
+      - authority
+      - government-institution
+      - organization
+      - political-region
+      - trust-relationship
   - name: government-debt
   - name: government-decision-making
     frame_type:
@@ -5499,14 +5142,12 @@ frames:
       - name: entity_under_consideration_ongoing_state
       - name: entity_under_consideration_status_change
       - name: introduction_of_entity_under_consideration
-    relations:
-      subcase_of:
-        - decision-making
-        - governing-action
-      uses:
-        - caused-change-of-state
-        - evaluation
-        - purposeful-action
+    related:
+      - caused-change-of-state
+      - decision-making
+      - evaluation
+      - governing-action
+      - purposeful-action
   - name: government-executive-action
     frame_type:
       - Frame
@@ -5521,9 +5162,8 @@ frames:
       - name: governing_objectives
       - name: non_normative_executive_actions
       - name: normative_executive_actions
-    relations:
-      subcase_of:
-        - governing-action
+    related:
+      - governing-action
   - name: government-institution
     frame_type:
       - Composed
@@ -5549,11 +5189,9 @@ frames:
       - governmental bureau.n
       - governmental.a agency.n
       - governmental.a board.n
-    relations:
-      subcase_of:
-        - institution
-      uses:
-        - government
+    related:
+      - government
+      - institution
   - name: government-institution-us
     frame_type:
       - Frame
@@ -5568,12 +5206,10 @@ frames:
       - name: judicial_branch
       - name: legislative_branch
       - name: responsibilities
-    relations:
-      subcase_of:
-        - government-institution
-      related_to:
-        - judicial-branch
-        - legislative-branch
+    related:
+      - government-institution
+      - judicial-branch
+      - legislative-branch
   - name: government-legitimacy
     frame_type:
       - Composed
@@ -5585,12 +5221,10 @@ frames:
       - name: capability_to_act
       - name: source_of_authority
       - name: trustworthiness
-    relations:
-      subcase_of:
-        - legitimacy
-      uses:
-        - government
-        - trust-relationship
+    related:
+      - government
+      - legitimacy
+      - trust-relationship
   - name: government-power
   - name: grasp
     frame_type:
@@ -5618,12 +5252,10 @@ frames:
       - grip.v
       - hold.n
       - hold.v
-    relations:
-      subcase_of:
-        - motion-affecting-actors
-        - object-manipulation
-      related_to:
-        - possession
+    related:
+      - motion-affecting-actors
+      - object-manipulation
+      - possession
   - name: greed
     frame_type:
       - Frame
@@ -5645,26 +5277,22 @@ frames:
     lexical_units:
       - group
       - set
-    relations:
-      uses:
-        - plurality
+    related:
+      - plurality
   - name: group-membership
     frame_type:
       - Frame
     roles:
       - name: member
       - name: membership_fee
-    relations:
-      subcase_of:
-        - membership
-      uses:
-        - group
+    related:
+      - group
+      - membership
   - name: group-of-related-ideas
     frame_type:
       - Frame
-    relations:
-      subcase_of:
-        - category
+    related:
+      - category
   - name: guided-motion
     frame_type:
       - Frame
@@ -5693,9 +5321,8 @@ frames:
       - lead.v
       - leader.n
       - misguide.v
-    relations:
-      subcase_of:
-        - affected-motion
+    related:
+      - affected-motion
   - name: gun-control
     frame_type:
       - Frame
@@ -5714,11 +5341,9 @@ frames:
       - firearm.n restriction.n
       - gun.n control.n
       - gun.n restriction.n
-    relations:
-      subcase_of:
-        - control
-      uses:
-        - personal-weapon
+    related:
+      - control
+      - personal-weapon
   - name: gun-control-advocacy
     frame_type:
       - Frame
@@ -5752,11 +5377,9 @@ frames:
       - gun-control lobby.n
       - gun-control politics
       - gun-control sentiment
-    relations:
-      subcase_of:
-        - advocacy
-      incorporates_as_role:
-        - gun-control
+    related:
+      - advocacy
+      - gun-control
   - name: gun-control-advocate
     frame_type:
       - Frame
@@ -5783,11 +5406,9 @@ frames:
       - gun-grabber.n
       - hoplophobe.n
       - hoplophobia.n
-    relations:
-      subcase_of:
-        - person
-      uses:
-        - gun-control-advocacy
+    related:
+      - gun-control-advocacy
+      - person
   - name: gun-control-legislation
     frame_families:
       - Control of guns family
@@ -5835,11 +5456,9 @@ frames:
       - regulation of gun.n
       - regulation.n on firearm.n
       - regulation.n on gun.n
-    relations:
-      subcase_of:
-        - gun-legislation
-      uses:
-        - gun-control
+    related:
+      - gun-control
+      - gun-legislation
   - name: gun-debate
     frame_type:
       - Frame
@@ -5855,9 +5474,8 @@ frames:
       - gun rights debate
       - gun-control debate
       - gun-rights debate
-    relations:
-      uses:
-        - debating
+    related:
+      - debating
   - name: gun-industry
     frame_type:
       - Frame
@@ -5875,20 +5493,17 @@ frames:
       - gun show loophole.n
       - gun show.n
       - sale.n of guns
-    relations:
-      uses:
-        - commercial-transaction
-        - gun-possession
+    related:
+      - commercial-transaction
+      - gun-possession
   - name: gun-law-decision-making
   - name: gun-legislation
     frame_families:
       - Gun debate
       - Legislation frames
-    relations:
-      subcase_of:
-        - legislation-enactment
-      uses:
-        - personal-weapon
+    related:
+      - legislation-enactment
+      - personal-weapon
   - name: gun-ownership
     frame_type:
       - Frame
@@ -5901,11 +5516,9 @@ frames:
       - gun.n ownership.n
       - own.v gun.n
       - own.v guns
-    relations:
-      subcase_of:
-        - ownership
-      related_to:
-        - gun-rights
+    related:
+      - gun-rights
+      - ownership
   - name: gun-possession
     frame_type:
       - Frame
@@ -5928,13 +5541,10 @@ frames:
       - gun possession.n
       - gun-toting.a
       - open carry.n
-    relations:
-      subcase_of:
-        - possession
-      related_to:
-        - gun-use
-      incorporates_as_role:
-        - personal-weapon
+    related:
+      - gun-use
+      - personal-weapon
+      - possession
   - name: gun-rights
     frame_type:
       - Frame
@@ -5958,13 +5568,11 @@ frames:
       - right.n to bear firearm.n
       - right.n to own firearm.n
       - right.n to own gun.n
-    relations:
-      subcase_of:
-        - rights
-      uses:
-        - gun-possession
-        - personal-weapon
-        - second-amendment
+    related:
+      - gun-possession
+      - personal-weapon
+      - rights
+      - second-amendment
   - name: gun-rights-advocacy
     frame_type:
       - Frame
@@ -5983,13 +5591,10 @@ frames:
       - pro-gun lobby.n
       - pro-gun movement.n
       - the gun lobby.n
-    relations:
-      subcase_of:
-        - advocacy
-      scalar_opposition_to:
-        - gun-control-advocacy
-      incorporates_as_role:
-        - gun-rights
+    related:
+      - advocacy
+      - gun-control-advocacy
+      - gun-rights
   - name: gun-rights-advocacy-interest-group
     frame_type:
       - Frame
@@ -6005,11 +5610,9 @@ frames:
       - National Rifle Association
       - Second Amendment Foundation
       - gun rights advocate.n
-    relations:
-      subcase_of:
-        - organization
-      uses:
-        - gun-rights-advocacy
+    related:
+      - gun-rights-advocacy
+      - organization
   - name: gun-rights-advocate
     frame_type:
       - Frame
@@ -6041,11 +5644,9 @@ frames:
       - pro-gun advocate.n
       - second amendment advocate.n
       - weekend rambo.n
-    relations:
-      subcase_of:
-        - person
-      uses:
-        - gun-rights-advocacy
+    related:
+      - gun-rights-advocacy
+      - person
   - name: gun-rights-legislation
     frame_type:
       - Frame
@@ -6064,12 +5665,10 @@ frames:
       - pro-gun bill.n
       - pro-gun law.n
       - pro-gun legislation.n
-    relations:
-      subcase_of:
-        - gun-legislation
-      uses:
-        - gun-rights
-        - personal-weapon
+    related:
+      - gun-legislation
+      - gun-rights
+      - personal-weapon
   - name: gun-use
     frame_type:
       - Frame
@@ -6079,9 +5678,8 @@ frames:
       - name: gun
       - name: gun_user
       - name: purpose_of_gun_use
-    relations:
-      subcase_of:
-        - using
+    related:
+      - using
   - name: happiness
     frame_type:
       - Frame
@@ -6096,9 +5694,8 @@ frames:
     lexical_units:
       - happiness.n
       - happy.a
-    relations:
-      subcase_of:
-        - emotion
+    related:
+      - emotion
   - name: hardness
   - name: harm
     frame_type:
@@ -6121,9 +5718,8 @@ frames:
       - harm.n
       - harm.v
       - harmful.a
-    relations:
-      subcase_of:
-        - causation
+    related:
+      - causation
   - name: harm-to-living-entity
     frame_type:
       - Frame
@@ -6180,11 +5776,9 @@ frames:
       - venin.n
       - venom.n
       - wound.v
-    relations:
-      subcase_of:
-        - physical-harm
-      incorporates_as_role:
-        - animate-entity
+    related:
+      - animate-entity
+      - physical-harm
   - name: health
     frame_type:
       - Frame
@@ -6201,13 +5795,10 @@ frames:
       - health.n
       - healthiness.n
       - healthy.a
-    relations:
-      subcase_of:
-        - well-being
-      uses:
-        - experiencing-a-state
-      related_to:
-        - scale
+    related:
+      - experiencing-a-state
+      - scale
+      - well-being
   - name: health-treatment
     frame_type:
       - Frame
@@ -6245,9 +5836,8 @@ frames:
       - treatment.n
       - vaccinate.v
       - vaccine.n
-    relations:
-      uses:
-        - treating-a-physical-affliction
+    related:
+      - treating-a-physical-affliction
   - name: hearing
     frame_type:
       - Frame
@@ -6259,9 +5849,8 @@ frames:
     lexical_units:
       - hear.v
       - overhear.v
-    relations:
-      subcase_of:
-        - perception
+    related:
+      - perception
   - name: heat
     frame_type:
       - Cog
@@ -6283,11 +5872,9 @@ frames:
       - warm.a
       - warm.v
       - warmth.n
-    relations:
-      uses:
-        - scale
-      perspective_on:
-        - temperature
+    related:
+      - scale
+      - temperature
   - name: heating-fluid
     frame_type:
       - Composed
@@ -6310,11 +5897,9 @@ frames:
       - simmer.v
       - steam.n
       - stew.v
-    relations:
-      subcase_of:
-        - heat
-      uses:
-        - containment
+    related:
+      - containment
+      - heat
   - name: hiding
     frame_type:
       - Frame
@@ -6372,15 +5957,13 @@ frames:
       - senility.n
       - youth.n
       - youthful.a
-    relations:
-      subcase_of:
-        - life-cycle
+    related:
+      - life-cycle
   - name: human-rights
     frame_type:
       - Frame
-    relations:
-      subcase_of:
-        - rights
+    related:
+      - rights
   - name: hunger
     frame_type:
       - Frame
@@ -6399,9 +5982,8 @@ frames:
       - munchies
       - thirst.n
       - thirsty.a
-    relations:
-      related_to:
-        - eating
+    related:
+      - eating
   - name: idea
     frame_type:
       - Frame
@@ -6435,18 +6017,16 @@ frames:
       - Governance frames
       - Harm
       - Morality frames
-    relations:
-      scalar_opposition_to:
-        - moral-action
+    related:
+      - moral-action
   - name: immorality
     frame_families:
       - Morality frames
     lexical_units:
       - immoral
       - immorality
-    relations:
-      scalar_opposition_to:
-        - morality
+    related:
+      - morality
   - name: impact
     frame_type:
       - Frame
@@ -6473,10 +6053,9 @@ frames:
       - slap.v
       - smack.v
       - whack.v
-    relations:
-      subcase_of:
-        - force-application
-        - physical-harm
+    related:
+      - force-application
+      - physical-harm
   - name: impediment-to-motion
     frame_type:
       - Cog
@@ -6487,9 +6066,8 @@ frames:
       - name: affected_motion
       - name: impeded_entity
       - name: impediment
-    relations:
-      subcase_of:
-        - affected-motion
+    related:
+      - affected-motion
   - name: impeding-downward-motion
     frame_families:
       - Impediment and enablement frames
@@ -6499,11 +6077,9 @@ frames:
       - net.n
       - parachute.n
       - safety net
-    relations:
-      subcase_of:
-        - barrier
-      uses:
-        - downward-motion
+    related:
+      - barrier
+      - downward-motion
   - name: importance
     frame_type:
       - Frame
@@ -6548,28 +6124,23 @@ frames:
       - underprivileged.n
       - welfare queen.n
       - working poor
-    relations:
-      subcase_of:
-        - experiencing-a-negative-state
-        - experiencing-an-economic-status
-      uses:
-        - poverty
+    related:
+      - experiencing-a-negative-state
+      - experiencing-an-economic-status
+      - poverty
   - name: improving-a-state
     frame_families:
       - State-related frames
-    relations:
-      subcase_of:
-        - change-of-state
+    related:
+      - change-of-state
   - name: improving-economic-status
     frame_families:
       - Economic inequality frames
       - Poverty-related frame network
-    relations:
-      subcase_of:
-        - change-of-state
-        - improving-a-state
-      causal_relation_with:
-        - economic-status
+    related:
+      - change-of-state
+      - economic-status
+      - improving-a-state
   - name: impurity
     frame_families:
       - Aversion frames
@@ -6587,9 +6158,8 @@ frames:
       - taint.v
       - tarnish.v
       - unclean.a
-    relations:
-      scalar_opposition_to:
-        - purity
+    related:
+      - purity
   - name: in
     frame_type:
       - Cog
@@ -6597,10 +6167,9 @@ frames:
     frame_families:
       - Bounding
       - Spatial relations
-    relations:
-      uses:
-        - bounded-region
-        - trajector-landmark
+    related:
+      - bounded-region
+      - trajector-landmark
   - name: inability-to-access-a-location
     frame_families:
       - Impediment and enablement frames
@@ -6608,9 +6177,8 @@ frames:
       - Motion-affecting frames
     lexical_units:
       - can't access
-    relations:
-      subcase_of:
-        - access-to-a-location
+    related:
+      - access-to-a-location
   - name: income
     frame_type:
       - Frame
@@ -6630,13 +6198,10 @@ frames:
       - salary.n
       - wage.n
       - wages.n
-    relations:
-      subcase_of:
-        - financial-resource
-      uses:
-        - employment
-      perspective_on:
-        - financial-transaction
+    related:
+      - employment
+      - financial-resource
+      - financial-transaction
   - name: increase-ease-of-action
     frame_families:
       - Action frames
@@ -6651,9 +6216,8 @@ frames:
       - lubricant.n
       - lubricate.v
       - oil.v
-    relations:
-      uses:
-        - motion
+    related:
+      - motion
   - name: increase-size
     frame_type:
       - Frame
@@ -6689,11 +6253,9 @@ frames:
       - spread.v
       - swell.n
       - swell.v
-    relations:
-      uses:
-        - size
-      scalar_opposition_to:
-        - decrease-size
+    related:
+      - decrease-size
+      - size
   - name: information
   - name: ingestion
     frame_type:
@@ -6718,9 +6280,8 @@ frames:
       - sip.v
       - slurp.v
       - take in
-    relations:
-      subcase_of:
-        - bodily-functioning
+    related:
+      - bodily-functioning
   - name: injurious-gun-use
     frame_families:
       - Gun debate
@@ -6737,14 +6298,11 @@ frames:
     lexical_units:
       - gun.n death.n
       - gun.n violence.n
-    relations:
-      subcase_of:
-        - harm-to-living-entity
-        - social-problems
-      uses:
-        - violence
-      incorporates_as_role:
-        - personal-weapon
+    related:
+      - harm-to-living-entity
+      - personal-weapon
+      - social-problems
+      - violence
   - name: insanity
     frame_type:
       - Frame
@@ -6787,9 +6345,8 @@ frames:
       - whacko.a
       - whacko.n
       - wingnut.n
-    relations:
-      subcase_of:
-        - mental-state
+    related:
+      - mental-state
   - name: institution
     frame_type:
       - Frame
@@ -6812,9 +6369,8 @@ frames:
       - name: rules
     lexical_units:
       - institution.n
-    relations:
-      subcase_of:
-        - organization
+    related:
+      - organization
   - name: institutional-corruption
     frame_type:
       - Frame
@@ -6822,12 +6378,10 @@ frames:
       - Governance frames
     roles:
       - name: governed_individuals
-    relations:
-      subcase_of:
-        - moral-corruption
-      uses:
-        - authority
-        - institution
+    related:
+      - authority
+      - institution
+      - moral-corruption
   - name: instrument
     frame_type:
       - Frame
@@ -6840,19 +6394,16 @@ frames:
       - instrument.n
       - tool.n
       - utensil.n
-    relations:
-      subcase_of:
-        - object
-      uses:
-        - purposeful-action
+    related:
+      - object
+      - purposeful-action
   - name: insurmountable-differences-in-distance
     lexical_units:
       - canyon
       - chasm
       - gulf
-    relations:
-      subcase_of:
-        - differences-in-distance
+    related:
+      - differences-in-distance
   - name: international-relations
     frame_type:
       - Frame
@@ -6884,10 +6435,9 @@ frames:
       - name: trajector
     lexical_units:
       - into
-    relations:
-      uses:
-        - bounded-region
-        - source-path-goal
+    related:
+      - bounded-region
+      - source-path-goal
   - name: intoxicants
   - name: investment
     frame_type:
@@ -6916,10 +6466,9 @@ frames:
       - loan
       - stock holder
       - stock.n
-    relations:
-      uses:
-        - financial-resource
-        - trust
+    related:
+      - financial-resource
+      - trust
   - name: journey
     frame_type:
       - Composed
@@ -6955,11 +6504,9 @@ frames:
       - trek.v
       - trip.n
       - voyage.n
-    relations:
-      subcase_of:
-        - self-propelled-motion-to-a-destination
-      uses:
-        - traveling
+    related:
+      - self-propelled-motion-to-a-destination
+      - traveling
   - name: judgment
     frame_families:
       - Evaluation frames
@@ -6976,9 +6523,8 @@ frames:
       - name: standards
     lexical_units:
       - judge.v
-    relations:
-      subcase_of:
-        - evaluation
+    related:
+      - evaluation
   - name: judicial-action
     frame_type:
       - Frame
@@ -7000,17 +6546,15 @@ frames:
       - jury.n
       - justice.n
       - legal.a
-    relations:
-      subcase_of:
-        - governing-action
+    related:
+      - governing-action
   - name: judicial-branch
     frame_type:
       - Frame
     frame_families:
       - Governance frames
-    relations:
-      uses:
-        - judicial-action
+    related:
+      - judicial-action
   - name: judicial-decision-making
     frame_type:
       - Frame
@@ -7036,11 +6580,10 @@ frames:
       - overturn.v
       - rule.v
       - uphold.v
-    relations:
-      subcase_of:
-        - decision-making
-        - government-decision-making
-        - judicial-action
+    related:
+      - decision-making
+      - government-decision-making
+      - judicial-action
   - name: killing
     frame_type:
       - Frame
@@ -7083,11 +6626,9 @@ frames:
       - snuff.v
       - squelch.v
       - wipe out.v
-    relations:
-      subcase_of:
-        - harm-to-living-entity
-      causal_relation_with:
-        - death
+    related:
+      - death
+      - harm-to-living-entity
   - name: knowing
     frame_families:
       - Cognition frames
@@ -7098,47 +6639,40 @@ frames:
       - name: knowledge_capacity
       - name: knowledge_status
       - name: mind
-    relations:
-      subcase_of:
-        - cognizing
+    related:
+      - cognizing
   - name: knowledge
     frame_families:
       - Cognition frames
       - Education frames
-    relations:
-      uses:
-        - idea
-        - knowing
+    related:
+      - idea
+      - knowing
   - name: labor
   - name: lack-of-enablement
     frame_type:
       - Cog
     frame_families:
       - Impediment and enablement frames
-    relations:
-      subcase_of:
-        - impediment-to-motion
-      scalar_opposition_to:
-        - enablement
+    related:
+      - enablement
+      - impediment-to-motion
   - name: lack-of-impediment-to-motion
     frame_type:
       - Cog
     frame_families:
       - Impediment and enablement frames
       - Motion frames
-    relations:
-      subcase_of:
-        - enablement
-      uses:
-        - impediment-to-motion
+    related:
+      - enablement
+      - impediment-to-motion
   - name: laissez-faire-market
     frame_type:
       - Frame
     frame_families:
       - Economic frames
-    relations:
-      subcase_of:
-        - market
+    related:
+      - market
   - name: land-vehicle
     frame_type:
       - Frame
@@ -7151,9 +6685,8 @@ frames:
       - car.n
       - truck.n
       - wheel.n
-    relations:
-      subcase_of:
-        - vehicle
+    related:
+      - vehicle
   - name: large-geographic-features
     frame_type:
       - Frame
@@ -7166,11 +6699,9 @@ frames:
       - prairie.n
       - pyramid.n
       - vast.a
-    relations:
-      subcase_of:
-        - geographic-feature
-      uses:
-        - size
+    related:
+      - geographic-feature
+      - size
   - name: law
     frame_type:
       - Frame
@@ -7189,10 +6720,9 @@ frames:
     lexical_units:
       - law.n
       - statute.n
-    relations:
-      uses:
-        - evaluation
-        - legality
+    related:
+      - evaluation
+      - legality
   - name: lax
     frame_type:
       - Frame
@@ -7216,11 +6746,9 @@ frames:
       - soft.a
       - spongy.a
       - squishy.a
-    relations:
-      perspective_on:
-        - firmness
-      scalar_opposition_to:
-        - firm
+    related:
+      - firm
+      - firmness
   - name: leadership
     frame_type:
       - Frame
@@ -7243,9 +6771,8 @@ frames:
       - leadership.n
       - usher.n
       - usher.v
-    relations:
-      uses:
-        - accompany
+    related:
+      - accompany
   - name: learning
     frame_type:
       - Composed
@@ -7264,11 +6791,9 @@ frames:
     lexical_units:
       - learn
       - learning
-    relations:
-      subcase_of:
-        - cognizing
-      uses:
-        - knowing
+    related:
+      - cognizing
+      - knowing
   - name: leftover-food
     frame_type:
       - Frame
@@ -7283,9 +6808,8 @@ frames:
       - sliver.n
       - sliver.n of the pie
       - tiny sliver
-    relations:
-      subcase_of:
-        - food
+    related:
+      - food
   - name: legality
     frame_type:
       - Frame
@@ -7304,17 +6828,15 @@ frames:
       - lawful.a
       - legal.a
       - legality.n
-    relations:
-      uses:
-        - evaluation
+    related:
+      - evaluation
   - name: legislation-drafting
     frame_type:
       - Frame
     frame_families:
       - Legislation frames
-    relations:
-      subcase_of:
-        - legislative-action
+    related:
+      - legislative-action
   - name: legislation-enactment
     frame_type:
       - Frame
@@ -7339,14 +6861,11 @@ frames:
       - bill.n
       - legislation.n
       - resolution.n
-    relations:
-      subcase_of:
-        - government-decision-making
-        - legislative-action
-      uses:
-        - voting
-      related_to:
-        - legislation-drafting
+    related:
+      - government-decision-making
+      - legislation-drafting
+      - legislative-action
+      - voting
   - name: legislative-action
     frame_type:
       - Frame
@@ -7375,9 +6894,8 @@ frames:
       - legislative.a agenda.n
       - legislature.n
       - ruling.n
-    relations:
-      subcase_of:
-        - governing-action
+    related:
+      - governing-action
   - name: legislative-branch
     frame_type:
       - Frame
@@ -7394,20 +6912,17 @@ frames:
       - Congress.n
       - Senate.n
       - legislature.n
-    relations:
-      uses:
-        - legislative-action
-      related_to:
-        - government-institution
+    related:
+      - government-institution
+      - legislative-action
   - name: legitimacy
     frame_type:
       - Frame
     frame_families:
       - Governance frames
-    relations:
-      uses:
-        - evaluation
-        - trust
+    related:
+      - evaluation
+      - trust
   - name: length
     frame_type:
       - Frame
@@ -7418,9 +6933,8 @@ frames:
       - Economic frames
     lexical_units:
       - market.n
-    relations:
-      subcase_of:
-        - market
+    related:
+      - market
   - name: life
     frame_type:
       - Frame
@@ -7435,9 +6949,8 @@ frames:
       - name: life_stages
       - name: lifestyle
       - name: short_term_life_goals
-    relations:
-      subcase_of:
-        - sequence-of-actions
+    related:
+      - sequence-of-actions
   - name: life-cycle
     frame_type:
       - Frame
@@ -7450,9 +6963,8 @@ frames:
     lexical_units:
       - life cycle.n
       - lifecycle.n
-    relations:
-      subcase_of:
-        - cycle
+    related:
+      - cycle
   - name: light-source
     lexical_units:
       - aurora.n
@@ -7472,9 +6984,8 @@ frames:
       - lighthouse.n
       - shine.n
       - torch.n
-    relations:
-      uses:
-        - luminosity
+    related:
+      - luminosity
   - name: lightness
     frame_families:
       - Perception frames
@@ -7488,11 +6999,9 @@ frames:
       - lightness.n
       - sunny.a
       - well-lit.a
-    relations:
-      perspective_on:
-        - luminosity
-      scalar_opposition_to:
-        - darkness
+    related:
+      - darkness
+      - luminosity
   - name: limited-resource
     frame_type:
       - Frame
@@ -7515,9 +7024,8 @@ frames:
       - fluid.n
       - liquid.n
       - water.n
-    relations:
-      subcase_of:
-        - substance
+    related:
+      - substance
   - name: living
     frame_type:
       - Frame
@@ -7529,11 +7037,9 @@ frames:
       - flourish.v
       - live.v
       - thrive.v
-    relations:
-      uses:
-        - life
-      incorporates_as_role:
-        - biological-entity
+    related:
+      - biological-entity
+      - life
   - name: location
     frame_families:
       - Location frames
@@ -7549,11 +7055,9 @@ frames:
       - loosen.v
       - relaxed.a
       - wide.a
-    relations:
-      perspective_on:
-        - fit
-      scalar_opposition_to:
-        - tight-fit
+    related:
+      - fit
+      - tight-fit
   - name: lose-possession
     frame_type:
       - Frame
@@ -7570,11 +7074,9 @@ frames:
       - lose.v
       - loss.n
       - misplace.v
-    relations:
-      perspective_on:
-        - possession
-      incorporates_as_role:
-        - possessable-object
+    related:
+      - possessable-object
+      - possession
   - name: losing
     frame_type:
       - Frame
@@ -7586,9 +7088,8 @@ frames:
       - name: lost_object
     lexical_units:
       - misplace.v
-    relations:
-      uses:
-        - possession
+    related:
+      - possession
   - name: luminosity
     frame_type:
       - Cog
@@ -7600,9 +7101,8 @@ frames:
       - name: light_level
     lexical_units:
       - luminosity.n
-    relations:
-      uses:
-        - scale
+    related:
+      - scale
   - name: machine
     frame_type:
       - Frame
@@ -7641,11 +7141,9 @@ frames:
       - run.v smoothly
       - take.v apart
       - well-oiled.a
-    relations:
-      subcase_of:
-        - physical-structure
-      uses:
-        - control
+    related:
+      - control
+      - physical-structure
   - name: magic
     frame_type:
       - Frame
@@ -7689,9 +7187,8 @@ frames:
       - wand.n
       - wizardry.n
       - witchcraft.n
-    relations:
-      related_to:
-        - causation
+    related:
+      - causation
   - name: making
   - name: market
     frame_type:
@@ -7700,18 +7197,16 @@ frames:
       - Economic frames
     lexical_units:
       - market.n
-    relations:
-      subcase_of:
-        - institution
+    related:
+      - institution
   - name: marriage
     frame_type:
       - Frame
     lexical_units:
       - marriage.n
       - marry.v
-    relations:
-      subcase_of:
-        - relationship
+    related:
+      - relationship
   - name: mass
   - name: mass-motion
     frame_type:
@@ -7730,9 +7225,8 @@ frames:
       - teem.v
       - throng.n
       - throng.v
-    relations:
-      subcase_of:
-        - motion
+    related:
+      - motion
   - name: maze
     frame_families:
       - Motion impediments frames
@@ -7745,9 +7239,8 @@ frames:
       - labyrinthine.a
       - maze.n
       - obstacle course.n
-    relations:
-      subcase_of:
-        - physical-path
+    related:
+      - physical-path
   - name: measuring
     frame_type:
       - Frame
@@ -7778,11 +7271,9 @@ frames:
       - press.n
       - reporter.n
       - reporting.n
-    relations:
-      subcase_of:
-        - democratic-institution
-      uses:
-        - communication
+    related:
+      - communication
+      - democratic-institution
   - name: meeting
   - name: membership
     frame_type:
@@ -7790,9 +7281,8 @@ frames:
     lexical_units:
       - member.n
       - membership.n
-    relations:
-      uses:
-        - part-whole
+    related:
+      - part-whole
   - name: memorization
   - name: mental-state
   - name: military-leadership
@@ -7812,19 +7302,16 @@ frames:
       - marshal.n
       - officer.n
       - sergeant.n
-    relations:
-      subcase_of:
-        - leadership
+    related:
+      - leadership
   - name: mind
     frame_type:
       - Frame
     frame_families:
       - Cognition frames
-    relations:
-      uses:
-        - cognizing
-      related_to:
-        - sentient-entity
+    related:
+      - cognizing
+      - sentient-entity
   - name: misfortune
     frame_type:
       - Frame
@@ -7841,9 +7328,8 @@ frames:
       - misfortune.n
       - mishap.n
       - setback
-    relations:
-      uses:
-        - harm
+    related:
+      - harm
   - name: mode-of-transportation
     frame_type:
       - Frame
@@ -7859,11 +7345,9 @@ frames:
       - name: resource
       - name: standard
       - name: value
-    relations:
-      subcase_of:
-        - evaluation
-      uses:
-        - financial-resource
+    related:
+      - evaluation
+      - financial-resource
   - name: money
     frame_type:
       - Frame
@@ -7886,9 +7370,8 @@ frames:
       - funds
       - legal tender
       - money.n
-    relations:
-      subcase_of:
-        - financial-resource
+    related:
+      - financial-resource
   - name: moral-action
     frame_type:
       - Frame
@@ -7897,11 +7380,9 @@ frames:
       - Morality frames
     roles:
       - name: moral_actor
-    relations:
-      subcase_of:
-        - purposeful-action
-      uses:
-        - morality
+    related:
+      - morality
+      - purposeful-action
   - name: moral-authority
     frame_type:
       - Frame
@@ -7911,10 +7392,9 @@ frames:
       - name: moral_authority_entity
       - name: moral_authority_obeyer
       - name: moral_authority_power
-    relations:
-      uses:
-        - authority
-        - morality
+    related:
+      - authority
+      - morality
   - name: moral-character
   - name: moral-corruption
     frame_type:
@@ -7924,11 +7404,9 @@ frames:
     roles:
       - name: corrupt_activities
       - name: corruption_affectee
-    relations:
-      subcase_of:
-        - corruption
-      uses:
-        - immoral-action
+    related:
+      - corruption
+      - immoral-action
   - name: moral-evaluation
     frame_type:
       - Frame
@@ -7941,11 +7419,9 @@ frames:
       - name: moral_judgement
       - name: moral_standard
         role_type: Scale
-    relations:
-      subcase_of:
-        - evaluation
-      uses:
-        - morality
+    related:
+      - evaluation
+      - morality
   - name: moral-goodness
     frame_type:
       - Frame
@@ -7954,17 +7430,15 @@ frames:
     roles:
       - name: good_person
       - name: goodness
-    relations:
-      uses:
-        - goodness
+    related:
+      - goodness
   - name: moral-order
     frame_type:
       - Frame
     frame_families:
       - Morality frames
-    relations:
-      uses:
-        - moral-authority
+    related:
+      - moral-authority
   - name: morality
     frame_type:
       - Frame
@@ -7979,9 +7453,8 @@ frames:
     lexical_units:
       - moral
       - morality
-    relations:
-      scalar_opposition_to:
-        - immorality
+    related:
+      - immorality
   - name: motion
     frame_type:
       - Cog
@@ -8007,11 +7480,9 @@ frames:
       - movement.n
       - shift.n
       - shift.v
-    relations:
-      subcase_of:
-        - process
-      uses:
-        - physical-entity
+    related:
+      - physical-entity
+      - process
   - name: motion-affecting-actors
     frame_type:
       - Cog
@@ -8022,10 +7493,9 @@ frames:
     roles:
       - name: actor
       - name: potential_mover
-    relations:
-      subcase_of:
-        - force-application
-        - motion-affecting-external-factors
+    related:
+      - force-application
+      - motion-affecting-external-factors
   - name: motion-affecting-external-factors
     frame_type:
       - Composed
@@ -8040,12 +7510,10 @@ frames:
       - name: mover
     lexical_units:
       - obstacle.n
-    relations:
-      subcase_of:
-        - motion-impediments
-      uses:
-        - causation
-        - motion
+    related:
+      - causation
+      - motion
+      - motion-impediments
   - name: motion-affecting-forces
     frame_type:
       - Cog
@@ -8053,9 +7521,8 @@ frames:
     frame_families:
       - Motion frames
       - Motion-affecting frames
-    relations:
-      subcase_of:
-        - motion-affecting-external-factors
+    related:
+      - motion-affecting-external-factors
   - name: motion-affecting-objects
     frame_type:
       - Cog
@@ -8068,9 +7535,8 @@ frames:
         role_type: Object
       - name: mover
       - name: mover_location
-    relations:
-      subcase_of:
-        - motion-affecting-external-factors
+    related:
+      - motion-affecting-external-factors
   - name: motion-affecting-properties-of-the-landscape
     frame_type:
       - Cog
@@ -8079,9 +7545,8 @@ frames:
       - Impediment and enablement frames
       - Motion frames
       - Motion-affecting frames
-    relations:
-      subcase_of:
-        - motion-affecting-external-factors
+    related:
+      - motion-affecting-external-factors
   - name: motion-along-a-path
     frame_type:
       - Cog
@@ -8117,13 +7582,10 @@ frames:
       - inch.v
       - slide.v
       - speed.v
-    relations:
-      subcase_of:
-        - motion
-      uses:
-        - source-path-goal
-      incorporates_as_role:
-        - physical-path
+    related:
+      - motion
+      - physical-path
+      - source-path-goal
   - name: motion-away-from-a-bounded-region
     frame_type:
       - Cog
@@ -8147,13 +7609,10 @@ frames:
       - get.v out
       - go.v out
       - move.v out
-    relations:
-      subcase_of:
-        - motion-away-from-a-location
-      uses:
-        - bounded-region
-      scalar_opposition_to:
-        - motion-to-a-bounded-region
+    related:
+      - bounded-region
+      - motion-away-from-a-location
+      - motion-to-a-bounded-region
   - name: motion-away-from-a-location
     frame_type:
       - Cog
@@ -8183,13 +7642,10 @@ frames:
       - leave.v
       - move.v out
       - way out
-    relations:
-      perspective_on:
-        - motion-along-a-path
-      scalar_opposition_to:
-        - motion-to-a-location
-      incorporates_as_role:
-        - paths-out-of-a-location
+    related:
+      - motion-along-a-path
+      - motion-to-a-location
+      - paths-out-of-a-location
   - name: motion-away-from-an-undesirable-location
     frame_type:
       - Composed
@@ -8207,9 +7663,8 @@ frames:
       - escape.v
       - flee.v
       - get.v out
-    relations:
-      subcase_of:
-        - motion-with-respect-to-an-undesirable-entity
+    related:
+      - motion-with-respect-to-an-undesirable-entity
   - name: motion-back-and-forth
     frame_type:
       - Frame
@@ -8246,9 +7701,8 @@ frames:
       - vacillate.v
       - waggle.v
       - wobble.v
-    relations:
-      subcase_of:
-        - non-translational-motion
+    related:
+      - non-translational-motion
   - name: motion-impediment
   - name: motion-impediments
     frame_type:
@@ -8289,11 +7743,9 @@ frames:
       - stand.v in the way
       - stood in the way
       - stop.v
-    relations:
-      subcase_of:
-        - impediment-to-motion
-      uses:
-        - motion
+    related:
+      - impediment-to-motion
+      - motion
   - name: motion-out-of-a-location
     frame_type:
       - Cog
@@ -8321,15 +7773,11 @@ frames:
       - go.v out
       - move.v out
       - way out
-    relations:
-      subcase_of:
-        - motion-along-a-path
-      scalar_opposition_to:
-        - moving-into-a-bounded-region
-      related_to:
-        - paths-out-of-a-location
-      incorporates_as_role:
-        - bounded-region
+    related:
+      - bounded-region
+      - motion-along-a-path
+      - moving-into-a-bounded-region
+      - paths-out-of-a-location
   - name: motion-to-a-bounded-region
     frame_type:
       - Frame
@@ -8362,13 +7810,10 @@ frames:
       - penetrate.v
       - rush in.v
       - set foot in.v
-    relations:
-      subcase_of:
-        - motion-to-a-location
-      uses:
-        - bounded-region
-      scalar_opposition_to:
-        - motion-away-from-a-bounded-region
+    related:
+      - bounded-region
+      - motion-away-from-a-bounded-region
+      - motion-to-a-location
   - name: motion-to-a-destination
     frame_type:
       - Cog
@@ -8382,9 +7827,8 @@ frames:
         role_type: Location
       - name: mover
         role_type: Entity
-    relations:
-      subcase_of:
-        - motion-along-a-path
+    related:
+      - motion-along-a-path
   - name: motion-to-a-location
     frame_type:
       - Cog
@@ -8412,11 +7856,9 @@ frames:
       - land.v
       - landing.n
       - reach.v
-    relations:
-      perspective_on:
-        - motion-along-a-path
-      scalar_opposition_to:
-        - motion-away-from-a-location
+    related:
+      - motion-along-a-path
+      - motion-away-from-a-location
   - name: motion-to-avoid-a-destination
     frame_type:
       - Composed
@@ -8432,11 +7874,9 @@ frames:
       - name: self_mover
       - name: source
       - name: undesirable_location
-    relations:
-      subcase_of:
-        - self-propelled-motion-to-a-destination
-      uses:
-        - proximal-distal
+    related:
+      - proximal-distal
+      - self-propelled-motion-to-a-destination
   - name: motion-with-respect-to-an-undesirable-entity
     frame_type:
       - Composed
@@ -8451,9 +7891,8 @@ frames:
       - name: mover
       - name: mover_motion
       - name: undesirable_entity
-    relations:
-      perspective_on:
-        - self-propelled-motion
+    related:
+      - self-propelled-motion
   - name: moving-backward
     frame_families:
       - Motion frames
@@ -8470,9 +7909,8 @@ frames:
       - pull.v back
       - recede.v
       - retreat.v
-    relations:
-      subcase_of:
-        - motion-along-a-path
+    related:
+      - motion-along-a-path
   - name: moving-forward
     frame_type:
       - Cog
@@ -8490,9 +7928,8 @@ frames:
       - move.v forward
       - progress.n
       - progress.v
-    relations:
-      subcase_of:
-        - motion-along-a-path
+    related:
+      - motion-along-a-path
   - name: moving-into-a-bounded-region
     frame_type:
       - Frame
@@ -8526,20 +7963,16 @@ frames:
       - penetrate.v
       - rush in.v
       - set foot in.v
-    relations:
-      subcase_of:
-        - motion-along-a-path
-      uses:
-        - bounded-region
-      scalar_opposition_to:
-        - motion-out-of-a-location
+    related:
+      - bounded-region
+      - motion-along-a-path
+      - motion-out-of-a-location
   - name: moving-object
     frame_families:
       - Motion frames
-    relations:
-      uses:
-        - motion-along-a-path
-        - object
+    related:
+      - motion-along-a-path
+      - object
   - name: moving-out-of-an-undesirable-location
     frame_families:
       - Directional movement frames
@@ -8554,9 +7987,8 @@ frames:
       - escape.v
       - flee.v
       - get.v out
-    relations:
-      subcase_of:
-        - motion-out-of-a-location
+    related:
+      - motion-out-of-a-location
   - name: multiplex
   - name: narrowing-width-of-bounded-region
     frame_families:
@@ -8566,9 +7998,8 @@ frames:
       - narrow.v the scope
       - narrow.v the width
       - narrowing.v
-    relations:
-      subcase_of:
-        - bounded-region
+    related:
+      - bounded-region
   - name: nation
     frame_type:
       - Frame
@@ -8588,9 +8019,8 @@ frames:
     lexical_units:
       - country.n
       - nation.n
-    relations:
-      subcase_of:
-        - political-region
+    related:
+      - political-region
   - name: natural-disaster
     frame_type:
       - Frame
@@ -8625,9 +8055,8 @@ frames:
       - volcanic eruption
       - volcano.n
       - wildfire.n
-    relations:
-      subcase_of:
-        - destroying
+    related:
+      - destroying
   - name: natural-order
   - name: natural-process
     frame_type:
@@ -8638,17 +8067,15 @@ frames:
       - name: natural_process
         role_type: Process
       - name: protagonist
-    relations:
-      subcase_of:
-        - process
+    related:
+      - process
   - name: natural-resource
     frame_type:
       - Frame
     frame_families:
       - Resource frames
-    relations:
-      subcase_of:
-        - resource
+    related:
+      - resource
   - name: nature
   - name: need
     frame_type:
@@ -8659,9 +8086,8 @@ frames:
       - Social problem frames
     roles:
       - name: condition
-    relations:
-      uses:
-        - evaluation
+    related:
+      - evaluation
   - name: negotiation
     frame_type:
       - Frame
@@ -8690,11 +8116,9 @@ frames:
       - name: network_parts
       - name: network_whole
       - name: sub_networks
-    relations:
-      uses:
-        - connection
-      related_to:
-        - system
+    related:
+      - connection
+      - system
   - name: non-translational-motion
     frame_type:
       - Cog
@@ -8707,9 +8131,8 @@ frames:
       - name: motion_x_schema
       - name: mover
       - name: speed
-    relations:
-      subcase_of:
-        - motion
+    related:
+      - motion
   - name: noticing
   - name: nuclear-family
     frame_type:
@@ -8724,12 +8147,10 @@ frames:
       - name: parents
       - name: parenting_style
       - name: traits_in_children
-    relations:
-      subcase_of:
-        - family
-      uses:
-        - authority
-        - responsibility
+    related:
+      - authority
+      - family
+      - responsibility
   - name: nurturance
     frame_type:
       - Frame
@@ -8737,9 +8158,8 @@ frames:
       - name: degree_of_nurturance
       - name: nurtured
       - name: nurturer
-    relations:
-      uses:
-        - affection
+    related:
+      - affection
   - name: nurturant-parent-family
     frame_type:
       - Frame
@@ -8751,9 +8171,8 @@ frames:
       - name: parents
       - name: parenting_style
       - name: traits_in_children
-    relations:
-      subcase_of:
-        - nuclear-family
+    related:
+      - nuclear-family
   - name: nutritious-food
     frame_type:
       - Frame
@@ -8767,9 +8186,8 @@ frames:
       - nutrition.n
       - nutritional.a
       - nutritious food
-    relations:
-      subcase_of:
-        - food
+    related:
+      - food
   - name: object
     frame_type:
       - Cog
@@ -8788,13 +8206,11 @@ frames:
     lexical_units:
       - object.n
       - thing.n
-    relations:
-      subcase_of:
-        - bounded-entity
-        - physical-entity
-      incorporates_as_role:
-        - size
-        - weight
+    related:
+      - bounded-entity
+      - physical-entity
+      - size
+      - weight
   - name: object-collection
     roles:
       - name: bigger
@@ -8841,9 +8257,8 @@ frames:
       - stab.v
       - stick.v in
       - tuck.v
-    relations:
-      subcase_of:
-        - object-manipulation
+    related:
+      - object-manipulation
   - name: object-manipulation
     frame_families:
       - Act on an object frames
@@ -8853,11 +8268,9 @@ frames:
       - name: actor
       - name: effector
       - name: object
-    relations:
-      subcase_of:
-        - force-application
-      incorporates_as_role:
-        - object
+    related:
+      - force-application
+      - object
   - name: object-propulsion
     frame_type:
       - Cog
@@ -8888,11 +8301,9 @@ frames:
       - throw.v
       - thrust.v
       - toss.v
-    relations:
-      subcase_of:
-        - forced-motion
-      uses:
-        - object-manipulation
+    related:
+      - forced-motion
+      - object-manipulation
   - name: obscenity
     frame_type:
       - Frame
@@ -8910,9 +8321,8 @@ frames:
       - pornography.n
       - vulgar.a
       - vulgarity.n
-    relations:
-      subcase_of:
-        - immorality
+    related:
+      - immorality
   - name: ocean
   - name: open
     frame_type:
@@ -8928,9 +8338,8 @@ frames:
       - opening.n
       - openness.n
       - unlock.v
-    relations:
-      uses:
-        - portals
+    related:
+      - portals
   - name: operating-a-machine
     frame_type:
       - Frame
@@ -8969,18 +8378,16 @@ frames:
       - name: organization_x_schema
       - name: organizational_efficacy
       - name: organizational_structure
-    relations:
-      subcase_of:
-        - social-group
+    related:
+      - social-group
   - name: organization-of-power
     frame_type:
       - Frame
     frame_families:
       - Democracy frames
       - Governance frames
-    relations:
-      related_to:
-        - branches-of-government
+    related:
+      - branches-of-government
   - name: organizational-leadership
     frame_type:
       - Frame
@@ -8995,11 +8402,9 @@ frames:
       - executive.n
       - president.n
       - supervisor.n
-    relations:
-      subcase_of:
-        - leadership
-      uses:
-        - organization
+    related:
+      - leadership
+      - organization
   - name: out
     frame_type:
       - Cog
@@ -9047,11 +8452,9 @@ frames:
       - stout.a
       - stuffed.a
       - surfeit.v
-    relations:
-      subcase_of:
-        - eating
-      related_to:
-        - excess-body-weight
+    related:
+      - eating
+      - excess-body-weight
   - name: ownership
     frame_type:
       - Frame
@@ -9061,9 +8464,8 @@ frames:
       - own.v
       - owner.n
       - ownership.n
-    relations:
-      uses:
-        - possession
+    related:
+      - possession
   - name: parasite
     frame_families:
       - Entity frames
@@ -9078,9 +8480,8 @@ frames:
       - parasitic.a
       - sponge.n
       - sponge.v
-    relations:
-      subcase_of:
-        - blood-sucking-creature
+    related:
+      - blood-sucking-creature
   - name: parent
     frame_type:
       - Frame
@@ -9097,11 +8498,10 @@ frames:
       - nurture.v
       - parent.n
       - take.v care
-    relations:
-      uses:
-        - authority
-        - family
-        - responsibility
+    related:
+      - authority
+      - family
+      - responsibility
   - name: parental-authority
     roles:
       - name: child
@@ -9119,12 +8519,10 @@ frames:
       - name: parts
       - name: whole
       - name: whole_part_relation
-    relations:
-      uses:
-        - possession
-        - relation
-      related_to:
-        - part-piece
+    related:
+      - part-piece
+      - possession
+      - relation
   - name: participation
   - name: partnership
   - name: passion
@@ -9149,9 +8547,8 @@ frames:
       - road out
       - vent.n
       - way out
-    relations:
-      subcase_of:
-        - physical-path
+    related:
+      - physical-path
   - name: payment
     frame_type:
       - Frame
@@ -9167,9 +8564,8 @@ frames:
       - price.n
       - spend.v
       - spending.n
-    relations:
-      perspective_on:
-        - financial-transaction
+    related:
+      - financial-transaction
   - name: perception
     frame_type:
       - Frame
@@ -9182,11 +8578,9 @@ frames:
       - name: perceiver
         role_type: AnimateEntity
       - name: perception_x_schema
-    relations:
-      subcase_of:
-        - process
-      incorporates_as_role:
-        - animate-entity
+    related:
+      - animate-entity
+      - process
   - name: performance
     frame_type:
       - Frame
@@ -9229,12 +8623,10 @@ frames:
       - them.n
       - they.n
       - you.n
-    relations:
-      subcase_of:
-        - animate-entity
-        - sentient-entity
-      uses:
-        - purposeful-action
+    related:
+      - animate-entity
+      - purposeful-action
+      - sentient-entity
   - name: personal-preference
   - name: personal-weapon
     frame_type:
@@ -9258,11 +8650,9 @@ frames:
       - rifle.n
       - shotgun.n
       - sidearm.n
-    relations:
-      subcase_of:
-        - complex-physical-object
-      related_to:
-        - gun-debate
+    related:
+      - complex-physical-object
+      - gun-debate
   - name: pest
     frame_type:
       - Frame
@@ -9289,11 +8679,9 @@ frames:
       - swarm.n
       - termite.n
       - vermin.n
-    relations:
-      subcase_of:
-        - biological-entity
-      uses:
-        - physical-harm
+    related:
+      - biological-entity
+      - physical-harm
   - name: physical-affliction
     frame_type:
       - Frame
@@ -9343,11 +8731,9 @@ frames:
       - ulcer.n
       - unhealthy.a
       - wound.n
-    relations:
-      subcase_of:
-        - harm-to-living-entity
-      uses:
-        - experience-pain
+    related:
+      - experience-pain
+      - harm-to-living-entity
   - name: physical-attributes
     frame_families:
       - Physical properties frame family
@@ -9359,9 +8745,8 @@ frames:
       - shape
       - size
       - width
-    relations:
-      subcase_of:
-        - attribute
+    related:
+      - attribute
   - name: physical-combat
     frame_type:
       - Frame
@@ -9429,9 +8814,8 @@ frames:
       - name: start
       - name: winner
       - name: x_schema
-    relations:
-      subcase_of:
-        - competition
+    related:
+      - competition
   - name: physical-connection
     frame_type:
       - Frame
@@ -9467,9 +8851,8 @@ frames:
       - name: existence_x_schema
       - name: physical_entity_whole
       - name: physical_properties
-    relations:
-      subcase_of:
-        - entity
+    related:
+      - entity
   - name: physical-harm
     frame_families:
       - Damage
@@ -9480,9 +8863,8 @@ frames:
         role_type: PhysicalEntity
       - name: harmful_effect_process
       - name: harmful_effect_result
-    relations:
-      subcase_of:
-        - harm
+    related:
+      - harm
   - name: physical-impediments-to-motion
   - name: physical-obstacle
   - name: physical-path
@@ -9516,9 +8898,8 @@ frames:
       - track.n
       - trail.n
       - way.n
-    relations:
-      uses:
-        - source-path-goal
+    related:
+      - source-path-goal
   - name: physical-restraining-of-mouth
   - name: physical-strength
     frame_type:
@@ -9541,20 +8922,17 @@ frames:
       - strong.a
       - tough.a
       - vitality.n
-    relations:
-      uses:
-        - power
-      perspective_on:
-        - physical-strength-scale
+    related:
+      - physical-strength-scale
+      - power
   - name: physical-strength-scale
     frame_type:
       - Frame
     frame_families:
       - Physical properties frame family
       - Scale frames
-    relations:
-      subcase_of:
-        - scale
+    related:
+      - scale
   - name: physical-structure
     frame_type:
       - Composed
@@ -9592,12 +8970,10 @@ frames:
       - structure.n
       - structure.v
       - underpin.v
-    relations:
-      subcase_of:
-        - complex-physical-object
-      uses:
-        - functionality
-        - support
+    related:
+      - complex-physical-object
+      - functionality
+      - support
   - name: physical-struggle
   - name: physical-weakness
     frame_type:
@@ -9610,11 +8986,9 @@ frames:
       - weak.a
       - weakling.n
       - weakness.n
-    relations:
-      perspective_on:
-        - physical-strength-scale
-      scalar_opposition_to:
-        - physical-strength
+    related:
+      - physical-strength
+      - physical-strength-scale
   - name: placing-in-a-protected-location
     frame_type:
       - Frame
@@ -9631,13 +9005,10 @@ frames:
       - sanctuary.n
       - shelter.v
       - shelter.v
-    relations:
-      subcase_of:
-        - hiding
-      uses:
-        - being-at-a-location
-      perspective_on:
-        - protecting
+    related:
+      - being-at-a-location
+      - hiding
+      - protecting
   - name: plant-life-cycle
     frame_type:
       - Frame
@@ -9662,11 +9033,9 @@ frames:
       - take.v root.n
       - vegetate.v
       - wither.v
-    relations:
-      subcase_of:
-        - life-cycle
-      incorporates_as_role:
-        - plants
+    related:
+      - life-cycle
+      - plants
   - name: plants
     frame_type:
       - Frame
@@ -9697,12 +9066,10 @@ frames:
       - tendril.n
       - tree.n
       - vine.n
-    relations:
-      subcase_of:
-        - biological-entity
-      uses:
-        - gardening
-        - plant-life-cycle
+    related:
+      - biological-entity
+      - gardening
+      - plant-life-cycle
   - name: plurality
     frame_type:
       - Cog
@@ -9731,20 +9098,17 @@ frames:
       - name: outcome
       - name: political_activity_x_schema
       - name: prize
-    relations:
-      subcase_of:
-        - competition
+    related:
+      - competition
   - name: political-equality
     frame_type:
       - Frame
     frame_families:
       - Politics frames
-    relations:
-      subcase_of:
-        - equality
-      related_to:
-        - democracy
-        - rights
+    related:
+      - democracy
+      - equality
+      - rights
   - name: political-party
   - name: political-region
     frame_type:
@@ -9766,11 +9130,10 @@ frames:
       - jurisdiction.n
       - province.n
       - state.n
-    relations:
-      uses:
-        - bounded-region
-        - government
-        - government-institution
+    related:
+      - bounded-region
+      - government
+      - government-institution
   - name: politics
     frame_type:
       - Frame
@@ -9795,12 +9158,10 @@ frames:
       - gateway.n
       - portal.n
       - threshold.n
-    relations:
-      uses:
-        - containment
-        - motion-along-a-path
-      related_to:
-        - barrier
+    related:
+      - barrier
+      - containment
+      - motion-along-a-path
   - name: position
     frame_type:
       - Frame
@@ -9819,12 +9180,11 @@ frames:
       - job.n
       - office.n
       - position.n
-    relations:
-      uses:
-        - career
-        - employment
-        - power
-        - responsibility
+    related:
+      - career
+      - employment
+      - power
+      - responsibility
   - name: positivity-scale
     frame_type:
       - Frame
@@ -9837,11 +9197,9 @@ frames:
     roles:
       - name: possessable_object
       - name: possessor
-    relations:
-      subcase_of:
-        - object
-      uses:
-        - possession
+    related:
+      - object
+      - possession
   - name: possession
     frame_type:
       - Cog
@@ -9863,12 +9221,10 @@ frames:
       - ownership.n
       - possess.v
       - possession.n
-    relations:
-      uses:
-        - access-to-an-object
-        - relation
-      incorporates_as_role:
-        - possessable-object
+    related:
+      - access-to-an-object
+      - possessable-object
+      - relation
   - name: possession-change
     frame_families:
       - Change-related frames
@@ -9877,9 +9233,8 @@ frames:
       - name: possession
       - name: possessor
       - name: x_schema
-    relations:
-      subcase_of:
-        - possession
+    related:
+      - possession
   - name: poverty
     frame_type:
       - Frame
@@ -9907,14 +9262,11 @@ frames:
       - the 53 percent
       - underprivileged.a
       - underprivileged.n
-    relations:
-      subcase_of:
-        - economic-status
-        - social-problems
-      uses:
-        - causation
-      scalar_opposition_to:
-        - wealth
+    related:
+      - causation
+      - economic-status
+      - social-problems
+      - wealth
   - name: power
     frame_type:
       - Frame
@@ -9923,11 +9275,10 @@ frames:
     roles:
       - name: power_holder
       - name: power_yielder
-    relations:
-      uses:
-        - authority
-        - control
-        - legitimacy
+    related:
+      - authority
+      - control
+      - legitimacy
   - name: predication
     frame_type:
       - Cog
@@ -9944,20 +9295,17 @@ frames:
     roles:
       - name: entity_applying_force_of_pressure
       - name: entity_receiving_force_of_pressure
-    relations:
-      uses:
-        - force
-        - trajector-landmark
+    related:
+      - force
+      - trajector-landmark
   - name: pressure-in-a-container
     frame_type:
       - Cog
       - Composed
-    relations:
-      subcase_of:
-        - containment
-      uses:
-        - fluid-containment
-        - pressure
+    related:
+      - containment
+      - fluid-containment
+      - pressure
   - name: problem
     frame_type:
       - Frame
@@ -9985,17 +9333,16 @@ frames:
       - name: process_stop
       - name: protagonist
         role_type: Entity
-    relations:
-      incorporates_as_role:
-        - process-completed-state
-        - process-continue
-        - process-initial-state
-        - process-pause
-        - process-resume
-        - process-start
-        - process-stop
-        - process-stopped-state
-        - process-uncompleted-state
+    related:
+      - process-completed-state
+      - process-continue
+      - process-initial-state
+      - process-pause
+      - process-resume
+      - process-start
+      - process-stop
+      - process-stopped-state
+      - process-uncompleted-state
   - name: process-completed-state
     frame_families:
       - Excluded frames
@@ -10009,9 +9356,8 @@ frames:
     frame_families:
       - Excluded frames
       - X-schema family
-    relations:
-      subcase_of:
-        - x-schema-continue
+    related:
+      - x-schema-continue
   - name: process-end
     frame_families:
       - Excluded frames
@@ -10068,10 +9414,9 @@ frames:
       - shield.n
       - shield.v
       - shock absorber.n
-    relations:
-      uses:
-        - contact
-        - protecting
+    related:
+      - contact
+      - protecting
   - name: protecting
     frame_type:
       - Frame
@@ -10098,9 +9443,8 @@ frames:
       - security blanket.n
       - shelter.n
       - shelter.v
-    relations:
-      uses:
-        - harm
+    related:
+      - harm
   - name: proximal
     frame_families:
       - Image schemas
@@ -10118,11 +9462,9 @@ frames:
       - within grasp
       - within one's grasp
       - within reach
-    relations:
-      perspective_on:
-        - proximity
-      scalar_opposition_to:
-        - distant
+    related:
+      - distant
+      - proximity
   - name: proximal-distal
     frame_type:
       - Cog
@@ -10134,11 +9476,9 @@ frames:
       - name: center
       - name: distal_region
       - name: proximal_region
-    relations:
-      subcase_of:
-        - bounded-region
-      uses:
-        - proximity
+    related:
+      - bounded-region
+      - proximity
   - name: proximity
     frame_type:
       - Cog
@@ -10153,26 +9493,23 @@ frames:
       - name: profiled_region
       - name: proximity_scale
         role_type: Scale
-    relations:
-      uses:
-        - scale
-        - trajector-landmark
+    related:
+      - scale
+      - trajector-landmark
   - name: psychological-attributes
     frame_type:
       - Frame
     frame_families:
       - Cognition frames
-    relations:
-      uses:
-        - mind
+    related:
+      - mind
   - name: psychological-fixation
   - name: psychological-harm
     frame_families:
       - Harm
       - Harm to living entity
-    relations:
-      subcase_of:
-        - harm
+    related:
+      - harm
   - name: public-trust
     frame_type:
       - Frame
@@ -10181,9 +9518,8 @@ frames:
     roles:
       - name: institution_as_trusted_entity
       - name: public_as_trusting_entity
-    relations:
-      subcase_of:
-        - trust-relationship
+    related:
+      - trust-relationship
   - name: punishment
     frame_families:
       - Crime frames
@@ -10214,10 +9550,9 @@ frames:
       - punishment.n
       - punitive.a
       - put in jail
-    relations:
-      uses:
-        - crime
-        - harm-to-living-entity
+    related:
+      - crime
+      - harm-to-living-entity
   - name: purity
     frame_type:
       - Frame
@@ -10241,11 +9576,9 @@ frames:
       - name: effector
       - name: effort
       - name: objective
-    relations:
-      subcase_of:
-        - action
-      uses:
-        - desiring
+    related:
+      - action
+      - desiring
   - name: pursue
     frame_type:
       - Frame
@@ -10264,11 +9597,9 @@ frames:
       - seek.v
       - track.v
       - track.v down
-    relations:
-      subcase_of:
-        - self-propelled-motion-to-a-destination
-      related_to:
-        - guided-motion
+    related:
+      - guided-motion
+      - self-propelled-motion-to-a-destination
   - name: quality
     frame_type:
       - Frame
@@ -10287,9 +9618,8 @@ frames:
       - rocky.a
       - stumbling block.n
       - treacherous.a
-    relations:
-      subcase_of:
-        - motion-affecting-properties-of-the-landscape
+    related:
+      - motion-affecting-properties-of-the-landscape
   - name: quantity
     frame_type:
       - Cog
@@ -10315,9 +9645,8 @@ frames:
       - less.a
       - more.a
       - quantity.n
-    relations:
-      uses:
-        - scale
+    related:
+      - scale
   - name: race
     frame_type:
       - Frame
@@ -10353,9 +9682,8 @@ frames:
       - sprint
       - starting gate.n
       - starting line.n
-    relations:
-      subcase_of:
-        - recreational-competition
+    related:
+      - recreational-competition
   - name: reasoning
     frame_type:
       - Frame
@@ -10370,9 +9698,8 @@ frames:
       - conclude.v
       - prove.v
       - reason.v
-    relations:
-      subcase_of:
-        - cognizing
+    related:
+      - cognizing
   - name: reciprocal-motion
   - name: reciprocation
     frame_type:
@@ -10384,9 +9711,8 @@ frames:
     lexical_units:
       - reciprocate.v
       - repay.v
-    relations:
-      uses:
-        - reciprocal-motion
+    related:
+      - reciprocal-motion
   - name: recreational-competition
     frame_type:
       - Frame
@@ -10399,9 +9725,8 @@ frames:
       - name: event
       - name: outcome
       - name: prize
-    relations:
-      subcase_of:
-        - competition
+    related:
+      - competition
   - name: region
     frame_families:
       - Bounding
@@ -10429,10 +9754,9 @@ frames:
       - regulation.n
       - regulatory.a
       - rule.n
-    relations:
-      uses:
-        - authority
-        - evaluation
+    related:
+      - authority
+      - evaluation
   - name: relation
     frame_families:
       - Excluded frames
@@ -10444,9 +9768,8 @@ frames:
       - name: relation_value
       - name: relation_value_x_schema
         role_type: XSchema
-    relations:
-      uses:
-        - process
+    related:
+      - process
   - name: relationship
     frame_type:
       - Composed
@@ -10469,9 +9792,8 @@ frames:
         role_type: Scale
       - name: relationship_whole
       - name: static_dynamic_status_of_relationship
-    relations:
-      uses:
-        - relation
+    related:
+      - relation
   - name: release-liquid
     frame_type:
       - Frame
@@ -10520,11 +9842,9 @@ frames:
       - vacuum.v
       - wring.v
       - wring.v out
-    relations:
-      subcase_of:
-        - fluid-motion
-      uses:
-        - liquid
+    related:
+      - fluid-motion
+      - liquid
   - name: remove-burden
     frame_families:
       - Endangerment frames
@@ -10543,9 +9863,8 @@ frames:
       - take.v the load off
       - unburden.v
       - unload.v
-    relations:
-      perspective_on:
-        - burden
+    related:
+      - burden
   - name: representation-and-decision-making
     frame_type:
       - Frame
@@ -10555,9 +9874,8 @@ frames:
       - represent.v
       - representation.n
       - representative.n
-    relations:
-      uses:
-        - decision-making
+    related:
+      - decision-making
   - name: resource
     frame_type:
       - Frame
@@ -10588,9 +9906,8 @@ frames:
     lexical_units:
       - consumption.n
       - resource.n
-    relations:
-      uses:
-        - resource
+    related:
+      - resource
   - name: resource-container
     frame_families:
       - Entity frames
@@ -10624,20 +9941,16 @@ frames:
       - truckload.n
       - vault.n
       - wallet.n
-    relations:
-      subcase_of:
-        - containing
-      uses:
-        - resource
+    related:
+      - containing
+      - resource
   - name: resource-holder
   - name: resource-transfer
     frame_families:
       - Resource frames
-    relations:
-      subcase_of:
-        - transfer-scenario
-      uses:
-        - resource
+    related:
+      - resource
+      - transfer-scenario
   - name: responsibility
     frame_type:
       - Frame
@@ -10657,12 +9970,10 @@ frames:
       - responsibility.n
       - responsible.a
       - responsibly.adv
-    relations:
-      uses:
-        - authority
-        - evaluation
-      related_to:
-        - person
+    related:
+      - authority
+      - evaluation
+      - person
   - name: restaurant
     frame_type:
       - Frame
@@ -10675,10 +9986,9 @@ frames:
     lexical_units:
       - bistro.n
       - restaurant.n
-    relations:
-      subcase_of:
-        - commercial-transaction
-        - hosting
+    related:
+      - commercial-transaction
+      - hosting
   - name: restore
     frame_type:
       - Frame
@@ -10716,13 +10026,11 @@ frames:
       - revive.v
       - revivification.n
       - revivify.v
-    relations:
-      subcase_of:
-        - caused-change-of-state
-        - life
-      incorporates_as_role:
-        - biological-entity
-        - death
+    related:
+      - biological-entity
+      - caused-change-of-state
+      - death
+      - life
   - name: restraints
     frame_type:
       - Cog
@@ -10749,9 +10057,8 @@ frames:
       - snare.n
       - suppress.v
       - tangle.n
-    relations:
-      subcase_of:
-        - motion-affecting-objects
+    related:
+      - motion-affecting-objects
   - name: rich-food
     frame_type:
       - Frame
@@ -10767,18 +10074,16 @@ frames:
       - slice of pie.n
       - slice of the pie.n
       - steak.n
-    relations:
-      subcase_of:
-        - food
+    related:
+      - food
   - name: right-to-life
     frame_type:
       - Frame
     frame_families:
       - Excluded frames
       - Rights family
-    relations:
-      subcase_of:
-        - human-rights
+    related:
+      - human-rights
   - name: right-to-self-defense
     frame_type:
       - Frame
@@ -10794,11 +10099,9 @@ frames:
       - right.n to self-defense.n
       - self-defence.n right.n
       - self-defense.n right.n
-    relations:
-      subcase_of:
-        - rights
-      uses:
-        - self-defense
+    related:
+      - rights
+      - self-defense
   - name: rights
     frame_type:
       - Frame
@@ -10816,10 +10119,9 @@ frames:
       - inalienable.a
       - right to
       - right.n
-    relations:
-      related_to:
-        - democracy
-        - freedom
+    related:
+      - democracy
+      - freedom
   - name: robot
     frame_type:
       - Frame
@@ -10832,10 +10134,9 @@ frames:
     lexical_units:
       - robot.n
       - robotic.a
-    relations:
-      subcase_of:
-        - machine
-        - sentient-entity
+    related:
+      - machine
+      - sentient-entity
   - name: rocks-along-shore
     frame_type:
       - Frame
@@ -10882,9 +10183,8 @@ frames:
       - whirl.v
       - whirl.v
       - whirligig.n
-    relations:
-      subcase_of:
-        - non-translational-motion
+    related:
+      - non-translational-motion
   - name: sadness
     frame_type:
       - Frame
@@ -10897,9 +10197,8 @@ frames:
       - name: emotion_level
       - name: experiencer
       - name: sadness
-    relations:
-      subcase_of:
-        - emotion
+    related:
+      - emotion
   - name: safety
     frame_type:
       - Frame
@@ -10908,9 +10207,8 @@ frames:
     lexical_units:
       - safe.a
       - safety.n
-    relations:
-      related_to:
-        - danger
+    related:
+      - danger
   - name: sanction
     frame_type:
       - Frame
@@ -10933,9 +10231,8 @@ frames:
       - name: ordered_value_relations
       - name: parameter
       - name: position_on_scale
-    relations:
-      subcase_of:
-        - state
+    related:
+      - state
   - name: school
     frame_type:
       - Frame
@@ -10956,9 +10253,8 @@ frames:
       - students
       - teacher
       - teachers
-    relations:
-      subcase_of:
-        - educational-institution
+    related:
+      - educational-institution
   - name: seafaring-vehicle
     frame_type:
       - Frame
@@ -10975,9 +10271,8 @@ frames:
       - seafaring.a
       - seagoing.a
       - ship.n
-    relations:
-      subcase_of:
-        - vehicle
+    related:
+      - vehicle
   - name: searching
     roles:
       - name: looking_for_object_x_schema
@@ -10997,11 +10292,10 @@ frames:
       - Second Amendment policy.n
       - Second Amendment right.n
       - Second Amendment.n
-    relations:
-      uses:
-        - freedom
-        - legislation-enactment
-        - rights
+    related:
+      - freedom
+      - legislation-enactment
+      - rights
   - name: sedation
   - name: seeing
     frame_type:
@@ -11027,11 +10321,9 @@ frames:
       - blindness.n
       - open eye.n
       - vision.n
-    relations:
-      subcase_of:
-        - perception
-      related_to:
-        - luminosity
+    related:
+      - luminosity
+      - perception
   - name: selection
     frame_type:
       - Primary
@@ -11041,9 +10333,8 @@ frames:
       - name: options
       - name: selected_option
       - name: selector
-    relations:
-      uses:
-        - cognizing
+    related:
+      - cognizing
   - name: self-defense
     frame_families:
       - Gun debate
@@ -11057,11 +10348,9 @@ frames:
       - self-defence.n
       - self-defense.n
       - self-protection.n
-    relations:
-      subcase_of:
-        - protecting
-      uses:
-        - attacking
+    related:
+      - attacking
+      - protecting
   - name: self-initiated-state-change
     frame_families:
       - Action frames
@@ -11075,10 +10364,9 @@ frames:
       - name: self_initiated_change_x_schema
       - name: transition
       - name: value_standard
-    relations:
-      subcase_of:
-        - change-of-state
-        - purposeful-action
+    related:
+      - change-of-state
+      - purposeful-action
   - name: self-propelled-motion
     frame_type:
       - Cog
@@ -11112,13 +10400,10 @@ frames:
       - stagger.v
       - totter.v
       - walk.v
-    relations:
-      subcase_of:
-        - affected-motion
-      uses:
-        - purposeful-action
-      incorporates_as_role:
-        - animate-entity
+    related:
+      - affected-motion
+      - animate-entity
+      - purposeful-action
   - name: self-propelled-motion-to-a-destination
     frame_type:
       - Cog
@@ -11136,11 +10421,9 @@ frames:
       - name: self_motion_x_schema
       - name: self_mover
       - name: source
-    relations:
-      subcase_of:
-        - motion-to-a-location
-      perspective_on:
-        - self-propelled-motion
+    related:
+      - motion-to-a-location
+      - self-propelled-motion
   - name: sentence
   - name: sentient-entity
     frame_type:
@@ -11151,12 +10434,10 @@ frames:
       - name: sentient_entity
         role_type: EntityThatHasConsciousness
       - name: state_of_consciousness
-    relations:
-      subcase_of:
-        - entity
-      uses:
-        - cognizing
-        - consciousness
+    related:
+      - cognizing
+      - consciousness
+      - entity
   - name: separation
     frame_families:
       - Image schemas
@@ -11174,17 +10455,15 @@ frames:
       - sever.v
       - split.n
       - split.v
-    relations:
-      uses:
-        - part-whole
+    related:
+      - part-whole
   - name: sequence-of-actions
     frame_type:
       - Frame
     frame_families:
       - Action frames
-    relations:
-      subcase_of:
-        - action
+    related:
+      - action
   - name: servant
     frame_type:
       - Frame
@@ -11203,9 +10482,8 @@ frames:
       - subservient
       - thrall.n
       - vassal.n
-    relations:
-      perspective_on:
-        - servitude
+    related:
+      - servitude
   - name: servitude
     roles:
       - name: subjugated
@@ -11228,9 +10506,8 @@ frames:
       - subjugate.v
       - subjugation.n
       - thralldom.n
-    relations:
-      uses:
-        - authority
+    related:
+      - authority
   - name: servitude-authority
     frame_type:
       - Frame
@@ -11253,9 +10530,8 @@ frames:
       - slavemaster.n
       - slaveowner.n
       - taskmaster.n
-    relations:
-      perspective_on:
-        - servitude
+    related:
+      - servitude
   - name: shepherding
     roles:
       - name: objectives
@@ -11266,9 +10542,8 @@ frames:
       - sheep.n
       - shepherd.n
       - shepherd.v
-    relations:
-      subcase_of:
-        - work-scenario
+    related:
+      - work-scenario
   - name: silencing
     frame_type:
       - Composed
@@ -11289,11 +10564,9 @@ frames:
       - shush.v
       - shut.v up
       - silence.v
-    relations:
-      subcase_of:
-        - causation
-      uses:
-        - speaking
+    related:
+      - causation
+      - speaking
   - name: similarity
   - name: situation
     frame_type:
@@ -11322,12 +10595,10 @@ frames:
       - size.n
       - small.a
       - tiny.a
-    relations:
-      uses:
-        - trajector-landmark
-      incorporates_as_role:
-        - object
-        - scale
+    related:
+      - object
+      - scale
+      - trajector-landmark
   - name: smell
     frame_type:
       - Cog
@@ -11346,9 +10617,8 @@ frames:
       - smell.n
       - smell.v
       - whiff.n
-    relations:
-      subcase_of:
-        - perception
+    related:
+      - perception
   - name: smelling
   - name: social-class
     frame_type:
@@ -11386,9 +10656,8 @@ frames:
       - name: social_group_whole
     lexical_units:
       - social group.n
-    relations:
-      subcase_of:
-        - group
+    related:
+      - group
   - name: social-obligation
     frame_type:
       - Frame
@@ -11397,11 +10666,9 @@ frames:
       - Social frames
     lexical_units:
       - obligation.n
-    relations:
-      uses:
-        - responsibility
-      related_to:
-        - purposeful-action
+    related:
+      - purposeful-action
+      - responsibility
   - name: social-problems
     frame_type:
       - Composed
@@ -11421,11 +10688,9 @@ frames:
       - name: social_problem
       - name: social_program
       - name: society
-    relations:
-      subcase_of:
-        - problem
-      uses:
-        - negatively-evaluated-condition
+    related:
+      - negatively-evaluated-condition
+      - problem
   - name: social-status
     frame_type:
       - Frame
@@ -11433,11 +10698,9 @@ frames:
       - Social frames
     lexical_units:
       - social.a status.n
-    relations:
-      subcase_of:
-        - status
-      related_to:
-        - social-group
+    related:
+      - social-group
+      - status
   - name: society
     frame_type:
       - Frame
@@ -11446,9 +10709,8 @@ frames:
     lexical_units:
       - societal.a
       - society.n
-    relations:
-      related_to:
-        - social-group
+    related:
+      - social-group
   - name: solving-a-problem
   - name: source-path-goal
     frame_type:
@@ -11463,9 +10725,8 @@ frames:
       - name: path
       - name: source
       - name: trajector
-    relations:
-      subcase_of:
-        - trajector-landmark
+    related:
+      - trajector-landmark
   - name: space
   - name: spatial-relation
     frame_families:
@@ -11476,9 +10737,8 @@ frames:
       - name: entity_2
       - name: spatial_relation_type
       - name: spatial_relation_value
-    relations:
-      related_to:
-        - relation
+    related:
+      - relation
   - name: speaking
     frame_type:
       - Cog
@@ -11500,11 +10760,9 @@ frames:
       - speak.v
       - voice.n
       - voice.v
-    relations:
-      subcase_of:
-        - communication
-      uses:
-        - bodily-functioning
+    related:
+      - bodily-functioning
+      - communication
   - name: speech-act
     frame_families:
       - Communication frames
@@ -11534,13 +10792,10 @@ frames:
       - expression.n
       - speech.n
       - voice.n
-    relations:
-      subcase_of:
-        - communication
-      uses:
-        - rights
-      related_to:
-        - democracy
+    related:
+      - communication
+      - democracy
+      - rights
   - name: spelling
   - name: stability
     frame_type:
@@ -11557,13 +10812,10 @@ frames:
       - stability.n
       - steadiness.n
       - sturdiness.n
-    relations:
-      subcase_of:
-        - condition-of-physical-object
-      uses:
-        - scale
-      incorporates_as_role:
-        - complex-physical-object
+    related:
+      - complex-physical-object
+      - condition-of-physical-object
+      - scale
   - name: stable
     frame_type:
       - Frame
@@ -11580,11 +10832,9 @@ frames:
       - sturdy.a
       - unfluctuating.a
       - unvarying.a
-    relations:
-      perspective_on:
-        - stability
-      scalar_opposition_to:
-        - unstable
+    related:
+      - stability
+      - unstable
   - name: starvation
     frame_type:
       - Frame
@@ -11604,9 +10854,8 @@ frames:
       - starving.a
       - voracious.a
       - voraciousness.n
-    relations:
-      perspective_on:
-        - hunger
+    related:
+      - hunger
   - name: state
     frame_type:
       - Cog
@@ -11649,11 +10898,9 @@ frames:
       - tsar.n
       - vice-president.n
       - vizier.n
-    relations:
-      subcase_of:
-        - leadership
-      uses:
-        - nation
+    related:
+      - leadership
+      - nation
   - name: status
     frame_type:
       - Frame
@@ -11668,20 +10915,17 @@ frames:
       - captain.v
       - helm.v
       - pilot.v
-    relations:
-      subcase_of:
-        - vehicular-motion
-      uses:
-        - boat
+    related:
+      - boat
+      - vehicular-motion
   - name: stockholders
     lexical_units:
       - stake-holder
       - stakes
       - stock
       - stockholder
-    relations:
-      subcase_of:
-        - resource-holder
+    related:
+      - resource-holder
   - name: stop-airflow
     frame_type:
       - Frame
@@ -11710,9 +10954,8 @@ frames:
       - strangulation.n
       - suffocate.v
       - throttle.v
-    relations:
-      subcase_of:
-        - harm-to-living-entity
+    related:
+      - harm-to-living-entity
   - name: stop-flow-of-substance
     frame_type:
       - Frame
@@ -11723,18 +10966,16 @@ frames:
       - clog.v
       - congest.v
       - constrict.v
-    relations:
-      uses:
-        - fluid-motion
+    related:
+      - fluid-motion
   - name: straight-path
     frame_type:
       - Cog
     roles:
       - name: path
       - name: person_moving_along_straight_line
-    relations:
-      subcase_of:
-        - path
+    related:
+      - path
   - name: straightness
     frame_type:
       - Cog
@@ -11750,9 +10991,8 @@ frames:
       - crookedness.n
       - straight.a
       - straightness.n
-    relations:
-      related_to:
-        - state
+    related:
+      - state
   - name: strict-father-family
     frame_type:
       - Composed
@@ -11767,11 +11007,9 @@ frames:
       - name: parents
       - name: parenting_style
       - name: traits_in_children
-    relations:
-      subcase_of:
-        - nuclear-family
-      related_to:
-        - nurturant-parent-family
+    related:
+      - nuclear-family
+      - nurturant-parent-family
   - name: subsidy
   - name: substance
     frame_type:
@@ -11783,9 +11021,8 @@ frames:
       - name: container_for_substances
       - name: size_of_amount_of_substance
       - name: substance
-    relations:
-      subcase_of:
-        - physical-entity
+    related:
+      - physical-entity
   - name: sunken-confinement
     frame_type:
       - Frame
@@ -11824,21 +11061,17 @@ frames:
       - sinkhole.n
       - void.n
       - wedge.n
-    relations:
-      subcase_of:
-        - confinement
-      uses:
-        - being-at-a-low-location
+    related:
+      - being-at-a-low-location
+      - confinement
   - name: supply-and-demand
     frame_type:
       - Frame
     frame_families:
       - Economic frames
-    relations:
-      uses:
-        - value
-      related_to:
-        - market
+    related:
+      - market
+      - value
   - name: support
     frame_families:
       - Object frames
@@ -11850,10 +11083,9 @@ frames:
       - support.v
       - supporting.a
       - supportive.a
-    relations:
-      uses:
-        - contact
-        - weight
+    related:
+      - contact
+      - weight
   - name: surgery
     frame_type:
       - Frame
@@ -11871,9 +11103,8 @@ frames:
       - operation.n
       - surgeon.n
       - surgery.n
-    relations:
-      uses:
-        - health-treatment
+    related:
+      - health-treatment
   - name: survival
     frame_type:
       - Frame
@@ -11881,10 +11112,9 @@ frames:
       - survival.n
       - survive.v
       - survivor.n
-    relations:
-      related_to:
-        - harm-to-living-entity
-        - living
+    related:
+      - harm-to-living-entity
+      - living
   - name: sympathy
   - name: system
     frame_type:
@@ -11894,10 +11124,9 @@ frames:
       - name: system_parts
       - name: system_whole
       - name: system_x_schema
-    relations:
-      uses:
-        - network
-        - part-whole
+    related:
+      - network
+      - part-whole
   - name: taste
     frame_type:
       - Frame
@@ -11927,9 +11156,8 @@ frames:
       - taste.n
       - taste.v
       - umami.a
-    relations:
-      subcase_of:
-        - perception
+    related:
+      - perception
   - name: taxation
     frame_type:
       - Frame
@@ -11967,12 +11195,10 @@ frames:
       - taxing
       - taxman.n
       - taxpayer.n
-    relations:
-      subcase_of:
-        - governing-action
-      uses:
-        - legislation-enactment
-        - negatively-evaluated-condition
+    related:
+      - governing-action
+      - legislation-enactment
+      - negatively-evaluated-condition
   - name: taxes
     frame_type:
       - Frame
@@ -11996,9 +11222,8 @@ frames:
       - school tax.n
       - tax rate.n
       - tort tax.n
-    relations:
-      perspective_on:
-        - taxation
+    related:
+      - taxation
   - name: team-names
     roles:
       - name: team
@@ -12018,9 +11243,8 @@ frames:
       - Swansea
       - Tottenham
       - Watford
-    relations:
-      subcase_of:
-        - competitive-sport
+    related:
+      - competitive-sport
   - name: temperature
     frame_type:
       - Cog
@@ -12032,9 +11256,8 @@ frames:
       - chill.n
       - coldness.n
       - temperature.n
-    relations:
-      uses:
-        - scale
+    related:
+      - scale
   - name: tending-to-plants
     frame_type:
       - Frame
@@ -12065,22 +11288,19 @@ frames:
       - weed.v
       - winnow.n
       - winnow.v
-    relations:
-      incorporates_as_role:
-        - plants
+    related:
+      - plants
   - name: territory
     roles:
       - name: boundary
       - name: owner
       - name: spatial_extent
       - name: territory_whole
-    relations:
-      subcase_of:
-        - bounded-region
+    related:
+      - bounded-region
   - name: test2
-    relations:
-      related_to:
-        - process
+    related:
+      - process
   - name: textile
     frame_type:
       - Frame
@@ -12100,11 +11320,9 @@ frames:
       - textile.n
       - unravel.v
       - weave.v
-    relations:
-      subcase_of:
-        - physical-structure
-      uses:
-        - create-object
+    related:
+      - create-object
+      - physical-structure
   - name: theft
     frame_type:
       - Frame
@@ -12160,13 +11378,10 @@ frames:
       - thief.n
       - thieve.v
       - thievery
-    relations:
-      subcase_of:
-        - crime
-      uses:
-        - possession-change
-      incorporates_as_role:
-        - object
+    related:
+      - crime
+      - object
+      - possession-change
   - name: theory
     frame_type:
       - Frame
@@ -12186,11 +11401,9 @@ frames:
       - proposal
       - proposition
       - theory
-    relations:
-      subcase_of:
-        - idea
-      related_to:
-        - argument
+    related:
+      - argument
+      - idea
   - name: thinking-about
     frame_type:
       - Frame
@@ -12204,9 +11417,8 @@ frames:
     lexical_units:
       - think.v
       - thought.n
-    relations:
-      perspective_on:
-        - cognizing
+    related:
+      - cognizing
   - name: ticket
     frame_type:
       - Frame
@@ -12219,9 +11431,8 @@ frames:
       - passport.n
       - ticket.n
       - visa.n
-    relations:
-      subcase_of:
-        - aids-to-motion
+    related:
+      - aids-to-motion
   - name: tight-fit
     frame_type:
       - Frame
@@ -12237,11 +11448,9 @@ frames:
       - taut.a
       - tight.a
       - tighten.v
-    relations:
-      perspective_on:
-        - fit
-      scalar_opposition_to:
-        - loose-fit
+    related:
+      - fit
+      - loose-fit
   - name: time
     frame_type:
       - Frame
@@ -12281,9 +11490,8 @@ frames:
       - Cog
     frame_families:
       - Scale frames
-    relations:
-      subcase_of:
-        - scale
+    related:
+      - scale
   - name: touching
     frame_type:
       - Cog
@@ -12299,11 +11507,9 @@ frames:
     lexical_units:
       - touch.n
       - touch.v
-    relations:
-      subcase_of:
-        - perception
-      uses:
-        - contact
+    related:
+      - contact
+      - perception
   - name: trajector-landmark
     frame_type:
       - Cog
@@ -12315,11 +11521,9 @@ frames:
       - name: landmark
       - name: profiled_region
       - name: trajector
-    relations:
-      uses:
-        - region
-      related_to:
-        - spatial-relation
+    related:
+      - region
+      - spatial-relation
   - name: transfer-scenario
     frame_type:
       - Cog
@@ -12337,12 +11541,10 @@ frames:
     lexical_units:
       - transfer.n
       - transfer.v
-    relations:
-      subcase_of:
-        - complex-process
-      uses:
-        - gain-possession
-        - lose-possession
+    related:
+      - complex-process
+      - gain-possession
+      - lose-possession
   - name: traveling
   - name: treaties
   - name: treating-a-physical-affliction
@@ -12401,11 +11603,9 @@ frames:
       - remedy.v
       - treat.v
       - treatment.n
-    relations:
-      subcase_of:
-        - health-treatment
-      causal_relation_with:
-        - physical-affliction
+    related:
+      - health-treatment
+      - physical-affliction
   - name: trespassing
     frame_type:
       - Frame
@@ -12431,12 +11631,10 @@ frames:
       - trespass.n
       - trespass.v
       - unlawful.a entry.n
-    relations:
-      subcase_of:
-        - crime
-      uses:
-        - motion-to-a-bounded-region
-        - territory
+    related:
+      - crime
+      - motion-to-a-bounded-region
+      - territory
   - name: trust
     frame_type:
       - Frame
@@ -12448,11 +11646,9 @@ frames:
       - name: trust_reason
       - name: trusted_entity
       - name: trusting_entity
-    relations:
-      subcase_of:
-        - directed-emotion
-      uses:
-        - trust-relationship
+    related:
+      - directed-emotion
+      - trust-relationship
   - name: trust-relationship
     frame_type:
       - Frame
@@ -12480,12 +11676,10 @@ frames:
       - trust.v
       - trustworthiness.n
       - trustworthy.a
-    relations:
-      subcase_of:
-        - relationship
-      uses:
-        - judgment
-        - trust-emotion
+    related:
+      - judgment
+      - relationship
+      - trust-emotion
   - name: tyranny
     frame_type:
       - Frame
@@ -12509,11 +11703,10 @@ frames:
       - tyrannical.a
       - tyranny.n
       - tyrant.n
-    relations:
-      uses:
-        - authority
-        - citizen-evaluation-of-government
-        - government
+    related:
+      - authority
+      - citizen-evaluation-of-government
+      - government
   - name: understanding
     frame_type:
       - Frame
@@ -12530,9 +11723,8 @@ frames:
     lexical_units:
       - comprehend
       - understand
-    relations:
-      subcase_of:
-        - knowing
+    related:
+      - knowing
   - name: unemployment
     frame_type:
       - Frame
@@ -12546,11 +11738,9 @@ frames:
       - unemployment
       - unemployment benefits
       - unemployment claims
-    relations:
-      subcase_of:
-        - social-problems
-      perspective_on:
-        - employment
+    related:
+      - employment
+      - social-problems
   - name: unstable
     frame_type:
       - Frame
@@ -12572,11 +11762,9 @@ frames:
       - unstable.a
       - unsteady.a
       - wobbly.a
-    relations:
-      perspective_on:
-        - stability
-      scalar_opposition_to:
-        - stable
+    related:
+      - stability
+      - stable
   - name: upright-posture
     frame_type:
       - Cog
@@ -12594,10 +11782,9 @@ frames:
       - stand up
       - upright.a
       - upstanding.a
-    relations:
-      subcase_of:
-        - state
-        - verticality
+    related:
+      - state
+      - verticality
   - name: upward-motion
     frame_type:
       - Cog
@@ -12657,13 +11844,10 @@ frames:
       - upswing.n
       - upward mobility
       - upwardly mobile
-    relations:
-      subcase_of:
-        - motion-along-a-path
-      uses:
-        - verticality
-      scalar_opposition_to:
-        - downward-motion
+    related:
+      - downward-motion
+      - motion-along-a-path
+      - verticality
   - name: using
     frame_families:
       - Excluded frames
@@ -12713,13 +11897,11 @@ frames:
       - transport.v
       - transportation.n
       - vehicle.n
-    relations:
-      subcase_of:
-        - machine
-        - mode-of-transportation
-      uses:
-        - containing
-        - vehicular-motion
+    related:
+      - containing
+      - machine
+      - mode-of-transportation
+      - vehicular-motion
   - name: vehicular-accident
     frame_type:
       - Frame
@@ -12755,12 +11937,10 @@ frames:
       - wreck.n
       - wreck.v
       - wreckage
-    relations:
-      subcase_of:
-        - misfortune
-      uses:
-        - impact
-        - vehicle
+    related:
+      - impact
+      - misfortune
+      - vehicle
   - name: vehicular-motion
     frame_type:
       - Frame
@@ -12793,13 +11973,10 @@ frames:
       - put on the brakes
       - steer.v
       - steering wheel
-    relations:
-      subcase_of:
-        - affected-motion
-      uses:
-        - operating-a-machine
-      incorporates_as_role:
-        - vehicle
+    related:
+      - affected-motion
+      - operating-a-machine
+      - vehicle
   - name: vertical-position
     frame_type:
       - Frame
@@ -12812,9 +11989,8 @@ frames:
       - strata.n
       - stratum.n
       - tier.n
-    relations:
-      uses:
-        - verticality
+    related:
+      - verticality
   - name: vertical-structure
     roles:
       - name: higher_positions_in_structure
@@ -12835,12 +12011,10 @@ frames:
     lexical_units:
       - vertical.a
       - verticality.n
-    relations:
-      uses:
-        - motion-along-a-path
-        - trajector-landmark
-      incorporates_as_role:
-        - scale
+    related:
+      - motion-along-a-path
+      - scale
+      - trajector-landmark
   - name: violence
     frame_type:
       - Frame
@@ -12862,17 +12036,15 @@ frames:
       - name: locus_of_cognizers_attention
       - name: pathway_scanned
       - name: starting_locus_of_attention
-    relations:
-      subcase_of:
-        - attention
+    related:
+      - attention
   - name: virtual-path
     frame_type:
       - Cog
     lexical_units:
       - virtual path.n
-    relations:
-      subcase_of:
-        - path
+    related:
+      - path
   - name: visual-evaluation
     frame_type:
       - Composed
@@ -12888,11 +12060,9 @@ frames:
       - name: expected_visible_properties
       - name: visible_part_of_evaluee
       - name: visible_properties
-    relations:
-      subcase_of:
-        - evaluation
-      uses:
-        - visual-obstruction
+    related:
+      - evaluation
+      - visual-obstruction
   - name: visual-field
   - name: visual-obstruction
     frame_type:
@@ -12922,9 +12092,8 @@ frames:
       - smokescreen.n
       - transparency.n
       - transparent.a
-    relations:
-      causal_relation_with:
-        - seeing
+    related:
+      - seeing
   - name: voting
     frame_type:
       - Frame
@@ -12952,9 +12121,8 @@ frames:
       - balloting.n
       - vote.v
       - voter.n
-    relations:
-      subcase_of:
-        - government-decision-making
+    related:
+      - government-decision-making
   - name: voting-rights
     frame_type:
       - Composed
@@ -12974,11 +12142,9 @@ frames:
       - suffrage.n
       - voter.n eligibility
       - voting rights
-    relations:
-      subcase_of:
-        - rights
-      uses:
-        - voting
+    related:
+      - rights
+      - voting
   - name: war
     frame_type:
       - Composed
@@ -13048,11 +12214,9 @@ frames:
       - warfare.n
       - warrior.n
       - weapon.n
-    relations:
-      subcase_of:
-        - physical-competition
-      uses:
-        - physical-combat
+    related:
+      - physical-combat
+      - physical-competition
   - name: water-confinement
     frame_type:
       - Frame
@@ -13100,9 +12264,8 @@ frames:
       - underwater.adv
       - went.v under
       - whirlpool.n
-    relations:
-      subcase_of:
-        - confinement
+    related:
+      - confinement
   - name: wealth
     frame_type:
       - Frame
@@ -13130,17 +12293,14 @@ frames:
       - well-heeled.a
       - well-off.a
       - well-to-do
-    relations:
-      subcase_of:
-        - economic-status
-      scalar_opposition_to:
-        - poverty
+    related:
+      - economic-status
+      - poverty
   - name: wealth-distribution
     frame_families:
       - Wealth frames
-    relations:
-      uses:
-        - money
+    related:
+      - money
   - name: wealth-redistribution
     frame_type:
       - Frame
@@ -13156,9 +12316,8 @@ frames:
       - earmark
       - mete
       - reallocate
-    relations:
-      subcase_of:
-        - resource-transfer
+    related:
+      - resource-transfer
   - name: wealthy-people
     frame_families:
       - The rich frames
@@ -13203,9 +12362,8 @@ frames:
       - upper crust
       - wealthy.n
       - well-off
-    relations:
-      uses:
-        - wealth
+    related:
+      - wealth
   - name: weapons-handling
     frame_type:
       - Frame
@@ -13224,9 +12382,8 @@ frames:
       - shoot.v
       - torpedo.v
       - trigger.v
-    relations:
-      subcase_of:
-        - object-manipulation
+    related:
+      - object-manipulation
   - name: wearable-disguises
     frame_type:
       - Frame
@@ -13243,9 +12400,8 @@ frames:
       - shroud.n
       - shroud.v
       - veil.n
-    relations:
-      uses:
-        - visual-obstruction
+    related:
+      - visual-obstruction
   - name: weather
     frame_type:
       - Frame
@@ -13267,9 +12423,8 @@ frames:
     lexical_units:
       - vine.n
       - weed.n
-    relations:
-      subcase_of:
-        - plants
+    related:
+      - plants
   - name: weighing
   - name: weight
     frame_type:
@@ -13279,9 +12434,8 @@ frames:
       - Scale frames
     lexical_units:
       - weight.n
-    relations:
-      uses:
-        - scale
+    related:
+      - scale
   - name: welfare
   - name: well-being
     frame_type:
@@ -13290,14 +12444,13 @@ frames:
       - name: degree_of_well_being
       - name: entity_possessing_well_being
       - name: state_of_well_being
-    relations:
-      uses:
-        - beauty
-        - cleanliness
-        - goodness
-        - health
-        - upright-posture
-        - wealth
+    related:
+      - beauty
+      - cleanliness
+      - goodness
+      - health
+      - upright-posture
+      - wealth
   - name: wet
     frame_type:
       - Frame
@@ -13339,11 +12492,9 @@ frames:
       - wilderness.n
       - woodlands.n
       - woods.n
-    relations:
-      subcase_of:
-        - geographic-feature
-      uses:
-        - danger
+    related:
+      - danger
+      - geographic-feature
   - name: word
     roles:
       - name: referent
@@ -13377,11 +12528,10 @@ frames:
       - work.n
       - work.v
       - worker.n
-    relations:
-      uses:
-        - employment
-        - income
-        - purposeful-action
+    related:
+      - employment
+      - income
+      - purposeful-action
   - name: worship
     frame_families:
       - Morality frames
@@ -13410,11 +12560,9 @@ frames:
       - worship.n
       - worship.v
       - worshipper.n
-    relations:
-      subcase_of:
-        - moral-action
-      uses:
-        - deity
+    related:
+      - deity
+      - moral-action
   - name: writing
   - name: x-schema
     frame_type:
@@ -13437,15 +12585,14 @@ frames:
         role_type: Stage
       - name: x_schema_stopped_state
         role_type: Stage
-    relations:
-      incorporates_as_role:
-        - x-schema-continue
-        - x-schema-end
-        - x-schema-initial-state
-        - x-schema-start
-        - x-schema-stop
-        - x-schema-stopped-state
-        - x-schema-uncompleted-state
+    related:
+      - x-schema-continue
+      - x-schema-end
+      - x-schema-initial-state
+      - x-schema-start
+      - x-schema-stop
+      - x-schema-stopped-state
+      - x-schema-uncompleted-state
   - name: x-schema-continue
     frame_type:
       - Cog
@@ -13478,7 +12625,6 @@ frames:
       - zeal.n
       - zealot.n
       - zealotry.n
-    relations:
-      uses:
-        - deity
-        - worship
+    related:
+      - deity
+      - worship

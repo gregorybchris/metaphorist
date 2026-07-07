@@ -35,18 +35,17 @@ Naming the two frames only tells you they're linked — the **mappings** are wha
 | `fluid_agitation` | `body_agitation` |
 | `container_pressure_limit` | `anger_limit` |
 
-This is what says heat corresponds to anger specifically — not to something else — and it's what `entailments` (below) reason across.
+This is what says heat corresponds to anger specifically — not to something else.
 
-### Examples and entailments
+### Examples
 
 - **examples** — real sentences the metaphor is attested in: `"You make my blood boil."`, `"I had reached the boiling point."`
-- **entailments** — what you're implicitly committed to believing once you accept the metaphor, given as a `source`/`target` pair. For this metaphor: more `fluid_heat_level` entails more `container_heat` and `fluid_agitation` on the source side — carried across the mapping, that becomes more `anger_level` entails more `body_heat` and `body_agitation` on the target side.
 
 ### X-schema roles
 
 Many frames declare a role named `<something>_x_schema` (87 of them across the dataset) — short for **executing schema**, a term from Srini Narayanan's work at ICSI Berkeley, the same lab this repository comes from. An x-schema models the general control structure of any goal-directed action — starting, being in progress, getting interrupted, resuming, completing — independent of what the action actually is. It's the piece a FrameNet-style role list doesn't cover: a frame's other roles describe *who's involved* (a mover, a container, an actor); its x-schema role describes *how the action unfolds over time*.
 
-That's why mappings so often pair one frame's x-schema role with another's, e.g. `self_motion_x_schema -> action_x_schema` in `ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH`. That isn't mapping a participant onto a participant — it's claiming that abstract *action* inherits the entire temporal shape of physical *self-propelled motion*. You can see it directly in that metaphor's entailments: `manner of movement -> manner of action`, `stage of movement -> stage of action`, `speed of motion -> rate of action`, `impediments to motion -> impediments to action`. Every pair is aspectual vocabulary (manner, stage, speed, obstacles), not "who did what to whom" — that's the x-schema mapping doing its job.
+That's why mappings so often pair one frame's x-schema role with another's, e.g. `self_motion_x_schema -> action_x_schema` in `ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH`. That isn't mapping a participant onto a participant — it's claiming that abstract *action* inherits the entire temporal shape of physical *self-propelled motion*. Conceptually: manner of movement → manner of action, stage of movement → stage of action, speed of motion → rate of action, impediments to motion → impediments to action. Every pair is aspectual vocabulary (manner, stage, speed, obstacles), not "who did what to whom" — that's the x-schema mapping doing its job.
 
 ### Type
 
@@ -54,7 +53,7 @@ Every metaphor has a `type`, describing how it was arrived at:
 
 - **`Primary`** — a basic, experientially-grounded metaphor. `ANGER_IS_HEAT` (mapping bare `heat` onto `anger`) is Primary: it comes straight from the bodily experience of getting hot when angry.
 - **`Composed/complex`** — built by combining primary metaphors. `ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER` is Composed/complex — it elaborates `ANGER_IS_HEAT` with a whole container-and-pressure scenario borrowed from other primary metaphors (see Relations, below).
-- **`Entailed`** — follows automatically from another metaphor, rather than being independently grounded. `HAPPY_IS_UP` ("My spirits rose.") is Entailed from `HAPPINESS_IS_VERTICALITY`, a Primary metaphor whose own entailments are "being upright → being happy" and "being low/horizontal → being sad." `HAPPY_IS_UP` (and its sibling `SAD_IS_DOWN`) just split that Primary metaphor's two directions out into their own named entries.
+- **`Entailed`** — follows automatically from another metaphor, rather than being independently grounded. `HAPPY_IS_UP` ("My spirits rose.") is Entailed from `HAPPINESS_IS_VERTICALITY`, a Primary metaphor: accepting it commits you to something like "being upright entails being happy" and "being low/horizontal entails being sad." `HAPPY_IS_UP` (and its sibling `SAD_IS_DOWN`) just split that Primary metaphor's two directions out into their own named entries.
 
 Frames have a loosely analogous `frame_type` tag list, but it's a coarser, less consistently-applied classification than a metaphor's `type`: 213 of 554 frames carry no tag at all, and the rest carry one or more of:
 
@@ -73,38 +72,13 @@ Each family is also defined from the other direction, as its own entry in `metap
 
 ## Relations
 
-Both metaphors and frames carry a `relations` map, cross-referencing other entries of the same kind. A couple of relation types carry most of the data (`entailed_by`/`subcase_of_*` for metaphors, `subcase_of`/`uses` for frames); the rest are a long, thin tail — real when present, but rare. Run `uv run pytest` for current coverage counts (the warning-level checks report their counts in the warnings summary).
+Both metaphors and frames carry a flat, alphabetically-sorted `related` list — the names of other entries of the same kind this one is meaningfully connected to. There's no distinction of relation *kind* recorded: things that used to be separate types (a subcase/hierarchy link, drawing on another entry as a building block, sharing a source or target domain, a dual/opposite framing, and so on) are all folded into one undifferentiated list. Run `uv run pytest` for current coverage counts (the warning-level checks report their counts in the warnings summary).
 
-`ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER`'s own `relations` are a good illustration: `subcase_of_source: [ANGER_IS_HEAT, ANGER_IS_PRESSURE_IN_A_CONTAINER]` (it's a more specific version of both), and `uses: [BODY_IS_A_CONTAINER_FOR_EMOTIONS, EMOTIONS_ARE_SUBSTANCES]` (two more basic metaphors it draws on as building blocks). And `HAPPY_IS_UP`'s `entailed_by: [HAPPINESS_IS_VERTICALITY]` is the relation-level version of the Type example above.
+Relations are recorded one-directionally: an entry's own `related` list only contains what *it* points to, not what points back at it — e.g. `ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER`'s `related` list includes `ANGER_IS_HEAT`, but `ANGER_IS_HEAT`'s own `related` list doesn't mention it back. The frontend computes that reverse view at build time (`frontend/src/data/index.ts`) so a detail page can show both what an entry points at and what points at it, but the underlying YAML only ever stores the forward direction.
 
-**Metaphor relations** (`metaphors[].relations`):
+`ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER`'s own `related` list is `[ANGER_IS_HEAT, ANGER_IS_PRESSURE_IN_A_CONTAINER, BODY_IS_A_CONTAINER_FOR_EMOTIONS, EMOTIONS_ARE_SUBSTANCES]` — a mix of metaphors it's a more specific version of and metaphors it draws on as building blocks. And `HAPPY_IS_UP`'s `related` list includes `HAPPINESS_IS_VERTICALITY` — the relation-level version of the Type example above.
 
-| Key | Meaning |
-|---|---|
-| `entailed_by` | This metaphor's entailments come from another metaphor |
-| `subcase_of_source` | A more specific version of another metaphor, sharing its *source* domain |
-| `subcase_of_target` | A more specific version of another metaphor, sharing its *target* domain |
-| `related` | Loosely associated, with no strict subcase/entailment direction |
-| `uses` | Draws on another metaphor as a building block |
-| `dual_of` | The same mapping viewed from the opposite evaluative angle |
-| `related_by_source` | Related specifically via a shared source domain |
-| `related_by_target` | Related specifically via a shared target domain |
-| `mapping_within` | This is a sub-mapping nested inside a larger metaphor |
-| `transitive_subpart_1` / `transitive_subpart_2` | The two chained halves of a composed metaphor (A→B and B→C, implying A→C) |
-
-**Frame relations** (`frames[].relations`):
-
-| Key | Meaning |
-|---|---|
-| `subcase_of` | A more specific frame nested under a general one |
-| `uses` | Draws on another frame as a component |
-| `related_to` | Loosely associated, with no strict hierarchy |
-| `scalar_opposition_to` | Opposite ends of the same scale |
-| `incorporates_as_role` | Another frame is folded in as one of this frame's roles |
-| `perspective_on` | A viewpoint-specific framing of a more neutral frame |
-| `causal_relation_with` | One frame causes or enables the other |
-
-`heating-fluid` itself has `subcase_of: [heat]` and `uses: [containment]` — a more specific version of the general `heat` frame, built using `containment` as a component.
+`heating-fluid` itself has a `related` list of `[containment, heat]` — a more specific version of the general `heat` frame, built using `containment` as a component.
 
 ## Naming conventions
 

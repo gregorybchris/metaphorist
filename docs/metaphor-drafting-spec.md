@@ -105,24 +105,16 @@ uncritically:
 - Prefer sentences that clearly instantiate *this* metaphor over ones that are
   generically on-topic.
 
-### 7. Entailments (optional)
-
-Only add when there's a clear, specific inferential consequence worth stating — most
-existing entries don't have any (about 1 in 3 do). A good entailment is a `source`/
-`target` prose pair describing what follows from accepting the metaphor, not a
-restatement of the mapping. Don't pad every entry with one for the sake of
-completeness.
-
-### 8. Classify `type`
+### 7. Classify `type`
 
 Use the existing taxonomy (see `README.md` § Type): `Primary` (basic, experientially
 grounded — usually single bodily-experience source), `Composed/complex` (built from
-combining primary metaphors — usually has a `relations` link to the primaries it
+combining primary metaphors — usually has a `related` link to the primaries it
 combines), `Entailed` (follows automatically from another named metaphor). When in
 doubt, find the closest existing sibling (same source or target frame) and match its
 type rather than deciding from the abstract definition alone.
 
-### 9. Assign families
+### 8. Assign families
 
 Reuse an existing family (`dataset/metaphor-families.yaml`) only on genuine semantic
 fit — not because a keyword overlaps. This dataset's family taxonomy skews
@@ -131,17 +123,17 @@ political/economic/social (its origin domain), so a psychologically-basic metaph
 `families` off rather than force a wrong tag, and flag the gap — don't invent a new
 family name unilaterally; that's a taxonomy decision, not a per-entry one.
 
-### 10. Assign relations
+### 9. Assign relations
 
 Search `dataset/metaphors.yaml` for existing metaphors sharing the same source or
-target frame — these are your candidate `related`/`related_by_source`/
-`related_by_target`/`subcase_of_source`/`subcase_of_target`/`uses`/`entailed_by`
-targets. **Only ever link to a metaphor that actually exists** — either already in
+target frame, a subcase/hierarchy relationship, or serving as a building block this
+metaphor draws on — these are candidates for this metaphor's `related` list. **Only
+ever link to a metaphor that actually exists** — either already in
 `dataset/metaphors.yaml` or elsewhere in the same batch. If the source material
 references a sibling metaphor that isn't actually in this dataset, don't invent the
 link; note it as a gap instead.
 
-### 11. Validate mechanically before showing anyone
+### 10. Validate mechanically before showing anyone
 
 Write and run a script against the draft batch that checks, at minimum:
 
@@ -153,13 +145,13 @@ Write and run a script against the draft batch that checks, at minimum:
   role list — this is the same check `tests/test_completeness.py::
   test_mapping_roles_present_in_frame_roles` runs on the real dataset, just run
   pre-merge instead of post-merge.
-- Every `relations` target exists somewhere (existing dataset or batch).
+- Every `related` target exists somewhere (existing dataset or batch).
 
 This is cheap (a few dozen lines of Python against the YAML, see the pilot's inline
 script) and catches real bugs — the pilot's own `HOPE_IS_A_CHILD` draft referenced a
 role that didn't exist in the frame it had just proposed, until this check caught it.
 
-### 12. Write the judgment-call log
+### 11. Write the judgment-call log
 
 For each entry, one short paragraph: what you decided, what alternative you rejected
 and why, and anything you're genuinely unsure about. This is the actual deliverable —
@@ -177,7 +169,7 @@ Two files per batch, not merged into `dataset/` until reviewed:
 
 - `<batch>-additions.yaml` — `new_frames:` list and `metaphors:` list, same field
   shapes as `dataset/frames.yaml` / `dataset/metaphors.yaml`.
-- `<batch>-review-notes.md` — per-entry reasoning per step 12, plus a short summary of
+- `<batch>-review-notes.md` — per-entry reasoning per step 11, plus a short summary of
   what fraction needed a flag vs. went cleanly, so the reviewer can calibrate how much
   scrutiny the batch needs before spot-checking individual entries.
 
@@ -188,5 +180,5 @@ their own rubric before scaling up. The more informative question as batch size 
 isn't "does Claude draft plausible entries" — that part held up — it's whether the
 flag rate (shared-frame extensions, dropped examples, unresolved family/type calls)
 stays proportionate at 20-30 entries, or whether judgment calls start getting resolved
-silently as volume increases. Re-run the mechanical validator (step 11) on every batch
+silently as volume increases. Re-run the mechanical validator (step 10) on every batch
 regardless of size — it's nearly free and catches a real class of error every time.

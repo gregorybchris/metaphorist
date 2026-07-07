@@ -10,7 +10,7 @@ import {
   type RelationsGraphNode,
 } from "@/components/graph/RelationsGraph";
 import { metaphorReverseRelations } from "@/data";
-import { entityPath, metaphorDisplayName, relationLabel } from "@/lib/format";
+import { entityPath, metaphorDisplayName } from "@/lib/format";
 import type { Metaphor } from "@/types";
 import { MappingDiagram } from "./MappingDiagram";
 import { RelationsGroups } from "./RelationsSection";
@@ -28,27 +28,25 @@ export function MetaphorDetail({ metaphor }: { metaphor: Metaphor }) {
     });
     const edges: RelationsGraphEdge[] = [];
 
-    for (const [relation, targets] of Object.entries(metaphor.relations ?? {})) {
-      for (const target of targets ?? []) {
-        if (!nodeMap.has(target)) {
-          nodeMap.set(target, {
-            id: target,
-            label: metaphorDisplayName(target),
-            kind: "metaphor",
-          });
-        }
-        edges.push({ source: metaphor.name, target, label: relationLabel(relation) });
-      }
-    }
-    for (const rev of metaphorReverseRelations.get(metaphor.name) ?? []) {
-      if (!nodeMap.has(rev.name)) {
-        nodeMap.set(rev.name, {
-          id: rev.name,
-          label: metaphorDisplayName(rev.name),
+    for (const target of metaphor.related ?? []) {
+      if (!nodeMap.has(target)) {
+        nodeMap.set(target, {
+          id: target,
+          label: metaphorDisplayName(target),
           kind: "metaphor",
         });
       }
-      edges.push({ source: rev.name, target: metaphor.name, label: relationLabel(rev.relation) });
+      edges.push({ source: metaphor.name, target });
+    }
+    for (const name of metaphorReverseRelations.get(metaphor.name) ?? []) {
+      if (!nodeMap.has(name)) {
+        nodeMap.set(name, {
+          id: name,
+          label: metaphorDisplayName(name),
+          kind: "metaphor",
+        });
+      }
+      edges.push({ source: name, target: metaphor.name });
     }
 
     return { nodes: Array.from(nodeMap.values()), edges };
@@ -58,7 +56,6 @@ export function MetaphorDetail({ metaphor }: { metaphor: Metaphor }) {
   const hasFrameMapping = Boolean(
     metaphor.source_frame || metaphor.target_frame || metaphor.mappings?.length,
   );
-  const hasEntailments = (metaphor.entailments?.length ?? 0) > 0;
   const hasRelations = edges.length > 0;
 
   return (
@@ -137,23 +134,6 @@ export function MetaphorDetail({ metaphor }: { metaphor: Metaphor }) {
                 No role-by-role mapping recorded for this metaphor.
               </p>
             )}
-          </CollapsibleSection>
-        )}
-
-        {hasEntailments && (
-          <CollapsibleSection title="Entailments" count={metaphor.entailments!.length}>
-            <ul className="space-y-2.5">
-              {metaphor.entailments!.map((entailment, i) => (
-                <li
-                  key={i}
-                  className="grid grid-cols-1 items-center gap-2 rounded-md border border-border bg-surface p-3 text-sm sm:grid-cols-[1fr_auto_1fr] sm:gap-3"
-                >
-                  <p className="text-clay-800 dark:text-clay-200">{entailment.source}</p>
-                  <ArrowRight size={14} className="rotate-90 text-text-faint sm:rotate-0" />
-                  <p className="text-indigo-800 dark:text-indigo-200">{entailment.target}</p>
-                </li>
-              ))}
-            </ul>
           </CollapsibleSection>
         )}
 
