@@ -1,6 +1,11 @@
 import warnings
 
-from scripts.dataset_lib import FRAME_NAME_RE, METAPHOR_NAME_RE, ROLE_NAME_RE
+from scripts.dataset_lib import (
+    FRAME_NAME_RE,
+    LEXICAL_UNIT_POS_RE,
+    METAPHOR_NAME_RE,
+    ROLE_NAME_RE,
+)
 
 KNOWN_METAPHOR_TYPES = {"Composed/complex", "Primary", "Entailed"}
 KNOWN_FRAME_TYPES = {"Frame", "Cog", "Composed", "Primary"}
@@ -40,6 +45,16 @@ def test_family_name_format(metaphor_families, frame_families):
         if _normalized_family_name(f["name"]) != f["name"]
     ]
     assert not bad, f"family names not in sentence case (see README): {bad}"
+
+
+def test_lexical_unit_has_pos(frames):
+    bad = [
+        f"{f['name']}.{lu}"
+        for f in frames
+        for lu in f.get("lexical_units", [])
+        if not LEXICAL_UNIT_POS_RE.search(lu)
+    ]
+    assert not bad, f"lexical unit(s) missing a .pos tag (.n/.v/.a/.prep/.adv): {bad[:10]}"
 
 
 # The checks below flag known, long-standing gaps inherited from the source

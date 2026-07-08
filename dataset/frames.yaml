@@ -7,9 +7,9 @@ frames:
       - Event structure
       - Excluded
     lexical_units:
-      - ability
-      - able
-      - capability
+      - ability.n
+      - able.a
+      - capability.n
     related:
       - action
       - x-schema
@@ -76,7 +76,7 @@ frames:
       - name: barrier_to_access
       - name: path_of_access
     lexical_units:
-      - access
+      - access.n
     related:
       - access
       - object
@@ -103,9 +103,9 @@ frames:
     frame_families:
       - Unclassified
     lexical_units:
-      - accompaniment
-      - accompany
-      - together
+      - accompaniment.n
+      - accompany.v
+      - together.adv
     related:
       - leadership
   - name: accounting
@@ -150,9 +150,9 @@ frames:
       - name: effector
       - name: effort
     lexical_units:
-      - act
-      - action
-      - actor
+      - act.n
+      - action.n
+      - actor.n
     related:
       - process
   - name: activating
@@ -613,8 +613,8 @@ frames:
     frame_families:
       - Resource
     lexical_units:
-      - asset
-      - holdings
+      - asset.n
+      - holdings.n
     related:
       - financial-resource
   - name: assistance
@@ -662,8 +662,8 @@ frames:
       - aggressor.n
       - assail.v
       - assailant.n
-      - assailing
-      - assailment
+      - assailing.n
+      - assailment.n
       - assault.n
       - assault.v
       - attack.n
@@ -937,7 +937,7 @@ frames:
       - highest peak.n
       - highest.a
       - mountaintop.n
-      - on top
+      - on top.prep
       - peak.n
       - peak.v
       - pinnacle.n
@@ -1033,7 +1033,7 @@ frames:
       - exist.v in
       - linger.v in
       - live.v in
-      - living in
+      - living.v in
       - remain.v in
       - reside.v in
     related:
@@ -1049,7 +1049,7 @@ frames:
       - middle-ground.a
       - middle.a
       - middle.n
-      - middling
+      - middling.a
   - name: being-low-on-a-scale
     frame_families:
       - Scale
@@ -1166,12 +1166,12 @@ frames:
       - bleed.v
       - bleeding.n
       - blood.n
-      - bloodletting
-      - bloodloss
+      - bloodletting.n
+      - bloodloss.n
       - circulate.v
       - circulation.n
       - exsanguinate.v
-      - exsanguination
+      - exsanguination.n
       - hemorrhage.v
       - pulse.n
       - staunch.v
@@ -1365,8 +1365,8 @@ frames:
       - name: body
       - name: weight_amount
     lexical_units:
-      - body weight
-      - bodyweight
+      - body weight.n
+      - bodyweight.n
     related:
       - bodily-functioning
       - body
@@ -1672,7 +1672,7 @@ frames:
     frame_families:
       - Physical combat
     lexical_units:
-      - UNO
+      - UNO.n
       - aces and eights.n
       - card.n game.n
       - cards.n
@@ -1884,7 +1884,7 @@ frames:
     lexical_units:
       - bite.n
       - bite.v
-      - biting
+      - biting.n
       - chew.v
       - chomp.n
       - chomp.v
@@ -2101,7 +2101,7 @@ frames:
     frame_type:
       - Frame
     lexical_units:
-      - commodity
+      - commodity.n
     related:
       - value
   - name: communication
@@ -2290,11 +2290,11 @@ frames:
     frame_families:
       - Entity
     lexical_units:
-      - brick
-      - building block
+      - brick.n
+      - building block.n
       - ceiling.n
       - facade.n
-      - false front
+      - false front.n
       - roof.n
       - veneer.n
     related:
@@ -2369,7 +2369,7 @@ frames:
       - name: physical_object
       - name: state_of_object
     lexical_units:
-      - crumbling
+      - crumbling.a
       - crumbly.a
       - decrepit.a
       - deformed.a
@@ -2714,16 +2714,16 @@ frames:
     frame_families:
       - Governance
     lexical_units:
-      - Iran
-      - Mexico
-      - Russia
-      - The U.S.
-      - The US
-      - The United States
-      - U.S.
-      - US
-      - United States
-      - country
+      - Iran.n
+      - Mexico.n
+      - Russia.n
+      - The U.S..n
+      - The US.n
+      - The United States.n
+      - U.S..n
+      - US.n
+      - United States.n
+      - country.n
     related:
       - nation
       - political-region
@@ -2844,9 +2844,9 @@ frames:
       - name: reason_for_criticism
       - name: target_of_criticism
     lexical_units:
-      - criticism
-      - criticize
-      - critique
+      - criticism.n
+      - criticize.v
+      - critique.n
   - name: cultivation
     frame_families:
       - Natural process
@@ -2854,7 +2854,7 @@ frames:
       - name: cultivatee
       - name: cultivator
     lexical_units:
-      - bumper crop
+      - bumper crop.n
       - crop.n
       - cull.v
       - cultivate.v
@@ -2868,7 +2868,7 @@ frames:
       - pluck.v
       - reap.v
       - sow.v
-      - yield crop
+      - yield.v crop
       - yield.n
       - yield.v
     related:
@@ -2885,10 +2885,10 @@ frames:
       - name: curriculum_learner
       - name: curriculum_subject
     lexical_units:
-      - class content
-      - curricula
-      - curricular
-      - curriculum
+      - class content.n
+      - curricula.n
+      - curricular.a
+      - curriculum.n
     related:
       - education
       - educational-institution
@@ -2911,7 +2911,7 @@ frames:
       - carve.v
       - chop.v
       - clip.v
-      - cut back
+      - cut.v back
       - cut.v
       - gouge.v
       - prune.v
@@ -3041,21 +3041,21 @@ frames:
     frame_families:
       - Debt
     lexical_units:
-      - arrears
+      - arrears.n
       - bankrupt.a
       - bankruptcy.n
       - debt.n
       - due.a
       - financial liability.n
-      - financially liable
+      - financially liable.a
       - indebted.a
       - indebtedness.n
       - insolvency.n
       - insolvent.a
       - mortgage.n
       - owe.v
-      - owing
-      - unpaid
+      - owing.a
+      - unpaid.a
     related:
       - money
   - name: decay
@@ -3174,17 +3174,17 @@ frames:
       - name: deity
       - name: deity_power
     lexical_units:
-      - almighty
+      - almighty.a
       - deity.n
       - demi-god.n
-      - divine being
+      - divine being.n
       - divine.a
       - divinity.n
       - god.n
       - goddess.n
       - holy.a
       - idol.n
-      - pantheon
+      - pantheon.n
       - sacred.a
     related:
       - moral-authority
@@ -3361,8 +3361,8 @@ frames:
       - symptom.n
   - name: differences-in-distance
     lexical_units:
-      - apart
-      - gap
+      - apart.adv
+      - gap.n
       - step.n ahead
     related:
       - length
@@ -3386,13 +3386,13 @@ frames:
       - name: difficulty
       - name: objective
     lexical_units:
-      - adversity
-      - complication
-      - crises
-      - crisis
-      - difficulties
+      - adversity.n
+      - complication.n
+      - crises.n
+      - crisis.n
+      - difficulties.n
       - difficulty.n
-      - distress
+      - distress.n
       - hardship.n
     related:
       - purposeful-action
@@ -3402,11 +3402,11 @@ frames:
     frame_type:
       - Frame
     lexical_units:
-      - diplomacy
-      - diplomat
-      - diplomatic
-      - liaison
-      - negotiation
+      - diplomacy.n
+      - diplomat.n
+      - diplomatic.a
+      - liaison.n
+      - negotiation.n
   - name: directed-emotion
     frame_families:
       - Emotion
@@ -3442,7 +3442,7 @@ frames:
       - dump.n
       - dump.v
       - garbage.n
-      - get rid of
+      - get.v rid of
       - jettison.v
       - rid.n
       - rid.v
@@ -3488,9 +3488,9 @@ frames:
       - ill.a
       - ill.n
       - illness.n
-      - immune to
+      - immune.a to
       - immune.a
-      - immunity to
+      - immunity.n to
       - immunity.n
       - immunity.n
       - infected.a
@@ -3682,22 +3682,22 @@ frames:
     frame_families:
       - Image schemas
     lexical_units:
-      - a long way from
-      - distance
-      - distant
-      - far
-      - far away
-      - far from
-      - far-off
-      - far-removed
-      - faraway
-      - out of grasp
-      - out of reach
-      - outlier
-      - outlying
-      - remote
-      - removed
-      - unreachable
+      - a long way.n from
+      - distance.n
+      - distant.a
+      - far.a
+      - far.a away
+      - far.a from
+      - far-off.a
+      - far-removed.a
+      - faraway.a
+      - out of grasp.n
+      - out of reach.n
+      - outlier.n
+      - outlying.a
+      - remote.a
+      - removed.a
+      - unreachable.a
     related:
       - proximal
       - proximity
@@ -3842,10 +3842,8 @@ frames:
     lexical_units:
       - devour.v
       - eat.v
-      - eating
+      - eating.n
       - engorge.v
-      - gobble
-      - gobble up
       - gobble.v
       - gobble.v up
       - gorge.v
@@ -3913,7 +3911,7 @@ frames:
       - name: status
       - name: status_holder
     lexical_units:
-      - economic status
+      - economic status.n
     related:
       - financial-resource
       - possession
@@ -3972,13 +3970,13 @@ frames:
       - name: education_content
       - name: education_learner
     lexical_units:
-      - an education
-      - education
-      - educational
-      - erudition
-      - pedagogy
-      - study
-      - training
+      - an education.n
+      - education.n
+      - educational.a
+      - erudition.n
+      - pedagogy.n
+      - study.n
+      - training.n
     related:
       - knowledge
   - name: educational-evaluation
@@ -3994,14 +3992,14 @@ frames:
       - Education
       - Excluded
     lexical_units:
-      - academy
-      - college
-      - exam
-      - examination
-      - school
-      - test
-      - testing
-      - university
+      - academy.n
+      - college.n
+      - exam.n
+      - examination.n
+      - school.n
+      - test.n
+      - testing.n
+      - university.n
     related:
       - education
       - institution
@@ -4165,10 +4163,10 @@ frames:
     frame_families:
       - Harm
     lexical_units:
-      - acid rain
+      - acid rain.n
       - deforestation.n
-      - greenhouse gas
-      - oil spill
+      - greenhouse gas.n
+      - oil spill.n
       - pollute.v
       - pollution.n
       - smog.n
@@ -4259,13 +4257,13 @@ frames:
     roles:
       - name: evil_entity
     lexical_units:
-      - atrocious
-      - depraved
-      - evil
-      - hideous
-      - loathsome
-      - vicious
-      - vile
+      - atrocious.a
+      - depraved.a
+      - evil.a
+      - hideous.a
+      - loathsome.a
+      - vicious.a
+      - vile.a
     related:
       - immorality
       - moral-goodness
@@ -4281,7 +4279,7 @@ frames:
       - Frankenstein.n
       - beast.n
       - bedevil.v
-      - behemoth
+      - behemoth.n
       - demon.n
       - demonization.n
       - devil.n
@@ -4316,17 +4314,17 @@ frames:
       - Aversion
       - Eating
     lexical_units:
-      - bilge
-      - bloat
+      - bilge.n
+      - bloat.n
       - bloated.a
-      - bulgy
+      - bulgy.a
       - engorged.a
-      - fat
-      - fat cat
-      - obese
-      - obesity
-      - opulent
-      - puffed out
+      - fat.a
+      - fat cat.n
+      - obese.a
+      - obesity.n
+      - opulent.a
+      - puffed.a out
     related:
       - body-weight
       - increase-size
@@ -4340,10 +4338,10 @@ frames:
     roles:
       - name: entity
     lexical_units:
-      - be
-      - exist
-      - existence
-      - is
+      - be.v
+      - exist.v
+      - existence.n
+      - is.v
     related:
       - process
   - name: experience-pain
@@ -5086,8 +5084,8 @@ frames:
       - crapshoot.n
       - gamble.v
       - gambling.n
-      - high stakes
-      - high-stakes
+      - high stakes.n
+      - high-stakes.a
       - high-stakes bet.n
       - jackpot.n
       - poker game.n
@@ -5109,9 +5107,9 @@ frames:
       - name: playing_x_schema
       - name: prize
     lexical_units:
-      - UNO
+      - UNO.n
       - checkers.n
-      - checkmate
+      - checkmate.n
       - chess game.n
       - chess.n
       - game.n
@@ -5347,13 +5345,13 @@ frames:
       - name: held_entity
     lexical_units:
       - cinch.v
-      - cinching
+      - cinching.v
       - clasp.v
-      - clasping
+      - clasping.v
       - clench.v
-      - clenching
+      - clenching.v
       - cling.v
-      - clinging
+      - clinging.v
       - clutch.n
       - clutch.v
       - grab.v
@@ -5385,8 +5383,8 @@ frames:
       - name: members
       - name: sub_group
     lexical_units:
-      - group
-      - set
+      - group.n
+      - set.n
     related:
       - plurality
   - name: group-membership
@@ -5466,27 +5464,27 @@ frames:
       - anti gun lobby.n
       - anti gun lobbying.n
       - anti gun movement.n
-      - anti gun sentiment
+      - anti gun sentiment.n
       - anti-gun doctrine.n
       - anti-gun ideology.n
       - anti-gun lobby.n
       - anti-gun lobbying.n
       - anti-gun movement.n
-      - anti-gun sentiment
+      - anti-gun sentiment.n
       - antigun doctrine.n
       - antigun ideology.n
-      - antigun sentiment
+      - antigun sentiment.n
       - gun control doctrine.n
       - gun control effort.n
       - gun control lobby.n
       - gun control movement.n
-      - gun control politics
-      - gun control sentiment
+      - gun control politics.n
+      - gun control sentiment.n
       - gun-control doctrine.n
       - gun-control effort.n
       - gun-control lobby.n
-      - gun-control politics
-      - gun-control sentiment
+      - gun-control politics.n
+      - gun-control sentiment.n
     related:
       - advocacy
       - gun-control
@@ -5499,12 +5497,12 @@ frames:
     lexical_units:
       - 2nd Amendment denier.n
       - Second Amendment denier.n
-      - anti gun
+      - anti gun.a
       - anti gun lobbyist.n
-      - anti-gun
+      - anti-gun.a
       - anti-gun lobbyist.n
       - anti-gunner.n
-      - anti-rights
+      - anti-rights.a
       - disarmer.n
       - gun control advocate.n
       - gun control lobbyist.n
@@ -5531,12 +5529,12 @@ frames:
       - name: proponent_of_legislation
     lexical_units:
       - Brady bill.n
-      - Brady campaign
-      - NY SAFE Act
-      - S.A.F.E. Act
-      - SAFE Act
+      - Brady campaign.n
+      - NY SAFE Act.n
+      - S.A.F.E. Act.n
+      - SAFE Act.n
       - anti-gun measure.n
-      - assault weapons ban
+      - assault weapons ban.n
       - firearm.n regulation.n
       - gun ban.n
       - gun bill.n
@@ -5579,11 +5577,11 @@ frames:
       - name: bill
       - name: negative_team
     lexical_units:
-      - gun control debate
-      - gun debate
-      - gun rights debate
-      - gun-control debate
-      - gun-rights debate
+      - gun control debate.n
+      - gun debate.n
+      - gun rights debate.n
+      - gun-control debate.n
+      - gun-rights debate.n
     related:
       - debating
   - name: gun-industry
@@ -5672,7 +5670,7 @@ frames:
       - gun.n freedom.n
       - gun.n right.n
       - private property right.n
-      - right to keep and bear arms
+      - right.n to keep and bear arms
       - right.n to bear arms
       - right.n to bear firearm.n
       - right.n to own firearm.n
@@ -5689,13 +5687,13 @@ frames:
       - Gun debate
       - Gun rights
     lexical_units:
-      - S.C.O.P.E.
-      - gun advocacy
+      - S.C.O.P.E..n
+      - gun advocacy.n
       - gun lobby.n
       - gun proponent.n
       - gun right.n movement.n
-      - gun rights advocacy
-      - gun-rights advocacy
+      - gun rights advocacy.n
+      - gun-rights advocacy.n
       - gun-rights lobby.n
       - pro-gun lobby.n
       - pro-gun movement.n
@@ -5711,13 +5709,13 @@ frames:
       - Gun debate
       - Gun rights
     lexical_units:
-      - Gun Owners of America
+      - Gun Owners of America.n
       - Minutemen.n
       - NAGR.n
       - NRA.n
-      - National Association for Gun Rights
-      - National Rifle Association
-      - Second Amendment Foundation
+      - National Association for Gun Rights.n
+      - National Rifle Association.n
+      - Second Amendment Foundation.n
       - gun rights advocate.n
     related:
       - gun-rights-advocacy
@@ -5743,13 +5741,13 @@ frames:
       - gun rights activist.n
       - gun rights advocate.n
       - gun supporter.n
-      - gun-clinging
+      - gun-clinging.a
       - gun-rights advocate.n
       - gun-supporter.n
       - gundamentalist.n
-      - pro gun
+      - pro gun.a
       - pro gun advocate.n
-      - pro-gun
+      - pro-gun.a
       - pro-gun advocate.n
       - second amendment advocate.n
       - weekend rambo.n
@@ -5844,11 +5842,11 @@ frames:
     lexical_units:
       - abuse.n
       - abuse.v
-      - back-breaking
-      - backbreaking
-      - bite hard
+      - back-breaking.a
+      - backbreaking.a
+      - bite.v hard
       - bite.v
-      - break the back
+      - break.v the back
       - bruise.n
       - bruise.v
       - chomp.v
@@ -6014,12 +6012,11 @@ frames:
       - cache.n
       - camouflage.n
       - camouflage.v
-      - cloak
-      - cover up
+      - cloak.v
       - cover.v
       - cover.v up
       - hide.v
-      - keep from
+      - keep.v from
       - mask.v
       - obscure.v
       - shroud.n
@@ -6106,7 +6103,7 @@ frames:
       - hunger.n
       - hunger.v
       - hungry.a
-      - munchies
+      - munchies.n
       - thirst.n
       - thirsty.a
     related:
@@ -6150,8 +6147,8 @@ frames:
     frame_families:
       - Morality
     lexical_units:
-      - immoral
-      - immorality
+      - immoral.a
+      - immorality.n
     related:
       - morality
   - name: impact
@@ -6203,7 +6200,7 @@ frames:
     lexical_units:
       - net.n
       - parachute.n
-      - safety net
+      - safety net.n
     related:
       - barrier
       - downward-motion
@@ -6229,26 +6226,26 @@ frames:
       - broke.a
       - destitute.a
       - homeless.n
-      - impoverished
+      - impoverished.a
       - indigent.a
-      - moneyless
-      - needy
+      - moneyless.a
+      - needy.a
       - pauper.n
-      - penniless
-      - poor
-      - poor children
-      - poor families
-      - poor people
+      - penniless.a
+      - poor.a
+      - poor.a children
+      - poor.a families
+      - poor.a people
       - poor.n
-      - poorest families
-      - poorest people
-      - poverty-stricken
-      - the destitute
-      - the indigent
-      - the poor
+      - poorest.a families
+      - poorest.a people
+      - poverty-stricken.a
+      - the destitute.n
+      - the indigent.n
+      - the poor.n
       - underprivileged.n
       - welfare queen.n
-      - working poor
+      - working poor.n
     related:
       - experiencing-a-negative-state
       - experiencing-an-economic-status
@@ -6301,7 +6298,7 @@ frames:
       - Location
       - Motion-affecting
     lexical_units:
-      - can't access
+      - can't access.v
     related:
       - access-to-a-location
   - name: income
@@ -6317,7 +6314,7 @@ frames:
       - earn.v
       - earnings.n
       - income.n
-      - minimum wage
+      - minimum wage.n
       - pay.n
       - payment.n
       - salary.n
@@ -6360,20 +6357,20 @@ frames:
       - billow.v
       - bloat.v
       - bloated.a
-      - bloating
+      - bloating.v
       - bulge.v
       - enlarge.v
       - enlarged.a
       - enlargement.n
-      - enlarging
+      - enlarging.v
       - expand.v
       - expansion.n
       - explode.v
       - explosion.n
-      - fatten up
+      - fatten.v up
       - fatten.n
-      - fattened
-      - get fat
+      - fattened.v
+      - get.v fat
       - inflate.v
       - mushroom.v
       - puff.v
@@ -6407,7 +6404,7 @@ frames:
       - sip.n
       - sip.v
       - slurp.v
-      - take in
+      - take.v in
     related:
       - bodily-functioning
   - name: injurious-gun-use
@@ -6523,9 +6520,9 @@ frames:
       - purposeful-action
   - name: insurmountable-differences-in-distance
     lexical_units:
-      - canyon
-      - chasm
-      - gulf
+      - canyon.n
+      - chasm.n
+      - gulf.n
     related:
       - differences-in-distance
   - name: international-relations
@@ -6558,7 +6555,7 @@ frames:
       - name: source_exterior
       - name: trajector
     lexical_units:
-      - into
+      - into.prep
     related:
       - bounded-region
       - source-path-goal
@@ -6588,19 +6585,19 @@ frames:
       - name: investor
       - name: investment_market
     lexical_units:
-      - bankroll
-      - buy stock in
-      - divest
-      - divestment
-      - dividend
-      - earnings
-      - endowment
-      - grant
-      - invest
-      - investment
+      - bankroll.v
+      - buy.v stock in
+      - divest.v
+      - divestment.n
+      - dividend.n
+      - earnings.n
+      - endowment.n
+      - grant.n
+      - invest.v
+      - investment.n
       - investor.n
-      - loan
-      - stock holder
+      - loan.n
+      - stock holder.n
       - stock.n
     related:
       - financial-resource
@@ -6738,7 +6735,7 @@ frames:
       - extermination.n
       - exterminator.n
       - extinction.n
-      - hired gun
+      - hired gun.n
       - hitman.n
       - homicide.n
       - kill.v
@@ -6930,8 +6927,8 @@ frames:
       - name: purpose_of_learning
       - name: source_of_learning
     lexical_units:
-      - learn
-      - learning
+      - learn.v
+      - learning.n
     related:
       - cognizing
       - knowing
@@ -6944,11 +6941,11 @@ frames:
       - crumb.n
       - dreg.n
       - leftover.n
-      - piece of the pie
+      - piece.n of the pie
       - scrap.n
       - sliver.n
       - sliver.n of the pie
-      - tiny sliver
+      - tiny sliver.n
     related:
       - food
   - name: legality
@@ -7149,7 +7146,7 @@ frames:
     frame_type:
       - Frame
     lexical_units:
-      - limited
+      - limited.a
   - name: linguistic-activity
     frame_type:
       - Frame
@@ -7284,7 +7281,7 @@ frames:
       - apparatus.n
       - appliance.n
       - bolt.n
-      - break down
+      - break.v down
       - cog.n
       - device.n
       - engine.n
@@ -7335,7 +7332,7 @@ frames:
       - magical.a spell.n
       - magician.n
       - mystical.a
-      - sleight of hand
+      - sleight.n of hand
       - sorcerer.n
       - sorcery.n
       - supernatural.a
@@ -7417,16 +7414,16 @@ frames:
     lexical_units:
       - broadcast.v
       - broadcasting.n
-      - fourth estate
+      - fourth estate.n
       - journalism.n
       - journalist.n
       - media.n
-      - news media
+      - news media.n
       - news.n
       - newsmagazine.n
       - newsmedia.n
       - newspaper.n
-      - press corps
+      - press corps.n
       - press.n
       - reporter.n
       - reporting.n
@@ -7480,13 +7477,13 @@ frames:
       - accident.n
       - calamity.n
       - catastrophe.n
-      - disaster
+      - disaster.n
       - fluke.n
-      - fubar
+      - fubar.a
       - misadventure.n
       - misfortune.n
       - mishap.n
-      - setback
+      - setback.n
     related:
       - harm
   - name: mode-of-transportation
@@ -7518,16 +7515,16 @@ frames:
       - name: money
     lexical_units:
       - banknote.n
-      - bucks
+      - bucks.n
       - capital.n
       - cash.n
       - coin.n
       - currency.n
-      - dollar bill
+      - dollar bill.n
       - dollar.n
-      - dollars
-      - funds
-      - legal tender
+      - dollars.n
+      - funds.n
+      - legal tender.n
       - money.n
     related:
       - financial-resource
@@ -7609,8 +7606,8 @@ frames:
       - name: moral_person
       - name: morality
     lexical_units:
-      - moral
-      - morality
+      - moral.a
+      - morality.n
     related:
       - immorality
   - name: motion
@@ -7789,11 +7786,11 @@ frames:
       - depart.v
       - egress.n
       - exit.v
-      - get out
+      - get.v out
       - go.v out
       - leave.v
       - move.v out
-      - way out
+      - way out.n
     related:
       - motion-along-a-path
       - motion-to-a-location
@@ -7892,7 +7889,7 @@ frames:
       - render.v motionless
       - slow.v
       - stand.v in the way
-      - stood in the way
+      - stood.v in the way
       - stop.v
     related:
       - impediment-to-motion
@@ -7920,10 +7917,10 @@ frames:
       - climb.v out
       - egress.n
       - exit.v
-      - get out
+      - get.v out
       - go.v out
       - move.v out
-      - way out
+      - way out.n
     related:
       - bounded-region
       - motion-along-a-path
@@ -8203,19 +8200,19 @@ frames:
       - earthquake.n
       - firestorm.n
       - flood.n
-      - heat wave
+      - heat wave.n
       - hurricane.n
       - inferno.n
       - landslide.n
-      - natural disaster
-      - storm surge
+      - natural disaster.n
+      - storm surge.n
       - storm.n
       - tidal wave.n
       - tornado.n
       - tsunami.n
       - twister.n
       - typhoon.n
-      - volcanic eruption
+      - volcanic eruption.n
       - volcano.n
       - wildfire.n
     related:
@@ -8354,10 +8351,10 @@ frames:
       - name: benefits_of_getting_nutrients
       - name: nutritious_food
     lexical_units:
-      - healthy food
+      - healthy food.n
       - nutrition.n
       - nutritional.a
-      - nutritious food
+      - nutritious food.n
     related:
       - food
   - name: object
@@ -8412,7 +8409,7 @@ frames:
     lexical_units:
       - drill.v
       - embed.v
-      - force in
+      - force.v in
       - implant.v
       - implant.v
       - ingrain.v
@@ -8424,7 +8421,7 @@ frames:
       - lug.v in
       - poke.v
       - shove.v in
-      - sink in
+      - sink.v in
       - squeeze.v in
       - stab.v
       - stick.v in
@@ -8467,7 +8464,7 @@ frames:
       - pitch.n
       - propel.v
       - propulsion.n
-      - rapid fire
+      - rapid fire.n
       - shoot.v
       - sling.v
       - throw.v
@@ -8489,7 +8486,7 @@ frames:
       - perversity.n
       - porn.n
       - pornographic.a
-      - pornographically
+      - pornographically.adv
       - pornography.n
       - vulgar.a
       - vulgarity.n
@@ -8525,9 +8522,9 @@ frames:
     frame_type:
       - Frame
     lexical_units:
-      - chance
-      - opportunities
-      - opportunity
+      - chance.n
+      - opportunities.n
+      - opportunity.n
   - name: organization
     frame_type:
       - Frame
@@ -8641,10 +8638,10 @@ frames:
     frame_families:
       - Entity
     lexical_units:
-      - bleed white
+      - bleed.v white
       - bloodsucker.n
-      - bloodsucking
-      - drain the lifeblood
+      - bloodsucking.a
+      - drain.v the lifeblood
       - leech.n
       - leech.v
       - parasite.n
@@ -8715,9 +8712,9 @@ frames:
       - outlet.n
       - path.n out
       - pathway.n out
-      - road out
+      - road out.n
       - vent.n
-      - way out
+      - way out.n
     related:
       - physical-path
   - name: payment
@@ -8813,7 +8810,7 @@ frames:
       - assault weapon.n
       - firearm.n
       - gun.n
-      - guns
+      - guns.n
       - handgun.n
       - pistol.n
       - revolver.n
@@ -8923,12 +8920,12 @@ frames:
       - name: physical_properties
       - name: value
     lexical_units:
-      - color
-      - length
-      - mass
-      - shape
-      - size
-      - width
+      - color.n
+      - length.n
+      - mass.n
+      - shape.n
+      - size.n
+      - width.n
     related:
       - attribute
   - name: physical-combat
@@ -9012,15 +9009,15 @@ frames:
       - name: fixed_object
       - name: item1
     lexical_units:
-      - bind
+      - bind.v
       - binding.n
       - bond.n
       - bond.v
       - chain.n
       - chain.v
-      - connect
-      - connection
-      - connector
+      - connect.v
+      - connection.n
+      - connector.n
       - link.n
       - link.v
       - strap.n
@@ -9433,11 +9430,11 @@ frames:
       - indigence.n
       - poor.a
       - poorer.a
-      - poverty line
+      - poverty line.n
       - poverty.n
       - poverty.n rate.n
-      - the 47 percent
-      - the 53 percent
+      - the 47 percent.n
+      - the 53 percent.n
       - underprivileged.a
       - underprivileged.n
     related:
@@ -9631,19 +9628,19 @@ frames:
     frame_families:
       - Image schemas
     lexical_units:
-      - adjacent
-      - approachable
-      - attainable
-      - close
-      - handy
-      - near
-      - nearby
-      - next to
-      - proximal
-      - reachable
-      - within grasp
-      - within one's grasp
-      - within reach
+      - adjacent.a
+      - approachable.a
+      - attainable.a
+      - close.a
+      - handy.a
+      - near.a
+      - nearby.a
+      - next to.prep
+      - proximal.a
+      - reachable.a
+      - within grasp.n
+      - within one's grasp.n
+      - within reach.n
     related:
       - distant
       - proximity
@@ -9729,7 +9726,7 @@ frames:
       - punish.v
       - punishment.n
       - punitive.a
-      - put in jail
+      - put.v in jail
     related:
       - crime
       - harm-to-living-entity
@@ -9863,23 +9860,23 @@ frames:
       - name: racers
       - name: winner
     lexical_units:
-      - finish
+      - finish.n
       - finish line.n
       - foot race.n
       - front runner.n
       - front-runner.n
       - handicap.n
-      - handicapped
-      - headstart
+      - handicapped.a
+      - headstart.n
       - horse race.n
-      - lap
-      - lead
+      - lap.n
+      - lead.n
       - marathon.n
-      - neck and neck
+      - neck and neck.a
       - race.n
       - race.v
       - racer.n
-      - sprint
+      - sprint.n
       - starting gate.n
       - starting line.n
     related:
@@ -10014,7 +10011,7 @@ frames:
       - leach.v
       - leak.n
       - leak.v
-      - leaking
+      - leaking.n
       - liquidate.v
       - liquidation.n
       - ooze.v
@@ -10330,7 +10327,7 @@ frames:
       - name: source_of_right
     lexical_units:
       - inalienable.a
-      - right to
+      - right.n to
       - right.n
     related:
       - democracy
@@ -10458,14 +10455,14 @@ frames:
       - name: students
       - name: teachers
     lexical_units:
-      - exam
-      - graduation requirement
-      - homework
-      - school
-      - student
-      - students
-      - teacher
-      - teachers
+      - exam.n
+      - graduation requirement.n
+      - homework.n
+      - school.n
+      - student.n
+      - students.n
+      - teacher.n
+      - teachers.n
     related:
       - educational-institution
   - name: seafaring-vehicle
@@ -10501,7 +10498,7 @@ frames:
       - 2nd Amendment policy.n
       - 2nd Amendment right.n
       - 2nd Amendment.n
-      - 2nd amendment
+      - 2nd amendment.n
       - Second Amendment policy.n
       - Second Amendment right.n
       - Second Amendment.n
@@ -10524,7 +10521,7 @@ frames:
       - name: vision_x_schema
       - name: visual_ability
     lexical_units:
-      - blind
+      - blind.a
       - blind.v
       - blinder.n
       - blinders.n
@@ -10680,14 +10677,14 @@ frames:
     lexical_units:
       - butler.n
       - footman.n
-      - in chains
+      - in chains.n
       - lackey.n
       - maid.n
       - peon.n
       - serf.n
       - servant.n
       - slave.n
-      - subservient
+      - subservient.a
       - thrall.n
       - vassal.n
     related:
@@ -10704,7 +10701,7 @@ frames:
       - enslave.v
       - enslavement.n
       - oppress.v
-      - oppressive
+      - oppressive.a
       - peonage.n
       - rule.v over
       - serfdom.n
@@ -10722,11 +10719,11 @@ frames:
     roles:
       - name: master
     lexical_units:
-      - lord
+      - lord.n
       - master.n
       - oppressor.n
-      - overlord
-      - overseer
+      - overlord.n
+      - overseer.n
       - rule.v over
       - slave driver.n
       - slave master.n
@@ -10843,18 +10840,18 @@ frames:
     frame_families:
       - Social class
     lexical_units:
-      - class
-      - have-nots
-      - lower class
-      - middle class
-      - social class
-      - the have-nots
-      - the haves
-      - the haves and the have-nots
-      - underclass
-      - upper class
-      - working class
-      - working-class
+      - class.n
+      - have-nots.n
+      - lower class.n
+      - middle class.n
+      - social class.n
+      - the have-nots.n
+      - the haves.n
+      - the haves and the have-nots.n
+      - underclass.n
+      - upper class.n
+      - working class.n
+      - working-class.a
     roles:
       - name: person_in_social_class
       - name: social_class_scale
@@ -11151,10 +11148,10 @@ frames:
       - vehicular-motion
   - name: stockholders
     lexical_units:
-      - stake-holder
-      - stakes
-      - stock
-      - stockholder
+      - stake-holder.n
+      - stakes.n
+      - stock.n
+      - stockholder.n
     related:
       - resource-holder
   - name: stop-airflow
@@ -11403,7 +11400,7 @@ frames:
       - name: taxer
     lexical_units:
       - IRS.n
-      - Internal Revenue Service
+      - Internal Revenue Service.n
       - income tax rate.n
       - income tax.n
       - property tax.n
@@ -11422,7 +11419,7 @@ frames:
       - tax.v
       - taxation.n
       - taxes.n
-      - taxing
+      - taxing.v
       - taxman.n
       - taxpayer.n
     related:
@@ -11458,21 +11455,21 @@ frames:
     roles:
       - name: team
     lexical_units:
-      - Bournemouth
-      - Brom
-      - Burnley
-      - Chelsea
-      - Everton
-      - Ham
-      - Leicester
-      - Liverpool
-      - Newcastle
-      - Norwich
-      - Southampton
-      - Sunderland
-      - Swansea
-      - Tottenham
-      - Watford
+      - Bournemouth.n
+      - Brom.n
+      - Burnley.n
+      - Chelsea.n
+      - Everton.n
+      - Ham.n
+      - Leicester.n
+      - Liverpool.n
+      - Newcastle.n
+      - Norwich.n
+      - Southampton.n
+      - Sunderland.n
+      - Swansea.n
+      - Tottenham.n
+      - Watford.n
     related:
       - competitive-sport
   - name: temperature
@@ -11606,7 +11603,7 @@ frames:
       - theft.n
       - thief.n
       - thieve.v
-      - thievery
+      - thievery.n
     related:
       - crime
       - object
@@ -11624,12 +11621,12 @@ frames:
       - name: theoretical_question
       - name: theory_supporting_evidence
     lexical_units:
-      - conjecture
-      - paradigm
-      - postulate
-      - proposal
-      - proposition
-      - theory
+      - conjecture.n
+      - paradigm.n
+      - postulate.n
+      - proposal.n
+      - proposition.n
+      - theory.n
     related:
       - argument
       - idea
@@ -11652,7 +11649,7 @@ frames:
       - Frame
     lexical_units:
       - entry card.n
-      - exit visa
+      - exit visa.n
       - free pass.n
       - license.n
       - pass.n
@@ -11945,8 +11942,8 @@ frames:
       - name: understanding_x_schema
       - name: understood_idea
     lexical_units:
-      - comprehend
-      - understand
+      - comprehend.v
+      - understand.v
     related:
       - knowing
   - name: unemployment
@@ -11955,13 +11952,13 @@ frames:
     frame_families:
       - Wealth and social class
     lexical_units:
-      - jobless
-      - joblessness
+      - jobless.a
+      - joblessness.n
       - the unemployed.n
       - unemployed.a
-      - unemployment
-      - unemployment benefits
-      - unemployment claims
+      - unemployment.n
+      - unemployment benefits.n
+      - unemployment claims.n
     related:
       - employment
       - social-problems
@@ -12002,8 +11999,8 @@ frames:
       - name: upright_entity_axis
       - name: upright_position
     lexical_units:
-      - backbone
-      - stand up
+      - backbone.n
+      - stand.v up
       - upright.a
       - upstanding.a
     related:
@@ -12066,8 +12063,8 @@ frames:
       - upsurge.v
       - upswell.n
       - upswing.n
-      - upward mobility
-      - upwardly mobile
+      - upward mobility.n
+      - upwardly mobile.a
     related:
       - downward-motion
       - motion-along-a-path
@@ -12085,8 +12082,8 @@ frames:
     frame_families:
       - Economic
     lexical_units:
-      - value
-      - worth
+      - value.n
+      - worth.n
   - name: vehicle
     frame_type:
       - Composed
@@ -12132,27 +12129,27 @@ frames:
       - crash.n
       - derail.v
       - derailment.n
-      - fender bender
+      - fender bender.n
       - fender-bender.n
       - flame-out.n
       - flameout.n
-      - head-on
+      - head-on.a
       - nosedive.n
-      - off the rails
-      - pile-up
-      - pileup
-      - plow into
-      - shipwreck
-      - side-swipe
-      - sideswipe
-      - t-bone
+      - off the rails.a
+      - pile-up.n
+      - pileup.n
+      - plow.v into
+      - shipwreck.n
+      - side-swipe.n
+      - sideswipe.n
+      - t-bone.v
       - tailspin.n
       - train-wreck.n
       - train.n wreck.n
       - trainwreck.n
       - wreck.n
       - wreck.v
-      - wreckage
+      - wreckage.n
     related:
       - impact
       - misfortune
@@ -12181,11 +12178,11 @@ frames:
       - brakes.n
       - conduct.v
       - driver.n
-      - jump start
+      - jump.v start
       - pilot.v
-      - put on the brakes
+      - put.v on the brakes
       - steer.v
-      - steering wheel
+      - steering wheel.n
     related:
       - affected-motion
       - operating-a-machine
@@ -12351,7 +12348,7 @@ frames:
       - right.n to vote
       - suffrage.n
       - voter.n eligibility
-      - voting rights
+      - voting rights.n
     related:
       - rights
       - voting
@@ -12435,7 +12432,7 @@ frames:
       - name: physical_entity
       - name: watery_region
     lexical_units:
-      - awash in
+      - awash.a in
       - awash.a
       - bog.n
       - deep water.n
@@ -12460,7 +12457,6 @@ frames:
       - submerge.v
       - suck.v into
       - swamp.n
-      - tread water
       - tread.v
       - tread.v
       - tread.v water
@@ -12484,21 +12480,21 @@ frames:
     lexical_units:
       - affluence.n
       - extremely rich.a
-      - financially independent
-      - hoity toity
+      - financially independent.a
+      - hoity toity.a
       - prosperity.n
       - prosperous.a
       - rich.a
       - rich.n
-      - richer
+      - richer.a
       - riches.n
-      - richest
+      - richest.a
       - wealth.n
-      - wealthiest
+      - wealthiest.a
       - wealthy.a
       - well-heeled.a
       - well-off.a
-      - well-to-do
+      - well-to-do.a
     related:
       - economic-status
       - poverty
@@ -12513,15 +12509,15 @@ frames:
     frame_families:
       - Wealth and social class
     lexical_units:
-      - allocate
-      - allot
-      - allotment
-      - apportion
+      - allocate.v
+      - allot.v
+      - allotment.n
+      - apportion.v
       - budget.n
       - budget.v
-      - earmark
-      - mete
-      - reallocate
+      - earmark.v
+      - mete.v
+      - reallocate.v
     related:
       - resource-transfer
   - name: wealthy-people
@@ -12537,37 +12533,37 @@ frames:
       - multi-billionaire.n
       - multi-millionaire.n
       - rich.n
-      - the 1 percent
-      - the 1%
-      - the affluent
-      - the elite
+      - the 1 percent.n
+      - the 1%.n
+      - the affluent.n
+      - the elite.n
       - the extremely wealthy.n
-      - the extremely well off
-      - the fat cats
-      - the mega wealthy
-      - the mega-wealthy
-      - the one percent
-      - the rich
-      - the rich
-      - the super rich
-      - the super-rich
-      - the ultra rich
-      - the ultra wealthy
-      - the ultra-rich
-      - the ultra-wealthy
-      - the very rich
-      - the wealthy
-      - the wealthy
-      - the well-off
-      - top 1 %
-      - top 1 percent
-      - top one %
-      - top one percent
-      - top one %
+      - the extremely well off.n
+      - the fat cats.n
+      - the mega wealthy.n
+      - the mega-wealthy.n
+      - the one percent.n
+      - the rich.n
+      - the rich.n
+      - the super rich.n
+      - the super-rich.n
+      - the ultra rich.n
+      - the ultra wealthy.n
+      - the ultra-rich.n
+      - the ultra-wealthy.n
+      - the very rich.n
+      - the wealthy.n
+      - the wealthy.n
+      - the well-off.n
+      - top 1 %.n
+      - top 1 percent.n
+      - top one %.n
+      - top one percent.n
+      - top one %.n
       - tycoon.n
-      - upper crust
+      - upper crust.n
       - wealthy.n
-      - well-off
+      - well-off.n
     related:
       - wealth
   - name: weapons-handling
@@ -12678,7 +12674,7 @@ frames:
       - Harm
       - Harm to living entity
     lexical_units:
-      - back country
+      - back country.n
       - backwater.n
       - backwoods.n
       - badlands.n
@@ -12732,7 +12728,7 @@ frames:
       - toil.v
       - toiler.n
       - wage.n
-      - well-paying job
+      - well-paying job.n
       - work.n
       - work.v
       - worker.n
@@ -12750,8 +12746,8 @@ frames:
       - name: worshipping_action
     lexical_units:
       - altar.n
-      - bow down to
-      - bow to
+      - bow.v down to
+      - bow.v to
       - canonize.v
       - deify.v
       - glorify.v

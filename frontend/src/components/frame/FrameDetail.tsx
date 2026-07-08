@@ -64,7 +64,11 @@ export function FrameDetail({ name }: { name: string }) {
           )}
         </CollapsibleSection>
 
-        <CollapsibleSection title="Lexical units" count={frame.lexical_units?.length ?? 0}>
+        <CollapsibleSection
+          title="Lexical units"
+          count={frame.lexical_units?.length ?? 0}
+          defaultOpen
+        >
           {frame.lexical_units && frame.lexical_units.length > 0 ? (
             <div className="flex flex-wrap gap-1.5">
               {frame.lexical_units.map((lu) => {

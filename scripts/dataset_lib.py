@@ -8,6 +8,12 @@ METAPHOR_NAME_RE = re.compile(r"^[A-Z0-9_]+$")
 FRAME_NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 ROLE_NAME_RE = re.compile(r"^[a-z0-9]+(_[a-z0-9]+)*$")
 
+# A lexical unit carries its part of speech as a `.pos` tag on its head word,
+# e.g. "boil.v" or, for multiword units, "hold.v back" / "highest level.n" --
+# the tag can sit anywhere as long as the rest of the string is a trailing
+# " particle/complement", not another content word standing alone.
+LEXICAL_UNIT_POS_RE = re.compile(r"\.(n|v|a|prep|adv)( .*)?$")
+
 
 def find_dangling_frame_refs(metaphors, frames, field):
     """metaphors[].source_frame / .target_frame values absent from frames."""
