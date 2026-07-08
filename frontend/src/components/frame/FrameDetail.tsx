@@ -1,4 +1,3 @@
-import { Workflow } from "lucide-react";
 import { frameByName, metaphorsBySourceFrame, metaphorsByTargetFrame } from "@/data";
 import {
   frameDisplayName,
@@ -6,7 +5,6 @@ import {
   pluralize,
   roleDisplayName,
 } from "@/lib/format";
-import { cn } from "@/lib/cn";
 import { Badge } from "@/components/primitives/Badge";
 import { CollapsibleSection } from "@/components/primitives/CollapsibleSection";
 import { EmptyState } from "@/components/primitives/EmptyState";
@@ -39,25 +37,11 @@ export function FrameDetail({ name }: { name: string }) {
         <CollapsibleSection title="Roles" count={frame.roles?.length ?? 0} defaultOpen>
           {frame.roles && frame.roles.length > 0 ? (
             <ul className="flex flex-col gap-1.5">
-              {frame.roles.map((role) => {
-                const isXSchema = role.name.endsWith("_x_schema");
-                return (
-                  <li
-                    key={role.name}
-                    className={cn(
-                      "flex flex-wrap items-center gap-1.5 rounded-md px-2 py-1",
-                      isXSchema &&
-                        "border border-dashed border-indigo-300 bg-indigo-50/50 dark:border-indigo-700 dark:bg-indigo-900/20",
-                    )}
-                  >
-                    {isXSchema && (
-                      <Workflow size={13} className="shrink-0 text-indigo-500 dark:text-indigo-300" />
-                    )}
-                    <span className="text-sm text-text">{roleDisplayName(role.name)}</span>
-                    {isXSchema && <Badge tone="indigo">executing schema</Badge>}
-                  </li>
-                );
-              })}
+              {frame.roles.map((role) => (
+                <li key={role.name} className="flex flex-wrap items-center gap-1.5 rounded-md px-2 py-1">
+                  <span className="text-sm text-text">{roleDisplayName(role.name)}</span>
+                </li>
+              ))}
             </ul>
           ) : (
             <p className="text-sm text-text-muted">No roles recorded for this frame.</p>

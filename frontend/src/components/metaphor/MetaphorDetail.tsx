@@ -35,6 +35,7 @@ export function MetaphorDetail({ metaphor }: { metaphor: Metaphor }) {
             title="Frame mapping"
             count={metaphor.mappings?.length || undefined}
             bordered={false}
+            defaultOpen
           >
             <div className="mb-6 flex items-center gap-3">
               {metaphor.source_frame ? (
