@@ -111,6 +111,17 @@ frames:
       - together
     related:
       - leadership
+  - name: accounting
+    roles:
+      - name: account_holder
+      - name: ledger_item
+      - name: accounting_status
+    lexical_units:
+      - account.n
+      - accounting.n
+      - bookkeeping.n
+      - ledger.n
+      - tally.v
   - name: across
     frame_type:
       - Cog
@@ -894,6 +905,24 @@ frames:
       - access-to-a-location
       - barrier
       - inability-to-access-a-location
+  - name: battery
+    frame_families:
+      - Scale frames
+    roles:
+      - name: entity
+      - name: charge_level
+    lexical_units:
+      - battery.n
+      - charge.v
+      - charge.n
+      - charged.a
+      - discharge.v
+      - drained.a
+      - recharge.v
+      - recharge.n
+      - run.v out of juice
+      - juice.n
+      - plug.v in
   - name: beauty
     frame_type:
       - Frame
@@ -1901,6 +1930,17 @@ frames:
       - nibble.n
       - nibble.v
       - ruminate.v
+  - name: child
+    roles:
+      - name: child
+      - name: caregiver
+    lexical_units:
+      - child.n
+      - foster.v
+      - nourish.v
+      - nurse.v
+      - nurture.v
+      - raise.v
   - name: child-care
     roles:
       - name: children
@@ -2053,6 +2093,19 @@ frames:
       - name: mind_whole
     related:
       - person
+  - name: coherence
+    frame_families:
+      - Property-related frames
+    roles:
+      - name: coherent_entity
+      - name: parts
+      - name: degree_of_coherence
+    lexical_units:
+      - coherent.a
+      - coherence.n
+      - cohesive.a
+      - cohesion.n
+      - hang.v together
   - name: cold
     frame_type:
       - Cog
@@ -2253,6 +2306,23 @@ frames:
     related:
       - cause-contact
       - part-whole
+  - name: compliance
+    frame_families:
+      - Governance frames
+    roles:
+      - name: complier
+      - name: requirement
+      - name: compliance_level
+    lexical_units:
+      - comply.v
+      - compliance.n
+      - compliant.a
+      - adhere.v
+      - adherence.n
+      - follow.v
+      - obey.v
+      - obedience.n
+      - obedient.a
   - name: component-of-building
     frame_families:
       - Entity frames
@@ -2294,6 +2364,21 @@ frames:
       - computer.n
     related:
       - machine
+  - name: conceit
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: conceited_person
+      - name: degree_of_conceit
+    lexical_units:
+      - conceit.n
+      - conceited.a
+      - arrogant.a
+      - arrogance.n
+      - vain.a
+      - vanity.n
+      - self-important.a
+      - egotistical.a
   - name: concentration
     frame_type:
       - Frame
@@ -3530,6 +3615,19 @@ frames:
     related:
       - disease
       - treating-a-physical-affliction
+  - name: disgust
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: disgust_feeler
+      - name: degree_of_disgust
+      - name: target_of_disgust
+    lexical_units:
+      - disgust.n
+      - disgust.v
+      - disgusted.a
+      - disgusting.a
+      - revolting.a
   - name: disgusting
     frame_type:
       - Frame
@@ -4425,6 +4523,19 @@ frames:
     related:
       - institution
       - part-whole
+  - name: failure
+    roles:
+      - name: cause_of_failure
+      - name: failed_state
+      - name: failure_protagonist
+      - name: failure_x_schema
+    lexical_units:
+      - fail.v
+      - failed.a
+      - failure.n
+      - flop.n
+      - flop.v
+      - unsuccessful.a
   - name: fairness
     frame_type:
       - Frame
@@ -4457,6 +4568,35 @@ frames:
       - uncle.n
     related:
       - social-group
+  - name: fashion
+    roles:
+      - name: fashion
+      - name: adopter
+      - name: fashion_status
+    lexical_units:
+      - fashion.n
+      - trend.n
+      - trendy.a
+      - fad.n
+      - in.prep style.n
+      - out.prep of.prep style.n
+      - vogue.n
+      - fashionable.a
+      - outdated.a
+      - passe.a
+  - name: fear
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: fear_feeler
+      - name: degree_of_fear
+      - name: feared_entity
+    lexical_units:
+      - afraid.a
+      - fear.n
+      - fear.v
+      - fearful.a
+      - scared.a
   - name: feeding
   - name: fierce-animal
     frame_type:
@@ -5993,6 +6133,17 @@ frames:
       - name: inferior_points_in_hierarchy
       - name: item_in_hierarchy
       - name: superior_points_in_hierarchy
+  - name: hope
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: hope
+      - name: hoper
+      - name: degree_of_hope
+    lexical_units:
+      - hope.n
+      - hope.v
+      - hopeful.a
   - name: hosting
   - name: human-life-cycle
     frame_type:
@@ -6029,6 +6180,20 @@ frames:
       - Frame
     related:
       - rights
+  - name: humor
+    roles:
+      - name: humor_source
+      - name: affected_party
+      - name: effect_of_humor
+    lexical_units:
+      - joke.n
+      - humor.n
+      - jab.n
+      - quip.n
+      - tease.v
+      - teasing.n
+      - roast.v
+      - dig.n
   - name: hunger
     frame_type:
       - Frame
@@ -6509,6 +6674,18 @@ frames:
       - bounded-region
       - source-path-goal
   - name: intoxicants
+  - name: intoxication
+    frame_families:
+      - Scale frames
+    roles:
+      - name: intoxicated_person
+      - name: intoxication_level
+    lexical_units:
+      - drunk.a
+      - high.a
+      - intoxicated.a
+      - intoxication.n
+      - wasted.a
   - name: investment
     frame_type:
       - Frame
@@ -6772,6 +6949,20 @@ frames:
     related:
       - geographic-feature
       - size
+  - name: laughter
+    roles:
+      - name: laugher
+      - name: laughter
+      - name: degree_of_laughter
+    lexical_units:
+      - laugh.v
+      - laughter.n
+      - giggle.v
+      - giggle.n
+      - chuckle.v
+      - cackle.v
+      - guffaw.v
+      - chortle.v
   - name: law
     frame_type:
       - Frame
@@ -7184,6 +7375,20 @@ frames:
       - luminosity.n
     related:
       - scale
+  - name: lust
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: lust_feeler
+      - name: degree_of_lust
+      - name: target_of_lust
+    lexical_units:
+      - lust.n
+      - lust.v
+      - lustful.a
+      - desire.n
+      - longing.n
+      - craving.n
   - name: machine
     frame_type:
       - Frame
@@ -8077,6 +8282,21 @@ frames:
     related:
       - motion-out-of-a-location
   - name: multiplex
+  - name: musical-harmony
+    roles:
+      - name: harmony_whole
+      - name: harmony_parts
+      - name: harmony_part_relations
+    lexical_units:
+      - harmony.n
+      - harmonious.a
+      - melody.n
+      - chord.n
+      - in.prep tune.n
+      - out.prep of.prep tune.n
+      - discord.n
+      - dissonance.n
+      - symphony.n
   - name: narrowing-width-of-bounded-region
     frame_families:
       - Impediment and enablement frames
@@ -8164,6 +8384,18 @@ frames:
     related:
       - resource
   - name: nature
+  - name: nausea
+    frame_families:
+      - Scale frames
+    roles:
+      - name: entity
+      - name: nausea_level
+    lexical_units:
+      - nauseated.a
+      - nauseating.a
+      - nauseous.a
+      - queasy.a
+      - sick.a
   - name: need
     frame_type:
       - Frame
@@ -8740,6 +8972,17 @@ frames:
     related:
       - complex-physical-object
       - gun-debate
+  - name: personality
+    roles:
+      - name: person
+      - name: personality
+    lexical_units:
+      - personality.n
+      - character.n
+      - trait.n
+      - nature.n
+      - temperament.n
+      - disposition.n
   - name: pest
     frame_type:
       - Frame
@@ -9987,6 +10230,22 @@ frames:
       - unload.v
     related:
       - burden
+  - name: replacement
+    frame_families:
+      - Change-related frames
+    roles:
+      - name: old_entity
+      - name: new_entity
+      - name: replacer
+    lexical_units:
+      - replace.v
+      - replacement.n
+      - substitute.v
+      - substitute.n
+      - swap.v
+      - swap.n
+      - switch.v
+      - exchange.v
   - name: representation-and-decision-making
     frame_type:
       - Frame
@@ -10657,6 +10916,18 @@ frames:
       - taskmaster.n
     related:
       - servitude
+  - name: sexuality
+    roles:
+      - name: sexuality
+      - name: sexuality_feeler
+      - name: degree_of_sexuality
+      - name: target_of_sexuality
+    lexical_units:
+      - sexuality.n
+      - sexual.a
+      - sexually.adv
+      - seductive.a
+      - seduction.n
   - name: shepherding
     roles:
       - name: objectives
@@ -12778,274 +13049,3 @@ frames:
     related:
       - deity
       - worship
-  - name: child
-    roles:
-      - name: child
-      - name: caregiver
-    lexical_units:
-      - child.n
-      - foster.v
-      - nourish.v
-      - nurse.v
-      - nurture.v
-      - raise.v
-  - name: disgust
-    frame_families:
-      - Emotion frames
-    roles:
-      - name: disgust_feeler
-      - name: degree_of_disgust
-      - name: target_of_disgust
-    lexical_units:
-      - disgust.n
-      - disgust.v
-      - disgusted.a
-      - disgusting.a
-      - revolting.a
-  - name: fear
-    frame_families:
-      - Emotion frames
-    roles:
-      - name: fear_feeler
-      - name: degree_of_fear
-      - name: feared_entity
-    lexical_units:
-      - afraid.a
-      - fear.n
-      - fear.v
-      - fearful.a
-      - scared.a
-  - name: hope
-    frame_families:
-      - Emotion frames
-    roles:
-      - name: hope
-      - name: hoper
-      - name: degree_of_hope
-    lexical_units:
-      - hope.n
-      - hope.v
-      - hopeful.a
-  - name: intoxication
-    frame_families:
-      - Scale frames
-    roles:
-      - name: intoxicated_person
-      - name: intoxication_level
-    lexical_units:
-      - drunk.a
-      - high.a
-      - intoxicated.a
-      - intoxication.n
-      - wasted.a
-  - name: nausea
-    frame_families:
-      - Scale frames
-    roles:
-      - name: entity
-      - name: nausea_level
-    lexical_units:
-      - nauseated.a
-      - nauseating.a
-      - nauseous.a
-      - queasy.a
-      - sick.a
-  - name: conceit
-    frame_families:
-      - Emotion frames
-    roles:
-      - name: conceited_person
-      - name: degree_of_conceit
-    lexical_units:
-      - conceit.n
-      - conceited.a
-      - arrogant.a
-      - arrogance.n
-      - vain.a
-      - vanity.n
-      - self-important.a
-      - egotistical.a
-  - name: battery
-    frame_families:
-      - Scale frames
-    roles:
-      - name: entity
-      - name: charge_level
-    lexical_units:
-      - battery.n
-      - charge.v
-      - charge.n
-      - charged.a
-      - discharge.v
-      - drained.a
-      - recharge.v
-      - recharge.n
-      - run.v out of juice
-      - juice.n
-      - plug.v in
-  - name: lust
-    frame_families:
-      - Emotion frames
-    roles:
-      - name: lust_feeler
-      - name: degree_of_lust
-      - name: target_of_lust
-    lexical_units:
-      - lust.n
-      - lust.v
-      - lustful.a
-      - desire.n
-      - longing.n
-      - craving.n
-  - name: musical-harmony
-    roles:
-      - name: harmony_whole
-      - name: harmony_parts
-      - name: harmony_part_relations
-    lexical_units:
-      - harmony.n
-      - harmonious.a
-      - melody.n
-      - chord.n
-      - in.prep tune.n
-      - out.prep of.prep tune.n
-      - discord.n
-      - dissonance.n
-      - symphony.n
-  - name: sexuality
-    roles:
-      - name: sexuality
-      - name: sexuality_feeler
-      - name: degree_of_sexuality
-      - name: target_of_sexuality
-    lexical_units:
-      - sexuality.n
-      - sexual.a
-      - sexually.adv
-      - seductive.a
-      - seduction.n
-  - name: replacement
-    frame_families:
-      - Change-related frames
-    roles:
-      - name: old_entity
-      - name: new_entity
-      - name: replacer
-    lexical_units:
-      - replace.v
-      - replacement.n
-      - substitute.v
-      - substitute.n
-      - swap.v
-      - swap.n
-      - switch.v
-      - exchange.v
-  - name: failure
-    roles:
-      - name: cause_of_failure
-      - name: failed_state
-      - name: failure_protagonist
-      - name: failure_x_schema
-    lexical_units:
-      - fail.v
-      - failed.a
-      - failure.n
-      - flop.n
-      - flop.v
-      - unsuccessful.a
-  - name: coherence
-    frame_families:
-      - Property-related frames
-    roles:
-      - name: coherent_entity
-      - name: parts
-      - name: degree_of_coherence
-    lexical_units:
-      - coherent.a
-      - coherence.n
-      - cohesive.a
-      - cohesion.n
-      - hang.v together
-  - name: fashion
-    roles:
-      - name: fashion
-      - name: adopter
-      - name: fashion_status
-    lexical_units:
-      - fashion.n
-      - trend.n
-      - trendy.a
-      - fad.n
-      - in.prep style.n
-      - out.prep of.prep style.n
-      - vogue.n
-      - fashionable.a
-      - outdated.a
-      - passe.a
-  - name: accounting
-    roles:
-      - name: account_holder
-      - name: ledger_item
-      - name: accounting_status
-    lexical_units:
-      - account.n
-      - accounting.n
-      - bookkeeping.n
-      - ledger.n
-      - tally.v
-  - name: compliance
-    frame_families:
-      - Governance frames
-    roles:
-      - name: complier
-      - name: requirement
-      - name: compliance_level
-    lexical_units:
-      - comply.v
-      - compliance.n
-      - compliant.a
-      - adhere.v
-      - adherence.n
-      - follow.v
-      - obey.v
-      - obedience.n
-      - obedient.a
-  - name: humor
-    roles:
-      - name: humor_source
-      - name: affected_party
-      - name: effect_of_humor
-    lexical_units:
-      - joke.n
-      - humor.n
-      - jab.n
-      - quip.n
-      - tease.v
-      - teasing.n
-      - roast.v
-      - dig.n
-  - name: laughter
-    roles:
-      - name: laugher
-      - name: laughter
-      - name: degree_of_laughter
-    lexical_units:
-      - laugh.v
-      - laughter.n
-      - giggle.v
-      - giggle.n
-      - chuckle.v
-      - cackle.v
-      - guffaw.v
-      - chortle.v
-  - name: personality
-    roles:
-      - name: person
-      - name: personality
-    lexical_units:
-      - personality.n
-      - character.n
-      - trait.n
-      - nature.n
-      - temperament.n
-      - disposition.n
