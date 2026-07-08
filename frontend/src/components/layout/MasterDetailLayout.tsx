@@ -5,12 +5,11 @@ import { cn } from "../../lib/cn";
 
 /**
  * The list+detail pattern used by every browsable collection (metaphors,
- * frames, both family kinds): a scrollable list rail stays mounted while an
- * entry's detail renders alongside it, so exploring many entries in
- * sequence never loses your place in the list. On narrow screens the two
- * collapse to a single pane — list only, or detail-with-back-link only —
- * driven purely by whether `detail` is non-null (i.e. whether the route has
- * a :name param).
+ * frames): a scrollable list rail stays mounted while an entry's detail
+ * renders alongside it, so exploring many entries in sequence never loses
+ * your place in the list. On narrow screens the two collapse to a single
+ * pane — list only, or detail-with-back-link only — driven purely by
+ * whether `detail` is non-null (i.e. whether the route has a :name param).
  */
 export function MasterDetailLayout({
   list,

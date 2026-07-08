@@ -5,7 +5,7 @@ import { ArrowDown, ArrowUp, CornerDownLeft, Search, X } from "lucide-react";
 import { Badge, EmptyState, type BadgeTone } from "@/components/primitives";
 import { cn } from "@/lib/cn";
 import { displayName, entityPath } from "@/lib/format";
-import { frameFamilies, frames, metaphorFamilies, metaphors, stats } from "@/data";
+import { frames, metaphors, stats } from "@/data";
 import type { EntityKind } from "@/types";
 
 export interface SearchPaletteProps {
@@ -19,28 +19,24 @@ interface SearchEntry {
   name: string;
   /** Human-readable label shown as the row's heading. */
   label: string;
-  /** Extra searchable-but-not-displayed text (lexical units, frames, families, ...). */
+  /** Extra searchable-but-not-displayed text (lexical units, frames, ...). */
   extra: string;
 }
 
 const KIND_LABEL: Record<EntityKind, string> = {
   metaphor: "Metaphor",
   frame: "Frame",
-  "metaphor-family": "Metaphor family",
-  "frame-family": "Frame family",
 };
 
 const KIND_TONE: Record<EntityKind, BadgeTone> = {
   metaphor: "indigo",
   frame: "clay",
-  "metaphor-family": "moss",
-  "frame-family": "moss",
 };
 
 /**
- * One combined index across all four collections, built once at module
- * scope — the dataset is bundled statically at build time, so this never
- * needs to be recomputed for the lifetime of the page.
+ * One combined index across both collections, built once at module scope —
+ * the dataset is bundled statically at build time, so this never needs to be
+ * recomputed for the lifetime of the page.
  */
 const searchEntries: SearchEntry[] = [
   ...metaphors.map(
@@ -48,9 +44,7 @@ const searchEntries: SearchEntry[] = [
       kind: "metaphor",
       name: m.name,
       label: displayName("metaphor", m.name),
-      extra: [...(m.families ?? []), m.source_frame, m.target_frame]
-        .filter((v): v is string => Boolean(v))
-        .join(" "),
+      extra: [m.source_frame, m.target_frame].filter((v): v is string => Boolean(v)).join(" "),
     }),
   ),
   ...frames.map(
@@ -60,12 +54,6 @@ const searchEntries: SearchEntry[] = [
       label: displayName("frame", f.name),
       extra: [...(f.lexical_units ?? []), ...(f.frame_type ?? [])].join(" "),
     }),
-  ),
-  ...metaphorFamilies.map(
-    (f): SearchEntry => ({ kind: "metaphor-family", name: f.name, label: f.name, extra: "" }),
-  ),
-  ...frameFamilies.map(
-    (f): SearchEntry => ({ kind: "frame-family", name: f.name, label: f.name, extra: "" }),
   ),
 ];
 
@@ -83,9 +71,9 @@ const fuse = new Fuse(searchEntries, {
 const RESULT_LIMIT = 20;
 
 /**
- * Global Cmd+K search modal — one fuzzy index over metaphors, frames, and
- * both family kinds. AppShell owns `open` and the shortcut that flips it;
- * this component owns the query, the highlighted row, and navigation.
+ * Global Cmd+K search modal — one fuzzy index over metaphors and frames.
+ * AppShell owns `open` and the shortcut that flips it; this component owns
+ * the query, the highlighted row, and navigation.
  */
 export function SearchPalette({ open, onClose }: SearchPaletteProps) {
   const [query, setQuery] = useState("");
@@ -180,7 +168,7 @@ export function SearchPalette({ open, onClose }: SearchPaletteProps) {
               setSelectedIndex(0);
             }}
             type="text"
-            placeholder="Search metaphors, frames, and families…"
+            placeholder="Search metaphors and frames…"
             className="w-full bg-transparent text-sm text-text placeholder:text-text-faint focus:outline-none"
             role="combobox"
             aria-expanded={results.length > 0}
@@ -207,9 +195,7 @@ export function SearchPalette({ open, onClose }: SearchPaletteProps) {
         >
           {trimmed === "" && (
             <p className="px-3 py-8 text-center text-sm text-text-muted">
-              Search {stats.metaphorCount} metaphors, {stats.frameCount} frames,{" "}
-              {stats.metaphorFamilyCount} metaphor families, and {stats.frameFamilyCount} frame
-              families.
+              Search {stats.metaphorCount} metaphors and {stats.frameCount} frames.
             </p>
           )}
           {trimmed !== "" && results.length === 0 && (

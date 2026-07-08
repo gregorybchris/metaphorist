@@ -1,3 +1,4 @@
+import type { BadgeTone } from "@/components/primitives/Badge";
 import type { EntityKind } from "../types";
 
 /** ANGER_IS_HEAT -> "Anger is heat" — reads as a claim, not a shouted label. */
@@ -21,24 +22,13 @@ export function roleDisplayName(name: string): string {
   return name.replace(/_/g, " ");
 }
 
-/** Family names are already human-readable sentence case in the dataset. */
 export function displayName(kind: EntityKind, name: string): string {
-  switch (kind) {
-    case "metaphor":
-      return metaphorDisplayName(name);
-    case "frame":
-      return frameDisplayName(name);
-    case "metaphor-family":
-    case "frame-family":
-      return name;
-  }
+  return kind === "metaphor" ? metaphorDisplayName(name) : frameDisplayName(name);
 }
 
 const ENTITY_BASE_PATH: Record<EntityKind, string> = {
   metaphor: "/metaphors",
   frame: "/frames",
-  "metaphor-family": "/metaphor-families",
-  "frame-family": "/frame-families",
 };
 
 export function entityPath(kind: EntityKind, name: string): string {
@@ -52,4 +42,33 @@ export function listPath(kind: EntityKind): string {
 /** Pretty count, e.g. pluralize(3, "metaphor") -> "3 metaphors" */
 export function pluralize(count: number, noun: string): string {
   return `${count} ${noun}${count === 1 ? "" : "s"}`;
+}
+
+/** FrameNet-style part-of-speech codes used in dataset/frames.yaml's lexical_units. */
+const PART_OF_SPEECH: Record<string, { label: string; tone: BadgeTone }> = {
+  n: { label: "noun", tone: "teal" },
+  v: { label: "verb", tone: "garnet" },
+  a: { label: "adjective", tone: "fern" },
+  adv: { label: "adverb", tone: "amber" },
+  prep: { label: "preposition", tone: "azure" },
+};
+
+/**
+ * "absorb.v" -> { lemma: "absorb", pos: "verb", tone: "garnet" }
+ * "soak.v up" -> { lemma: "soak up", pos: "verb", tone: "garnet" } (particle reattached after the code)
+ * "ability" -> { lemma: "ability", pos: null, tone: null } (no POS code in the source data)
+ */
+export function parseLexicalUnit(lu: string): {
+  lemma: string;
+  pos: string | null;
+  tone: BadgeTone | null;
+} {
+  const match = lu.match(/^(.*?)\.([a-z]+)(\s.*)?$/);
+  if (!match) return { lemma: lu, pos: null, tone: null };
+
+  const [, head, code, rest] = match;
+  const entry = PART_OF_SPEECH[code];
+  if (!entry) return { lemma: lu, pos: null, tone: null };
+
+  return { lemma: `${head}${rest ?? ""}`, pos: entry.label, tone: entry.tone };
 }

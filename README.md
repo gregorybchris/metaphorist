@@ -15,8 +15,6 @@ A **frame** is a scenario or domain, borrowed from FrameNet — `war`, `anger`, 
 - **roles** — the slots that make up the scenario. `heating-fluid`'s roles are `container`, `fluid`, `container_heat`, `container_pressure`, `container_pressure_limit`, `container_top`, `fluid_agitation`, `fluid_boiling_point`, and `fluid_heat_level`.
 - **lexical_units** — the words that evoke it, e.g. `boil.v`, `simmer.v`.
 
-Individual roles can also carry a `role_type` tag classifying what kind of thing they are (`Entity`, `Liquid`, `Scale`, ...) — present only where the source ontology happened to have one, so treat it as bonus detail rather than something every role has.
-
 ### Metaphors
 
 A **metaphor** is a mapping from a **source_frame** (the concrete domain doing the explaining) to a **target_frame** (the abstract domain being explained). `ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER` maps `heating-fluid` onto `anger`: heat, containers, and pressure (concrete, physical, easy to reason about) get borrowed to explain anger (abstract, internal, harder to reason about directly).

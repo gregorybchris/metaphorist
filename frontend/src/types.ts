@@ -3,7 +3,6 @@
 
 export interface Role {
   name: string;
-  role_type?: string;
 }
 
 export interface Frame {
@@ -50,5 +49,5 @@ export interface RawDataset {
   frameFamilies: FrameFamily[];
 }
 
-/** The four browsable entity kinds, used throughout routing and styling. */
-export type EntityKind = "metaphor" | "frame" | "metaphor-family" | "frame-family";
+/** The two browsable entity kinds, used throughout routing and styling. */
+export type EntityKind = "metaphor" | "frame";

@@ -4,25 +4,21 @@ import { displayName, entityPath } from "../../lib/format";
 import type { EntityKind } from "../../types";
 
 /**
- * `tone` is normally implied by `kind` (metaphor -> indigo, frame -> clay,
- * either family -> moss). Pass an explicit "source" | "target" tone when
- * rendering a *frame* in a mapping's source/target position — that overrides
- * the frame default so source stays clay and target borrows metaphor's
- * indigo, visually encoding the concrete -> abstract direction.
+ * `tone` is normally implied by `kind` (metaphor -> indigo, frame -> clay).
+ * Pass an explicit "source" | "target" tone when rendering a *frame* in a
+ * mapping's source/target position — that overrides the frame default so
+ * source stays clay and target borrows metaphor's indigo, visually encoding
+ * the concrete -> abstract direction.
  */
-export type EntityTone = "metaphor" | "frame" | "family" | "source" | "target";
+export type EntityTone = "metaphor" | "frame" | "source" | "target";
 
 function toneFor(kind: EntityKind, tone?: EntityTone): EntityTone {
-  if (tone) return tone;
-  if (kind === "metaphor") return "metaphor";
-  if (kind === "frame") return "frame";
-  return "family";
+  return tone ?? kind;
 }
 
 const TEXT_TONE: Record<EntityTone, string> = {
   metaphor: "text-indigo-700 dark:text-indigo-300",
   frame: "text-clay-700 dark:text-clay-300",
-  family: "text-moss-700 dark:text-moss-300",
   source: "text-clay-700 dark:text-clay-300",
   target: "text-indigo-700 dark:text-indigo-300",
 };
@@ -32,8 +28,6 @@ const CHIP_TONE: Record<EntityTone, string> = {
     "bg-indigo-50 text-indigo-800 hover:bg-indigo-100 dark:bg-indigo-900/40 dark:text-indigo-200 dark:hover:bg-indigo-900/70",
   frame:
     "bg-clay-50 text-clay-800 hover:bg-clay-100 dark:bg-clay-900/40 dark:text-clay-200 dark:hover:bg-clay-900/70",
-  family:
-    "bg-moss-50 text-moss-800 hover:bg-moss-100 dark:bg-moss-900/40 dark:text-moss-200 dark:hover:bg-moss-900/70",
   source:
     "bg-clay-50 text-clay-800 hover:bg-clay-100 dark:bg-clay-900/40 dark:text-clay-200 dark:hover:bg-clay-900/70",
   target:
@@ -65,7 +59,7 @@ export function EntityLink({ kind, name, tone, className }: EntityLinkProps) {
   );
 }
 
-/** Pill-shaped clickable chip — for relations lists, family tags, search results. */
+/** Pill-shaped clickable chip — for entity cross-reference lists and search results. */
 export function EntityChip({ kind, name, tone, className }: EntityLinkProps) {
   const t = toneFor(kind, tone);
   return (

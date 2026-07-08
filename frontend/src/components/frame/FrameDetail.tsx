@@ -1,73 +1,27 @@
-import { useMemo } from "react";
-import { useNavigate } from "react-router-dom";
 import { Workflow } from "lucide-react";
+import { frameByName, metaphorsBySourceFrame, metaphorsByTargetFrame } from "@/data";
 import {
-  frameByName,
-  frameReverseRelations,
-  metaphorsBySourceFrame,
-  metaphorsByTargetFrame,
-} from "@/data";
-import { entityPath, frameDisplayName, pluralize, roleDisplayName } from "@/lib/format";
+  frameDisplayName,
+  parseLexicalUnit,
+  pluralize,
+  roleDisplayName,
+} from "@/lib/format";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/primitives/Badge";
-import { Breadcrumbs } from "@/components/primitives/Breadcrumbs";
 import { CollapsibleSection } from "@/components/primitives/CollapsibleSection";
 import { EmptyState } from "@/components/primitives/EmptyState";
 import { EntityChip } from "@/components/primitives/EntityLink";
-import { Mono } from "@/components/primitives/Mono";
-import {
-  RelationsGraph,
-  type RelationsGraphEdge,
-  type RelationsGraphNode,
-} from "@/components/graph/RelationsGraph";
 
 export function FrameDetail({ name }: { name: string }) {
-  const navigate = useNavigate();
   const frame = frameByName.get(name);
-
-  const reverse = useMemo(
-    () => frameReverseRelations.get(name) ?? [],
-    [name],
-  );
-
-  const { nodes, edges } = useMemo(() => {
-    if (!frame) return { nodes: [] as RelationsGraphNode[], edges: [] as RelationsGraphEdge[] };
-
-    const nodeMap = new Map<string, RelationsGraphNode>();
-    nodeMap.set(frame.name, {
-      id: frame.name,
-      label: frameDisplayName(frame.name),
-      kind: "frame",
-      isCenter: true,
-    });
-    const graphEdges: RelationsGraphEdge[] = [];
-
-    for (const target of frame.related ?? []) {
-      if (!nodeMap.has(target)) {
-        nodeMap.set(target, { id: target, label: frameDisplayName(target), kind: "frame" });
-      }
-      graphEdges.push({ source: frame.name, target });
-    }
-    for (const name of reverse) {
-      if (!nodeMap.has(name)) {
-        nodeMap.set(name, { id: name, label: frameDisplayName(name), kind: "frame" });
-      }
-      graphEdges.push({ source: name, target: frame.name });
-    }
-
-    return { nodes: Array.from(nodeMap.values()), edges: graphEdges };
-  }, [frame, reverse]);
 
   if (!frame) {
     return (
       <div className="p-6">
-        <Breadcrumbs items={[{ label: "Frames", to: "/frames" }, { label: name }]} />
-        <div className="mt-6">
-          <EmptyState
-            title="Frame not found"
-            description={`No frame named "${name}" exists in this dataset.`}
-          />
-        </div>
+        <EmptyState
+          title="Frame not found"
+          description={`No frame named "${name}" exists in this dataset.`}
+        />
       </div>
     );
   }
@@ -75,27 +29,10 @@ export function FrameDetail({ name }: { name: string }) {
   const sourceUses = metaphorsBySourceFrame.get(frame.name) ?? [];
   const targetUses = metaphorsByTargetFrame.get(frame.name) ?? [];
 
-  const relatedNames = Array.from(new Set([...(frame.related ?? []), ...reverse])).sort();
-
   return (
     <div className="mx-auto max-w-3xl p-6">
-      <Breadcrumbs
-        items={[{ label: "Frames", to: "/frames" }, { label: frameDisplayName(frame.name) }]}
-      />
-
-      <header className="mt-4 mb-6">
-        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <h1 className="font-serif text-2xl text-text">{frameDisplayName(frame.name)}</h1>
-          <Mono>{frame.name}</Mono>
-        </div>
-
-        {frame.frame_families && frame.frame_families.length > 0 && (
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            {frame.frame_families.map((fam) => (
-              <EntityChip key={fam} kind="frame-family" name={fam} />
-            ))}
-          </div>
-        )}
+      <header className="mb-6">
+        <h1 className="font-serif text-2xl text-text">{frameDisplayName(frame.name)}</h1>
       </header>
 
       <div>
@@ -117,7 +54,6 @@ export function FrameDetail({ name }: { name: string }) {
                       <Workflow size={13} className="shrink-0 text-indigo-500 dark:text-indigo-300" />
                     )}
                     <span className="text-sm text-text">{roleDisplayName(role.name)}</span>
-                    {role.role_type && <Badge tone="neutral">{role.role_type}</Badge>}
                     {isXSchema && <Badge tone="indigo">executing schema</Badge>}
                   </li>
                 );
@@ -131,14 +67,18 @@ export function FrameDetail({ name }: { name: string }) {
         <CollapsibleSection title="Lexical units" count={frame.lexical_units?.length ?? 0}>
           {frame.lexical_units && frame.lexical_units.length > 0 ? (
             <div className="flex flex-wrap gap-1.5">
-              {frame.lexical_units.map((lu) => (
-                <Mono
-                  key={lu}
-                  className="rounded bg-surface-hover px-1.5 py-0.5 text-text-muted"
-                >
-                  {lu}
-                </Mono>
-              ))}
+              {frame.lexical_units.map((lu) => {
+                const { lemma, pos, tone } = parseLexicalUnit(lu);
+                return (
+                  <span
+                    key={lu}
+                    className="inline-flex items-center gap-1 rounded bg-surface-hover py-0.5 pr-1 pl-1.5 font-mono text-[0.85em] text-text-muted"
+                  >
+                    {lemma}
+                    {pos && <Badge tone={tone ?? "neutral"}>{pos}</Badge>}
+                  </span>
+                );
+              })}
             </div>
           ) : (
             <p className="text-sm text-text-muted">No lexical units recorded for this frame.</p>
@@ -192,22 +132,6 @@ export function FrameDetail({ name }: { name: string }) {
             </div>
           </div>
         </CollapsibleSection>
-
-        {relatedNames.length > 0 && (
-          <CollapsibleSection title="Related frames" count={relatedNames.length}>
-            <RelationsGraph
-              nodes={nodes}
-              edges={edges}
-              height={320}
-              onNodeClick={(node) => navigate(entityPath(node.kind, node.id))}
-            />
-            <div className="mt-6 flex flex-wrap gap-1.5">
-              {relatedNames.map((n) => (
-                <EntityChip key={n} kind="frame" name={n} />
-              ))}
-            </div>
-          </CollapsibleSection>
-        )}
       </div>
     </div>
   );

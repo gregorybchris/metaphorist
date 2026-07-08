@@ -17,7 +17,6 @@ function searchableText(m: Metaphor): string {
     m.source_frame ?? "",
     m.target_frame ? frameDisplayName(m.target_frame) : "",
     m.target_frame ?? "",
-    ...(m.families ?? []),
   ]
     .join(" ")
     .toLowerCase();
@@ -62,7 +61,7 @@ export function MetaphorListPage() {
               <input
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
-                placeholder="Filter by name, frame, or family…"
+                placeholder="Filter by name or frame…"
                 className="w-full rounded-md border border-border bg-bg py-1.5 pr-2 pl-8 text-sm text-text placeholder:text-text-faint focus:ring-2 focus:ring-clay-500 focus:outline-none"
               />
             </div>

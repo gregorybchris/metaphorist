@@ -1,108 +1,40 @@
-import { useMemo } from "react";
-import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { Breadcrumbs } from "@/components/primitives/Breadcrumbs";
 import { CollapsibleSection } from "@/components/primitives/CollapsibleSection";
-import { EntityChip, EntityLink } from "@/components/primitives/EntityLink";
-import {
-  RelationsGraph,
-  type RelationsGraphEdge,
-  type RelationsGraphNode,
-} from "@/components/graph/RelationsGraph";
-import { metaphorReverseRelations } from "@/data";
-import { entityPath, metaphorDisplayName } from "@/lib/format";
+import { EntityLink } from "@/components/primitives/EntityLink";
+import { metaphorDisplayName } from "@/lib/format";
 import type { Metaphor } from "@/types";
 import { MappingDiagram } from "./MappingDiagram";
-import { RelationsGroups } from "./RelationsSection";
 
 export function MetaphorDetail({ metaphor }: { metaphor: Metaphor }) {
-  const navigate = useNavigate();
-
-  const { nodes, edges } = useMemo(() => {
-    const nodeMap = new Map<string, RelationsGraphNode>();
-    nodeMap.set(metaphor.name, {
-      id: metaphor.name,
-      label: metaphorDisplayName(metaphor.name),
-      kind: "metaphor",
-      isCenter: true,
-    });
-    const edges: RelationsGraphEdge[] = [];
-
-    for (const target of metaphor.related ?? []) {
-      if (!nodeMap.has(target)) {
-        nodeMap.set(target, {
-          id: target,
-          label: metaphorDisplayName(target),
-          kind: "metaphor",
-        });
-      }
-      edges.push({ source: metaphor.name, target });
-    }
-    for (const name of metaphorReverseRelations.get(metaphor.name) ?? []) {
-      if (!nodeMap.has(name)) {
-        nodeMap.set(name, {
-          id: name,
-          label: metaphorDisplayName(name),
-          kind: "metaphor",
-        });
-      }
-      edges.push({ source: name, target: metaphor.name });
-    }
-
-    return { nodes: Array.from(nodeMap.values()), edges };
-  }, [metaphor]);
-
   const examples = metaphor.examples ?? [];
   const hasFrameMapping = Boolean(
     metaphor.source_frame || metaphor.target_frame || metaphor.mappings?.length,
   );
-  const hasRelations = edges.length > 0;
 
   return (
     <div className="mx-auto max-w-2xl p-6 md:p-10">
-      <Breadcrumbs items={[{ label: "Metaphors", to: "/metaphors" }]} />
-
-      {/* Examples come first — they're what gives a reader an intuition for
-          the metaphor. The formal name is secondary: a caption underneath
-          when there are examples to lead with, or the headline itself on
-          the minority of entries that have none recorded. */}
-      <div className="mt-6">
-        {examples.length > 0 ? (
-          <>
-            <div className="space-y-5">
-              {examples.map((example, i) => (
-                <p
-                  key={i}
-                  className="text-pretty font-serif text-xl leading-snug text-text sm:text-2xl"
-                >
-                  “{example}”
-                </p>
-              ))}
-            </div>
-            <p className="mt-6 font-serif text-lg text-text-muted">
-              {metaphorDisplayName(metaphor.name)}
+      <p className="text-pretty font-serif text-xl leading-snug text-text sm:text-2xl">
+        {metaphorDisplayName(metaphor.name)}
+      </p>
+      {examples.length > 0 && (
+        <div className="mt-6 space-y-3">
+          {examples.map((example, i) => (
+            <p
+              key={i}
+              className="text-pretty font-serif text-lg leading-snug text-text-muted"
+            >
+              “{example}”
             </p>
-          </>
-        ) : (
-          <p className="text-pretty font-serif text-xl leading-snug text-text sm:text-2xl">
-            {metaphorDisplayName(metaphor.name)}
-          </p>
-        )}
-      </div>
-
-      {metaphor.families && metaphor.families.length > 0 && (
-        <div className="mt-3 flex flex-wrap gap-1.5">
-          {metaphor.families.map((f) => (
-            <EntityChip key={f} kind="metaphor-family" name={f} className="text-xs" />
           ))}
         </div>
       )}
 
-      <div className="mt-10 divide-y divide-border border-t border-border">
+      <div className="mt-10">
         {hasFrameMapping && (
           <CollapsibleSection
             title="Frame mapping"
             count={metaphor.mappings?.length || undefined}
+            bordered={false}
           >
             <div className="mb-6 flex items-center gap-3">
               {metaphor.source_frame ? (
@@ -134,20 +66,6 @@ export function MetaphorDetail({ metaphor }: { metaphor: Metaphor }) {
                 No role-by-role mapping recorded for this metaphor.
               </p>
             )}
-          </CollapsibleSection>
-        )}
-
-        {hasRelations && (
-          <CollapsibleSection title="Related metaphors" count={edges.length}>
-            <RelationsGraph
-              nodes={nodes}
-              edges={edges}
-              height={320}
-              onNodeClick={(node) => navigate(entityPath(node.kind, node.id))}
-            />
-            <div className="mt-6">
-              <RelationsGroups metaphor={metaphor} />
-            </div>
           </CollapsibleSection>
         )}
       </div>

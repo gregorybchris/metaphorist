@@ -8,7 +8,6 @@ import { ThemeToggle } from "./ThemeToggle";
 const NAV_ITEMS = [
   { to: "/metaphors", label: "Metaphors" },
   { to: "/frames", label: "Frames" },
-  { to: "/families", label: "Families" },
 ];
 
 export function AppShell({ children }: { children: ReactNode }) {
@@ -54,10 +53,10 @@ export function AppShell({ children }: { children: ReactNode }) {
           <button
             type="button"
             onClick={() => setSearchOpen(true)}
-            className="flex items-center gap-2 rounded-md border border-border px-3 py-1.5 text-sm text-text-muted hover:bg-surface-hover hover:text-text"
+            className="flex items-center gap-2 rounded-md border border-border px-3 py-1.5 text-sm text-text-muted hover:bg-surface-hover hover:text-text sm:w-64"
           >
             <Search size={15} />
-            <span className="hidden sm:inline">Search</span>
+            <span className="hidden sm:mr-auto sm:inline">Search</span>
             <kbd className="hidden rounded border border-border px-1 font-mono text-[10px] sm:inline">
               ⌘K
             </kbd>

@@ -6,18 +6,20 @@ export function CollapsibleSection({
   title,
   count,
   defaultOpen = false,
+  bordered = true,
   children,
   className,
 }: {
   title: ReactNode;
   count?: number;
   defaultOpen?: boolean;
+  bordered?: boolean;
   children: ReactNode;
   className?: string;
 }) {
   return (
     <details
-      className={cn("group border-b border-border py-4 first:pt-0", className)}
+      className={cn("group py-4 first:pt-0", bordered && "border-b border-border", className)}
       open={defaultOpen}
     >
       <summary className="flex cursor-pointer list-none items-center gap-2 select-none">

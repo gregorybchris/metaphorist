@@ -3,12 +3,6 @@ import { cn } from "@/lib/cn";
 import { entityPath, metaphorDisplayName } from "@/lib/format";
 import type { Metaphor } from "@/types";
 
-/**
- * A row leads with an example sentence when one exists — that's what gives a
- * reader an intuition for the metaphor, faster than the formal name does.
- * The name is always present too, but as a small caption underneath, not
- * the headline.
- */
 export function MetaphorListRow({
   metaphor,
   selected,
@@ -16,7 +10,6 @@ export function MetaphorListRow({
   metaphor: Metaphor;
   selected: boolean;
 }) {
-  const example = metaphor.examples?.[0];
   const name = metaphorDisplayName(metaphor.name);
 
   return (
@@ -29,18 +22,9 @@ export function MetaphorListRow({
           : "border-l-transparent hover:bg-surface-hover",
       )}
     >
-      {example ? (
-        <>
-          <p className="line-clamp-2 font-serif text-[15px] leading-snug text-text italic">
-            “{example}”
-          </p>
-          <p className="mt-1.5 truncate text-xs text-text-muted">{name}</p>
-        </>
-      ) : (
-        <p className="line-clamp-2 font-serif text-[15px] leading-snug text-text">
-          {name}
-        </p>
-      )}
+      <p className="line-clamp-2 font-serif text-[15px] leading-snug text-text">
+        {name}
+      </p>
     </Link>
   );
 }

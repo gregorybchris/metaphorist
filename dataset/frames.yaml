@@ -21,11 +21,8 @@ frames:
       - Fluid
     roles:
       - name: absorbent_entity
-        role_type: PhysicalEntity
       - name: absorption_process
-        role_type: XSchema
       - name: fluid
-        role_type: Liquid
     lexical_units:
       - absorb.v
       - absorption.n
@@ -149,9 +146,7 @@ frames:
       - name: action_purpose
       - name: action_self
       - name: action_x_schema
-        role_type: XSchema
       - name: actor
-        role_type: AnimateEntity
       - name: effector
       - name: effort
     lexical_units:
@@ -202,7 +197,6 @@ frames:
       - name: poverty
       - name: problem_solvers
       - name: problem_solving_actions
-        role_type: XSchema
     related:
       - addressing-social-problems
       - poverty
@@ -226,7 +220,6 @@ frames:
       - name: social_programs
       - name: society
       - name: solving_actions
-        role_type: XSchema
       - name: solving_problem
     related:
       - causation
@@ -255,9 +248,7 @@ frames:
       - Unclassified
     roles:
       - name: actions
-        role_type: XSchema
       - name: advocate
-        role_type: Person
       - name: issue
     lexical_units:
       - advocacy.n
@@ -287,9 +278,7 @@ frames:
       - name: cause
       - name: goal
       - name: motion
-        role_type: MotionAlongAPathFrame
       - name: mover
-        role_type: Object
       - name: path
       - name: source
     related:
@@ -396,7 +385,6 @@ frames:
       - Moving entity
     roles:
       - name: mover
-        role_type: AirGas
     lexical_units:
       - blast.n
       - blow.v
@@ -493,7 +481,6 @@ frames:
       - Natural process
     roles:
       - name: animal
-        role_type: Entity
     lexical_units:
       - animal.n
       - bark.v
@@ -546,7 +533,6 @@ frames:
     roles:
       - name: animate_entity
       - name: body
-        role_type: Body
       - name: body_weight
       - name: specialized_parts
     related:
@@ -586,7 +572,6 @@ frames:
       - name: argument_domain
       - name: arguments_expressed
       - name: trigger_of_argument
-        role_type: XSchemaCondition
     lexical_units:
       - argument.n
       - claim.n
@@ -668,9 +653,7 @@ frames:
       - Physical conflict
     roles:
       - name: attacked
-        role_type: Person
       - name: attacker
-        role_type: Person
       - name: attacking_action
       - name: reason_for_attack
       - name: weapon
@@ -847,7 +830,6 @@ frames:
     roles:
       - name: affected_motion
       - name: barrier_object
-        role_type: PhysicalEntity
       - name: mover
       - name: path
     lexical_units:
@@ -982,11 +964,9 @@ frames:
     roles:
       - name: current_location
       - name: experiencer
-        role_type: Entity
       - name: landmark
       - name: locale
       - name: x_schema
-        role_type: OngoingProcess
     lexical_units:
       - be.v placed
       - dwell.v
@@ -1095,7 +1075,6 @@ frames:
     roles:
       - name: entity
       - name: x_schema
-        role_type: OngoingProcess
     lexical_units:
       - dangle.v
       - dodder.v
@@ -1419,9 +1398,7 @@ frames:
       - name: boundary
       - name: center
       - name: exterior
-        role_type: Region
       - name: interior
-        role_type: Region
       - name: proximal_region
     lexical_units:
       - boundary.n
@@ -1524,13 +1501,9 @@ frames:
       - Motion-affecting
     roles:
       - name: burden
-        role_type: PhysicalEntity
       - name: burdened_entity
-        role_type: PhysicalEntity
       - name: relation_burden_to_burdened
-        role_type: ForceDynamicXSchema
       - name: weight_of_burden
-        role_type: WeightScale
     lexical_units:
       - albatross.n
       - back-breaking.a
@@ -1736,9 +1709,7 @@ frames:
       - name: fd_relation_type
       - name: affected
       - name: affected_process
-        role_type: XSchema
       - name: causal_process
-        role_type: XSchema
       - name: cause
       - name: causer
       - name: effect
@@ -1758,9 +1729,7 @@ frames:
     roles:
       - name: cause
       - name: entity1
-        role_type: Entity
       - name: entity2
-        role_type: Entity
     lexical_units:
       - apply.v
       - touch.v
@@ -1799,7 +1768,6 @@ frames:
       - name: final_state
       - name: initial_state
       - name: state_change
-        role_type: ChangeOfStateFrame
       - name: transition
     related:
       - causation
@@ -1903,7 +1871,6 @@ frames:
       - name: standard
       - name: state
       - name: state_change_process
-        role_type: XSchema
       - name: transition
     related:
       - experiencing-a-state
@@ -2086,7 +2053,6 @@ frames:
       - name: bodily_functioning_x_schema
       - name: body
       - name: cognizer
-        role_type: Person
       - name: content
       - name: mental_capacity
       - name: mind_structure
@@ -2131,7 +2097,6 @@ frames:
       - name: goods
       - name: money
       - name: transaction_x_schema
-        role_type: XSchema
   - name: commodity
     frame_type:
       - Frame
@@ -2287,9 +2252,7 @@ frames:
     roles:
       - name: complex_x_schema
       - name: process1
-        role_type: Process
       - name: process2
-        role_type: Process
       - name: process_relation
       - name: protagonist1
       - name: protagonist2
@@ -2342,7 +2305,6 @@ frames:
       - name: compelled_person
       - name: compulsive_behavior
       - name: compulsion_x_schema
-        role_type: XSchema
       - name: compulsion
       - name: compulsion_level
   - name: computer
@@ -2406,7 +2368,6 @@ frames:
     roles:
       - name: physical_object
       - name: state_of_object
-        role_type: Property
     lexical_units:
       - crumbling
       - crumbly.a
@@ -2586,9 +2547,7 @@ frames:
       - Spatial relations
     roles:
       - name: entity1
-        role_type: Entity
       - name: entity2
-        role_type: Entity
     lexical_units:
       - brush.v
       - contact.n
@@ -2653,7 +2612,6 @@ frames:
       - name: ability_to_control
       - name: control_relation
       - name: control_relation_status
-        role_type: XSchema
       - name: controlling_entity
       - name: controlling_process
       - name: degree_of_control
@@ -2738,7 +2696,6 @@ frames:
       - Governance
     roles:
       - name: corrupt_activities
-        role_type: IteratedActivity
       - name: corrupt_actor
       - name: corruption_affectee
       - name: corruption_effect
@@ -2799,7 +2756,6 @@ frames:
       - name: created_object_process
       - name: creation_action
       - name: creator
-        role_type: Person
     lexical_units:
       - create.v
       - creation.n
@@ -2819,7 +2775,6 @@ frames:
       - name: created_entity
       - name: created_state
       - name: creating_x_schema
-        role_type: XSchema
   - name: crime
     frame_type:
       - Frame
@@ -2831,10 +2786,8 @@ frames:
     roles:
       - name: crime
       - name: criminal
-        role_type: Person
       - name: criminal_activity
       - name: victim
-        role_type: Person
     lexical_units:
       - crime.n
       - criminal.n
@@ -2949,17 +2902,11 @@ frames:
       - Harm
     roles:
       - name: act_of_cutting
-        role_type: Process
       - name: cutter
-        role_type: AnimateEntity
       - name: cutting_tool
-        role_type: Object
       - name: final_state_of_object
-        role_type: State
       - name: initial_size_of_object
-        role_type: Size
       - name: object_of_cutting
-        role_type: Object
     lexical_units:
       - carve.v
       - chop.v
@@ -3020,7 +2967,6 @@ frames:
       - Scale
     roles:
       - name: entity
-        role_type: Entity
       - name: darkness_level
     lexical_units:
       - blackness.n
@@ -3571,7 +3517,6 @@ frames:
     roles:
       - name: area_of_spread
       - name: disease
-        role_type: Disease
       - name: infected_individuals
       - name: yet_uninfected_individuals
     lexical_units:
@@ -3772,9 +3717,7 @@ frames:
       - name: downward_direction
       - name: goal
       - name: motion_x_schema
-        role_type: Process
       - name: mover
-        role_type: Entity
       - name: mover_position
       - name: source
       - name: speed
@@ -3969,7 +3912,6 @@ frames:
       - name: minimal_status
       - name: status
       - name: status_holder
-        role_type: Entity
     lexical_units:
       - economic status
     related:
@@ -3986,7 +3928,6 @@ frames:
       - Economic
     roles:
       - name: activity_level
-        role_type: Scale
       - name: economic_activity
       - name: economic_efficiency
       - name: economic_region
@@ -4081,18 +4022,13 @@ frames:
     roles:
       - name: ballot
       - name: ballot_counting
-        role_type: XSchema
       - name: candidate1
-        role_type: Person
       - name: candidate2
-        role_type: Person
       - name: institution
       - name: office
       - name: outcome
       - name: voter
-        role_type: Person
       - name: voting_event
-        role_type: XSchema
     lexical_units:
       - elect.v
       - election.a
@@ -4148,7 +4084,6 @@ frames:
       - Wealth and social class
     roles:
       - name: employee
-        role_type: Person
       - name: employee_compensation
       - name: employee_duties
       - name: employer
@@ -4290,12 +4225,10 @@ frames:
       - Harmful encounters
     roles:
       - name: eroded_entity
-        role_type: Entity
       - name: eroding_effect
       - name: eroding_outcome
       - name: erosion_cause
       - name: erosion_process
-        role_type: XSchema
     lexical_units:
       - corrode.v
       - corrosion.n
@@ -4422,9 +4355,7 @@ frames:
     roles:
       - name: body_part
       - name: experiencer
-        role_type: SentientEntity
       - name: injury
-        role_type: XSchema
       - name: pain
     lexical_units:
       - ache.n
@@ -4469,7 +4400,6 @@ frames:
       - name: standard
       - name: state
       - name: stative_x_schema
-        role_type: XSchema
     related:
       - process
       - state
@@ -4486,7 +4416,6 @@ frames:
       - name: stative_x_schema
       - name: status
       - name: status_holder
-        role_type: Person
     related:
       - economic-status
       - experiencing-a-state
@@ -4606,13 +4535,9 @@ frames:
       - Harmful encounters
     roles:
       - name: dangerous_animal
-        role_type: AnimateEntity
       - name: dangerous_body_part
-        role_type: PhysicalEntity
       - name: endangered_entity
-        role_type: AnimateEntity
       - name: endangering_action
-        role_type: XSchema
       - name: endangering_effect
     lexical_units:
       - claw.n
@@ -4747,7 +4672,6 @@ frames:
       - Scale
     roles:
       - name: firmness_entity
-        role_type: ComplexPhysicalObject
       - name: firmness_scale
       - name: firmness_status
     lexical_units:
@@ -4808,7 +4732,6 @@ frames:
       - name: container
       - name: container_capacity
       - name: fluid
-        role_type: Liquid
       - name: fluid_level
     related:
       - containing
@@ -4827,9 +4750,7 @@ frames:
     roles:
       - name: area
       - name: fluid
-        role_type: Liquid
       - name: fluid_motion_x_schema
-        role_type: XSchema
       - name: goal
       - name: path
       - name: source
@@ -4926,9 +4847,7 @@ frames:
       - name: actor
       - name: effector
       - name: force
-        role_type: Force
       - name: x_schema
-        role_type: Process
     lexical_units:
       - jerk.v
       - jolt.n
@@ -4950,7 +4869,6 @@ frames:
       - Force dynamic
     roles:
       - name: f_d_interaction_x_schema
-        role_type: ComplexXSchema
       - name: force_originator
       - name: force_receiver
       - name: forceful_process
@@ -4963,13 +4881,9 @@ frames:
       - Force dynamic
     roles:
       - name: force
-        role_type: Force
       - name: force_amount
-        role_type: Quantity
       - name: force_originator
-        role_type: Entity
       - name: force_receiver
-        role_type: Entity
     related:
       - force
   - name: forced-motion
@@ -4984,7 +4898,6 @@ frames:
       - name: agent
       - name: direction
       - name: forceful_action
-        role_type: ForceApplicationFrame
       - name: goal
       - name: motion_x_schema
       - name: mover
@@ -5019,12 +4932,9 @@ frames:
     roles:
       - name: agent
       - name: forceful_action
-        role_type: ForceApplicationFrame
       - name: goal
       - name: motion
-        role_type: MotionAlongAPathFrame
       - name: mover
-        role_type: Object
       - name: path
       - name: source
     lexical_units:
@@ -5118,11 +5028,9 @@ frames:
       - Scale
     roles:
       - name: functional_entity
-        role_type: ComplexPhysicalObject
       - name: functional_status
       - name: functionality_beneficiary
       - name: functionality_scale
-        role_type: Scale
     lexical_units:
       - functional.a
       - functionality.n
@@ -5142,9 +5050,7 @@ frames:
       - Possession
     roles:
       - name: getting_x_schema
-        role_type: XSchema
       - name: possessable_object
-        role_type: Entity
       - name: recipient
       - name: source
     lexical_units:
@@ -5476,7 +5382,6 @@ frames:
     roles:
       - name: defining_properties
       - name: group
-        role_type: Entity
       - name: members
       - name: sub_group
     lexical_units:
@@ -5758,7 +5663,6 @@ frames:
       - Gun rights
     roles:
       - name: constitution
-        role_type: Frame
       - name: gun_rights_owner
       - name: gun_rights_domain
       - name: right_to_own_guns
@@ -5914,9 +5818,7 @@ frames:
       - name: consequence_of_harm
       - name: effect_of_harm
       - name: harmed_entity
-        role_type: Entity
       - name: harmful_process
-        role_type: Process
     lexical_units:
       - damage.n
       - damage.v
@@ -5939,7 +5841,6 @@ frames:
       - name: harmful_action
       - name: harmful_effect_process
       - name: victim
-        role_type: AnimateEntity
     lexical_units:
       - abuse.n
       - abuse.v
@@ -5994,7 +5895,6 @@ frames:
       - name: degree_of_health
       - name: domain_of_health
       - name: entity_possessing_health
-        role_type: BiologicalEntity
       - name: state_of_health
     lexical_units:
       - health.n
@@ -6064,7 +5964,6 @@ frames:
       - Scale
     roles:
       - name: entity
-        role_type: Entity
       - name: heat_level
       - name: heat_x_schema
     lexical_units:
@@ -6086,13 +5985,11 @@ frames:
       - Frame
     roles:
       - name: container
-        role_type: Entity
       - name: container_heat
       - name: container_pressure
       - name: container_pressure_limit
       - name: container_top
       - name: fluid
-        role_type: Entity
       - name: fluid_agitation
       - name: fluid_boiling_point
       - name: fluid_heat_level
@@ -6315,12 +6212,10 @@ frames:
       - Frame
     roles:
       - name: degree_of_importance
-        role_type: Value
       - name: entity_evaluated_for_importance
       - name: factor_of_importance
       - name: field_of_importance
       - name: importance_scale
-        role_type: Scale
   - name: impoverished
     frame_families:
       - Poverty-related
@@ -6458,7 +6353,6 @@ frames:
       - name: entity
       - name: size_level
       - name: increase_process
-        role_type: XSchema
     lexical_units:
       - amplification.n
       - amplify.v
@@ -6501,7 +6395,6 @@ frames:
     roles:
       - name: ingestibles
       - name: ingestion_process
-        role_type: XSchema
       - name: ingestor
     lexical_units:
       - drink.n
@@ -6522,14 +6415,10 @@ frames:
       - Gun debate
     roles:
       - name: firing_of_gun
-        role_type: XSchema
       - name: gun
       - name: gun_user
-        role_type: Person
       - name: injured_party
-        role_type: Person
       - name: injurious_effect
-        role_type: XSchema
     lexical_units:
       - gun.n death.n
       - gun.n violence.n
@@ -6724,20 +6613,14 @@ frames:
       - Translational motion
     roles:
       - name: course_of_journey
-        role_type: RegionXSchema
       - name: journey_beginning
-        role_type: XSchema
       - name: journey_companion
-        role_type: Entity
       - name: journey_difficulties
       - name: journey_end
-        role_type: XSchema
       - name: journey_event
       - name: journey_means
-        role_type: XSchema
       - name: journey_stops
       - name: journeyer
-        role_type: Entity
       - name: locations_along_journey
       - name: obstacles_impediments_in_journey
     lexical_units:
@@ -6760,7 +6643,6 @@ frames:
       - Excluded
     roles:
       - name: judged_action
-        role_type: Action
       - name: judged_issue
       - name: judged_party
       - name: judging_party
@@ -6971,13 +6853,11 @@ frames:
       - The law
     roles:
       - name: illegal_actions
-        role_type: Actions
       - name: jurisdiction
       - name: law
       - name: law_creator
       - name: law_governees
       - name: legal_actions
-        role_type: Actions
     lexical_units:
       - law.n
       - statute.n
@@ -7081,7 +6961,6 @@ frames:
       - name: actor
       - name: legal_code
       - name: legality_of_action
-        role_type: Scale
     lexical_units:
       - illegal.a
       - illegality.n
@@ -7135,7 +7014,6 @@ frames:
       - Legislation
     roles:
       - name: legislative_action
-        role_type: XSchema
       - name: legislative_action_outcome
       - name: legislative_actor
       - name: legislative_affected_jurisdiction
@@ -7166,7 +7044,6 @@ frames:
       - Legislation
     roles:
       - name: legislative_action
-        role_type: XSchema
       - name: legislative_actor
       - name: legislature
     lexical_units:
@@ -7220,7 +7097,6 @@ frames:
       - name: developmental_stages
       - name: end_of_life
       - name: life_liver
-        role_type: BiologicalEntity
     lexical_units:
       - life cycle.n
       - lifecycle.n
@@ -7229,7 +7105,6 @@ frames:
   - name: light-source
     roles:
       - name: light_source
-        role_type: Entity
       - name: light_level
     lexical_units:
       - aurora.n
@@ -7338,7 +7213,6 @@ frames:
     roles:
       - name: donor
       - name: lose_possession_x_schema
-        role_type: XSchema
       - name: possession
     lexical_units:
       - forfeit.v
@@ -7439,7 +7313,6 @@ frames:
       - name: magic_undergoer
       - name: magic_user
       - name: magical_action
-        role_type: XSchema
       - name: magical_object
     lexical_units:
       - alchemy.n
@@ -7704,7 +7577,6 @@ frames:
       - name: judge
       - name: moral_judgement
       - name: moral_standard
-        role_type: Scale
     related:
       - evaluation
       - morality
@@ -7752,11 +7624,9 @@ frames:
       - Translational motion
     roles:
       - name: direction
-        role_type: Spatial
       - name: motion_x_schema
       - name: mover
       - name: speed
-        role_type: Scale
     lexical_units:
       - immovable.a
       - mobile.a
@@ -7791,7 +7661,6 @@ frames:
       - Motion-affecting
     roles:
       - name: affected_motion
-        role_type: XSchema
       - name: impediment
       - name: mover
     lexical_units:
@@ -7809,9 +7678,7 @@ frames:
       - Motion-affecting
     roles:
       - name: affected_motion
-        role_type: XSchema
       - name: force
-        role_type: Force
       - name: mover
     related:
       - motion-affecting-external-factors
@@ -7824,7 +7691,6 @@ frames:
     roles:
       - name: affected_motion_x_schema
       - name: impediment
-        role_type: Object
       - name: mover
       - name: mover_location
     related:
@@ -7853,19 +7719,14 @@ frames:
       - name: course_of_motion
       - name: direction
       - name: goal
-        role_type: Location
       - name: landmark
       - name: location_of_observer
       - name: motion_x_schema
-        role_type: Process
       - name: mover
-        role_type: Entity
       - name: path
       - name: pathway
-        role_type: PhysicalPath
       - name: person_who_sets_trajector_in_motion
       - name: source
-        role_type: Location
       - name: space_in_back_of_observer
       - name: space_in_front_of_observer
       - name: speed
@@ -7893,7 +7754,6 @@ frames:
       - name: motion_x_schema
       - name: mover
       - name: source
-        role_type: BoundedRegion
     lexical_units:
       - climb.v out
       - egress.n
@@ -7969,7 +7829,6 @@ frames:
       - name: motion_path
       - name: motion_x_schema
       - name: mover
-        role_type: Entity
       - name: speed
     lexical_units:
       - bobble.v
@@ -8116,9 +7975,7 @@ frames:
       - Movement
     roles:
       - name: destination
-        role_type: Location
       - name: mover
-        role_type: Entity
     related:
       - motion-along-a-path
   - name: motion-to-a-location
@@ -8136,7 +7993,6 @@ frames:
       - name: goal
       - name: motion_x_schema
       - name: mover
-        role_type: Entity
       - name: source
     lexical_units:
       - arrival.n
@@ -8372,7 +8228,6 @@ frames:
       - Natural process
     roles:
       - name: natural_process
-        role_type: Process
       - name: protagonist
     related:
       - process
@@ -8423,9 +8278,7 @@ frames:
       - Frame
     roles:
       - name: neighbor1
-        role_type: Person
       - name: neighbor2
-        role_type: Person
       - name: neighbor_relation
   - name: network
     frame_type:
@@ -8687,7 +8540,6 @@ frames:
       - name: organization_internal_structure
       - name: organization_management_x_schema
       - name: organization_members
-        role_type: Person
       - name: organization_mission
       - name: organization_physical_assets
       - name: organization_procedures
@@ -8895,7 +8747,6 @@ frames:
       - name: faculty
       - name: perceived_thing
       - name: perceiver
-        role_type: AnimateEntity
       - name: perception_x_schema
     related:
       - animate-entity
@@ -9023,7 +8874,6 @@ frames:
       - name: affected_area
       - name: affliction
       - name: patient
-        role_type: AnimateEntity
       - name: symptoms
     lexical_units:
       - afflict.v
@@ -9194,7 +9044,6 @@ frames:
     roles:
       - name: cause_of_harm
       - name: harmed_entity
-        role_type: PhysicalEntity
       - name: harmful_effect_process
       - name: harmful_effect_result
     related:
@@ -9208,7 +9057,6 @@ frames:
       - Translational motion
     roles:
       - name: physical_path
-        role_type: PhysicalEntity
     lexical_units:
       - aisle.n
       - avenue.n
@@ -9282,7 +9130,6 @@ frames:
       - name: physical_structure_x_schema
       - name: structural_framework
       - name: structural_integrity
-        role_type: Scale
       - name: structural_stability
       - name: structure_creator
       - name: structure_location
@@ -9349,7 +9196,6 @@ frames:
     roles:
       - name: plant_death
       - name: plant_entity
-        role_type: Plant
       - name: plant_growth
       - name: plant_sprouting_stage
       - name: plant_sprouting_state
@@ -9545,9 +9391,7 @@ frames:
       - name: possess_relation
       - name: possess_relation_status
       - name: possess_relation_x_schema
-        role_type: XSchema
       - name: possession
-        role_type: Object
       - name: possessor
     lexical_units:
       - own.v
@@ -9646,9 +9490,7 @@ frames:
     roles:
       - name: problem
       - name: experiencer
-        role_type: Entity
       - name: severity_of_problem
-        role_type: Scale
       - name: problem_components
       - name: solution
     lexical_units:
@@ -9664,7 +9506,6 @@ frames:
       - X-schema
     roles:
       - name: process
-        role_type: XSchema
       - name: process_completed_state
       - name: process_continue
       - name: process_end
@@ -9674,7 +9515,6 @@ frames:
       - name: process_start
       - name: process_stop
       - name: protagonist
-        role_type: Entity
     related:
       - process-completed-state
       - process-continue
@@ -9834,7 +9674,6 @@ frames:
       - name: norm
       - name: profiled_region
       - name: proximity_scale
-        role_type: Scale
     related:
       - scale
       - trajector-landmark
@@ -9869,7 +9708,6 @@ frames:
       - Harm to living entity
     roles:
       - name: punishee
-        role_type: Entity
       - name: punisher
       - name: punishment
       - name: reason_for_punishment
@@ -9913,7 +9751,6 @@ frames:
     roles:
       - name: action_type
       - name: action_x_schema
-        role_type: XSchema
       - name: actor
       - name: effector
       - name: effort
@@ -9973,7 +9810,6 @@ frames:
       - name: terrain_feature
       - name: landmark
       - name: affected_motion
-        role_type: XSchema
     lexical_units:
       - morass.n
       - quicksand.n
@@ -9994,7 +9830,6 @@ frames:
     roles:
       - name: entity
       - name: entity_amount
-        role_type: EntityProperty
       - name: measure_of_quantity
       - name: quantity_scale
     lexical_units:
@@ -10107,12 +9942,10 @@ frames:
       - Regulations
     roles:
       - name: regulatee
-        role_type: Entity
       - name: regulating_procedure
       - name: regulation_rules
       - name: regulation_target
       - name: regulator
-        role_type: Entity
     lexical_units:
       - directive.n
       - regulate.v
@@ -10132,7 +9965,6 @@ frames:
       - name: relation_type
       - name: relation_value
       - name: relation_value_x_schema
-        role_type: XSchema
     related:
       - process
   - name: relationship
@@ -10154,7 +9986,6 @@ frames:
       - name: relationship_intensity
       - name: relationship_participants
       - name: relationship_status
-        role_type: Scale
       - name: relationship_whole
       - name: static_dynamic_status_of_relationship
     related:
@@ -10264,7 +10095,6 @@ frames:
       - Resource
     roles:
       - name: amount_of_resource
-        role_type: Quantity
       - name: purpose
       - name: resource
       - name: resource_user
@@ -10348,7 +10178,6 @@ frames:
       - name: evaluator_of_fulfillment
       - name: fulfillment_of_duty
       - name: responsible_party
-        role_type: Person
       - name: source_of_obligation
     lexical_units:
       - responsibility.n
@@ -10690,10 +10519,8 @@ frames:
     roles:
       - name: eyes
       - name: seen_object
-        role_type: Entity
       - name: seen_object_perceived_elements
       - name: seer
-        role_type: Entity
       - name: vision_x_schema
       - name: visual_ability
     lexical_units:
@@ -10725,7 +10552,6 @@ frames:
     roles:
       - name: defended_thing
       - name: defender
-        role_type: AnimateEntity
       - name: means_of_protection
       - name: threatening_thing
     lexical_units:
@@ -10771,7 +10597,6 @@ frames:
       - name: path
       - name: self_motion_x_schema
       - name: self_mover
-        role_type: AnimateEntity
       - name: source
       - name: speed
     lexical_units:
@@ -10816,7 +10641,6 @@ frames:
       - Entity
     roles:
       - name: sentient_entity
-        role_type: EntityThatHasConsciousness
       - name: state_of_consciousness
     related:
       - cognizing
@@ -10949,7 +10773,6 @@ frames:
     roles:
       - name: agent
       - name: agent_action
-        role_type: XSchema
       - name: speaker
     lexical_units:
       - gag.v
@@ -10976,9 +10799,7 @@ frames:
       - Scale
     roles:
       - name: entity
-        role_type: Object
       - name: entity_size
-        role_type: PropertyThatIsBeingAssessed
       - name: scalar_position
       - name: size_scale
     lexical_units:
@@ -11046,7 +10867,6 @@ frames:
       - name: defining_properties
       - name: group_decision_making
       - name: member
-        role_type: Person
       - name: member_relation
       - name: members
       - name: social_group_whole
@@ -11084,7 +10904,6 @@ frames:
       - name: problem_cause
       - name: result_of_problem
       - name: severity_of_problem
-        role_type: Scale
       - name: social_functioning
       - name: social_problem
       - name: social_program
@@ -11163,11 +10982,9 @@ frames:
       - Excluded
     roles:
       - name: addressee
-        role_type: Person
       - name: manner
       - name: message
       - name: speaker
-        role_type: Person
       - name: speaking_x_schema
       - name: topic
     lexical_units:
@@ -11220,7 +11037,6 @@ frames:
     roles:
       - name: stability_scale
       - name: stability_entity
-        role_type: ComplexPhysicalObject
       - name: stability_status
     lexical_units:
       - instability.n
@@ -11551,7 +11367,6 @@ frames:
     roles:
       - name: taste_apparatus
       - name: taste_effector
-        role_type: PartWhole
       - name: taste_faculty
       - name: taste_qualia
       - name: tasted_thing
@@ -11680,7 +11495,6 @@ frames:
       - Entity
     roles:
       - name: gardener
-        role_type: Person
       - name: gardening_activity
       - name: plant
     lexical_units:
@@ -11828,7 +11642,6 @@ frames:
       - name: thinker
       - name: thinking_content
       - name: thinking_process
-        role_type: Process
     lexical_units:
       - think.v
       - thought.n
@@ -11950,10 +11763,8 @@ frames:
     roles:
       - name: transfer_recipient
       - name: transfer_recipient_process
-        role_type: GainPossession
       - name: transferor
       - name: transferor_process
-        role_type: LosePossession
       - name: transferred_object
       - name: vehicle_for_transfer
     lexical_units:
@@ -12076,12 +11887,9 @@ frames:
       - name: basis_of_trust
       - name: change_in_relationship_intensity
       - name: non_normative_action
-        role_type: Action
       - name: normative_action
-        role_type: Action
       - name: relationship
       - name: relationship_intensity
-        role_type: Scale
       - name: relationship_status
       - name: trust_emotion
       - name: trust_framework
@@ -12134,9 +11942,7 @@ frames:
       - Excluded
     roles:
       - name: understanding_person
-        role_type: Entity
       - name: understanding_x_schema
-        role_type: XSchema
       - name: understood_idea
     lexical_units:
       - comprehend
@@ -12271,11 +12077,8 @@ frames:
       - Excluded
     roles:
       - name: purpose_of_use
-        role_type: ActionXSchemaParameter
       - name: used_entity
-        role_type: Entity
       - name: user
-        role_type: Entity
   - name: value
     frame_type:
       - Frame
@@ -12294,15 +12097,10 @@ frames:
       - Vehicle
     roles:
       - name: vehicle
-        role_type: PhysicalObject
       - name: vehicle_driver
-        role_type: Person
       - name: vehicle_freight
-        role_type: PhysicalObject
       - name: vehicle_location
-        role_type: Location
       - name: vehicle_passengers
-        role_type: Person
     lexical_units:
       - car.n
       - driver.n
@@ -12372,14 +12170,11 @@ frames:
     roles:
       - name: direction
       - name: motion_x_schema
-        role_type: Process
       - name: passengers
       - name: speed
       - name: vehicle
-        role_type: Machine
       - name: vehicle_control_x_schema
       - name: vehicle_driver
-        role_type: Person
       - name: vehicle_passengers
     lexical_units:
       - brake.v
@@ -12425,7 +12220,6 @@ frames:
       - name: vertical_axis
       - name: vertical_entity
       - name: verticality_scale
-        role_type: Scalar
     lexical_units:
       - vertical.a
       - verticality.n
@@ -12474,7 +12268,6 @@ frames:
       - name: evaluation_outcome
       - name: evaluator
       - name: evaluee
-        role_type: Object
       - name: expected_visible_properties
       - name: visible_part_of_evaluee
       - name: visible_properties
@@ -12532,7 +12325,6 @@ frames:
       - name: voter
       - name: voter_actions
       - name: voting_event
-        role_type: XSchema
       - name: voting_process
     lexical_units:
       - ballot.n
@@ -12576,17 +12368,14 @@ frames:
       - name: battlefield
       - name: civilians
       - name: enemy_attack
-        role_type: XSchemaPhase
       - name: enemy_combatants
       - name: enemy_conquest
       - name: fighting
-        role_type: XSchemaPhase
       - name: generals
       - name: power_of_weapons
       - name: side_1
       - name: side_2
       - name: victory
-        role_type: XSchemaState
       - name: war_strategies
       - name: weapons
     lexical_units:
@@ -12644,7 +12433,6 @@ frames:
       - Motion-affecting
     roles:
       - name: physical_entity
-        role_type: PhysicalEntity
       - name: watery_region
     lexical_units:
       - awash in
@@ -12931,7 +12719,6 @@ frames:
       - name: employer
       - name: objective
       - name: work_activity
-        role_type: XSchema
       - name: worker
       - name: workplace
     lexical_units:
@@ -12996,16 +12783,11 @@ frames:
       - name: start_conditions
       - name: whole
       - name: x_schema_continue
-        role_type: Stage
       - name: x_schema_end
-        role_type: Stage
       - name: x_schema_initial_state
-        role_type: Stage
       - name: x_schema_kind
       - name: x_schema_start
-        role_type: Stage
       - name: x_schema_stopped_state
-        role_type: Stage
     related:
       - x-schema-continue
       - x-schema-end

@@ -1,9 +1,6 @@
-import re
 import warnings
 
 from scripts.dataset_lib import FRAME_NAME_RE, METAPHOR_NAME_RE, ROLE_NAME_RE
-
-ROLE_TYPE_RE = re.compile(r"^[A-Z][A-Za-z0-9]*$")
 
 KNOWN_METAPHOR_TYPES = {"Composed/complex", "Primary", "Entailed"}
 KNOWN_FRAME_TYPES = {"Frame", "Cog", "Composed", "Primary"}
@@ -43,16 +40,6 @@ def test_family_name_format(metaphor_families, frame_families):
         if _normalized_family_name(f["name"]) != f["name"]
     ]
     assert not bad, f"family names not in sentence case (see README): {bad}"
-
-
-def test_role_type_format(frames):
-    bad = [
-        f"{f['name']}.{r['name']}={r['role_type']}"
-        for f in frames
-        for r in f.get("roles", [])
-        if r.get("role_type") and not ROLE_TYPE_RE.match(r["role_type"])
-    ]
-    assert not bad, f"role_type values not in PascalCase (A-Z, a-z, 0-9): {bad}"
 
 
 # The checks below flag known, long-standing gaps inherited from the source

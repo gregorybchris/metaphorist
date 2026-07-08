@@ -66,6 +66,64 @@
   --color-moss-800: #272b21;
   --color-moss-900: #181a14;
 
+  /* Part-of-speech accent hues, used only for lexical unit badges — kept
+     visually distinct from clay/indigo/moss so they don't get mistaken for
+     the source/target/family accents used elsewhere on the same page. */
+  --color-teal-50: #e9f9f8;
+  --color-teal-100: #ccf2ef;
+  --color-teal-200: #9be6e0;
+  --color-teal-300: #6adad0;
+  --color-teal-400: #33ccbf;
+  --color-teal-500: #2baba1;
+  --color-teal-600: #238b82;
+  --color-teal-700: #1c6e67;
+  --color-teal-800: #14524d;
+  --color-teal-900: #0d3532;
+
+  --color-garnet-50: #f9e9eb;
+  --color-garnet-100: #f2ccd3;
+  --color-garnet-200: #e69ba8;
+  --color-garnet-300: #da6a7d;
+  --color-garnet-400: #cc334d;
+  --color-garnet-500: #ab2b40;
+  --color-garnet-600: #8b2334;
+  --color-garnet-700: #6e1c29;
+  --color-garnet-800: #52141f;
+  --color-garnet-900: #350d14;
+
+  --color-fern-50: #e9f9ee;
+  --color-fern-100: #ccf2d9;
+  --color-fern-200: #9be6b4;
+  --color-fern-300: #6ada8f;
+  --color-fern-400: #33cc66;
+  --color-fern-500: #2bab56;
+  --color-fern-600: #238b45;
+  --color-fern-700: #1c6e37;
+  --color-fern-800: #145229;
+  --color-fern-900: #0d351b;
+
+  --color-amber-50: #f9f6e9;
+  --color-amber-100: #f2ebcc;
+  --color-amber-200: #e6d79b;
+  --color-amber-300: #dac36a;
+  --color-amber-400: #ccae33;
+  --color-amber-500: #ab922b;
+  --color-amber-600: #8b7623;
+  --color-amber-700: #6e5e1c;
+  --color-amber-800: #524514;
+  --color-amber-900: #352d0d;
+
+  --color-azure-50: #e9f2f9;
+  --color-azure-100: #cce3f2;
+  --color-azure-200: #9bc7e6;
+  --color-azure-300: #6aabda;
+  --color-azure-400: #338ccc;
+  --color-azure-500: #2b76ab;
+  --color-azure-600: #235f8b;
+  --color-azure-700: #1c4c6e;
+  --color-azure-800: #143852;
+  --color-azure-900: #0d2435;
+
   /* Semantic, dark-mode-aware surface tokens. Components should reach for
      these (bg-bg, bg-surface, text-text, ...) for chrome; use the raw
      clay/indigo/moss scales directly for accent/semantic coloring. */
