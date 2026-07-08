@@ -1,9 +1,9 @@
 frame_families:
-  - name: Access to education frames
+  - name: Access to education
     members:
       - access-to-education
       - access-to-knowledge
-  - name: Act on an object frames
+  - name: Act on an object
     members:
       - attach
       - create-object
@@ -16,7 +16,7 @@ frame_families:
       - object-propulsion
       - operating-a-machine
       - restore
-  - name: Action frames
+  - name: Action
     members:
       - ability-to-act
       - action
@@ -36,7 +36,7 @@ frame_families:
       - self-propelled-motion-to-a-destination
       - sequence-of-actions
       - social-obligation
-  - name: Affected movement frames
+  - name: Affected movement
     members:
       - affected-motion
       - caused-downward-motion
@@ -49,7 +49,7 @@ frame_families:
       - self-propelled-motion
       - self-propelled-motion-to-a-destination
       - vehicular-motion
-  - name: Aversion frames
+  - name: Aversion
     members:
       - decay
       - disease
@@ -58,7 +58,7 @@ frame_families:
       - impurity
       - obscenity
       - overeating
-  - name: Body frames
+  - name: Body
     members:
       - bodily-sensation
       - body
@@ -74,22 +74,20 @@ frame_families:
       - into
       - out
       - region
-  - name: Bureaucracy frames
+  - name: Bureaucracy
     members:
       - bureaucracy
   - name: Causation
     members:
-      - cause-contact
-  - name: Causation frames
-    members:
       - affected-motion
       - agentive-causation
       - causation
+      - cause-contact
       - caused-change-of-state
       - enablement
       - forced-movement
       - harm
-  - name: Change-related frames
+  - name: Change-related
     members:
       - caused-change-of-state
       - change-of-location
@@ -97,7 +95,7 @@ frame_families:
       - possession-change
       - replacement
       - self-initiated-state-change
-  - name: Cognition frames
+  - name: Cognition
     members:
       - access-to-knowledge
       - becoming-aware
@@ -116,7 +114,7 @@ frame_families:
       - theory
       - thinking-about
       - understanding
-  - name: Communication frames
+  - name: Communication
     members:
       - argument
       - communication
@@ -128,7 +126,7 @@ frame_families:
       - silencing
       - speaking
       - speech-act
-  - name: Competition frames
+  - name: Competition
     members:
       - competition
       - competitive-sport
@@ -141,7 +139,7 @@ frame_families:
       - race
       - recreational-competition
       - war
-  - name: Concealment and protection frames
+  - name: Concealment and protection
     members:
       - access-to-an-object
       - burial
@@ -150,13 +148,13 @@ frame_families:
       - protect-against-contact
       - protecting
       - wearable-disguises
-  - name: Control of guns family
+  - name: Control of guns
     members:
       - gun-control
       - gun-control-advocacy
       - gun-control-advocate
       - gun-control-legislation
-  - name: Crime frames
+  - name: Crime
     members:
       - crime
       - punishment
@@ -174,10 +172,10 @@ frame_families:
       - natural-disaster
       - physical-harm
       - vehicular-accident
-  - name: Debt frames
+  - name: Debt
     members:
       - debt
-  - name: Democracy frames
+  - name: Democracy
     members:
       - citizen-participation
       - democracy
@@ -188,11 +186,11 @@ frame_families:
       - organization-of-power
       - representation-and-decision-making
       - rights
-  - name: Democratic institutions frames
+  - name: Democratic institutions
     members:
       - democratic-institution
       - media
-  - name: Directional movement frames
+  - name: Directional movement
     members:
       - backward-motion
       - downward-motion
@@ -213,7 +211,7 @@ frame_families:
       - self-propelled-motion-to-a-destination
       - trespassing
       - upward-motion
-  - name: Disease frame family
+  - name: Disease
     members:
       - cancer
       - cancer-patient
@@ -227,7 +225,7 @@ frame_families:
       - physical-affliction
       - surgery
       - treating-a-physical-affliction
-  - name: Eating frames
+  - name: Eating
     members:
       - chewing
       - consume
@@ -241,7 +239,7 @@ frame_families:
       - overeating
       - rich-food
       - starvation
-  - name: Economic frames
+  - name: Economic
     members:
       - business
       - corporation
@@ -261,11 +259,11 @@ frame_families:
       - sanction
       - supply-and-demand
       - value
-  - name: Economic inequality frames
+  - name: Economic inequality
     members:
       - economic-status
       - improving-economic-status
-  - name: Education frames
+  - name: Education
     members:
       - curriculum
       - education
@@ -275,12 +273,12 @@ frame_families:
       - knowledge
       - learning
       - school
-  - name: Election frames
+  - name: Election
     members:
       - election
       - voting
       - voting-rights
-  - name: Emotion frames
+  - name: Emotion
     members:
       - affection
       - anger
@@ -296,7 +294,7 @@ frame_families:
       - lust
       - sadness
       - trust-emotion
-  - name: Endangerment frames
+  - name: Endangerment
     members:
       - burden
       - cut
@@ -304,7 +302,7 @@ frame_families:
       - deforming
       - remove-burden
       - stop-airflow
-  - name: Entity frames
+  - name: Entity
     members:
       - animal
       - animal-life-cycle
@@ -351,19 +349,19 @@ frame_families:
       - textile
       - vehicle
       - weed
-  - name: Evaluation frames
+  - name: Evaluation
     members:
       - analysis
       - evaluation
       - judgment
       - moral-evaluation
       - visual-evaluation
-  - name: Event structure frames
+  - name: Event structure
     members:
       - ability-to-act
       - force
       - physical-connection
-  - name: Excluded frames
+  - name: Excluded
     members:
       - ability-to-act
       - action
@@ -412,18 +410,23 @@ frame_families:
       - using
       - work-scenario
       - x-schema-continue
-  - name: Fluid frame family
+  - name: Fluid
     members:
       - absorption
       - body-of-water
       - fluid-motion
       - liquid
       - release-liquid
-  - name: Food frame family
+  - name: Food
     members:
       - chewing
       - food
-  - name: Force dynamic frames
+  - name: Force
+    members:
+      - antagonistic-force
+      - force
+      - impact
+  - name: Force dynamic
     members:
       - antagonistic-force
       - destructive-force
@@ -433,22 +436,17 @@ frame_families:
       - force-transfer
       - object-manipulation
       - pressure
-  - name: Force frames
-    members:
-      - antagonistic-force
-      - force
-      - impact
-  - name: Forced movement frame family
+  - name: Forced movement
     members:
       - caused-downward-motion
       - caused-upward-motion
       - force-application
       - forced-movement
       - object-propulsion
-  - name: Function of government frames
+  - name: Function of government
     members:
       - government-institution-us
-  - name: Governance frames
+  - name: Governance
     members:
       - authority
       - citizen-evaluation-of-government
@@ -487,7 +485,7 @@ frame_families:
       - rights
       - trust-relationship
       - voting
-  - name: Government frames
+  - name: Government
     members:
       - branches-of-government
       - government
@@ -495,7 +493,7 @@ frame_families:
       - government-institution-us
       - legislative-branch
       - state-leadership
-  - name: Guided motion frame family
+  - name: Guided motion
     members:
       - guided-motion
       - leadership
@@ -525,7 +523,7 @@ frame_families:
       - second-amendment
       - self-defense
       - weapons-handling
-  - name: Gun rights family
+  - name: Gun rights
     members:
       - gun-industry
       - gun-ownership
@@ -535,7 +533,7 @@ frame_families:
       - gun-rights-advocate
       - right-to-self-defense
       - second-amendment
-  - name: Guns family
+  - name: Guns
     members:
       - personal-weapon
       - weapons-handling
@@ -594,7 +592,7 @@ frame_families:
       - treating-a-physical-affliction
       - weed
       - wilderness
-  - name: Harmful encounters frames
+  - name: Harmful encounters
     members:
       - bully
       - destroying
@@ -618,7 +616,7 @@ frame_families:
       - proximal-distal
       - proximity
       - separation
-  - name: Impediment and enablement frames
+  - name: Impediment and enablement
     members:
       - access
       - access-to-a-location
@@ -662,7 +660,7 @@ frame_families:
       - stop-flow-of-substance
       - sunken-confinement
       - water-confinement
-  - name: Internal motion frames
+  - name: Internal motion
     members:
       - air-motion
       - fluid-motion
@@ -670,16 +668,16 @@ frame_families:
       - motion-back-and-forth
       - release-liquid
       - rotation
-  - name: Leaders frames
+  - name: Leaders
     members:
       - leadership
       - organizational-leadership
       - state-leadership
-  - name: Leadership frames
+  - name: Leadership
     members:
       - guided-motion
       - leadership
-  - name: Legislation frames
+  - name: Legislation
     members:
       - gun-control-legislation
       - gun-legislation
@@ -688,7 +686,7 @@ frame_families:
       - legislation-enactment
       - legislative-action
       - legislative-branch
-  - name: Location frames
+  - name: Location
     members:
       - access
       - access-to-a-location
@@ -715,7 +713,7 @@ frame_families:
       - source-path-goal
       - spatial-relation
       - trajector-landmark
-  - name: Machine frames
+  - name: Machine
     members:
       - instrument
       - machine
@@ -723,13 +721,13 @@ frame_families:
       - robot
       - textile
       - vehicle
-  - name: Magic frames
+  - name: Magic
     members:
       - magic
-  - name: Money frames
+  - name: Money
     members:
       - money
-  - name: Morality frames
+  - name: Morality
     members:
       - deity
       - evil
@@ -744,7 +742,7 @@ frame_families:
       - morality
       - parent
       - worship
-  - name: Motion frames
+  - name: Motion
     members:
       - across
       - affected-motion
@@ -800,7 +798,7 @@ frame_families:
       - upward-motion
       - vehicular-motion
       - virtual-motion
-  - name: Motion impediments frames
+  - name: Motion impediments
     members:
       - barrier
       - barrier-to-accessing-a-location
@@ -820,7 +818,7 @@ frame_families:
       - sunken-confinement
       - trespassing
       - water-confinement
-  - name: Motion-affecting frames
+  - name: Motion-affecting
     members:
       - aid-to-upward-motion
       - aids-to-downward-motion
@@ -854,7 +852,7 @@ frame_families:
       - restraints
       - sunken-confinement
       - water-confinement
-  - name: Movement frames
+  - name: Movement
     members:
       - affected-motion
       - air-motion
@@ -892,7 +890,7 @@ frame_families:
       - self-propelled-motion-to-a-destination
       - upward-motion
       - vehicular-motion
-  - name: Mover-specific movement frames
+  - name: Mover-specific movement
     members:
       - air-motion
       - boat-motion-x-schema
@@ -900,7 +898,7 @@ frame_families:
       - fluid-motion
       - steering-a-boat
       - vehicular-motion
-  - name: Moving entity frames
+  - name: Moving entity
     members:
       - across
       - affected-motion
@@ -943,7 +941,7 @@ frame_families:
       - steering-a-boat
       - upward-motion
       - vehicular-motion
-  - name: Natural process frames
+  - name: Natural process
     members:
       - animal
       - animal-life-cycle
@@ -952,11 +950,7 @@ frame_families:
       - natural-process
       - plants
       - restore-to-life
-  - name: Object event structure frames
-    members:
-      - access-to-an-object
-      - pressure
-  - name: Object frames
+  - name: Object
     members:
       - building
       - crafting
@@ -966,7 +960,11 @@ frame_families:
       - object
       - physical-structure
       - support
-  - name: Perception frames
+  - name: Object event structure
+    members:
+      - access-to-an-object
+      - pressure
+  - name: Perception
     members:
       - cause-to-see
       - darkness
@@ -981,7 +979,7 @@ frame_families:
       - touching
       - visual-evaluation
       - visual-obstruction
-  - name: Physical combat frame family
+  - name: Physical combat
     members:
       - attacking
       - card-game
@@ -989,7 +987,7 @@ frame_families:
       - physical-combat
       - physical-competition
       - war
-  - name: Physical conflict frames
+  - name: Physical conflict
     members:
       - attacking
       - physical-combat
@@ -998,7 +996,7 @@ frame_families:
   - name: Physical orientation
     members:
       - upright-posture
-  - name: Physical properties frame family
+  - name: Physical properties
     members:
       - decrease-size
       - firm
@@ -1013,21 +1011,21 @@ frame_families:
       - size
       - tight-fit
       - weight
-  - name: Politicians frames
+  - name: Politicians
     members:
       - politics
-  - name: Politics frames
+  - name: Politics
     members:
       - political-equality
       - politics
-  - name: Position frames
+  - name: Position
     members:
       - being-at-a-high-location
       - being-at-a-location
       - being-at-a-low-location
       - being-in-a-bounded-region
       - vertical-position
-  - name: Possession frames
+  - name: Possession
     members:
       - gain-possession
       - lose-possession
@@ -1037,12 +1035,12 @@ frame_families:
       - possession
       - possession-change
       - transfer-scenario
-  - name: Poverty frames
+  - name: Poverty
     members:
       - addressing-poverty
       - economic-difficulty
       - poverty
-  - name: Poverty-related frame network
+  - name: Poverty-related
     members:
       - addressing-poverty
       - addressing-social-problems
@@ -1054,7 +1052,7 @@ frame_families:
       - negatively-evaluated-condition
       - poverty
       - social-problems
-  - name: Property-related frames
+  - name: Property-related
     members:
       - attribute
       - caused-change-of-state
@@ -1065,7 +1063,7 @@ frame_families:
       - scale
       - straightness
       - upright-posture
-  - name: Protecting frames
+  - name: Protecting
     members:
       - hiding
       - placing-in-a-protected-location
@@ -1073,10 +1071,10 @@ frame_families:
       - protecting
       - visual-obstruction
       - wearable-disguises
-  - name: Regulations frames
+  - name: Regulations
     members:
       - regulation
-  - name: Resource frames
+  - name: Resource
     members:
       - amassing
       - assets
@@ -1091,13 +1089,13 @@ frame_families:
       - resource-consumption
       - resource-container
       - resource-transfer
-  - name: Rights family
+  - name: Rights
     members:
       - citizen-rights
       - right-to-life
       - rights
       - voting-rights
-  - name: Scale frames
+  - name: Scale
     members:
       - battery
       - being-high-on-a-scale
@@ -1130,10 +1128,7 @@ frame_families:
       - topological-scale
       - verticality
       - weight
-  - name: Social class frames
-    members:
-      - social-class
-  - name: Social frames
+  - name: Social
     members:
       - adoption
       - civil-social-political-community
@@ -1147,7 +1142,10 @@ frame_families:
       - social-status
       - society
       - strict-father-family
-  - name: Social problem frames
+  - name: Social class
+    members:
+      - social-class
+  - name: Social problem
     members:
       - addressing-social-problems
       - crime
@@ -1168,7 +1166,7 @@ frame_families:
       - source-path-goal
       - spatial-relation
       - trajector-landmark
-  - name: State-related frames
+  - name: State-related
     members:
       - caused-change-of-state
       - change-of-state
@@ -1178,23 +1176,23 @@ frame_families:
       - improving-a-state
       - self-initiated-state-change
       - state
-  - name: Taxation frames
+  - name: Taxation
     members:
       - taxation
-  - name: Taxes frames
+  - name: Taxes
     members:
       - taxes
-  - name: The law frames
+  - name: The law
     members:
       - law
       - legality
-  - name: The poor frames
+  - name: The poor
     members:
       - impoverished
-  - name: The rich frames
+  - name: The rich
     members:
       - wealthy-people
-  - name: Translational motion frames
+  - name: Translational motion
     members:
       - avoiding-obstacles
       - backward-motion
@@ -1225,7 +1223,7 @@ frame_families:
       - advocacy
       - agriculture
       - beauty
-  - name: Vehicle frames
+  - name: Vehicle
     members:
       - boat
       - controlled-vehicular-motion
@@ -1235,7 +1233,11 @@ frame_families:
       - steering-a-boat
       - vehicle
       - vehicular-motion
-  - name: Wealth and social class frames
+  - name: Wealth
+    members:
+      - wealth
+      - wealth-distribution
+  - name: Wealth and social class
     members:
       - economic-status
       - employment
@@ -1244,11 +1246,7 @@ frame_families:
       - income
       - unemployment
       - wealth-redistribution
-  - name: Wealth frames
-    members:
-      - wealth
-      - wealth-distribution
-  - name: X-schema family
+  - name: X-schema
     members:
       - process
       - process-completed-state
@@ -1262,7 +1260,7 @@ frame_families:
       - process-uncompleted-state
       - x-schema
       - x-schema-continue
-  - name: Zealotry, insanity, and worship frames
+  - name: Zealotry, insanity, and worship
     members:
       - deity
       - insanity

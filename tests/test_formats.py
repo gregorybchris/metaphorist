@@ -10,11 +10,10 @@ KNOWN_FRAME_TYPES = {"Frame", "Cog", "Composed", "Primary"}
 
 
 def _normalized_family_name(name):
-    """Sentence case, trailing plural category word -- mirrors the rule
-    described under 'Naming conventions' in the README. The first word and
-    any ALL-CAPS word (a deliberate acronym/emphasis) are preserved as-is;
-    every other word is lowercased; a bare lowercase first word gets its
-    first letter capitalized (e.g. 'x-schema family' -> 'X-schema family')."""
+    """Sentence case -- mirrors the rule described under 'Naming conventions' in the
+    README. The first word and any ALL-CAPS word (a deliberate acronym/emphasis) are
+    preserved as-is; every other word is lowercased; a bare lowercase first word gets
+    its first letter capitalized (e.g. 'x-schema' -> 'X-schema')."""
     words = name.split()
     fixed = []
     for i, w in enumerate(words):
@@ -24,12 +23,7 @@ def _normalized_family_name(name):
             fixed.append(w)
         else:
             fixed.append(w.lower())
-    normalized = " ".join(fixed)
-    if normalized == "metaphor" or normalized.endswith(" metaphor"):
-        normalized += "s"
-    if normalized == "frame" or normalized.endswith(" frame"):
-        normalized += "s"
-    return normalized
+    return " ".join(fixed)
 
 
 def test_metaphor_name_format(metaphors):
@@ -48,7 +42,7 @@ def test_family_name_format(metaphor_families, frame_families):
         for f in metaphor_families + frame_families
         if _normalized_family_name(f["name"]) != f["name"]
     ]
-    assert not bad, f"family names not in sentence-case-plural form (see README): {bad}"
+    assert not bad, f"family names not in sentence case (see README): {bad}"
 
 
 def test_role_type_format(frames):

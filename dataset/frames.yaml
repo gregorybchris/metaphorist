@@ -3,9 +3,9 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Action frames
-      - Event structure frames
-      - Excluded frames
+      - Action
+      - Event structure
+      - Excluded
     lexical_units:
       - ability
       - able
@@ -18,7 +18,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Fluid frame family
+      - Fluid
     roles:
       - name: absorbent_entity
         role_type: PhysicalEntity
@@ -44,8 +44,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
-      - Location frames
+      - Impediment and enablement
+      - Location
     roles:
       - name: accessed_entity
       - name: accessor
@@ -59,8 +59,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
-      - Location frames
+      - Impediment and enablement
+      - Location
     related:
       - access
       - access-to-an-object
@@ -70,9 +70,9 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Concealment and protection frames
-      - Impediment and enablement frames
-      - Object event structure frames
+      - Concealment and protection
+      - Impediment and enablement
+      - Object event structure
     roles:
       - name: accessed_object
       - name: accessor
@@ -87,7 +87,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Access to education frames
+      - Access to education
     related:
       - education
       - opportunities
@@ -95,8 +95,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Access to education frames
-      - Cognition frames
+      - Access to education
+      - Cognition
     related:
       - access-to-education
       - knowledge
@@ -127,8 +127,8 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Motion frames
-      - Moving entity frames
+      - Motion
+      - Moving entity
       - Spatial relations
     lexical_units:
       - across.prep
@@ -142,8 +142,8 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Action frames
-      - Excluded frames
+      - Action
+      - Excluded
     roles:
       - name: action_means
       - name: action_purpose
@@ -165,7 +165,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Action frames
+      - Action
     roles:
       - name: activity_self
       - name: activity_participant
@@ -195,8 +195,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Poverty frames
-      - Poverty-related frame network
+      - Poverty
+      - Poverty-related
     roles:
       - name: impoverished
       - name: poverty
@@ -211,8 +211,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Poverty-related frame network
-      - Social problem frames
+      - Poverty-related
+      - Social problem
     roles:
       - name: authorities
       - name: extent_of_problem
@@ -237,7 +237,7 @@ frames:
       - Frame
       - Primary
     frame_families:
-      - Social frames
+      - Social
     roles:
       - name: adoptee
       - name: candidates
@@ -278,11 +278,11 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Affected movement frames
-      - Causation frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Affected movement
+      - Causation
+      - Motion
+      - Movement
+      - Moving entity
     roles:
       - name: cause
       - name: goal
@@ -299,7 +299,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: affection_feeler
       - name: degree_of_affection
@@ -309,7 +309,7 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Causation frames
+      - Causation
   - name: agreement
   - name: agriculture
     frame_type:
@@ -325,9 +325,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion
+      - Motion-affecting
     lexical_units:
       - foothold.n
       - ladder.n
@@ -346,15 +346,15 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Action frames
-      - Impediment and enablement frames
+      - Action
+      - Impediment and enablement
     related:
       - action
   - name: aids-to-downward-motion
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion
+      - Motion-affecting
     lexical_units:
       - chute.n
       - greased.a pole.n
@@ -371,9 +371,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion
+      - Motion-affecting
     lexical_units:
       - accelerate.v
       - boost.v
@@ -389,11 +389,11 @@ frames:
       - motion
   - name: air-motion
     frame_families:
-      - Internal motion frames
-      - Motion frames
-      - Movement frames
-      - Mover-specific movement frames
-      - Moving entity frames
+      - Internal motion
+      - Motion
+      - Movement
+      - Mover-specific movement
+      - Moving entity
     roles:
       - name: mover
         role_type: AirGas
@@ -416,7 +416,7 @@ frames:
   - name: alliances
   - name: amassing
     frame_families:
-      - Resource frames
+      - Resource
     lexical_units:
       - accrue.v
       - accumulate.v
@@ -437,8 +437,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Evaluation frames
-      - Excluded frames
+      - Evaluation
+      - Excluded
     roles:
       - name: analytic_conclusion
       - name: analytic_method
@@ -459,7 +459,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: anger
       - name: anger_level
@@ -489,8 +489,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Natural process frames
+      - Entity
+      - Natural process
     roles:
       - name: animal
         role_type: Entity
@@ -517,8 +517,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Natural process frames
+      - Entity
+      - Natural process
     roles:
       - name: animal_life_cycle_beginning_stage
       - name: animal_life_cycle_beginning_state
@@ -542,7 +542,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: animate_entity
       - name: body
@@ -556,8 +556,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Force dynamic frames
-      - Force frames
+      - Force dynamic
+      - Force
     lexical_units:
       - bring.v to knees
       - bring.v to one's knees
@@ -577,8 +577,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Communication frames
-      - Excluded frames
+      - Communication
+      - Excluded
     roles:
       - name: arguers
       - name: arguing_event
@@ -611,7 +611,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: artifact_creator
       - name: artifact_entity
@@ -626,7 +626,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Resource frames
+      - Resource
     lexical_units:
       - asset
       - holdings
@@ -638,7 +638,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on an object frames
+      - Act on an object
     lexical_units:
       - adhere.v
       - adjoin.v
@@ -664,8 +664,8 @@ frames:
     frame_families:
       - Harm
       - Harm to living entity
-      - Physical combat frame family
-      - Physical conflict frames
+      - Physical combat
+      - Physical conflict
     roles:
       - name: attacked
         role_type: Person
@@ -718,7 +718,7 @@ frames:
     frame_type:
       - Primary
     frame_families:
-      - Property-related frames
+      - Property-related
     roles:
       - name: attribute
       - name: attributor
@@ -730,7 +730,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: authority_entity
       - name: authority_power
@@ -751,9 +751,9 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Impediment and enablement
+      - Moving entity
+      - Translational motion
     lexical_units:
       - aversion.n
       - avoid.v
@@ -811,10 +811,10 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Moving entity
+      - Translational motion
     roles:
       - name: backward_direction
       - name: motion_speed
@@ -841,9 +841,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion impediments
+      - Motion-affecting
     roles:
       - name: affected_motion
       - name: barrier_object
@@ -877,18 +877,18 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Impediment and enablement frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion-affecting
     related:
       - barrier
   - name: barrier-to-accessing-a-location
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
-      - Location frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Location
+      - Motion impediments
+      - Motion-affecting
     lexical_units:
       - barricade.n
       - barricade.v
@@ -907,7 +907,7 @@ frames:
       - inability-to-access-a-location
   - name: battery
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: entity
       - name: charge_level
@@ -932,7 +932,7 @@ frames:
     frame_type:
       - Primary
     frame_families:
-      - Cognition frames
+      - Cognition
     roles:
       - name: cognizer
       - name: content
@@ -943,8 +943,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Location frames
-      - Position frames
+      - Location
+      - Position
     lexical_units:
       - apex.n
       - high.a
@@ -977,8 +977,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Location frames
-      - Position frames
+      - Location
+      - Position
     roles:
       - name: current_location
       - name: experiencer
@@ -1002,8 +1002,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Location frames
-      - Position frames
+      - Location
+      - Position
     roles:
       - name: current_location
       - name: located_thing
@@ -1034,11 +1034,11 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Scale frames
+      - Scale
   - name: being-in-a-bounded-region
     frame_families:
-      - Location frames
-      - Position frames
+      - Location
+      - Position
     roles:
       - name: current_location
       - name: landmark
@@ -1061,7 +1061,7 @@ frames:
       - bounded-entity
   - name: being-in-the-middle-of-a-scale
     frame_families:
-      - Scale frames
+      - Scale
     lexical_units:
       - median.a
       - median.n
@@ -1072,7 +1072,7 @@ frames:
       - middling
   - name: being-low-on-a-scale
     frame_families:
-      - Scale frames
+      - Scale
     related:
       - scale
   - name: being-receptive
@@ -1114,8 +1114,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Cognition frames
-      - Excluded frames
+      - Cognition
+      - Excluded
     roles:
       - name: belief
       - name: belief_relation
@@ -1131,7 +1131,7 @@ frames:
       - Frame
   - name: biological-entity
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: body
       - name: body_weight
@@ -1147,8 +1147,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Natural process frames
+      - Entity
+      - Natural process
     lexical_units:
       - beak.n
       - bird.n
@@ -1204,7 +1204,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     lexical_units:
       - barnacle.n
       - blood-sucker.n
@@ -1222,8 +1222,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Vehicle frames
+      - Entity
+      - Vehicle
     roles:
       - name: boat
       - name: boat_captain
@@ -1253,10 +1253,10 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Motion frames
-      - Movement frames
-      - Mover-specific movement frames
-      - Moving entity frames
+      - Motion
+      - Movement
+      - Mover-specific movement
+      - Moving entity
     lexical_units:
       - adrift.a
       - afloat.a
@@ -1289,7 +1289,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: bodily_capacity
       - name: body
@@ -1304,7 +1304,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Body frames
+      - Body
     lexical_units:
       - numb.a
       - numb.v
@@ -1313,8 +1313,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Body frames
-      - Entity frames
+      - Body
+      - Entity
     roles:
       - name: body_parts
       - name: body_whole
@@ -1349,8 +1349,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Fluid frame family
+      - Entity
+      - Fluid
     roles:
       - name: water_body
       - name: surface
@@ -1381,7 +1381,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: body
       - name: weight_amount
@@ -1399,7 +1399,7 @@ frames:
       - Cog
     frame_families:
       - Bounding
-      - Entity frames
+      - Entity
     roles:
       - name: bounded_entity
       - name: entity_boundary
@@ -1414,7 +1414,7 @@ frames:
       - Cog
     frame_families:
       - Bounding
-      - Location frames
+      - Location
     roles:
       - name: boundary
       - name: center
@@ -1440,20 +1440,20 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Government frames
+      - Government
   - name: brittle-object
     frame_type:
       - Composed
     frame_families:
-      - Entity frames
+      - Entity
     related:
       - object
   - name: building
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Object frames
+      - Entity
+      - Object
     roles:
       - name: builder
       - name: building_foundation
@@ -1502,7 +1502,7 @@ frames:
       - Frame
     frame_families:
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     roles:
       - name: bullied
       - name: bully
@@ -1519,9 +1519,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Endangerment frames
-      - Impediment and enablement frames
-      - Motion-affecting frames
+      - Endangerment
+      - Impediment and enablement
+      - Motion-affecting
     roles:
       - name: burden
         role_type: PhysicalEntity
@@ -1574,7 +1574,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Bureaucracy frames
+      - Bureaucracy
     roles:
       - name: functions
       - name: individuals_served
@@ -1597,8 +1597,8 @@ frames:
       - legislative-action
   - name: burial
     frame_families:
-      - Concealment and protection frames
-      - Motion-affecting frames
+      - Concealment and protection
+      - Motion-affecting
     lexical_units:
       - blanketed.n
       - buried.v
@@ -1612,7 +1612,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     lexical_units:
       - business.n
       - company.n
@@ -1624,7 +1624,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
     roles:
       - name: cancer
     lexical_units:
@@ -1669,7 +1669,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
     lexical_units:
       - cancer patient.n
       - cancer survivor.n
@@ -1678,7 +1678,7 @@ frames:
       - cancer
   - name: cancer-treatment
     frame_families:
-      - Disease frame family
+      - Disease
     lexical_units:
       - cancer care.n
       - cancer treatment.n
@@ -1697,7 +1697,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical combat frame family
+      - Physical combat
     lexical_units:
       - UNO
       - aces and eights.n
@@ -1730,8 +1730,8 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Causation frames
-      - Excluded frames
+      - Causation
+      - Excluded
     roles:
       - name: fd_relation_type
       - name: affected
@@ -1774,8 +1774,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Excluded frames
-      - Perception frames
+      - Excluded
+      - Perception
     roles:
       - name: object_seen
       - name: perception_causer
@@ -1788,10 +1788,10 @@ frames:
       - seeing
   - name: caused-change-of-state
     frame_families:
-      - Causation frames
-      - Change-related frames
-      - Property-related frames
-      - State-related frames
+      - Causation
+      - Change-related
+      - Property-related
+      - State-related
     roles:
       - name: affected
       - name: agent
@@ -1808,11 +1808,11 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Affected movement frames
-      - Forced movement frame family
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Affected movement
+      - Forced movement
+      - Motion
+      - Movement
+      - Moving entity
     lexical_units:
       - depress.v
       - drag.v down
@@ -1837,11 +1837,11 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Affected movement frames
-      - Forced movement frame family
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Affected movement
+      - Forced movement
+      - Motion
+      - Movement
+      - Moving entity
     lexical_units:
       - bolster.v
       - boost.n
@@ -1884,18 +1884,18 @@ frames:
   - name: certainty
   - name: change-of-location
     frame_families:
-      - Change-related frames
-      - Location frames
-      - Movement frames
+      - Change-related
+      - Location
+      - Movement
     related:
       - being-at-a-location
   - name: change-of-state
     frame_type:
       - Cog
     frame_families:
-      - Change-related frames
-      - Property-related frames
-      - State-related frames
+      - Change-related
+      - Property-related
+      - State-related
     roles:
       - name: experiencer
       - name: final_state
@@ -1912,8 +1912,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
-      - Food frame family
+      - Eating
+      - Food
     lexical_units:
       - bite.n
       - bite.v
@@ -1960,7 +1960,7 @@ frames:
       - work-scenario
   - name: circular-path
     frame_families:
-      - Translational motion frames
+      - Translational motion
     lexical_units:
       - carousel.n
       - circle.n
@@ -1985,7 +1985,7 @@ frames:
     frame_type:
       - Composed
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: behavior
       - name: evaluatee
@@ -1999,7 +1999,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
+      - Democracy
     lexical_units:
       - citizenship.n
       - civic.a
@@ -2009,12 +2009,12 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Rights family
+      - Rights
     related:
       - rights
   - name: citizens
     frame_families:
-      - Governance frames
+      - Governance
     lexical_units:
       - citizen.n
     related:
@@ -2023,7 +2023,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social frames
+      - Social
     lexical_units:
       - civic.a
       - civil.a
@@ -2046,9 +2046,9 @@ frames:
       - purity
   - name: clear-paths-to-accessing-a-location
     frame_families:
-      - Impediment and enablement frames
-      - Location frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Location
+      - Motion-affecting
     lexical_units:
       - clear.v the area
       - clear.v the way
@@ -2063,8 +2063,8 @@ frames:
       - physical-path
   - name: closing-a-portal
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
+      - Impediment and enablement
+      - Motion impediments
     lexical_units:
       - close off.v
       - close.v
@@ -2081,7 +2081,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Cognition frames
+      - Cognition
     roles:
       - name: bodily_functioning_x_schema
       - name: body
@@ -2095,7 +2095,7 @@ frames:
       - person
   - name: coherence
     frame_families:
-      - Property-related frames
+      - Property-related
     roles:
       - name: coherent_entity
       - name: parts
@@ -2111,7 +2111,7 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: entity
       - name: temperature_level
@@ -2143,7 +2143,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Communication frames
+      - Communication
     roles:
       - name: addressee
       - name: communicator
@@ -2177,8 +2177,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
-      - Social frames
+      - Governance
+      - Social
     related:
       - social-group
   - name: community-relationship
@@ -2196,8 +2196,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Competition frames
-      - Physical combat frame family
+      - Competition
+      - Physical combat
     roles:
       - name: competition_outcome
       - name: competition_competitor1
@@ -2244,7 +2244,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Competition frames
+      - Competition
     roles:
       - name: activity_x_schema
       - name: competitor1
@@ -2271,7 +2271,7 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: object_location
       - name: object_part_relations
@@ -2308,7 +2308,7 @@ frames:
       - part-whole
   - name: compliance
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: complier
       - name: requirement
@@ -2325,7 +2325,7 @@ frames:
       - obedient.a
   - name: component-of-building
     frame_families:
-      - Entity frames
+      - Entity
     lexical_units:
       - brick
       - building block
@@ -2349,7 +2349,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: computational_process
       - name: computer_function
@@ -2366,7 +2366,7 @@ frames:
       - machine
   - name: conceit
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: conceited_person
       - name: degree_of_conceit
@@ -2402,7 +2402,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: physical_object
       - name: state_of_object
@@ -2440,9 +2440,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion impediments
+      - Motion-affecting
     roles:
       - name: area_of_confinement
       - name: bounds_of_confinement
@@ -2468,7 +2468,7 @@ frames:
   - name: constituents
   - name: constitution
     frame_families:
-      - Governance frames
+      - Governance
       - Gun debate
     lexical_units:
       - American constitution.n
@@ -2483,9 +2483,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion impediments
+      - Motion-affecting
     lexical_units:
       - bastille.n
       - cage.n
@@ -2518,8 +2518,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Motion impediments
+      - Motion-affecting
     lexical_units:
       - ball and chain.n
       - ball-and-chain.n
@@ -2566,7 +2566,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
+      - Eating
     roles:
       - name: consume_x_schema
       - name: consumed_thing
@@ -2608,8 +2608,8 @@ frames:
       - Composed
     frame_families:
       - Bounding
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Motion impediments
+      - Motion-affecting
       - Spatial relations
     roles:
       - name: container
@@ -2627,8 +2627,8 @@ frames:
       - Cog
     frame_families:
       - Bounding
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Motion impediments
+      - Motion-affecting
       - Spatial relations
     roles:
       - name: boundary
@@ -2673,10 +2673,10 @@ frames:
     frame_type:
       - Composed
     frame_families:
-      - Affected movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Affected movement
+      - Motion
+      - Movement
+      - Moving entity
     roles:
       - name: control_x_schema
       - name: direction
@@ -2689,12 +2689,12 @@ frames:
       - motion-along-a-path
   - name: controlled-vehicular-motion
     frame_families:
-      - Affected movement frames
-      - Motion frames
-      - Movement frames
-      - Mover-specific movement frames
-      - Moving entity frames
-      - Vehicle frames
+      - Affected movement
+      - Motion
+      - Movement
+      - Mover-specific movement
+      - Moving entity
+      - Vehicle
     roles:
       - name: direction
       - name: motion_controller
@@ -2712,7 +2712,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     roles:
       - name: chief_executive_officer
       - name: corporation_functions
@@ -2735,7 +2735,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: corrupt_activities
         role_type: IteratedActivity
@@ -2755,7 +2755,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     lexical_units:
       - Iran
       - Mexico
@@ -2774,7 +2774,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Object frames
+      - Object
     roles:
       - name: artifact
       - name: crafter
@@ -2791,8 +2791,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on an object frames
-      - Object frames
+      - Act on an object
+      - Object
     roles:
       - name: components
       - name: created_object
@@ -2824,10 +2824,10 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Crime frames
+      - Crime
       - Harm
       - Harm to living entity
-      - Social problem frames
+      - Social problem
     roles:
       - name: crime
       - name: criminal
@@ -2884,8 +2884,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Communication frames
-      - Excluded frames
+      - Communication
+      - Excluded
     roles:
       - name: critic
       - name: reason_for_criticism
@@ -2896,7 +2896,7 @@ frames:
       - critique
   - name: cultivation
     frame_families:
-      - Natural process frames
+      - Natural process
     roles:
       - name: cultivatee
       - name: cultivator
@@ -2925,8 +2925,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Education frames
-      - Excluded frames
+      - Education
+      - Excluded
     roles:
       - name: curriculum_content
       - name: curriculum_learner
@@ -2945,7 +2945,7 @@ frames:
       - Frame
     frame_families:
       - Damage
-      - Endangerment frames
+      - Endangerment
       - Harm
     roles:
       - name: act_of_cutting
@@ -2984,7 +2984,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Endangerment frames
+      - Endangerment
       - Harm
       - Harm to living entity
     roles:
@@ -3016,8 +3016,8 @@ frames:
       - physical-harm
   - name: darkness
     frame_families:
-      - Perception frames
-      - Scale frames
+      - Perception
+      - Scale
     roles:
       - name: entity
         role_type: Entity
@@ -3084,7 +3084,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Communication frames
+      - Communication
     related:
       - argument
       - communication
@@ -3093,7 +3093,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Debt frames
+      - Debt
     lexical_units:
       - arrears
       - bankrupt.a
@@ -3116,7 +3116,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Aversion frames
+      - Aversion
       - Damage
       - Harm
     roles:
@@ -3138,7 +3138,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Action frames
+      - Action
     roles:
       - name: act_of_deciding
       - name: consideration
@@ -3161,8 +3161,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
-      - Scale frames
+      - Physical properties
+      - Scale
     lexical_units:
       - compress.v
       - condense.v
@@ -3186,7 +3186,7 @@ frames:
       - Frame
     frame_families:
       - Damage
-      - Endangerment frames
+      - Endangerment
       - Harm
     lexical_units:
       - compress.v
@@ -3221,8 +3221,8 @@ frames:
   - name: degree
   - name: deity
     frame_families:
-      - Morality frames
-      - Zealotry, insanity, and worship frames
+      - Morality
+      - Zealotry, insanity, and worship
     roles:
       - name: believer
       - name: deity
@@ -3249,7 +3249,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
+      - Democracy
     lexical_units:
       - democracy.n
       - democratic.a
@@ -3257,7 +3257,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
+      - Democracy
     roles:
       - name: democratic_governor
       - name: democratic_jurisdiction_region
@@ -3268,7 +3268,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
+      - Democracy
     related:
       - democracy
       - ideology
@@ -3276,7 +3276,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democratic institutions frames
+      - Democratic institutions
     lexical_units:
       - democratic.a institution.n
     related:
@@ -3292,7 +3292,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Cognition frames
+      - Cognition
     roles:
       - name: desired_content
       - name: experiencer
@@ -3304,7 +3304,7 @@ frames:
     frame_families:
       - Damage
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     roles:
       - name: damaged_entity
       - name: destroyer
@@ -3349,9 +3349,9 @@ frames:
       - Frame
     frame_families:
       - Damage
-      - Force dynamic frames
+      - Force dynamic
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     roles:
       - name: destroyed_entity
       - name: destructive_force
@@ -3383,7 +3383,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on an object frames
+      - Act on an object
     lexical_units:
       - detach.v
       - unbind.v
@@ -3401,7 +3401,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
       - Harm
       - Harm to living entity
     lexical_units:
@@ -3433,8 +3433,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Action frames
-      - Excluded frames
+      - Action
+      - Excluded
     roles:
       - name: actor
       - name: difficulty
@@ -3463,7 +3463,7 @@ frames:
       - negotiation
   - name: directed-emotion
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: circumstance
       - name: degree
@@ -3477,7 +3477,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Perception frames
+      - Perception
     lexical_units:
       - confront.v
       - face.v
@@ -3487,7 +3487,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on an object frames
+      - Act on an object
     lexical_units:
       - discard.v
       - dispense.v
@@ -3509,8 +3509,8 @@ frames:
   - name: discovery
   - name: discussing
     frame_families:
-      - Communication frames
-      - Excluded frames
+      - Communication
+      - Excluded
     lexical_units:
       - converse.v
       - discuss.v
@@ -3518,8 +3518,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Aversion frames
-      - Disease frame family
+      - Aversion
+      - Disease
       - Harm
       - Harm to living entity
     roles:
@@ -3565,7 +3565,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
       - Harm
       - Harm to living entity
     roles:
@@ -3594,7 +3594,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
     roles:
       - name: applying_treatment
       - name: body
@@ -3617,7 +3617,7 @@ frames:
       - treating-a-physical-affliction
   - name: disgust
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: disgust_feeler
       - name: degree_of_disgust
@@ -3632,7 +3632,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Aversion frames
+      - Aversion
     lexical_units:
       - disgust.n
       - disgust.v
@@ -3673,7 +3673,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social frames
+      - Social
     lexical_units:
       - gang.n
       - mob.n
@@ -3685,7 +3685,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Resource frames
+      - Resource
     lexical_units:
       - allocate.n
       - allocation.n
@@ -3730,7 +3730,7 @@ frames:
       - cut
   - name: distances-between-locations
     frame_families:
-      - Location frames
+      - Location
   - name: distant
     frame_type:
       - Frame
@@ -3763,11 +3763,11 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: downward_direction
       - name: goal
@@ -3862,14 +3862,14 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Excluded frames
+      - Excluded
     lexical_units:
       - continue.v
       - persist.v
   - name: dwelling-place
     frame_families:
-      - Entity frames
-      - Object frames
+      - Entity
+      - Object
     lexical_units:
       - abode.n
       - apartment.n
@@ -3890,7 +3890,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
+      - Eating
     roles:
       - name: digesting
       - name: eaten_object
@@ -3920,7 +3920,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Competition frames
+      - Competition
     roles:
       - name: economic_prize
     related:
@@ -3931,8 +3931,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Economic frames
-      - Poverty frames
+      - Economic
+      - Poverty
     roles:
       - name: actor
       - name: cause_of_difficulty
@@ -3946,7 +3946,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     lexical_units:
       - fund.v
       - funds.n
@@ -3958,10 +3958,10 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
-      - Economic inequality frames
-      - Poverty-related frame network
-      - Wealth and social class frames
+      - Economic
+      - Economic inequality
+      - Poverty-related
+      - Wealth and social class
     roles:
       - name: financial_resources
       - name: intermediate_status
@@ -3983,7 +3983,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     roles:
       - name: activity_level
         role_type: Scale
@@ -4025,8 +4025,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Education frames
-      - Excluded frames
+      - Education
+      - Excluded
     roles:
       - name: education_content
       - name: education_learner
@@ -4042,7 +4042,7 @@ frames:
       - knowledge
   - name: educational-evaluation
     frame_families:
-      - Education frames
+      - Education
     related:
       - education
       - evaluation
@@ -4050,8 +4050,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Education frames
-      - Excluded frames
+      - Education
+      - Excluded
     lexical_units:
       - academy
       - college
@@ -4075,9 +4075,9 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Competition frames
-      - Election frames
-      - Governance frames
+      - Competition
+      - Election
+      - Governance
     roles:
       - name: ballot
       - name: ballot_counting
@@ -4111,7 +4111,7 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: bodily_effect
       - name: body
@@ -4133,8 +4133,8 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Emotion frames
-      - Scale frames
+      - Emotion
+      - Scale
     roles:
       - name: emotional_intensity_scale
       - name: emotional_intensity_x_schema
@@ -4145,7 +4145,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Wealth and social class frames
+      - Wealth and social class
     roles:
       - name: employee
         role_type: Person
@@ -4165,9 +4165,9 @@ frames:
       - work-scenario
   - name: enable-ability-to-access-locations
     frame_families:
-      - Impediment and enablement frames
-      - Location frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Location
+      - Motion-affecting
     lexical_units:
       - ease.v the way
       - open.v door.n
@@ -4181,9 +4181,9 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Causation frames
-      - Excluded frames
-      - Impediment and enablement frames
+      - Causation
+      - Excluded
+      - Impediment and enablement
     roles:
       - name: enabled_entity
       - name: enabling_source
@@ -4195,7 +4195,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Resource frames
+      - Resource
     roles:
       - name: amount
       - name: type
@@ -4215,7 +4215,7 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: entity
   - name: entrapment
@@ -4243,9 +4243,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion impediments
+      - Motion-affecting
     roles:
       - name: affected_motion
       - name: mover
@@ -4275,7 +4275,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
+      - Democracy
     lexical_units:
       - equal.a
       - equality.n
@@ -4287,7 +4287,7 @@ frames:
     frame_families:
       - Damage
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     roles:
       - name: eroded_entity
         role_type: Entity
@@ -4310,7 +4310,7 @@ frames:
       - Frame
   - name: evaluation
     frame_families:
-      - Evaluation frames
+      - Evaluation
     roles:
       - name: basis_of_evaluation
       - name: evaluation
@@ -4322,7 +4322,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Morality frames
+      - Morality
     roles:
       - name: evil_entity
     lexical_units:
@@ -4340,8 +4340,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Harmful encounters frames
-      - Morality frames
+      - Harmful encounters
+      - Morality
     roles:
       - name: evil_entity
     lexical_units:
@@ -4380,8 +4380,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Aversion frames
-      - Eating frames
+      - Aversion
+      - Eating
     lexical_units:
       - bilge
       - bloat
@@ -4402,8 +4402,8 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Excluded frames
-      - State-related frames
+      - Excluded
+      - State-related
     roles:
       - name: entity
     lexical_units:
@@ -4418,7 +4418,7 @@ frames:
       - Frame
     frame_families:
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     roles:
       - name: body_part
       - name: experiencer
@@ -4447,7 +4447,7 @@ frames:
       - harm-to-living-entity
   - name: experiencing-a-negative-state
     frame_families:
-      - State-related frames
+      - State-related
     roles:
       - name: domain
       - name: experiencer
@@ -4460,9 +4460,9 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Poverty-related frame network
-      - Property-related frames
-      - State-related frames
+      - Poverty-related
+      - Property-related
+      - State-related
     roles:
       - name: experienced_state_value
       - name: experiencer
@@ -4477,9 +4477,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
-      - Poverty-related frame network
-      - Wealth and social class frames
+      - Economic
+      - Poverty-related
+      - Wealth and social class
     roles:
       - name: financial_resources
       - name: standard_of_living
@@ -4543,7 +4543,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social frames
+      - Social
     roles:
       - name: family_member_relations
       - name: family_members
@@ -4586,7 +4586,7 @@ frames:
       - passe.a
   - name: fear
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: fear_feeler
       - name: degree_of_fear
@@ -4602,8 +4602,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Harmful encounters frames
+      - Entity
+      - Harmful encounters
     roles:
       - name: dangerous_animal
         role_type: AnimateEntity
@@ -4656,7 +4656,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     lexical_units:
       - finance.n
       - financial.a
@@ -4666,9 +4666,9 @@ frames:
       - economy
   - name: financial-resource
     frame_families:
-      - Economic frames
-      - Resource frames
-      - Wealth and social class frames
+      - Economic
+      - Resource
+      - Wealth and social class
     roles:
       - name: amount
       - name: resource
@@ -4721,7 +4721,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
+      - Physical properties
     roles:
       - name: firm_entity
       - name: firm_status
@@ -4744,7 +4744,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: firmness_entity
         role_type: ComplexPhysicalObject
@@ -4761,8 +4761,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
-      - Scale frames
+      - Physical properties
+      - Scale
     lexical_units:
       - fit.n
       - fit.v
@@ -4770,7 +4770,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on an object frames
+      - Act on an object
     roles:
       - name: broken_object
       - name: defect
@@ -4796,14 +4796,14 @@ frames:
     frame_type:
       - Composed
     frame_families:
-      - Entity frames
+      - Entity
     related:
       - object
   - name: fluid-containment
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
+      - Impediment and enablement
     roles:
       - name: container
       - name: container_capacity
@@ -4818,12 +4818,12 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Fluid frame family
-      - Internal motion frames
-      - Motion frames
-      - Movement frames
-      - Mover-specific movement frames
-      - Moving entity frames
+      - Fluid
+      - Internal motion
+      - Motion
+      - Movement
+      - Mover-specific movement
+      - Moving entity
     roles:
       - name: area
       - name: fluid
@@ -4876,8 +4876,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
-      - Food frame family
+      - Eating
+      - Food
     roles:
       - name: amount
       - name: food
@@ -4904,9 +4904,9 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Event structure frames
-      - Force dynamic frames
-      - Force frames
+      - Event structure
+      - Force dynamic
+      - Force
     roles:
       - name: force
       - name: force_amount
@@ -4918,9 +4918,9 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Action frames
-      - Force dynamic frames
-      - Forced movement frame family
+      - Action
+      - Force dynamic
+      - Forced movement
     roles:
       - name: acted_upon
       - name: actor
@@ -4947,7 +4947,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Force dynamic frames
+      - Force dynamic
     roles:
       - name: f_d_interaction_x_schema
         role_type: ComplexXSchema
@@ -4960,7 +4960,7 @@ frames:
       - force-transfer
   - name: force-transfer
     frame_families:
-      - Force dynamic frames
+      - Force dynamic
     roles:
       - name: force
         role_type: Force
@@ -4976,10 +4976,10 @@ frames:
     frame_type:
       - Composed
     frame_families:
-      - Affected movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Affected movement
+      - Motion
+      - Movement
+      - Moving entity
     roles:
       - name: agent
       - name: direction
@@ -5010,12 +5010,12 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Affected movement frames
-      - Causation frames
-      - Forced movement frame family
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Affected movement
+      - Causation
+      - Forced movement
+      - Motion
+      - Movement
+      - Moving entity
     roles:
       - name: agent
       - name: forceful_action
@@ -5047,8 +5047,8 @@ frames:
       - motion-along-a-path
   - name: forming-words
     frame_families:
-      - Cognition frames
-      - Communication frames
+      - Cognition
+      - Communication
     roles:
       - name: cognition_process
       - name: cognizer
@@ -5062,11 +5062,11 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     lexical_units:
       - advance.n
       - advance.v
@@ -5082,7 +5082,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
+      - Democracy
       - Gun debate
     lexical_units:
       - civil liberty.n
@@ -5097,9 +5097,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Action frames
-      - Impediment and enablement frames
-      - Motion impediments frames
+      - Action
+      - Impediment and enablement
+      - Motion impediments
     lexical_units:
       - autonomous.a
       - autonomy.n
@@ -5115,7 +5115,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: functional_entity
         role_type: ComplexPhysicalObject
@@ -5131,15 +5131,15 @@ frames:
       - scale
   - name: funding-education
     frame_families:
-      - Education frames
+      - Education
     related:
       - education
   - name: gain-possession
     frame_type:
       - Cog
     frame_families:
-      - Excluded frames
-      - Possession frames
+      - Excluded
+      - Possession
     roles:
       - name: getting_x_schema
         role_type: XSchema
@@ -5168,7 +5168,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Competition frames
+      - Competition
     lexical_units:
       - ante.v
       - bet.n
@@ -5194,7 +5194,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Competition frames
+      - Competition
     roles:
       - name: game_event
       - name: game_player1
@@ -5216,9 +5216,9 @@ frames:
       - recreational-competition
   - name: gap-in-path
     frame_families:
-      - Motion frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Motion
+      - Motion impediments
+      - Motion-affecting
     lexical_units:
       - breach.n
       - cleft.n
@@ -5237,7 +5237,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     lexical_units:
       - archipelago.n
       - beach.n
@@ -5254,7 +5254,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     related:
       - geographic-feature
   - name: goodness
@@ -5262,7 +5262,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Morality frames
+      - Morality
     roles:
       - name: good_entity
       - name: goodness
@@ -5272,8 +5272,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
-      - Social problem frames
+      - Governance
+      - Social problem
     roles:
       - name: affect_rate_of_change
       - name: affected_jurisdiction
@@ -5297,8 +5297,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
-      - Government frames
+      - Governance
+      - Government
     roles:
       - name: constraints_on_governing_actions
       - name: governed
@@ -5328,7 +5328,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: act_of_deciding
       - name: consideration
@@ -5354,7 +5354,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: affected_jurisdiction
       - name: citizens
@@ -5371,8 +5371,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Governance frames
-      - Government frames
+      - Governance
+      - Government
     roles:
       - name: authority_base
       - name: authority_structure
@@ -5398,9 +5398,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Function of government frames
-      - Governance frames
-      - Government frames
+      - Function of government
+      - Governance
+      - Government
     roles:
       - name: executive_branch
       - name: functions
@@ -5417,7 +5417,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: authority_entity
       - name: capability_to_act
@@ -5433,9 +5433,9 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Act on an object frames
-      - Impediment and enablement frames
-      - Object frames
+      - Act on an object
+      - Impediment and enablement
+      - Object
     roles:
       - name: grasper
       - name: held_entity
@@ -5465,7 +5465,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Emotion frames
+      - Emotion
     lexical_units:
       - avarice.a
       - greed.n
@@ -5503,12 +5503,12 @@ frames:
       - Frame
       - Primary
     frame_families:
-      - Affected movement frames
-      - Guided motion frame family
-      - Leadership frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Affected movement
+      - Guided motion
+      - Leadership
+      - Motion
+      - Movement
+      - Moving entity
     roles:
       - name: follower
       - name: follower_goal
@@ -5532,7 +5532,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Control of guns family
+      - Control of guns
       - Gun debate
     roles:
       - name: affected_people
@@ -5553,7 +5553,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Control of guns family
+      - Control of guns
       - Gun debate
     lexical_units:
       - anti gun doctrine.n
@@ -5589,7 +5589,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Control of guns family
+      - Control of guns
       - Gun debate
     lexical_units:
       - 2nd Amendment denier.n
@@ -5616,9 +5616,9 @@ frames:
       - person
   - name: gun-control-legislation
     frame_families:
-      - Control of guns family
+      - Control of guns
       - Gun debate
-      - Legislation frames
+      - Legislation
     roles:
       - name: affected_people
       - name: legislation
@@ -5686,7 +5686,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Gun rights family
+      - Gun rights
     lexical_units:
       - firearms industry.n
       - firearms manufacturer.n
@@ -5705,7 +5705,7 @@ frames:
   - name: gun-legislation
     frame_families:
       - Gun debate
-      - Legislation frames
+      - Legislation
     related:
       - legislation-enactment
       - personal-weapon
@@ -5713,7 +5713,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Gun rights family
+      - Gun rights
     lexical_units:
       - gun-owner.n
       - gun-ownership.n
@@ -5755,7 +5755,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Gun rights family
+      - Gun rights
     roles:
       - name: constitution
         role_type: Frame
@@ -5783,7 +5783,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Gun rights family
+      - Gun rights
     lexical_units:
       - S.C.O.P.E.
       - gun advocacy
@@ -5805,7 +5805,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Gun rights family
+      - Gun rights
     lexical_units:
       - Gun Owners of America
       - Minutemen.n
@@ -5823,7 +5823,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Gun rights family
+      - Gun rights
     lexical_units:
       - advocate.n for gun right.n
       - advocate.n of gun right.n
@@ -5857,7 +5857,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Legislation frames
+      - Legislation
     roles:
       - name: legislation
       - name: opponent_of_legislation
@@ -5889,7 +5889,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: bodily_effect
       - name: body
@@ -5906,9 +5906,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Causation frames
+      - Causation
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     roles:
       - name: cause
       - name: consequence_of_harm
@@ -5931,7 +5931,7 @@ frames:
     frame_families:
       - Harm
       - Harm to living entity
-      - Harmful encounters frames
+      - Harmful encounters
     roles:
       - name: agent
       - name: cause
@@ -5989,7 +5989,7 @@ frames:
       - Frame
       - Primary
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: degree_of_health
       - name: domain_of_health
@@ -6008,7 +6008,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
       - Harm to living entity
     lexical_units:
       - antibiotic.n
@@ -6047,7 +6047,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Perception frames
+      - Perception
     roles:
       - name: hearer
       - name: sound
@@ -6061,7 +6061,7 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: entity
         role_type: Entity
@@ -6109,8 +6109,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment and protection frames
-      - Protecting frames
+      - Concealment and protection
+      - Protecting
     lexical_units:
       - adumbrate.v
       - bury.v
@@ -6135,7 +6135,7 @@ frames:
       - name: superior_points_in_hierarchy
   - name: hope
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: hope
       - name: hoper
@@ -6198,7 +6198,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
+      - Eating
     roles:
       - name: experiencer
       - name: hunger_sensation
@@ -6218,8 +6218,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Cognition frames
-      - Excluded frames
+      - Cognition
+      - Excluded
     roles:
       - name: idea_cognizer
       - name: idea_self
@@ -6243,15 +6243,15 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Action frames
-      - Governance frames
+      - Action
+      - Governance
       - Harm
-      - Morality frames
+      - Morality
     related:
       - moral-action
   - name: immorality
     frame_families:
-      - Morality frames
+      - Morality
     lexical_units:
       - immoral
       - immorality
@@ -6262,7 +6262,7 @@ frames:
       - Frame
     frame_families:
       - Damage
-      - Force frames
+      - Force
       - Harm
     lexical_units:
       - bash.v
@@ -6290,8 +6290,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
+      - Impediment and enablement
+      - Motion
     roles:
       - name: affected_motion
       - name: impeded_entity
@@ -6300,9 +6300,9 @@ frames:
       - affected-motion
   - name: impeding-downward-motion
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion
+      - Motion-affecting
     lexical_units:
       - net.n
       - parachute.n
@@ -6323,8 +6323,8 @@ frames:
         role_type: Scale
   - name: impoverished
     frame_families:
-      - Poverty-related frame network
-      - The poor frames
+      - Poverty-related
+      - The poor
     roles:
       - name: economic_state
       - name: experiencer
@@ -6360,20 +6360,20 @@ frames:
       - poverty
   - name: improving-a-state
     frame_families:
-      - State-related frames
+      - State-related
     related:
       - change-of-state
   - name: improving-economic-status
     frame_families:
-      - Economic inequality frames
-      - Poverty-related frame network
+      - Economic inequality
+      - Poverty-related
     related:
       - change-of-state
       - economic-status
       - improving-a-state
   - name: impurity
     frame_families:
-      - Aversion frames
+      - Aversion
     lexical_units:
       - contaminate.v
       - contaminated.a
@@ -6402,9 +6402,9 @@ frames:
       - trajector-landmark
   - name: inability-to-access-a-location
     frame_families:
-      - Impediment and enablement frames
-      - Location frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Location
+      - Motion-affecting
     lexical_units:
       - can't access
     related:
@@ -6413,9 +6413,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Excluded frames
-      - Resource frames
-      - Wealth and social class frames
+      - Excluded
+      - Resource
+      - Wealth and social class
     lexical_units:
       - compensate.v
       - compensation.n
@@ -6434,12 +6434,12 @@ frames:
       - financial-transaction
   - name: increase-ease-of-action
     frame_families:
-      - Action frames
-      - Impediment and enablement frames
+      - Action
+      - Impediment and enablement
   - name: increase-ease-of-motion
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
+      - Impediment and enablement
+      - Motion
     lexical_units:
       - grease.n
       - grease.v the wheel.n
@@ -6452,8 +6452,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
-      - Scale frames
+      - Physical properties
+      - Scale
     roles:
       - name: entity
       - name: size_level
@@ -6497,7 +6497,7 @@ frames:
       - Frame
       - Primary
     frame_families:
-      - Eating frames
+      - Eating
     roles:
       - name: ingestibles
       - name: ingestion_process
@@ -6542,7 +6542,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Zealotry, insanity, and worship frames
+      - Zealotry, insanity, and worship
     roles:
       - name: agitation_level
       - name: agitation_limit
@@ -6586,7 +6586,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: authority_base
       - name: authority_structure
@@ -6610,7 +6610,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: governed_individuals
     related:
@@ -6621,7 +6621,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Machine frames
+      - Machine
     lexical_units:
       - contrivance.n
       - equipment.n
@@ -6643,7 +6643,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: international_relationship
       - name: nation1
@@ -6676,7 +6676,7 @@ frames:
   - name: intoxicants
   - name: intoxication
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: intoxicated_person
       - name: intoxication_level
@@ -6690,8 +6690,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
-      - Resource frames
+      - Economic
+      - Resource
     roles:
       - name: invested_value
       - name: investment_goal
@@ -6721,7 +6721,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Translational motion frames
+      - Translational motion
     roles:
       - name: course_of_journey
         role_type: RegionXSchema
@@ -6756,8 +6756,8 @@ frames:
       - traveling
   - name: judgment
     frame_families:
-      - Evaluation frames
-      - Excluded frames
+      - Evaluation
+      - Excluded
     roles:
       - name: judged_action
         role_type: Action
@@ -6776,7 +6776,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: citizens
       - name: constraints_on_judicial_actions
@@ -6799,14 +6799,14 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     related:
       - judicial-action
   - name: judicial-decision-making
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: case_brought_to_court
       - name: deliberation
@@ -6836,7 +6836,7 @@ frames:
       - Frame
     frame_families:
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     roles:
       - name: killed_being
       - name: killer
@@ -6878,7 +6878,7 @@ frames:
       - harm-to-living-entity
   - name: knowing
     frame_families:
-      - Cognition frames
+      - Cognition
     roles:
       - name: knower
       - name: knowing_x_schema
@@ -6890,8 +6890,8 @@ frames:
       - cognizing
   - name: knowledge
     frame_families:
-      - Cognition frames
-      - Education frames
+      - Cognition
+      - Education
     related:
       - idea
       - knowing
@@ -6900,7 +6900,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
+      - Impediment and enablement
     related:
       - enablement
       - impediment-to-motion
@@ -6908,8 +6908,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
+      - Impediment and enablement
+      - Motion
     related:
       - enablement
       - impediment-to-motion
@@ -6917,15 +6917,15 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     related:
       - market
   - name: land-vehicle
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Vehicle frames
+      - Entity
+      - Vehicle
     lexical_units:
       - brakes.n
       - bus.n
@@ -6938,7 +6938,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     lexical_units:
       - Alps.n
       - Himalayas.n
@@ -6967,8 +6967,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
-      - The law frames
+      - Governance
+      - The law
     roles:
       - name: illegal_actions
         role_type: Actions
@@ -6988,7 +6988,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
+      - Physical properties
     roles:
       - name: lax_entity
       - name: lax_status
@@ -7014,9 +7014,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Guided motion frame family
-      - Leaders frames
-      - Leadership frames
+      - Guided motion
+      - Leaders
+      - Leadership
     roles:
       - name: leader
       - name: leader_goal
@@ -7039,9 +7039,9 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Cognition frames
-      - Education frames
-      - Excluded frames
+      - Cognition
+      - Education
+      - Excluded
     roles:
       - name: benefits_of_learning
       - name: learned_material
@@ -7059,7 +7059,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
+      - Eating
     lexical_units:
       - crumb.n
       - dreg.n
@@ -7075,7 +7075,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - The law frames
+      - The law
     roles:
       - name: action
       - name: actor
@@ -7095,14 +7095,14 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Legislation frames
+      - Legislation
     related:
       - legislative-action
   - name: legislation-enactment
     frame_type:
       - Frame
     frame_families:
-      - Legislation frames
+      - Legislation
     roles:
       - name: bill
       - name: bill_contents
@@ -7131,8 +7131,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
-      - Legislation frames
+      - Governance
+      - Legislation
     roles:
       - name: legislative_action
         role_type: XSchema
@@ -7161,9 +7161,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
-      - Government frames
-      - Legislation frames
+      - Governance
+      - Government
+      - Legislation
     roles:
       - name: legislative_action
         role_type: XSchema
@@ -7180,7 +7180,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     related:
       - evaluation
       - trust
@@ -7191,7 +7191,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     lexical_units:
       - market.n
     related:
@@ -7253,8 +7253,8 @@ frames:
       - luminosity
   - name: lightness
     frame_families:
-      - Perception frames
-      - Scale frames
+      - Perception
+      - Scale
     roles:
       - name: entity
       - name: light_level
@@ -7279,13 +7279,13 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Communication frames
+      - Communication
   - name: liquid
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Fluid frame family
+      - Entity
+      - Fluid
     roles:
       - name: liquid
     lexical_units:
@@ -7310,7 +7310,7 @@ frames:
       - life
   - name: location
     frame_families:
-      - Location frames
+      - Location
   - name: logical-structure
     roles:
       - name: logical_structure_whole
@@ -7318,7 +7318,7 @@ frames:
       - name: element_relations
   - name: loose-fit
     frame_families:
-      - Physical properties frame family
+      - Physical properties
     lexical_units:
       - baggy.a
       - comfortable.a
@@ -7334,7 +7334,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Possession frames
+      - Possession
     roles:
       - name: donor
       - name: lose_possession_x_schema
@@ -7354,7 +7354,7 @@ frames:
       - Frame
       - Primary
     frame_families:
-      - Possession frames
+      - Possession
     roles:
       - name: loser
       - name: lost_object
@@ -7367,8 +7367,8 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Perception frames
-      - Scale frames
+      - Perception
+      - Scale
     roles:
       - name: light_level
     lexical_units:
@@ -7377,7 +7377,7 @@ frames:
       - scale
   - name: lust
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: lust_feeler
       - name: degree_of_lust
@@ -7393,8 +7393,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Machine frames
+      - Entity
+      - Machine
     roles:
       - name: functional_status
       - name: machine_entity
@@ -7434,7 +7434,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Magic frames
+      - Magic
     roles:
       - name: magic_undergoer
       - name: magic_user
@@ -7480,7 +7480,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     lexical_units:
       - market.n
     related:
@@ -7498,10 +7498,10 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Internal motion frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Internal motion
+      - Motion
+      - Movement
+      - Moving entity
     lexical_units:
       - crowd.v
       - flock.v
@@ -7515,8 +7515,8 @@ frames:
       - motion
   - name: maze
     frame_families:
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Motion impediments
+      - Motion-affecting
     lexical_units:
       - blind corner.n
       - convoluted.a
@@ -7534,7 +7534,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democratic institutions frames
+      - Democratic institutions
     roles:
       - name: media_audience
       - name: media_influencers
@@ -7594,7 +7594,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Cognition frames
+      - Cognition
     related:
       - cognizing
       - sentient-entity
@@ -7620,12 +7620,12 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Vehicle frames
+      - Vehicle
   - name: monetary-evaluation
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     roles:
       - name: evaluator
       - name: resource
@@ -7638,9 +7638,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
-      - Money frames
-      - Resource frames
+      - Economic
+      - Money
+      - Resource
     roles:
       - name: money
     lexical_units:
@@ -7662,8 +7662,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Action frames
-      - Morality frames
+      - Action
+      - Morality
     roles:
       - name: moral_actor
     related:
@@ -7673,7 +7673,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Morality frames
+      - Morality
     roles:
       - name: moral_authority_entity
       - name: moral_authority_obeyer
@@ -7686,7 +7686,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: corrupt_activities
       - name: corruption_affectee
@@ -7697,7 +7697,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Evaluation frames
+      - Evaluation
     roles:
       - name: behavior
       - name: evaluee
@@ -7712,7 +7712,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Morality frames
+      - Morality
     roles:
       - name: good_person
       - name: goodness
@@ -7722,14 +7722,14 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Morality frames
+      - Morality
     related:
       - moral-authority
   - name: morality
     frame_type:
       - Frame
     frame_families:
-      - Morality frames
+      - Morality
     roles:
       - name: immoral_person
       - name: moral_condition
@@ -7746,10 +7746,10 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: direction
         role_type: Spatial
@@ -7774,8 +7774,8 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Motion frames
-      - Motion-affecting frames
+      - Motion
+      - Motion-affecting
     roles:
       - name: actor
       - name: potential_mover
@@ -7786,9 +7786,9 @@ frames:
     frame_type:
       - Composed
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion
+      - Motion-affecting
     roles:
       - name: affected_motion
         role_type: XSchema
@@ -7805,8 +7805,8 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Motion frames
-      - Motion-affecting frames
+      - Motion
+      - Motion-affecting
     roles:
       - name: affected_motion
         role_type: XSchema
@@ -7819,8 +7819,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion-affecting
     roles:
       - name: affected_motion_x_schema
       - name: impediment
@@ -7834,9 +7834,9 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Impediment and enablement frames
-      - Motion frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion
+      - Motion-affecting
     related:
       - motion-affecting-external-factors
   - name: motion-along-a-path
@@ -7844,11 +7844,11 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: course_of_motion
       - name: direction
@@ -7883,11 +7883,11 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: landmark
       - name: motion_x_schema
@@ -7910,12 +7910,12 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Directional movement frames
-      - Location frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Location
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: direction
       - name: goal
@@ -7943,11 +7943,11 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     lexical_units:
       - break.v out
       - dig.v out
@@ -7961,9 +7961,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Internal motion frames
-      - Motion frames
-      - Moving entity frames
+      - Internal motion
+      - Motion
+      - Moving entity
     roles:
       - name: direction
       - name: motion_path
@@ -8001,8 +8001,8 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
+      - Impediment and enablement
+      - Motion impediments
     roles:
       - name: impediment
       - name: mover
@@ -8042,12 +8042,12 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Directional movement frames
-      - Location frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Location
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: bounded_region
       - name: direction
@@ -8074,12 +8074,12 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Directional movement frames
-      - Location frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Location
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: bounded_region
       - name: motion_x_schema
@@ -8111,9 +8111,9 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
+      - Directional movement
+      - Motion
+      - Movement
     roles:
       - name: destination
         role_type: Location
@@ -8126,11 +8126,11 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: direction
       - name: goal
@@ -8155,10 +8155,10 @@ frames:
     frame_type:
       - Composed
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Translational motion
     roles:
       - name: goal
       - name: path
@@ -8174,11 +8174,11 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: mover
       - name: mover_motion
@@ -8187,8 +8187,8 @@ frames:
       - self-propelled-motion
   - name: moving-backward
     frame_families:
-      - Motion frames
-      - Moving entity frames
+      - Motion
+      - Moving entity
     roles:
       - name: backward_direction
       - name: motion_speed
@@ -8207,11 +8207,11 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     lexical_units:
       - advance.n
       - advance.v
@@ -8226,12 +8226,12 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Directional movement frames
-      - Location frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Location
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: bounded_region
       - name: motion_x_schema
@@ -8261,18 +8261,18 @@ frames:
       - motion-out-of-a-location
   - name: moving-object
     frame_families:
-      - Motion frames
+      - Motion
     related:
       - motion-along-a-path
       - object
   - name: moving-out-of-an-undesirable-location
     frame_families:
-      - Directional movement frames
-      - Location frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Location
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     lexical_units:
       - dig.v out
       - escape.n
@@ -8299,7 +8299,7 @@ frames:
       - symphony.n
   - name: narrowing-width-of-bounded-region
     frame_families:
-      - Impediment and enablement frames
+      - Impediment and enablement
     lexical_units:
       - narrow.v
       - narrow.v the scope
@@ -8311,7 +8311,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: basis_of_continued_existence
       - name: nation_citizens
@@ -8334,7 +8334,7 @@ frames:
     frame_families:
       - Damage
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     lexical_units:
       - aftershock.n
       - avalanche.n
@@ -8369,7 +8369,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Natural process frames
+      - Natural process
     roles:
       - name: natural_process
         role_type: Process
@@ -8380,13 +8380,13 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Resource frames
+      - Resource
     related:
       - resource
   - name: nature
   - name: nausea
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: entity
       - name: nausea_level
@@ -8401,8 +8401,8 @@ frames:
       - Frame
   - name: negatively-evaluated-condition
     frame_families:
-      - Poverty-related frame network
-      - Social problem frames
+      - Poverty-related
+      - Social problem
     roles:
       - name: condition
     related:
@@ -8443,9 +8443,9 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Motion
+      - Movement
+      - Moving entity
     roles:
       - name: motion_x_schema
       - name: mover
@@ -8457,7 +8457,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social frames
+      - Social
     roles:
       - name: children
       - name: family_whole
@@ -8496,7 +8496,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
+      - Eating
     roles:
       - name: benefits_of_getting_nutrients
       - name: nutritious_food
@@ -8512,8 +8512,8 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Entity frames
-      - Object frames
+      - Entity
+      - Object
     roles:
       - name: object_entity
       - name: object_exterior_surface
@@ -8555,7 +8555,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on an object frames
+      - Act on an object
     lexical_units:
       - drill.v
       - embed.v
@@ -8580,9 +8580,9 @@ frames:
       - object-manipulation
   - name: object-manipulation
     frame_families:
-      - Act on an object frames
-      - Action frames
-      - Force dynamic frames
+      - Act on an object
+      - Action
+      - Force dynamic
     roles:
       - name: actor
       - name: effector
@@ -8595,10 +8595,10 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Act on an object frames
-      - Forced movement frame family
-      - Movement frames
-      - Moving entity frames
+      - Act on an object
+      - Forced movement
+      - Movement
+      - Moving entity
     roles:
       - name: actor
       - name: object
@@ -8627,7 +8627,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Aversion frames
+      - Aversion
     lexical_units:
       - indecency.n
       - indecent.a
@@ -8647,8 +8647,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion-affecting
     lexical_units:
       - gape.v
       - gaping.a
@@ -8663,8 +8663,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on an object frames
-      - Machine frames
+      - Act on an object
+      - Machine
     lexical_units:
       - operate.v
       - run.v
@@ -8679,7 +8679,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: head_of_organization
       - name: organization_external_relations
@@ -8703,15 +8703,15 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
-      - Governance frames
+      - Democracy
+      - Governance
     related:
       - branches-of-government
   - name: organizational-leadership
     frame_type:
       - Frame
     frame_families:
-      - Leaders frames
+      - Leaders
     lexical_units:
       - C.E.O.n
       - CEO.n
@@ -8735,8 +8735,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Aversion frames
-      - Eating frames
+      - Aversion
+      - Eating
     roles:
       - name: degree_of_overeating
       - name: food
@@ -8778,7 +8778,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Possession frames
+      - Possession
     lexical_units:
       - own.v
       - owner.n
@@ -8787,7 +8787,7 @@ frames:
       - possession
   - name: parasite
     frame_families:
-      - Entity frames
+      - Entity
     lexical_units:
       - bleed white
       - bloodsucker.n
@@ -8805,7 +8805,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Morality frames
+      - Morality
     lexical_units:
       - baby.v
       - dad.n
@@ -8848,10 +8848,10 @@ frames:
   - name: path
   - name: paths-out-of-a-location
     frame_families:
-      - Location frames
-      - Motion frames
-      - Moving entity frames
-      - Translational motion frames
+      - Location
+      - Motion
+      - Moving entity
+      - Translational motion
     lexical_units:
       - drain.n
       - egress.n
@@ -8872,7 +8872,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Excluded frames
+      - Excluded
     roles:
       - name: payer
       - name: payment
@@ -8890,7 +8890,7 @@ frames:
       - Frame
       - Primary
     frame_families:
-      - Perception frames
+      - Perception
     roles:
       - name: faculty
       - name: perceived_thing
@@ -8916,8 +8916,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Excluded frames
+      - Entity
+      - Excluded
     roles:
       - name: actions
       - name: body
@@ -8952,7 +8952,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Guns family
+      - Guns
     roles:
       - name: ammunition
       - name: use_of_weapon
@@ -8987,8 +8987,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
-      - Entity frames
+      - Disease
+      - Entity
     roles:
       - name: pest
     lexical_units:
@@ -9016,7 +9016,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
       - Harm
       - Harm to living entity
     roles:
@@ -9066,8 +9066,8 @@ frames:
       - harm-to-living-entity
   - name: physical-attributes
     frame_families:
-      - Physical properties frame family
-      - Property-related frames
+      - Physical properties
+      - Property-related
     roles:
       - name: entity
       - name: physical_properties
@@ -9085,8 +9085,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical combat frame family
-      - Physical conflict frames
+      - Physical combat
+      - Physical conflict
     roles:
       - name: fighter1
       - name: fighter2
@@ -9133,9 +9133,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Competition frames
-      - Physical combat frame family
-      - Physical conflict frames
+      - Competition
+      - Physical combat
+      - Physical conflict
     roles:
       - name: competitor1
       - name: competitor2
@@ -9154,7 +9154,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Event structure frames
+      - Event structure
     roles:
       - name: connected_items
       - name: connector
@@ -9180,7 +9180,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: existence_x_schema
       - name: physical_entity_whole
@@ -9205,7 +9205,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Translational motion frames
+      - Translational motion
     roles:
       - name: physical_path
         role_type: PhysicalEntity
@@ -9239,8 +9239,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
-      - Scale frames
+      - Physical properties
+      - Scale
     lexical_units:
       - backbone.n
       - brawn.n
@@ -9263,8 +9263,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
-      - Scale frames
+      - Physical properties
+      - Scale
     related:
       - scale
   - name: physical-structure
@@ -9272,8 +9272,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Entity frames
-      - Object frames
+      - Entity
+      - Object
     roles:
       - name: change_in_integrity
       - name: foundation_of_structure
@@ -9313,7 +9313,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
+      - Physical properties
     lexical_units:
       - feeble.a
       - sluggish.a
@@ -9327,9 +9327,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment and protection frames
-      - Location frames
-      - Protecting frames
+      - Concealment and protection
+      - Location
+      - Protecting
     lexical_units:
       - asylum.n
       - harbor.v
@@ -9374,8 +9374,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Natural process frames
+      - Entity
+      - Natural process
     roles:
       - name: plant_anatomy
       - name: plant_attributes
@@ -9424,7 +9424,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Competition frames
+      - Competition
     roles:
       - name: competitor1
       - name: competitor2
@@ -9438,7 +9438,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Politics frames
+      - Politics
     related:
       - democracy
       - equality
@@ -9448,7 +9448,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: borders
       - name: economy
@@ -9472,8 +9472,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Politicians frames
-      - Politics frames
+      - Politicians
+      - Politics
     lexical_units:
       - politic.n
       - political.a
@@ -9481,9 +9481,9 @@ frames:
       - politics.n
   - name: portals
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion impediments
+      - Motion-affecting
     lexical_units:
       - door.n
       - doorway.n
@@ -9500,7 +9500,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Excluded frames
+      - Excluded
     roles:
       - name: job_holder
       - name: job_holder_actions
@@ -9523,11 +9523,11 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Scale frames
+      - Scale
   - name: possessable-object
     frame_families:
-      - Entity frames
-      - Possession frames
+      - Entity
+      - Possession
     roles:
       - name: possessable_object
       - name: possessor
@@ -9539,8 +9539,8 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Excluded frames
-      - Possession frames
+      - Excluded
+      - Possession
     roles:
       - name: possess_relation
       - name: possess_relation_status
@@ -9561,8 +9561,8 @@ frames:
       - relation
   - name: possession-change
     frame_families:
-      - Change-related frames
-      - Possession frames
+      - Change-related
+      - Possession
     roles:
       - name: possession
       - name: possessor
@@ -9573,9 +9573,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Poverty frames
-      - Poverty-related frame network
-      - Social problem frames
+      - Poverty
+      - Poverty-related
+      - Social problem
     roles:
       - name: amount_of_resources
       - name: cause_of_impoverished_state
@@ -9605,7 +9605,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: power_holder
       - name: power_yielder
@@ -9624,8 +9624,8 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Force dynamic frames
-      - Object event structure frames
+      - Force dynamic
+      - Object event structure
     roles:
       - name: entity_applying_force_of_pressure
       - name: entity_receiving_force_of_pressure
@@ -9660,8 +9660,8 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
     roles:
       - name: process
         role_type: XSchema
@@ -9687,8 +9687,8 @@ frames:
       - process-uncompleted-state
   - name: process-completed-state
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
     roles:
       - name: process_completed_state
   - name: process-continue
@@ -9696,49 +9696,49 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
     related:
       - x-schema-continue
   - name: process-end
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
     roles:
       - name: process_end
   - name: process-initial-state
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
   - name: process-pause
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
   - name: process-resume
   - name: process-start
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
     roles:
       - name: process_start
   - name: process-stop
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
   - name: process-stopped-state
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
   - name: process-uncompleted-state
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
   - name: protect-against-contact
     frame_type:
       - Frame
     frame_families:
-      - Concealment and protection frames
-      - Protecting frames
+      - Concealment and protection
+      - Protecting
     lexical_units:
       - armor.n
       - armor.v
@@ -9763,8 +9763,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment and protection frames
-      - Protecting frames
+      - Concealment and protection
+      - Protecting
     roles:
       - name: means_of_protection
       - name: protected_thing
@@ -9827,7 +9827,7 @@ frames:
       - Primary
     frame_families:
       - Image schemas
-      - Scale frames
+      - Scale
     roles:
       - name: degree_of_proximity
       - name: ground
@@ -9842,7 +9842,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Cognition frames
+      - Cognition
     related:
       - mind
   - name: psychological-fixation
@@ -9856,7 +9856,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: institution_as_trusted_entity
       - name: public_as_trusting_entity
@@ -9864,7 +9864,7 @@ frames:
       - trust-relationship
   - name: punishment
     frame_families:
-      - Crime frames
+      - Crime
       - Harm
       - Harm to living entity
     roles:
@@ -9909,7 +9909,7 @@ frames:
     frame_type:
       - Composed
     frame_families:
-      - Action frames
+      - Action
     roles:
       - name: action_type
       - name: action_x_schema
@@ -9925,8 +9925,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Motion frames
-      - Moving entity frames
+      - Motion
+      - Moving entity
     roles:
       - name: pursuer
       - name: pursued
@@ -9967,7 +9967,7 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Motion-affecting frames
+      - Motion-affecting
     roles:
       - name: mover
       - name: terrain_feature
@@ -9989,8 +9989,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Excluded frames
-      - Scale frames
+      - Excluded
+      - Scale
     roles:
       - name: entity
       - name: entity_amount
@@ -10016,7 +10016,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Competition frames
+      - Competition
     roles:
       - name: loser
       - name: outcome
@@ -10053,8 +10053,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Cognition frames
-      - Excluded frames
+      - Cognition
+      - Excluded
     roles:
       - name: conclusion
       - name: premises
@@ -10082,7 +10082,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Competition frames
+      - Competition
     roles:
       - name: activity_x_schema
       - name: competitor_1
@@ -10095,7 +10095,7 @@ frames:
   - name: region
     frame_families:
       - Bounding
-      - Location frames
+      - Location
     roles:
       - name: background
       - name: location_relations
@@ -10104,7 +10104,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Regulations frames
+      - Regulations
     roles:
       - name: regulatee
         role_type: Entity
@@ -10124,7 +10124,7 @@ frames:
       - evaluation
   - name: relation
     frame_families:
-      - Excluded frames
+      - Excluded
     roles:
       - name: entity_1
       - name: entity_2
@@ -10163,9 +10163,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Fluid frame family
-      - Impediment and enablement frames
-      - Internal motion frames
+      - Fluid
+      - Impediment and enablement
+      - Internal motion
     lexical_units:
       - drain.v
       - draining.n
@@ -10212,9 +10212,9 @@ frames:
       - liquid
   - name: remove-burden
     frame_families:
-      - Endangerment frames
-      - Impediment and enablement frames
-      - Motion-affecting frames
+      - Endangerment
+      - Impediment and enablement
+      - Motion-affecting
     lexical_units:
       - disencumber.v
       - ease.v burden.n
@@ -10232,7 +10232,7 @@ frames:
       - burden
   - name: replacement
     frame_families:
-      - Change-related frames
+      - Change-related
     roles:
       - name: old_entity
       - name: new_entity
@@ -10250,7 +10250,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
+      - Democracy
     lexical_units:
       - represent.v
       - representation.n
@@ -10261,7 +10261,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Resource frames
+      - Resource
     roles:
       - name: amount_of_resource
         role_type: Quantity
@@ -10278,7 +10278,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Resource frames
+      - Resource
     roles:
       - name: resource
       - name: resource_consumer
@@ -10291,8 +10291,8 @@ frames:
       - resource
   - name: resource-container
     frame_families:
-      - Entity frames
-      - Resource frames
+      - Entity
+      - Resource
     roles:
       - name: container
       - name: resource
@@ -10331,7 +10331,7 @@ frames:
   - name: resource-holder
   - name: resource-transfer
     frame_families:
-      - Resource frames
+      - Resource
     related:
       - resource
       - transfer-scenario
@@ -10339,7 +10339,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social frames
+      - Social
     roles:
       - name: actions_to_carry_out_duty
       - name: beneficiary_of_fulfillment
@@ -10377,12 +10377,12 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Act on an object frames
+      - Act on an object
   - name: restore-to-life
     frame_type:
       - Frame
     frame_families:
-      - Natural process frames
+      - Natural process
     roles:
       - name: life_liver
       - name: life_restorer
@@ -10419,9 +10419,9 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion impediments
+      - Motion-affecting
     roles:
       - name: affected_motion
       - name: mover
@@ -10447,7 +10447,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
+      - Eating
     lexical_units:
       - cake.n
       - cheese.n
@@ -10464,8 +10464,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Excluded frames
-      - Rights family
+      - Excluded
+      - Rights
     related:
       - human-rights
   - name: right-to-self-defense
@@ -10473,7 +10473,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Gun rights family
+      - Gun rights
     roles:
       - name: rights_holder
     lexical_units:
@@ -10490,9 +10490,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Democracy frames
-      - Governance frames
-      - Rights family
+      - Democracy
+      - Governance
+      - Rights
     roles:
       - name: domain
       - name: other_actors
@@ -10510,8 +10510,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Machine frames
+      - Entity
+      - Machine
     roles:
       - name: purpose
       - name: robot_entity
@@ -10539,10 +10539,10 @@ frames:
       - relationship.n
   - name: rotation
     frame_families:
-      - Internal motion frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Internal motion
+      - Motion
+      - Movement
+      - Moving entity
     lexical_units:
       - circle.v
       - cycle.n
@@ -10573,7 +10573,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: bodily_effect
       - name: body
@@ -10597,7 +10597,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     lexical_units:
       - embargo.n
       - sanction.n
@@ -10605,8 +10605,8 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Property-related frames
-      - Scale frames
+      - Property-related
+      - Scale
     roles:
       - name: intermediate_values
       - name: maximal_value
@@ -10621,8 +10621,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Education frames
-      - Excluded frames
+      - Education
+      - Excluded
     roles:
       - name: curriculum
       - name: school_house
@@ -10643,8 +10643,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Vehicle frames
+      - Entity
+      - Vehicle
     lexical_units:
       - aquatic.a
       - boat.n
@@ -10667,7 +10667,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Gun rights family
+      - Gun rights
     lexical_units:
       - 2nd Amendment policy.n
       - 2nd Amendment right.n
@@ -10686,7 +10686,7 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Perception frames
+      - Perception
     roles:
       - name: eyes
       - name: seen_object
@@ -10712,7 +10712,7 @@ frames:
     frame_type:
       - Primary
     frame_families:
-      - Cognition frames
+      - Cognition
     roles:
       - name: options
       - name: selected_option
@@ -10737,9 +10737,9 @@ frames:
       - protecting
   - name: self-initiated-state-change
     frame_families:
-      - Action frames
-      - Change-related frames
-      - State-related frames
+      - Action
+      - Change-related
+      - State-related
     roles:
       - name: experiencer
       - name: final_state
@@ -10756,12 +10756,12 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Action frames
-      - Affected movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Action
+      - Affected movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: bodypart
       - name: direction
@@ -10793,12 +10793,12 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Action frames
-      - Affected movement frames
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
+      - Action
+      - Affected movement
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
     roles:
       - name: goal
       - name: path
@@ -10813,7 +10813,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: sentient_entity
         role_type: EntityThatHasConsciousness
@@ -10845,7 +10845,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Action frames
+      - Action
     related:
       - action
   - name: servant
@@ -10945,7 +10945,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Communication frames
+      - Communication
     roles:
       - name: agent
       - name: agent_action
@@ -10972,8 +10972,8 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Physical properties frame family
-      - Scale frames
+      - Physical properties
+      - Scale
     roles:
       - name: entity
         role_type: Object
@@ -10999,7 +10999,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Perception frames
+      - Perception
     lexical_units:
       - aroma.n
       - bouquet.n
@@ -11020,7 +11020,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social class frames
+      - Social class
     lexical_units:
       - class
       - have-nots
@@ -11041,7 +11041,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social frames
+      - Social
     roles:
       - name: defining_properties
       - name: group_decision_making
@@ -11058,8 +11058,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Action frames
-      - Social frames
+      - Action
+      - Social
     roles:
       - name: obligation_holder
       - name: obligation
@@ -11075,8 +11075,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Poverty-related frame network
-      - Social problem frames
+      - Poverty-related
+      - Social problem
     roles:
       - name: authority
       - name: honest_citizen
@@ -11096,7 +11096,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social frames
+      - Social
     roles:
       - name: status_holder
       - name: status
@@ -11109,7 +11109,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Social frames
+      - Social
     roles:
       - name: society_whole
       - name: members
@@ -11132,7 +11132,7 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Location frames
+      - Location
       - Spatial relations
     roles:
       - name: goal
@@ -11145,7 +11145,7 @@ frames:
   - name: space
   - name: spatial-relation
     frame_families:
-      - Location frames
+      - Location
       - Spatial relations
     roles:
       - name: entity_1
@@ -11159,8 +11159,8 @@ frames:
       - Cog
       - Primary
     frame_families:
-      - Communication frames
-      - Excluded frames
+      - Communication
+      - Excluded
     roles:
       - name: addressee
         role_type: Person
@@ -11180,8 +11180,8 @@ frames:
       - communication
   - name: speech-act
     frame_families:
-      - Communication frames
-      - Excluded frames
+      - Communication
+      - Excluded
     roles:
       - name: addressee
       - name: addressee_action
@@ -11216,7 +11216,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: stability_scale
       - name: stability_entity
@@ -11254,7 +11254,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Eating frames
+      - Eating
     lexical_units:
       - emaciate.v
       - emaciated.a
@@ -11275,7 +11275,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - State-related frames
+      - State-related
     roles:
       - name: possible_state_values
       - name: profiled_state_value
@@ -11287,8 +11287,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Government frames
-      - Leaders frames
+      - Government
+      - Leaders
     roles:
       - name: nation_citizens
       - name: nation_leaders
@@ -11323,9 +11323,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Mover-specific movement frames
-      - Moving entity frames
-      - Vehicle frames
+      - Mover-specific movement
+      - Moving entity
+      - Vehicle
     lexical_units:
       - captain.v
       - helm.v
@@ -11345,7 +11345,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Endangerment frames
+      - Endangerment
       - Harm
       - Harm to living entity
     lexical_units:
@@ -11375,7 +11375,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
+      - Impediment and enablement
     lexical_units:
       - clog.n
       - clog.v
@@ -11395,7 +11395,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Property-related frames
+      - Property-related
     roles:
       - name: property_of_being_straight
       - name: straight_object
@@ -11413,7 +11413,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Social frames
+      - Social
     roles:
       - name: children
       - name: family_whole
@@ -11430,7 +11430,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: amount_of_substance
       - name: container_for_substances
@@ -11442,9 +11442,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion impediments
+      - Motion-affecting
     roles:
       - name: confined_entity
       - name: low_area_of_confinement
@@ -11483,13 +11483,13 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     related:
       - market
       - value
   - name: support
     frame_families:
-      - Object frames
+      - Object
     roles:
       - name: supported_entity
       - name: supporting_entity
@@ -11505,7 +11505,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
       - Harm to living entity
     roles:
       - name: patient
@@ -11547,7 +11547,7 @@ frames:
       - Frame
       - Primary
     frame_families:
-      - Perception frames
+      - Perception
     roles:
       - name: taste_apparatus
       - name: taste_effector
@@ -11577,7 +11577,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Taxation frames
+      - Taxation
     roles:
       - name: regulation
       - name: tax
@@ -11618,7 +11618,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Taxes frames
+      - Taxes
     roles:
       - name: amount
       - name: rate
@@ -11664,7 +11664,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: temperature_scale
     lexical_units:
@@ -11677,7 +11677,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
     roles:
       - name: gardener
         role_type: Person
@@ -11720,8 +11720,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
-      - Machine frames
+      - Entity
+      - Machine
     roles:
       - name: fibers
       - name: textile_creation_action
@@ -11742,7 +11742,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Crime frames
+      - Crime
     roles:
       - name: stolen_item
       - name: theft_action
@@ -11801,8 +11801,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Cognition frames
-      - Excluded frames
+      - Cognition
+      - Excluded
     roles:
       - name: theoretical_arguments
       - name: theoretical_domain
@@ -11823,7 +11823,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Cognition frames
+      - Cognition
     roles:
       - name: thinker
       - name: thinking_content
@@ -11852,7 +11852,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
+      - Physical properties
     roles:
       - name: entity
       - name: tightness_level
@@ -11907,14 +11907,14 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Scale frames
+      - Scale
     related:
       - scale
   - name: touching
     frame_type:
       - Cog
     frame_families:
-      - Perception frames
+      - Perception
     roles:
       - name: sense_of_touch
       - name: touch_bodypart
@@ -11932,7 +11932,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Location frames
+      - Location
       - Spatial relations
     roles:
       - name: background
@@ -11946,7 +11946,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Possession frames
+      - Possession
     roles:
       - name: transfer_recipient
       - name: transfer_recipient_process
@@ -11969,7 +11969,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Disease frame family
+      - Disease
       - Harm
       - Harm to living entity
     roles:
@@ -12028,8 +12028,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Directional movement frames
-      - Motion impediments frames
+      - Directional movement
+      - Motion impediments
     roles:
       - name: territory
       - name: territory_owner
@@ -12058,7 +12058,7 @@ frames:
       - Frame
   - name: trust-emotion
     frame_families:
-      - Emotion frames
+      - Emotion
     roles:
       - name: trust_emotion
       - name: trust_reason
@@ -12071,7 +12071,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Governance frames
+      - Governance
     roles:
       - name: basis_of_trust
       - name: change_in_relationship_intensity
@@ -12130,8 +12130,8 @@ frames:
       - Frame
       - Primary
     frame_families:
-      - Cognition frames
-      - Excluded frames
+      - Cognition
+      - Excluded
     roles:
       - name: understanding_person
         role_type: Entity
@@ -12147,7 +12147,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Wealth and social class frames
+      - Wealth and social class
     lexical_units:
       - jobless
       - joblessness
@@ -12188,9 +12188,9 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Body frames
+      - Body
       - Physical orientation
-      - Property-related frames
+      - Property-related
     roles:
       - name: upright_entity
       - name: upright_entity_axis
@@ -12208,11 +12208,11 @@ frames:
       - Cog
       - Composed
     frame_families:
-      - Directional movement frames
-      - Motion frames
-      - Movement frames
-      - Moving entity frames
-      - Translational motion frames
+      - Directional movement
+      - Motion
+      - Movement
+      - Moving entity
+      - Translational motion
     roles:
       - name: downward_direction
       - name: goal
@@ -12268,7 +12268,7 @@ frames:
       - verticality
   - name: using
     frame_families:
-      - Excluded frames
+      - Excluded
     roles:
       - name: purpose_of_use
         role_type: ActionXSchemaParameter
@@ -12280,7 +12280,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Economic frames
+      - Economic
     lexical_units:
       - value
       - worth
@@ -12289,9 +12289,9 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Entity frames
-      - Machine frames
-      - Vehicle frames
+      - Entity
+      - Machine
+      - Vehicle
     roles:
       - name: vehicle
         role_type: PhysicalObject
@@ -12326,7 +12326,7 @@ frames:
     frame_families:
       - Damage
       - Harm
-      - Harmful encounters frames
+      - Harmful encounters
     lexical_units:
       - blindside.v
       - collide.v
@@ -12363,12 +12363,12 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Affected movement frames
-      - Motion frames
-      - Movement frames
-      - Mover-specific movement frames
-      - Moving entity frames
-      - Vehicle frames
+      - Affected movement
+      - Motion
+      - Movement
+      - Mover-specific movement
+      - Moving entity
+      - Vehicle
     roles:
       - name: direction
       - name: motion_x_schema
@@ -12399,7 +12399,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Position frames
+      - Position
     lexical_units:
       - layer.n
       - level.n
@@ -12419,7 +12419,7 @@ frames:
     frame_type:
       - Cog
     frame_families:
-      - Scale frames
+      - Scale
     roles:
       - name: scalar_position
       - name: vertical_axis
@@ -12446,7 +12446,7 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Motion frames
+      - Motion
     roles:
       - name: cognizer
       - name: ending_locus_of_attention
@@ -12467,8 +12467,8 @@ frames:
     frame_type:
       - Composed
     frame_families:
-      - Evaluation frames
-      - Perception frames
+      - Evaluation
+      - Perception
     roles:
       - name: difficulties_in_evaluating
       - name: evaluation_outcome
@@ -12486,8 +12486,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Perception frames
-      - Protecting frames
+      - Perception
+      - Protecting
     roles:
       - name: eyes
       - name: focal_object
@@ -12516,8 +12516,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Election frames
-      - Governance frames
+      - Election
+      - Governance
     roles:
       - name: approval_standards
       - name: debate
@@ -12546,8 +12546,8 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Election frames
-      - Rights family
+      - Election
+      - Rights
     roles:
       - name: enfranchised_voter
     lexical_units:
@@ -12568,9 +12568,9 @@ frames:
       - Composed
       - Frame
     frame_families:
-      - Competition frames
-      - Physical combat frame family
-      - Physical conflict frames
+      - Competition
+      - Physical combat
+      - Physical conflict
     roles:
       - name: army
       - name: battlefield
@@ -12639,9 +12639,9 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Impediment and enablement frames
-      - Motion impediments frames
-      - Motion-affecting frames
+      - Impediment and enablement
+      - Motion impediments
+      - Motion-affecting
     roles:
       - name: physical_entity
         role_type: PhysicalEntity
@@ -12688,7 +12688,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Wealth frames
+      - Wealth
     roles:
       - name: degree_of_wealth
       - name: wealth
@@ -12716,14 +12716,14 @@ frames:
       - poverty
   - name: wealth-distribution
     frame_families:
-      - Wealth frames
+      - Wealth
     related:
       - money
   - name: wealth-redistribution
     frame_type:
       - Frame
     frame_families:
-      - Wealth and social class frames
+      - Wealth and social class
     lexical_units:
       - allocate
       - allot
@@ -12738,7 +12738,7 @@ frames:
       - resource-transfer
   - name: wealthy-people
     frame_families:
-      - The rich frames
+      - The rich
     lexical_units:
       - affluent.n
       - billionaire.n
@@ -12787,7 +12787,7 @@ frames:
       - Frame
     frame_families:
       - Gun debate
-      - Guns family
+      - Guns
     lexical_units:
       - aim.v
       - blast.v
@@ -12806,8 +12806,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Concealment and protection frames
-      - Protecting frames
+      - Concealment and protection
+      - Protecting
     lexical_units:
       - cloak.n
       - cloak.v
@@ -12839,7 +12839,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Entity frames
+      - Entity
       - Harm to living entity
     lexical_units:
       - vine.n
@@ -12851,8 +12851,8 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Physical properties frame family
-      - Scale frames
+      - Physical properties
+      - Scale
     lexical_units:
       - weight.n
     related:
@@ -12925,7 +12925,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Excluded frames
+      - Excluded
     roles:
       - name: affected_entity
       - name: employer
@@ -12955,8 +12955,8 @@ frames:
       - purposeful-action
   - name: worship
     frame_families:
-      - Morality frames
-      - Zealotry, insanity, and worship frames
+      - Morality
+      - Zealotry, insanity, and worship
     roles:
       - name: worshipped_thing
       - name: worshipper
@@ -12989,7 +12989,7 @@ frames:
     frame_type:
       - Primary
     frame_families:
-      - X-schema family
+      - X-schema
     roles:
       - name: finish_conditions
       - name: interruption
@@ -13019,8 +13019,8 @@ frames:
       - Cog
       - Frame
     frame_families:
-      - Excluded frames
-      - X-schema family
+      - Excluded
+      - X-schema
   - name: x-schema-end
   - name: x-schema-initial-state
   - name: x-schema-start
@@ -13031,7 +13031,7 @@ frames:
     frame_type:
       - Frame
     frame_families:
-      - Zealotry, insanity, and worship frames
+      - Zealotry, insanity, and worship
     lexical_units:
       - crusade.n
       - crusader.n
