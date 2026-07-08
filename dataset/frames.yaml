@@ -9702,6 +9702,20 @@ frames:
     related:
       - guided-motion
       - self-propelled-motion-to-a-destination
+  - name: puzzle
+    frame_type:
+      - Frame
+    roles:
+      - name: puzzle
+      - name: solver
+      - name: pieces
+      - name: correct_solution
+    lexical_units:
+      - puzzle.n
+      - piece.n
+      - solve.v
+      - crossword.n
+      - jigsaw.n
   - name: quality
     frame_type:
       - Frame

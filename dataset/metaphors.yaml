@@ -943,6 +943,57 @@ metaphors:
       - ANGER_IS_PRESSURE_IN_A_CONTAINER
       - BODY_IS_A_CONTAINER_FOR_EMOTIONS
       - EMOTIONS_ARE_SUBSTANCES
+  - name: ARGUMENT_IS_A_BUILDING
+    type: Composed/complex
+    source_frame: building
+    target_frame: argument
+    mappings:
+      - source_role: building_foundation
+        target_role: trigger_of_argument
+      - source_role: building_whole
+        target_role: arguments_expressed
+    examples:
+      - We've laid a solid foundation for this argument.
+      - Without more facts, the whole case will collapse.
+      - He's trying to shore up his argument with extra evidence.
+    related:
+      - ARGUMENT_IS_WAR
+      - ARGUMENT_IS_A_JOURNEY
+      - ARGUMENT_IS_A_CONTAINER
+  - name: ARGUMENT_IS_A_CONTAINER
+    type: Composed/complex
+    source_frame: containing
+    target_frame: argument
+    mappings:
+      - source_role: container
+        target_role: arguments_expressed
+      - source_role: contents
+        target_role: argument_content
+    examples:
+      - That argument doesn't have much substance to it.
+      - There are some real holes in his reasoning.
+      - Her argument is packed with solid evidence.
+    related:
+      - ARGUMENT_IS_WAR
+      - ARGUMENT_IS_A_JOURNEY
+      - ARGUMENT_IS_A_BUILDING
+  - name: ARGUMENT_IS_A_JOURNEY
+    type: Composed/complex
+    source_frame: journey
+    target_frame: argument
+    mappings:
+      - source_role: journeyer
+        target_role: arguers
+      - source_role: course_of_journey
+        target_role: arguing_event
+    examples:
+      - We've come a long way in this argument, but we're still not there.
+      - Let's see where this line of reasoning takes us.
+      - His argument went in circles without ever reaching a conclusion.
+    related:
+      - ARGUMENT_IS_WAR
+      - ARGUMENT_IS_A_CONTAINER
+      - ARGUMENT_IS_A_BUILDING
   - name: ARGUMENT_IS_PHYSICAL_COMBAT
     type: Composed/complex
     source_frame: physical-combat
@@ -2133,6 +2184,26 @@ metaphors:
       - The data reveals a pattern nobody had noticed before.
     related:
       - COMMUNICATING_IS_POINTING
+  - name: COMMUNICATION_IS_SENDING
+    type: Composed/complex
+    source_frame: transfer-scenario
+    target_frame: communication
+    mappings:
+      - source_role: transferor
+        target_role: communicator
+      - source_role: transfer_recipient
+        target_role: addressee
+      - source_role: transferred_object
+        target_role: message
+      - source_role: vehicle_for_transfer
+        target_role: medium
+    examples:
+      - Let me get my point across to you.
+      - I didn't get anything out of what he said.
+      - She sent her thoughts along in a carefully worded letter.
+    related:
+      - IDEAS_ARE_OBJECTS
+      - LINGUISTIC_EXPRESSIONS_ARE_CONTAINERS
   - name: COMMUNITY_IS_A_FAMILY
     type: Composed/complex
     source_frame: family
@@ -2848,6 +2919,20 @@ metaphors:
       - Democracy is being sold to the highest bidder.
       - They're marketing freedom like it's a brand-name product.
       - You can't put a price tag on democratic ideals, though plenty try.
+  - name: DEPRAVITY_IS_DOWN
+    type: Composed/complex
+    source_frame: verticality
+    target_frame: immorality
+    families:
+      - Orientational metaphors
+      - Morality metaphors
+    examples:
+      - That was a low, underhanded thing to do.
+      - He sank to new lows during the scandal.
+      - She wouldn't stoop to such tactics.
+    related:
+      - VIRTUE_IS_UP
+      - IMMORALITY_IS_DEGENERATION
   - name: DESIRE_IS_HUNGER
     type: Primary
     source_frame: hunger
@@ -5948,6 +6033,16 @@ metaphors:
       - The upwardly mobile are moving into nicer neighborhoods.
       - There's a huge gap between the top rung and the bottom rung of society.
       - Some families start life several rungs below everyone else.
+  - name: INFLATION_IS_AN_ADVERSARY
+    type: Composed/complex
+    source_frame: bully
+    target_frame: economic-difficulty
+    families:
+      - Economics metaphors
+    examples:
+      - Inflation is eating away at our savings.
+      - The government declared war on rising prices.
+      - Rising costs keep hitting working families hard.
   - name: INFLUENTIAL_NATIONS_ARE_LEADERS
     families:
       - Governance metaphors
@@ -6304,6 +6399,18 @@ metaphors:
       - Knowledge is the one resource that never runs out.
       - He's built up a deep reserve of hands-on experience over the years.
       - She drew on years of accumulated expertise to solve the problem.
+  - name: KNOWLEDGE_IS_POWER
+    type: Composed/complex
+    source_frame: power
+    target_frame: knowledge
+    families:
+      - Education metaphors
+    examples:
+      - Knowledge is power.
+      - Information is power in this industry.
+      - He wielded his expertise like a weapon in the negotiation.
+    related:
+      - KNOWLEDGE_IS_A_RESOURCE
   - name: LABOR_IS_A_RESOURCE
     type: Composed/complex
     source_frame: resource
@@ -6675,6 +6782,22 @@ metaphors:
       - The course narrowed its focus to just three key topics.
       - We need to broaden the curriculum to cover more ground.
       - The syllabus was too narrow to give students the full picture.
+  - name: LINGUISTIC_EXPRESSIONS_ARE_CONTAINERS
+    type: Composed/complex
+    source_frame: containing
+    target_frame: word
+    mappings:
+      - source_role: container
+        target_role: word_form
+      - source_role: contents
+        target_role: word_meaning
+    examples:
+      - There's a lot packed into that one sentence.
+      - His words were empty of any real meaning.
+      - She filled her essay with rich, meaningful language.
+    related:
+      - IDEAS_ARE_OBJECTS
+      - COMMUNICATION_IS_SENDING
   - name: LOGICAL_STRUCTURES_ARE_ERECT_COMPLEX_STRUCTURES
     type: Composed/complex
     source_frame: complex-physical-object
@@ -6729,6 +6852,73 @@ metaphors:
       - His campaign was outgunned from the very start.
     related:
       - ELECTION_IS_WAR
+  - name: LOVE_IS_A_COLLABORATIVE_WORK_OF_ART
+    type: Composed/complex
+    source_frame: crafting
+    target_frame: romantic-relationship
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: crafter
+        target_role: romantic_relationship_participants
+      - source_role: artifact
+        target_role: relationship
+    examples:
+      - They've built something beautiful together over the years.
+      - Every relationship takes real work to shape into something good.
+      - Their partnership is a labor of love, crafted together piece by piece.
+    related:
+      - LOVE_IS_A_UNITY_OF_TWO_COMPLEMENTARY_PARTS
+  - name: LOVE_IS_A_PHYSICAL_FORCE
+    type: Composed/complex
+    source_frame: force
+    target_frame: romantic-relationship
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: force
+        target_role: relationship
+    examples:
+      - There was an instant pull between them.
+      - He felt drawn to her from across the room.
+      - The chemistry between them was electric.
+    related:
+      - LOVE_IS_MADNESS
+      - LOVE_IS_MAGIC
+  - name: LOVE_IS_NURTURANCE
+    type: Composed/complex
+    source_frame: nurturance
+    target_frame: romantic-relationship
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: nurturer
+        target_role: romantic_relationship_participants
+      - source_role: nurtured
+        target_role: romantic_relationship_participants
+    examples:
+      - They take care of each other through everything.
+      - She nurtures him when he's struggling.
+      - Their relationship needs tending to keep it growing.
+  - name: LOVE_IS_WAR
+    type: Composed/complex
+    source_frame: war
+    target_frame: romantic-relationship
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: side_1
+        target_role: romantic_relationship_participants
+      - source_role: side_2
+        target_role: romantic_relationship_participants
+    examples:
+      - He finally won her over after months of pursuit.
+      - She laid siege to his heart until he gave in.
+      - He surrendered completely the moment she smiled at him.
+    related:
+      - LOVE_IS_MADNESS
+      - LOVE_IS_MAGIC
+      - ARGUMENT_IS_WAR
   - name: LOW_STATUS_IS_DOWN
     source_frame: verticality
     target_frame: status
@@ -8256,6 +8446,24 @@ metaphors:
       - A steady job kept him from sliding into destitution.
     related:
       - BECOMING_IMPOVERISHED_IS_MOVING_DOWNWARDS
+  - name: PROBLEMS_ARE_PUZZLES
+    type: Composed/complex
+    source_frame: puzzle
+    target_frame: problem
+    mappings:
+      - source_role: solver
+        target_role: experiencer
+      - source_role: pieces
+        target_role: problem_components
+      - source_role: correct_solution
+        target_role: solution
+    examples:
+      - There's only one right answer to this problem.
+      - Once we solve it, it's solved for good.
+      - Let's figure out how the pieces of this fit together.
+    related:
+      - CONDUCTING_RESEARCH_IS_SOLVING_A_PUZZLE
+      - A_PROBLEM_IS_A_LOCKED_CONTAINER_FOR_ITS_SOLUTION
   - name: PROCESSES_ARE_MOVEMENTS
     source_frame: motion
     target_frame: process
@@ -8303,6 +8511,21 @@ metaphors:
       - I'm afraid I haven't gotten very far in grading the exams.
     related:
       - PURPOSEFUL_ACTION_IS_SELF_PROPELLED_MOTION_TO_A_DESTINATION
+  - name: PROPERTY_IS_A_BUNDLE_OF_RIGHTS
+    type: Composed/complex
+    source_frame: part-whole
+    target_frame: rights
+    families:
+      - Rights metaphors
+    mappings:
+      - source_role: parts
+        target_role: right
+    examples:
+      - Owning the house comes with a whole bundle of rights.
+      - He sold off the mineral rights but kept the rest of the bundle.
+      - Zoning law strips away some of the rights that come with owning land.
+    related:
+      - RIGHTS_ARE_POSSESSIONS
   - name: PROVIDE_EDUCATIONAL_OPPORTUNITY_IS_PROVIDING_A_RESOURCE
     source_frame: resource
     target_frame: educational-opportunities
@@ -12317,6 +12540,19 @@ metaphors:
       - I was given the credit for it.
     related:
       - RESPONSIBILITIES_ARE_BURDENS
+  - name: ROMANTIC_RELATIONSHIP_IS_HEALTH
+    type: Composed/complex
+    source_frame: health
+    target_frame: romantic-relationship
+    mappings:
+      - source_role: entity_possessing_health
+        target_role: relationship
+      - source_role: state_of_health
+        target_role: course_of_romantic_relationship
+    examples:
+      - Their marriage is healthy and strong.
+      - The relationship is finally on the mend after a rough year.
+      - It's become a tired, lifeless marriage.
   - name: SHAPES_ARE_CONTAINERS
     type: Primary
     source_frame: containment
@@ -12329,6 +12565,19 @@ metaphors:
     examples:
       - The sketch was in the shape of a heart.
       - It was a block of chocolate in the form of a cable car.
+  - name: TIME_IS_A_CONTAINER
+    type: Composed/complex
+    source_frame: containing
+    target_frame: time
+    mappings:
+      - source_role: container
+        target_role: time
+      - source_role: container_capacity
+        target_role: duration_of_time
+    examples:
+      - He finished the marathon in just over three hours.
+      - She learned the whole routine in a single afternoon.
+      - They packed a lifetime of memories into one summer.
   - name: TREATING_ILLNESS_IS_FIGHTING_A_WAR
     type: Composed/complex
     source_frame: war
@@ -12360,3 +12609,37 @@ metaphors:
     related:
       - CANCER_TREATMENT_IS_WAR
       - DISEASE_TREATMENT_IS_WAR
+  - name: VIRTUE_IS_UP
+    type: Composed/complex
+    source_frame: verticality
+    target_frame: moral-goodness
+    families:
+      - Orientational metaphors
+      - Morality metaphors
+    mappings:
+      - source_role: vertical_entity
+        target_role: good_person
+      - source_role: scalar_position
+        target_role: goodness
+    examples:
+      - She holds herself to high moral standards.
+      - He's a genuinely upstanding person.
+      - They praised her for her upright conduct.
+    related:
+      - GOODNESS_IS_VERTICALITY
+      - DEPRAVITY_IS_DOWN
+  - name: WEALTH_IS_A_HIDDEN_OBJECT
+    type: Composed/complex
+    source_frame: searching
+    target_frame: wealth
+    families:
+      - Wealth metaphors
+    mappings:
+      - source_role: seeker_of_some_object
+        target_role: wealthy_entity
+      - source_role: sought_object
+        target_role: wealth
+    examples:
+      - He's out there seeking his fortune.
+      - She's always been a bit of a gold-digger.
+      - He lost his fortune almost as fast as he found it.
