@@ -65,31 +65,6 @@ export function FrameDetail({ name }: { name: string }) {
         </CollapsibleSection>
 
         <CollapsibleSection
-          title="Lexical units"
-          count={frame.lexical_units?.length ?? 0}
-          defaultOpen
-        >
-          {frame.lexical_units && frame.lexical_units.length > 0 ? (
-            <div className="flex flex-wrap gap-1.5">
-              {frame.lexical_units.map((lu) => {
-                const { lemma, pos, tone } = parseLexicalUnit(lu);
-                return (
-                  <span
-                    key={lu}
-                    className="inline-flex items-center gap-1 rounded bg-surface-hover py-0.5 pr-1 pl-1.5 font-mono text-[0.85em] text-text-muted"
-                  >
-                    {lemma}
-                    {pos && <Badge tone={tone ?? "neutral"}>{pos}</Badge>}
-                  </span>
-                );
-              })}
-            </div>
-          ) : (
-            <p className="text-sm text-text-muted">No lexical units recorded for this frame.</p>
-          )}
-        </CollapsibleSection>
-
-        <CollapsibleSection
           title="Used in metaphors"
           count={sourceUses.length + targetUses.length}
           defaultOpen
@@ -135,6 +110,31 @@ export function FrameDetail({ name }: { name: string }) {
               )}
             </div>
           </div>
+        </CollapsibleSection>
+
+        <CollapsibleSection
+          title="Lexical units"
+          count={frame.lexical_units?.length ?? 0}
+          defaultOpen
+        >
+          {frame.lexical_units && frame.lexical_units.length > 0 ? (
+            <div className="flex flex-wrap gap-1.5">
+              {frame.lexical_units.map((lu) => {
+                const { lemma, pos, tone } = parseLexicalUnit(lu);
+                return (
+                  <span
+                    key={lu}
+                    className="inline-flex items-center gap-1 rounded bg-surface-hover py-0.5 pr-1 pl-1.5 font-mono text-[0.85em] text-text-muted"
+                  >
+                    {lemma}
+                    {pos && <Badge tone={tone ?? "neutral"}>{pos}</Badge>}
+                  </span>
+                );
+              })}
+            </div>
+          ) : (
+            <p className="text-sm text-text-muted">No lexical units recorded for this frame.</p>
+          )}
         </CollapsibleSection>
       </div>
     </div>

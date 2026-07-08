@@ -1,25 +1,19 @@
 import { useMemo, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import { Search } from "lucide-react";
 import { MasterDetailLayout } from "@/components/layout/MasterDetailLayout";
 import { MetaphorDetail } from "@/components/metaphor/MetaphorDetail";
-import { MetaphorListRow } from "@/components/metaphor/MetaphorListRow";
 import { EmptyState } from "@/components/primitives/EmptyState";
+import { SidebarListHeader, SidebarListRow } from "@/components/primitives/SidebarList";
 import { metaphorByName, metaphors } from "@/data";
-import { entityPath, frameDisplayName, metaphorDisplayName } from "@/lib/format";
+import { entityPath, metaphorDisplayName, metaphorNameFromSlug } from "@/lib/format";
 import type { Metaphor } from "@/types";
 
-function searchableText(m: Metaphor): string {
-  return [
-    metaphorDisplayName(m.name),
-    m.name,
-    m.source_frame ? frameDisplayName(m.source_frame) : "",
-    m.source_frame ?? "",
-    m.target_frame ? frameDisplayName(m.target_frame) : "",
-    m.target_frame ?? "",
-  ]
-    .join(" ")
-    .toLowerCase();
+function matchesQuery(m: Metaphor, query: string): boolean {
+  if (!query) return true;
+  return (
+    metaphorDisplayName(m.name).toLowerCase().includes(query) ||
+    m.name.toLowerCase().includes(query)
+  );
 }
 
 /**
@@ -29,13 +23,13 @@ function searchableText(m: Metaphor): string {
  * there's always something to read.
  */
 export function MetaphorListPage() {
-  const { name } = useParams();
+  const { name: slug } = useParams();
+  const name = slug ? metaphorNameFromSlug(slug) : undefined;
   const [filter, setFilter] = useState("");
 
   const filtered = useMemo(() => {
     const q = filter.trim().toLowerCase();
-    if (!q) return metaphors;
-    return metaphors.filter((m) => searchableText(m).includes(q));
+    return metaphors.filter((m) => matchesQuery(m, q));
   }, [filter]);
 
   if (!name) {
@@ -49,23 +43,13 @@ export function MetaphorListPage() {
       backTo="/metaphors"
       list={
         <div className="flex h-full flex-col">
-          <div className="sticky top-0 z-10 border-b border-border bg-surface p-3">
-            <p className="mb-2 font-serif text-lg text-text">
-              Metaphors <span className="font-sans text-sm text-text-muted">({metaphors.length})</span>
-            </p>
-            <div className="relative">
-              <Search
-                size={14}
-                className="pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2 text-text-faint"
-              />
-              <input
-                value={filter}
-                onChange={(e) => setFilter(e.target.value)}
-                placeholder="Filter by name or frame…"
-                className="w-full rounded-md border border-border bg-bg py-1.5 pr-2 pl-8 text-sm text-text placeholder:text-text-faint focus:ring-2 focus:ring-clay-500 focus:outline-none"
-              />
-            </div>
-          </div>
+          <SidebarListHeader
+            title="Metaphors"
+            count={metaphors.length}
+            value={filter}
+            onChange={setFilter}
+            placeholder="Filter metaphors…"
+          />
           {filtered.length === 0 ? (
             <div className="p-4">
               <EmptyState title="No matches" description="Try a different search term." />
@@ -73,7 +57,7 @@ export function MetaphorListPage() {
           ) : (
             <div>
               {filtered.map((m) => (
-                <MetaphorListRow key={m.name} metaphor={m} selected={m.name === name} />
+                <SidebarListRow key={m.name} kind="metaphor" name={m.name} active={m.name === name} />
               ))}
             </div>
           )}

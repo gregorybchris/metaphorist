@@ -31,8 +31,19 @@ const ENTITY_BASE_PATH: Record<EntityKind, string> = {
   frame: "/frames",
 };
 
+/** ANGER_IS_HEAT -> "anger-is-heat" — the dataset name stays SCREAMING_SNAKE_CASE; only the URL is kebab-case. */
+export function metaphorSlug(name: string): string {
+  return name.toLowerCase().replace(/_/g, "-");
+}
+
+/** "anger-is-heat" -> ANGER_IS_HEAT, reversing metaphorSlug for dataset lookups. */
+export function metaphorNameFromSlug(slug: string): string {
+  return slug.toUpperCase().replace(/-/g, "_");
+}
+
 export function entityPath(kind: EntityKind, name: string): string {
-  return `${ENTITY_BASE_PATH[kind]}/${encodeURIComponent(name)}`;
+  const slug = kind === "metaphor" ? metaphorSlug(name) : name;
+  return `${ENTITY_BASE_PATH[kind]}/${encodeURIComponent(slug)}`;
 }
 
 export function listPath(kind: EntityKind): string {
