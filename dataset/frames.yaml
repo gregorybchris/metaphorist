@@ -155,6 +155,12 @@ frames:
       - Frame
     frame_families:
       - Action frames
+    roles:
+      - name: activity_self
+      - name: activity_participant
+      - name: course_of_activity
+      - name: activity_intensity
+      - name: activity_x_schema
   - name: actor
   - name: addiction
     frame_type:
@@ -393,6 +399,9 @@ frames:
     related:
       - motion
   - name: alignment
+    roles:
+      - name: parts
+      - name: degree_of_alignment
   - name: alliances
   - name: amassing
     frame_families:
@@ -1313,6 +1322,11 @@ frames:
     frame_families:
       - Entity frames
       - Fluid frame family
+    roles:
+      - name: water_body
+      - name: surface
+      - name: depths
+      - name: contents
     lexical_units:
       - bay.n
       - brook.n
@@ -2058,6 +2072,13 @@ frames:
   - name: commercial-transaction
     frame_type:
       - Frame
+    roles:
+      - name: buyer
+      - name: seller
+      - name: goods
+      - name: money
+      - name: transaction_x_schema
+        role_type: XSchema
   - name: commodity
     frame_type:
       - Frame
@@ -2247,6 +2268,13 @@ frames:
       - building
       - support
   - name: compulsion
+    roles:
+      - name: compelled_person
+      - name: compulsive_behavior
+      - name: compulsion_x_schema
+        role_type: XSchema
+      - name: compulsion
+      - name: compulsion_level
   - name: computer
     frame_type:
       - Frame
@@ -2701,6 +2729,12 @@ frames:
       - object
       - purposeful-action
   - name: creating
+    roles:
+      - name: creator
+      - name: created_entity
+      - name: created_state
+      - name: creating_x_schema
+        role_type: XSchema
   - name: crime
     frame_type:
       - Frame
@@ -2808,6 +2842,10 @@ frames:
     frame_families:
       - Education frames
       - Excluded frames
+    roles:
+      - name: curriculum_content
+      - name: curriculum_learner
+      - name: curriculum_subject
     lexical_units:
       - class content
       - curricula
@@ -2895,6 +2933,10 @@ frames:
     frame_families:
       - Perception frames
       - Scale frames
+    roles:
+      - name: entity
+        role_type: Entity
+      - name: darkness_level
     lexical_units:
       - blackness.n
       - caliginous.a
@@ -3297,6 +3339,11 @@ frames:
   - name: differences-in-state
     frame_type:
       - Frame
+    roles:
+      - name: state_holder
+      - name: state_type
+      - name: standard
+      - name: difference
   - name: difficulties-in-action
     frame_type:
       - Frame
@@ -4101,6 +4148,10 @@ frames:
       - Impediment and enablement frames
       - Motion impediments frames
       - Motion-affecting frames
+    roles:
+      - name: affected_motion
+      - name: mover
+      - name: restraining_entity
     lexical_units:
       - bog.v down
       - catch.v
@@ -4255,6 +4306,8 @@ frames:
     frame_families:
       - Excluded frames
       - State-related frames
+    roles:
+      - name: entity
     lexical_units:
       - be
       - exist
@@ -4578,6 +4631,12 @@ frames:
       - Frame
     frame_families:
       - Act on an object frames
+    roles:
+      - name: broken_object
+      - name: defect
+      - name: fixer
+      - name: fixing_method
+      - name: fixed_object
     lexical_units:
       - fix.n
       - fix.v
@@ -5064,6 +5123,9 @@ frames:
       - Frame
     frame_families:
       - Morality frames
+    roles:
+      - name: good_entity
+      - name: goodness
     related:
       - morality
   - name: governing-action
@@ -5234,6 +5296,9 @@ frames:
       - Act on an object frames
       - Impediment and enablement frames
       - Object frames
+    roles:
+      - name: grasper
+      - name: held_entity
     lexical_units:
       - cinch.v
       - cinching
@@ -6224,6 +6289,11 @@ frames:
     frame_families:
       - Physical properties frame family
       - Scale frames
+    roles:
+      - name: entity
+      - name: size_level
+      - name: increase_process
+        role_type: XSchema
     lexical_units:
       - amplification.n
       - amplify.v
@@ -6966,6 +7036,10 @@ frames:
     related:
       - cycle
   - name: light-source
+    roles:
+      - name: light_source
+        role_type: Entity
+      - name: light_level
     lexical_units:
       - aurora.n
       - beacon.n
@@ -6990,6 +7064,9 @@ frames:
     frame_families:
       - Perception frames
       - Scale frames
+    roles:
+      - name: entity
+      - name: light_level
     lexical_units:
       - bright.a
       - brighten.v
@@ -7044,6 +7121,10 @@ frames:
     frame_families:
       - Location frames
   - name: logical-structure
+    roles:
+      - name: logical_structure_whole
+      - name: structural_elements
+      - name: element_relations
   - name: loose-fit
     frame_families:
       - Physical properties frame family
@@ -7521,6 +7602,12 @@ frames:
     frame_families:
       - Motion frames
       - Motion-affecting frames
+    roles:
+      - name: affected_motion
+        role_type: XSchema
+      - name: force
+        role_type: Force
+      - name: mover
     related:
       - motion-affecting-external-factors
   - name: motion-affecting-objects
@@ -8738,6 +8825,10 @@ frames:
     frame_families:
       - Physical properties frame family
       - Property-related frames
+    roles:
+      - name: entity
+      - name: physical_properties
+      - name: value
     lexical_units:
       - color
       - length
@@ -9309,6 +9400,14 @@ frames:
   - name: problem
     frame_type:
       - Frame
+    roles:
+      - name: problem
+      - name: experiencer
+        role_type: Entity
+      - name: severity_of_problem
+        role_type: Scale
+      - name: problem_components
+      - name: solution
     lexical_units:
       - issue.n
       - predicament.n
@@ -9585,6 +9684,9 @@ frames:
     frame_families:
       - Motion frames
       - Moving entity frames
+    roles:
+      - name: pursuer
+      - name: pursued
     lexical_units:
       - chase.n
       - chase.v
@@ -9609,6 +9711,12 @@ frames:
       - Composed
     frame_families:
       - Motion-affecting frames
+    roles:
+      - name: mover
+      - name: terrain_feature
+      - name: landmark
+      - name: affected_motion
+        role_type: XSchema
     lexical_units:
       - morass.n
       - quicksand.n
@@ -9912,6 +10020,9 @@ frames:
     frame_families:
       - Entity frames
       - Resource frames
+    roles:
+      - name: container
+      - name: resource
     lexical_units:
       - ark.n
       - backpack.n
@@ -10664,6 +10775,11 @@ frames:
     frame_families:
       - Action frames
       - Social frames
+    roles:
+      - name: obligation_holder
+      - name: obligation
+      - name: obligation_source
+      - name: degree_of_obligation
     lexical_units:
       - obligation.n
     related:
@@ -10696,6 +10812,9 @@ frames:
       - Frame
     frame_families:
       - Social frames
+    roles:
+      - name: status_holder
+      - name: status
     lexical_units:
       - social.a status.n
     related:
@@ -10706,12 +10825,23 @@ frames:
       - Frame
     frame_families:
       - Social frames
+    roles:
+      - name: society_whole
+      - name: members
+      - name: member_relation
+      - name: social_functioning
     lexical_units:
       - societal.a
       - society.n
     related:
       - social-group
   - name: solving-a-problem
+    roles:
+      - name: solver
+      - name: problem
+      - name: problem_components
+      - name: solving_method
+      - name: solution
   - name: source-path-goal
     frame_type:
       - Cog
@@ -11438,6 +11568,9 @@ frames:
       - Frame
     frame_families:
       - Physical properties frame family
+    roles:
+      - name: entity
+      - name: tightness_level
     lexical_units:
       - compact.a
       - cramped.a
@@ -12405,6 +12538,9 @@ frames:
   - name: weather
     frame_type:
       - Frame
+    roles:
+      - name: weather
+      - name: experiencer
     lexical_units:
       - climate.n
       - fog.n
@@ -12628,3 +12764,274 @@ frames:
     related:
       - deity
       - worship
+  - name: child
+    roles:
+      - name: child
+      - name: caregiver
+    lexical_units:
+      - child.n
+      - foster.v
+      - nourish.v
+      - nurse.v
+      - nurture.v
+      - raise.v
+  - name: disgust
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: disgust_feeler
+      - name: degree_of_disgust
+      - name: target_of_disgust
+    lexical_units:
+      - disgust.n
+      - disgust.v
+      - disgusted.a
+      - disgusting.a
+      - revolting.a
+  - name: fear
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: fear_feeler
+      - name: degree_of_fear
+      - name: feared_entity
+    lexical_units:
+      - afraid.a
+      - fear.n
+      - fear.v
+      - fearful.a
+      - scared.a
+  - name: hope
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: hope
+      - name: hoper
+      - name: degree_of_hope
+    lexical_units:
+      - hope.n
+      - hope.v
+      - hopeful.a
+  - name: intoxication
+    frame_families:
+      - Scale frames
+    roles:
+      - name: intoxicated_person
+      - name: intoxication_level
+    lexical_units:
+      - drunk.a
+      - high.a
+      - intoxicated.a
+      - intoxication.n
+      - wasted.a
+  - name: nausea
+    frame_families:
+      - Scale frames
+    roles:
+      - name: entity
+      - name: nausea_level
+    lexical_units:
+      - nauseated.a
+      - nauseating.a
+      - nauseous.a
+      - queasy.a
+      - sick.a
+  - name: conceit
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: conceited_person
+      - name: degree_of_conceit
+    lexical_units:
+      - conceit.n
+      - conceited.a
+      - arrogant.a
+      - arrogance.n
+      - vain.a
+      - vanity.n
+      - self-important.a
+      - egotistical.a
+  - name: battery
+    frame_families:
+      - Scale frames
+    roles:
+      - name: entity
+      - name: charge_level
+    lexical_units:
+      - battery.n
+      - charge.v
+      - charge.n
+      - charged.a
+      - discharge.v
+      - drained.a
+      - recharge.v
+      - recharge.n
+      - run.v out of juice
+      - juice.n
+      - plug.v in
+  - name: lust
+    frame_families:
+      - Emotion frames
+    roles:
+      - name: lust_feeler
+      - name: degree_of_lust
+      - name: target_of_lust
+    lexical_units:
+      - lust.n
+      - lust.v
+      - lustful.a
+      - desire.n
+      - longing.n
+      - craving.n
+  - name: musical-harmony
+    roles:
+      - name: harmony_whole
+      - name: harmony_parts
+      - name: harmony_part_relations
+    lexical_units:
+      - harmony.n
+      - harmonious.a
+      - melody.n
+      - chord.n
+      - in.prep tune.n
+      - out.prep of.prep tune.n
+      - discord.n
+      - dissonance.n
+      - symphony.n
+  - name: sexuality
+    roles:
+      - name: sexuality
+      - name: sexuality_feeler
+      - name: degree_of_sexuality
+      - name: target_of_sexuality
+    lexical_units:
+      - sexuality.n
+      - sexual.a
+      - sexually.adv
+      - seductive.a
+      - seduction.n
+  - name: replacement
+    frame_families:
+      - Change-related frames
+    roles:
+      - name: old_entity
+      - name: new_entity
+      - name: replacer
+    lexical_units:
+      - replace.v
+      - replacement.n
+      - substitute.v
+      - substitute.n
+      - swap.v
+      - swap.n
+      - switch.v
+      - exchange.v
+  - name: failure
+    roles:
+      - name: cause_of_failure
+      - name: failed_state
+      - name: failure_protagonist
+      - name: failure_x_schema
+    lexical_units:
+      - fail.v
+      - failed.a
+      - failure.n
+      - flop.n
+      - flop.v
+      - unsuccessful.a
+  - name: coherence
+    frame_families:
+      - Property-related frames
+    roles:
+      - name: coherent_entity
+      - name: parts
+      - name: degree_of_coherence
+    lexical_units:
+      - coherent.a
+      - coherence.n
+      - cohesive.a
+      - cohesion.n
+      - hang.v together
+  - name: fashion
+    roles:
+      - name: fashion
+      - name: adopter
+      - name: fashion_status
+    lexical_units:
+      - fashion.n
+      - trend.n
+      - trendy.a
+      - fad.n
+      - in.prep style.n
+      - out.prep of.prep style.n
+      - vogue.n
+      - fashionable.a
+      - outdated.a
+      - passe.a
+  - name: accounting
+    roles:
+      - name: account_holder
+      - name: ledger_item
+      - name: accounting_status
+    lexical_units:
+      - account.n
+      - accounting.n
+      - bookkeeping.n
+      - ledger.n
+      - tally.v
+  - name: compliance
+    frame_families:
+      - Governance frames
+    roles:
+      - name: complier
+      - name: requirement
+      - name: compliance_level
+    lexical_units:
+      - comply.v
+      - compliance.n
+      - compliant.a
+      - adhere.v
+      - adherence.n
+      - follow.v
+      - obey.v
+      - obedience.n
+      - obedient.a
+  - name: humor
+    roles:
+      - name: humor_source
+      - name: affected_party
+      - name: effect_of_humor
+    lexical_units:
+      - joke.n
+      - humor.n
+      - jab.n
+      - quip.n
+      - tease.v
+      - teasing.n
+      - roast.v
+      - dig.n
+  - name: laughter
+    roles:
+      - name: laugher
+      - name: laughter
+      - name: degree_of_laughter
+    lexical_units:
+      - laugh.v
+      - laughter.n
+      - giggle.v
+      - giggle.n
+      - chuckle.v
+      - cackle.v
+      - guffaw.v
+      - chortle.v
+  - name: personality
+    roles:
+      - name: person
+      - name: personality
+    lexical_units:
+      - personality.n
+      - character.n
+      - trait.n
+      - nature.n
+      - temperament.n
+      - disposition.n

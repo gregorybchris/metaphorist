@@ -311,6 +311,9 @@ metaphors:
     families:
       - Event structure metaphors
       - Primary metaphors
+    mappings:
+      - source_role: interior
+        target_role: activity_self
     examples:
       - How did he get out of washing the dishes?
       - She gets a lot of satisfaction out of gardening.
@@ -321,6 +324,11 @@ metaphors:
     target_frame: activity
     families:
       - Event structure metaphors
+    mappings:
+      - source_role: journeyer
+        target_role: activity_participant
+      - source_role: course_of_journey
+        target_role: course_of_activity
     examples:
       - Let's start the project over from scratch.
       - New evidence turned up in the course of the investigation.
@@ -732,6 +740,11 @@ metaphors:
     type: Composed/complex
     source_frame: size
     target_frame: problem
+    mappings:
+      - source_role: entity
+        target_role: problem
+      - source_role: entity_size
+        target_role: severity_of_problem
     examples:
       - The budget shortfall is a huge problem for the new administration.
       - Homelessness has become an enormous issue downtown.
@@ -2623,6 +2636,11 @@ metaphors:
   - name: CURRICULUM_IS_A_FIXED_PATH
     source_frame: motion-along-a-path
     target_frame: curriculum
+    mappings:
+      - source_role: mover
+        target_role: curriculum_learner
+      - source_role: path
+        target_role: curriculum_content
     examples:
       - Students all follow the same path through the required courses.
       - There's only one route to graduation in this program.
@@ -2634,6 +2652,9 @@ metaphors:
     target_frame: curriculum
     families:
       - Education metaphors
+    mappings:
+      - source_role: interior
+        target_role: curriculum_content
     examples:
       - This course covers a lot of ground.
       - That topic falls outside the curriculum.
@@ -3714,6 +3735,9 @@ metaphors:
     families:
       - Morality metaphors
       - Primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: evil_entity
     examples:
       - He's been drawn to the dark side ever since the divorce.
       - There's something dark lurking behind that smile.
@@ -3769,6 +3793,9 @@ metaphors:
     target_frame: existence
     families:
       - Grady primary metaphors
+    mappings:
+      - source_role: evaluee
+        target_role: entity
     examples:
       - The dodo disappeared in the 1600s.
       - That old custom has all but vanished.
@@ -3779,6 +3806,9 @@ metaphors:
     target_frame: existence
     families:
       - Grady primary metaphors
+    mappings:
+      - source_role: experiencer
+        target_role: entity
     examples:
       - All the bridges that used to span this river are now gone.
       - That old diner isn't there anymore.
@@ -4150,6 +4180,11 @@ metaphors:
     target_frame: goodness
     families:
       - Primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: good_entity
+      - source_role: light_level
+        target_role: goodness
     examples:
       - She's a shining example for the whole team.
       - His kindness lit up the room.
@@ -4160,6 +4195,11 @@ metaphors:
     target_frame: goodness
     families:
       - Orientational metaphors
+    mappings:
+      - source_role: vertical_entity
+        target_role: good_entity
+      - source_role: scalar_position
+        target_role: goodness
     examples:
       - She's an upstanding member of the community.
       - He always tries to stay on the up and up.
@@ -6099,6 +6139,13 @@ metaphors:
     target_frame: activity
     families:
       - Grady primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: activity_self
+      - source_role: heat_level
+        target_role: activity_intensity
+      - source_role: heat_x_schema
+        target_role: activity_x_schema
     examples:
       - Trading has really heated up this week.
       - The rivalry between the two teams is boiling over.
@@ -6632,6 +6679,13 @@ metaphors:
     type: Composed/complex
     source_frame: complex-physical-object
     target_frame: logical-structure
+    mappings:
+      - source_role: object_whole
+        target_role: logical_structure_whole
+      - source_role: object_parts
+        target_role: structural_elements
+      - source_role: object_part_relations
+        target_role: element_relations
     examples:
       - His argument is built on a shaky foundation.
       - The whole theory collapses if you remove that one assumption.
@@ -6710,6 +6764,11 @@ metaphors:
     target_frame: social-status
     families:
       - Wealth metaphors
+    mappings:
+      - source_role: grasper
+        target_role: status_holder
+      - source_role: held_entity
+        target_role: status
     examples:
       - The old guard is clinging to its grip on power.
       - She's holding onto her position at the top of the company.
@@ -7167,6 +7226,11 @@ metaphors:
     target_frame: morality
     families:
       - Morality metaphors
+    mappings:
+      - source_role: entity
+        target_role: moral_person
+      - source_role: size_level
+        target_role: morality
     examples:
       - She's grown so much as a person since then.
       - His character matured after years of hardship.
@@ -7481,6 +7545,11 @@ metaphors:
     families:
       - Governance metaphors
       - Ontological metaphors
+    mappings:
+      - source_role: container
+        target_role: nation_whole
+      - source_role: resource
+        target_role: nation_traits
     examples:
       - Our nation contains some of the best entrepreneurs in the world.
       - This country holds a rich mix of cultures and traditions.
@@ -8977,6 +9046,11 @@ metaphors:
     target_frame: society
     families:
       - Social metaphors
+    mappings:
+      - source_role: person
+        target_role: society_whole
+      - source_role: health_of_person
+        target_role: social_functioning
     examples:
       - The economy is showing signs of real health this year.
       - Rising crime is a symptom of a sick society.
@@ -9145,6 +9219,13 @@ metaphors:
     type: Composed/complex
     source_frame: complex-physical-object
     target_frame: society
+    mappings:
+      - source_role: object_whole
+        target_role: society_whole
+      - source_role: object_parts
+        target_role: members
+      - source_role: object_part_relations
+        target_role: member_relation
     examples:
       - Society is held together by countless interlocking parts.
       - Remove one pillar of the system, and the whole structure wobbles.
@@ -9156,6 +9237,11 @@ metaphors:
     families:
       - Ontological metaphors
       - Social metaphors
+    mappings:
+      - source_role: person
+        target_role: society_whole
+      - source_role: health_of_person
+        target_role: social_functioning
     examples:
       - Our society is suffering from deep-seated problems.
       - The nation is still healing from years of division.
@@ -9164,6 +9250,17 @@ metaphors:
     type: Composed/complex
     source_frame: fixing
     target_frame: solving-a-problem
+    mappings:
+      - source_role: broken_object
+        target_role: problem
+      - source_role: defect
+        target_role: problem_components
+      - source_role: fixer
+        target_role: solver
+      - source_role: fixing_method
+        target_role: solving_method
+      - source_role: fixed_object
+        target_role: solution
     examples:
       - The healthcare system isn't broken beyond repair.
       - It'll take more than a quick fix to solve this budget crisis.
@@ -10134,3 +10231,2132 @@ metaphors:
     related:
       - COMMUNICATING_IS_OBJECT_TRANSFER
       - IDEAS_ARE_OBJECTS
+  - name: DISGUST_IS_NAUSEA
+    type: Primary
+    source_frame: nausea
+    target_frame: disgust
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: disgust_feeler
+      - source_role: nausea_level
+        target_role: degree_of_disgust
+    examples:
+      - You make me sick!
+      - His behavior made me want to throw up.
+      - She's a nauseating person.
+  - name: FEAR_IS_COLD
+    type: Primary
+    source_frame: cold
+    target_frame: fear
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: fear_feeler
+      - source_role: temperature_level
+        target_role: degree_of_fear
+    examples:
+      - He had cold feet.
+      - Her blood ran cold.
+      - A cold stab of fear went through me.
+    related:
+      - EMOTIONALLY_INDIFFERENT_IS_COLD
+  - name: HOPE_IS_A_CHILD
+    type: Composed/complex
+    source_frame: child
+    target_frame: hope
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: child
+        target_role: hope
+      - source_role: caregiver
+        target_role: hoper
+    examples:
+      - He fostered hope that the project would continue.
+      - She nourished the hope that he would return.
+      - I'm nursing a hope for a better life.
+  - name: LUSTFUL_PERSON_IS_AN_ANIMAL
+    type: Composed/complex
+    source_frame: animal
+    target_frame: person
+    mappings:
+      - source_role: animal
+        target_role: person
+    examples:
+      - He's a real wolf.
+      - A tigress in bed.
+      - He looks like he's ready to pounce.
+    related:
+      - PEOPLE_ARE_ANIMALS
+  - name: A_PROBLEM_IS_A_BODY_OF_WATER
+    type: Composed/complex
+    source_frame: body-of-water
+    target_frame: problem
+    mappings:
+      - source_role: water_body
+        target_role: problem
+      - source_role: contents
+        target_role: solution
+    examples:
+      - He dived right into the problem.
+      - He really immersed himself in the problem.
+      - The murky waters of the investigation frustrated him.
+      - He'd been fishing for the answer for weeks.
+      - Finally the answer surfaced.
+      - The answer's just floating around out there.
+    related:
+      - A_PROBLEM_IS_A_REGION_IN_A_LANDSCAPE
+  - name: SOCIETY_IS_A_BODY
+    type: Composed/complex
+    source_frame: body
+    target_frame: society
+    families:
+      - Social metaphors
+    mappings:
+      - source_role: body_whole
+        target_role: society_whole
+      - source_role: body_parts
+        target_role: members
+    examples:
+      - Volunteerism has long been the backbone of society.
+      - Spies serve as the eyes and ears of society.
+      - The prime minister is regarded as the head of state.
+    related:
+      - SOCIETY_IS_A_PERSON
+  - name: CONCEIT_IS_INFLATION
+    type: Composed/complex
+    source_frame: increase-size
+    target_frame: conceit
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: entity
+        target_role: conceited_person
+      - source_role: size_level
+        target_role: degree_of_conceit
+    examples:
+      - She's got an inflated ego.
+      - He was puffed up with pride.
+      - She's got a swollen head.
+    related:
+      - IMPORTANCE_IS_SIZE
+  - name: DESIRES_ARE_FORCES_BETWEEN_THE_DESIRED_AND_THE_DESIRER
+    type: Primary
+    source_frame: force-dynamic-interaction
+    target_frame: desire
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: force_originator
+        target_role: desired_object
+      - source_role: force_receiver
+        target_role: desirer
+      - source_role: forceful_process
+        target_role: desire_x_schema
+    examples:
+      - They were drawn to each other.
+      - He found the brussel sprouts repulsive.
+      - He has a lot of animal magnetism.
+    related:
+      - DESIRE_IS_HUNGER
+  - name: EFFECT_ON_EMOTIONAL_SELF_IS_CONTACT_WITH_PHYSICAL_SELF
+    type: Primary
+    source_frame: cause-contact
+    target_frame: emotion
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: cause
+        target_role: cause_of_emotion
+      - source_role: entity1
+        target_role: experiencer
+    examples:
+      - I was touched by her kindness.
+      - That criticism rubbed me the wrong way.
+  - name: EMOTION_IS_MOTION
+    type: Primary
+    source_frame: motion
+    target_frame: emotion
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: mover
+        target_role: experiencer
+      - source_role: motion_x_schema
+        target_role: emotional_action
+    examples:
+      - I was moved by the poem.
+      - I went into transports of joy.
+      - You send me.
+    related:
+      - STATES_ARE_LOCATIONS
+  - name: EMOTIONAL_STABILITY_IS_BALANCE
+    type: Primary
+    source_frame: being-stable
+    target_frame: stability
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: stability_entity
+      - source_role: x_schema
+        target_role: stability_status
+    examples:
+      - He is unbalanced.
+      - She's not on an even keel.
+      - She's quite level-headed.
+    related:
+      - EMOTIONAL_STABILITY_IS_CONTACT_WITH_THE_GROUND
+      - EMOTIONAL_STABILITY_IS_MAINTAINING_POSITION
+  - name: EMOTIONAL_STABILITY_IS_CONTACT_WITH_THE_GROUND
+    type: Primary
+    source_frame: contact
+    target_frame: stability
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: entity1
+        target_role: stability_entity
+    examples:
+      - She has her feet on the ground.
+      - He felt uprooted.
+      - I've just had the rug pulled out from under me.
+    related:
+      - EMOTIONAL_STABILITY_IS_BALANCE
+      - EMOTIONAL_STABILITY_IS_MAINTAINING_POSITION
+      - STATES_ARE_LOCATIONS
+  - name: EMOTIONAL_STABILITY_IS_MAINTAINING_POSITION
+    type: Primary
+    source_frame: motion-impediments
+    target_frame: stability
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: mover
+        target_role: stability_entity
+      - source_role: mover_location
+        target_role: stability_status
+    examples:
+      - He's on the edge.
+      - She came back from the brink.
+      - I'm hanging on by my fingertips.
+    related:
+      - EMOTIONAL_STABILITY_IS_BALANCE
+      - EMOTIONAL_STABILITY_IS_CONTACT_WITH_THE_GROUND
+      - STATES_ARE_LOCATIONS
+  - name: GAINING_PHYSICAL_INTIMACY_AGAINST_RESISTANCE_IS_A_COMPETITION
+    type: Composed/complex
+    source_frame: competition
+    target_frame: intimacy
+    mappings:
+      - source_role: competition_competitor1
+        target_role: intimacy_feeler
+      - source_role: competition_competitor2
+        target_role: target_of_intimacy
+    examples:
+      - He couldn't get to first base with her.
+      - Did you score last night?
+      - He broke down her defenses.
+  - name: HOPE_IS_A_BENEFICIAL_POSSESSION
+    type: Primary
+    source_frame: possession
+    target_frame: hope
+    families:
+      - Possession metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: possession
+        target_role: hope
+      - source_role: possessor
+        target_role: hoper
+      - source_role: possess_relation_status
+        target_role: degree_of_hope
+    examples:
+      - I have hope that he will return.
+      - He gave me hope to continue.
+    related:
+      - BELIEFS_ARE_POSSESSIONS
+  - name: HOPE_IS_LIGHT
+    type: Primary
+    source_frame: light-source
+    target_frame: hope
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: light_source
+        target_role: hope
+      - source_role: light_level
+        target_role: degree_of_hope
+    examples:
+      - The clouds were a glimmer of hope that rain might come.
+      - He has bright hopes.
+      - I have a very dim hope that he'll recover.
+      - I've been offered a ray of hope.
+  - name: INTERPERSONAL_HARMONY_IS_MUSICAL_HARMONY
+    type: Composed/complex
+    source_frame: musical-harmony
+    target_frame: relationship
+    mappings:
+      - source_role: harmony_whole
+        target_role: relationship_whole
+      - source_role: harmony_parts
+        target_role: related_entities
+      - source_role: harmony_part_relations
+        target_role: inter_relation
+    examples:
+      - They had a harmonious relationship.
+      - They are out of tune with each other.
+      - We can make beautiful music together.
+    related:
+      - RELATIONSHIPS_ARE_COMPLEX_STRUCTURES
+  - name: LOVE_IS_A_UNITY_OF_TWO_COMPLEMENTARY_PARTS
+    type: Primary
+    source_frame: part-whole
+    target_frame: romantic-relationship
+    families:
+      - Primary metaphors
+    mappings:
+      - source_role: whole
+        target_role: relationship
+      - source_role: parts
+        target_role: romantic_relationship_participants
+    examples:
+      - We were made for each other.
+      - We are one.
+      - She is my other half.
+      - He is a perfect match.
+    related:
+      - EMOTIONAL_INTIMACY_IS_PHYSICAL_PROXIMITY
+  - name: LOVE_IS_MADNESS
+    type: Composed/complex
+    source_frame: insanity
+    target_frame: romantic-relationship
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: insane_person
+        target_role: romantic_relationship_participants
+      - source_role: cause_of_insanity
+        target_role: romantic_relationship_participants
+    examples:
+      - I'm crazy about him.
+      - This perfume drives men out of their minds.
+      - He raves about her.
+      - I'm just wild about Harry.
+      - She's gone mad over him.
+      - She is madly in love.
+    related:
+      - LOVE_IS_MAGIC
+      - STRONG_EMOTIONS_ARE_MADNESS
+  - name: LOVE_IS_MAGIC
+    type: Composed/complex
+    source_frame: magic
+    target_frame: romantic-relationship
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: magic_user
+        target_role: romantic_relationship_participants
+      - source_role: magic_undergoer
+        target_role: romantic_relationship_participants
+    examples:
+      - The magic is gone.
+      - She is bewitching.
+      - Enchanted.
+      - I was entranced.
+      - She charmed him.
+  - name: LOVED_ONE_IS_A_POSSESSION
+    type: Primary
+    source_frame: possession
+    target_frame: person
+    families:
+      - Possession metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: possession
+        target_role: person
+    examples:
+      - My friend stole my loved one from me.
+      - You're all I've got.
+      - I'm going to get him back.
+      - If you love something, set it free.
+      - Don't let him go.
+      - Why not take all of me?
+      - I'm yours--be mine.
+  - name: LUST_IS_HEAT
+    type: Primary
+    source_frame: heat
+    target_frame: lust
+    families:
+      - Emotion metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: lust_feeler
+      - source_role: heat_level
+        target_role: degree_of_lust
+    examples:
+      - I'm hot to trot.
+      - I'm burning with desire.
+      - She was frigid.
+    related:
+      - EMOTIONALLY_INTENSE_IS_HOT
+  - name: LUST_IS_MADNESS
+    type: Composed/complex
+    source_frame: insanity
+    target_frame: lust
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: insane_person
+        target_role: lust_feeler
+      - source_role: agitation_level
+        target_role: degree_of_lust
+      - source_role: cause_of_insanity
+        target_role: target_of_lust
+    examples:
+      - sex-crazed
+      - sex-maniac
+    related:
+      - LOVE_IS_MADNESS
+      - STRONG_EMOTIONS_ARE_MADNESS
+  - name: LUSTFUL_PERSON_IS_AN_ACTIVATED_MACHINE
+    type: Composed/complex
+    source_frame: machine
+    target_frame: person
+    mappings:
+      - source_role: machine_entity
+        target_role: person
+      - source_role: functional_status
+        target_role: health_of_person
+    examples:
+      - You turn me on.
+      - I've got my motor runnin', baby.
+      - Turn my crank, baby.
+    related:
+      - PEOPLE_ARE_BATTERIES
+  - name: PEOPLE_ARE_BATTERIES
+    type: Composed/complex
+    source_frame: battery
+    target_frame: person
+    mappings:
+      - source_role: entity
+        target_role: person
+      - source_role: charge_level
+        target_role: health_of_person
+    examples:
+      - I'm all charged up and full of energy.
+      - She was energized by the applause.
+      - He got a charge out of it.
+      - I need a jump start on Monday mornings.
+    related:
+      - BODY_IS_A_CONTAINER_FOR_EMOTIONS
+  - name: SEXUALITY_IS_AN_OFFENSIVE_WEAPON
+    type: Composed/complex
+    source_frame: personal-weapon
+    target_frame: sexuality
+    mappings:
+      - source_role: weapon_whole
+        target_role: sexuality
+      - source_role: weapon_user
+        target_role: sexuality_feeler
+    examples:
+      - He's a pistol.
+  - name: STRONG_EMOTION_IS_BLINDING
+    type: Entailed
+    source_frame: seeing
+    target_frame: emotion
+    families:
+      - Emotion metaphors
+      - Mind metaphors
+    mappings:
+      - source_role: seer
+        target_role: experiencer
+      - source_role: eyes
+        target_role: mind
+    examples:
+      - He was blinded by love.
+      - She was so angry she couldn't see straight.
+      - My outlook was clouded with grief.
+      - They were dazzled with excitement.
+    related:
+      - KNOWING_IS_SEEING
+  - name: STRONG_EMOTIONS_ARE_MADNESS
+    type: Composed/complex
+    source_frame: insanity
+    target_frame: emotion
+    families:
+      - Emotion metaphors
+    mappings:
+      - source_role: insane_person
+        target_role: experiencer
+      - source_role: insanity
+        target_role: emotion
+      - source_role: agitation_level
+        target_role: emotion_level
+      - source_role: agitation_limit
+        target_role: emotion_limit
+      - source_role: insane_behavior
+        target_role: emotional_action
+      - source_role: cause_of_insanity
+        target_role: cause_of_emotion
+    examples:
+      - I'm crazy with hate.
+      - He's out of his mind with grief.
+      - The excitement is driving me over the edge.
+      - She's foaming with rage.
+      - I'm mad with jealousy.
+    related:
+      - ANGER_IS_INSANITY
+      - LOVE_IS_MADNESS
+      - LUST_IS_MADNESS
+  - name: NON_EVALUATIVE_COMPARISON_OF_PROPERTIES_IS_COMPARISON_OF_POSSESSIONS
+    source_frame: possession
+    target_frame: differences-in-state
+    mappings:
+      - source_role: possessor
+        target_role: state_holder
+      - source_role: possession
+        target_role: state_type
+      - source_role: possess_relation_status
+        target_role: difference
+    examples:
+      - The hostess with the most-ess.
+      - He has less compassion than anyone I know.
+      - She used to have more of a sense of humor.
+    related:
+      - ATTRIBUTES_ARE_POSSESSIONS
+  - name: ACTING_COMPULSIVELY_IS_INGESTING_A_SUBSTANCE_COMPULSIVELY
+    type: Primary
+    source_frame: ingestion
+    target_frame: compulsion
+    families:
+      - Grady primary metaphors
+    mappings:
+      - source_role: ingestor
+        target_role: compelled_person
+      - source_role: ingestibles
+        target_role: compulsive_behavior
+      - source_role: ingestion_process
+        target_role: compulsion_x_schema
+    examples:
+      - addicted to gambling
+      - work-aholic
+  - name: ACTIVE_IS_ALIVE
+    type: Primary
+    source_frame: living
+    target_frame: activity
+    families:
+      - Grady primary metaphors
+    mappings:
+      - source_role: living_protagonist
+        target_role: activity_self
+    examples:
+      - The party was really alive.
+      - The club seems dead tonight.
+  - name: CAUSAL_PRECEDENCE_IS_TEMPORAL_PRECEDENCE
+    type: Primary
+    source_frame: time
+    target_frame: causation
+    families:
+      - Grady primary metaphors
+    examples:
+      - If she kicks me then I'll kick her.
+      - He's popular, hence he's always busy.
+      - Since she insulted him he felt bad.
+      - Water has to be at 212 before it boils.
+  - name: CAUSATION_IS_COMMERCIAL_TRANSACTION
+    type: Composed/complex
+    source_frame: commercial-transaction
+    target_frame: causation
+    mappings:
+      - source_role: buyer
+        target_role: causer
+      - source_role: seller
+        target_role: affected
+      - source_role: money
+        target_role: effect
+      - source_role: transaction_x_schema
+        target_role: causal_process
+    examples:
+      - He profited from experience.
+      - He paid with his life for his mistake.
+      - I was well paid for my efforts with their gratitude.
+      - I bought myself some time through delaying tactics.
+      - The wind robbed him of an official land speed record.
+      - Reckless skiing cost her a leg.
+    related:
+      - WELL_BEING_IS_WEALTH
+  - name: CAUSATION_IS_CONTROL_OVER_AN_OBJECT_RELATIVE_TO_A_POSSESSOR
+    type: Composed/complex
+    source_frame: control
+    target_frame: causation
+    families:
+      - Object event structure metaphors
+    mappings:
+      - source_role: controlling_entity
+        target_role: causer
+      - source_role: dependent_entity
+        target_role: affected
+      - source_role: ability_to_control
+        target_role: effect
+    examples:
+      - Years of abuse took away her ready smile.
+      - The years in prison robbed him of his youth.
+      - What is the source of your anger?
+      - Can you trace my symptoms back to any sort of cause?
+    related:
+      - CAUSATION_IS_OBJECT_TRANSFER
+  - name: CHANGE_IS_REPLACEMENT
+    type: Composed/complex
+    source_frame: replacement
+    target_frame: change-of-state
+    families:
+      - Object event structure metaphors
+    mappings:
+      - source_role: old_entity
+        target_role: initial_state
+      - source_role: new_entity
+        target_role: final_state
+    examples:
+      - After the experiment, the water was gone, and hydrogen and oxygen was in its place.
+      - Under hypnosis, the sweet old lady was replaced by a scheming criminal.
+      - The man I had known was gone, and in his place was an aging fool.
+      - The jell-o liquid had been replaced by a rubbery mass.
+    related:
+      - CHANGE_OF_STATE_IS_CHANGE_OF_POSSESSION
+  - name: COMPARING_AND_SEEKING_IS_SHOPPING
+    type: Composed/complex
+    source_frame: commercial-transaction
+    target_frame: decision-making
+    mappings:
+      - source_role: buyer
+        target_role: decision_maker
+      - source_role: goods
+        target_role: entity_under_consideration
+      - source_role: transaction_x_schema
+        target_role: decision_making_process
+    examples:
+      - I'm shopping for a better philosophy.
+      - You'd better shop around.
+    related:
+      - MAKING_A_DECISION_IS_WEIGHING
+  - name: COMPARISON_OF_PROPERTIES_IS_COMPARISON_OF_PHYSICAL_PROPERTIES
+    source_frame: physical-entity
+    target_frame: differences-in-state
+    mappings:
+      - source_role: physical_entity_whole
+        target_role: state_holder
+      - source_role: physical_properties
+        target_role: state_type
+    examples:
+      - You have to weigh the pros and cons.
+      - The scale just tipped in favor of my voting yes.
+      - She's a heavier smoker than she used to be.
+      - This class is bigger than that one.
+      - He's a bigger eater than she is.
+      - I have a smaller amount of money than he does.
+    related:
+      - DIFFERENCES_BETWEEN_STATES_IS_DISTANCES_BETWEEN_LOCATIONS
+      - DIFFERENCES_IN_SUCCESS_ARE_DISTANCES_BETWEEN_LOCATIONS
+      - DISPARITY_IS_CHANGE
+      - EVALUATIVE_COMPARISON_OF_A_AND_B_IN_A_STATIC_SITUATION_IS_DETERMINED_BY_THE_VERTICAL_DISTANCE_BETWEEN_A_AND_B
+  - name: COMPETITION_IS_1_ON_1_PHYSICAL_AGGRESSION
+    type: Composed/complex
+    source_frame: physical-combat
+    target_frame: competition
+    mappings:
+      - source_role: fighter1
+        target_role: competition_competitor1
+      - source_role: fighter2
+        target_role: competition_competitor2
+      - source_role: outcome
+        target_role: competition_outcome
+      - source_role: physical_interaction_x_schema
+        target_role: competition_x_schema
+    examples:
+      - He clobbered me at tennis.
+      - I beat him at chess.
+      - She kicked butt at the audition.
+      - She whipped him at handball.
+      - They really murdered the other team.
+      - Losing the contest was a real black eye for her.
+      - Those swim teams have been slugging it out all season.
+    related:
+      - COMPETITION_IS_A_RACE
+      - COMPETITION_IS_WAR
+      - SPORTS_ARE_PHYSICAL_COMBAT
+  - name: COMPETITION_IS_WAR
+    type: Composed/complex
+    source_frame: war
+    target_frame: competition
+    mappings:
+      - source_role: side_1
+        target_role: competition_competitor1
+      - source_role: side_2
+        target_role: competition_competitor2
+      - source_role: victory
+        target_role: competition_outcome
+      - source_role: fighting
+        target_role: competition_x_schema
+    examples:
+      - The debate team brought out their big guns.
+      - The other team sent in the cavalry against us.
+      - We took over the ball deep in their territory.
+      - They battled each other over the chess board every week.
+    related:
+      - COMPETITION_IS_1_ON_1_PHYSICAL_AGGRESSION
+      - COMPETITION_IS_A_RACE
+  - name: CREATING_IS_BIRTHING
+    type: Primary
+    source_frame: birth
+    target_frame: creating
+    families:
+      - Primary metaphors
+    mappings:
+      - source_role: birth_protagonist
+        target_role: created_entity
+      - source_role: birth_state
+        target_role: created_state
+      - source_role: birth_x_schema
+        target_role: creating_x_schema
+    examples:
+      - This solution actually gives birth to a lot of new problems.
+    related:
+      - CREATING_IS_GIVING_AN_OBJECT
+      - CREATING_IS_MAKING
+      - CREATION_IS_CULTIVATION
+  - name: CREATING_IS_GIVING_AN_OBJECT
+    type: Composed/complex
+    source_frame: transfer-scenario
+    target_frame: creating
+    families:
+      - Object event structure metaphors
+    mappings:
+      - source_role: transferor
+        target_role: creator
+      - source_role: transfer_recipient
+        target_role: created_entity
+    examples:
+      - He gave the field of Engineering its very existence.
+    related:
+      - CAUSATION_IS_OBJECT_TRANSFER
+      - CREATING_IS_BIRTHING
+      - CREATING_IS_MAKING
+      - CREATION_IS_CULTIVATION
+      - EXISTENCE_IS_AN_OBJECT
+  - name: CREATION_IS_CULTIVATION
+    type: Composed/complex
+    source_frame: cultivation
+    target_frame: creating
+    mappings:
+      - source_role: cultivator
+        target_role: creator
+      - source_role: cultivatee
+        target_role: created_entity
+    examples:
+      - He planted seeds of doubt in my mind.
+      - Money is the root of all evil.
+      - Jealousy is an off-shoot of ambition.
+      - China is a fertile ground for revolt.
+    related:
+      - CREATING_IS_BIRTHING
+      - CREATING_IS_GIVING_AN_OBJECT
+      - CREATING_IS_MAKING
+  - name: DIFFICULTIES_ARE_CONTAINERS
+    type: Primary
+    source_frame: containment
+    target_frame: difficulties-in-action
+    mappings:
+      - source_role: container
+        target_role: difficulty
+      - source_role: exterior
+        target_role: objective
+    examples:
+      - How did I get myself into this situation?
+      - How do we get out of this situation?
+      - We're in a mess.
+      - We're in hot water.
+      - We're in a lot of trouble now.
+      - He's in it up to his neck.
+    related:
+      - DIFFICULTIES_ARE_IMPEDIMENTS_TO_MOVEMENT
+      - DIFFICULTY_IS_PHYSICAL_STRUGGLE
+  - name: DISPARITY_IS_CHANGE
+    type: Composed/complex
+    source_frame: change-of-state
+    target_frame: differences-in-state
+    mappings:
+      - source_role: experiencer
+        target_role: state_holder
+      - source_role: state
+        target_role: state_type
+      - source_role: standard
+        target_role: standard
+      - source_role: transition
+        target_role: difference
+    examples:
+      - The phone poles get taller as you approach the freeway.
+      - His girlfriends keep getting taller.
+      - The president changes every four years.
+    related:
+      - COMPARISON_OF_PROPERTIES_IS_COMPARISON_OF_PHYSICAL_PROPERTIES
+      - DIFFERENCES_BETWEEN_STATES_IS_DISTANCES_BETWEEN_LOCATIONS
+      - DIFFERENCES_IN_SUCCESS_ARE_DISTANCES_BETWEEN_LOCATIONS
+      - EVALUATIVE_COMPARISON_OF_A_AND_B_IN_A_STATIC_SITUATION_IS_DETERMINED_BY_THE_VERTICAL_DISTANCE_BETWEEN_A_AND_B
+  - name: EVALUATIVE_COMPARISON_OF_A_AND_B_IN_A_STATIC_SITUATION_IS_DETERMINED_BY_THE_VERTICAL_DISTANCE_BETWEEN_A_AND_B
+    source_frame: verticality
+    target_frame: differences-in-state
+    mappings:
+      - source_role: vertical_entity
+        target_role: state_holder
+      - source_role: scalar_position
+        target_role: difference
+      - source_role: verticality_scale
+        target_role: state_type
+    examples:
+      - Joe is above Bill in intelligence.
+      - He thinks he is above us.
+      - We're not at his level.
+      - He ranks above me.
+      - Spinach ranks higher than lettuce in greenness.
+      - He's at the bottom of the list.
+      - He's the top of the heap.
+    related:
+      - COMPARISON_OF_PROPERTIES_IS_COMPARISON_OF_PHYSICAL_PROPERTIES
+      - DISPARITY_IS_CHANGE
+      - HIGH_STATUS_IS_UP
+      - MORE_IS_UP
+  - name: EXISTENCE_IS_AN_OBJECT
+    type: Primary
+    source_frame: object
+    target_frame: existence
+    families:
+      - Ontological metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: object_entity
+        target_role: entity
+    examples:
+      - I want control over my own existence.
+    related:
+      - EMOTIONS_ARE_OBJECTS
+      - EVENTS_ARE_OBJECTS
+      - EXISTENCE_IS_HAVING_A_FORM
+      - IDEAS_ARE_OBJECTS
+  - name: EXISTENCE_IS_HAVING_A_FORM
+    type: Primary
+    source_frame: physical-attributes
+    target_frame: existence
+    families:
+      - Grady primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: entity
+    examples:
+      - Things materialized.
+    related:
+      - EXISTENCE_IS_AN_OBJECT
+      - EXISTENCE_IS_VISIBILITY
+      - EXISTING_IS_BEING_PHYSICALLY_AT_THIS_LOCATION
+  - name: EXISTENCE_IS_LIFE
+    type: Primary
+    source_frame: life
+    target_frame: existence
+    families:
+      - Grady primary metaphors
+    mappings:
+      - source_role: life_liver
+        target_role: entity
+    examples:
+      - That was the birth/death of my interest.
+      - That killed their play-off hopes.
+      - Is the Social Security program healthy, or is it terminally ill?
+    related:
+      - EXISTENCE_IS_VISIBILITY
+      - EXISTING_IS_BEING_PHYSICALLY_AT_THIS_LOCATION
+  - name: EXTERNAL_CONDITIONS_ARE_CLIMATE
+    type: Primary
+    source_frame: weather
+    target_frame: difficulties-in-action
+    families:
+      - Grady primary metaphors
+    mappings:
+      - source_role: weather
+        target_role: difficulty
+      - source_role: experiencer
+        target_role: actor
+    examples:
+      - It rained on my parade.
+      - We can weather this storm.
+      - There were dark clouds on the horizon.
+      - An ill-wind blows no good.
+    related:
+      - CIRCUMSTANCES_ARE_WEATHER
+  - name: EXTERNAL_EVENTS_AFFECTING_PROGRESS_ARE_FORCES_AFFECTING_FORWARD_MOTION
+    type: Composed/complex
+    source_frame: motion-affecting-forces
+    target_frame: motion-affecting-external-factors
+    mappings:
+      - source_role: affected_motion
+        target_role: affected_motion
+      - source_role: force
+        target_role: impediment
+      - source_role: mover
+        target_role: mover
+    examples:
+      - He was blown about by the winds of war.
+      - Everything's going my way.
+      - Things are going against me.
+    related:
+      - INTERACTION_BETWEEN_PROGRESS_AND_EXTERNAL_EVENTS_AFFECTING_PROGRESS_IS_INTERACTION_BETWEEN_TWO_MOVING_INDIVIDUALS
+  - name: FAILURE_IS_DEATH
+    type: Primary
+    source_frame: death
+    target_frame: failure
+    mappings:
+      - source_role: cause_of_death
+        target_role: cause_of_failure
+      - source_role: dead_state
+        target_role: failed_state
+      - source_role: death_protagonist
+        target_role: failure_protagonist
+      - source_role: death_x_schema
+        target_role: failure_x_schema
+    examples:
+      - He died on that test.
+      - That question is the one that killed her.
+    related:
+      - EXISTENCE_IS_LIFE
+  - name: HARM_IS_CAUSING_FUNCTIONAL_OBJECTS_TO_BE_NONFUNCTIONAL
+    type: Composed/complex
+    source_frame: functionality
+    target_frame: harm
+    mappings:
+      - source_role: functional_entity
+        target_role: harmed_entity
+      - source_role: functional_status
+        target_role: effect_of_harm
+    examples:
+      - He crushed the rebellion.
+      - She wrecked our marriage.
+      - He threw a monkey wrench into our plans.
+      - She keeps gumming up the works.
+    related:
+      - HARM_IS_PHYSICAL_INJURY
+  - name: HARM_IS_HAVING_A_HARMFUL_POSSESSION
+    type: Composed/complex
+    source_frame: possession
+    target_frame: harm
+    mappings:
+      - source_role: possessor
+        target_role: harmed_entity
+      - source_role: possession
+        target_role: effect_of_harm
+      - source_role: possess_relation_x_schema
+        target_role: harmful_process
+    examples:
+      - I have the worst luck.
+      - The noise gave him a headache.
+      - The accident gave her whiplash.
+      - My car gave me a lot of trouble yesterday.
+    related:
+      - EXPERIENCING_A_STATE_IS_POSSESSING_AN_OBJECT
+      - HARM_IS_PHYSICAL_INJURY
+  - name: HARM_IS_LACKING_A_NEEDED_POSSESSION
+    type: Composed/complex
+    source_frame: possession
+    target_frame: harm
+    mappings:
+      - source_role: possessor
+        target_role: harmed_entity
+      - source_role: possess_relation_status
+        target_role: consequence_of_harm
+    examples:
+      - If you don't have your health, what have you got?
+      - The accident took my health.
+      - I lost my job.
+      - His mistake cost me my job.
+    related:
+      - EXPERIENCING_A_STATE_IS_POSSESSING_AN_OBJECT
+      - HARM_IS_PHYSICAL_INJURY
+  - name: HARM_IS_PREVENTING_FORWARD_MOTION_TOWARD_A_GOAL
+    type: Composed/complex
+    source_frame: affected-motion
+    target_frame: harm
+    mappings:
+      - source_role: cause
+        target_role: cause
+      - source_role: mover
+        target_role: harmed_entity
+      - source_role: motion
+        target_role: harmful_process
+    examples:
+      - I got distracted from my goal.
+      - He would have made it to the pinnacle of his career if he hadn't strayed off the path.
+      - Her accident was an enormous setback to her career.
+    related:
+      - DIFFICULTIES_ARE_IMPEDIMENTS_TO_MOVEMENT
+      - DIFFICULTIES_IN_ACTION_ARE_PHYSICAL_BURDENS
+      - HARM_IS_PHYSICAL_INJURY
+  - name: HARMING_IS_LOWERING
+    type: Primary
+    source_frame: verticality
+    target_frame: harm
+    families:
+      - Orientational metaphors
+      - Well-being metaphors
+    mappings:
+      - source_role: vertical_entity
+        target_role: harmed_entity
+      - source_role: scalar_position
+        target_role: effect_of_harm
+    examples:
+      - That was a demeaning comment.
+      - I won't do that -- it's degrading!
+      - He debased himself.
+    related:
+      - FUNCTIONALITY_IS_VERTICALITY
+      - HARM_IS_PHYSICAL_INJURY
+  - name: INTERACTION_BETWEEN_PROGRESS_AND_EXTERNAL_EVENTS_AFFECTING_PROGRESS_IS_INTERACTION_BETWEEN_TWO_MOVING_INDIVIDUALS
+    type: Composed/complex
+    source_frame: force-dynamic-interaction
+    target_frame: motion-affecting-external-factors
+    mappings:
+      - source_role: force_receiver
+        target_role: mover
+      - source_role: f_d_interaction_x_schema
+        target_role: affected_motion
+    examples:
+      - I'm just along for the ride.
+      - I like to be in the driver's seat.
+      - Keep a tight rein on what's going on.
+    related:
+      - EXTERNAL_EVENTS_AFFECTING_PROGRESS_ARE_FORCES_AFFECTING_FORWARD_MOTION
+  - name: KNOWLEDGE_OF_PAST_EVENTS_IS_AN_EXTERNAL_EVENT_EXERTING_FORCE_ON_PRESENT_EVENTS
+    type: Composed/complex
+    source_frame: confinement
+    target_frame: time
+    families:
+      - Time metaphors
+    mappings:
+      - source_role: area_of_confinement
+        target_role: past_time
+    examples:
+      - I am bound to repeat my mistakes.
+      - The chains of my past...
+      - He's trapped in his past.
+      - He is imprisoned by his past.
+    related:
+      - TIME_PERIODS_ARE_CONTAINERS
+  - name: NECESSARY_PREREQUISITE_FOR_CHANGE_IS_SOURCE_OF_MOVING_ENTITY
+    type: Composed/complex
+    source_frame: motion-away-from-a-location
+    target_frame: caused-change-of-state
+    families:
+      - Location event structure metaphors
+      - States are locations metaphors
+    mappings:
+      - source_role: source
+        target_role: cause
+      - source_role: mover
+        target_role: affected
+      - source_role: motion_x_schema
+        target_role: state_change
+    examples:
+      - He died from malaria.
+      - She was crying from hunger.
+      - He went back to polishing the silver out of a sense of duty.
+      - What's behind her slide into insanity?
+    related:
+      - CAUSATION_IS_FORCED_MOVEMENT
+  - name: PROPERTIES_ARE_CONTENTS
+    type: Primary
+    source_frame: contents
+    target_frame: physical-entity
+    examples:
+      - He doesn't have it in him to be polite to his in-laws.
+      - He lacks internal/intestinal fortitude.
+      - He has a great capacity for learning.
+    related:
+      - CONSTITUENTS_ARE_CONTENTS
+      - INFORMATION_IS_CONTENTS
+  - name: STATES_ARE_SHAPES
+    type: Composed/complex
+    source_frame: physical-attributes
+    target_frame: change-of-state
+    mappings:
+      - source_role: entity
+        target_role: experiencer
+      - source_role: value
+        target_role: state
+    examples:
+      - Shape up!
+      - She's a reformed criminal.
+      - His prison stay failed to reform him.
+    related:
+      - CAUSES_ARE_FORCES
+      - CONDITION_IS_SHAPE
+  - name: TIME_IS_A_CHANGER
+    type: Composed/complex
+    source_frame: caused-change-of-state
+    target_frame: time
+    families:
+      - Time metaphors
+    mappings:
+      - source_role: agent
+        target_role: time
+    examples:
+      - Time will make you forget.
+      - Time had made her look old.
+    related:
+      - TIME_IS_AN_ENTITY
+  - name: TIME_IS_A_LANDSCAPE_WE_MOVE_THROUGH
+    type: Composed/complex
+    source_frame: quality-of-landscape
+    target_frame: time
+    families:
+      - Time metaphors
+    mappings:
+      - source_role: landmark
+        target_role: future_time
+    examples:
+      - We're coming up on Xmas.
+      - Thanksgiving is looming on the horizon.
+      - He didn't make it to Tuesday.
+    related:
+      - TIME_IS_A_LANDSCAPE_THROUGH_WHICH_THE_OBSERVER_MOVES
+      - TIME_IS_A_MOVING_OBJECT
+      - TIME_IS_A_PURSUER
+  - name: TIME_IS_A_PURSUER
+    type: Composed/complex
+    source_frame: pursue
+    target_frame: time
+    families:
+      - Time metaphors
+    mappings:
+      - source_role: pursuer
+        target_role: time
+    examples:
+      - Time will catch up with him.
+    related:
+      - TIME_IS_A_LANDSCAPE_WE_MOVE_THROUGH
+  - name: BELIEFS_ARE_BEINGS_WITH_A_LIFE_CYCLE
+    type: Composed/complex
+    source_frame: life-cycle
+    target_frame: belief
+    mappings:
+      - source_role: life_liver
+        target_role: belief
+    examples:
+      - The belief lives on.
+      - That belief died out years ago.
+      - That belief was born of the early philosophers.
+  - name: BELIEFS_ARE_FASHIONS
+    type: Composed/complex
+    source_frame: fashion
+    target_frame: belief
+    mappings:
+      - source_role: fashion
+        target_role: belief
+      - source_role: adopter
+        target_role: believer
+    examples:
+      - A belief in materialism is passe/old-fashioned/out-moded/antiquated.
+  - name: BELIEFS_ARE_GUIDES
+    type: Composed/complex
+    source_frame: guided-motion
+    target_frame: belief
+    mappings:
+      - source_role: leader
+        target_role: belief
+      - source_role: follower
+        target_role: believer
+    examples:
+      - You are guided by beliefs.
+      - You are led by your beliefs.
+      - There are misleading beliefs.
+  - name: BELIEFS_ARE_LOVE_OBJECTS
+    type: Composed/complex
+    source_frame: romantic-relationship
+    target_frame: belief
+    mappings:
+      - source_role: relationship
+        target_role: belief_relation
+      - source_role: romantic_relationship_participants
+        target_role: believer
+    examples:
+      - He is wedded to a belief in his own infallability.
+      - That's a seductive belief.
+      - He has totally divorced himself from that belief.
+  - name: COHERENT_IS_ALIGNED
+    type: Primary
+    source_frame: alignment
+    target_frame: coherence
+    mappings:
+      - source_role: parts
+        target_role: parts
+      - source_role: degree_of_alignment
+        target_role: degree_of_coherence
+    examples:
+      - I can't get this fact to line up with what I already know.
+    related:
+      - COHERENT_IS_WHOLE
+      - SIMILARITY_IS_ALIGNMENT
+  - name: COHERENT_IS_WHOLE
+    type: Composed/complex
+    source_frame: part-whole
+    target_frame: coherence
+    mappings:
+      - source_role: whole
+        target_role: coherent_entity
+      - source_role: parts
+        target_role: parts
+    examples:
+      - Something is missing in that argument.
+      - I'm missing a piece of the puzzle.
+      - That story just doesn't hang together.
+    related:
+      - COHERENT_IS_ALIGNED
+      - MORALITY_IS_WHOLENESS
+  - name: COMMUNICATION_IS_LINGUISTIC_COMMUNICATION
+    type: Composed/complex
+    source_frame: speech-act
+    target_frame: communication
+    mappings:
+      - source_role: speaker
+        target_role: communicator
+      - source_role: addressee
+        target_role: addressee
+      - source_role: utterance
+        target_role: message
+    examples:
+      - A picture is worth a thousand words.
+      - He gave me a look that spoke volumes.
+      - Her eyes said yes.
+    related:
+      - COMMUNICATING_IS_SHOWING
+  - name: CONDUCTING_RESEARCH_IS_SOLVING_A_PUZZLE
+    type: Composed/complex
+    source_frame: solving-a-problem
+    target_frame: analysis
+    mappings:
+      - source_role: solver
+        target_role: analyzer
+      - source_role: problem
+        target_role: object_of_analysis
+      - source_role: problem_components
+        target_role: object_characteristics
+      - source_role: solving_method
+        target_role: analytic_method
+      - source_role: solution
+        target_role: analytic_conclusion
+    examples:
+      - He finally got the pieces to fall into place.
+      - One piece was still missing from the picture.
+    related:
+      - ANALYZING_IS_DISSECTING
+  - name: DANGEROUS_BELIEFS_ARE_CONTAGIOUS_DISEASES
+    type: Composed/complex
+    source_frame: disease
+    target_frame: belief
+    families:
+      - Disease metaphors
+    mappings:
+      - source_role: disease
+        target_role: belief
+      - source_role: patient
+        target_role: believer
+      - source_role: health_state
+        target_role: belief_relation_status
+    examples:
+      - an infectious idea
+      - the contagion of democratic ideas
+      - the children were infected with ideas about socialism
+      - we have to take extreme measures and amputate the gangrenous limb before it kills our nation
+    related:
+      - SOCIAL_PROBLEMS_ARE_DISEASES
+  - name: DIFFICULT_SUBJECTS_ARE_ADVERSARIES
+    type: Composed/complex
+    source_frame: competition
+    target_frame: curriculum
+    families:
+      - Education metaphors
+    mappings:
+      - source_role: competition_competitor1
+        target_role: curriculum_learner
+      - source_role: competition_competitor2
+        target_role: curriculum_subject
+    examples:
+      - Math 250 was a killer course.
+      - That course was brutal, but I survived.
+      - I thought it was a tame course, but it turned into a bear.
+    related:
+      - EVALUATION_OF_EDUCATION_IS_COMPETITION
+  - name: IDEAS_ARE_FASHIONS
+    type: Composed/complex
+    source_frame: fashion
+    target_frame: idea
+    mappings:
+      - source_role: fashion
+        target_role: idea_self
+      - source_role: adopter
+        target_role: idea_cognizer
+    examples:
+      - That's a pretty outmoded idea.
+  - name: IDEAS_ARE_LIGHT_SOURCES
+    source_frame: light-source
+    target_frame: idea
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: light_source
+        target_role: idea_self
+    examples:
+      - What a bright idea!
+      - That idea really illuminates the problem.
+    related:
+      - AID_TO_KNOWING_IS_A_LIGHT_SOURCE
+  - name: IDEAS_ARE_PERCEPTIONS
+    type: Primary
+    source_frame: perception
+    target_frame: idea
+    families:
+      - Mind metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: perceiver
+        target_role: idea_cognizer
+      - source_role: perceived_thing
+        target_role: idea_self
+    examples:
+      - Let's take a closer look at that proposal.
+      - He puts my ideas under a microscope.
+      - She examined it closely.
+      - He wanted to see all sides of the issue.
+    related:
+      - IDEAS_ARE_OBJECTS
+      - KNOWING_IS_PERCEIVING
+      - THINKING_IS_PERCEIVING
+  - name: IDEAS_ARE_RESOURCES
+    type: Primary
+    source_frame: resource
+    target_frame: idea
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: resource
+        target_role: idea_self
+      - source_role: resource_user
+        target_role: idea_cognizer
+    examples:
+      - I'm out of ideas.
+    related:
+      - KNOWLEDGE_IS_A_RESOURCE
+  - name: INTELLIGENCE_IDEA_IS_A_CUTTING_INSTRUMENT
+    type: Composed/complex
+    source_frame: cut
+    target_frame: idea
+    mappings:
+      - source_role: cutting_tool
+        target_role: idea_self
+      - source_role: cutter
+        target_role: idea_cognizer
+    examples:
+      - He is very incisive.
+      - He always cuts to the heart of the problem.
+      - She's really sharp.
+      - He used extensive reading to hone his intellect.
+  - name: LEARNING_IS_TAKING_IN
+    type: Primary
+    source_frame: ingestion
+    target_frame: learning
+    families:
+      - Mind metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: ingestor
+        target_role: learner
+      - source_role: ingestibles
+        target_role: learned_material
+      - source_role: ingestion_process
+        target_role: learning_x_schema
+    examples:
+      - I took in everything I was told
+      - I soaked in everything the teacher said.
+      - He has a mind like a sponge.
+      - He has a thirst for knowledge.
+      - He's a good lecturer; I just drink in the information.
+    related:
+      - COGNIZING_IS_EATING
+      - IDEAS_ARE_FOOD
+      - LEARNING_IS_ACQUIRING
+      - LEARNING_IS_GETTING_NUTRITIOUS_FOOD
+  - name: LOGICAL_RELATIONS_ARE_CAUSAL_RELATIONS
+    type: Composed/complex
+    source_frame: causation
+    target_frame: logical-structure
+    mappings:
+      - source_role: cause
+        target_role: structural_elements
+      - source_role: effect
+        target_role: logical_structure_whole
+    examples:
+      - Because all men are mortal, Socrates is mortal.
+      - Socrates' mortality is a result of the mortality of all men.
+      - The mortality of all men makes Socrates mortal.
+      - His reasoning forced me to a conclusion I didn't like.
+      - Your premises aren't going to allow you to reach the correct solution.
+      - Once you get your assumptions right, the solution falls out.
+      - What kind of answer is going to come out of these premises?
+      - His conclusion sprang from faulty premises.
+    related:
+      - LOGICAL_STRUCTURES_ARE_ERECT_COMPLEX_STRUCTURES
+  - name: MENTAL_FITNESS_IS_PHYSICAL_FITNESS
+    type: Entailed
+    source_frame: health
+    target_frame: cognizing
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: entity_possessing_health
+        target_role: cognizer
+      - source_role: degree_of_health
+        target_role: mental_capacity
+    examples:
+      - His mind is strong and supple.
+      - His mind is decaying.
+      - The famous professor could perform astonishing mental feats.
+      - The textbook contained many exercises for the students to practise on in order to get them in shape for the final.
+      - They practise drills all day long.
+      - You have to go through long years of academic training in order to become strong in your field.
+      - In the summer, the mind tends to go flabby.
+    related:
+      - COGNIZING_IS_BODILY_FUNCTIONING
+      - MIND_IS_A_BODY
+  - name: PERCEPTION_IS_RECEPTION
+    type: Primary
+    source_frame: gain-possession
+    target_frame: perception
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: recipient
+        target_role: perceiver
+      - source_role: possessable_object
+        target_role: perceived_thing
+      - source_role: getting_x_schema
+        target_role: perception_x_schema
+    examples:
+      - The sight knocked me over.
+      - The smell hit my nose.
+      - The smell made its way to him.
+      - When the sound of the baby crying reached his ears, he relaxed.
+  - name: PERCEPTION_IS_SHAPE_RECOGNITION
+    source_frame: object
+    target_frame: perception
+    families:
+      - Mind metaphors
+      - Ontological metaphors
+    mappings:
+      - source_role: object_entity
+        target_role: perceived_thing
+    examples:
+      - I can't figure him out
+      - I sized him up
+      - She's a well-known political figure
+  - name: RATIONAL_IS_UP
+    type: Primary
+    source_frame: verticality
+    target_frame: cognizing
+    families:
+      - Mind metaphors
+      - Orientational metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: vertical_entity
+        target_role: cognizer
+      - source_role: scalar_position
+        target_role: mental_capacity
+    examples:
+      - The discussion fell to the emotional level, but I raised it back up to the rational plane.
+      - high-level intellectual discussion
+      - He couldn't rise above his emotions.
+    related:
+      - CONSCIOUSNESS_IS_VERTICALITY
+  - name: RECEIVING_SERIOUS_THOUGHT_IS_BEING_ON_THE_MIND
+    type: Composed/complex
+    source_frame: accounting
+    target_frame: thinking-about
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: account_holder
+        target_role: thinker
+      - source_role: ledger_item
+        target_role: thinking_content
+    examples:
+      - It seems something is on your mind.
+      - What's on your mind?
+      - Can't get it off my mind.
+  - name: SUBJECTS_ARE_AREAS
+    source_frame: region
+    target_frame: curriculum
+    families:
+      - Education metaphors
+    mappings:
+      - source_role: locations
+        target_role: curriculum_subject
+      - source_role: background
+        target_role: curriculum_content
+    examples:
+      - He is working in many areas.
+      - This is a fertile area for research.
+    related:
+      - CURRICULUM_IS_BOUNDED_REGION
+  - name: THEORETICAL_DEBATE_IS_COMPETITION
+    type: Composed/complex
+    source_frame: competition
+    target_frame: theory
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: competition_competitor1
+        target_role: theoretical_domain
+      - source_role: competition_x_schema
+        target_role: theoretical_process
+    examples:
+      - One theory emerged victorious over the other.
+      - The newer theory won out in the end.
+      - Evolution is the leading biological theory.
+    related:
+      - ARGUMENT_IS_WAR
+  - name: THEORIES_ARE_BEINGS_WITH_LIFE_CYCLES
+    type: Composed/complex
+    source_frame: life-cycle
+    target_frame: theory
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: life_liver
+        target_role: theoretical_domain
+      - source_role: developmental_stages
+        target_role: theoretical_process
+    examples:
+      - The theory died out.
+      - This theory has been alive a long time.
+      - A new theory was given birth.
+      - This theory is withering on the vine.
+      - The theory was nourished by later experimental results.
+  - name: THEORIES_ARE_CLOTH
+    type: Composed/complex
+    source_frame: textile
+    target_frame: theory
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: textile_whole
+        target_role: theoretical_domain
+      - source_role: fibers
+        target_role: theory_supporting_evidence
+    examples:
+      - A finely woven theory.
+      - The very fabric of the theory.
+      - The theory fell apart at the seams.
+      - The theory seems tailor-made for our data.
+      - There aren't enough facts to hang that theory on.
+    related:
+      - THEORIES_ARE_COVERS_FOR_THE_FACTS
+  - name: THEORIES_ARE_CONSTRUCTED_OBJECTS
+    type: Composed/complex
+    source_frame: object-construction
+    target_frame: theory
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: object_whole
+        target_role: theoretical_domain
+      - source_role: objects
+        target_role: theoretical_arguments
+      - source_role: construction_act
+        target_role: theoretical_process
+    examples:
+      - They assembled a theory.
+      - One piece of the theory doesn't fit.
+      - The theory broke down.
+      - The well-oiled machinery of his theory.
+      - They constructed this theory from the ground up.
+    related:
+      - THEORIES_ARE_BUILDINGS
+      - THEORIES_ARE_COMPLEX_STRUCTURES
+  - name: THEORIES_ARE_COVERS_FOR_THE_FACTS
+    type: Composed/complex
+    source_frame: visual-obstruction
+    target_frame: theory
+    families:
+      - Mind metaphors
+    mappings:
+      - source_role: obstructing_object
+        target_role: theoretical_domain
+      - source_role: focal_object
+        target_role: theory_supporting_evidence
+      - source_role: unobstructed_elements_of_focal_object
+        target_role: theoretical_question
+    examples:
+      - The theory was expanded to cover more data.
+      - That theory covers a lot of territory.
+      - There was a hole in the theory; it failed to cover all the facts.
+      - The theory is closely tied to the facts.
+    related:
+      - THEORIES_ARE_CLOTH
+  - name: A_PROBLEM_IS_A_LOCKED_CONTAINER_FOR_ITS_SOLUTION
+    type: Composed/complex
+    source_frame: containment
+    target_frame: problem
+    mappings:
+      - source_role: container
+        target_role: problem
+      - source_role: interior
+        target_role: solution
+    examples:
+      - We have to look deeply into this problem for its solution.
+      - The detective set out to crack the case.
+      - He finally found the key to the problem.
+      - The truth finally came out.
+    related:
+      - A_PROBLEM_IS_A_REGION_IN_A_LANDSCAPE
+  - name: A_PROBLEM_IS_A_REGION_IN_A_LANDSCAPE
+    type: Composed/complex
+    source_frame: being-at-a-location
+    target_frame: problem
+    mappings:
+      - source_role: locale
+        target_role: problem
+      - source_role: landmark
+        target_role: solution
+      - source_role: experiencer
+        target_role: experiencer
+    examples:
+      - We've got to explore this problem.
+      - Let's map out the problem before we do anything else.
+      - The solution still lies far ahead.
+      - Let's not leave any stone unturned.
+      - This problem has a buried solution.
+      - He unearthed the answer.
+    related:
+      - A_PROBLEM_IS_A_BODY_OF_WATER
+      - A_PROBLEM_IS_A_LOCKED_CONTAINER_FOR_ITS_SOLUTION
+      - IDEAS_ARE_LOCATIONS
+      - THINKING_IS_MOVING
+  - name: ASPECTS_OF_THE_SELF_ARE_DISTINCT_INDIVIDUALS
+    type: Composed/complex
+    source_frame: person
+    target_frame: part-whole
+    families:
+      - Ontological metaphors
+    mappings:
+      - source_role: person
+        target_role: parts
+    examples:
+      - He's at war with himself over the decision whether to move.
+      - He talked himself into it.
+      - He finally got a grip on himself.
+      - His scientific self is at odds with his artistic side.
+  - name: COMPLIENCE_IS_FOLLOWING
+    type: Composed/complex
+    source_frame: pursue
+    target_frame: compliance
+    mappings:
+      - source_role: pursuer
+        target_role: complier
+      - source_role: pursued
+        target_role: requirement
+    examples:
+      - He went along with what he was told to do.
+      - He followed his orders.
+  - name: COMPLIENCE_IS_TIGHTNESS
+    type: Composed/complex
+    source_frame: tight-fit
+    target_frame: compliance
+    mappings:
+      - source_role: tightness_level
+        target_role: compliance_level
+    examples:
+      - He runs a tight ship.
+  - name: DARKNESS_IS_A_COVER
+    type: Composed/complex
+    source_frame: visual-obstruction
+    target_frame: darkness
+    mappings:
+      - source_role: obstructing_object
+        target_role: entity
+    examples:
+      - Under cover of darkness.
+      - He was enveloped in darkness.
+  - name: DARKNESS_IS_A_SOLID
+    type: Primary
+    source_frame: firm
+    target_frame: darkness
+    families:
+      - Primary metaphors
+    mappings:
+      - source_role: firm_entity
+        target_role: entity
+    examples:
+      - The darkness was palpable.
+      - We had to feel our way through the darkness.
+      - The light shone through the darkness.
+      - Darkness pressed in on all sides.
+      - Darkness closed in on us.
+  - name: EFFECTS_OF_HUMOR_ARE_INJURIES
+    type: Composed/complex
+    source_frame: harm-to-living-entity
+    target_frame: humor
+    mappings:
+      - source_role: agent
+        target_role: humor_source
+      - source_role: victim
+        target_role: affected_party
+      - source_role: harm_result
+        target_role: effect_of_humor
+    examples:
+      - The comedian knocked them over.
+      - She hit them with tremendous one-liners.
+      - The performance killed them.
+      - That joke really slayed me.
+      - She nearly died of laughter.
+      - Stop telling those jokes, you're killing me.
+  - name: EXTERNAL_APPEARANCE_IS_A_COVER
+    type: Composed/complex
+    source_frame: visual-obstruction
+    target_frame: visual-evaluation
+    mappings:
+      - source_role: obstructing_object
+        target_role: visible_properties
+      - source_role: focal_object
+        target_role: evaluee
+      - source_role: seer
+        target_role: evaluator
+      - source_role: unobstructed_elements_of_focal_object
+        target_role: visible_part_of_evaluee
+    examples:
+      - The crisis stripped away our veneer of sophistication.
+      - We donned an appearance of nonchalance.
+      - Wipe that smile off your face.
+      - Put on a happy face.
+      - His look of amusement was slipping from his face.
+      - A grimace materialized for no apparent reason, but it melted away before she arrived.
+      - She wore a deceitful mask of gaiety, which hid her true state.
+      - He donned an awkward posture.
+  - name: FORCE_IS_A_SUBSTANCE_CONTAINED_IN_AFFECTING_CAUSES
+    type: Primary
+    source_frame: substance
+    target_frame: force
+    families:
+      - Ontological metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: substance
+        target_role: force
+      - source_role: amount_of_substance
+        target_role: force_amount
+    examples:
+      - Put more force into your punches.
+      - He said some forceful words.
+      - His punches carry a lot of force.
+      - Each sentence contained the force of an order.
+      - Her death hit us with a lot of force.
+      - The force of the blow knocked me over.
+      - The force added to the swing was enough to send the ball over the fence.
+    related:
+      - CAUSES_ARE_FORCES
+      - FORCE_IS_A_SUBSTANCE_DIRECTED_AT_AN_AFFECTED_PARTY
+  - name: FORCE_IS_A_SUBSTANCE_DIRECTED_AT_AN_AFFECTED_PARTY
+    type: Primary
+    source_frame: substance
+    target_frame: force
+    families:
+      - Ontological metaphors
+      - Primary metaphors
+    mappings:
+      - source_role: substance
+        target_role: force
+      - source_role: amount_of_substance
+        target_role: force_amount
+    examples:
+      - Apply more force to the edge of the lid.
+      - Direct more force at the hinges.
+      - Focus force on the weak spots.
+      - It took a lot of force to open it.
+      - Use more force in driving the nail.
+      - Exert more force on the lock.
+      - Put more force behind your punches.
+      - Back up your punches with more force.
+    related:
+      - CAUSES_ARE_FORCES
+      - FORCE_IS_A_SUBSTANCE_CONTAINED_IN_AFFECTING_CAUSES
+  - name: FORM_IS_MOTION
+    type: Primary
+    source_frame: motion
+    target_frame: physical-attributes
+    families:
+      - Primary metaphors
+    mappings:
+      - source_role: mover
+        target_role: entity
+      - source_role: direction
+        target_role: value
+    examples:
+      - The roof slopes.
+      - The tower leans.
+      - The road bends.
+      - The roof slopes down before it drops off steeply.
+  - name: GOODNESS_IS_WHITE_BADNESS_IS_BLACK
+    type: Composed/complex
+    source_frame: lightness
+    target_frame: goodness
+    families:
+      - Primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: good_entity
+      - source_role: light_level
+        target_role: goodness
+    examples:
+      - White magic.
+      - Black magic.
+      - A black-hearted scoundrel.
+    related:
+      - EVIL_IS_DARK
+      - GOODNESS_IS_LIGHT
+  - name: INTOXICATION_IS_BECOMING_ELECTRIFIED
+    type: Primary
+    source_frame: energy
+    target_frame: intoxication
+    families:
+      - Primary metaphors
+    mappings:
+      - source_role: amount
+        target_role: intoxication_level
+    examples:
+      - He was wired.
+      - He was lit.
+      - '"It''s the electric waitress" (said about a waitress on LSD).'
+  - name: INTOXICATION_IS_GETTING_A_BURDEN
+    type: Composed/complex
+    source_frame: burden
+    target_frame: intoxication
+    mappings:
+      - source_role: burdened_entity
+        target_role: intoxicated_person
+      - source_role: weight_of_burden
+        target_role: intoxication_level
+    examples:
+      - She was loaded.
+      - She was tanked up.
+  - name: INTOXICATION_IS_GETTING_BURNED_COOKED
+    type: Primary
+    source_frame: heat
+    target_frame: intoxication
+    families:
+      - Primary metaphors
+    mappings:
+      - source_role: entity
+        target_role: intoxicated_person
+      - source_role: heat_level
+        target_role: intoxication_level
+    examples:
+      - They were baked.
+      - They were fried.
+      - They were toasted.
+      - They were stewed.
+  - name: INTOXICATION_IS_GETTING_DESTROYED
+    type: Composed/complex
+    source_frame: destroying
+    target_frame: intoxication
+    mappings:
+      - source_role: damaged_entity
+        target_role: intoxicated_person
+    examples:
+      - He is stoned.
+      - He is bombed.
+      - He got thrashed.
+      - He was wrecked.
+      - He was destroyed.
+      - He was blitzed.
+      - He was smashed.
+  - name: INVESTMENTS_ARE_CONTAINERS_FOR_MONEY
+    source_frame: resource-container
+    target_frame: investment
+    mappings:
+      - source_role: container
+        target_role: investment_market
+      - source_role: resource
+        target_role: invested_value
+    examples:
+      - Put your money in bonds.
+      - This is an airtight investment.
+  - name: LAUGHTER_IS_A_SUBSTANCE
+    type: Composed/complex
+    source_frame: substance
+    target_frame: laughter
+    mappings:
+      - source_role: substance
+        target_role: laughter
+      - source_role: container_for_substances
+        target_role: laugher
+      - source_role: size_of_amount_of_substance
+        target_role: degree_of_laughter
+    examples:
+      - He's full of laughs.
+      - She let out a big laugh.
+      - I cannot hold my laughter for much longer.
+      - It's hard not to laugh but try to keep it in.
+      - The audience was bursting with laughter.
+      - He exploded with laughter.
+      - He busted a gut laughing.
+      - I split my sides laughing.
+      - She had me in stitches.
+      - Laughter filled the room.
+      - The giggling was quite widespread in the classroom.
+    related:
+      - ANGER_IS_PRESSURE_IN_A_CONTAINER
+      - EMOTION_IS_PRESSURE_IN_A_CONTAINER
+  - name: LIGHT_IS_A_FLUID
+    type: Composed/complex
+    source_frame: liquid
+    target_frame: light-source
+    mappings:
+      - source_role: liquid
+        target_role: light_source
+    examples:
+      - Sunlight poured into the room.
+      - The stage was flooded with light.
+      - He soaked up some sun.
+      - Pools of light were scattered across the clearing.
+      - The clearing was splashed with light.
+      - He went sunbathing.
+      - Light was seeping in around the door of the darkroom.
+  - name: LIGHT_IS_A_LINE
+    source_frame: straight-path
+    target_frame: light-source
+    mappings:
+      - source_role: path
+        target_role: light_source
+    examples:
+      - Sunbeams
+      - rays of light
+      - The lamp throws a lot of light.
+      - Direct more light over here.
+  - name: MORALITY_IS_CLEANLINESS
+    type: Composed/complex
+    source_frame: cleanliness
+    target_frame: morality
+    families:
+      - Morality metaphors
+    mappings:
+      - source_role: clean_substance
+        target_role: moral_entity
+    examples:
+      - He's Mr. Clean.
+      - He has a clean past.
+      - His reputation is besmirched.
+      - He doesn't want to get his hands dirty.
+      - His record is spotless.
+  - name: OBLIGATIONS_ARE_CONTAINERS
+    type: Primary
+    source_frame: containment
+    target_frame: social-obligation
+    mappings:
+      - source_role: container
+        target_role: obligation
+    examples:
+      - Can you get out of doing the dishes?
+      - I can't get out of it, I'm locked into it.
+      - Try to get out of those commitments; don't let your boss box you in.
+      - There's no way out; I have to do it.
+      - He trapped her into going with her.
+      - Do you know what you're getting into?
+  - name: OBLIGATIONS_ARE_FORCES
+    type: Primary
+    source_frame: force
+    target_frame: social-obligation
+    families:
+      - Grady primary metaphors
+    examples:
+      - I was forced to do it.
+  - name: OBLIGATIONS_ARE_POSSESSIONS
+    type: Composed/complex
+    source_frame: possession
+    target_frame: social-obligation
+    families:
+      - Possession metaphors
+    mappings:
+      - source_role: possessor
+        target_role: obligation_holder
+      - source_role: possession
+        target_role: obligation
+    examples:
+      - I have a lot of responsibilities.
+      - It's out of my hands now.
+      - My hands are already full with just the work I have now.
+      - He's loaded with responsibilities.
+      - He handed out the responsibilities evenly to everyone in the office.
+      - It fell to me to inform her of the tragedy.
+      - They held him to his obligations.
+  - name: PEOPLE_BODIES_ARE_BUILDINGS
+    type: Composed/complex
+    source_frame: building
+    target_frame: body
+    mappings:
+      - source_role: building_whole
+        target_role: body_whole
+      - source_role: building_parts
+        target_role: body_parts
+    examples:
+      - There's not much going on upstairs.
+      - There's snow on the roof, but a fire in the furnace.
+      - Eyes are windows to the soul.
+      - Suck in those front porches.
+  - name: PERSONALITY_IS_MATERIAL
+    type: Composed/complex
+    source_frame: artifact
+    target_frame: personality
+    mappings:
+      - source_role: material
+        target_role: personality
+      - source_role: artifact_entity
+        target_role: person
+    examples:
+      - This will test his mettle.
+      - He has a heart of gold.
+    related:
+      - MORAL_CHARACTER_IS_THE_SUBSTANCE_AN_OBJECT_IS_MADE_OF
+  - name: POSSESSING_IS_HOLDING
+    type: Primary
+    source_frame: grasp
+    target_frame: possession
+    mappings:
+      - source_role: grasper
+        target_role: possessor
+      - source_role: held_entity
+        target_role: possession
+    examples:
+      - His stock holdings are nicely diversified.
+      - He keeps a tight grip on his valuable stocks.
+      - Even in bankruptcy he managed to hang onto his car collection.
+      - I've decided to drop some of my riskier stocks.
+      - I'm going to have to let go of some of my property holdings.
+      - LA won't release its hold on lucrative water rights.
+      - Bankruptcy can strip you of your stock holdings.
+      - I've handed over all of my property and land to my niece.
+  - name: PROBLEM_IS_A_CONSTRUCTED_OBJECT
+    type: Composed/complex
+    source_frame: object-construction
+    target_frame: problem
+    mappings:
+      - source_role: constructed_object
+        target_role: problem
+      - source_role: objects
+        target_role: problem_components
+    examples:
+      - Let's look at the make-up of this problem.
+      - Let's look at all the components of the problem.
+      - A lot of factors went into creating this problem.
+      - He took the problem apart piece by piece.
+      - He tore the problem apart looking for its solution.
+  - name: PROBLEM_IS_A_TANGLE
+    type: Composed/complex
+    source_frame: environmental-restraints
+    target_frame: problem
+    mappings:
+      - source_role: restraining_entity
+        target_role: problem
+    examples:
+      - A knotty problem.
+      - A tangled problem.
+      - He untangled the problem.
+      - He unraveled the problem.
+  - name: RELATIONSHIP_IS_KINSHIP
+    type: Composed/complex
+    source_frame: family
+    target_frame: physical-entity
+    examples:
+      - Death is the brother of sleep.
+      - Darkness is light's elder brother.
+      - Age is the mother of sickness.
+      - Filth is the mother of stench.
+  - name: RESPONSIBILITIES_ARE_POSSESSIONS
+    type: Composed/complex
+    source_frame: possession
+    target_frame: social-obligation
+    families:
+      - Possession metaphors
+    mappings:
+      - source_role: possessor
+        target_role: obligation_holder
+      - source_role: possession
+        target_role: obligation
+    examples:
+      - I was the one who got the blame.
+      - He took all the credit.
+      - The credit is all yours.
+      - The blame fell to me.
+      - I was given the credit for it.
+    related:
+      - RESPONSIBILITIES_ARE_BURDENS
+  - name: SHAPES_ARE_CONTAINERS
+    type: Primary
+    source_frame: containment
+    target_frame: physical-attributes
+    mappings:
+      - source_role: container
+        target_role: entity
+      - source_role: boundary
+        target_role: value
+    examples:
+      - The sketch was in the shape of a heart.
+      - It was a block of chocolate in the form of a cable car.
+  - name: TREATING_ILLNESS_IS_FIGHTING_A_WAR
+    type: Composed/complex
+    source_frame: war
+    target_frame: treating-a-physical-affliction
+    mappings:
+      - source_role: enemy_combatants
+        target_role: treated_affliction
+      - source_role: army
+        target_role: medical_professionals
+      - source_role: generals
+        target_role: treatment_provider
+      - source_role: weapons
+        target_role: treatment_tools
+      - source_role: war_strategies
+        target_role: treatment_procedure
+      - source_role: enemy_attack
+        target_role: spread_of_disease
+      - source_role: fighting
+        target_role: treatment_x_schema
+      - source_role: victory
+        target_role: cure
+    examples:
+      - The disease infiltrates your body and takes over.
+      - His body was under siege by AIDS.
+      - He was attacked by an unknown virus.
+      - The so-called cure is no magic bullet.
+      - The patient finally gave up the battle.
+      - The body normally has its own defenses.
+    related:
+      - CANCER_TREATMENT_IS_WAR
+      - DISEASE_TREATMENT_IS_WAR

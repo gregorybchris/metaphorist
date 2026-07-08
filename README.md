@@ -25,15 +25,15 @@ A **metaphor** is a mapping from a **source_frame** (the concrete domain doing t
 
 Naming the two frames only tells you they're linked — the **mappings** are what actually make the metaphor concrete: the role-by-role correspondence between source and target. For `ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER`:
 
-| source_role | target_role |
-|---|---|
-| `container` | `body` |
-| `fluid` | `anger` |
-| `container_top` | `mind` |
-| `fluid_heat_level` | `anger_level` |
-| `container_heat` | `body_heat` |
-| `fluid_agitation` | `body_agitation` |
-| `container_pressure_limit` | `anger_limit` |
+| source_role                | target_role      |
+| -------------------------- | ---------------- |
+| `container`                | `body`           |
+| `fluid`                    | `anger`          |
+| `container_top`            | `mind`           |
+| `fluid_heat_level`         | `anger_level`    |
+| `container_heat`           | `body_heat`      |
+| `fluid_agitation`          | `body_agitation` |
+| `container_pressure_limit` | `anger_limit`    |
 
 This is what says heat corresponds to anger specifically — not to something else.
 
@@ -43,9 +43,9 @@ This is what says heat corresponds to anger specifically — not to something el
 
 ### X-schema roles
 
-Many frames declare a role named `<something>_x_schema` (87 of them across the dataset) — short for **executing schema**, a term from Srini Narayanan's work at ICSI Berkeley, the same lab this repository comes from. An x-schema models the general control structure of any goal-directed action — starting, being in progress, getting interrupted, resuming, completing — independent of what the action actually is. It's the piece a FrameNet-style role list doesn't cover: a frame's other roles describe *who's involved* (a mover, a container, an actor); its x-schema role describes *how the action unfolds over time*.
+Many frames declare a role named `<something>_x_schema` (87 of them across the dataset) — short for **executing schema**, a term from Srini Narayanan's work at ICSI Berkeley, the same lab this repository comes from. An x-schema models the general control structure of any goal-directed action — starting, being in progress, getting interrupted, resuming, completing — independent of what the action actually is. It's the piece a FrameNet-style role list doesn't cover: a frame's other roles describe _who's involved_ (a mover, a container, an actor); its x-schema role describes _how the action unfolds over time_.
 
-That's why mappings so often pair one frame's x-schema role with another's, e.g. `self_motion_x_schema -> action_x_schema` in `ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH`. That isn't mapping a participant onto a participant — it's claiming that abstract *action* inherits the entire temporal shape of physical *self-propelled motion*. Conceptually: manner of movement → manner of action, stage of movement → stage of action, speed of motion → rate of action, impediments to motion → impediments to action. Every pair is aspectual vocabulary (manner, stage, speed, obstacles), not "who did what to whom" — that's the x-schema mapping doing its job.
+That's why mappings so often pair one frame's x-schema role with another's, e.g. `self_motion_x_schema -> action_x_schema` in `ACTION_IS_SELF_PROPELLED_MOTION_ALONG_A_PATH`. That isn't mapping a participant onto a participant — it's claiming that abstract _action_ inherits the entire temporal shape of physical _self-propelled motion_. Conceptually: manner of movement → manner of action, stage of movement → stage of action, speed of motion → rate of action, impediments to motion → impediments to action. Every pair is aspectual vocabulary (manner, stage, speed, obstacles), not "who did what to whom" — that's the x-schema mapping doing its job.
 
 ### Type
 
@@ -72,9 +72,9 @@ Each family is also defined from the other direction, as its own entry in `metap
 
 ## Relations
 
-Both metaphors and frames carry a flat, alphabetically-sorted `related` list — the names of other entries of the same kind this one is meaningfully connected to. There's no distinction of relation *kind* recorded: things that used to be separate types (a subcase/hierarchy link, drawing on another entry as a building block, sharing a source or target domain, a dual/opposite framing, and so on) are all folded into one undifferentiated list. Run `uv run pytest` for current coverage counts (the warning-level checks report their counts in the warnings summary).
+Both metaphors and frames carry a flat, alphabetically-sorted `related` list — the names of other entries of the same kind this one is meaningfully connected to. There's no distinction of relation _kind_ recorded: things that used to be separate types (a subcase/hierarchy link, drawing on another entry as a building block, sharing a source or target domain, a dual/opposite framing, and so on) are all folded into one undifferentiated list. Run `uv run pytest` for current coverage counts (the warning-level checks report their counts in the warnings summary).
 
-Relations are recorded one-directionally: an entry's own `related` list only contains what *it* points to, not what points back at it — e.g. `ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER`'s `related` list includes `ANGER_IS_HEAT`, but `ANGER_IS_HEAT`'s own `related` list doesn't mention it back. The frontend computes that reverse view at build time (`frontend/src/data/index.ts`) so a detail page can show both what an entry points at and what points at it, but the underlying YAML only ever stores the forward direction.
+Relations are recorded one-directionally: an entry's own `related` list only contains what _it_ points to, not what points back at it — e.g. `ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER`'s `related` list includes `ANGER_IS_HEAT`, but `ANGER_IS_HEAT`'s own `related` list doesn't mention it back. The frontend computes that reverse view at build time (`frontend/src/data/index.ts`) so a detail page can show both what an entry points at and what points at it, but the underlying YAML only ever stores the forward direction.
 
 `ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER`'s own `related` list is `[ANGER_IS_HEAT, ANGER_IS_PRESSURE_IN_A_CONTAINER, BODY_IS_A_CONTAINER_FOR_EMOTIONS, EMOTIONS_ARE_SUBSTANCES]` — a mix of metaphors it's a more specific version of and metaphors it draws on as building blocks. And `HAPPY_IS_UP`'s `related` list includes `HAPPINESS_IS_VERTICALITY` — the relation-level version of the Type example above.
 
@@ -92,3 +92,15 @@ These were enforced by the original one-time derivation script when the dataset 
 ## Data quality
 
 Some fields are sparse or inconsistent because this is a research database assembled by many contributors over time, not a finished product — run `make test` to see exactly where and how.
+
+## Citing this data
+
+This dataset derives from the MetaNet Metaphor Repository, which in turn builds on Conceptual Metaphor Theory and the Master Metaphor List. If you use this data, please cite the underlying sources:
+
+> Dodge, Ellen, Jisup Hong, and Elise Stickles. 2015. "MetaNet: Deep semantic automatic metaphor analysis." In _Proceedings of the Third Workshop on Metaphor in NLP_, 40–49. Denver, Colorado: Association for Computational Linguistics.
+
+> Lakoff, George, Jane Espenson, and Alan Schwartz. 1991. _Master Metaphor List_, 2nd draft copy. Berkeley: Cognitive Linguistics Group, University of California, Berkeley.
+
+For a broader overview of the MetaNet project, see also:
+
+> David, Oana. 2017. "Computational approaches to metaphor: The case of MetaNet." In _The Cambridge Handbook of Cognitive Linguistics_, edited by Barbara Dancygier, 574–589. Cambridge: Cambridge University Press.

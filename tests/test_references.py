@@ -1,20 +1,13 @@
+from scripts.dataset_lib import find_dangling_frame_refs, find_dangling_related
+
+
 def test_no_dangling_source_frame(metaphors, frames):
-    frame_names = {f["name"] for f in frames}
-    dangling = [
-        f"{m['name']} -> {m['source_frame']}"
-        for m in metaphors
-        if m.get("source_frame") and m["source_frame"] not in frame_names
-    ]
+    dangling = find_dangling_frame_refs(metaphors, frames, "source_frame")
     assert not dangling, f"metaphors with a dangling source_frame: {dangling}"
 
 
 def test_no_dangling_target_frame(metaphors, frames):
-    frame_names = {f["name"] for f in frames}
-    dangling = [
-        f"{m['name']} -> {m['target_frame']}"
-        for m in metaphors
-        if m.get("target_frame") and m["target_frame"] not in frame_names
-    ]
+    dangling = find_dangling_frame_refs(metaphors, frames, "target_frame")
     assert not dangling, f"metaphors with a dangling target_frame: {dangling}"
 
 
@@ -31,12 +24,7 @@ def test_no_dangling_metaphor_family_ref(metaphors, metaphor_families):
 
 def test_no_dangling_metaphor_relations(metaphors):
     metaphor_names = {m["name"] for m in metaphors}
-    dangling = [
-        f"{m['name']}.related -> {other}"
-        for m in metaphors
-        for other in m.get("related", [])
-        if other not in metaphor_names
-    ]
+    dangling = find_dangling_related(metaphors, metaphor_names)
     assert not dangling, f"metaphor relations pointing to an unknown metaphor: {dangling}"
 
 
@@ -53,12 +41,7 @@ def test_no_dangling_frame_family_ref(frames, frame_families):
 
 def test_no_dangling_frame_relations(frames):
     frame_names = {f["name"] for f in frames}
-    dangling = [
-        f"{f['name']}.related -> {other}"
-        for f in frames
-        for other in f.get("related", [])
-        if other not in frame_names
-    ]
+    dangling = find_dangling_related(frames, frame_names)
     assert not dangling, f"frame relations pointing to an unknown frame: {dangling}"
 
 

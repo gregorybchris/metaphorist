@@ -95,6 +95,7 @@ frame_families:
       - change-of-location
       - change-of-state
       - possession-change
+      - replacement
       - self-initiated-state-change
   - name: Cognition frames
     members:
@@ -283,11 +284,16 @@ frame_families:
     members:
       - affection
       - anger
+      - conceit
       - directed-emotion
+      - disgust
       - emotion
       - emotional-intensity
+      - fear
       - greed
       - happiness
+      - hope
+      - lust
       - sadness
       - trust-emotion
   - name: Endangerment frames
@@ -448,6 +454,7 @@ frame_families:
       - citizen-evaluation-of-government
       - citizens
       - community
+      - compliance
       - constitution
       - corruption
       - country
@@ -1052,6 +1059,7 @@ frame_families:
       - attribute
       - caused-change-of-state
       - change-of-state
+      - coherence
       - experiencing-a-state
       - physical-attributes
       - scale
@@ -1091,6 +1099,7 @@ frame_families:
       - voting-rights
   - name: Scale frames
     members:
+      - battery
       - being-high-on-a-scale
       - being-in-the-middle-of-a-scale
       - being-low-on-a-scale
@@ -1105,8 +1114,10 @@ frame_families:
       - health
       - heat
       - increase-size
+      - intoxication
       - lightness
       - luminosity
+      - nausea
       - physical-strength
       - physical-strength-scale
       - positivity-scale

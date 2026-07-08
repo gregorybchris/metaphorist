@@ -1,9 +1,8 @@
 import re
 import warnings
 
-METAPHOR_NAME_RE = re.compile(r"^[A-Z0-9_]+$")
-FRAME_NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
-ROLE_NAME_RE = re.compile(r"^[a-z0-9]+(_[a-z0-9]+)*$")
+from scripts.dataset_lib import FRAME_NAME_RE, METAPHOR_NAME_RE, ROLE_NAME_RE
+
 ROLE_TYPE_RE = re.compile(r"^[A-Z][A-Za-z0-9]*$")
 
 KNOWN_METAPHOR_TYPES = {"Composed/complex", "Primary", "Entailed"}

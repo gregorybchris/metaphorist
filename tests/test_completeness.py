@@ -1,26 +1,14 @@
 import warnings
 
+from scripts.dataset_lib import find_mapping_role_mismatches
+
 # These checks flag known, long-standing gaps inherited from the source
 # ontology rather than defects introduced by edits to this repo, so they warn
 # instead of failing the build.
 
 
 def test_mapping_roles_present_in_frame_roles(metaphors, frame_roles):
-    mismatched = []
-    for m in metaphors:
-        src_roles = frame_roles.get(m.get("source_frame"), set())
-        tgt_roles = frame_roles.get(m.get("target_frame"), set())
-        for mp in m.get("mappings", []):
-            if mp.get("source_role") and mp["source_role"] not in src_roles:
-                mismatched.append(
-                    f"{m['name']}: source_role '{mp['source_role']}' not in "
-                    f"{m.get('source_frame')}.roles"
-                )
-            if mp.get("target_role") and mp["target_role"] not in tgt_roles:
-                mismatched.append(
-                    f"{m['name']}: target_role '{mp['target_role']}' not in "
-                    f"{m.get('target_frame')}.roles"
-                )
+    mismatched = find_mapping_role_mismatches(metaphors, frame_roles)
     if mismatched:
         warnings.warn(
             f"{len(mismatched)} mapping role(s) absent from their frame's roles list: "
