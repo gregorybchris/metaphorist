@@ -61,7 +61,7 @@ export function HomePage() {
   return (
     <div className="mx-auto max-w-2xl px-6 py-14 md:py-14">
       <p className="font-serif text-2xl leading-snug text-center text-balance text-text italic sm:text-3xl">
-        How often we speak in metaphor may surprise you.
+        Explore how the metaphors of everyday language shape our thinking.
       </p>
 
       <div className="mt-10 space-y-3">
