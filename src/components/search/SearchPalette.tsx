@@ -52,7 +52,7 @@ const searchEntries: SearchEntry[] = [
       kind: "frame",
       name: f.name,
       label: displayName("frame", f.name),
-      extra: [...(f.lexical_units ?? []), ...(f.frame_type ?? [])].join(" "),
+      extra: (f.lexical_units ?? []).join(" "),
     }),
   ),
 ];

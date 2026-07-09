@@ -30,7 +30,6 @@ Four YAML files in `dataset/`:
 
 ```yaml
 - name: ABILITY_TO_ACT_IS_ABILITY_TO_MOVE
-  type: Entailed # Primary | Composed/complex | Entailed
   source_frame: ability-to-move
   target_frame: ability-to-act
   families:
@@ -48,8 +47,6 @@ Four YAML files in `dataset/`:
 
 ```yaml
 - name: ability-to-act
-  frame_type:
-    - Cog # Frame | Cog | Composed | Primary
   frame_families:
     - Action
   lexical_units:

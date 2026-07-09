@@ -10,7 +10,6 @@ function matchesQuery(frame: Frame, query: string): boolean {
   if (!query) return true;
   if (frameDisplayName(frame.name).toLowerCase().includes(query)) return true;
   if (frame.name.toLowerCase().includes(query)) return true;
-  if (frame.frame_type?.some((t) => t.toLowerCase().includes(query))) return true;
   if (frame.lexical_units?.some((lu) => lu.toLowerCase().includes(query))) return true;
   return false;
 }

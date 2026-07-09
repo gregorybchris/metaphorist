@@ -7,9 +7,6 @@ from dataset_lib import (
     ROLE_NAME_RE,
 )
 
-KNOWN_METAPHOR_TYPES = {"Composed/complex", "Primary", "Entailed"}
-KNOWN_FRAME_TYPES = {"Frame", "Cog", "Composed", "Primary"}
-
 
 def _normalized_family_name(name):
     """Sentence case -- mirrors the rule described under 'Naming conventions' in the
@@ -31,11 +28,6 @@ def _normalized_family_name(name):
 def test_metaphor_name_format(metaphors):
     bad = [m["name"] for m in metaphors if not METAPHOR_NAME_RE.match(m["name"])]
     assert not bad, f"metaphor names not in SCREAMING_SNAKE_CASE (A-Z, 0-9, _): {bad}"
-
-
-def test_metaphor_types_known(metaphors):
-    unknown = sorted({m["type"] for m in metaphors if m.get("type")} - KNOWN_METAPHOR_TYPES)
-    assert not unknown, f"unexpected metaphor.type values: {unknown}"
 
 
 def test_family_name_format(metaphor_families, frame_families):
@@ -84,8 +76,3 @@ def test_role_name_format(frames):
             stacklevel=2,
         )
 
-
-def test_frame_types_known(frames):
-    unknown = sorted({t for f in frames for t in f.get("frame_type", [])} - KNOWN_FRAME_TYPES)
-    if unknown:
-        warnings.warn(f"unexpected frame.frame_type values: {unknown}", stacklevel=2)

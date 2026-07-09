@@ -7,7 +7,6 @@ export interface Role {
 
 export interface Frame {
   name: string;
-  frame_type?: string[];
   roles?: Role[];
   lexical_units?: string[];
   frame_families?: string[];
@@ -19,11 +18,8 @@ export interface Mapping {
   target_role: string;
 }
 
-export type MetaphorType = "Primary" | "Composed/complex" | "Entailed";
-
 export interface Metaphor {
   name: string;
-  type?: MetaphorType;
   source_frame?: string;
   target_frame?: string;
   families?: string[];
