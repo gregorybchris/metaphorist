@@ -102,3 +102,13 @@ uv run pytest    # or: make test
 make lint         # ruff + ty
 make check        # lint and test
 ```
+
+## Pre-commit hook
+
+A bash pre-commit hook (`.githooks/pre-commit`) runs oxlint + `pnpm build` when
+frontend-relevant files change, and ruff + `ty` + pytest when `validation/` or
+`dataset/` changes. Enable it once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```

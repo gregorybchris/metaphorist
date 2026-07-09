@@ -1,0 +1,221 @@
+#!/usr/bin/env bash
+# Pre-commit hook: oxlint + tsc + vite build (frontend), ruff + ty + pytest (validation/).
+# Enable with: git config core.hooksPath .githooks
+
+VERBOSE=false
+for arg in "$@"; do
+    case "$arg" in
+        -v|--verbose) VERBOSE=true ;;
+    esac
+done
+
+TMPDIR_HOOK=$(mktemp -d)
+
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+YELLOW="\033[0;33m"
+DIM="\033[2m"
+RESET="\033[0m"
+
+USE_SPINNER=false
+if [ -t 1 ]; then
+    USE_SPINNER=true
+fi
+
+cleanup() {
+    if [ "$USE_SPINNER" = true ]; then
+        # Restore cursor in case we were interrupted mid-spinner
+        printf "\033[?25h"
+    fi
+    rm -rf "$TMPDIR_HOOK"
+}
+trap cleanup EXIT INT TERM
+
+SPIN=('⠋' '⠙' '⠹' '⠸' '⠼' '⠴' '⠦' '⠧' '⠇' '⠏')
+
+# Files that differ from HEAD in any way the user might want a step to react
+# to: staged for commit, modified in the working tree, or untracked. Including
+# unstaged + untracked means manual runs of this hook gate the same way real
+# commits do, and a commit with broken unstaged edits still triggers pytest
+# even if only an unrelated file was staged.
+CHANGED_FILES=()
+while IFS= read -r line; do
+    [ -n "$line" ] && CHANGED_FILES+=("$line")
+done < <(
+    {
+        git diff --cached --name-only
+        git diff --name-only
+        git ls-files --others --exclude-standard
+    } 2>/dev/null | sort -u
+)
+
+now_ms() {
+    perl -MTime::HiRes=time -e 'printf "%d", time() * 1000'
+}
+
+format_elapsed() {
+    local ms=$1
+    if [ "$ms" -lt 1000 ]; then
+        printf "%dms" "$ms"
+    else
+        printf "%ds" "$((ms / 1000))"
+    fi
+}
+
+# A staged path matches a pattern when the path equals the pattern or sits
+# anywhere under it. Trailing slashes on the pattern are stripped. This is a
+# pure string check that does not consult the filesystem, so it behaves the
+# same whether or not the pattern currently exists on disk.
+path_matches() {
+    local file="$1"
+    local pat="${2%/}"
+    if [ "$file" = "$pat" ]; then
+        return 0
+    fi
+    case "$file" in
+        "$pat"/*) return 0 ;;
+    esac
+    return 1
+}
+
+# Parsed state for the currently-executing step. Bash 3.2 can't return arrays,
+# so these helpers communicate via globals scoped to one run_check call.
+step_includes=()
+step_excludes=()
+step_cmd=()
+
+# Pull --include / --exclude flags (terminated by an optional `--`) off the
+# front of the arg list, leaving the rest as the command to execute.
+parse_check_args() {
+    step_includes=()
+    step_excludes=()
+    while [ $# -gt 0 ]; do
+        case "$1" in
+            --include) step_includes+=("$2"); shift 2 ;;
+            --exclude) step_excludes+=("$2"); shift 2 ;;
+            --) shift; break ;;
+            *) break ;;
+        esac
+    done
+    step_cmd=("$@")
+}
+
+# Returns 0 if the step has no filters, or if at least one CHANGED_FILES entry
+# matches an include (or all of them, when no includes are set) and is not
+# vetoed by an exclude.
+step_matches_changes() {
+    [ ${#step_includes[@]} -eq 0 ] && [ ${#step_excludes[@]} -eq 0 ] && return 0
+    local file pat included excluded
+    for file in "${CHANGED_FILES[@]}"; do
+        if [ ${#step_includes[@]} -gt 0 ]; then
+            included=0
+            for pat in "${step_includes[@]}"; do
+                if path_matches "$file" "$pat"; then included=1; break; fi
+            done
+            [ $included -eq 0 ] && continue
+        fi
+        excluded=0
+        for pat in "${step_excludes[@]}"; do
+            if path_matches "$file" "$pat"; then excluded=1; break; fi
+        done
+        [ $excluded -eq 1 ] && continue
+        return 0
+    done
+    return 1
+}
+
+# Run a command with output captured to $outfile. While it runs, render a
+# spinner next to $label on a TTY; on non-TTY stdout, just block until done.
+# Returns the command's exit status.
+run_with_spinner() {
+    local label="$1"
+    local outfile="$2"
+    shift 2
+
+    if [ "$USE_SPINNER" != true ]; then
+        "$@" >"$outfile" 2>&1
+        return $?
+    fi
+
+    "$@" >"$outfile" 2>&1 &
+    local pid=$!
+    local i=0
+    printf "\033[?25l"  # hide cursor
+    while kill -0 "$pid" 2>/dev/null; do
+        printf "\r${YELLOW}%s${RESET} %s" "${SPIN[$i]}" "$label"
+        i=$(( (i + 1) % ${#SPIN[@]} ))
+        sleep 0.08
+    done
+    wait "$pid"
+    local status=$?
+    printf "\033[?25h\r\033[K"  # show cursor, clear spinner line
+    return $status
+}
+
+run_check() {
+    local label="$1"; shift
+    parse_check_args "$@"
+
+    if ! step_matches_changes; then
+        printf "${DIM}-${RESET} %s ${DIM}(no relevant changes)${RESET}\n" "$label"
+        return
+    fi
+
+    local outfile="$TMPDIR_HOOK/output.$$.$RANDOM"
+    local start; start=$(now_ms)
+    run_with_spinner "$label" "$outfile" "${step_cmd[@]}"
+    local status=$?
+    local elapsed; elapsed=$(format_elapsed $(( $(now_ms) - start )))
+
+    if [ $status -ne 0 ]; then
+        printf "${RED}✗${RESET} %s ${DIM}(%s)${RESET}\n" "$label" "$elapsed"
+        cat "$outfile"
+        exit $status
+    fi
+    printf "${GREEN}✓${RESET} %s ${DIM}(%s)${RESET}\n" "$label" "$elapsed"
+    if [ "$VERBOSE" = true ]; then
+        cat "$outfile"
+    fi
+}
+
+# Frontend lives at the repo root and reads dataset/*.yaml at build time via
+# vite-plugin-dataset.ts, so dataset/ changes can also break the build.
+run_check "web lint" \
+    --include src \
+    --include index.html \
+    --include vite.config.ts \
+    --include vite-plugin-dataset.ts \
+    --include vite-plugin-curation.ts \
+    --include package.json \
+    --include tsconfig.json \
+    --include tsconfig.app.json \
+    --include tsconfig.node.json \
+    -- pnpm lint
+run_check "web build" \
+    --include src \
+    --include index.html \
+    --include vite.config.ts \
+    --include vite-plugin-dataset.ts \
+    --include vite-plugin-curation.ts \
+    --include package.json \
+    --include tsconfig.json \
+    --include tsconfig.app.json \
+    --include tsconfig.node.json \
+    --include dataset \
+    -- pnpm build
+
+# validation/ is a separate Python project (own pyproject.toml, uv.lock) that
+# validates dataset/*.yaml, so dataset/ changes should also trigger its tests.
+run_check "ruff check" \
+    --include validation \
+    -- bash -c "cd validation && uv run ruff check ."
+run_check "ruff format" \
+    --include validation \
+    -- bash -c "cd validation && uv run ruff format --check ."
+run_check "ty" \
+    --include validation \
+    -- bash -c "cd validation && uv run ty check"
+run_check "pytest" \
+    --include validation \
+    --include dataset \
+    -- bash -c "cd validation && uv run pytest"
