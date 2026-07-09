@@ -3012,7 +3012,7 @@ metaphors:
       - DIFFERENCES_IN_SUCCESS_ARE_DISTANCES_BETWEEN_LOCATIONS
       - DISPARITY_IS_CHANGE
       - EVALUATIVE_COMPARISON_OF_A_AND_B_IN_A_STATIC_SITUATION_IS_DETERMINED_BY_THE_VERTICAL_DISTANCE_BETWEEN_A_AND_B
-  - name: COMPETITION_IS_1_ON_1_PHYSICAL_AGGRESSION
+  - name: COMPETITION_IS_ONE_ON_ONE_PHYSICAL_AGGRESSION
     source_frame: physical-combat
     target_frame: competition
     mappings:
@@ -3070,7 +3070,7 @@ metaphors:
       - We took over the ball deep in their territory.
       - They battled each other over the chess board every week.
     related:
-      - COMPETITION_IS_1_ON_1_PHYSICAL_AGGRESSION
+      - COMPETITION_IS_ONE_ON_ONE_PHYSICAL_AGGRESSION
       - COMPETITION_IS_A_RACE
   - name: COMPLEX_IDEAS_ARE_SENTENCES
     source_frame: sentence
@@ -3084,7 +3084,7 @@ metaphors:
     mappings:
       - source_role: sentence_meaning
         target_role: idea_self
-  - name: COMPLIENCE_IS_FOLLOWING
+  - name: COMPLIANCE_IS_FOLLOWING
     source_frame: pursue
     target_frame: compliance
     mappings:
@@ -3095,7 +3095,7 @@ metaphors:
     examples:
       - He went along with what he was told to do.
       - She followed her orders.
-  - name: COMPLIENCE_IS_TIGHTNESS
+  - name: COMPLIANCE_IS_TIGHTNESS
     source_frame: tight-fit
     target_frame: compliance
     mappings:
@@ -3773,7 +3773,7 @@ metaphors:
       - The curriculum doesn't leave much room to wander off course.
     related:
       - INSTRUCTION_IS_A_GUIDED_JOURNEY
-  - name: CURRICULUM_IS_BOUNDED_REGION
+  - name: CURRICULUM_IS_A_BOUNDED_REGION
     source_frame: bounded-region
     target_frame: curriculum
     families:
@@ -4782,7 +4782,7 @@ metaphors:
       - Schools in poorer districts are running out of resources to teach with.
     related:
       - EDUCATION_IS_AN_OBJECT
-  - name: EDUCATION_IS_COMPONENT_OF_BUILDING
+  - name: EDUCATION_IS_A_COMPONENT_OF_A_BUILDING
     source_frame: component-of-building
     target_frame: education
     families:
@@ -6666,7 +6666,7 @@ metaphors:
         target_role: government_debt
     source_frame: debt
     target_frame: government-debt
-  - name: GOVERNMENT_DEBT_IS_OCEAN
+  - name: GOVERNMENT_DEBT_IS_AN_OCEAN
     source_frame: government-debt
     target_frame: ocean
     families:
@@ -7179,7 +7179,7 @@ metaphors:
         target_role: governor_objectives
       - source_role: workplace
         target_role: jurisdiction_region
-  - name: GOVERNMENT_IS_REFEREE
+  - name: GOVERNMENT_IS_A_REFEREE
     source_frame: game
     target_frame: government
     families:
@@ -9083,7 +9083,7 @@ metaphors:
       - This agency is an assembly line for processing claims.
       - The training program cranks out new hires every few weeks.
     related:
-      - ORGANIZATION_IS_PHYSICAL_STRUCTURE
+      - ORGANIZATION_IS_A_PHYSICAL_STRUCTURE
   - name: INSTITUTION_IS_A_MACHINE
     source_frame: machine
     target_frame: institution
@@ -9161,7 +9161,7 @@ metaphors:
     mappings:
       - source_role: distance
         target_role: amount
-  - name: INTELLIGENCE_IDEA_IS_A_CUTTING_INSTRUMENT
+  - name: INTELLIGENCE_IS_A_CUTTING_INSTRUMENT
     source_frame: cut
     target_frame: idea
     mappings:
@@ -11484,7 +11484,7 @@ metaphors:
     related:
       - NATION_IS_A_COMPLEX_STRUCTURE
       - STATE_OF_NATION_IS_LOCATION_ALONG_PATH
-  - name: NATION_IS_CONTAINER
+  - name: NATION_IS_A_CONTAINER
     source_frame: resource-container
     target_frame: nation
     families:
@@ -11867,8 +11867,8 @@ metaphors:
       - New management got the whole department running like a well-oiled machine.
       - Budget cuts have thrown a wrench into the agency's operations.
     related:
-      - ORGANIZATION_IS_PHYSICAL_STRUCTURE
-  - name: ORGANIZATION_IS_PHYSICAL_STRUCTURE
+      - ORGANIZATION_IS_A_PHYSICAL_STRUCTURE
+  - name: ORGANIZATION_IS_A_PHYSICAL_STRUCTURE
     source_frame: physical-structure
     target_frame: organization
     families:
@@ -13117,7 +13117,7 @@ metaphors:
       - Their marriage finally fell apart after years of strain.
       - Their partnership is held together by mutual respect.
     related:
-      - ORGANIZATION_IS_PHYSICAL_STRUCTURE
+      - ORGANIZATION_IS_A_PHYSICAL_STRUCTURE
       - RELATIONSHIPS_ARE_OBJECTS
   - name: RELATIONSHIPS_ARE_CONTAINERS
     source_frame: containing
@@ -14121,7 +14121,7 @@ metaphors:
       - He is working in many areas.
       - This is a fertile area for research.
     related:
-      - CURRICULUM_IS_BOUNDED_REGION
+      - CURRICULUM_IS_A_BOUNDED_REGION
   - name: SUBJUGATION_IS_DOWN
     source_frame: verticality
     target_frame: control
