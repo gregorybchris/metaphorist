@@ -1,4 +1,7 @@
+import { GithubLogo } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
+
+const GITHUB_URL = "https://github.com/gregorybchris/metaphorist";
 
 const CITATIONS = [
   {
@@ -55,6 +58,23 @@ export function AboutPage() {
           money, journeys), and that this shows up as everyday patterns in
           language.
         </p>
+      </div>
+
+      <div className="mt-10">
+        <p className="font-serif text-lg text-text">Get the data</p>
+        <p className="mt-2 text-sm text-text-muted">
+          The full dataset is open source. Browse or download it from the
+          GitHub repository.
+        </p>
+        <a
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-2 text-sm text-text-muted underline hover:text-text"
+        >
+          <GithubLogo className="h-4 w-4" weight="fill" />
+          gregorybchris/metaphorist
+        </a>
       </div>
 
       <div className="mt-10">

@@ -19,12 +19,12 @@ shows up as everyday patterns in language.
 
 Four YAML files in `dataset/`:
 
-| File                     | Top-level key       | Description                                                                                 |
-| ------------------------ | ------------------- | ------------------------------------------------------------------------------------------- |
-| `metaphors.yaml`         | `metaphors`         | Conceptual metaphors: a mapping from a source frame to a target frame                       |
-| `frames.yaml`            | `frames`            | Semantic frames (source or target concepts, e.g. `journey`, `building`) with a set of roles |
-| `metaphor-families.yaml` | `metaphor_families` | Named groupings of related metaphors (e.g. "Action is motion")                              |
-| `frame-families.yaml`    | `frame_families`    | Named groupings of related frames (e.g. "Access to education")                              |
+| File                     | Description                                                                                 |
+| ------------------------ | ------------------------------------------------------------------------------------------- |
+| `metaphors.yaml`         | Conceptual metaphors: a mapping from a source frame to a target frame                       |
+| `frames.yaml`            | Semantic frames (source or target concepts, e.g. `journey`, `building`) with a set of roles |
+| `metaphor-families.yaml` | Named groupings of related metaphors (e.g. "Action is motion")                              |
+| `frame-families.yaml`    | Named groupings of related frames (e.g. "Access to education")                              |
 
 ### Metaphor
 

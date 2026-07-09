@@ -58,6 +58,20 @@ def test_metaphor_family_members_backed_by_metaphor(metaphors, metaphor_families
     )
 
 
+def test_metaphor_families_backed_by_metaphor_family_members(metaphors, metaphor_families):
+    by_name = {fam["name"]: fam for fam in metaphor_families}
+    mismatched = [
+        f"{m['name']} -> {fam_name}"
+        for m in metaphors
+        for fam_name in m.get("families", [])
+        if fam_name in by_name and m["name"] not in by_name[fam_name].get("members", [])
+    ]
+    assert not mismatched, (
+        f"metaphor.families entries not backed by a matching metaphor_families.members entry: "
+        f"{mismatched}"
+    )
+
+
 def test_frame_family_members_backed_by_frame(frames, frame_families):
     by_name = {f["name"]: f for f in frames}
     mismatched = [
@@ -68,4 +82,18 @@ def test_frame_family_members_backed_by_frame(frames, frame_families):
     ]
     assert not mismatched, (
         f"frame_families members not backed by a matching frame.frame_families entry: {mismatched}"
+    )
+
+
+def test_frame_frame_families_backed_by_frame_family_members(frames, frame_families):
+    by_name = {fam["name"]: fam for fam in frame_families}
+    mismatched = [
+        f"{f['name']} -> {fam_name}"
+        for f in frames
+        for fam_name in f.get("frame_families", [])
+        if fam_name in by_name and f["name"] not in by_name[fam_name].get("members", [])
+    ]
+    assert not mismatched, (
+        f"frame.frame_families entries not backed by a matching frame_families.members entry: "
+        f"{mismatched}"
     )
