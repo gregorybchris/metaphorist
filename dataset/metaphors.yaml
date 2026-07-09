@@ -6948,10 +6948,19 @@ metaphors:
       - source_role: corporation_whole
         target_role: jurisdiction_region
   - name: GOVERNMENT_IS_A_DISEASE
-    source_frame: health-treatment
+    source_frame: disease
     target_frame: government-institution
     families:
       - Governance
+    mappings:
+      - source_role: patient
+        target_role: government_whole
+      - source_role: disease
+        target_role: functional_status
+      - source_role: infection_process
+        target_role: authority_structure
+      - source_role: diseased_cell
+        target_role: sub_groups
     examples:
       - Some call an overreaching government a cancer that keeps spreading.
       - Corruption has metastasized through every branch of the bureaucracy.
@@ -12785,10 +12794,15 @@ metaphors:
     related:
       - KNOWING_IS_SEEING
   - name: PSYCHOLOGICAL_CONFLICT_IS_PHYSICAL_CONFLICT
-    source_frame: physical-attributes
+    source_frame: physical-combat
     target_frame: psychological-attributes
     families:
       - Primary
+    mappings:
+      - source_role: fighter1
+        target_role: self
+      - source_role: fighter2
+        target_role: opposing_impulse
     examples:
       - He's wrestling with his conscience over the decision.
       - She's at war with herself about whether to go.

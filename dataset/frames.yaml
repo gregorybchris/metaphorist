@@ -6635,6 +6635,9 @@ frames:
       - Cognition
     related:
       - mind
+    roles:
+      - name: opposing_impulse
+      - name: self
   - name: psychological-fixation
     roles:
       - name: fixation_feeler
