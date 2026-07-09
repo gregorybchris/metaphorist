@@ -144,6 +144,7 @@ frames:
       - name: society
       - name: solving_actions
       - name: solving_problem
+      - name: spread_of_problem
     related:
       - causation
       - governing-action
@@ -915,6 +916,7 @@ frames:
     roles:
       - name: bodily_capacity
       - name: body_structure
+      - name: body_whole
       - name: cognizing_x_schema
       - name: mind
     related:
@@ -1591,6 +1593,7 @@ frames:
       - name: mental_capacity
       - name: mind_structure
       - name: mind_whole
+      - name: topic
     related:
       - person
   - name: coherence
@@ -1637,6 +1640,7 @@ frames:
     roles:
       - name: addressee
       - name: communicator
+      - name: language
       - name: medium
       - name: message
     lexical_units:
@@ -1999,6 +2003,8 @@ frames:
       - name: ability_to_control
       - name: control_relation
       - name: control_relation_status
+      - name: control_relation_status_finish
+      - name: control_relation_status_start
       - name: controlling_entity
       - name: controlling_process
       - name: degree_of_control
@@ -3647,6 +3653,7 @@ frames:
       - Possession
     roles:
       - name: getting_x_schema
+      - name: getting_x_schema_finish
       - name: possessable_object
       - name: recipient
     lexical_units:
@@ -4080,6 +4087,7 @@ frames:
     roles:
       - name: agent
       - name: harm_result
+      - name: physical_harm
       - name: victim
     lexical_units:
       - abuse.n
@@ -4690,7 +4698,10 @@ frames:
       - name: journey_stops
       - name: journeyer
       - name: locations_along_journey
+      - name: manner_of_journey
       - name: obstacles_impediments_in_journey
+      - name: vehicle
+      - name: vehicles_in_journey
     lexical_units:
       - course.n
       - journey.n
@@ -4728,7 +4739,9 @@ frames:
       - name: knowing_x_schema
       - name: knowledge
       - name: knowledge_capacity
+      - name: knowledge_seeker
       - name: mind
+      - name: seeking_to_know_x_schema
     related:
       - cognizing
   - name: knowledge
@@ -5026,6 +5039,7 @@ frames:
       - Possession
     roles:
       - name: donor
+      - name: lose_possession_x_schema_finish
       - name: possession
     lexical_units:
       - forfeit.v
@@ -5059,6 +5073,7 @@ frames:
       - name: machine_entity
       - name: machine_hardware
       - name: machine_software
+      - name: machine_users
       - name: operating_x_schema
       - name: operator_of_machine
       - name: parts
@@ -6930,6 +6945,7 @@ frames:
     frame_families:
       - Resource
     roles:
+      - name: over_consumer_of_resources
       - name: resource
       - name: resource_consumer
       - name: resource_consumption_x_schema
@@ -7123,7 +7139,9 @@ frames:
       - name: seen_object
       - name: seen_object_perceived_elements
       - name: seer
+      - name: vision
       - name: visual_ability
+      - name: visual_input
     lexical_units:
       - blind.a
       - blind.v
@@ -7861,6 +7879,7 @@ frames:
     frame_families:
       - Cognition
     roles:
+      - name: desired_knowledge
       - name: thinker
       - name: thinking_content
       - name: thinking_process
