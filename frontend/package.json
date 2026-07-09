@@ -13,6 +13,7 @@
     "@fontsource/ibm-plex-mono": "^5.2.7",
     "@fontsource/manrope": "^5.2.8",
     "@fontsource/source-serif-4": "^5.2.9",
+    "@phosphor-icons/react": "^2.1.10",
     "@tanstack/react-virtual": "^3.14.5",
     "clsx": "^2.1.1",
     "fuse.js": "^7.4.2",

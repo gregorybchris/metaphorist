@@ -1,8 +1,9 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, Search, X } from "lucide-react";
+import { Info, Menu, Search, X } from "lucide-react";
 import { cn } from "../../lib/cn";
 import { SearchPalette } from "../search/SearchPalette";
+import { Logo } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 
 const NAV_ITEMS = [
@@ -28,7 +29,11 @@ export function AppShell({ children }: { children: ReactNode }) {
   return (
     <div className="flex h-dvh flex-col">
       <header className="flex shrink-0 items-center gap-4 border-b border-border px-4 py-3 sm:px-6">
-        <Link to="/metaphors" className="shrink-0 font-serif text-xl text-text italic">
+        <Link
+          to="/metaphors"
+          className="flex shrink-0 items-center gap-2 font-serif text-xl text-text italic"
+        >
+          <Logo className="size-6" />
           Metaphorist
         </Link>
 
@@ -61,6 +66,13 @@ export function AppShell({ children }: { children: ReactNode }) {
               ⌘K
             </kbd>
           </button>
+          <Link
+            to="/about"
+            aria-label="About this project"
+            className="rounded-md p-2 text-text-muted hover:bg-surface-hover hover:text-text"
+          >
+            <Info size={18} />
+          </Link>
           <ThemeToggle />
           <button
             type="button"
