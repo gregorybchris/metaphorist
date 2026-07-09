@@ -1,6 +1,6 @@
 import { forwardRef, type ComponentPropsWithoutRef } from "react";
 import { Link } from "react-router-dom";
-import { Search } from "lucide-react";
+import { CircleX, Search } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { displayName, entityPath } from "@/lib/format";
 import type { EntityKind } from "@/types";
@@ -38,8 +38,21 @@ export function SidebarListHeader({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
-          className="w-full rounded-md border border-border bg-bg py-1.5 pr-3 pl-8 text-sm text-text placeholder:text-text-faint focus:ring-2 focus:ring-clay-500 focus:outline-none"
+          className={cn(
+            "w-full rounded-md border border-border bg-bg py-1.5 pl-8 text-sm text-text placeholder:text-text-faint focus:ring-2 focus:ring-clay-500 focus:outline-none",
+            value ? "pr-8" : "pr-3",
+          )}
         />
+        {value && (
+          <button
+            type="button"
+            onClick={() => onChange("")}
+            aria-label="Clear filter"
+            className="absolute top-1/2 right-2.5 -translate-y-1/2 text-text-faint hover:text-text"
+          >
+            <CircleX size={14} />
+          </button>
+        )}
       </div>
     </div>
   );
