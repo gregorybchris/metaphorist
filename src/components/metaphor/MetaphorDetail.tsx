@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { CollapsibleSection } from "@/components/primitives/CollapsibleSection";
 import { EntityLink } from "@/components/primitives/EntityLink";
-import { metaphorDisplayName } from "@/lib/format";
+import { MetaphorName } from "@/components/primitives/MetaphorName";
 import type { Metaphor } from "@/types";
 import { MappingDiagram } from "./MappingDiagram";
 
@@ -14,7 +14,7 @@ export function MetaphorDetail({ metaphor }: { metaphor: Metaphor }) {
   return (
     <div className="mx-auto max-w-2xl p-6 md:p-10">
       <p className="text-pretty font-serif text-xl leading-snug text-text sm:text-2xl">
-        {metaphorDisplayName(metaphor.name)}
+        <MetaphorName name={metaphor.name} />
       </p>
       {examples.length > 0 && (
         <div className="mt-6 space-y-3">

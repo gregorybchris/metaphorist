@@ -9,6 +9,29 @@ export function metaphorDisplayName(name: string): string {
   return words.join(" ");
 }
 
+/**
+ * Splits a metaphor's display name around its is/are connective, so callers
+ * can style the two compared frames separately from the copula. Every
+ * dataset name has exactly one `_IS_` or `_ARE_` token by convention; falls
+ * back to a single unsplit segment if that ever isn't true.
+ */
+export function splitMetaphorDisplayName(
+  name: string,
+): { target: string; connective: string; source: string } | { target: string } {
+  const words = name.split("_").filter(Boolean).map((w) => w.toLowerCase());
+  if (words.length === 0) return { target: name };
+  words[0] = words[0][0].toUpperCase() + words[0].slice(1);
+
+  const idx = words.findIndex((w) => w === "is" || w === "are");
+  if (idx === -1) return { target: words.join(" ") };
+
+  return {
+    target: words.slice(0, idx).join(" "),
+    connective: words[idx],
+    source: words.slice(idx + 1).join(" "),
+  };
+}
+
 /** heating-fluid -> "Heating Fluid" */
 export function frameDisplayName(name: string): string {
   return name

@@ -1,7 +1,8 @@
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { MetaphorName } from "@/components/primitives/MetaphorName";
 import { metaphorByName, stats } from "@/data";
-import { entityPath, metaphorDisplayName } from "@/lib/format";
+import { entityPath } from "@/lib/format";
 import type { Metaphor } from "@/types";
 
 /**
@@ -25,7 +26,7 @@ function SpotlightCard({ metaphor }: { metaphor: Metaphor }) {
     <details className="group rounded-lg border border-border bg-surface transition-colors open:bg-surface-hover/30">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 select-none sm:px-6">
         <span className="font-serif text-base text-text sm:text-lg">
-          {metaphorDisplayName(metaphor.name)}
+          <MetaphorName name={metaphor.name} />
         </span>
         <ChevronRight
           size={18}
@@ -60,7 +61,7 @@ export function HomePage() {
   return (
     <div className="mx-auto max-w-2xl px-6 py-14 md:py-20">
       <p className="font-serif text-2xl leading-snug text-center text-balance text-text italic sm:text-3xl">
-        How often we all speak in metaphor may surprise you.
+        How often we speak in metaphor may surprise you.
       </p>
 
       <div className="mt-10 space-y-3">
