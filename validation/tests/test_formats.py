@@ -1,6 +1,6 @@
 import warnings
 
-from scripts.dataset_lib import (
+from dataset_lib import (
     FRAME_NAME_RE,
     LEXICAL_UNIT_POS_RE,
     METAPHOR_NAME_RE,

@@ -1,60 +1,36 @@
 # CLAUDE.md
 
-This repo is a curated English export of the MetaNet Metaphor Repository. See README.md for the
-data model (metaphors, frames, families, relations).
+A curated, English-only export of the MetaNet Metaphor Repository (UC Berkeley ICSI) — conceptual metaphors (`ANGER_IS_HEAT`) as mappings between semantic frames (`heating-fluid` → `anger`), based on Lakoff & Johnson's Conceptual Metaphor Theory. See README.md for the full data model writeup (frames, metaphors, mappings, families, relations, x-schema roles, naming conventions).
 
-## Setup
+## Layout
 
-Dependencies are managed with `uv`. Run `uv sync` once to create `.venv` and install both the
-runtime and dev dependency groups (`pyyaml`, `rdflib`, `pytest`, `ruff`, `ty`).
+This repo has three independent parts that all read the same `dataset/`:
 
-## Common commands
+- **`dataset/`** — the data itself: `metaphors.yaml`, `frames.yaml`, `metaphor-families.yaml`, `frame-families.yaml`. Hand- and agent-edited directly; no build step, no generator script in this repo.
+- **`src/`, `index.html`, `vite.config.ts`, `vite-plugin-*.ts`** (repo root) — the React/Vite frontend that browses the dataset. `vite-plugin-dataset.ts` reads the four `dataset/*.yaml` files at build/dev time and exposes them as the `virtual:metaphor-dataset` module (`src/data/index.ts` imports it) — the browser never parses YAML. `vite-plugin-curation.ts` backs a dev-only `/__curation` endpoint that reads/writes `curation/favorites.json` for the hidden curation UI (`?curate=true`, `src/pages/CuratePage.tsx`).
+- **`validation/`** — a separate Python project (own `pyproject.toml`, `uv.lock`, `.venv`, `Makefile`) that validates the dataset: `validation/tests/` (pytest suite — structural/format/reference checks against `dataset/*.yaml`) and `validation/scripts/dataset_lib.py` (shared validation logic the tests import).
 
-- `make test` — run the pytest suite (`tests/`) against `dataset/metaphors.yaml`,
-  `dataset/frames.yaml`, `dataset/metaphor-families.yaml`, `dataset/frame-families.yaml`.
-- `make lint` — `ruff check`, `ruff format --check`, and `ty check`.
-- `make format` — auto-fix formatting and lint issues in place.
-- `make check` — lint + test; run this before considering a change to the YAML data or the Python
-  scripts done.
+Frontend files live at the repo root (not under `frontend/`) and validation files live under `validation/` (not at the root) — this is intentional, not a leftover from a move. Path logic in `vite-plugin-*.ts` is relative to the repo root; path logic in `validation/**/*.py` (`Path(__file__).parent...`) needs to walk up far enough to reach the repo root from inside `validation/`, one level deeper than it looks.
 
-All targets shell out through `uv run`, so there's no need to activate the venv manually.
+Other top-level dirs: `curation/` (favorites data for the curation UI), `planning/` (scratch notes, gitignored contents).
 
-## Test suite conventions
+## Commands
 
-`tests/` replaced the old standalone `validate.py` script. The data-integrity checks it ran are now
-individual pytest tests, split by concern:
+Frontend (run from repo root):
+- `pnpm dev` — dev server
+- `pnpm build` — typecheck + production build
+- `pnpm lint` — oxlint
 
-- `test_uniqueness.py` — no duplicate names within a collection.
-- `test_references.py` — no dangling references between metaphors/frames/families, and
-  family/member back-references agree in both directions.
-- `test_formats.py` — naming convention checks (metaphor `SCREAMING_SNAKE_CASE`, frame
-  `kebab-case`, role `snake_case`) and known `type`/`frame_type` values.
-- `test_completeness.py` — mapping roles present in their frame's role list, and
-  per-field coverage checks (metaphors missing mappings/examples, frames
-  missing roles/lexical_units), each reported as its own warning.
-- `test_collection_sizes.py` — sanity bounds on collection sizes.
-- `conftest.py` — session-scoped fixtures that load each YAML file once (`metaphors`, `frames`,
-  `metaphor_families`, `frame_families`, `frame_roles`).
+Validation (run from `validation/`, or `make -C validation <target>` from root):
+- `make test` — `uv run pytest`
+- `make check` — lint (ruff + ty) and test
+- `make format` — `uv run ruff format` + `ruff check --fix`
 
-Two severities, preserved from the original script:
+## Conventions
 
-- **Errors** (structural problems — dangling refs, duplicates, bad metaphor names, out-of-range
-  collection sizes) are plain `assert`s and fail the test.
-- **Warnings** (known, long-standing gaps inherited from the source ontology — e.g. mapping roles
-  not listed on the frame, sparse frames) use `warnings.warn(..., stacklevel=2)` instead of
-  `assert`. These tests always pass; the warning text (with counts and examples) shows up in
-  pytest's warnings summary. Run `uv run pytest` directly (not `-q`) if you want to see that
-  summary.
+- Metaphor names: `SCREAMING_SNAKE_CASE` (`ANGER_IS_HEAT`).
+- Frame names: `kebab-case` (`heating-fluid`).
+- Role names: `lower_snake_case` (`fluid_heat_level`).
+- Family names: sentence case, no redundant trailing "metaphors"/"frames"/"family" (`Anger`, not `Anger metaphors`).
 
-When adding a new validation check, decide which bucket it belongs in: if it should ever block a
-change to the data, assert; if it's just useful visibility into a known gap, warn.
-
-## Data model changes
-
-`dataset/metaphors.yaml`, `dataset/frames.yaml`, `dataset/metaphor-families.yaml`, and
-`dataset/frame-families.yaml` are hand- and agent-edited directly -- there is no build/regenerate
-step. The dataset was originally derived, once, from the raw ontology by a one-time script that
-isn't part of this repo -- there's nothing to run or regenerate from it.
-
-When adding or editing YAML data, run `make check` and skim the warnings summary for regressions
-before committing.
+The `validation/tests/` suite enforces these plus structural completeness (dangling frame refs, mapping role mismatches, family back-reference symmetry) — run it after any dataset edit.

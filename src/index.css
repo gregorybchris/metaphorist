@@ -68,61 +68,64 @@
 
   /* Part-of-speech accent hues, used only for lexical unit badges — kept
      visually distinct from clay/indigo/moss so they don't get mistaken for
-     the source/target/family accents used elsewhere on the same page. */
-  --color-teal-50: #e9f9f8;
-  --color-teal-100: #ccf2ef;
-  --color-teal-200: #9be6e0;
-  --color-teal-300: #6adad0;
-  --color-teal-400: #33ccbf;
-  --color-teal-500: #2baba1;
-  --color-teal-600: #238b82;
-  --color-teal-700: #1c6e67;
-  --color-teal-800: #14524d;
-  --color-teal-900: #0d3532;
+     the source/target/family accents used elsewhere on the same page.
+     Built on the same muted saturation/lightness curve as indigo (not a
+     brighter, more saturated formula) so they read as part of the same
+     archival palette instead of clashing neon accents. */
+  --color-teal-50: #eef8f5;
+  --color-teal-100: #d6efe9;
+  --color-teal-200: #aeddd1;
+  --color-teal-300: #86c9b8;
+  --color-teal-400: #5ca895;
+  --color-teal-500: #3b8371;
+  --color-teal-600: #306b5c;
+  --color-teal-700: #265448;
+  --color-teal-800: #1c3d35;
+  --color-teal-900: #132823;
 
-  --color-garnet-50: #f9e9eb;
-  --color-garnet-100: #f2ccd3;
-  --color-garnet-200: #e69ba8;
-  --color-garnet-300: #da6a7d;
-  --color-garnet-400: #cc334d;
-  --color-garnet-500: #ab2b40;
-  --color-garnet-600: #8b2334;
-  --color-garnet-700: #6e1c29;
-  --color-garnet-800: #52141f;
-  --color-garnet-900: #350d14;
+  --color-garnet-50: #f8eef0;
+  --color-garnet-100: #efd6dc;
+  --color-garnet-200: #ddaeba;
+  --color-garnet-300: #c98697;
+  --color-garnet-400: #a85c6f;
+  --color-garnet-500: #833b4d;
+  --color-garnet-600: #6b303f;
+  --color-garnet-700: #542631;
+  --color-garnet-800: #3d1c24;
+  --color-garnet-900: #281318;
 
-  --color-fern-50: #e9f9ee;
-  --color-fern-100: #ccf2d9;
-  --color-fern-200: #9be6b4;
-  --color-fern-300: #6ada8f;
-  --color-fern-400: #33cc66;
-  --color-fern-500: #2bab56;
-  --color-fern-600: #238b45;
-  --color-fern-700: #1c6e37;
-  --color-fern-800: #145229;
-  --color-fern-900: #0d351b;
+  --color-fern-50: #eef8ef;
+  --color-fern-100: #d6efd8;
+  --color-fern-200: #aeddb2;
+  --color-fern-300: #86c98c;
+  --color-fern-400: #5ca862;
+  --color-fern-500: #3b8341;
+  --color-fern-600: #306b35;
+  --color-fern-700: #26542a;
+  --color-fern-800: #1c3d1f;
+  --color-fern-900: #132815;
 
-  --color-amber-50: #f9f6e9;
-  --color-amber-100: #f2ebcc;
-  --color-amber-200: #e6d79b;
-  --color-amber-300: #dac36a;
-  --color-amber-400: #ccae33;
-  --color-amber-500: #ab922b;
-  --color-amber-600: #8b7623;
-  --color-amber-700: #6e5e1c;
-  --color-amber-800: #524514;
-  --color-amber-900: #352d0d;
+  --color-amber-50: #f8f6ee;
+  --color-amber-100: #efebd6;
+  --color-amber-200: #ddd5ae;
+  --color-amber-300: #c9be86;
+  --color-amber-400: #a89b5c;
+  --color-amber-500: #83773b;
+  --color-amber-600: #6b6130;
+  --color-amber-700: #544c26;
+  --color-amber-800: #3d381c;
+  --color-amber-900: #282413;
 
-  --color-azure-50: #e9f2f9;
-  --color-azure-100: #cce3f2;
-  --color-azure-200: #9bc7e6;
-  --color-azure-300: #6aabda;
-  --color-azure-400: #338ccc;
-  --color-azure-500: #2b76ab;
-  --color-azure-600: #235f8b;
-  --color-azure-700: #1c4c6e;
-  --color-azure-800: #143852;
-  --color-azure-900: #0d2435;
+  --color-azure-50: #eef5f8;
+  --color-azure-100: #d6e9ef;
+  --color-azure-200: #aed1dd;
+  --color-azure-300: #86b8c9;
+  --color-azure-400: #5c95a8;
+  --color-azure-500: #3b7183;
+  --color-azure-600: #305c6b;
+  --color-azure-700: #264854;
+  --color-azure-800: #1c353d;
+  --color-azure-900: #132328;
 
   /* Semantic, dark-mode-aware surface tokens. Components should reach for
      these (bg-bg, bg-surface, text-text, ...) for chrome; use the raw

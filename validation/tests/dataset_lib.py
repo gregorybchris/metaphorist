@@ -1,6 +1,5 @@
 """Shared dataset-validation logic: format rules and structural checks used by
-both tests/ (against dataset/*.yaml) and scripts/mml/ (against draft batches
-pre-merge, see docs/metaphor-drafting-spec.md step 10)."""
+tests/ (against dataset/*.yaml)."""
 
 import re
 

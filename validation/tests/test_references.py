@@ -1,4 +1,4 @@
-from scripts.dataset_lib import find_dangling_frame_refs, find_dangling_related
+from dataset_lib import find_dangling_frame_refs, find_dangling_related
 
 
 def test_no_dangling_source_frame(metaphors, frames):

@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import type { Plugin } from "vite";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const FAVORITES_PATH = resolve(HERE, "../curation/favorites.json");
+const FAVORITES_PATH = resolve(HERE, "curation/favorites.json");
 
 type Rating = "up" | "down";
 type Favorites = Record<string, Rating>;

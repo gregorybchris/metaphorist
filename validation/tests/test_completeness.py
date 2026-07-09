@@ -1,6 +1,6 @@
 import warnings
 
-from scripts.dataset_lib import find_mapping_role_mismatches
+from dataset_lib import find_mapping_role_mismatches
 
 # These checks flag known, long-standing gaps inherited from the source
 # ontology rather than defects introduced by edits to this repo, so they warn

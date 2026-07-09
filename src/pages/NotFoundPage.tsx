@@ -17,7 +17,7 @@ export function NotFoundPage() {
       </p>
       <Link
         to="/"
-        className="mt-1 inline-flex items-center rounded-full bg-clay-50 px-4 py-2 text-sm font-medium text-clay-800 transition-colors hover:bg-clay-100 dark:bg-clay-900/40 dark:text-clay-200 dark:hover:bg-clay-900/70"
+        className="mt-1 inline-flex items-center rounded-full bg-clay-600 px-4 py-2 text-sm font-medium text-paper-50 transition-colors hover:bg-clay-700 dark:bg-clay-500 dark:hover:bg-clay-400"
       >
         Hitchhike home
       </Link>

@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 import yaml
 
-DATASET_DIR = Path(__file__).parent.parent / "dataset"
+DATASET_DIR = Path(__file__).parent.parent.parent / "dataset"
 
 
 def _load(name):

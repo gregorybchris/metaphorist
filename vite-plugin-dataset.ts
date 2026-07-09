@@ -8,7 +8,7 @@ const VIRTUAL_ID = "virtual:metaphor-dataset";
 const RESOLVED_ID = "\0" + VIRTUAL_ID;
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const DATASET_DIR = resolve(HERE, "../dataset");
+const DATASET_DIR = resolve(HERE, "dataset");
 
 const FILES = {
   metaphors: "metaphors.yaml",
