@@ -4,12 +4,19 @@ import { FrameList } from "@/components/frame/FrameList";
 import { MasterDetailLayout } from "@/components/layout/MasterDetailLayout";
 import { frames } from "@/data";
 import { entityPath } from "@/lib/format";
+import { useMediaQuery } from "@/lib/useMediaQuery";
 
-/** Handles both /frames and /frames/:name. Lands on the first frame with no :name. */
+/**
+ * Handles both /frames and /frames/:name. With no :name, desktop lands on
+ * the first frame (so the detail pane isn't empty), but mobile stays on the
+ * list — otherwise navigating here (e.g. via the mobile "Back to list" link)
+ * would immediately redirect right back into a detail view.
+ */
 export function FrameListPage() {
   const { name } = useParams();
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
-  if (!name) {
+  if (!name && isDesktop) {
     return <Navigate to={entityPath("frame", frames[0].name)} replace />;
   }
 
@@ -17,7 +24,7 @@ export function FrameListPage() {
     <MasterDetailLayout
       backTo="/frames"
       list={<FrameList activeName={name} />}
-      detail={<FrameDetail name={name} />}
+      detail={name ? <FrameDetail name={name} /> : null}
     />
   );
 }

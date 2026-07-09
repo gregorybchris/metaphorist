@@ -7,6 +7,7 @@ import { SidebarListHeader, SidebarListRow } from "@/components/primitives/Sideb
 import { metaphorByName, metaphors } from "@/data";
 import { favorites } from "@/lib/curation";
 import { entityPath, metaphorDisplayName, metaphorNameFromSlug } from "@/lib/format";
+import { useMediaQuery } from "@/lib/useMediaQuery";
 import type { Metaphor } from "@/types";
 
 function matchesQuery(m: Metaphor, query: string): boolean {
@@ -19,25 +20,28 @@ function matchesQuery(m: Metaphor, query: string): boolean {
 
 /**
  * Handles both /metaphors and /metaphors/:name — the app's flagship browse
- * page. With no :name (including the app's root redirect) it lands on the
- * first metaphor rather than showing an empty "nothing selected" pane, so
- * there's always something to read.
+ * page. With no :name, desktop lands on the first metaphor rather than
+ * showing an empty "nothing selected" pane, so there's always something to
+ * read. Mobile stays on the list instead — otherwise navigating here (e.g.
+ * via the mobile "Back to list" link) would immediately redirect right back
+ * into a detail view.
  */
 export function MetaphorListPage() {
   const { name: slug } = useParams();
   const name = slug ? metaphorNameFromSlug(slug) : undefined;
   const [filter, setFilter] = useState("");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   const filtered = useMemo(() => {
     const q = filter.trim().toLowerCase();
     return metaphors.filter((m) => matchesQuery(m, q));
   }, [filter]);
 
-  if (!name) {
+  if (!name && isDesktop) {
     return <Navigate to={entityPath("metaphor", metaphors[0].name)} replace />;
   }
 
-  const selected = metaphorByName.get(name);
+  const selected = name ? metaphorByName.get(name) : undefined;
 
   return (
     <MasterDetailLayout
@@ -71,7 +75,7 @@ export function MetaphorListPage() {
         </div>
       }
       detail={
-        selected ? (
+        !name ? null : selected ? (
           <MetaphorDetail metaphor={selected} />
         ) : (
           <div className="p-8">
