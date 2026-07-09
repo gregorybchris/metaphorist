@@ -1,5 +1,5 @@
 [project]
-name = "metaphor"
+name = "metaphorist"
 version = "0.1.0"
 description = "Curated English export of the MetaNet Metaphor Repository"
 requires-python = ">=3.11"

@@ -45,7 +45,7 @@ export function MetaphorListPage() {
         <div className="flex h-full flex-col">
           <SidebarListHeader
             title="Metaphors"
-            count={metaphors.length}
+            count={filtered.length}
             value={filter}
             onChange={setFilter}
             placeholder="Filter metaphors…"

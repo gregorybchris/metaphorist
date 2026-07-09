@@ -75,11 +75,25 @@ metaphors:
       - The dictator bullied his rivals into silence.
       - He shoved the opposition around until no one dared object.
       - She strong-armed the council into approving her budget.
+    mappings:
+      - source_role: bully
+        target_role: controlling_entity
+      - source_role: bullied
+        target_role: dependent_entity
+    source_frame: bully
+    target_frame: control
   - name: ACCEPTING_IS_SWALLOWING
     examples:
       - Voters swallowed the candidate's promises without much question.
       - It was a bitter pill to swallow, but they accepted the terms.
       - She had to swallow her pride and go along with the decision.
+    mappings:
+      - source_role: swallower
+        target_role: acceptor
+      - source_role: swallowed_object
+        target_role: accepted_thing
+    source_frame: swallowing
+    target_frame: acceptance
   - name: ACCESS_TO_EDUCATION_IS_ACCESS_TO_AN_OBJECT
     source_frame: access-to-an-object
     target_frame: access-to-education
@@ -551,6 +565,13 @@ metaphors:
       - Her testimony landed some serious blows against the bill's supporters.
       - Gun-control advocates have taken a beating in the court of public opinion.
       - The senator's op-ed left the opposing campaign badly bruised.
+    mappings:
+      - source_role: cause_of_harm
+        target_role: advocate
+      - source_role: harmful_effect_process
+        target_role: actions
+    source_frame: physical-harm
+    target_frame: advocacy
   - name: ADVOCATING_GUN_CONTROL_IS_INSANITY
     type: Composed/complex
     source_frame: insanity
@@ -593,6 +614,13 @@ metaphors:
       - All the different parties are united on this issue.
       - The team stood as one on the new proposal.
       - Cracks are starting to show in their alliance.
+    mappings:
+      - source_role: whole
+        target_role: agreement
+      - source_role: parts
+        target_role: parties
+    source_frame: part-whole
+    target_frame: agreement
   - name: AGREEMENT_IS_PHYSICAL_PROXIMITY
     type: Composed/complex
     source_frame: proximity
@@ -683,6 +711,11 @@ metaphors:
       - The two nations have grown into close friends over the decades.
       - Old rivals became fast friends once the trade deal was signed.
       - The alliance has been a rocky friendship from the start.
+    mappings:
+      - source_role: friendship
+        target_role: alliance
+      - source_role: friends
+        target_role: allies
   - name: ALTERNATIVES_ARE_DIFFERENT_AVAILABLE_PATHS
     type: Composed/complex
     source_frame: source-path-goal
@@ -939,6 +972,15 @@ metaphors:
       - Let off some steam before you say something you regret.
     related:
       - EMOTION_IS_PRESSURE_IN_A_CONTAINER
+    mappings:
+      - source_role: container
+        target_role: body
+      - source_role: contents
+        target_role: anger
+      - source_role: container_pressure
+        target_role: body_pressure
+      - source_role: container_pressure_limit
+        target_role: anger_limit
   - name: ANGER_IS_THE_HEAT_OF_FLUID_IN_A_CONTAINER
     type: Composed/complex
     source_frame: heating-fluid
@@ -1030,6 +1072,13 @@ metaphors:
       - Your claims are indefensible.
       - He attacked every weak point in my argument.
       - I blew his argument out of the water.
+    mappings:
+      - source_role: fighter1
+        target_role: arguers
+      - source_role: fighter2
+        target_role: arguers
+      - source_role: physical_interaction_x_schema
+        target_role: arguing_event
   - name: ARGUMENT_IS_WAR
     type: Primary
     source_frame: war
@@ -1042,6 +1091,15 @@ metaphors:
       - They've been at war over this policy for years.
     related:
       - ARGUMENT_IS_PHYSICAL_COMBAT
+    mappings:
+      - source_role: side_1
+        target_role: arguers
+      - source_role: side_2
+        target_role: arguers
+      - source_role: fighting
+        target_role: arguing_event
+      - source_role: weapons
+        target_role: arguments_expressed
   - name: ARITHMETIC_IS_OBJECT_COLLECTION
     type: Primary
     source_frame: object-collection
@@ -1141,6 +1199,11 @@ metaphors:
       - The charity props up dozens of small farms every harvest.
     related:
       - FUNCTIONALITY_IS_VERTICALITY
+    mappings:
+      - source_role: supported_entity
+        target_role: assisted_entity
+      - source_role: supporting_entity
+        target_role: assisting_entity
   - name: ASSOCIATION_IS_CONNECTION
     type: Primary
     source_frame: physical-connection
@@ -1154,6 +1217,11 @@ metaphors:
     related:
       - CATEGORIES_ARE_BOUNDED_REGIONS
       - SIMILARITY_IS_PROXIMITY
+    mappings:
+      - source_role: connected_items
+        target_role: associated_entities
+      - source_role: connector
+        target_role: association
   - name: ATTAINING_CONTROL_IS_GAINING_A_POSSESSION
     type: Composed/complex
     source_frame: gain-possession
@@ -1213,6 +1281,11 @@ metaphors:
       - In a democracy, authority is granted to the government by the people.
       - The agency's credibility took a hit after the scandal.
       - The council's legitimacy rests on a fair election.
+    mappings:
+      - source_role: entity
+        target_role: attribute
+    source_frame: entity
+    target_frame: attribute
   - name: ATTRIBUTES_OF_GOVERNMENT_ARE_POSSESSIONS
     families:
       - Governance
@@ -1220,6 +1293,13 @@ metaphors:
       - Many citizens underestimate the government's efficiency.
       - The agency has a responsibility to address the downturn.
       - The city lost its reputation for fair policing after the scandal.
+    mappings:
+      - source_role: possessor
+        target_role: entity
+      - source_role: possession
+        target_role: attribute
+    source_frame: possession
+    target_frame: attribute
   - name: AUGMENTING_ECONOMIC_ASSETS_IS_CREATING_OBJECTS
     source_frame: create-object
     target_frame: economic-resource
@@ -1297,6 +1377,11 @@ metaphors:
       - This movie stinks!
       - Something about that deal smells fishy.
       - The whole plan reeks of desperation.
+    mappings:
+      - source_role: entity
+        target_role: bad_entity
+      - source_role: degree_of_disgust
+        target_role: badness
   - name: BECOMING_AWARE_IS_NOTICING
     type: Primary
     source_frame: noticing
@@ -1308,6 +1393,11 @@ metaphors:
       - Nobody noticed the mistake until it was too late.
       - She caught sight of the problem before it got worse.
       - It took months for anyone to spot the pattern.
+    mappings:
+      - source_role: noticer
+        target_role: cognizer
+      - source_role: noticed_thing
+        target_role: content
   - name: BECOMING_IMPOVERISHED_IS_MOVING_DOWNWARDS
     source_frame: downward-motion
     target_frame: impoverished
@@ -1457,6 +1547,11 @@ metaphors:
       - I heard her out and came around to her view.
       - He wouldn't listen to any objections.
       - The board finally lent an ear to the employees' concerns.
+    mappings:
+      - source_role: hearer
+        target_role: receiver
+      - source_role: sound
+        target_role: content
   - name: BEING_TAXED_IS_CRIME
     source_frame: crime
     target_frame: taxation
@@ -1566,6 +1661,11 @@ metaphors:
       - The new policy is a valuable resource for struggling families.
       - They tapped into every benefit available to get through the year.
       - Her mentorship has been a rich source of career advice.
+    mappings:
+      - source_role: resource
+        target_role: benefit
+      - source_role: resource_user
+        target_role: beneficiary
   - name: BODY_IS_A_CONTAINER_FOR_EMOTIONS
     source_frame: fluid-containment
     target_frame: emotion
@@ -1596,6 +1696,11 @@ metaphors:
       - The agency's tentacles reach into every part of daily life.
       - New offices kept sprouting like tentacles from the central bureaucracy.
       - Once it gets a grip on a case, the bureaucracy never lets go.
+    mappings:
+      - source_role: dangerous_animal
+        target_role: institution_of_operation
+      - source_role: dangerous_body_part
+        target_role: functions
   - name: BUREAUCRACY_IS_A_MACHINE
     type: Composed/complex
     source_frame: machine
@@ -1628,6 +1733,13 @@ metaphors:
       - Clerks stamped forms all day like workers on an assembly line.
       - Each bureaucrat just punches out paperwork, one file after another.
       - The office churns out permits the way a factory churns out parts.
+    mappings:
+      - source_role: factory
+        target_role: institution_of_operation
+      - source_role: factory_workers
+        target_role: members
+      - source_role: manufacturing_line
+        target_role: functions
   - name: BUREAUCRATS_ARE_GUIDES
     families:
       - Governance
@@ -1635,6 +1747,13 @@ metaphors:
       - A good caseworker can guide you through the whole application process.
       - The clerk walked her step by step through the paperwork.
       - He pointed me toward the right office to file my claim.
+    mappings:
+      - source_role: leader
+        target_role: members
+      - source_role: follower
+        target_role: individuals_served
+    source_frame: guided-motion
+    target_frame: bureaucracy
   - name: BUREAUCRATS_ARE_MACHINE_PARTS
     source_frame: machine
     target_frame: bureaucracy
@@ -1655,11 +1774,25 @@ metaphors:
       - The building inspector ruled his little office like a tyrant.
       - She lorded her authority over anyone who needed a permit.
       - He ran the department like his own personal kingdom.
+    mappings:
+      - source_role: nation_leaders
+        target_role: members
+      - source_role: nation_citizens
+        target_role: individuals_served
+      - source_role: nation_whole
+        target_role: institution_of_operation
+    source_frame: state-leadership
+    target_frame: bureaucracy
   - name: BUSINESSES_ARE_ENTITIES
     examples:
       - The company grew up fast in its first five years.
       - That business has a mind of its own these days.
       - The firm matured into a serious competitor.
+    mappings:
+      - source_role: entity
+        target_role: business
+    source_frame: entity
+    target_frame: business
   - name: BUSINESSES_ARE_LIVING_ENTITIES
     type: Primary
     source_frame: animate-entity
@@ -1961,6 +2094,17 @@ metaphors:
       - Closed-door meetings kept voters in the dark about the deal.
       - Secrecy around the budget obscured how the money was really spent.
       - A blackout on records blocked any real oversight of the agency.
+    mappings:
+      - source_role: obstructing_object
+        target_role: difficulties_in_evaluating
+      - source_role: seer
+        target_role: evaluator
+      - source_role: focal_object
+        target_role: behavior
+      - source_role: vision
+        target_role: evaluation
+    source_frame: visual-obstruction
+    target_frame: citizen-evaluation-of-government
   - name: CAUSING_DECREASE_IN_CRIME_IS_TREATING_DISEASE
     source_frame: disease-treatment
     target_frame: crime
@@ -2003,6 +2147,15 @@ metaphors:
       - Officials accused the neighboring country of fanning the flames of unrest.
       - His speech only stoked tensions that were already boiling over.
       - Leaked documents poured fuel on an already tense standoff.
+    mappings:
+      - source_role: fire
+        target_role: unrest
+      - source_role: fire_intensity
+        target_role: unrest_level
+      - source_role: cause_of_fire
+        target_role: cause_of_unrest
+    source_frame: fire
+    target_frame: political-unrest
   - name: CAUSING_TO_EXIST_IS_OBJECT_CREATION
     source_frame: create-object
     target_frame: cause-to-begin-existence
@@ -2189,6 +2342,13 @@ metaphors:
       - The city treats residents as partners in shaping new policy.
       - Officials asked citizens to team up with them on the recycling plan.
       - The mayor called on the community to join the effort as equal partners.
+    mappings:
+      - source_role: partner1
+        target_role: governed
+      - source_role: partner2
+        target_role: governor
+    source_frame: partnership
+    target_frame: government
   - name: CITIZENS_ARE_SLAVES
     type: Composed/complex
     source_frame: servitude
@@ -2696,6 +2856,13 @@ metaphors:
       - This tax code is a maze with no way out.
       - I keep hitting dead ends trying to make sense of the new zoning rules.
       - Nobody can find their way through this labyrinth of permits and paperwork.
+    mappings:
+      - source_role: maze
+        target_role: regulation_rules
+      - source_role: maze_traveler
+        target_role: regulatee
+    source_frame: maze
+    target_frame: regulation
   - name: CONSCIOUSNESS_IS_VERTICALITY
     type: Primary
     source_frame: verticality
@@ -2738,6 +2905,13 @@ metaphors:
       - Give me a day to chew on that idea before I answer.
       - She's been chewing over whether to take the offer all week.
       - Let's chew that over during lunch and decide by Friday.
+    mappings:
+      - source_role: chewer
+        target_role: thinker
+      - source_role: chewed_object
+        target_role: thinking_content
+    source_frame: chewing
+    target_frame: thinking-about
   - name: CONSIDERING_THE_IMPORTANCE_OF_RIGHTS_IS_PLAYING_A_GAME
     source_frame: card-game
     target_frame: gun-rights
@@ -2885,6 +3059,15 @@ metaphors:
       - The two countries have been good neighbors for generations.
       - It's time the rivals started acting like good neighbors.
       - They've mended fences and are neighborly again after years of tension.
+    mappings:
+      - source_role: neighbor1
+        target_role: nation1
+      - source_role: neighbor2
+        target_role: nation2
+      - source_role: neighbor_relation
+        target_role: international_relationship
+    source_frame: neighbor
+    target_frame: international-relations
   - name: CORPORATIONS_ARE_PEOPLE
     type: Composed/complex
     source_frame: person
@@ -3711,6 +3894,11 @@ metaphors:
       - Americans are divided over whether we need a third major party.
       - The vote split the committee right down the middle.
       - The issue has torn the party into feuding camps.
+    mappings:
+      - source_role: whole
+        target_role: arguers
+      - source_role: cause_of_separation
+        target_role: trigger_of_argument
   - name: DISEASE_TREATMENT_IS_WAR
     type: Composed/complex
     source_frame: war
@@ -5431,6 +5619,11 @@ metaphors:
       - We need welfare as a safety net.
     related:
       - ASSISTANCE_IS_SUPPORT
+    mappings:
+      - source_role: supported_entity
+        target_role: assisted_entity
+      - source_role: supporting_entity
+        target_role: assisting_entity
   - name: GOVERNMENT_BUDGETS_ARE_HOUSEHOLD_BUDGETS
     families:
       - Governance
@@ -10324,6 +10517,11 @@ metaphors:
       - The new law provides struggling families with much-needed support.
     related:
       - BENEFIT_IS_A_RESOURCE
+    mappings:
+      - source_role: resource
+        target_role: benefit
+      - source_role: resource_user
+        target_role: beneficiary
   - name: PROVING_IS_SHOWING
     type: Composed/complex
     source_frame: cause-to-see

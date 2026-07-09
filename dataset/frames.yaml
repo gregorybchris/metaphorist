@@ -300,6 +300,9 @@ frames:
     frame_families:
       - Causation
   - name: agreement
+    roles:
+      - name: agreement
+      - name: parties
   - name: agriculture
     frame_type:
       - Frame
@@ -402,6 +405,9 @@ frames:
       - name: parts
       - name: degree_of_alignment
   - name: alliances
+    roles:
+      - name: alliance
+      - name: allies
   - name: amassing
     frame_families:
       - Resource
@@ -618,7 +624,13 @@ frames:
     related:
       - financial-resource
   - name: assistance
+    roles:
+      - name: assisted_entity
+      - name: assisting_entity
   - name: association
+    roles:
+      - name: associated_entities
+      - name: association
   - name: attach
     frame_type:
       - Frame
@@ -820,6 +832,9 @@ frames:
     related:
       - goodness
       - negatively-evaluated-condition
+    roles:
+      - name: bad_entity
+      - name: badness
   - name: barrier
     frame_type:
       - Frame
@@ -1058,6 +1073,9 @@ frames:
   - name: being-receptive
     frame_type:
       - Frame
+    roles:
+      - name: receiver
+      - name: content
   - name: being-stable
     frame_type:
       - Frame
@@ -1108,6 +1126,9 @@ frames:
   - name: benefit
     frame_type:
       - Frame
+    roles:
+      - name: benefit
+      - name: beneficiary
   - name: biological-entity
     frame_families:
       - Entity
@@ -1593,6 +1614,8 @@ frames:
     related:
       - finance
       - wealth
+    roles:
+      - name: business
   - name: cancer
     frame_type:
       - Frame
@@ -1897,6 +1920,10 @@ frames:
       - nibble.n
       - nibble.v
       - ruminate.v
+    roles:
+      - name: chewer
+      - name: chewed_object
+      - name: chewing_x_schema
   - name: child
     roles:
       - name: child
@@ -1959,6 +1986,7 @@ frames:
       - name: evaluation
       - name: evaluator
       - name: standard
+      - name: difficulties_in_evaluating
     related:
       - evaluation
       - government
@@ -3614,6 +3642,9 @@ frames:
       - vile.a
     related:
       - impurity
+    roles:
+      - name: entity
+      - name: degree_of_disgust
   - name: disorderly-group
     frame_type:
       - Frame
@@ -5019,6 +5050,9 @@ frames:
     related:
       - action
   - name: friendships
+    roles:
+      - name: friendship
+      - name: friends
   - name: functionality
     frame_type:
       - Frame
@@ -7397,6 +7431,9 @@ frames:
       - obstacle course.n
     related:
       - physical-path
+    roles:
+      - name: maze
+      - name: maze_traveler
   - name: measuring
     frame_type:
       - Frame
@@ -8303,6 +8340,9 @@ frames:
     related:
       - motion
   - name: noticing
+    roles:
+      - name: noticer
+      - name: noticed_thing
   - name: nuclear-family
     frame_type:
       - Frame
@@ -8693,6 +8733,10 @@ frames:
       - relation
   - name: participation
   - name: partnership
+    roles:
+      - name: partner1
+      - name: partner2
+      - name: partnership_relation
   - name: passion
   - name: path
   - name: paths-out-of-a-location
@@ -9481,6 +9525,11 @@ frames:
       - containment
       - fluid-containment
       - pressure
+    roles:
+      - name: container
+      - name: contents
+      - name: container_pressure
+      - name: container_pressure_limit
   - name: problem
     frame_type:
       - Frame
@@ -10662,6 +10711,9 @@ frames:
       - split.v
     related:
       - part-whole
+    roles:
+      - name: whole
+      - name: cause_of_separation
   - name: sequence-of-actions
     frame_type:
       - Frame
@@ -12827,3 +12879,37 @@ frames:
     related:
       - deity
       - worship
+  - name: swallowing
+    roles:
+      - name: swallower
+      - name: swallowed_object
+      - name: swallowing_x_schema
+    lexical_units:
+      - swallow.v
+      - gulp.v
+      - gulp.v down
+      - choke.v down
+      - force.v down
+  - name: acceptance
+    roles:
+      - name: acceptor
+      - name: accepted_thing
+    lexical_units:
+      - accept.v
+      - acceptance.n
+      - come to terms with.v
+      - go along with.v
+      - swallow.v
+  - name: political-unrest
+    roles:
+      - name: unrest
+      - name: unrest_level
+      - name: cause_of_unrest
+    lexical_units:
+      - unrest.n
+      - turmoil.n
+      - upheaval.n
+      - tension.n
+      - instability.n
+      - boil over.v
+      - flare up.v

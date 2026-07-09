@@ -35,7 +35,7 @@ export function FrameList({ activeName }: { activeName?: string }) {
     <div className="flex h-full min-h-0 flex-col">
       <SidebarListHeader
         title="Frames"
-        count={frames.length}
+        count={filtered.length}
         value={query}
         onChange={setQuery}
         placeholder="Filter frames…"
