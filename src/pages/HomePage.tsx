@@ -59,7 +59,7 @@ export function HomePage() {
   ).filter((m): m is Metaphor => Boolean(m));
 
   return (
-    <div className="mx-auto max-w-2xl px-6 py-14 md:py-20">
+    <div className="mx-auto max-w-2xl px-6 py-14 md:py-14">
       <p className="font-serif text-2xl leading-snug text-center text-balance text-text italic sm:text-3xl">
         How often we speak in metaphor may surprise you.
       </p>
@@ -70,7 +70,7 @@ export function HomePage() {
         ))}
       </div>
 
-      <div className="mt-10 border-t border-border pt-6 text-center">
+      <div className="mt-2 pt-6 text-center">
         <Link
           to="/metaphors"
           className="text-sm text-text-muted underline decoration-dotted underline-offset-2 hover:text-text hover:decoration-solid"
