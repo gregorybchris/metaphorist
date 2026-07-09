@@ -270,8 +270,8 @@ metaphors:
       - source_role: ingestion_process
         target_role: compulsion_x_schema
     examples:
-      - addicted to gambling
-      - work-aholic
+      - He's addicted to gambling and can't stop.
+      - She's such a workaholic that she never takes a day off.
   - name: ACTION_IS_BEING_IN_A_LOCATION
     source_frame: being-at-a-location
     target_frame: action
@@ -3800,10 +3800,10 @@ metaphors:
       - source_role: health_state
         target_role: belief_relation_status
     examples:
-      - an infectious idea
-      - the contagion of democratic ideas
-      - the children were infected with ideas about socialism
-      - we have to take extreme measures and amputate the gangrenous limb before it kills our nation
+      - It was an infectious idea that spread quickly through the movement.
+      - The contagion of democratic ideas swept across the region.
+      - The children were infected with ideas about socialism.
+      - We have to take extreme measures and amputate the gangrenous limb before it kills our nation.
     related:
       - SOCIAL_PROBLEMS_ARE_DISEASES
   - name: DARKNESS_IS_A_COVER
@@ -9321,7 +9321,7 @@ metaphors:
     examples:
       - He was wired.
       - He was lit.
-      - '"It''s the electric waitress" (said about a waitress on LSD).'
+      - They called her the electric waitress after she took the LSD.
   - name: INTOXICATION_IS_GETTING_A_BURDEN
     source_frame: burden
     target_frame: intoxication
@@ -9807,7 +9807,7 @@ metaphors:
       - source_role: ingestion_process
         target_role: learning_x_schema
     examples:
-      - I took in everything I was told
+      - I took in everything I was told.
       - I soaked in everything the teacher said.
       - He has a mind like a sponge.
       - He has a thirst for knowledge.
@@ -10069,8 +10069,8 @@ metaphors:
       - source_role: path
         target_role: light_source
     examples:
-      - Sunbeams
-      - rays of light
+      - Sunbeams streamed through the window.
+      - Rays of light spread out across the sky.
       - The lamp throws a lot of light.
       - Direct more light over here.
   - name: LIMITING_RANGE_OF_SUBJECT_MATTER_IS_NARROWING_WIDTH_OF_BOUNDED_REGION
@@ -10396,8 +10396,8 @@ metaphors:
       - source_role: cause_of_insanity
         target_role: target_of_lust
     examples:
-      - sex-crazed
-      - sex-maniac
+      - He seemed sex-crazed the moment she walked in.
+      - They called him a sex-maniac behind his back.
     related:
       - LOVE_IS_MADNESS
       - STRONG_EMOTIONS_ARE_MADNESS
@@ -11992,9 +11992,9 @@ metaphors:
       - source_role: object_entity
         target_role: perceived_thing
     examples:
-      - I can't figure him out
-      - I sized him up
-      - She's a well-known political figure
+      - I can't figure him out.
+      - I sized him up.
+      - She's a well-known political figure.
   - name: PERSISTING_IS_REMAINING_ERECT
     source_frame: persistence
     target_frame: erectness
@@ -12975,7 +12975,7 @@ metaphors:
         target_role: mental_capacity
     examples:
       - The discussion fell to the emotional level, but I raised it back up to the rational plane.
-      - high-level intellectual discussion
+      - It was a high-level intellectual discussion.
       - He couldn't rise above his emotions.
     related:
       - CONSCIOUSNESS_IS_VERTICALITY

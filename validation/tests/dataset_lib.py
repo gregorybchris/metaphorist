@@ -7,6 +7,11 @@ METAPHOR_NAME_RE = re.compile(r"^[A-Z0-9_]+$")
 FRAME_NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 ROLE_NAME_RE = re.compile(r"^[a-z0-9]+(_[a-z0-9]+)*$")
 
+# metaphors[].examples entries must be sentence-case: a capitalized sentence
+# ending in terminal punctuation, not a bare lowercase phrase/fragment lifted
+# straight from the source ontology.
+EXAMPLE_SENTENCE_RE = re.compile(r"^[A-Z].*[.!?]$")
+
 # A lexical unit carries its part of speech as a `.pos` tag on its head word,
 # e.g. "boil.v" or, for multiword units, "hold.v back" / "highest level.n" --
 # the tag can sit anywhere as long as the rest of the string is a trailing

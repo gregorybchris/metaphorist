@@ -1,6 +1,7 @@
 import warnings
 
 from dataset_lib import (
+    EXAMPLE_SENTENCE_RE,
     FRAME_NAME_RE,
     LEXICAL_UNIT_POS_RE,
     METAPHOR_NAME_RE,
@@ -39,6 +40,16 @@ def test_family_name_format(metaphor_families, frame_families):
     assert not bad, f"family names not in sentence case (see README): {bad}"
 
 
+def test_example_sentence_format(metaphors):
+    bad = [
+        f"{m['name']}: {ex!r}"
+        for m in metaphors
+        for ex in m.get("examples", [])
+        if not EXAMPLE_SENTENCE_RE.match(ex)
+    ]
+    assert not bad, f"example(s) not a capitalized sentence ending in .!?: {bad[:10]}"
+
+
 def test_lexical_unit_has_pos(frames):
     bad = [
         f"{f['name']}.{lu}"
@@ -75,4 +86,3 @@ def test_role_name_format(frames):
             f"{len(bad)} role name(s) not in snake_case (a-z, 0-9, _): {bad[:10]}",
             stacklevel=2,
         )
-
