@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, ThumbsDown, ThumbsUp } from "lucide-react";
+import { ChevronLeft, ChevronRight, RotateCcw, ThumbsDown, ThumbsUp } from "lucide-react";
 import { MetaphorDetail } from "@/components/metaphor/MetaphorDetail";
 import { metaphors } from "@/data";
 import { cn } from "@/lib/cn";
@@ -44,6 +44,10 @@ function CurateReview() {
     },
     [current, favorites, setRating, goNext],
   );
+  const reset = useCallback(() => {
+    if (!current) return;
+    setRating(current.name, null);
+  }, [current, setRating]);
 
   useEffect(() => {
     function onKeydown(e: KeyboardEvent) {
@@ -119,6 +123,16 @@ function CurateReview() {
           )}
         >
           <ThumbsDown size={16} /> Bad
+        </button>
+
+        <button
+          type="button"
+          onClick={reset}
+          disabled={!currentRating}
+          aria-label="Reset rating"
+          className="rounded-full p-2.5 text-text-muted hover:bg-surface-hover hover:text-text disabled:pointer-events-none disabled:opacity-30"
+        >
+          <RotateCcw size={16} />
         </button>
 
         <button
