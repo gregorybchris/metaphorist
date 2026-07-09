@@ -1,9 +1,18 @@
 import { useCallback, useEffect, useState } from "react";
+import rawFavorites from "virtual:curation-favorites";
 
 export type Rating = "up" | "down";
 export type Favorites = Record<string, Rating>;
 
 const ENDPOINT = "/__curation";
+
+/**
+ * Baked in from curation/favorites.json at build time (see
+ * vite-plugin-curation.ts), unlike useFavorites below — available in the
+ * production build for read-only display, e.g. starring favorited
+ * metaphors in the main sidebar.
+ */
+export const favorites: Favorites = rawFavorites;
 
 /**
  * Talks to the dev-server-only /__curation middleware (vite-plugin-curation.ts),

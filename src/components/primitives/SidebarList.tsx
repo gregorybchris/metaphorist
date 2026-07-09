@@ -1,6 +1,6 @@
 import { forwardRef, type ComponentPropsWithoutRef } from "react";
 import { Link } from "react-router-dom";
-import { CircleX, Search } from "lucide-react";
+import { CircleX, Search, Star } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { displayName, entityPath } from "@/lib/format";
 import type { EntityKind } from "@/types";
@@ -72,29 +72,40 @@ type SidebarListRowProps = {
   kind: EntityKind;
   name: string;
   active: boolean;
+  starred?: boolean;
 } & Omit<ComponentPropsWithoutRef<typeof Link>, "to" | "className">;
 
 /** A single compact, truncated, single-line row in a master list. */
 export const SidebarListRow = forwardRef<HTMLAnchorElement, SidebarListRowProps>(
-  function SidebarListRow({ kind, name, active, ...linkProps }, ref) {
+  function SidebarListRow({ kind, name, active, starred, ...linkProps }, ref) {
     return (
       <Link
         ref={ref}
         to={entityPath(kind, name)}
         className={cn(
-          "flex items-center border-b border-border px-4 py-2.5 hover:bg-surface-hover",
+          "flex items-center gap-2 border-b border-border px-4 py-2.5 hover:bg-surface-hover",
           active && ROW_ACTIVE_BG[kind],
         )}
         {...linkProps}
       >
         <span
           className={cn(
-            "truncate font-serif text-[15px] text-text",
+            "min-w-0 flex-1 truncate font-serif text-[15px] text-text",
             active && ROW_ACTIVE_TEXT[kind],
           )}
         >
           {displayName(kind, name)}
         </span>
+        {starred && (
+          <Star
+            size={13}
+            strokeWidth={1.5}
+            // A literal, saturated gold — the app's `amber` scale is deliberately
+            // muted to match the archival palette, which reads as grayish here.
+            className="shrink-0 fill-[#d4af37] text-[#d4af37]"
+            aria-label="Favorited"
+          />
+        )}
       </Link>
     );
   },

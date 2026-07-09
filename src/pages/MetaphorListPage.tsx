@@ -5,6 +5,7 @@ import { MetaphorDetail } from "@/components/metaphor/MetaphorDetail";
 import { EmptyState } from "@/components/primitives/EmptyState";
 import { SidebarListHeader, SidebarListRow } from "@/components/primitives/SidebarList";
 import { metaphorByName, metaphors } from "@/data";
+import { favorites } from "@/lib/curation";
 import { entityPath, metaphorDisplayName, metaphorNameFromSlug } from "@/lib/format";
 import type { Metaphor } from "@/types";
 
@@ -57,7 +58,13 @@ export function MetaphorListPage() {
           ) : (
             <div>
               {filtered.map((m) => (
-                <SidebarListRow key={m.name} kind="metaphor" name={m.name} active={m.name === name} />
+                <SidebarListRow
+                  key={m.name}
+                  kind="metaphor"
+                  name={m.name}
+                  active={m.name === name}
+                  starred={favorites[m.name] === "up"}
+                />
               ))}
             </div>
           )}
