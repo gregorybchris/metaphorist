@@ -2,19 +2,10 @@ import warnings
 
 from dataset_lib import find_mapping_role_mismatches
 
-# These checks flag known, long-standing gaps inherited from the source
-# ontology rather than defects introduced by edits to this repo, so they warn
-# instead of failing the build.
-
 
 def test_mapping_roles_present_in_frame_roles(metaphors, frame_roles):
     mismatched = find_mapping_role_mismatches(metaphors, frame_roles)
-    if mismatched:
-        warnings.warn(
-            f"{len(mismatched)} mapping role(s) absent from their frame's roles list: "
-            f"{mismatched[:5]}",
-            stacklevel=2,
-        )
+    assert not mismatched, f"mapping role(s) absent from their frame's roles list: {mismatched}"
 
 
 def test_frame_roles_used_by_a_mapping(metaphors, frames):
@@ -32,11 +23,7 @@ def test_frame_roles_used_by_a_mapping(metaphors, frames):
         for r in f.get("roles", [])
         if r["name"] not in used.get(f["name"], set())
     ]
-    if unused:
-        warnings.warn(
-            f"{len(unused)} frame role(s) not used by any metaphor mapping: {unused[:5]}",
-            stacklevel=2,
-        )
+    assert not unused, f"frame role(s) not used by any metaphor mapping: {unused}"
 
 
 def test_frames_used_by_a_metaphor(metaphors, frames):
@@ -48,12 +35,14 @@ def test_frames_used_by_a_metaphor(metaphors, frames):
             used.add(m["target_frame"])
 
     unused = [f["name"] for f in frames if f["name"] not in used]
-    if unused:
-        warnings.warn(
-            f"{len(unused)} frame(s) not used as a source_frame or target_frame by any "
-            f"metaphor: {unused[:5]}",
-            stacklevel=2,
-        )
+    assert not unused, (
+        f"frame(s) not used as a source_frame or target_frame by any metaphor: {unused}"
+    )
+
+
+# These checks flag known, long-standing gaps inherited from the source
+# ontology rather than defects introduced by edits to this repo, so they warn
+# instead of failing the build.
 
 
 def test_metaphors_have_mappings(metaphors):

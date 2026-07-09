@@ -88,11 +88,12 @@ dataset file triggers a full reload in dev.
 ## Validating the dataset
 
 A Python test suite in `validation/` checks `dataset/*.yaml` for structural
-integrity: no duplicate names, no dangling frame/family/metaphor references,
+integrity: no duplicate names, no dangling frame/family/metaphor references
+(including that family membership is recorded symmetrically on both sides),
 name-format conventions, and collection sizes within expected bounds. A couple
-of known, long-standing gaps inherited from the source ontology (mapping roles
-not declared on their frame, frame roles unused by any mapping) warn instead
-of failing the build.
+of known, long-standing gaps inherited from the source ontology (non-kebab-case
+frame names, non-snake_case role names, metaphors/frames missing mappings,
+examples, roles, or lexical units) warn instead of failing the build.
 
 Requirements: Python 3.11+, [uv](https://docs.astral.sh/uv/).
 
