@@ -5,17 +5,11 @@ frame_families:
       - access-to-knowledge
   - name: Act on an object
     members:
-      - attach
       - create-object
-      - detach
-      - discard
       - fixing
       - grasp
-      - object-insertion
       - object-manipulation
-      - object-propulsion
       - operating-a-machine
-      - restore
   - name: Action
     members:
       - ability-to-act
@@ -24,9 +18,7 @@ frame_families:
       - aids-to-action
       - decision-making
       - difficulties-in-action
-      - force-application
       - freedom-of-action
-      - immoral-action
       - increase-ease-of-action
       - moral-action
       - object-manipulation
@@ -34,17 +26,13 @@ frame_families:
       - self-initiated-state-change
       - self-propelled-motion
       - self-propelled-motion-to-a-destination
-      - sequence-of-actions
       - social-obligation
   - name: Affected movement
     members:
       - affected-motion
       - caused-downward-motion
       - caused-upward-motion
-      - controlled-motion
-      - controlled-vehicular-motion
       - forced-motion
-      - forced-movement
       - guided-motion
       - self-propelled-motion
       - self-propelled-motion-to-a-destination
@@ -60,19 +48,13 @@ frame_families:
       - overeating
   - name: Body
     members:
-      - bodily-sensation
       - body
       - upright-posture
   - name: Bounding
     members:
-      - bounded-entity
       - bounded-region
       - containing
       - containment
-      - edge
-      - in
-      - into
-      - out
       - region
   - name: Bureaucracy
     members:
@@ -84,13 +66,10 @@ frame_families:
       - causation
       - cause-contact
       - caused-change-of-state
-      - enablement
-      - forced-movement
       - harm
   - name: Change-related
     members:
       - caused-change-of-state
-      - change-of-location
       - change-of-state
       - possession-change
       - replacement
@@ -101,7 +80,6 @@ frame_families:
       - becoming-aware
       - belief
       - cognizing
-      - desiring
       - forming-words
       - idea
       - knowing
@@ -120,10 +98,8 @@ frame_families:
       - communication
       - criticizing
       - debating
-      - discussing
       - forming-words
       - linguistic-activity
-      - silencing
       - speaking
       - speech-act
   - name: Competition
@@ -135,24 +111,18 @@ frame_families:
       - gambling
       - game
       - physical-competition
-      - political-competition
       - race
       - recreational-competition
       - war
   - name: Concealment and protection
     members:
       - access-to-an-object
-      - burial
-      - hiding
       - placing-in-a-protected-location
       - protect-against-contact
       - protecting
-      - wearable-disguises
   - name: Control of guns
     members:
       - gun-control
-      - gun-control-advocacy
-      - gun-control-advocate
       - gun-control-legislation
   - name: Crime
     members:
@@ -163,51 +133,31 @@ frame_families:
     members:
       - cut
       - decay
-      - deforming
       - destroying
       - destructive-force
       - destructive-natural-process
       - erosion
-      - impact
       - natural-disaster
       - physical-harm
-      - vehicular-accident
   - name: Debt
     members:
       - debt
   - name: Democracy
     members:
-      - citizen-participation
       - democracy
-      - democratic-government
       - democratic-ideology
       - equality
       - freedom
-      - organization-of-power
-      - representation-and-decision-making
       - rights
-  - name: Democratic institutions
-    members:
-      - democratic-institution
-      - media
   - name: Directional movement
     members:
-      - backward-motion
       - downward-motion
       - forward-motion
       - motion-along-a-path
-      - motion-away-from-a-bounded-region
       - motion-away-from-a-location
       - motion-away-from-an-undesirable-location
-      - motion-out-of-a-location
-      - motion-to-a-bounded-region
       - motion-to-a-destination
       - motion-to-a-location
-      - motion-to-avoid-a-destination
-      - motion-with-respect-to-an-undesirable-entity
-      - moving-forward
-      - moving-into-a-bounded-region
-      - moving-out-of-an-undesirable-location
       - self-propelled-motion-to-a-destination
       - trespassing
       - upward-motion
@@ -223,22 +173,17 @@ frame_families:
       - health-treatment
       - pest
       - physical-affliction
-      - surgery
       - treating-a-physical-affliction
   - name: Eating
     members:
       - chewing
-      - consume
       - eating
       - excess-body-weight
       - food
       - hunger
       - ingestion
-      - leftover-food
       - nutritious-food
       - overeating
-      - rich-food
-      - starvation
   - name: Economic
     members:
       - business
@@ -254,11 +199,7 @@ frame_families:
       - laissez-faire-market
       - liberal-market
       - market
-      - monetary-evaluation
       - money
-      - sanction
-      - supply-and-demand
-      - value
   - name: Economic inequality
     members:
       - economic-status
@@ -268,22 +209,18 @@ frame_families:
       - curriculum
       - education
       - educational-evaluation
-      - educational-institution
       - funding-education
       - knowledge
       - learning
-      - school
   - name: Election
     members:
       - election
       - voting
-      - voting-rights
   - name: Emotion
     members:
       - affection
       - anger
       - conceit
-      - directed-emotion
       - disgust
       - emotion
       - emotional-intensity
@@ -293,42 +230,31 @@ frame_families:
       - hope
       - lust
       - sadness
-      - trust-emotion
   - name: Endangerment
     members:
       - burden
       - cut
-      - danger
-      - deforming
-      - remove-burden
       - stop-airflow
   - name: Entity
     members:
       - animal
-      - animal-life-cycle
       - animate-entity
       - artifact
       - biological-entity
       - bird
-      - blood-sucking-creature
       - boat
       - bodily-functioning
       - body
       - body-of-water
       - body-weight
-      - bounded-entity
       - brittle-object
       - building
       - complex-physical-object
       - component-of-building
       - computer
-      - dwelling-place
       - entity
       - fierce-animal
-      - flexible-object
       - geographic-feature
-      - geographic-void
-      - land-vehicle
       - large-geographic-features
       - liquid
       - machine
@@ -341,9 +267,6 @@ frame_families:
       - plants
       - possessable-object
       - resource-container
-      - robot
-      - seafaring-vehicle
-      - sentient-entity
       - substance
       - tending-to-plants
       - textile
@@ -353,8 +276,6 @@ frame_families:
     members:
       - analysis
       - evaluation
-      - judgment
-      - moral-evaluation
       - visual-evaluation
   - name: Event structure
     members:
@@ -373,46 +294,25 @@ frame_families:
       - criticizing
       - curriculum
       - difficulties-in-action
-      - discussing
-      - duration
       - education
-      - educational-institution
-      - enablement
       - existence
       - gain-possession
       - idea
       - income
-      - judgment
       - learning
-      - payment
       - person
       - position
       - possession
       - process
-      - process-completed-state
-      - process-continue
-      - process-end
-      - process-initial-state
-      - process-pause
-      - process-start
-      - process-stop
-      - process-stopped-state
-      - process-uncompleted-state
       - quantity
       - reasoning
-      - relation
-      - right-to-life
-      - school
       - speaking
       - speech-act
       - theory
       - understanding
-      - using
       - work-scenario
-      - x-schema-continue
   - name: Fluid
     members:
-      - absorption
       - body-of-water
       - fluid-motion
       - liquid
@@ -425,72 +325,49 @@ frame_families:
     members:
       - antagonistic-force
       - force
-      - impact
   - name: Force dynamic
     members:
       - antagonistic-force
       - destructive-force
       - force
-      - force-application
       - force-dynamic-interaction
       - force-transfer
       - object-manipulation
-      - pressure
   - name: Forced movement
     members:
       - caused-downward-motion
       - caused-upward-motion
-      - force-application
-      - forced-movement
-      - object-propulsion
-  - name: Function of government
-    members:
-      - government-institution-us
   - name: Governance
     members:
-      - authority
       - citizen-evaluation-of-government
       - citizens
       - community
       - compliance
-      - constitution
       - corruption
       - country
       - election
       - governing-action
       - government
-      - government-decision-making
-      - government-executive-action
       - government-institution
-      - government-institution-us
       - government-legitimacy
-      - immoral-action
       - institution
-      - institutional-corruption
       - international-relations
       - judicial-action
-      - judicial-branch
-      - judicial-decision-making
       - law
       - legislative-action
       - legislative-branch
-      - legitimacy
       - moral-corruption
       - nation
       - organization
-      - organization-of-power
       - political-region
       - power
-      - public-trust
       - rights
       - trust-relationship
       - voting
   - name: Government
     members:
-      - branches-of-government
       - government
       - government-institution
-      - government-institution-us
       - legislative-branch
       - state-leadership
   - name: Guided motion
@@ -499,44 +376,20 @@ frame_families:
       - leadership
   - name: Gun debate
     members:
-      - constitution
-      - criminal-gun-violence
       - freedom
       - gun-control
-      - gun-control-advocacy
-      - gun-control-advocate
       - gun-control-legislation
-      - gun-debate
-      - gun-industry
-      - gun-legislation
       - gun-possession
       - gun-rights
-      - gun-rights-advocacy
-      - gun-rights-advocacy-interest-group
-      - gun-rights-advocate
-      - gun-rights-legislation
-      - gun-use
       - injurious-gun-use
       - personal-weapon
-      - right-to-self-defense
-      - safety
-      - second-amendment
-      - self-defense
-      - weapons-handling
   - name: Gun rights
     members:
-      - gun-industry
       - gun-ownership
       - gun-rights
-      - gun-rights-advocacy
-      - gun-rights-advocacy-interest-group
-      - gun-rights-advocate
-      - right-to-self-defense
-      - second-amendment
   - name: Guns
     members:
       - personal-weapon
-      - weapons-handling
   - name: Harm
     members:
       - addiction
@@ -544,25 +397,17 @@ frame_families:
       - bully
       - crime
       - cut
-      - danger
       - decay
-      - deforming
       - destroying
       - destructive-force
       - destructive-natural-process
       - diagnosis-of-affliction
       - disease
       - disease-spread
-      - drugs
       - environmental-harm
       - erosion
-      - experience-pain
       - harm
       - harm-to-living-entity
-      - immoral-action
-      - impact
-      - killing
-      - misfortune
       - natural-disaster
       - physical-affliction
       - physical-harm
@@ -570,15 +415,12 @@ frame_families:
       - punishment
       - stop-airflow
       - treating-a-physical-affliction
-      - vehicular-accident
       - violence
-      - wilderness
   - name: Harm to living entity
     members:
       - addiction
       - attacking
       - crime
-      - danger
       - diagnosis-of-affliction
       - disease
       - disease-spread
@@ -588,38 +430,27 @@ frame_families:
       - psychological-harm
       - punishment
       - stop-airflow
-      - surgery
       - treating-a-physical-affliction
       - weed
-      - wilderness
   - name: Harmful encounters
     members:
       - bully
       - destroying
       - destructive-force
       - erosion
-      - evil-creature
-      - experience-pain
       - fierce-animal
       - harm
       - harm-to-living-entity
-      - killing
       - natural-disaster
-      - vehicular-accident
   - name: Image schemas
     members:
-      - axis
       - center-periphery
-      - distant
       - part-whole
-      - proximal
       - proximal-distal
       - proximity
       - separation
   - name: Impediment and enablement
     members:
-      - access
-      - access-to-a-location
       - access-to-an-object
       - aid-to-upward-motion
       - aids-to-action
@@ -627,7 +458,6 @@ frame_families:
       - aids-to-motion
       - avoiding-obstacles
       - barrier
-      - barrier-on-a-path
       - barrier-to-accessing-a-location
       - burden
       - clear-paths-to-accessing-a-location
@@ -635,7 +465,6 @@ frame_families:
       - confinement
       - constructed-confinement
       - enable-ability-to-access-locations
-      - enablement
       - environmental-restraints
       - fluid-containment
       - freedom-of-action
@@ -645,29 +474,19 @@ frame_families:
       - inability-to-access-a-location
       - increase-ease-of-action
       - increase-ease-of-motion
-      - lack-of-enablement
       - lack-of-impediment-to-motion
       - motion-affecting-external-factors
       - motion-affecting-objects
-      - motion-affecting-properties-of-the-landscape
       - motion-impediments
       - narrowing-width-of-bounded-region
-      - open
       - portals
       - release-liquid
-      - remove-burden
       - restraints
-      - stop-flow-of-substance
-      - sunken-confinement
       - water-confinement
   - name: Internal motion
     members:
-      - air-motion
       - fluid-motion
-      - mass-motion
-      - motion-back-and-forth
       - release-liquid
-      - rotation
   - name: Leaders
     members:
       - leadership
@@ -680,33 +499,23 @@ frame_families:
   - name: Legislation
     members:
       - gun-control-legislation
-      - gun-legislation
-      - gun-rights-legislation
-      - legislation-drafting
       - legislation-enactment
       - legislative-action
       - legislative-branch
   - name: Location
     members:
-      - access
-      - access-to-a-location
       - barrier-to-accessing-a-location
       - being-at-a-high-location
       - being-at-a-location
       - being-at-a-low-location
       - being-in-a-bounded-region
       - bounded-region
-      - change-of-location
       - clear-paths-to-accessing-a-location
       - distances-between-locations
       - enable-ability-to-access-locations
       - inability-to-access-a-location
       - location
       - motion-away-from-a-location
-      - motion-out-of-a-location
-      - motion-to-a-bounded-region
-      - moving-into-a-bounded-region
-      - moving-out-of-an-undesirable-location
       - paths-out-of-a-location
       - placing-in-a-protected-location
       - region
@@ -715,10 +524,8 @@ frame_families:
       - trajector-landmark
   - name: Machine
     members:
-      - instrument
       - machine
       - operating-a-machine
-      - robot
       - textile
       - vehicle
   - name: Magic
@@ -729,70 +536,44 @@ frame_families:
       - money
   - name: Morality
     members:
-      - deity
       - evil
-      - evil-creature
       - goodness
-      - immoral-action
       - immorality
       - moral-action
       - moral-authority
       - moral-goodness
       - moral-order
       - morality
-      - parent
       - worship
   - name: Motion
     members:
-      - across
       - affected-motion
       - aid-to-upward-motion
       - aids-to-downward-motion
       - aids-to-motion
-      - air-motion
-      - backward-motion
       - boat-motion-x-schema
       - caused-downward-motion
       - caused-upward-motion
-      - controlled-motion
-      - controlled-vehicular-motion
       - downward-motion
       - fluid-motion
       - forced-motion
-      - forced-movement
       - forward-motion
-      - gap-in-path
       - guided-motion
       - impediment-to-motion
       - impeding-downward-motion
       - increase-ease-of-motion
       - lack-of-impediment-to-motion
-      - mass-motion
       - motion
-      - motion-affecting-actors
       - motion-affecting-external-factors
       - motion-affecting-forces
-      - motion-affecting-properties-of-the-landscape
       - motion-along-a-path
-      - motion-away-from-a-bounded-region
       - motion-away-from-a-location
       - motion-away-from-an-undesirable-location
-      - motion-back-and-forth
-      - motion-out-of-a-location
-      - motion-to-a-bounded-region
       - motion-to-a-destination
       - motion-to-a-location
-      - motion-to-avoid-a-destination
-      - motion-with-respect-to-an-undesirable-entity
-      - moving-backward
-      - moving-forward
-      - moving-into-a-bounded-region
       - moving-object
-      - moving-out-of-an-undesirable-location
-      - non-translational-motion
       - paths-out-of-a-location
       - pursue
-      - rotation
       - self-propelled-motion
       - self-propelled-motion-to-a-destination
       - upward-motion
@@ -810,12 +591,10 @@ frame_families:
       - containment
       - environmental-restraints
       - freedom-of-action
-      - gap-in-path
       - maze
       - motion-impediments
       - portals
       - restraints
-      - sunken-confinement
       - trespassing
       - water-confinement
   - name: Motion-affecting
@@ -824,10 +603,8 @@ frame_families:
       - aids-to-downward-motion
       - aids-to-motion
       - barrier
-      - barrier-on-a-path
       - barrier-to-accessing-a-location
       - burden
-      - burial
       - clear-paths-to-accessing-a-location
       - confinement
       - constructed-confinement
@@ -836,106 +613,62 @@ frame_families:
       - containment
       - enable-ability-to-access-locations
       - environmental-restraints
-      - gap-in-path
       - impeding-downward-motion
       - inability-to-access-a-location
       - maze
-      - motion-affecting-actors
       - motion-affecting-external-factors
       - motion-affecting-forces
       - motion-affecting-objects
-      - motion-affecting-properties-of-the-landscape
-      - open
       - portals
       - quality-of-landscape
-      - remove-burden
       - restraints
-      - sunken-confinement
       - water-confinement
   - name: Movement
     members:
       - affected-motion
-      - air-motion
       - boat-motion-x-schema
       - caused-downward-motion
       - caused-upward-motion
-      - change-of-location
-      - controlled-motion
-      - controlled-vehicular-motion
       - downward-motion
       - fluid-motion
       - forced-motion
-      - forced-movement
       - forward-motion
       - guided-motion
-      - mass-motion
       - motion
       - motion-along-a-path
-      - motion-away-from-a-bounded-region
       - motion-away-from-a-location
       - motion-away-from-an-undesirable-location
-      - motion-out-of-a-location
-      - motion-to-a-bounded-region
       - motion-to-a-destination
       - motion-to-a-location
-      - motion-to-avoid-a-destination
-      - motion-with-respect-to-an-undesirable-entity
-      - moving-forward
-      - moving-into-a-bounded-region
-      - moving-out-of-an-undesirable-location
-      - non-translational-motion
-      - object-propulsion
-      - rotation
       - self-propelled-motion
       - self-propelled-motion-to-a-destination
       - upward-motion
       - vehicular-motion
   - name: Mover-specific movement
     members:
-      - air-motion
       - boat-motion-x-schema
-      - controlled-vehicular-motion
       - fluid-motion
       - steering-a-boat
       - vehicular-motion
   - name: Moving entity
     members:
-      - across
       - affected-motion
-      - air-motion
       - avoiding-obstacles
-      - backward-motion
       - boat-motion-x-schema
       - caused-downward-motion
       - caused-upward-motion
-      - controlled-motion
-      - controlled-vehicular-motion
       - downward-motion
       - fluid-motion
       - forced-motion
-      - forced-movement
       - forward-motion
       - guided-motion
-      - mass-motion
       - motion
       - motion-along-a-path
-      - motion-away-from-a-bounded-region
       - motion-away-from-a-location
       - motion-away-from-an-undesirable-location
-      - motion-back-and-forth
-      - motion-out-of-a-location
-      - motion-to-a-bounded-region
       - motion-to-a-location
-      - motion-with-respect-to-an-undesirable-entity
-      - moving-backward
-      - moving-forward
-      - moving-into-a-bounded-region
-      - moving-out-of-an-undesirable-location
-      - non-translational-motion
-      - object-propulsion
       - paths-out-of-a-location
       - pursue
-      - rotation
       - self-propelled-motion
       - self-propelled-motion-to-a-destination
       - steering-a-boat
@@ -944,7 +677,6 @@ frame_families:
   - name: Natural process
     members:
       - animal
-      - animal-life-cycle
       - bird
       - cultivation
       - natural-process
@@ -955,7 +687,6 @@ frame_families:
       - building
       - crafting
       - create-object
-      - dwelling-place
       - grasp
       - object
       - physical-structure
@@ -963,7 +694,6 @@ frame_families:
   - name: Object event structure
     members:
       - access-to-an-object
-      - pressure
   - name: Perception
     members:
       - cause-to-see
@@ -971,10 +701,8 @@ frame_families:
       - directed-vision
       - hearing
       - lightness
-      - luminosity
       - perception
       - seeing
-      - smell
       - taste
       - touching
       - visual-evaluation
@@ -998,15 +726,10 @@ frame_families:
       - upright-posture
   - name: Physical properties
     members:
-      - decrease-size
       - firm
-      - fit
       - increase-size
-      - lax
-      - loose-fit
       - physical-attributes
       - physical-strength
-      - physical-strength-scale
       - physical-weakness
       - size
       - tight-fit
@@ -1016,7 +739,6 @@ frame_families:
       - politics
   - name: Politics
     members:
-      - political-equality
       - politics
   - name: Position
     members:
@@ -1029,8 +751,6 @@ frame_families:
     members:
       - gain-possession
       - lose-possession
-      - losing
-      - ownership
       - possessable-object
       - possession
       - possession-change
@@ -1065,20 +785,15 @@ frame_families:
       - upright-posture
   - name: Protecting
     members:
-      - hiding
       - placing-in-a-protected-location
       - protect-against-contact
       - protecting
       - visual-obstruction
-      - wearable-disguises
   - name: Regulations
     members:
       - regulation
   - name: Resource
     members:
-      - amassing
-      - assets
-      - dispersal
       - energy
       - financial-resource
       - income
@@ -1092,9 +807,7 @@ frame_families:
   - name: Rights
     members:
       - citizen-rights
-      - right-to-life
       - rights
-      - voting-rights
   - name: Scale
     members:
       - battery
@@ -1102,22 +815,17 @@ frame_families:
       - being-in-the-middle-of-a-scale
       - being-low-on-a-scale
       - cold
-      - condition-of-physical-object
       - darkness
-      - decrease-size
       - emotional-intensity
       - firmness
-      - fit
       - functionality
       - health
       - heat
       - increase-size
       - intoxication
       - lightness
-      - luminosity
       - nausea
       - physical-strength
-      - physical-strength-scale
       - positivity-scale
       - proximity
       - quantity
@@ -1125,15 +833,12 @@ frame_families:
       - size
       - stability
       - temperature
-      - topological-scale
       - verticality
       - weight
   - name: Social
     members:
       - adoption
-      - civil-social-political-community
       - community
-      - disorderly-group
       - family
       - nuclear-family
       - responsibility
@@ -1155,14 +860,10 @@ frame_families:
       - social-problems
   - name: Spatial relations
     members:
-      - across
       - center-periphery
       - contact
       - containing
       - containment
-      - in
-      - into
-      - out
       - source-path-goal
       - spatial-relation
       - trajector-landmark
@@ -1179,13 +880,9 @@ frame_families:
   - name: Taxation
     members:
       - taxation
-  - name: Taxes
-    members:
-      - taxes
   - name: The law
     members:
       - law
-      - legality
   - name: The poor
     members:
       - impoverished
@@ -1195,41 +892,24 @@ frame_families:
   - name: Translational motion
     members:
       - avoiding-obstacles
-      - backward-motion
-      - circular-path
       - downward-motion
       - forward-motion
       - journey
       - motion
       - motion-along-a-path
-      - motion-away-from-a-bounded-region
       - motion-away-from-a-location
       - motion-away-from-an-undesirable-location
-      - motion-out-of-a-location
-      - motion-to-a-bounded-region
       - motion-to-a-location
-      - motion-to-avoid-a-destination
-      - motion-with-respect-to-an-undesirable-entity
-      - moving-forward
-      - moving-into-a-bounded-region
-      - moving-out-of-an-undesirable-location
       - paths-out-of-a-location
       - physical-path
       - self-propelled-motion
       - upward-motion
   - name: Unclassified
     members:
-      - accompany
       - advocacy
-      - agriculture
-      - beauty
   - name: Vehicle
     members:
       - boat
-      - controlled-vehicular-motion
-      - land-vehicle
-      - mode-of-transportation
-      - seafaring-vehicle
       - steering-a-boat
       - vehicle
       - vehicular-motion
@@ -1240,29 +920,15 @@ frame_families:
   - name: Wealth and social class
     members:
       - economic-status
-      - employment
       - experiencing-an-economic-status
       - financial-resource
       - income
-      - unemployment
       - wealth-redistribution
   - name: X-schema
     members:
       - process
-      - process-completed-state
-      - process-continue
-      - process-end
-      - process-initial-state
-      - process-pause
-      - process-start
-      - process-stop
-      - process-stopped-state
-      - process-uncompleted-state
-      - x-schema
-      - x-schema-continue
   - name: Zealotry, insanity, and worship
     members:
-      - deity
       - insanity
       - worship
       - zealotry

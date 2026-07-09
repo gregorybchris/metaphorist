@@ -10,56 +10,14 @@ frames:
       - capability.n
     related:
       - action
-      - x-schema
     roles:
       - name: actor
   - name: ability-to-move
     roles:
       - name: mover
-  - name: absorption
-    frame_families:
-      - Fluid
-    roles:
-      - name: absorbent_entity
-      - name: absorption_process
-      - name: fluid
-    lexical_units:
-      - absorb.v
-      - absorption.n
-      - saturate.v
-      - soak.v
-      - soak.v up
-      - soaking.n
-      - sop.v up
-      - sponge.n
-      - sponge.v
-      - sponge.v up
-    related:
-      - liquid
   - name: abstract-relatedness
     roles:
       - name: relatedness
-  - name: access
-    frame_families:
-      - Impediment and enablement
-      - Location
-    roles:
-      - name: accessed_entity
-      - name: accessor
-      - name: barrier_to_access
-      - name: path_of_access
-    lexical_units:
-      - access.v
-    related:
-      - barrier
-  - name: access-to-a-location
-    frame_families:
-      - Impediment and enablement
-      - Location
-    related:
-      - access
-      - access-to-an-object
-      - change-of-location
   - name: access-to-an-object
     frame_families:
       - Concealment and protection
@@ -73,7 +31,6 @@ frames:
     lexical_units:
       - access.n
     related:
-      - access
       - object
   - name: access-to-education
     frame_families:
@@ -98,15 +55,6 @@ frames:
       - name: barrier_to_access
       - name: path_of_access
       - name: accessed_knowledge
-  - name: accompany
-    frame_families:
-      - Unclassified
-    lexical_units:
-      - accompaniment.n
-      - accompany.v
-      - together.adv
-    related:
-      - leadership
   - name: accounting
     roles:
       - name: account_holder
@@ -118,18 +66,6 @@ frames:
       - bookkeeping.n
       - ledger.n
       - tally.v
-  - name: across
-    frame_families:
-      - Motion
-      - Moving entity
-      - Spatial relations
-    lexical_units:
-      - across.prep
-      - cross.v
-    related:
-      - axis
-      - motion-along-a-path
-      - trajector-landmark
   - name: action
     frame_families:
       - Action
@@ -179,7 +115,6 @@ frames:
       - addiction.n
       - hooked.a
     related:
-      - drugs
       - physical-affliction
   - name: addressing-poverty
     frame_families:
@@ -283,14 +218,6 @@ frames:
     roles:
       - name: agreement
       - name: parties
-  - name: agriculture
-    frame_families:
-      - Unclassified
-    lexical_units:
-      - farm.n
-      - farm.v
-    related:
-      - tending-to-plants
   - name: aid-to-upward-motion
     frame_families:
       - Impediment and enablement
@@ -359,32 +286,10 @@ frames:
       - thrust.v
       - yank.v
     related:
-      - enablement
       - motion
     roles:
       - name: aid
       - name: aided_mover
-  - name: air-motion
-    frame_families:
-      - Internal motion
-      - Motion
-      - Movement
-      - Mover-specific movement
-      - Moving entity
-    roles:
-      - name: mover
-    lexical_units:
-      - blast.n
-      - blow.v
-      - breeze.n
-      - draft.n
-      - gale.n
-      - gust.n
-      - gust.v
-      - squall.n
-      - wind.n
-    related:
-      - motion
   - name: alignment
     roles:
       - name: parts
@@ -393,25 +298,6 @@ frames:
     roles:
       - name: alliance
       - name: allies
-  - name: amassing
-    frame_families:
-      - Resource
-    lexical_units:
-      - accrue.v
-      - accumulate.v
-      - accumulation.n
-      - aggregate.v
-      - amass.v
-      - collect.v
-      - collection.n
-      - gather.v
-      - hoard.n
-      - hoard.v
-      - stockpile.n
-      - stockpile.v
-    related:
-      - gain-possession
-      - resource-transfer
   - name: analysis
     frame_families:
       - Evaluation
@@ -484,29 +370,6 @@ frames:
       - wallow.v
     related:
       - animate-entity
-  - name: animal-life-cycle
-    frame_families:
-      - Entity
-      - Natural process
-    roles:
-      - name: animal_life_cycle_beginning_stage
-      - name: animal_life_cycle_beginning_state
-      - name: animal_life_cycle_death
-      - name: animal_life_cycle_maturation_stage
-      - name: animal_life_cycle_maturation_state
-    lexical_units:
-      - breed.v
-      - calf.n
-      - croak.v
-      - egg.n
-      - fledgling.n
-      - hatch.v
-      - pup.n
-      - spawn.n
-      - spawn.v
-    related:
-      - animal
-      - life-cycle
   - name: animate-entity
     frame_families:
       - Entity
@@ -535,8 +398,6 @@ frames:
       - pin.v down by
       - push.v away
       - turn.v away
-    related:
-      - force-application
     roles:
       - name: force
       - name: acted_upon
@@ -584,14 +445,6 @@ frames:
       - object
       - physical-entity
       - purposeful-action
-  - name: assets
-    frame_families:
-      - Resource
-    lexical_units:
-      - asset.n
-      - holdings.n
-    related:
-      - financial-resource
   - name: assistance
     roles:
       - name: assisted_entity
@@ -600,28 +453,6 @@ frames:
     roles:
       - name: associated_entities
       - name: association
-  - name: attach
-    frame_families:
-      - Act on an object
-    lexical_units:
-      - adhere.v
-      - adjoin.v
-      - affix.v
-      - append.v
-      - attach.v
-      - attachment.n
-      - cement.n
-      - cement.v
-      - cleave.v
-      - cling.v
-      - epoxy.n
-      - fasten.v
-      - glue.n
-      - glue.v
-      - secure.v
-      - stick.v
-    related:
-      - detach
   - name: attacking
     frame_families:
       - Harm
@@ -671,7 +502,6 @@ frames:
       - harm-to-living-entity
       - personal-weapon
       - physical-combat
-  - name: attention
   - name: attribute
     frame_families:
       - Property-related
@@ -682,25 +512,6 @@ frames:
       - name: value
     related:
       - state
-  - name: authority
-    frame_families:
-      - Governance
-    roles:
-      - name: authority_entity
-      - name: authority_power
-      - name: authority_relation
-      - name: authorized_actions
-      - name: constraints_on_authorized_actions
-      - name: domain_of_authority
-      - name: governed
-      - name: governed_activity
-      - name: source_of_authority
-    lexical_units:
-      - authoritative.a
-      - authority.n
-    related:
-      - control
-      - trust
   - name: avoiding-obstacles
     frame_families:
       - Impediment and enablement
@@ -728,14 +539,9 @@ frames:
       - side-step.v
       - sidestep.n
       - sidestep.v
-    related:
-      - motion-with-respect-to-an-undesirable-entity
     roles:
       - name: mover
       - name: impediment
-  - name: awake
-    roles:
-      - name: animate_entity
   - name: awakening
     roles:
       - name: awake_state
@@ -746,34 +552,6 @@ frames:
       - arouse.v
     related:
       - animate-entity
-      - awake
-  - name: axis
-    frame_families:
-      - Image schemas
-    roles:
-      - name: axis
-      - name: frame_of_reference
-  - name: backward-motion
-    frame_families:
-      - Directional movement
-      - Motion
-      - Moving entity
-      - Translational motion
-    roles:
-      - name: backward_direction
-      - name: motion_speed
-      - name: motion_x_schema
-      - name: mover
-    lexical_units:
-      - backward movement.n
-      - fall.v back
-      - move.v back
-      - pull.v back
-      - recede.v
-      - retreat.v
-    related:
-      - forward-motion
-      - motion-along-a-path
   - name: badness
     lexical_units:
       - bad.a
@@ -814,14 +592,7 @@ frames:
       - threshold.n
       - wall.n
     related:
-      - motion-affecting-properties-of-the-landscape
       - motion-along-a-path
-  - name: barrier-on-a-path
-    frame_families:
-      - Impediment and enablement
-      - Motion-affecting
-    related:
-      - barrier
   - name: barrier-to-accessing-a-location
     frame_families:
       - Impediment and enablement
@@ -841,7 +612,6 @@ frames:
       - stand.v in the way of
       - treacherous.a
     related:
-      - access-to-a-location
       - barrier
       - inability-to-access-a-location
     roles:
@@ -865,9 +635,6 @@ frames:
       - run.v out of juice
       - juice.n
       - plug.v in
-  - name: beauty
-    frame_families:
-      - Unclassified
   - name: becoming-aware
     frame_families:
       - Cognition
@@ -992,7 +759,6 @@ frames:
       - reside.v in
     related:
       - being-at-a-location
-      - bounded-entity
   - name: being-in-the-middle-of-a-scale
     frame_families:
       - Scale
@@ -1026,26 +792,6 @@ frames:
     lexical_units:
       - anchor.v
       - balance.v
-    related:
-      - being-unstable
-  - name: being-unstable
-    roles:
-      - name: entity
-      - name: x_schema
-    lexical_units:
-      - dangle.v
-      - dodder.v
-      - lurch.v
-      - stagger.v
-      - stumble.v
-      - teeter.v
-      - thrash.v about
-      - totter.v
-      - waver.v
-      - wobble.v
-    related:
-      - being-stable
-      - unstable
   - name: belief
     frame_families:
       - Cognition
@@ -1135,22 +881,6 @@ frames:
     roles:
       - name: blood
       - name: body
-  - name: blood-sucking-creature
-    frame_families:
-      - Entity
-    lexical_units:
-      - barnacle.n
-      - blood-sucker.n
-      - bloodsucker.n
-      - leech.n
-      - mosquito.n
-      - scrounger.n
-      - snake.n
-      - tick.n
-      - vampire.n
-    related:
-      - animate-entity
-      - harm-to-living-entity
   - name: boat
     frame_families:
       - Entity
@@ -1178,8 +908,6 @@ frames:
       - rudderless.a
       - ship.n
       - tiller.n
-    related:
-      - seafaring-vehicle
   - name: boat-motion-x-schema
     frame_families:
       - Motion
@@ -1212,8 +940,6 @@ frames:
     related:
       - boat
       - boat-motion-x-schema
-      - rocks-along-shore
-      - vehicular-accident
   - name: bodily-functioning
     frame_families:
       - Entity
@@ -1225,15 +951,7 @@ frames:
       - name: cognizing_x_schema
       - name: mind
     related:
-      - bodily-sensation
       - part-whole
-  - name: bodily-sensation
-    frame_families:
-      - Body
-    lexical_units:
-      - numb.a
-      - numb.v
-      - numbness.n
   - name: body
     frame_families:
       - Body
@@ -1315,19 +1033,6 @@ frames:
       - eating
       - resource
       - weight
-  - name: bounded-entity
-    frame_families:
-      - Bounding
-      - Entity
-    roles:
-      - name: bounded_entity
-      - name: entity_boundary
-      - name: entity_exterior
-      - name: entity_interior
-    related:
-      - bounded-region
-      - entity
-      - part-whole
   - name: bounded-region
     frame_families:
       - Bounding
@@ -1351,9 +1056,6 @@ frames:
       - within.prep
     related:
       - region
-  - name: branches-of-government
-    frame_families:
-      - Government
   - name: brittle-object
     frame_families:
       - Entity
@@ -1497,21 +1199,7 @@ frames:
       - red-tape.n
       - red.a tape.n
     related:
-      - government-executive-action
       - legislative-action
-  - name: burial
-    frame_families:
-      - Concealment and protection
-      - Motion-affecting
-    lexical_units:
-      - blanketed.n
-      - buried.v
-      - bury.v
-      - heap.n
-      - heap.v
-      - plow.v under
-    related:
-      - physical-obstacle
   - name: business
     frame_families:
       - Economic
@@ -1632,8 +1320,6 @@ frames:
     lexical_units:
       - career.n
       - job.n
-    related:
-      - employment
   - name: category
     roles:
       - name: category_members
@@ -1655,8 +1341,6 @@ frames:
       - cause.n
       - cause.v
       - effect.n
-    related:
-      - complex-process
   - name: cause-contact
     frame_families:
       - Causation
@@ -1736,7 +1420,6 @@ frames:
       - caused-upward-motion
       - downward-motion
       - forced-motion
-      - forced-movement
   - name: caused-upward-motion
     frame_families:
       - Affected movement
@@ -1766,7 +1449,6 @@ frames:
     related:
       - caused-downward-motion
       - forced-motion
-      - forced-movement
       - upward-motion
     roles:
       - name: mover
@@ -1785,8 +1467,6 @@ frames:
       - central.a
       - peripheral.a
       - periphery.n
-    related:
-      - proximal
     roles:
       - name: entity
       - name: scalar_position
@@ -1796,13 +1476,6 @@ frames:
       - name: certainty_entity
       - name: certainty_scale
       - name: certainty_status
-  - name: change-of-location
-    frame_families:
-      - Change-related
-      - Location
-      - Movement
-    related:
-      - being-at-a-location
   - name: change-of-state
     frame_families:
       - Change-related
@@ -1869,29 +1542,8 @@ frames:
       - nanny.n
       - nanny.v
     related:
-      - authority
       - work-scenario
-  - name: circular-path
-    frame_families:
-      - Translational motion
-    lexical_units:
-      - carousel.n
-      - circle.n
-      - circuit.n
-      - cul de sac.n
-      - dead end.n
-      - merry go round.n
-      - merry-go-round.n
-      - rollercoaster.n
-      - rotary.n
-      - round-a-bout.n
-      - roundabout.n
-      - traffic circle.n
-    related:
-      - physical-path
   - name: circumstances
-    related:
-      - situation
     roles:
       - name: circumstances
       - name: experiencer
@@ -1908,14 +1560,6 @@ frames:
     related:
       - evaluation
       - government
-  - name: citizen-participation
-    frame_families:
-      - Democracy
-    lexical_units:
-      - citizenship.n
-      - civic.a
-    related:
-      - participation
   - name: citizen-rights
     frame_families:
       - Rights
@@ -1930,21 +1574,10 @@ frames:
       - Governance
     lexical_units:
       - citizen.n
-    related:
-      - citizen-participation
     roles:
       - name: citizen
       - name: contribution
       - name: voice
-  - name: civil-social-political-community
-    frame_families:
-      - Social
-    lexical_units:
-      - civic.a
-      - civil.a
-    related:
-      - citizen-participation
-      - community
   - name: cleanliness
     roles:
       - name: clean_substance
@@ -1972,7 +1605,6 @@ frames:
       - unobstructed.a
       - vacate.v
     related:
-      - access-to-a-location
       - physical-path
     roles:
       - name: accessor
@@ -2045,8 +1677,6 @@ frames:
   - name: commodity
     lexical_units:
       - commodity.n
-    related:
-      - value
     roles:
       - name: commodity
   - name: communication
@@ -2063,24 +1693,6 @@ frames:
       - communication.n
       - inform.v
       - tell.v
-  - name: communication-means
-    lexical_units:
-      - email.n
-      - email.v
-      - fax.n
-      - fax.v
-      - film.n
-      - letter.n
-      - phone.n
-      - phone.v
-      - radio.n
-      - radio.v
-      - telegraph.n
-      - telegraph.v
-      - telephone.n
-      - telephone.v
-    related:
-      - communication
   - name: community
     frame_families:
       - Governance
@@ -2090,9 +1702,6 @@ frames:
     roles:
       - name: community_whole
       - name: community_members
-  - name: community-relationship
-    related:
-      - relationship
   - name: company
     related:
       - organization
@@ -2184,24 +1793,6 @@ frames:
       - name: object_whole
     related:
       - object
-      - part-whole
-  - name: complex-process
-    roles:
-      - name: complex_x_schema
-      - name: process1
-      - name: process2
-      - name: process_relation
-      - name: protagonist1
-      - name: protagonist2
-    related:
-      - process
-  - name: complex-structure
-    roles:
-      - name: part_relations
-      - name: structure_parts
-      - name: structure_whole
-    related:
-      - cause-contact
       - part-whole
   - name: compliance
     frame_families:
@@ -2298,41 +1889,6 @@ frames:
     roles:
       - name: entity
       - name: condition
-  - name: condition-of-physical-object
-    frame_families:
-      - Scale
-    roles:
-      - name: physical_object
-      - name: state_of_object
-    lexical_units:
-      - crumbling.a
-      - crumbly.a
-      - decrepit.a
-      - deformed.a
-      - derelict.a
-      - deteriorated.a
-      - dilapidated.a
-      - dingy.a
-      - fallen-in.a
-      - gimcrack.a
-      - haggard.a
-      - jerry-rigged.a
-      - jerrybuilt.a
-      - misshapen.a
-      - ramshackle.a
-      - rickety.a
-      - run-down.a
-      - shabby.a
-      - shoddy.a
-      - staunch.a
-      - tumble-down.a
-      - tumbledown.a
-      - weathered.a
-      - worn out.a
-      - worn-out.a
-    related:
-      - complex-physical-object
-      - scale
   - name: confinement
     frame_families:
       - Impediment and enablement
@@ -2351,8 +1907,6 @@ frames:
       - barrier
       - being-in-a-bounded-region
       - inability-to-access-a-location
-      - motion-affecting-properties-of-the-landscape
-  - name: connection
   - name: consciousness
     roles:
       - name: conscious_entity
@@ -2362,19 +1916,6 @@ frames:
     roles:
       - name: whole
       - name: constituents
-  - name: constitution
-    frame_families:
-      - Governance
-      - Gun debate
-    lexical_units:
-      - American constitution.n
-      - US constitution.n
-      - constitution.n
-      - constitutional.a
-    related:
-      - government-institution-us
-      - rights
-      - second-amendment
   - name: constructed-confinement
     frame_families:
       - Impediment and enablement
@@ -2453,26 +1994,10 @@ frames:
       - yoke.n
       - yoke.v
     related:
-      - attach
-      - detach
       - restraints
     roles:
       - name: mover
       - name: restraining_entity
-  - name: consume
-    frame_families:
-      - Eating
-    roles:
-      - name: consume_x_schema
-      - name: consumed_thing
-      - name: consumer
-    lexical_units:
-      - consume.v
-      - consumption.n
-      - deplete.v
-      - depletion.n
-      - devour.v
-      - eat.v
   - name: contact
     frame_families:
       - Spatial relations
@@ -2490,7 +2015,6 @@ frames:
       - touch.n
       - touch.v
     related:
-      - proximal
       - touching
   - name: containing
     frame_families:
@@ -2555,46 +2079,7 @@ frames:
       - control.v
       - power.n
     related:
-      - complex-process
       - force-dynamic-interaction
-      - relation
-  - name: controlled-motion
-    frame_families:
-      - Affected movement
-      - Motion
-      - Movement
-      - Moving entity
-    roles:
-      - name: control_x_schema
-      - name: direction
-      - name: motion_controller
-      - name: motion_x_schema
-      - name: mover
-      - name: speed
-    related:
-      - control
-      - motion-along-a-path
-  - name: controlled-vehicular-motion
-    frame_families:
-      - Affected movement
-      - Motion
-      - Movement
-      - Mover-specific movement
-      - Moving entity
-      - Vehicle
-    roles:
-      - name: direction
-      - name: motion_controller
-      - name: motion_x_schema
-      - name: speed
-      - name: vehicle
-      - name: vehicle_control_x_schema
-    lexical_units:
-      - brake.v
-      - steer.v
-    related:
-      - controlled-motion
-      - vehicle
   - name: corporation
     frame_families:
       - Economic
@@ -2686,7 +2171,6 @@ frames:
       - produce.v
       - producer.n
     related:
-      - complex-process
       - object
       - purposeful-action
   - name: creating
@@ -2728,27 +2212,7 @@ frames:
       - wrongdoing.n
     related:
       - harm-to-living-entity
-      - immoral-action
-      - legality
       - social-problems
-  - name: criminal-gun-violence
-    frame_families:
-      - Gun debate
-    lexical_units:
-      - gun atrocity.n
-      - gun crime.n
-      - gun criminal.n
-      - gun felony.n
-      - gun homicide.n
-      - gun murder.n
-      - gun related crime.n
-      - gun related violent crime.n
-      - handgun crime.n
-    related:
-      - crime
-      - injurious-gun-use
-      - personal-weapon
-      - violence
   - name: criticizing
     frame_families:
       - Communication
@@ -2786,7 +2250,6 @@ frames:
       - yield.n
       - yield.v
     related:
-      - agriculture
       - plants
   - name: curriculum
     frame_families:
@@ -2803,7 +2266,6 @@ frames:
       - curriculum.n
     related:
       - education
-      - educational-institution
       - group-of-related-ideas
   - name: cut
     frame_families:
@@ -2828,43 +2290,6 @@ frames:
       - slash.v
       - slice.v
       - trim.v
-    related:
-      - force-application
-      - physical-harm
-  - name: cycle
-    related:
-      - process
-      - source-path-goal
-  - name: danger
-    frame_families:
-      - Endangerment
-      - Harm
-      - Harm to living entity
-    roles:
-      - name: dangerous_entity
-      - name: dangerous_situation
-      - name: endangered_entity
-    lexical_units:
-      - danger.n
-      - dangerous.a
-      - endanger.v
-      - endangerment.n
-      - exigency.n
-      - exigent.a
-      - hazard.n
-      - hazardous.a
-      - imperil.v
-      - peril.n
-      - perilous.a
-      - pose.v danger
-      - risk.n
-      - risk.v
-      - risky.a
-      - threat.n
-      - threaten.v
-      - threatening.a
-      - treacherous.a
-      - unsafe.a
     related:
       - physical-harm
   - name: darkness
@@ -2903,7 +2328,6 @@ frames:
       - unlit.a
     related:
       - lightness
-      - luminosity
   - name: death
     roles:
       - name: cause_of_death
@@ -2936,7 +2360,6 @@ frames:
     related:
       - argument
       - communication
-      - discussing
     roles:
       - name: debater_1
       - name: debater_2
@@ -3006,62 +2429,6 @@ frames:
     lexical_units:
       - decide.v
       - decision.n
-  - name: decrease-size
-    frame_families:
-      - Physical properties
-      - Scale
-    lexical_units:
-      - compress.v
-      - condense.v
-      - contract.v
-      - deflate.v
-      - diminish.v
-      - dwindle.v
-      - erode.v
-      - erosion.n
-      - hollow.a
-      - hollow.v
-      - shrink.v
-      - shrinking.n
-      - shrunken.a
-      - smaller.a
-    related:
-      - increase-size
-      - size
-  - name: deforming
-    frame_families:
-      - Damage
-      - Endangerment
-      - Harm
-    lexical_units:
-      - compress.v
-      - crumple.v
-      - crunch.n
-      - crunch.v
-      - crush.n
-      - crush.v
-      - deform.v
-      - flatten.v
-      - flatten.v
-      - grind.n
-      - grind.v
-      - grinding.a
-      - mangle.v
-      - mash.v
-      - scrunch.v
-      - smush.v
-      - squash.v
-      - squeeze.n
-      - squeeze.v
-      - squish.v
-      - trample.v
-      - tweak.n
-      - tweak.v
-      - twist.n
-      - twist.v
-      - warp.v
-    related:
-      - physical-harm
   - name: degeneration
     roles:
       - name: degenerated_entity
@@ -3070,32 +2437,6 @@ frames:
   - name: degree
     roles:
       - name: degree
-  - name: deity
-    frame_families:
-      - Morality
-      - Zealotry, insanity, and worship
-    roles:
-      - name: believer
-      - name: deity
-      - name: deity_power
-    lexical_units:
-      - almighty.a
-      - deity.n
-      - demi-god.n
-      - divine being.n
-      - divine.a
-      - divinity.n
-      - god.n
-      - goddess.n
-      - holy.a
-      - idol.n
-      - pantheon.n
-      - sacred.a
-    related:
-      - moral-authority
-  - name: delegation-of-trust
-    related:
-      - trust
   - name: democracy
     frame_families:
       - Democracy
@@ -3107,15 +2448,6 @@ frames:
       - name: governed
       - name: governor
       - name: developmental_stages
-  - name: democratic-government
-    frame_families:
-      - Democracy
-    roles:
-      - name: democratic_governor
-      - name: democratic_jurisdiction_region
-      - name: governed_of_democratic_state
-    related:
-      - government
   - name: democratic-ideology
     frame_families:
       - Democracy
@@ -3125,28 +2457,12 @@ frames:
     roles:
       - name: democratic_ideology
       - name: developmental_stages
-  - name: democratic-institution
-    frame_families:
-      - Democratic institutions
-    lexical_units:
-      - democratic.a institution.n
-    related:
-      - democracy
-      - government-institution
   - name: desire
     roles:
       - name: desire
       - name: desire_x_schema
       - name: desired_object
       - name: desirer
-  - name: desiring
-    frame_families:
-      - Cognition
-    roles:
-      - name: desired_content
-      - name: experiencer
-    related:
-      - cognizing
   - name: destroying
     frame_families:
       - Damage
@@ -3222,22 +2538,6 @@ frames:
       - destroying
       - destructive-force
       - natural-process
-  - name: detach
-    frame_families:
-      - Act on an object
-    lexical_units:
-      - detach.v
-      - unbind.v
-      - unchain.v
-      - unfasten.v
-      - unhitch.v
-      - unknot.v
-      - unlace.v
-      - unshackle.v
-      - untether.v
-      - untie.v
-    related:
-      - attach
   - name: diagnosis-of-affliction
     frame_families:
       - Disease
@@ -3263,7 +2563,6 @@ frames:
       - gap.n
       - step.n ahead
     related:
-      - length
       - scale
     roles:
       - name: distance
@@ -3292,7 +2591,6 @@ frames:
       - hardship.n
     related:
       - purposeful-action
-  - name: difficulty
   - name: digestion
     roles:
       - name: digester
@@ -3309,18 +2607,6 @@ frames:
       - name: diplomats
       - name: negotiation
       - name: demands
-  - name: directed-emotion
-    frame_families:
-      - Emotion
-    roles:
-      - name: circumstance
-      - name: degree
-      - name: emotion
-      - name: experiencer
-      - name: reason
-      - name: target
-    related:
-      - emotion
   - name: directed-vision
     frame_families:
       - Perception
@@ -3333,39 +2619,11 @@ frames:
       - name: seer
       - name: vantage_point
       - name: seen_object
-  - name: discard
-    frame_families:
-      - Act on an object
-    lexical_units:
-      - discard.v
-      - dispense.v
-      - dispose.v
-      - ditch.v
-      - dump.n
-      - dump.v
-      - garbage.n
-      - get.v rid of
-      - jettison.v
-      - rid.n
-      - rid.v
-      - scrap.n
-      - scrap.v
-      - throw.v away
-      - trash.n
-    related:
-      - object-manipulation
   - name: discovery
     roles:
       - name: discoverer
       - name: discovered_object
       - name: discovery_x_schema
-  - name: discussing
-    frame_families:
-      - Communication
-      - Excluded
-    lexical_units:
-      - converse.v
-      - discuss.v
   - name: disease
     frame_families:
       - Aversion
@@ -3514,40 +2772,6 @@ frames:
     roles:
       - name: entity
       - name: degree_of_disgust
-  - name: disorderly-group
-    frame_families:
-      - Social
-    lexical_units:
-      - gang.n
-      - mob.n
-      - posse.n
-      - rabble.n
-    related:
-      - social-group
-  - name: dispersal
-    frame_families:
-      - Resource
-    lexical_units:
-      - allocate.n
-      - allocation.n
-      - apportion.v
-      - dispense.v
-      - dispersal.n
-      - disperse.v
-      - disseminate.v
-      - distribute.v
-      - distribution.n
-      - dole.n
-      - dole.v out
-      - hand.v out
-      - handout.n
-      - parcel.v out
-      - scatter.v
-      - share.v
-      - strew.v
-    related:
-      - lose-possession
-      - resource-transfer
   - name: dissect
     roles:
       - name: dissected_entity
@@ -3574,29 +2798,6 @@ frames:
       - name: location_1
       - name: location_2
       - name: distance
-  - name: distant
-    frame_families:
-      - Image schemas
-    lexical_units:
-      - a long way.n from
-      - distance.n
-      - distant.a
-      - far.a
-      - far.a away
-      - far.a from
-      - far-off.a
-      - far-removed.a
-      - faraway.a
-      - out of grasp.n
-      - out of reach.n
-      - outlier.n
-      - outlying.a
-      - remote.a
-      - removed.a
-      - unreachable.a
-    related:
-      - proximal
-      - proximity
   - name: distinguishing
     roles:
       - name: distinguishing_factor
@@ -3664,66 +2865,6 @@ frames:
     roles:
       - name: audience
       - name: drawer
-  - name: driving-a-vehicle
-  - name: drugs
-    frame_families:
-      - Harm
-    roles:
-      - name: drug
-      - name: drug_dealer
-      - name: drug_user
-      - name: physical_effects
-    lexical_units:
-      - alcohol.n
-      - cocaine.n
-      - coke.n
-      - ecstasy.n
-      - heroin.n
-      - ketamine.n
-      - lsd.n
-      - marijuana.n
-      - mdma.n
-      - mescaline.n
-      - meth.n
-      - methamphetamine.n
-      - narcotic.a
-      - narcotic.n
-      - pcp.n
-      - pot.n
-      - psilocybin.n
-      - salvia.n
-    related:
-      - addiction
-      - crime
-      - intoxicants
-      - physical-affliction
-      - social-problems
-  - name: duration
-    frame_families:
-      - Excluded
-    lexical_units:
-      - continue.v
-      - persist.v
-  - name: dwelling-place
-    frame_families:
-      - Entity
-      - Object
-    lexical_units:
-      - abode.n
-      - apartment.n
-      - cottage.n
-      - den.n
-      - domicile.n
-      - dwelling.n
-      - estate.n
-      - home.n
-      - house.n
-      - hovel.n
-      - hut.n
-      - mansion.n
-      - residence.n
-    related:
-      - building
   - name: eating
     frame_families:
       - Eating
@@ -3746,7 +2887,6 @@ frames:
       - snack.v
     related:
       - chewing
-      - consume
       - food
       - ingestion
   - name: economic-competition
@@ -3770,7 +2910,6 @@ frames:
       - name: difficulty
       - name: objective
     related:
-      - difficulty
       - economy
       - experiencing-an-economic-status
   - name: economic-resource
@@ -3823,28 +2962,6 @@ frames:
       - name: sector
     lexical_units:
       - economy.n
-  - name: edge
-    frame_families:
-      - Bounding
-    roles:
-      - name: edge_self
-    lexical_units:
-      - borderline.n
-      - boundary.n
-      - brink.n
-      - circumference.n
-      - contour.n
-      - edge.n
-      - fringe.n
-      - limit.n
-      - margin.n
-      - outline.n
-      - perimeter.n
-      - rim.n
-      - shore.n
-      - verge.n
-    related:
-      - bounded-region
   - name: education
     frame_families:
       - Education
@@ -3874,22 +2991,6 @@ frames:
       - name: standard
       - name: evaluation
       - name: basis_of_evaluation
-  - name: educational-institution
-    frame_families:
-      - Education
-      - Excluded
-    lexical_units:
-      - academy.n
-      - college.n
-      - exam.n
-      - examination.n
-      - school.n
-      - test.n
-      - testing.n
-      - university.n
-    related:
-      - education
-      - institution
   - name: educational-opportunities
     related:
       - education
@@ -3924,7 +3025,6 @@ frames:
     related:
       - debating
       - government
-      - political-competition
       - voting
   - name: emotion
     frame_families:
@@ -3955,25 +3055,6 @@ frames:
     related:
       - emotion
       - scale
-  - name: employment
-    frame_families:
-      - Wealth and social class
-    roles:
-      - name: employee
-      - name: employee_compensation
-      - name: employee_duties
-      - name: employer
-      - name: employer_employee_relation
-      - name: employer_objectives
-      - name: employment_occupation
-    lexical_units:
-      - employ.v
-      - employee.n
-      - employer.n
-      - employment.n
-    related:
-      - control
-      - work-scenario
   - name: enable-ability-to-access-locations
     frame_families:
       - Impediment and enablement
@@ -3986,23 +3067,10 @@ frames:
       - pave.v the way
       - smooth.v the way
     related:
-      - access-to-a-location
       - increase-ease-of-motion
     roles:
       - name: accessor
       - name: accessed_location
-  - name: enablement
-    frame_families:
-      - Causation
-      - Excluded
-      - Impediment and enablement
-    roles:
-      - name: enabled_entity
-      - name: enabling_source
-    lexical_units:
-      - enable.v
-      - enablement.n
-      - enabling.a
   - name: energy
     frame_families:
       - Resource
@@ -4029,11 +3097,6 @@ frames:
     roles:
       - name: trap
       - name: trapped_entity
-  - name: entrusting
-    roles:
-      - name: entrusted_entity
-      - name: entrusting_entity
-      - name: thing_entrusted
   - name: environmental-harm
     frame_families:
       - Harm
@@ -4153,44 +3216,6 @@ frames:
     related:
       - immorality
       - moral-goodness
-  - name: evil-creature
-    frame_families:
-      - Harmful encounters
-      - Morality
-    roles:
-      - name: evil_entity
-    lexical_units:
-      - Frankenstein.n
-      - beast.n
-      - bedevil.v
-      - behemoth.n
-      - demon.n
-      - demonization.n
-      - devil.n
-      - dragon.n
-      - fiend.n
-      - frankenstein's monster.n
-      - ghost.n
-      - ghoul.n
-      - goblin.n
-      - godzilla.n
-      - haunt.v
-      - hobgoblin.n
-      - kraken.n
-      - mammon.n
-      - menace.v
-      - monster.n
-      - monstrosity.n
-      - ogre.n
-      - specter.n
-      - troll.n
-      - villain.n
-      - werewolf.n
-      - zombie.n
-    related:
-      - animate-entity
-      - harm-to-living-entity
-      - immorality
   - name: excess-body-weight
     frame_families:
       - Aversion
@@ -4226,34 +3251,6 @@ frames:
       - is.v
     related:
       - process
-  - name: experience-pain
-    frame_families:
-      - Harm
-      - Harmful encounters
-    roles:
-      - name: body_part
-      - name: experiencer
-      - name: injury
-      - name: pain
-    lexical_units:
-      - ache.n
-      - ache.v
-      - aching.a
-      - achy.a
-      - agonizing.a
-      - agony.n
-      - excruciating.a
-      - hurt.v
-      - pain.n
-      - painful.a
-      - painfully.adv
-      - pang.n
-      - suffer.v
-      - suffering.n
-      - twinge.n
-    related:
-      - experiencing-a-state
-      - harm-to-living-entity
   - name: experiencing-a-negative-state
     frame_families:
       - State-related
@@ -4294,18 +3291,6 @@ frames:
     related:
       - economic-status
       - experiencing-a-state
-  - name: extinguish
-    lexical_units:
-      - blow out.v
-      - douse.v
-      - extinguish.v
-      - put out.v
-      - quench.v
-      - snuff out.v
-    related:
-      - caused-change-of-state
-      - destroying
-      - fire
   - name: factory
     roles:
       - name: conveyor_belt_production
@@ -4336,7 +3321,6 @@ frames:
       - flop.n
       - flop.v
       - unsuccessful.a
-  - name: fairness
   - name: family
     frame_families:
       - Social
@@ -4443,7 +3427,6 @@ frames:
       - wolf.n
     related:
       - animal
-      - danger
       - harm-to-living-entity
       - part-whole
   - name: finance
@@ -4470,7 +3453,6 @@ frames:
       - name: type
       - name: possessor
     related:
-      - monetary-evaluation
       - resource
   - name: financial-transaction
     roles:
@@ -4532,7 +3514,6 @@ frames:
       - unyielding.a
     related:
       - firmness
-      - lax
   - name: firmness
     frame_families:
       - Scale
@@ -4545,15 +3526,7 @@ frames:
       - solidity.n
     related:
       - complex-physical-object
-      - condition-of-physical-object
       - scale
-  - name: fit
-    frame_families:
-      - Physical properties
-      - Scale
-    lexical_units:
-      - fit.n
-      - fit.v
   - name: fixing
     frame_families:
       - Act on an object
@@ -4575,14 +3548,6 @@ frames:
       - repairing.n
       - revamp.v
       - stitch.v up
-    related:
-      - attach
-      - restore
-  - name: flexible-object
-    frame_families:
-      - Entity
-    related:
-      - object
   - name: fluid-containment
     frame_families:
       - Impediment and enablement
@@ -4687,31 +3652,6 @@ frames:
       - force.n
       - power.n
       - pressure.n
-  - name: force-application
-    frame_families:
-      - Action
-      - Force dynamic
-      - Forced movement
-    roles:
-      - name: acted_upon
-      - name: actor
-      - name: effector
-      - name: force
-      - name: x_schema
-    lexical_units:
-      - jerk.v
-      - jolt.n
-      - jolt.v
-      - nudge.v
-      - press.v
-      - pull.v
-      - push.v
-      - ram.v
-      - shove.v
-    related:
-      - action
-      - contact
-      - force-transfer
   - name: force-dynamic-interaction
     frame_families:
       - Force dynamic
@@ -4722,7 +3662,6 @@ frames:
       - name: forceful_process
       - name: second_process
     related:
-      - complex-process
       - force-transfer
   - name: force-transfer
     frame_families:
@@ -4763,41 +3702,6 @@ frames:
       - yank.v into
     related:
       - affected-motion
-      - force-application
-  - name: forced-movement
-    frame_families:
-      - Affected movement
-      - Causation
-      - Forced movement
-      - Motion
-      - Movement
-      - Moving entity
-    roles:
-      - name: agent
-      - name: forceful_action
-      - name: goal
-      - name: motion
-      - name: mover
-      - name: path
-      - name: source
-    lexical_units:
-      - accelerate.v
-      - drag.v
-      - drive.v
-      - fling.v
-      - jerk.v
-      - jolt.n
-      - jolt.v
-      - nudge.v
-      - pull.v
-      - push.v
-      - ram.v
-      - shove.v
-      - swing.v
-    related:
-      - causation
-      - force-application
-      - motion-along-a-path
   - name: forming-words
     frame_families:
       - Cognition
@@ -4826,7 +3730,6 @@ frames:
       - progress.n
       - progress.v
     related:
-      - backward-motion
       - motion-along-a-path
     roles:
       - name: mover
@@ -4881,7 +3784,6 @@ frames:
       - functional.a
       - functionality.n
     related:
-      - need
       - scale
   - name: funding-education
     frame_families:
@@ -4967,25 +3869,6 @@ frames:
       - score.n
     related:
       - recreational-competition
-  - name: gap-in-path
-    frame_families:
-      - Motion
-      - Motion impediments
-      - Motion-affecting
-    lexical_units:
-      - breach.n
-      - cleft.n
-      - crack.n
-      - crack.v
-      - fissure.n
-      - gap.n
-      - gulf.n
-      - rift.n
-      - schism.n
-    related:
-      - barrier
-      - geographic-void
-  - name: gardening
   - name: geographic-feature
     frame_families:
       - Entity
@@ -5004,11 +3887,6 @@ frames:
     roles:
       - name: feature
       - name: feature_size
-  - name: geographic-void
-    frame_families:
-      - Entity
-    related:
-      - geographic-feature
   - name: goodness
     frame_families:
       - Morality
@@ -5037,7 +3915,6 @@ frames:
       - govern.v
     related:
       - government
-      - judgment
       - process
       - purposeful-action
   - name: government
@@ -5063,7 +3940,6 @@ frames:
       - governmental.a
       - the state.n
     related:
-      - authority
       - government-institution
       - organization
       - political-region
@@ -5073,44 +3949,6 @@ frames:
       - name: indebted_nation
       - name: government_debt
       - name: degree_of_debt
-  - name: government-decision-making
-    frame_families:
-      - Governance
-    roles:
-      - name: act_of_deciding
-      - name: consideration
-      - name: decision_maker
-      - name: decision_maker_actions
-      - name: decision_making_process
-      - name: decision_making_standard
-      - name: decision_making_outcome
-      - name: entity_under_consideration
-      - name: entity_under_consideration_characteristics
-      - name: entity_under_consideration_final_state
-      - name: entity_under_consideration_initial_state
-      - name: entity_under_consideration_ongoing_state
-      - name: entity_under_consideration_status_change
-      - name: introduction_of_entity_under_consideration
-    related:
-      - caused-change-of-state
-      - decision-making
-      - evaluation
-      - governing-action
-      - purposeful-action
-  - name: government-executive-action
-    frame_families:
-      - Governance
-    roles:
-      - name: affected_jurisdiction
-      - name: citizens
-      - name: constraints_on_executive_actions
-      - name: executive_action_outcome
-      - name: executive_actor
-      - name: governing_objectives
-      - name: non_normative_executive_actions
-      - name: normative_executive_actions
-    related:
-      - governing-action
   - name: government-institution
     frame_families:
       - Governance
@@ -5136,22 +3974,6 @@ frames:
     related:
       - government
       - institution
-  - name: government-institution-us
-    frame_families:
-      - Function of government
-      - Governance
-      - Government
-    roles:
-      - name: executive_branch
-      - name: functions
-      - name: government_whole
-      - name: judicial_branch
-      - name: legislative_branch
-      - name: responsibilities
-    related:
-      - government-institution
-      - judicial-branch
-      - legislative-branch
   - name: government-legitimacy
     frame_families:
       - Governance
@@ -5162,7 +3984,6 @@ frames:
       - name: trustworthiness
     related:
       - government
-      - legitimacy
       - trust-relationship
   - name: government-power
     roles:
@@ -5195,7 +4016,6 @@ frames:
       - hold.n
       - hold.v
     related:
-      - motion-affecting-actors
       - object-manipulation
       - possession
   - name: greed
@@ -5227,7 +4047,6 @@ frames:
       - name: membership_fee
     related:
       - group
-      - membership
   - name: group-of-related-ideas
     related:
       - category
@@ -5281,67 +4100,6 @@ frames:
     related:
       - control
       - personal-weapon
-  - name: gun-control-advocacy
-    frame_families:
-      - Control of guns
-      - Gun debate
-    lexical_units:
-      - anti gun doctrine.n
-      - anti gun ideology.n
-      - anti gun lobby.n
-      - anti gun lobbying.n
-      - anti gun movement.n
-      - anti gun sentiment.n
-      - anti-gun doctrine.n
-      - anti-gun ideology.n
-      - anti-gun lobby.n
-      - anti-gun lobbying.n
-      - anti-gun movement.n
-      - anti-gun sentiment.n
-      - antigun doctrine.n
-      - antigun ideology.n
-      - antigun sentiment.n
-      - gun control doctrine.n
-      - gun control effort.n
-      - gun control lobby.n
-      - gun control movement.n
-      - gun control politics.n
-      - gun control sentiment.n
-      - gun-control doctrine.n
-      - gun-control effort.n
-      - gun-control lobby.n
-      - gun-control politics.n
-      - gun-control sentiment.n
-    related:
-      - advocacy
-      - gun-control
-  - name: gun-control-advocate
-    frame_families:
-      - Control of guns
-      - Gun debate
-    lexical_units:
-      - 2nd Amendment denier.n
-      - Second Amendment denier.n
-      - anti gun.a
-      - anti gun lobbyist.n
-      - anti-gun.a
-      - anti-gun lobbyist.n
-      - anti-gunner.n
-      - anti-rights.a
-      - disarmer.n
-      - gun control advocate.n
-      - gun control lobbyist.n
-      - gun control proponent.n
-      - gun grabber.n
-      - gun-control advocate.n
-      - gun-control lobbyist.n
-      - gun-control proponent.n
-      - gun-grabber.n
-      - hoplophobe.n
-      - hoplophobia.n
-    related:
-      - gun-control-advocacy
-      - person
   - name: gun-control-legislation
     frame_families:
       - Control of guns
@@ -5392,50 +4150,9 @@ frames:
       - regulation.n on gun.n
     related:
       - gun-control
-      - gun-legislation
-  - name: gun-debate
-    frame_families:
-      - Gun debate
-    roles:
-      - name: affirmative_team
-      - name: bill
-      - name: negative_team
-    lexical_units:
-      - gun control debate.n
-      - gun debate.n
-      - gun rights debate.n
-      - gun-control debate.n
-      - gun-rights debate.n
-    related:
-      - debating
-  - name: gun-industry
-    frame_families:
-      - Gun debate
-      - Gun rights
-    lexical_units:
-      - firearms industry.n
-      - firearms manufacturer.n
-      - gun fair.n
-      - gun industry.n
-      - gun maker.n
-      - gun manufacturer.n
-      - gun sales.n
-      - gun show loophole.n
-      - gun show.n
-      - sale.n of guns
-    related:
-      - commercial-transaction
-      - gun-possession
   - name: gun-law-decision-making
     roles:
       - name: debate
-  - name: gun-legislation
-    frame_families:
-      - Gun debate
-      - Legislation
-    related:
-      - legislation-enactment
-      - personal-weapon
   - name: gun-ownership
     frame_families:
       - Gun rights
@@ -5448,7 +4165,6 @@ frames:
       - own.v guns
     related:
       - gun-rights
-      - ownership
     roles:
       - name: gun_owner
       - name: ownership_level
@@ -5473,7 +4189,6 @@ frames:
       - gun-toting.a
       - open carry.n
     related:
-      - gun-use
       - personal-weapon
       - possession
   - name: gun-rights
@@ -5500,104 +4215,6 @@ frames:
       - gun-possession
       - personal-weapon
       - rights
-      - second-amendment
-  - name: gun-rights-advocacy
-    frame_families:
-      - Gun debate
-      - Gun rights
-    lexical_units:
-      - S.C.O.P.E..n
-      - gun advocacy.n
-      - gun lobby.n
-      - gun proponent.n
-      - gun right.n movement.n
-      - gun rights advocacy.n
-      - gun-rights advocacy.n
-      - gun-rights lobby.n
-      - pro-gun lobby.n
-      - pro-gun movement.n
-      - the gun lobby.n
-    related:
-      - advocacy
-      - gun-control-advocacy
-      - gun-rights
-  - name: gun-rights-advocacy-interest-group
-    frame_families:
-      - Gun debate
-      - Gun rights
-    lexical_units:
-      - Gun Owners of America.n
-      - Minutemen.n
-      - NAGR.n
-      - NRA.n
-      - National Association for Gun Rights.n
-      - National Rifle Association.n
-      - Second Amendment Foundation.n
-      - gun rights advocate.n
-    related:
-      - gun-rights-advocacy
-      - organization
-  - name: gun-rights-advocate
-    frame_families:
-      - Gun debate
-      - Gun rights
-    lexical_units:
-      - advocate.n for gun right.n
-      - advocate.n of gun right.n
-      - ammosexual.a
-      - ammosexual.n
-      - armchair commando.n
-      - firearm activist.n
-      - gun advocate.n
-      - gun clinger.n
-      - gun enthusiast.n
-      - gun freedom advocate.n
-      - gun right.n proponent
-      - gun rights activist.n
-      - gun rights advocate.n
-      - gun supporter.n
-      - gun-clinging.a
-      - gun-rights advocate.n
-      - gun-supporter.n
-      - gundamentalist.n
-      - pro gun.a
-      - pro gun advocate.n
-      - pro-gun.a
-      - pro-gun advocate.n
-      - second amendment advocate.n
-      - weekend rambo.n
-    related:
-      - gun-rights-advocacy
-      - person
-  - name: gun-rights-legislation
-    frame_families:
-      - Gun debate
-      - Legislation
-    roles:
-      - name: legislation
-      - name: opponent_of_legislation
-      - name: proponent_of_legislation
-    lexical_units:
-      - gun rights legislation.n
-      - pro gun bill.n
-      - pro gun law.n
-      - pro gun legislation.n
-      - pro-gun bill.n
-      - pro-gun law.n
-      - pro-gun legislation.n
-    related:
-      - gun-legislation
-      - gun-rights
-      - personal-weapon
-  - name: gun-use
-    frame_families:
-      - Gun debate
-    roles:
-      - name: gun
-      - name: gun_user
-      - name: purpose_of_gun_use
-    related:
-      - using
   - name: happiness
     frame_families:
       - Emotion
@@ -5799,25 +4416,6 @@ frames:
     related:
       - containment
       - heat
-  - name: hiding
-    frame_families:
-      - Concealment and protection
-      - Protecting
-    lexical_units:
-      - adumbrate.v
-      - bury.v
-      - cache.n
-      - camouflage.n
-      - camouflage.v
-      - cloak.v
-      - cover.v
-      - cover.v up
-      - hide.v
-      - keep.v from
-      - mask.v
-      - obscure.v
-      - shroud.n
-      - stow.v away
   - name: hierarchy
     roles:
       - name: hierarchical_structure
@@ -5835,38 +4433,6 @@ frames:
       - hope.n
       - hope.v
       - hopeful.a
-  - name: hosting
-  - name: human-life-cycle
-    lexical_units:
-      - adolescence.n
-      - adult.n
-      - adulthood.n
-      - baby.n
-      - babyhood.n
-      - beget.v
-      - birth.n
-      - childhood.n
-      - dotage.n
-      - embryo.n
-      - embryonic.a
-      - fetus.n
-      - grown-up.n
-      - infancy.n
-      - infant.n
-      - juvenile.n
-      - nascent.a
-      - newborn.a
-      - newborn.n
-      - puberty.n
-      - pubescent.n
-      - senility.n
-      - youth.n
-      - youthful.a
-    related:
-      - life-cycle
-  - name: human-rights
-    related:
-      - rights
   - name: humor
     roles:
       - name: humor_source
@@ -5922,14 +4488,6 @@ frames:
     lexical_units:
       - ideologue.n
       - ideology.n
-  - name: immoral-action
-    frame_families:
-      - Action
-      - Governance
-      - Harm
-      - Morality
-    related:
-      - moral-action
   - name: immorality
     frame_families:
       - Morality
@@ -5941,33 +4499,6 @@ frames:
     roles:
       - name: immoral_person
       - name: immorality
-  - name: impact
-    frame_families:
-      - Damage
-      - Force
-      - Harm
-    lexical_units:
-      - bash.v
-      - batter.v
-      - bump.v
-      - clash.v
-      - crash.n
-      - crash.v
-      - hammer.v
-      - hard-hitting.a
-      - hit.n
-      - hit.v
-      - impact.n
-      - impact.v
-      - slam.n
-      - slam.v
-      - slap.n
-      - slap.v
-      - smack.v
-      - whack.v
-    related:
-      - force-application
-      - physical-harm
   - name: impediment-to-motion
     frame_families:
       - Impediment and enablement
@@ -6081,13 +4612,6 @@ frames:
       - purity
     roles:
       - name: impure_entity
-  - name: in
-    frame_families:
-      - Bounding
-      - Spatial relations
-    related:
-      - bounded-region
-      - trajector-landmark
   - name: inability-to-access-a-location
     frame_families:
       - Impediment and enablement
@@ -6095,8 +4619,6 @@ frames:
       - Motion-affecting
     lexical_units:
       - can't access.v
-    related:
-      - access-to-a-location
     roles:
       - name: accessor
       - name: accessed_location
@@ -6118,7 +4640,6 @@ frames:
       - wage.n
       - wages.n
     related:
-      - employment
       - financial-resource
       - financial-transaction
     roles:
@@ -6186,7 +4707,6 @@ frames:
       - swell.n
       - swell.v
     related:
-      - decrease-size
       - size
   - name: information
     roles:
@@ -6271,8 +4791,6 @@ frames:
       - whacko.a
       - whacko.n
       - wingnut.n
-    related:
-      - mental-state
   - name: institution
     frame_families:
       - Governance
@@ -6295,28 +4813,6 @@ frames:
       - institution.n
     related:
       - organization
-  - name: institutional-corruption
-    frame_families:
-      - Governance
-    roles:
-      - name: governed_individuals
-    related:
-      - authority
-      - institution
-      - moral-corruption
-  - name: instrument
-    frame_families:
-      - Machine
-    lexical_units:
-      - contrivance.n
-      - equipment.n
-      - gear.n
-      - instrument.n
-      - tool.n
-      - utensil.n
-    related:
-      - object
-      - purposeful-action
   - name: insurmountable-differences-in-distance
     lexical_units:
       - canyon.n
@@ -6339,22 +4835,6 @@ frames:
       - name: degree_of_intimacy
       - name: intimacy_feeler
       - name: target_of_intimacy
-  - name: into
-    frame_families:
-      - Bounding
-      - Spatial relations
-    roles:
-      - name: goal_interior
-      - name: landmark
-      - name: profiled_region
-      - name: source_exterior
-      - name: trajector
-    lexical_units:
-      - into.prep
-    related:
-      - bounded-region
-      - source-path-goal
-  - name: intoxicants
   - name: intoxication
     frame_families:
       - Scale
@@ -6394,7 +4874,6 @@ frames:
       - stock.n
     related:
       - financial-resource
-      - trust
   - name: journey
     frame_families:
       - Translational motion
@@ -6423,24 +4902,6 @@ frames:
       - voyage.n
     related:
       - self-propelled-motion-to-a-destination
-      - traveling
-  - name: judgment
-    frame_families:
-      - Evaluation
-      - Excluded
-    roles:
-      - name: judged_action
-      - name: judged_issue
-      - name: judged_party
-      - name: judging_party
-      - name: judgment_outcome
-      - name: non_normative_judged_action
-      - name: normative_judged_action
-      - name: standards
-    lexical_units:
-      - judge.v
-    related:
-      - evaluation
   - name: judicial-action
     frame_families:
       - Governance
@@ -6462,81 +4923,6 @@ frames:
       - legal.a
     related:
       - governing-action
-  - name: judicial-branch
-    frame_families:
-      - Governance
-    related:
-      - judicial-action
-  - name: judicial-decision-making
-    frame_families:
-      - Governance
-    roles:
-      - name: case_brought_to_court
-      - name: deliberation
-      - name: judged_party
-      - name: judged_party_behavior
-      - name: judged_party_initial_status
-      - name: judged_party_ruling_status
-      - name: judged_party_status_change
-      - name: judicial_actions
-      - name: judicial_actor
-      - name: judicial_decision_process
-      - name: judicial_outcome
-      - name: judicial_ruling
-      - name: judicial_standards
-    lexical_units:
-      - acquit.v
-      - convict.v
-      - overturn.v
-      - rule.v
-      - uphold.v
-    related:
-      - decision-making
-      - government-decision-making
-      - judicial-action
-  - name: killing
-    frame_families:
-      - Harm
-      - Harmful encounters
-    roles:
-      - name: killed_being
-      - name: killer
-    lexical_units:
-      - annihilate.v
-      - annihilation.n
-      - assassin.n
-      - assassinate.v
-      - assassination.n
-      - cutthroat.a
-      - cutthroat.n
-      - deadly.a
-      - decimate.v
-      - decimation.n
-      - executioner.n
-      - exterminate.v
-      - extermination.n
-      - exterminator.n
-      - extinction.n
-      - hired gun.n
-      - hitman.n
-      - homicide.n
-      - kill.v
-      - killer.n
-      - massacre.n
-      - massacre.v
-      - murder.n
-      - murder.v
-      - murderer.n
-      - slaughterer.n
-      - slay.v
-      - slayer.n
-      - snuff out.v
-      - snuff.v
-      - squelch.v
-      - wipe out.v
-    related:
-      - death
-      - harm-to-living-entity
   - name: knowing
     frame_families:
       - Cognition
@@ -6565,18 +4951,11 @@ frames:
       - name: labor
       - name: employer
       - name: amount_of_labor
-  - name: lack-of-enablement
-    frame_families:
-      - Impediment and enablement
-    related:
-      - enablement
-      - impediment-to-motion
   - name: lack-of-impediment-to-motion
     frame_families:
       - Impediment and enablement
       - Motion
     related:
-      - enablement
       - impediment-to-motion
     roles:
       - name: impeded_entity
@@ -6589,18 +4968,6 @@ frames:
       - name: market_whole
       - name: market_participants
       - name: market_discipline
-  - name: land-vehicle
-    frame_families:
-      - Entity
-      - Vehicle
-    lexical_units:
-      - brakes.n
-      - bus.n
-      - car.n
-      - truck.n
-      - wheel.n
-    related:
-      - vehicle
   - name: large-geographic-features
     frame_families:
       - Entity
@@ -6647,31 +5014,6 @@ frames:
       - statute.n
     related:
       - evaluation
-      - legality
-  - name: lax
-    frame_families:
-      - Physical properties
-    roles:
-      - name: lax_entity
-      - name: lax_status
-    lexical_units:
-      - compressible.a
-      - ductile.a
-      - elastic.a
-      - flaccid.a
-      - lax.a
-      - limp.a
-      - malleable.a
-      - moldable.a
-      - mushy.a
-      - pliable.a
-      - slack.a
-      - soft.a
-      - spongy.a
-      - squishy.a
-    related:
-      - firm
-      - firmness
   - name: leadership
     frame_families:
       - Guided motion
@@ -6692,8 +5034,6 @@ frames:
       - leadership.n
       - usher.n
       - usher.v
-    related:
-      - accompany
   - name: learning
     frame_families:
       - Cognition
@@ -6712,42 +5052,6 @@ frames:
     related:
       - cognizing
       - knowing
-  - name: leftover-food
-    frame_families:
-      - Eating
-    lexical_units:
-      - crumb.n
-      - dreg.n
-      - leftover.n
-      - piece.n of the pie
-      - scrap.n
-      - sliver.n
-      - sliver.n of the pie
-      - tiny sliver.n
-    related:
-      - food
-  - name: legality
-    frame_families:
-      - The law
-    roles:
-      - name: action
-      - name: actor
-      - name: legal_code
-      - name: legality_of_action
-    lexical_units:
-      - illegal.a
-      - illegality.n
-      - illicit.a
-      - lawful.a
-      - legal.a
-      - legality.n
-    related:
-      - evaluation
-  - name: legislation-drafting
-    frame_families:
-      - Legislation
-    related:
-      - legislative-action
   - name: legislation-enactment
     frame_families:
       - Legislation
@@ -6771,8 +5075,6 @@ frames:
       - legislation.n
       - resolution.n
     related:
-      - government-decision-making
-      - legislation-drafting
       - legislative-action
       - voting
   - name: legislative-action
@@ -6820,13 +5122,6 @@ frames:
     related:
       - government-institution
       - legislative-action
-  - name: legitimacy
-    frame_families:
-      - Governance
-    related:
-      - evaluation
-      - trust
-  - name: length
   - name: liberal-market
     frame_families:
       - Economic
@@ -6850,8 +5145,6 @@ frames:
       - name: life_stages
       - name: lifestyle
       - name: short_term_life_goals
-    related:
-      - sequence-of-actions
   - name: life-cycle
     roles:
       - name: beginning_of_life
@@ -6861,8 +5154,6 @@ frames:
     lexical_units:
       - life cycle.n
       - lifecycle.n
-    related:
-      - cycle
   - name: light-source
     roles:
       - name: light_source
@@ -6885,8 +5176,6 @@ frames:
       - lighthouse.n
       - shine.n
       - torch.n
-    related:
-      - luminosity
   - name: lightness
     frame_families:
       - Perception
@@ -6905,7 +5194,6 @@ frames:
       - well-lit.a
     related:
       - darkness
-      - luminosity
   - name: limited-resource
     lexical_units:
       - limited.a
@@ -6953,20 +5241,6 @@ frames:
       - name: logical_structure_whole
       - name: structural_elements
       - name: element_relations
-  - name: loose-fit
-    frame_families:
-      - Physical properties
-    lexical_units:
-      - baggy.a
-      - comfortable.a
-      - cushy.a
-      - loose.a
-      - loosen.v
-      - relaxed.a
-      - wide.a
-    related:
-      - fit
-      - tight-fit
   - name: lose-possession
     frame_families:
       - Possession
@@ -6983,26 +5257,6 @@ frames:
     related:
       - possessable-object
       - possession
-  - name: losing
-    frame_families:
-      - Possession
-    roles:
-      - name: loser
-      - name: lost_object
-    lexical_units:
-      - misplace.v
-    related:
-      - possession
-  - name: luminosity
-    frame_families:
-      - Perception
-      - Scale
-    roles:
-      - name: light_level
-    lexical_units:
-      - luminosity.n
-    related:
-      - scale
   - name: lust
     frame_families:
       - Emotion
@@ -7127,23 +5381,6 @@ frames:
   - name: mass
     roles:
       - name: mass
-  - name: mass-motion
-    frame_families:
-      - Internal motion
-      - Motion
-      - Movement
-      - Moving entity
-    lexical_units:
-      - crowd.v
-      - flock.v
-      - hail.v
-      - mob.v
-      - swarm.v
-      - teem.v
-      - throng.n
-      - throng.v
-    related:
-      - motion
   - name: maze
     frame_families:
       - Motion impediments
@@ -7166,107 +5403,24 @@ frames:
       - name: measurer
       - name: measured_object
       - name: measurement_outcome
-  - name: media
-    frame_families:
-      - Democratic institutions
-    roles:
-      - name: media_audience
-      - name: media_influencers
-      - name: media_medium
-      - name: media_message
-      - name: media_producers
-    lexical_units:
-      - broadcast.v
-      - broadcasting.n
-      - fourth estate.n
-      - journalism.n
-      - journalist.n
-      - media.n
-      - news media.n
-      - news.n
-      - newsmagazine.n
-      - newsmedia.n
-      - newspaper.n
-      - press corps.n
-      - press.n
-      - reporter.n
-      - reporting.n
-    related:
-      - communication
-      - democratic-institution
   - name: meeting
     roles:
       - name: meeting
       - name: meeting_participants
-  - name: membership
-    lexical_units:
-      - member.n
-      - membership.n
-    related:
-      - part-whole
   - name: memorization
     roles:
       - name: memorizer
       - name: memorized_content
       - name: memory_store
-  - name: mental-state
-  - name: military-leadership
-    lexical_units:
-      - admiral.n
-      - captain.n
-      - chieftain.n
-      - command.v
-      - commander.n
-      - commodore.n
-      - corporal.n
-      - general.n
-      - lieutenant.n
-      - major.n
-      - marshal.n
-      - officer.n
-      - sergeant.n
-    related:
-      - leadership
   - name: mind
     frame_families:
       - Cognition
     related:
       - cognizing
-      - sentient-entity
     roles:
       - name: mind
       - name: thoughts
       - name: mind_structure
-  - name: misfortune
-    frame_families:
-      - Harm
-    lexical_units:
-      - accident.n
-      - calamity.n
-      - catastrophe.n
-      - disaster.n
-      - fluke.n
-      - fubar.a
-      - misadventure.n
-      - misfortune.n
-      - mishap.n
-      - setback.n
-    related:
-      - harm
-  - name: mode-of-transportation
-    frame_families:
-      - Vehicle
-  - name: monetary-evaluation
-    frame_families:
-      - Economic
-    roles:
-      - name: evaluator
-      - name: resource
-      - name: standard
-      - name: value
-    related:
-      - evaluation
-      - financial-resource
   - name: money
     frame_families:
       - Economic
@@ -7306,7 +5460,6 @@ frames:
       - name: moral_authority_obeyer
       - name: moral_authority_power
     related:
-      - authority
       - morality
   - name: moral-character
     roles:
@@ -7320,19 +5473,6 @@ frames:
       - name: corruption_affectee
     related:
       - corruption
-      - immoral-action
-  - name: moral-evaluation
-    frame_families:
-      - Evaluation
-    roles:
-      - name: behavior
-      - name: evaluee
-      - name: judge
-      - name: moral_judgement
-      - name: moral_standard
-    related:
-      - evaluation
-      - morality
   - name: moral-goodness
     frame_families:
       - Morality
@@ -7387,16 +5527,6 @@ frames:
     related:
       - physical-entity
       - process
-  - name: motion-affecting-actors
-    frame_families:
-      - Motion
-      - Motion-affecting
-    roles:
-      - name: actor
-      - name: potential_mover
-    related:
-      - force-application
-      - motion-affecting-external-factors
   - name: motion-affecting-external-factors
     frame_families:
       - Impediment and enablement
@@ -7433,13 +5563,6 @@ frames:
       - name: mover_location
     related:
       - motion-affecting-external-factors
-  - name: motion-affecting-properties-of-the-landscape
-    frame_families:
-      - Impediment and enablement
-      - Motion
-      - Motion-affecting
-    related:
-      - motion-affecting-external-factors
   - name: motion-along-a-path
     frame_families:
       - Directional movement
@@ -7472,29 +5595,6 @@ frames:
       - motion
       - physical-path
       - source-path-goal
-  - name: motion-away-from-a-bounded-region
-    frame_families:
-      - Directional movement
-      - Motion
-      - Movement
-      - Moving entity
-      - Translational motion
-    roles:
-      - name: landmark
-      - name: motion_x_schema
-      - name: mover
-      - name: source
-    lexical_units:
-      - climb.v out
-      - egress.n
-      - exit.v
-      - get.v out
-      - go.v out
-      - move.v out
-    related:
-      - bounded-region
-      - motion-away-from-a-location
-      - motion-to-a-bounded-region
   - name: motion-away-from-a-location
     frame_families:
       - Directional movement
@@ -7539,47 +5639,10 @@ frames:
       - escape.v
       - flee.v
       - get.v out
-    related:
-      - motion-with-respect-to-an-undesirable-entity
     roles:
       - name: mover
       - name: undesirable_location
       - name: motion_x_schema
-  - name: motion-back-and-forth
-    frame_families:
-      - Internal motion
-      - Motion
-      - Moving entity
-    roles:
-      - name: direction
-      - name: motion_path
-      - name: motion_x_schema
-      - name: mover
-      - name: speed
-    lexical_units:
-      - bobble.v
-      - convulse.v
-      - jiggle.v
-      - joggle.v
-      - jounce.v
-      - oscillate.v
-      - pendulate.v
-      - quaver.v
-      - quiver.v
-      - rock.v
-      - seesaw.n
-      - seesaw.v
-      - shake.v
-      - shiver.v
-      - sway.v
-      - swing.v
-      - teeter-totter.v
-      - undulate.v
-      - vacillate.v
-      - waggle.v
-      - wobble.v
-    related:
-      - non-translational-motion
   - name: motion-impediment
     roles:
       - name: mover
@@ -7624,70 +5687,6 @@ frames:
     related:
       - impediment-to-motion
       - motion
-  - name: motion-out-of-a-location
-    frame_families:
-      - Directional movement
-      - Location
-      - Motion
-      - Movement
-      - Moving entity
-      - Translational motion
-    roles:
-      - name: bounded_region
-      - name: direction
-      - name: goal
-      - name: motion_x_schema
-      - name: mover
-      - name: path
-      - name: source
-      - name: speed
-    lexical_units:
-      - climb.v out
-      - egress.n
-      - exit.v
-      - get.v out
-      - go.v out
-      - move.v out
-      - way out.n
-    related:
-      - bounded-region
-      - motion-along-a-path
-      - moving-into-a-bounded-region
-      - paths-out-of-a-location
-  - name: motion-to-a-bounded-region
-    frame_families:
-      - Directional movement
-      - Location
-      - Motion
-      - Movement
-      - Moving entity
-      - Translational motion
-    roles:
-      - name: bounded_region
-      - name: motion_x_schema
-      - name: mover
-    lexical_units:
-      - enter.v
-      - entrance ramp.n
-      - entrance.n
-      - entry.n
-      - get in.v
-      - get into.v
-      - go in.v
-      - go into.v
-      - infiltrate.v
-      - ingress.v
-      - move into.v
-      - on ramp.n
-      - on-ramp.n
-      - onramp.n
-      - penetrate.v
-      - rush in.v
-      - set foot in.v
-    related:
-      - bounded-region
-      - motion-away-from-a-bounded-region
-      - motion-to-a-location
   - name: motion-to-a-destination
     frame_families:
       - Directional movement
@@ -7724,105 +5723,6 @@ frames:
     related:
       - motion-along-a-path
       - motion-away-from-a-location
-  - name: motion-to-avoid-a-destination
-    frame_families:
-      - Directional movement
-      - Motion
-      - Movement
-      - Translational motion
-    roles:
-      - name: goal
-      - name: path
-      - name: self_motion_x_schema
-      - name: self_mover
-      - name: source
-      - name: undesirable_location
-    related:
-      - proximal-distal
-      - self-propelled-motion-to-a-destination
-  - name: motion-with-respect-to-an-undesirable-entity
-    frame_families:
-      - Directional movement
-      - Motion
-      - Movement
-      - Moving entity
-      - Translational motion
-    roles:
-      - name: mover
-      - name: mover_motion
-      - name: undesirable_entity
-    related:
-      - self-propelled-motion
-  - name: moving-backward
-    frame_families:
-      - Motion
-      - Moving entity
-    roles:
-      - name: backward_direction
-      - name: motion_speed
-      - name: motion_x_schema
-      - name: mover
-    lexical_units:
-      - backward movement.n
-      - fall.v back
-      - move.v back
-      - pull.v back
-      - recede.v
-      - retreat.v
-    related:
-      - motion-along-a-path
-  - name: moving-forward
-    frame_families:
-      - Directional movement
-      - Motion
-      - Movement
-      - Moving entity
-      - Translational motion
-    lexical_units:
-      - advance.n
-      - advance.v
-      - advancement.n
-      - headway.n
-      - move.v forward
-      - progress.n
-      - progress.v
-    related:
-      - motion-along-a-path
-  - name: moving-into-a-bounded-region
-    frame_families:
-      - Directional movement
-      - Location
-      - Motion
-      - Movement
-      - Moving entity
-      - Translational motion
-    roles:
-      - name: bounded_region
-      - name: motion_x_schema
-      - name: mover
-    lexical_units:
-      - enter.v
-      - entrance ramp.n
-      - entrance.n
-      - entry.n
-      - fall into.v
-      - get in.v
-      - get into.v
-      - go in.v
-      - go into.v
-      - infiltrate.v
-      - ingress.v
-      - move into.v
-      - on ramp.n
-      - on-ramp.n
-      - onramp.n
-      - penetrate.v
-      - rush in.v
-      - set foot in.v
-    related:
-      - bounded-region
-      - motion-along-a-path
-      - motion-out-of-a-location
   - name: moving-object
     frame_families:
       - Motion
@@ -7834,22 +5734,6 @@ frames:
       - name: location_of_observer
       - name: space_in_front_of_observer
       - name: space_in_back_of_observer
-  - name: moving-out-of-an-undesirable-location
-    frame_families:
-      - Directional movement
-      - Location
-      - Motion
-      - Movement
-      - Moving entity
-      - Translational motion
-    lexical_units:
-      - dig.v out
-      - escape.n
-      - escape.v
-      - flee.v
-      - get.v out
-    related:
-      - motion-out-of-a-location
   - name: multiplex
     roles:
       - name: individual_entities
@@ -7971,7 +5855,6 @@ frames:
       - nauseous.a
       - queasy.a
       - sick.a
-  - name: need
   - name: negatively-evaluated-condition
     frame_families:
       - Poverty-related
@@ -7980,40 +5863,11 @@ frames:
       - name: condition
     related:
       - evaluation
-  - name: negotiation
-    lexical_units:
-      - arbiter.v
-      - arbitrator.n
-      - mediate.v
-      - mediation.n
-      - negotiate.v
-      - negotiation.n
-      - negotiator.n
   - name: neighbor
     roles:
       - name: neighbor1
       - name: neighbor2
       - name: neighbor_relation
-  - name: network
-    roles:
-      - name: network_connections
-      - name: network_parts
-      - name: network_whole
-      - name: sub_networks
-    related:
-      - connection
-      - system
-  - name: non-translational-motion
-    frame_families:
-      - Motion
-      - Movement
-      - Moving entity
-    roles:
-      - name: motion_x_schema
-      - name: mover
-      - name: speed
-    related:
-      - motion
   - name: noticing
     roles:
       - name: noticer
@@ -8030,7 +5884,6 @@ frames:
       - name: parenting_style
       - name: traits_in_children
     related:
-      - authority
       - family
       - responsibility
   - name: nurturance
@@ -8080,7 +5933,6 @@ frames:
       - object.n
       - thing.n
     related:
-      - bounded-entity
       - physical-entity
       - size
       - weight
@@ -8105,31 +5957,6 @@ frames:
       - name: smaller
       - name: smallest_object
       - name: taking_apart
-  - name: object-insertion
-    frame_families:
-      - Act on an object
-    lexical_units:
-      - drill.v
-      - embed.v
-      - force.v in
-      - implant.v
-      - implant.v
-      - ingrain.v
-      - ingress.v
-      - inject.v
-      - inlay.v
-      - insert.v
-      - install.v
-      - lug.v in
-      - poke.v
-      - shove.v in
-      - sink.v in
-      - squeeze.v in
-      - stab.v
-      - stick.v in
-      - tuck.v
-    related:
-      - object-manipulation
   - name: object-manipulation
     frame_families:
       - Act on an object
@@ -8140,38 +5967,7 @@ frames:
       - name: effector
       - name: object
     related:
-      - force-application
       - object
-  - name: object-propulsion
-    frame_families:
-      - Act on an object
-      - Forced movement
-      - Movement
-      - Moving entity
-    roles:
-      - name: actor
-      - name: object
-    lexical_units:
-      - cast.v
-      - catapult.v
-      - chuck.v
-      - fire off.v
-      - fire.v
-      - fling.v
-      - hurl.v
-      - launch.v
-      - pitch.n
-      - propel.v
-      - propulsion.n
-      - rapid fire.n
-      - shoot.v
-      - sling.v
-      - throw.v
-      - thrust.v
-      - toss.v
-    related:
-      - forced-motion
-      - object-manipulation
   - name: obscenity
     frame_families:
       - Aversion
@@ -8197,20 +5993,6 @@ frames:
       - name: water_body
       - name: surface
       - name: vessel
-  - name: open
-    frame_families:
-      - Impediment and enablement
-      - Motion-affecting
-    lexical_units:
-      - gape.v
-      - gaping.a
-      - open.a
-      - open.v
-      - opening.n
-      - openness.n
-      - unlock.v
-    related:
-      - portals
   - name: operating-a-machine
     frame_families:
       - Act on an object
@@ -8252,12 +6034,6 @@ frames:
       - name: organizational_structure
     related:
       - social-group
-  - name: organization-of-power
-    frame_families:
-      - Democracy
-      - Governance
-    related:
-      - branches-of-government
   - name: organizational-leadership
     frame_families:
       - Leaders
@@ -8277,10 +6053,6 @@ frames:
       - name: organization_leaders
       - name: organization_members
       - name: organization_whole
-  - name: out
-    frame_families:
-      - Bounding
-      - Spatial relations
   - name: overeating
     frame_families:
       - Aversion
@@ -8322,15 +6094,6 @@ frames:
     related:
       - eating
       - excess-body-weight
-  - name: ownership
-    frame_families:
-      - Possession
-    lexical_units:
-      - own.v
-      - owner.n
-      - ownership.n
-    related:
-      - possession
   - name: parasite
     frame_families:
       - Entity
@@ -8345,34 +6108,13 @@ frames:
       - parasitic.a
       - sponge.n
       - sponge.v
-    related:
-      - blood-sucking-creature
     roles:
       - name: parasitic_process
       - name: host
-  - name: parent
-    frame_families:
-      - Morality
-    lexical_units:
-      - baby.v
-      - dad.n
-      - daddy.n
-      - father.n
-      - mom.n
-      - mommy.n
-      - mother.n
-      - nurture.v
-      - parent.n
-      - take.v care
-    related:
-      - authority
-      - family
-      - responsibility
   - name: parental-authority
     roles:
       - name: child
       - name: parent
-  - name: part-piece
   - name: part-whole
     frame_families:
       - Image schemas
@@ -8383,10 +6125,7 @@ frames:
       - name: whole
       - name: whole_part_relation
     related:
-      - part-piece
       - possession
-      - relation
-  - name: participation
   - name: partnership
     roles:
       - name: partner1
@@ -8396,7 +6135,6 @@ frames:
     roles:
       - name: passion_feeler
       - name: degree_of_passion
-  - name: path
   - name: paths-out-of-a-location
     frame_families:
       - Location
@@ -8422,21 +6160,6 @@ frames:
     roles:
       - name: path
       - name: source
-  - name: payment
-    frame_families:
-      - Excluded
-    roles:
-      - name: payer
-      - name: payment
-      - name: payment_amount
-    lexical_units:
-      - pay.v
-      - payment.n
-      - price.n
-      - spend.v
-      - spending.n
-    related:
-      - financial-transaction
   - name: perception
     frame_families:
       - Perception
@@ -8496,7 +6219,6 @@ frames:
     related:
       - animate-entity
       - purposeful-action
-      - sentient-entity
   - name: personal-preference
     roles:
       - name: preferred_thing
@@ -8524,7 +6246,6 @@ frames:
       - sidearm.n
     related:
       - complex-physical-object
-      - gun-debate
   - name: personality
     roles:
       - name: person
@@ -8610,7 +6331,6 @@ frames:
       - unhealthy.a
       - wound.n
     related:
-      - experience-pain
       - harm-to-living-entity
   - name: physical-attributes
     frame_families:
@@ -8743,7 +6463,6 @@ frames:
       - name: impeded_entity
       - name: affected_motion
       - name: impediment
-  - name: physical-obstacle
   - name: physical-path
     frame_families:
       - Translational motion
@@ -8798,17 +6517,10 @@ frames:
       - tough.a
       - vitality.n
     related:
-      - physical-strength-scale
       - power
     roles:
       - name: entity
       - name: strength_level
-  - name: physical-strength-scale
-    frame_families:
-      - Physical properties
-      - Scale
-    related:
-      - scale
   - name: physical-structure
     frame_families:
       - Entity
@@ -8861,7 +6573,6 @@ frames:
       - weakness.n
     related:
       - physical-strength
-      - physical-strength-scale
     roles:
       - name: entity
       - name: weakness_level
@@ -8881,35 +6592,10 @@ frames:
       - shelter.v
     related:
       - being-at-a-location
-      - hiding
       - protecting
     roles:
       - name: placer
       - name: threatening_thing
-  - name: plant-life-cycle
-    roles:
-      - name: plant_death
-      - name: plant_entity
-      - name: plant_growth
-      - name: plant_sprouting_stage
-      - name: plant_sprouting_state
-    lexical_units:
-      - bloom.v
-      - blossom.v
-      - bud.n
-      - bud.v
-      - germ.n
-      - germinate.v
-      - sapling.n
-      - seedling.n
-      - sprout.n
-      - sprout.v
-      - take.v root.n
-      - vegetate.v
-      - wither.v
-    related:
-      - life-cycle
-      - plants
   - name: plants
     frame_families:
       - Entity
@@ -8940,8 +6626,6 @@ frames:
       - vine.n
     related:
       - biological-entity
-      - gardening
-      - plant-life-cycle
   - name: plurality
     roles:
       - name: individual_entities
@@ -8957,25 +6641,6 @@ frames:
     roles:
       - name: police_whole
       - name: authority
-  - name: political-competition
-    frame_families:
-      - Competition
-    roles:
-      - name: competitor1
-      - name: competitor2
-      - name: event
-      - name: outcome
-      - name: political_activity_x_schema
-      - name: prize
-    related:
-      - competition
-  - name: political-equality
-    frame_families:
-      - Politics
-    related:
-      - democracy
-      - equality
-      - rights
   - name: political-party
     roles:
       - name: political_party
@@ -9052,7 +6717,6 @@ frames:
       - position.n
     related:
       - career
-      - employment
       - power
       - responsibility
   - name: positivity-scale
@@ -9091,7 +6755,6 @@ frames:
     related:
       - access-to-an-object
       - possessable-object
-      - relation
   - name: possession-change
     frame_families:
       - Change-related
@@ -9139,28 +6802,11 @@ frames:
       - name: power_holder
       - name: power_yielder
     related:
-      - authority
       - control
-      - legitimacy
-  - name: predication
-    roles:
-      - name: predicate
-      - name: subject
-  - name: pressure
-    frame_families:
-      - Force dynamic
-      - Object event structure
-    roles:
-      - name: entity_applying_force_of_pressure
-      - name: entity_receiving_force_of_pressure
-    related:
-      - force
-      - trajector-landmark
   - name: pressure-in-a-container
     related:
       - containment
       - fluid-containment
-      - pressure
     roles:
       - name: container
       - name: contents
@@ -9192,61 +6838,6 @@ frames:
       - name: process_start
       - name: process_stop
       - name: protagonist
-    related:
-      - process-completed-state
-      - process-continue
-      - process-initial-state
-      - process-pause
-      - process-resume
-      - process-start
-      - process-stop
-      - process-stopped-state
-      - process-uncompleted-state
-  - name: process-completed-state
-    frame_families:
-      - Excluded
-      - X-schema
-    roles:
-      - name: process_completed_state
-  - name: process-continue
-    frame_families:
-      - Excluded
-      - X-schema
-    related:
-      - x-schema-continue
-  - name: process-end
-    frame_families:
-      - Excluded
-      - X-schema
-    roles:
-      - name: process_end
-  - name: process-initial-state
-    frame_families:
-      - Excluded
-      - X-schema
-  - name: process-pause
-    frame_families:
-      - Excluded
-      - X-schema
-  - name: process-resume
-  - name: process-start
-    frame_families:
-      - Excluded
-      - X-schema
-    roles:
-      - name: process_start
-  - name: process-stop
-    frame_families:
-      - Excluded
-      - X-schema
-  - name: process-stopped-state
-    frame_families:
-      - Excluded
-      - X-schema
-  - name: process-uncompleted-state
-    frame_families:
-      - Excluded
-      - X-schema
   - name: protect-against-contact
     frame_families:
       - Concealment and protection
@@ -9301,26 +6892,6 @@ frames:
       - shelter.v
     related:
       - harm
-  - name: proximal
-    frame_families:
-      - Image schemas
-    lexical_units:
-      - adjacent.a
-      - approachable.a
-      - attainable.a
-      - close.a
-      - handy.a
-      - near.a
-      - nearby.a
-      - next to.prep
-      - proximal.a
-      - reachable.a
-      - within grasp.n
-      - within one's grasp.n
-      - within reach.n
-    related:
-      - distant
-      - proximity
   - name: proximal-distal
     frame_families:
       - Image schemas
@@ -9365,14 +6936,6 @@ frames:
       - name: harmed_entity
       - name: harmful_process
       - name: effect_of_harm
-  - name: public-trust
-    frame_families:
-      - Governance
-    roles:
-      - name: institution_as_trusted_entity
-      - name: public_as_trusting_entity
-    related:
-      - trust-relationship
   - name: punishment
     frame_families:
       - Crime
@@ -9425,7 +6988,6 @@ frames:
       - name: objective
     related:
       - action
-      - desiring
   - name: pursue
     frame_families:
       - Motion
@@ -9482,8 +7044,6 @@ frames:
       - rocky.a
       - stumbling block.n
       - treacherous.a
-    related:
-      - motion-affecting-properties-of-the-landscape
   - name: quantity
     frame_families:
       - Excluded
@@ -9558,17 +7118,6 @@ frames:
       - reason.v
     related:
       - cognizing
-  - name: reciprocal-motion
-  - name: reciprocation
-    roles:
-      - name: favor
-      - name: reciprocity_initiator
-      - name: reciprocity_recipient
-    lexical_units:
-      - reciprocate.v
-      - repay.v
-    related:
-      - reciprocal-motion
   - name: recreational-competition
     frame_families:
       - Competition
@@ -9605,20 +7154,7 @@ frames:
       - regulatory.a
       - rule.n
     related:
-      - authority
       - evaluation
-  - name: relation
-    frame_families:
-      - Excluded
-    roles:
-      - name: entity_1
-      - name: entity_2
-      - name: relation
-      - name: relation_type
-      - name: relation_value
-      - name: relation_value_x_schema
-    related:
-      - process
   - name: relationship
     roles:
       - name: change_in_relationship_intensity
@@ -9637,8 +7173,6 @@ frames:
       - name: relationship_status
       - name: relationship_whole
       - name: static_dynamic_status_of_relationship
-    related:
-      - relation
   - name: release-liquid
     frame_families:
       - Fluid
@@ -9692,26 +7226,6 @@ frames:
       - name: extractor
       - name: fluid
       - name: source
-  - name: remove-burden
-    frame_families:
-      - Endangerment
-      - Impediment and enablement
-      - Motion-affecting
-    lexical_units:
-      - disencumber.v
-      - ease.v burden.n
-      - lift.v burden.n
-      - lighten.v
-      - load.n off
-      - relief.n
-      - relieve.v
-      - relinquish.v
-      - take.v a load off
-      - take.v the load off
-      - unburden.v
-      - unload.v
-    related:
-      - burden
   - name: replacement
     frame_families:
       - Change-related
@@ -9728,15 +7242,6 @@ frames:
       - swap.n
       - switch.v
       - exchange.v
-  - name: representation-and-decision-making
-    frame_families:
-      - Democracy
-    lexical_units:
-      - represent.v
-      - representation.n
-      - representative.n
-    related:
-      - decision-making
   - name: resource
     frame_families:
       - Resource
@@ -9803,7 +7308,6 @@ frames:
     related:
       - containing
       - resource
-  - name: resource-holder
   - name: resource-transfer
     frame_families:
       - Resource
@@ -9830,25 +7334,8 @@ frames:
       - responsible.a
       - responsibly.adv
     related:
-      - authority
       - evaluation
       - person
-  - name: restaurant
-    roles:
-      - name: maitre_d
-      - name: meal
-      - name: menu
-      - name: patron
-      - name: waiter
-    lexical_units:
-      - bistro.n
-      - restaurant.n
-    related:
-      - commercial-transaction
-      - hosting
-  - name: restore
-    frame_families:
-      - Act on an object
   - name: restore-to-life
     frame_families:
       - Natural process
@@ -9910,43 +7397,6 @@ frames:
       - tangle.n
     related:
       - motion-affecting-objects
-  - name: rich-food
-    frame_families:
-      - Eating
-    lexical_units:
-      - cake.n
-      - cheese.n
-      - dessert.n
-      - gravy.n
-      - pastry.n
-      - pie.n
-      - slice of pie.n
-      - slice of the pie.n
-      - steak.n
-    related:
-      - food
-  - name: right-to-life
-    frame_families:
-      - Excluded
-      - Rights
-    related:
-      - human-rights
-  - name: right-to-self-defense
-    frame_families:
-      - Gun debate
-      - Gun rights
-    roles:
-      - name: rights_holder
-    lexical_units:
-      - defensive use.n
-      - right to self-protection.n
-      - right.n to self-defence.n
-      - right.n to self-defense.n
-      - self-defence.n right.n
-      - self-defense.n right.n
-    related:
-      - rights
-      - self-defense
   - name: rights
     frame_families:
       - Democracy
@@ -9965,20 +7415,6 @@ frames:
     related:
       - democracy
       - freedom
-  - name: robot
-    frame_families:
-      - Entity
-      - Machine
-    roles:
-      - name: purpose
-      - name: robot_entity
-    lexical_units:
-      - robot.n
-      - robotic.a
-    related:
-      - machine
-      - sentient-entity
-  - name: rocks-along-shore
   - name: romantic-relationship
     roles:
       - name: course_of_romantic_relationship
@@ -9990,38 +7426,6 @@ frames:
       - love.n
       - marriage.n
       - relationship.n
-  - name: rotation
-    frame_families:
-      - Internal motion
-      - Motion
-      - Movement
-      - Moving entity
-    lexical_units:
-      - circle.v
-      - cycle.n
-      - cycle.v
-      - gyrate.v
-      - gyre.n
-      - gyre.v
-      - pirouette.v
-      - pivot.v
-      - revolve.v
-      - roll.v
-      - rotate.v
-      - rotation.n
-      - spin.n
-      - spin.v
-      - swivel.n
-      - swivel.v
-      - twirl.v
-      - wheel.v
-      - whirl.n
-      - whirl.n
-      - whirl.v
-      - whirl.v
-      - whirligig.n
-    related:
-      - non-translational-motion
   - name: sadness
     frame_families:
       - Emotion
@@ -10034,20 +7438,6 @@ frames:
       - name: sadness
     related:
       - emotion
-  - name: safety
-    frame_families:
-      - Gun debate
-    lexical_units:
-      - safe.a
-      - safety.n
-    related:
-      - danger
-  - name: sanction
-    frame_families:
-      - Economic
-    lexical_units:
-      - embargo.n
-      - sanction.n
   - name: scale
     frame_families:
       - Property-related
@@ -10062,63 +7452,11 @@ frames:
       - name: position_on_scale
     related:
       - state
-  - name: school
-    frame_families:
-      - Education
-      - Excluded
-    roles:
-      - name: curriculum
-      - name: school_house
-      - name: students
-      - name: teachers
-    lexical_units:
-      - exam.n
-      - graduation requirement.n
-      - homework.n
-      - school.n
-      - student.n
-      - students.n
-      - teacher.n
-      - teachers.n
-    related:
-      - educational-institution
-  - name: seafaring-vehicle
-    frame_families:
-      - Entity
-      - Vehicle
-    lexical_units:
-      - aquatic.a
-      - boat.n
-      - cruise.v
-      - marine.a
-      - nautical.a
-      - oceangoing.a
-      - seafaring.a
-      - seagoing.a
-      - ship.n
-    related:
-      - vehicle
   - name: searching
     roles:
       - name: looking_for_object_x_schema
       - name: seeker_of_some_object
       - name: sought_object
-  - name: second-amendment
-    frame_families:
-      - Gun debate
-      - Gun rights
-    lexical_units:
-      - 2nd Amendment policy.n
-      - 2nd Amendment right.n
-      - 2nd Amendment.n
-      - 2nd amendment.n
-      - Second Amendment policy.n
-      - Second Amendment right.n
-      - Second Amendment.n
-    related:
-      - freedom
-      - legislation-enactment
-      - rights
   - name: sedation
     roles:
       - name: sedative
@@ -10143,7 +7481,6 @@ frames:
       - open eye.n
       - vision.n
     related:
-      - luminosity
       - perception
   - name: selection
     frame_families:
@@ -10154,21 +7491,6 @@ frames:
       - name: selector
     related:
       - cognizing
-  - name: self-defense
-    frame_families:
-      - Gun debate
-    roles:
-      - name: defended_thing
-      - name: defender
-      - name: means_of_protection
-      - name: threatening_thing
-    lexical_units:
-      - self-defence.n
-      - self-defense.n
-      - self-protection.n
-    related:
-      - attacking
-      - protecting
   - name: self-initiated-state-change
     frame_families:
       - Action
@@ -10239,16 +7561,6 @@ frames:
     roles:
       - name: sentence_form
       - name: sentence_meaning
-  - name: sentient-entity
-    frame_families:
-      - Entity
-    roles:
-      - name: sentient_entity
-      - name: state_of_consciousness
-    related:
-      - cognizing
-      - consciousness
-      - entity
   - name: separation
     frame_families:
       - Image schemas
@@ -10272,11 +7584,6 @@ frames:
       - name: whole
       - name: cause_of_separation
       - name: parts
-  - name: sequence-of-actions
-    frame_families:
-      - Action
-    related:
-      - action
   - name: servant
     roles:
       - name: servant
@@ -10318,30 +7625,6 @@ frames:
       - subjugate.v
       - subjugation.n
       - thralldom.n
-    related:
-      - authority
-  - name: servitude-authority
-    roles:
-      - name: master
-    lexical_units:
-      - lord.n
-      - master.n
-      - oppressor.n
-      - overlord.n
-      - overseer.n
-      - rule.v over
-      - slave driver.n
-      - slave master.n
-      - slave owner.n
-      - slave-driver.n
-      - slave-master.n
-      - slave-owner.n
-      - slavedriver.n
-      - slavemaster.n
-      - slaveowner.n
-      - taskmaster.n
-    related:
-      - servitude
   - name: sexuality
     roles:
       - name: sexuality
@@ -10366,29 +7649,9 @@ frames:
       - shepherd.v
     related:
       - work-scenario
-  - name: silencing
-    frame_families:
-      - Communication
-    roles:
-      - name: agent
-      - name: agent_action
-      - name: speaker
-    lexical_units:
-      - gag.v
-      - hush.v
-      - hush.v up
-      - mute.v
-      - quiet.v
-      - shush.v
-      - shut.v up
-      - silence.v
-    related:
-      - causation
-      - speaking
   - name: similarity
     roles:
       - name: similarity
-  - name: situation
   - name: size
     frame_families:
       - Physical properties
@@ -10412,24 +7675,6 @@ frames:
       - object
       - scale
       - trajector-landmark
-  - name: smell
-    frame_families:
-      - Perception
-    lexical_units:
-      - aroma.n
-      - bouquet.n
-      - cologne.n
-      - fragrance.n
-      - fragrant.a
-      - incense.n
-      - odor.n
-      - perfume.n
-      - scent.n
-      - smell.n
-      - smell.v
-      - whiff.n
-    related:
-      - perception
   - name: smelling
     roles:
       - name: smelling_effector
@@ -10555,8 +7800,6 @@ frames:
       - name: entity_2
       - name: spatial_relation_type
       - name: spatial_relation_value
-    related:
-      - relation
   - name: speaking
     frame_families:
       - Communication
@@ -10597,16 +7840,6 @@ frames:
       - suggest.v
       - talk.v
       - tell.v
-  - name: speech-in-society
-    lexical_units:
-      - discourse.n
-      - expression.n
-      - speech.n
-      - voice.n
-    related:
-      - communication
-      - democracy
-      - rights
   - name: spelling
     roles:
       - name: speller
@@ -10626,44 +7859,7 @@ frames:
       - sturdiness.n
     related:
       - complex-physical-object
-      - condition-of-physical-object
       - scale
-  - name: stable
-    roles:
-      - name: stable_entity
-      - name: stable_status
-    lexical_units:
-      - durable.a
-      - enduring.a
-      - immovable.a
-      - lasting.a
-      - stable.a
-      - steady.a
-      - sturdy.a
-      - unfluctuating.a
-      - unvarying.a
-    related:
-      - stability
-      - unstable
-  - name: starvation
-    frame_families:
-      - Eating
-    lexical_units:
-      - emaciate.v
-      - emaciated.a
-      - famine.n
-      - famished.a
-      - famishment.n
-      - fast.v
-      - ravenous.a
-      - ravenousness.n
-      - starvation.n
-      - starve.v
-      - starving.a
-      - voracious.a
-      - voraciousness.n
-    related:
-      - hunger
   - name: state
     frame_families:
       - State-related
@@ -10732,8 +7928,6 @@ frames:
       - stakes.n
       - stock.n
       - stockholder.n
-    related:
-      - resource-holder
     roles:
       - name: stockholder
       - name: stake
@@ -10769,22 +7963,10 @@ frames:
     roles:
       - name: agent
       - name: victim
-  - name: stop-flow-of-substance
-    frame_families:
-      - Impediment and enablement
-    lexical_units:
-      - clog.n
-      - clog.v
-      - congest.v
-      - constrict.v
-    related:
-      - fluid-motion
   - name: straight-path
     roles:
       - name: path
       - name: person_moving_along_straight_line
-    related:
-      - path
   - name: straightness
     frame_families:
       - Property-related
@@ -10814,7 +7996,6 @@ frames:
     related:
       - nuclear-family
       - nurturant-parent-family
-  - name: subsidy
   - name: substance
     frame_families:
       - Entity
@@ -10825,51 +8006,6 @@ frames:
       - name: substance
     related:
       - physical-entity
-  - name: sunken-confinement
-    frame_families:
-      - Impediment and enablement
-      - Motion impediments
-      - Motion-affecting
-    roles:
-      - name: confined_entity
-      - name: low_area_of_confinement
-    lexical_units:
-      - abyss.n
-      - black-hole.n
-      - black.a hole.n
-      - canyon.n
-      - cave.n
-      - cavity.n
-      - chasm.n
-      - crater.n
-      - crevasse.n
-      - deep.a
-      - deepen.v
-      - dig.v
-      - fissure.n
-      - gaping.a maw.n
-      - gorge.n
-      - gulch.n
-      - hell hole.n
-      - hell-hole.n
-      - hell.n
-      - hellhole.n
-      - pit.n
-      - ravine.n
-      - rift.n
-      - sink hole.n
-      - sinkhole.n
-      - void.n
-      - wedge.n
-    related:
-      - being-at-a-low-location
-      - confinement
-  - name: supply-and-demand
-    frame_families:
-      - Economic
-    related:
-      - market
-      - value
   - name: support
     frame_families:
       - Object
@@ -10884,31 +8020,6 @@ frames:
     related:
       - contact
       - weight
-  - name: surgery
-    frame_families:
-      - Disease
-      - Harm to living entity
-    roles:
-      - name: patient
-      - name: precision_of_surgical_movements
-      - name: sickness_treated_by_surgery
-      - name: surgeon
-      - name: surgical_procedure
-    lexical_units:
-      - operate.n
-      - operation.n
-      - surgeon.n
-      - surgery.n
-    related:
-      - health-treatment
-  - name: survival
-    lexical_units:
-      - survival.n
-      - survive.v
-      - survivor.n
-    related:
-      - harm-to-living-entity
-      - living
   - name: sympathy
     roles:
       - name: sympathy_feeler
@@ -10920,7 +8031,6 @@ frames:
       - name: system_whole
       - name: system_x_schema
     related:
-      - network
       - part-whole
   - name: taste
     frame_families:
@@ -10988,50 +8098,6 @@ frames:
       - governing-action
       - legislation-enactment
       - negatively-evaluated-condition
-  - name: taxes
-    frame_families:
-      - Taxes
-    roles:
-      - name: amount
-      - name: rate
-      - name: tax
-      - name: type
-    lexical_units:
-      - capital gains tax.n
-      - corporate tax.n
-      - death tax.n
-      - earnings tax.n
-      - estate tax.n
-      - income tax.n
-      - inheritance tax.n
-      - property tax.n
-      - sales tax.n
-      - school tax.n
-      - tax rate.n
-      - tort tax.n
-    related:
-      - taxation
-  - name: team-names
-    roles:
-      - name: team
-    lexical_units:
-      - Bournemouth.n
-      - Brom.n
-      - Burnley.n
-      - Chelsea.n
-      - Everton.n
-      - Ham.n
-      - Leicester.n
-      - Liverpool.n
-      - Newcastle.n
-      - Norwich.n
-      - Southampton.n
-      - Sunderland.n
-      - Swansea.n
-      - Tottenham.n
-      - Watford.n
-    related:
-      - competitive-sport
   - name: temperature
     frame_families:
       - Scale
@@ -11080,9 +8146,6 @@ frames:
       - name: territory_whole
     related:
       - bounded-region
-  - name: test2
-    related:
-      - process
   - name: textile
     frame_families:
       - Entity
@@ -11223,9 +8286,6 @@ frames:
       - taut.a
       - tight.a
       - tighten.v
-    related:
-      - fit
-      - loose-fit
   - name: time
     roles:
       - name: duration_of_time
@@ -11258,11 +8318,6 @@ frames:
       - week.n
       - year.n
       - yesterday.n
-  - name: topological-scale
-    frame_families:
-      - Scale
-    related:
-      - scale
   - name: touching
     frame_families:
       - Perception
@@ -11305,10 +8360,8 @@ frames:
       - transfer.n
       - transfer.v
     related:
-      - complex-process
       - gain-possession
       - lose-possession
-  - name: traveling
   - name: treaties
     roles:
       - name: treaty
@@ -11396,20 +8449,7 @@ frames:
       - unlawful.a entry.n
     related:
       - crime
-      - motion-to-a-bounded-region
       - territory
-  - name: trust
-  - name: trust-emotion
-    frame_families:
-      - Emotion
-    roles:
-      - name: trust_emotion
-      - name: trust_reason
-      - name: trusted_entity
-      - name: trusting_entity
-    related:
-      - directed-emotion
-      - trust-relationship
   - name: trust-relationship
     frame_families:
       - Governance
@@ -11433,34 +8473,7 @@ frames:
       - trustworthiness.n
       - trustworthy.a
     related:
-      - judgment
       - relationship
-      - trust-emotion
-  - name: tyranny
-    lexical_units:
-      - authoritarian.a
-      - authoritarianism.n
-      - autocracy.n
-      - autocratic.a
-      - communism.n
-      - communist.a
-      - despot.n
-      - despotic.a
-      - despotism.n
-      - dictator.n
-      - dictatorship.n
-      - fascism.n
-      - fascist.a
-      - thug tactic.n
-      - totalitarian.a
-      - totalitarianism.n
-      - tyrannical.a
-      - tyranny.n
-      - tyrant.n
-    related:
-      - authority
-      - citizen-evaluation-of-government
-      - government
   - name: understanding
     frame_families:
       - Cognition
@@ -11474,42 +8487,6 @@ frames:
       - understand.v
     related:
       - knowing
-  - name: unemployment
-    frame_families:
-      - Wealth and social class
-    lexical_units:
-      - jobless.a
-      - joblessness.n
-      - the unemployed.n
-      - unemployed.a
-      - unemployment.n
-      - unemployment benefits.n
-      - unemployment claims.n
-    related:
-      - employment
-      - social-problems
-  - name: unstable
-    roles:
-      - name: unstable_entity
-      - name: unstable_status
-    lexical_units:
-      - be.v tilted
-      - feeble.a
-      - flimsy.a
-      - fragile.a
-      - frail.a
-      - insubstantial.a
-      - shaky.a
-      - tilt.v
-      - tottery.n
-      - unbalanced.a
-      - uneven.a
-      - unstable.a
-      - unsteady.a
-      - wobbly.a
-    related:
-      - stability
-      - stable
   - name: upright-posture
     frame_families:
       - Body
@@ -11587,19 +8564,6 @@ frames:
       - downward-motion
       - motion-along-a-path
       - verticality
-  - name: using
-    frame_families:
-      - Excluded
-    roles:
-      - name: purpose_of_use
-      - name: used_entity
-      - name: user
-  - name: value
-    frame_families:
-      - Economic
-    lexical_units:
-      - value.n
-      - worth.n
   - name: vehicle
     frame_families:
       - Entity
@@ -11626,45 +8590,7 @@ frames:
     related:
       - containing
       - machine
-      - mode-of-transportation
       - vehicular-motion
-  - name: vehicular-accident
-    frame_families:
-      - Damage
-      - Harm
-      - Harmful encounters
-    lexical_units:
-      - blindside.v
-      - collide.v
-      - collision.n
-      - crash.n
-      - derail.v
-      - derailment.n
-      - fender bender.n
-      - fender-bender.n
-      - flame-out.n
-      - flameout.n
-      - head-on.a
-      - nosedive.n
-      - off the rails.a
-      - pile-up.n
-      - pileup.n
-      - plow.v into
-      - shipwreck.n
-      - side-swipe.n
-      - sideswipe.n
-      - t-bone.v
-      - tailspin.n
-      - train-wreck.n
-      - train.n wreck.n
-      - trainwreck.n
-      - wreck.n
-      - wreck.v
-      - wreckage.n
-    related:
-      - impact
-      - misfortune
-      - vehicle
   - name: vehicular-motion
     frame_families:
       - Affected movement
@@ -11751,13 +8677,6 @@ frames:
       - name: locus_of_cognizers_attention
       - name: pathway_scanned
       - name: starting_locus_of_attention
-    related:
-      - attention
-  - name: virtual-path
-    lexical_units:
-      - virtual path.n
-    related:
-      - path
   - name: visual-evaluation
     frame_families:
       - Evaluation
@@ -11828,27 +8747,6 @@ frames:
       - balloting.n
       - vote.v
       - voter.n
-    related:
-      - government-decision-making
-  - name: voting-rights
-    frame_families:
-      - Election
-      - Rights
-    roles:
-      - name: enfranchised_voter
-    lexical_units:
-      - disenfranchise.v
-      - disenfranchisement.n
-      - enfranchise.v
-      - enfranchisement.n
-      - franchise.n
-      - right.n to vote
-      - suffrage.n
-      - voter.n eligibility
-      - voting rights.n
-    related:
-      - rights
-      - voting
   - name: war
     frame_families:
       - Competition
@@ -12064,40 +8962,6 @@ frames:
     roles:
       - name: exploited_party
       - name: exploitative_behavior
-  - name: weapons-handling
-    frame_families:
-      - Gun debate
-      - Guns
-    lexical_units:
-      - aim.v
-      - blast.v
-      - discharge.v
-      - fire.v
-      - launch.v
-      - open.v fire.n
-      - pull.v the trigger.n
-      - set.v off
-      - shoot.v
-      - torpedo.v
-      - trigger.v
-    related:
-      - object-manipulation
-  - name: wearable-disguises
-    frame_families:
-      - Concealment and protection
-      - Protecting
-    lexical_units:
-      - cloak.n
-      - cloak.v
-      - mask.n
-      - sheep's clothing.n
-      - sheep's skin.n
-      - sheepskin.n
-      - shroud.n
-      - shroud.v
-      - veil.n
-    related:
-      - visual-obstruction
   - name: weather
     roles:
       - name: weather
@@ -12148,52 +9012,11 @@ frames:
       - name: entity_possessing_well_being
       - name: state_of_well_being
     related:
-      - beauty
       - cleanliness
       - goodness
       - health
       - upright-posture
       - wealth
-  - name: wet
-    lexical_units:
-      - damp.a
-      - dampen.v
-      - moisten.v
-      - rinse.n
-      - rinse.v
-      - wet.a
-      - wet.v
-  - name: wilderness
-    frame_families:
-      - Harm
-      - Harm to living entity
-    lexical_units:
-      - back country.n
-      - backwater.n
-      - backwoods.n
-      - badlands.n
-      - boondocks.n
-      - boonies.n
-      - bush.n
-      - desert.n
-      - desolation.n
-      - forest.n
-      - hinterland.n
-      - jungle.n
-      - moonscape.n
-      - moors.n
-      - outback.n
-      - sticks.n
-      - swamp.n
-      - wasteland.n
-      - wastelands.n
-      - wild.n
-      - wilderness.n
-      - woodlands.n
-      - woods.n
-    related:
-      - danger
-      - geographic-feature
   - name: word
     roles:
       - name: referent
@@ -12225,7 +9048,6 @@ frames:
       - work.v
       - worker.n
     related:
-      - employment
       - income
       - purposeful-action
   - name: worship
@@ -12257,45 +9079,12 @@ frames:
       - worship.v
       - worshipper.n
     related:
-      - deity
       - moral-action
   - name: writing
     roles:
       - name: writer
       - name: written_content
       - name: writing_surface
-  - name: x-schema
-    frame_families:
-      - X-schema
-    roles:
-      - name: finish_conditions
-      - name: interruption
-      - name: start_conditions
-      - name: whole
-      - name: x_schema_continue
-      - name: x_schema_end
-      - name: x_schema_initial_state
-      - name: x_schema_kind
-      - name: x_schema_start
-      - name: x_schema_stopped_state
-    related:
-      - x-schema-continue
-      - x-schema-end
-      - x-schema-initial-state
-      - x-schema-start
-      - x-schema-stop
-      - x-schema-stopped-state
-      - x-schema-uncompleted-state
-  - name: x-schema-continue
-    frame_families:
-      - Excluded
-      - X-schema
-  - name: x-schema-end
-  - name: x-schema-initial-state
-  - name: x-schema-start
-  - name: x-schema-stop
-  - name: x-schema-stopped-state
-  - name: x-schema-uncompleted-state
   - name: zealotry
     frame_families:
       - Zealotry, insanity, and worship
@@ -12314,7 +9103,6 @@ frames:
       - zealot.n
       - zealotry.n
     related:
-      - deity
       - worship
     roles:
       - name: zealous_person
