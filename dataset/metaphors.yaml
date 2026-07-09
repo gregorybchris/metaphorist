@@ -14295,22 +14295,6 @@ metaphors:
         target_role: tax
       - source_role: resource_user
         target_role: taxer
-  - name: TAXATION_IS_SLAVERY
-    source_frame: servitude
-    target_frame: taxation
-    families:
-      - Taxation
-    mappings:
-      - source_role: subjugator
-        target_role: taxer
-      - source_role: subjugated
-        target_role: tax_payer
-    examples:
-      - Some say taxpayers work half the year just to satisfy the state.
-      - He feels enslaved to the taxman every April.
-      - Critics call high taxes a modern form of servitude.
-    related:
-      - TAXATION_IS_CAUSING_HARM
   - name: TAXATION_IS_THEFT
     source_frame: theft
     target_frame: taxation
