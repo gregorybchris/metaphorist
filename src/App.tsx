@@ -1,8 +1,9 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppShell } from "./components/layout/AppShell";
 import { AboutPage } from "./pages/AboutPage";
 import { CuratePage } from "./pages/CuratePage";
 import { FrameListPage } from "./pages/FrameListPage";
+import { HomePage } from "./pages/HomePage";
 import { MetaphorListPage } from "./pages/MetaphorListPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
@@ -11,7 +12,7 @@ export default function App() {
     <BrowserRouter>
       <AppShell>
         <Routes>
-          <Route path="/" element={<Navigate to="/metaphors" replace />} />
+          <Route path="/" element={<HomePage />} />
 
           <Route path="/metaphors" element={<MetaphorListPage />} />
           <Route path="/metaphors/:name" element={<MetaphorListPage />} />

@@ -30,7 +30,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     <div className="flex h-dvh flex-col">
       <header className="flex shrink-0 items-center gap-4 border-b border-border px-4 py-3 sm:px-6">
         <Link
-          to="/metaphors"
+          to="/"
           className="flex shrink-0 items-center gap-2 font-serif text-xl text-text italic"
         >
           <Logo className="size-6" />
