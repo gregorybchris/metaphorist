@@ -6278,7 +6278,7 @@ metaphors:
       - She's an upstanding member of the community.
       - He always tries to stay on the up and up.
       - Their standards have really fallen lately.
-  - name: GOODNESS_IS_WHITE_BADNESS_IS_BLACK
+  - name: GOODNESS_AND_BADNESS_ARE_SHADES_OF_WHITE_AND_BLACK
     source_frame: lightness
     target_frame: goodness
     families:
@@ -9333,7 +9333,7 @@ metaphors:
     examples:
       - She was loaded.
       - She was tanked up.
-  - name: INTOXICATION_IS_GETTING_BURNED_COOKED
+  - name: INTOXICATION_IS_GETTING_BURNED_OR_COOKED
     source_frame: heat
     target_frame: intoxication
     families:
@@ -11022,7 +11022,7 @@ metaphors:
       - The church acts as a stern father figure to its followers.
       - Citizens are expected to obey the state the way children obey a parent.
       - The elders' word was law, just like a parent's in the home.
-  - name: MORAL_CHARACTER_IS_THE_SUBSTANCE_AN_OBJECT_IS_MADE_OF
+  - name: MORAL_CHARACTER_IS_A_SUBSTANCE
     source_frame: object
     target_frame: moral-character
     families:
@@ -11952,7 +11952,7 @@ metaphors:
         target_role: person
       - source_role: plant_life_cycle
         target_role: health_of_person
-  - name: PEOPLE_BODIES_ARE_BUILDINGS
+  - name: BODIES_ARE_BUILDINGS
     source_frame: building
     target_frame: body
     mappings:
@@ -11964,7 +11964,6 @@ metaphors:
       - There's not much going on upstairs.
       - There's snow on the roof, but a fire in the furnace.
       - Eyes are windows to the soul.
-      - Suck in those front porches.
   - name: PERCEPTION_IS_RECEPTION
     source_frame: gain-possession
     target_frame: perception
@@ -12019,7 +12018,7 @@ metaphors:
       - This will test his mettle.
       - He has a heart of gold.
     related:
-      - MORAL_CHARACTER_IS_THE_SUBSTANCE_AN_OBJECT_IS_MADE_OF
+      - MORAL_CHARACTER_IS_A_SUBSTANCE
   - name: PERSONAL_PREFERENCE_IS_TASTE
     source_frame: taste
     target_frame: personal-preference
