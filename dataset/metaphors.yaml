@@ -15367,3 +15367,3708 @@ metaphors:
     related:
       - COMMUNICATING_IS_OBJECT_TRANSFER
       - IDEAS_ARE_OBJECTS
+  - name: STUPIDITY_IS_DULL_COLOR
+    source_frame: color
+    target_frame: stupidity
+    examples:
+      - His dull expression made it clear he hadn't followed a word of the lecture.
+      - They dismissed him as a bit dim, someone who never quite grasped the joke.
+    mappings:
+      - source_role: entity
+        target_role: entity
+      - source_role: color_level
+        target_role: stupidity_level
+  - name: SADNESS_IS_DARK_COLOR
+    source_frame: color
+    target_frame: sadness
+    families:
+      - Emotion
+    examples:
+      - A dark, sullen mood settled over the house after the funeral.
+      - Her face darkened with sadness as the bad news sank in.
+    related:
+      - SAD_IS_DOWN
+    mappings:
+      - source_role: entity
+        target_role: experiencer
+      - source_role: color_level
+        target_role: emotion_level
+  - name: FEAR_IS_PALENESS
+    source_frame: color
+    target_frame: fear
+    families:
+      - Emotion
+    examples:
+      - He went white with fear when the alarm sounded.
+      - Her face turned pale, bleached of color, at the sight of the accident.
+    related:
+      - FEAR_IS_COLD
+    mappings:
+      - source_role: entity
+        target_role: fear_feeler
+      - source_role: color_level
+        target_role: degree_of_fear
+  - name: MUSICAL_TIMBRE_IS_COLOR
+    source_frame: color
+    target_frame: quality
+    examples:
+      - The clarinet gave the melody a warm, muted undertone.
+      - Critics praised the orchestra's jazzy, colorful tone in the final movement.
+    mappings:
+      - source_role: entity
+        target_role: entity
+      - source_role: hue
+        target_role: quality
+  - name: DECEPTION_IS_COLORING
+    source_frame: color
+    target_frame: truth
+    examples:
+      - His account of the meeting was clearly colored by his own agenda.
+      - The report tried to whitewash the company's failures with cheerful language.
+    mappings:
+      - source_role: entity
+        target_role: statement
+      - source_role: color_level
+        target_role: truth_value
+  - name: ILLNESS_IS_FADED_COLOR
+    source_frame: color
+    target_frame: health
+    families:
+      - Physical afflictions
+    examples:
+      - He looked pale and off color after the long illness.
+      - Her once rosy cheeks had grown dull and sickly.
+    related:
+      - SICKNESS_IS_DOWN
+      - HEALTH_IS_UP
+    mappings:
+      - source_role: entity
+        target_role: entity_possessing_health
+      - source_role: color_level
+        target_role: degree_of_health
+  - name: MISFORTUNE_IS_DARKNESS
+    source_frame: color
+    target_frame: experiencing-a-negative-state
+    families:
+      - Harm
+    examples:
+      - A run of bad luck left the family tainted by disaster after disaster.
+      - Darkness fell over the town when the mines closed for good.
+    related:
+      - EVIL_IS_DARK
+      - EXPERIENCING_A_NEGATIVE_STATE_IS_EXPERIENCING_HARM
+    mappings:
+      - source_role: entity
+        target_role: experiencer
+      - source_role: color_level
+        target_role: state_value
+  - name: INEXPERIENCE_IS_GREENNESS
+    source_frame: color
+    target_frame: inexperience
+    examples:
+      - He's still green, fresh out of school with no real experience.
+      - The new recruits were too green to handle the pressure of combat.
+    mappings:
+      - source_role: entity
+        target_role: entity
+      - source_role: hue
+        target_role: inexperience_level
+  - name: JEALOUSY_IS_YELLOWNESS
+    source_frame: color
+    target_frame: jealousy
+    families:
+      - Emotion
+    examples:
+      - Jealousy gave his words a jaundiced, yellow tinge.
+      - A streak of yellow jealousy crept into her voice when she mentioned his new job.
+    mappings:
+      - source_role: entity
+        target_role: jealousy_feeler
+      - source_role: hue
+        target_role: degree_of_jealousy
+  - name: ANGER_IS_REDNESS
+    source_frame: color
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - His face turned red with anger the moment the referee's decision came down.
+      - She saw red when she found out he had lied to her.
+    related:
+      - ANGER_IS_FIRE
+      - ANGER_IS_HEAT
+      - ANGER_IS_PRESSURE_IN_A_CONTAINER
+      - ANGER_IS_INSANITY
+    mappings:
+      - source_role: entity
+        target_role: experiencer
+      - source_role: hue
+        target_role: anger
+  - name: OPTIMISM_IS_ROSINESS
+    source_frame: color
+    target_frame: positivity-scale
+    examples:
+      - He always paints an unrealistically rosy picture of the company's future.
+      - Through her rose-tinted glasses, even the failed project looked like a success.
+    related:
+      - POSITIVITY_IS_VERTICALITY
+    mappings:
+      - source_role: entity
+        target_role: entity_evaluated_for_positivity
+      - source_role: hue
+        target_role: degree_of_positivity
+  - name: HIGH_STATUS_IS_PURPLE
+    source_frame: color
+    target_frame: social-status
+    families:
+      - Wealth
+    examples:
+      - He was born to the purple, heir to a line of kings.
+      - Only those of noble blood were once entitled to wear purple.
+      - She married into the purple and became royalty overnight.
+    related:
+      - MAINTAINING_HIGHER_SOCIAL_STATUS_IS_MAINTAINING_HOLD_ON_PHYSICAL_POSITION
+      - PROSPERITY_IS_GOLD
+    mappings:
+      - source_role: entity
+        target_role: status_holder
+      - source_role: hue
+        target_role: status
+  - name: PROSPERITY_IS_GOLD
+    source_frame: color
+    target_frame: wealth
+    families:
+      - Wealth
+    examples:
+      - He was born with a silver spoon in his mouth.
+      - The company entered a golden era of record profits.
+      - Everything she touched during that golden run seemed to turn a profit.
+    related:
+      - HIGH_STATUS_IS_PURPLE
+      - WEALTH_IS_A_RESOURCE
+    mappings:
+      - source_role: entity
+        target_role: wealthy_entity
+      - source_role: hue
+        target_role: wealth
+      - source_role: color_level
+        target_role: degree_of_wealth
+  - name: LICENTIOUSNESS_IS_BLUE
+    source_frame: color
+    target_frame: licentiousness
+    families:
+      - Morality
+    examples:
+      - The comedian's blue jokes made half the audience blush.
+      - Critics were shocked by how blue the film's content turned out to be.
+      - His humor got a little too blue for the office party.
+    mappings:
+      - source_role: entity
+        target_role: licentious_entity
+      - source_role: hue
+        target_role: degree_of_licentiousness
+  - name: KINDNESS_IS_SWEETNESS
+    source_frame: sweetness
+    target_frame: affection
+    families:
+      - Emotion
+    examples:
+      - She has such a sweet nature that everyone warms to her instantly.
+      - He spoke sweetly to comfort his grieving friend.
+      - Their long friendship only grew sweeter with time.
+    related:
+      - AFFECTION_IS_WARMTH
+      - FLATTERY_IS_SWEETNESS
+    mappings:
+      - source_role: entity
+        target_role: affection_feeler
+      - source_role: sweetness_level
+        target_role: degree_of_affection
+  - name: FLATTERY_IS_SWEETNESS
+    source_frame: sweetness
+    target_frame: flattery
+    examples:
+      - His honeyed words were nothing but empty flattery.
+      - She showered him with sugary compliments before asking for a favor.
+      - The salesman's sweet talk couldn't hide his true intentions.
+    related:
+      - KINDNESS_IS_SWEETNESS
+    mappings:
+      - source_role: entity
+        target_role: flatterer
+      - source_role: sweetness_level
+        target_role: degree_of_flattery
+  - name: RESENTMENT_IS_BITTERNESS
+    source_frame: bitterness
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - Years of betrayal left her bitter toward her former business partner.
+      - He spoke with such acrimony that the whole room fell silent.
+      - Their old rivalry has only grown more sour with time.
+    related:
+      - ANGER_IS_HEAT
+      - ANGER_IS_CHAFING
+    mappings:
+      - source_role: entity
+        target_role: experiencer
+      - source_role: bitterness_level
+        target_role: anger_level
+  - name: STUPIDITY_IS_INSIPIDNESS
+    source_frame: insipidness
+    target_frame: stupidity
+    examples:
+      - His insipid remarks revealed just how little he understood the topic.
+      - Critics dismissed the essay as insipid and shallow.
+      - Nobody took his insipid excuse seriously.
+    mappings:
+      - source_role: entity
+        target_role: entity
+      - source_role: insipidness_level
+        target_role: stupidity_level
+  - name: ANGER_IS_CHAFING
+    source_frame: chafing
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - The constant interruptions chafed at his patience until he finally snapped.
+      - She's been chafing under her boss's constant criticism for months.
+      - He's touchy about his weight, so tread carefully.
+    related:
+      - ANGER_IS_HEAT
+      - RESENTMENT_IS_BITTERNESS
+    mappings:
+      - source_role: entity
+        target_role: experiencer
+      - source_role: chafing_level
+        target_role: anger_level
+  - name: FEAR_IS_A_CREEPING_SENSATION
+    source_frame: touching
+    target_frame: fear
+    families:
+      - Emotion
+    examples:
+      - Fear crept up her spine the moment the lights went out.
+      - A creeping dread crawled across his skin as the footsteps grew louder.
+      - The abandoned house had a creepy, ticklish feeling that made everyone want to leave.
+    related:
+      - FEAR_IS_COLD
+    mappings:
+      - source_role: touched_thing
+        target_role: fear_feeler
+      - source_role: touch_input
+        target_role: degree_of_fear
+  - name: STORYTELLING_IS_WEAVING
+    source_frame: textile
+    target_frame: communication
+    families:
+      - Conduit
+    examples:
+      - The old sailor spun a yarn about mermaids and sunken treasure.
+      - She wove a tale so intricate that no one noticed the ending didn't quite fit.
+      - He button-holed us in the hallway to reel off his life story.
+    related:
+      - THEORIES_ARE_CLOTH
+      - COMMUNICATING_IS_OBJECT_TRANSFER
+    mappings:
+      - source_role: textile_whole
+        target_role: message
+  - name: DECEPTION_IS_EMBROIDERY
+    source_frame: textile
+    target_frame: deception
+    examples:
+      - He embroidered the truth so heavily that the original story was barely visible underneath.
+      - Her alibi turned out to be a tissue of lies stitched together at the last minute.
+      - The report was tinselled with invented details to make the numbers look better.
+    related:
+      - THEORIES_ARE_CLOTH
+      - THEORIES_ARE_COVERS_FOR_THE_FACTS
+    mappings:
+      - source_role: textile_whole
+        target_role: deception
+      - source_role: fibers
+        target_role: embellishment
+  - name: IMAGINATION_IS_SPINNING
+    source_frame: textile
+    target_frame: idea
+    families:
+      - Mind
+    examples:
+      - She spun an entire fantasy world out of nothing but a half-remembered dream.
+      - His fustian speech was pure illusion, spun to sound grander than it was.
+      - The novelist spun the plot from a single thread of an overheard conversation.
+    related:
+      - THEORIES_ARE_CLOTH
+      - IDEAS_ARE_OBJECTS
+    mappings:
+      - source_role: textile_whole
+        target_role: idea_self
+      - source_role: fibers
+        target_role: idea_source
+  - name: EXISTENCE_IS_A_WOVEN_FABRIC
+    source_frame: textile
+    target_frame: existence
+    families:
+      - Ontological
+    examples:
+      - Every choice adds another thread to the fabric of reality.
+      - The very texture of existence seemed to change after the discovery.
+      - War frayed the fibre of everyday life in the city.
+    related:
+      - EXISTENCE_IS_AN_OBJECT
+      - SOCIAL_GROUP_IS_A_FABRIC
+    mappings:
+      - source_role: textile_whole
+        target_role: entity
+  - name: COMPUTING_IS_WEAVING
+    source_frame: textile
+    target_frame: computer
+    examples:
+      - Each thread in the program runs independently, like a single fiber pulled through the weave.
+      - Engineers patched the software the way a tailor mends a torn sleeve.
+      - The network stretched across the globe like an immense woven web.
+    related:
+      - MIND_IS_A_COMPUTER
+      - THEORIES_ARE_CLOTH
+    mappings:
+      - source_role: fibers
+        target_role: computational_process
+      - source_role: textile_whole
+        target_role: computer_whole
+  - name: SOCIAL_CLASS_IS_FABRIC_QUALITY
+    source_frame: textile
+    target_frame: social-class
+    families:
+      - Wealth and social class
+    examples:
+      - He went from rags to riches, trading his russet homespun coat for fine tailoring.
+      - Her tweedy, old-money style made her origins in a chintzy little mill town all the more surprising.
+      - They looked down on his woollen homespun clothes as a mark of his humble station.
+    related:
+      - BEING_IN_A_HIGH_SOCIAL_CLASS_IS_BEING_HIGH_ON_A_SCALE
+      - SOCIAL_GROUP_IS_A_FABRIC
+    mappings:
+      - source_role: fibers
+        target_role: social_class_scale
+  - name: UNIMPORTANCE_IS_THIN_FABRIC
+    source_frame: textile
+    target_frame: importance
+    families:
+      - Scalar
+    examples:
+      - His excuse was as thin as gossamer, unable to withstand any scrutiny.
+      - The committee dismissed the complaint as mere fluff, not worth a second glance.
+      - Her argument was pure fustian, all tinsel and no real substance.
+    related:
+      - IMPORTANCE_IS_SIZE
+      - THEORIES_ARE_CLOTH
+    mappings:
+      - source_role: fibers
+        target_role: degree_of_importance
+  - name: SECRECY_IS_COVERING
+    source_frame: visual-obstruction
+    target_frame: secrecy
+    examples:
+      - A veil of secrecy shrouded the negotiations from the very first meeting.
+      - The organization cloaked its funding sources behind a maze of shell companies.
+      - He kept his true intentions hooded, masked from even his closest friends.
+    related:
+      - DARKNESS_IS_A_COVER
+      - EXTERNAL_APPEARANCE_IS_A_COVER
+      - THEORIES_ARE_COVERS_FOR_THE_FACTS
+    mappings:
+      - source_role: focal_object
+        target_role: secret
+      - source_role: obstructing_object
+        target_role: concealer
+      - source_role: seer
+        target_role: excluded_party
+  - name: POVERTY_IS_RAGGED_CLOTHING
+    source_frame: clothing
+    target_frame: poverty
+    families:
+      - Poverty
+      - Poverty as an individual problem
+    examples:
+      - The family had been left bare, their nakedness a plain sign of how little they had.
+      - He walked the streets down at heel, his shoes worn through to nothing.
+      - As a boy he'd been mocked as a toe rag for his threadbare, ill-fitting clothes.
+    related:
+      - POVERTY_IS_A_CRIME
+      - POVERTY_IS_PHYSICAL_HARM
+      - OCCUPATIONAL_CLASS_IS_ATTIRE
+    mappings:
+      - source_role: wearer
+        target_role: impoverished_entity
+      - source_role: garment
+        target_role: degree_of_poverty
+  - name: OCCUPATIONAL_CLASS_IS_ATTIRE
+    source_frame: clothing
+    target_frame: social-class
+    families:
+      - Wealth and social class
+    examples:
+      - He grew up blue-collar and worked his way into a white-collared office job.
+      - The pin-striped executives rarely mixed with the hard-hat crews on the factory floor.
+      - She swapped her blouse and heels for overalls when she took the shift on the line.
+    related:
+      - BEING_IN_A_HIGH_SOCIAL_CLASS_IS_BEING_HIGH_ON_A_SCALE
+      - POVERTY_IS_RAGGED_CLOTHING
+    mappings:
+      - source_role: wearer
+        target_role: person_in_social_class
+      - source_role: garment
+        target_role: social_class_scale
+  - name: DIFFICULTY_IS_TIGHTNESS
+    source_frame: tight-fit
+    target_frame: difficulties-in-action
+    examples:
+      - The new licensing rules girdled the shop so tightly that expansion became almost impossible.
+      - Years of debt had swaddled the family in obligations they could not wriggle free of.
+      - He felt positively strait-laced by a curriculum that left no room to maneuver.
+    related:
+      - DIFFICULTY_IS_HARDNESS
+      - DIFFICULTY_IS_HEAVINESS
+      - DIFFICULTY_IS_PHYSICAL_STRUGGLE
+      - COMPLIANCE_IS_TIGHTNESS
+    mappings:
+      - source_role: tightness_level
+        target_role: difficulty
+  - name: CENSORSHIP_IS_SUFFOCATION
+    source_frame: stop-airflow
+    target_frame: censorship
+    families:
+      - Governance
+    examples:
+      - The government moved swiftly to smother any public criticism of its policies.
+      - Editors stifled the story before it could reach print.
+      - The regime throttled dissenting voices until nothing was left to hear.
+      - He tried to strangle the rumor before it could spread any further.
+    related:
+      - CENSORSHIP_IS_PHYSICAL_RESTRAINING_OF_MOUTH
+      - GOVERNMENT_REGULATION_IS_SUFFOCATION
+    mappings:
+      - source_role: agent
+        target_role: censor
+      - source_role: victim
+        target_role: censored_entity
+  - name: ACCLAIM_IS_LOUD_SOUND
+    source_frame: loud-sound
+    target_frame: status
+    families:
+      - Social
+    examples:
+      - Critics cried up her debut novel until it became the toast of the season.
+      - His generosity was bruited about the whole town, and his name grew ever more esteemed.
+      - The soldiers' courage was voiced abroad, earning them lasting acclaim.
+    related:
+      - STATUS_IS_VERTICALITY
+      - HIGH_STATUS_IS_UP
+      - WEALTH_IS_A_LOUD_SOUND
+      - DISCLOSURE_IS_A_LOUD_NOISE
+    mappings:
+      - source_role: entity
+        target_role: entity_evaluated_for_status
+      - source_role: loudness_level
+        target_role: degree_of_status
+  - name: WEALTH_IS_A_LOUD_SOUND
+    source_frame: loud-sound
+    target_frame: wealth
+    families:
+      - Wealth
+    examples:
+      - The local economy was booming, with new shops opening on every corner.
+      - Business roared right along through the boom years, money pouring in from every direction.
+      - Investors couldn't stop talking about the whizz-bang new venture and its dazzling sales figures.
+    related:
+      - WEALTH_IS_A_RESOURCE
+      - WEALTH_IS_A_SUBSTANCE
+      - ACCLAIM_IS_LOUD_SOUND
+      - DISCLOSURE_IS_A_LOUD_NOISE
+    mappings:
+      - source_role: entity
+        target_role: wealthy_entity
+      - source_role: loudness_level
+        target_role: degree_of_wealth
+  - name: DISCLOSURE_IS_A_LOUD_NOISE
+    source_frame: loud-sound
+    target_frame: information
+    examples:
+      - An insider squealed to the press, and the whole scandal roared into the open.
+      - Rumors of the merger rumbled through the office long before the official announcement.
+      - The whistle-blower sang out about the safety violations until regulators finally listened.
+    related:
+      - INFORMATION_IS_CONTENTS
+      - ACCLAIM_IS_LOUD_SOUND
+      - WEALTH_IS_A_LOUD_SOUND
+    mappings:
+      - source_role: entity
+        target_role: information
+  - name: COHERENT_IS_HARMONIOUS
+    source_frame: musical-harmony
+    target_frame: coherence
+    examples:
+      - The new policy finally harmonized with the existing rules, and the whole system ran smoothly.
+      - His account of events was full of discordant details that refused to add up.
+      - The committee's proposal clashed so badly with reality that nothing about it made sense.
+    related:
+      - COHERENT_IS_ALIGNED
+      - COHERENT_IS_WHOLE
+      - INTERPERSONAL_HARMONY_IS_MUSICAL_HARMONY
+    mappings:
+      - source_role: harmony_whole
+        target_role: coherent_entity
+      - source_role: harmony_parts
+        target_role: parts
+      - source_role: harmony_part_relations
+        target_role: degree_of_coherence
+  - name: MATURITY_IS_RIPENESS
+    source_frame: plants
+    target_frame: life
+    families:
+      - Life
+    examples:
+      - She lived to a ripe old age, surrounded by three generations of her family.
+      - He died tragically in the very flower of his youth.
+      - The young apprentice was still unripe, talented but not yet seasoned enough for the job.
+    related:
+      - PEOPLE_ARE_PLANTS
+      - LIFE_IS_A_JOURNEY
+    mappings:
+      - source_role: plant_entity
+        target_role: life_liver
+      - source_role: plant_life_cycle
+        target_role: life_stages
+  - name: IGNORANCE_IS_LACK_OF_CULTIVATION
+    source_frame: cultivation
+    target_frame: knowledge
+    families:
+      - Education
+    examples:
+      - His mind lay uncultivated, rich potential that no teacher had ever tended.
+      - They mocked him as savage and unlettered, though he had simply never been taught.
+      - Beneath the polish, she was still uncultured, unaware of even the basics everyone else took for granted.
+    related:
+      - DEVELOPING_AN_ATTRIBUTE_IS_CULTIVATION
+      - KNOWLEDGE_IS_A_RESOURCE
+    mappings:
+      - source_role: cultivator
+        target_role: knower
+      - source_role: cultivatee
+        target_role: knowledge
+  - name: FOOLISHNESS_IS_A_VEGETABLE
+    source_frame: food
+    target_frame: foolishness
+    examples:
+      - Stop being such a turnip and pay attention to the instructions.
+      - He's a real cabbage; nothing ever seems to register with him.
+      - They called him a tattie behind his back, convinced he'd never catch on.
+    related:
+      - INSANITY_IS_NUTTINESS
+    mappings:
+      - source_role: food
+        target_role: foolish_person
+  - name: INSANITY_IS_NUTTINESS
+    source_frame: food
+    target_frame: insanity
+    examples:
+      - After the accident, people said he'd gone completely nutty, muttering to himself all day.
+      - She's absolutely crackers if she thinks that plan will actually work.
+      - The neighbors dismissed him as an old fruit-cake, convinced he'd lost his mind.
+    related:
+      - FOOLISHNESS_IS_A_VEGETABLE
+    mappings:
+      - source_role: food
+        target_role: insane_person
+  - name: BENEFIT_IS_FRUIT
+    source_frame: plants
+    target_frame: benefit
+    examples:
+      - Her hard work finally bore fruit when the promotion came through.
+      - The negotiations proved fruitful, yielding a deal both sides were happy with.
+      - The tax refund felt like an unexpected windfall right before the holidays.
+    related:
+      - BENEFIT_IS_A_RESOURCE
+      - PROVIDING_A_BENEFIT_IS_PROVIDING_A_RESOURCE
+      - PEOPLE_ARE_PLANTS
+    mappings:
+      - source_role: plant_entity
+        target_role: benefit
+  - name: FAMILY_IS_A_TREE
+    source_frame: plant-part
+    target_frame: family
+    examples:
+      - Every family tree has its roots in a single ancestral couple.
+      - She reconnected with a distant branch of the family she had never met.
+      - Genealogists traced the family's branches back ten generations.
+    mappings:
+      - source_role: root
+        target_role: parents
+      - source_role: branch
+        target_role: family_member_relations
+  - name: MIGRATION_IS_TRANSPLANTING
+    source_frame: motion-away-from-a-location
+    target_frame: migration
+    examples:
+      - Many refugees are uprooted from their homeland and transplanted into unfamiliar soil.
+      - The colonizers tried to plant new settlements on foreign land.
+      - It takes years for immigrants to put down roots in a new country.
+    mappings:
+      - source_role: mover
+        target_role: migrant
+      - source_role: source
+        target_role: origin_place
+      - source_role: goal
+        target_role: destination_place
+  - name: BOOK_PAGES_ARE_LEAVES
+    source_frame: plant-part
+    target_frame: writing
+    examples:
+      - He dog-eared a leaf near the middle of the book.
+      - The old manuscript was missing several leaves.
+      - She carefully turned the brittle leaves of the ancient tome.
+    mappings:
+      - source_role: leaf
+        target_role: writing_surface
+  - name: LANGUAGE_STRUCTURE_IS_A_PLANT
+    source_frame: plant-part
+    target_frame: word
+    examples:
+      - The stem of the verb walked is simply walk, with -ed marking the past tense.
+      - Many English words share a Latin root with their Romance-language cousins.
+      - Strip away the ending and you're left with the word's bare root.
+    mappings:
+      - source_role: root
+        target_role: word_meaning
+      - source_role: stem
+        target_role: word_form
+  - name: MONEY_IS_FOOD
+    source_frame: food
+    target_frame: money
+    related:
+      - MONEY_IS_A_SUBSTANCE
+    examples:
+      - He's been raking in the dough since he started that business.
+      - She's not short on lettuce these days.
+      - Winning the lottery meant they would never have to worry about bread again.
+    mappings:
+      - source_role: food
+        target_role: money
+  - name: PUNISHMENT_IS_COOKING
+    source_frame: food-preparation
+    target_frame: punishment
+    examples:
+      - If they catch him, he's going to fry for it.
+      - The suspect was grilled for hours before he finally confessed.
+      - The coach roasted the whole team after their sloppy performance.
+    mappings:
+      - source_role: food
+        target_role: punishee
+      - source_role: food_preparer
+        target_role: punisher
+  - name: PERSUASION_IS_MAGNETISM
+    source_frame: magnetism
+    target_frame: motivation
+    examples:
+      - Her magnetic personality drew people to her cause.
+      - He felt an irresistible pull toward the recruiter's pitch.
+      - The old professor's passion for the subject was a lodestone for curious students.
+    mappings:
+      - source_role: entity
+        target_role: cause_of_motivation
+      - source_role: magnetism_level
+        target_role: degree_of_motivation
+      - source_role: attracted_object
+        target_role: motivation_feeler
+  - name: BEAUTY_IS_A_GEMSTONE
+    source_frame: gemstone
+    target_frame: beauty
+    examples:
+      - Her alabaster skin seemed carved from fine stone.
+      - Everyone agreed she was a rare gem, dazzling in every room she entered.
+      - He described his bride as a jewel beyond price.
+    mappings:
+      - source_role: entity
+        target_role: beautiful_entity
+      - source_role: luster_level
+        target_role: degree_of_beauty
+  - name: ANGER_IS_VITRIOL
+    source_frame: vitriol
+    target_frame: anger
+    families:
+      - Anger
+    related:
+      - ANGER_IS_FIRE
+    examples:
+      - His email was pure vitriol from the first line to the last.
+      - She let loose a sulfurous string of curses the moment he brought up the divorce.
+      - The critic's review was so vitriolic that the director refused to read the rest of it.
+    mappings:
+      - source_role: vitriol
+        target_role: anger
+      - source_role: corroded_object
+        target_role: experiencer
+      - source_role: vitriol_level
+        target_role: anger_level
+  - name: ESTEEM_IS_RADIANCE
+    source_frame: light-source
+    target_frame: esteem
+    related:
+      - HOPE_IS_LIGHT
+    examples:
+      - She was a shining example for the whole department.
+      - His reputation lost its lustre after the scandal broke.
+      - The young violinist quickly became the star of the orchestra.
+    mappings:
+      - source_role: light_source
+        target_role: esteemed_entity
+      - source_role: light_level
+        target_role: degree_of_esteem
+  - name: MENTAL_HEALTH_IS_LIGHT
+    source_frame: transparency
+    target_frame: cognizing
+    families:
+      - Mind
+    related:
+      - RATIONAL_IS_UP
+      - MENTAL_FITNESS_IS_PHYSICAL_FITNESS
+    examples:
+      - In her final years, she had only brief moments of lucidity.
+      - He gave a remarkably clear account of what happened despite the shock.
+      - The old man's mind stayed lucid right up until the end.
+    mappings:
+      - source_role: entity
+        target_role: cognizer
+      - source_role: transparency_level
+        target_role: mental_capacity
+  - name: COWARDICE_IS_A_CHICKEN
+    source_frame: animal
+    target_frame: fear
+    families:
+      - Emotion
+    examples:
+      - Don't be such a chicken about asking for a raise.
+      - He turned tail and ran at the first sign of trouble.
+      - They pinned a white feather on him to brand him a coward.
+    mappings:
+      - source_role: animal
+        target_role: fear_feeler
+    related:
+      - PEOPLE_ARE_ANIMALS
+      - FEAR_IS_COLD
+  - name: FOOLISHNESS_IS_A_BIRD
+    source_frame: animal
+    target_frame: personality
+    examples:
+      - Stop being such a silly goose and think it through.
+      - He's a real birdbrain when it comes to money.
+      - Only a dodo would fall for that trick twice.
+    mappings:
+      - source_role: animal
+        target_role: personality
+    related:
+      - PEOPLE_ARE_ANIMALS
+      - PERSONALITY_IS_MATERIAL
+  - name: PRIDE_IS_PEACOCK_DISPLAY
+    source_frame: animal
+    target_frame: conceit
+    families:
+      - Emotion
+    examples:
+      - He strutted around the office as proud as a peacock after the promotion.
+      - She preened over the compliments all afternoon.
+      - His cockish swagger made it clear how pleased he was with himself.
+    mappings:
+      - source_role: animal
+        target_role: conceited_person
+    related:
+      - PEOPLE_ARE_ANIMALS
+      - CONCEIT_IS_INFLATION
+  - name: SOCIAL_HIERARCHY_IS_A_PECKING_ORDER
+    source_frame: pecking-order
+    target_frame: hierarchy
+    families:
+      - Scalar
+    examples:
+      - The new intern quickly learned her place in the office pecking order.
+      - He's near the top of the pecking order in the sales department.
+      - Everyone jockeys for a higher spot in the corporate pecking order.
+    mappings:
+      - source_role: flock
+        target_role: hierarchical_structure
+      - source_role: bird_rank
+        target_role: item_in_hierarchy
+      - source_role: dominant_bird
+        target_role: superior_points_in_hierarchy
+      - source_role: subordinate_bird
+        target_role: inferior_points_in_hierarchy
+    related:
+      - HIERARCHY_IS_A_VERTICAL_STRUCTURE
+  - name: THIEF_IS_A_BIRD_OF_PREY
+    source_frame: animal
+    target_frame: theft
+    examples:
+      - The corrupt official was a vulture, picking the city's coffers clean.
+      - She's a real magpie, unable to resist pocketing anything shiny that isn't hers.
+      - He circled the failing business like a carrion crow, ready to snatch whatever he could.
+    mappings:
+      - source_role: animal
+        target_role: thief
+    related:
+      - PEOPLE_ARE_ANIMALS
+  - name: COURAGE_IS_A_LION
+    source_frame: animal
+    target_frame: courage
+    families:
+      - Emotion
+    examples:
+      - He fought like a lion to protect his family.
+      - She showed a lion-hearted resolve when she stood up to the board.
+      - He faced the crowd with a lion's courage, never once backing down.
+    mappings:
+      - source_role: animal
+        target_role: courage_feeler
+    related:
+      - PEOPLE_ARE_ANIMALS
+  - name: PERSISTENCE_IS_DOGGEDNESS
+    source_frame: animal
+    target_frame: persistence
+    examples:
+      - He pursued the deal with dogged persistence.
+      - She doggedly kept applying until she got the internship.
+      - Like a mongrel refusing to let go of a bone, he wouldn't drop the argument.
+    mappings:
+      - source_role: animal
+        target_role: persisting_entity
+    related:
+      - PEOPLE_ARE_ANIMALS
+      - PERSISTING_IS_REMAINING_ERECT
+  - name: CUNNING_IS_A_FOX
+    source_frame: animal
+    target_frame: cunning
+    families:
+      - Emotion
+    examples:
+      - The old fox outwitted every trap they set for him.
+      - She's as sly as a fox when it comes to negotiating deals.
+      - He foxed his opponents with a series of clever moves.
+    mappings:
+      - source_role: animal
+        target_role: cunning_feeler
+    related:
+      - PEOPLE_ARE_ANIMALS
+  - name: HUMILITY_IS_SPANIEL_LIKE_BEHAVIOR
+    source_frame: animal
+    target_frame: humility
+    families:
+      - Emotion
+    examples:
+      - He fawned over his boss like an eager spaniel.
+      - She trailed after the committee chair with spaniel-like devotion, agreeing with everything he said.
+      - His critics mocked him as the minister's poodle, always ready to heel.
+    mappings:
+      - source_role: animal
+        target_role: humility_feeler
+    related:
+      - PEOPLE_ARE_ANIMALS
+  - name: EMOTIONAL_INSENSITIVITY_IS_HARDNESS
+    source_frame: hardness
+    target_frame: emotion
+    families:
+      - Emotion
+    examples:
+      - He had grown hard-hearted after years of disappointment.
+      - Her flinty response left no room for sympathy.
+      - His marmorean composure never cracked, no matter how much they pleaded.
+    mappings:
+      - source_role: entity
+        target_role: emotion
+    related:
+      - EMOTIONALLY_INDIFFERENT_IS_COLD
+      - DIFFICULTY_IS_HARDNESS
+  - name: DETERMINATION_IS_HARDNESS
+    source_frame: hardness
+    target_frame: decision-making
+    examples:
+      - She remained adamant that the deal would not go through without changes.
+      - His resolve was cast-iron; nothing could make him reconsider.
+      - He stood stiff as a poker, refusing to change his position.
+    mappings:
+      - source_role: entity
+        target_role: decision_maker
+    related:
+      - CERTAIN_IS_FIRM
+      - DIFFICULTY_IS_HARDNESS
+  - name: AFFECTION_IS_SOFTNESS
+    source_frame: softness
+    target_frame: affection
+    families:
+      - Emotion
+      - Primary
+    examples:
+      - She always had a soft spot for her youngest nephew.
+      - Everyone said he was soft-hearted underneath his gruff exterior.
+      - His voice grew softer as he spoke about his late wife.
+    related:
+      - AFFECTION_IS_WARMTH
+    mappings:
+      - source_role: entity
+        target_role: affection_feeler
+      - source_role: softness_level
+        target_role: degree_of_affection
+  - name: LENIENCY_IS_SOFTNESS
+    source_frame: softness
+    target_frame: control
+    families:
+      - Governance
+    examples:
+      - Critics say the new policy is soft on crime.
+      - The committee decided to go easy on first-time offenders.
+      - Her manager softened the disciplinary rules for anyone running a few minutes late.
+    mappings:
+      - source_role: entity
+        target_role: controlling_entity
+  - name: BEAUTY_IS_A_GODDESS
+    source_frame: deity
+    target_frame: beauty
+    examples:
+      - Heads turned as she walked into the room, a Venus among mortals.
+      - With her nymph-like grace, she looked as though she had stepped out of a Renaissance painting.
+      - The poet described his beloved as a veritable goddess, her beauty too perfect for this world.
+    related:
+      - CHANGEABLENESS_IS_MERCURY
+    mappings:
+      - source_role: deity
+        target_role: beautiful_entity
+  - name: CHANGEABLENESS_IS_MERCURY
+    source_frame: deity
+    target_frame: decision-making
+    examples:
+      - His mercurial temperament made it impossible to predict which side of the debate he would take next.
+      - She was mercurial in negotiations, reversing her position twice before lunch.
+      - Colleagues called him a Proteus, forever reshaping his opinions to fit the moment.
+    related:
+      - BEAUTY_IS_A_GODDESS
+    mappings:
+      - source_role: deity
+        target_role: decision_maker
+  - name: DEGREE_TO_WHICH_AN_ATTRIBUTE_DEFINES_AN_ENTITY_IS_DEPTH
+    source_frame: depth
+    target_frame: degree
+    families:
+      - Grady primary
+    examples:
+      - This scanning system is deeply flawed.
+      - My grandmother is deeply religious.
+      - His commitment to the cause runs deep.
+    related:
+      - ESSENTIAL_IS_INTERNAL
+      - DEGREE_IS_DISTANCE_ALONG_A_PATH
+    mappings:
+      - source_role: depth
+        target_role: degree
+  - name: THE_NATURE_OF_AN_ENTITY_IS_ITS_SHAPE
+    source_frame: object
+    target_frame: attribute
+    families:
+      - Grady primary
+    examples:
+      - Democracy takes very different forms in different countries.
+      - Irish is of a very different cut from other European languages.
+      - Their friendship took an unexpected shape after college.
+    related:
+      - CONDITION_IS_SHAPE
+      - ATTRIBUTES_ARE_ENTITIES
+    mappings:
+      - source_role: object_entity
+        target_role: entity
+      - source_role: shape
+        target_role: attribute
+  - name: CONTEXTUAL_ROLES_ARE_LOCATIONS
+    source_frame: being-at-a-location
+    target_frame: role
+    families:
+      - Grady primary
+    examples:
+      - He's filling in for me at tonight's concert.
+      - We're drinking lemonade in place of beer tonight.
+    related:
+      - EXPERIENCING_A_STATE_IS_BEING_AT_A_LOCATION
+      - GAINING_A_ROLE_IS_ACQUIRING_A_POSSESSION
+    mappings:
+      - source_role: current_location
+        target_role: role
+      - source_role: experiencer
+        target_role: role_holder
+  - name: QUANTITY_IS_A_POINT_ON_A_SCALE
+    source_frame: scale
+    target_frame: quantity
+    families:
+      - Grady primary
+      - Scalar
+    examples:
+      - Inflation figures aren't where they were in the 80s.
+      - Her test score is right around the class average.
+    related:
+      - DEGREE_IS_DISTANCE_ALONG_A_PATH
+      - ECONOMIC_STATUS_IS_A_POINT_ON_A_SCALE
+      - BEING_IN_A_STATE_IS_BEING_AT_A_POINT_ON_A_LINEAR_SCALE
+    mappings:
+      - source_role: position_on_scale
+        target_role: measure_of_quantity
+      - source_role: parameter
+        target_role: quantity_scale
+  - name: AN_EVENT_IS_THE_MOTION_OF_AN_OBJECT
+    source_frame: motion
+    target_frame: event
+    families:
+      - Grady primary
+    examples:
+      - Things are going smoothly at the hospital.
+      - The concert went until 4 o'clock.
+      - The meeting moved along quickly once everyone arrived.
+    related:
+      - EVENTS_ARE_OBJECTS
+    mappings:
+      - source_role: mover
+        target_role: event
+      - source_role: motion_x_schema
+        target_role: event_x_schema
+  - name: CIRCUMSTANCES_ARE_FLUID
+    source_frame: fluid
+    target_frame: circumstances
+    families:
+      - Grady primary
+    examples:
+      - I am immersed in paperwork these days.
+      - He's really plunged whole-heartedly into his research.
+    related:
+      - CIRCUMSTANCES_ARE_SURROUNDINGS
+      - CIRCUMSTANCES_ARE_WEATHER
+    mappings:
+      - source_role: fluid
+        target_role: circumstances
+      - source_role: experiencer
+        target_role: experiencer
+  - name: EVENTS_ARE_ACTIONS
+    source_frame: action
+    target_frame: event
+    families:
+      - Grady primary
+    examples:
+      - It decided to rain after all.
+      - This lid refuses to come off.
+    related:
+      - EVENTS_ARE_OBJECTS
+    mappings:
+      - source_role: action_self
+        target_role: event
+      - source_role: action_x_schema
+        target_role: event_x_schema
+  - name: ACTIVITY_IS_WAKEFULNESS
+    source_frame: wakefulness
+    target_frame: activity
+    families:
+      - Grady primary
+    examples:
+      - My computer is asleep.
+      - What a sleepy town!
+    related:
+      - ACTIVE_IS_ALIVE
+      - INTENSITY_OF_ACTIVITY_IS_HEAT
+      - ACTIVATING_IS_AWAKENING
+    mappings:
+      - source_role: entity
+        target_role: activity_self
+      - source_role: wakefulness_level
+        target_role: activity_intensity
+  - name: CAUSES_ARE_SOURCES
+    source_frame: motion-away-from-a-location
+    target_frame: causation
+    families:
+      - Grady primary
+    examples:
+      - Several important results came out of the conference.
+      - A lot of good ideas have come out of this partnership.
+    related:
+      - EFFECTS_ARE_OBJECTS_WHICH_EMERGE_FROM_CAUSES
+      - NECESSARY_PREREQUISITE_FOR_CHANGE_IS_SOURCE_OF_MOVING_ENTITY
+      - CAUSES_ARE_FORCES
+    mappings:
+      - source_role: source
+        target_role: cause
+      - source_role: mover
+        target_role: effect
+  - name: EFFECTS_ARE_OBJECTS_WHICH_EMERGE_FROM_CAUSES
+    source_frame: containing
+    target_frame: causation
+    families:
+      - Grady primary
+    examples:
+      - Nothing good came out of the meeting.
+      - What results emerged from the project?
+    related:
+      - CAUSES_ARE_SOURCES
+      - ESSENTIAL_IS_INTERNAL
+    mappings:
+      - source_role: container
+        target_role: cause
+      - source_role: contents
+        target_role: effect
+  - name: IMPERFECTION_IS_DIRT
+    source_frame: impurity
+    target_frame: badness
+    families:
+      - Grady primary
+    examples:
+      - I need to clean up these manuscripts before submitting them.
+      - The signal we're receiving is very dirty.
+    related:
+      - BAD_IS_STINKY
+      - NEGATIVELY_EVALUATED_GOVERNMENT_ACTIVITY_IS_A_DIRTY_OBJECT
+    mappings:
+      - source_role: impure_entity
+        target_role: bad_entity
+  - name: MORALITY_IS_HEALTH
+    source_frame: health
+    target_frame: morality
+    families:
+      - Grady primary
+    examples:
+      - Only a sick and degenerate man would do a thing like that.
+      - That's an unhealthy thought!
+    related:
+      - IMMORALITY_IS_DISEASE
+      - MORALITY_IS_CLEANLINESS
+      - MORALITY_IS_STRAIGHTNESS
+    mappings:
+      - source_role: entity_possessing_health
+        target_role: moral_entity
+      - source_role: state_of_health
+        target_role: moral_condition
+  - name: SYMPATHY_IS_SOFTNESS
+    source_frame: hardness
+    target_frame: sympathy
+    families:
+      - Grady primary
+    examples:
+      - He's a hard taskmaster.
+      - She's a softy.
+    related:
+      - DIFFICULTY_IS_HARDNESS
+      - SYMPATHY_IS_WARMTH
+    mappings:
+      - source_role: entity
+        target_role: sympathy_feeler
+  - name: AFFECT_IS_MOISTURE
+    source_frame: moisture
+    target_frame: emotional-intensity
+    families:
+      - Grady primary
+    examples:
+      - He is a very dry, unemotional speaker.
+      - This movie is dripping with soggy sentimentality.
+    related:
+      - EMOTIONAL_INTENSITY_IS_TEMPERATURE
+    mappings:
+      - source_role: moisture_level
+        target_role: emotional_intensity_scale
+  - name: CORRECT_IS_IN_THE_RIGHT_LOCATION
+    source_frame: being-at-a-location
+    target_frame: correctness
+    families:
+      - Grady primary
+    examples:
+      - There's something off about this analysis.
+      - You hit the nail on the head.
+    related:
+      - EXPERIENCING_A_STATE_IS_BEING_AT_A_LOCATION
+    mappings:
+      - source_role: experiencer
+        target_role: correct_entity
+      - source_role: current_location
+        target_role: correctness
+  - name: COMPULSION_TO_ACT_IS_AN_ITCH
+    source_frame: itch
+    target_frame: compulsion
+    families:
+      - Grady primary
+    examples:
+      - I'm itching to get to the concert.
+      - He's itching for a fight.
+      - She had an itch to travel that she couldn't shake.
+    related:
+      - COMPULSION_IS_A_COMPELLING_FORCE
+      - ACTING_COMPULSIVELY_IS_INGESTING_A_SUBSTANCE_COMPULSIVELY
+    mappings:
+      - source_role: experiencer
+        target_role: compelled_person
+      - source_role: itch_sensation
+        target_role: compulsion
+      - source_role: itch_x_schema
+        target_role: compulsion_x_schema
+      - source_role: object_itched_for
+        target_role: compulsive_behavior
+  - name: ACQUIESCING_TO_A_SITUATION_IS_TAKING_AN_OBJECT
+    source_frame: gain-possession
+    target_frame: acceptance
+    families:
+      - Grady primary
+    examples:
+      - These new work conditions are hard to take.
+      - She took the news of the merger without complaint.
+      - He had to take the demotion, whether he liked it or not.
+    related:
+      - ACCEPTING_IS_SWALLOWING
+    mappings:
+      - source_role: recipient
+        target_role: acceptor
+      - source_role: possessable_object
+        target_role: accepted_thing
+  - name: PERCEPTIBLE_IS_OUT
+    source_frame: contents
+    target_frame: perception
+    families:
+      - Grady primary
+    examples:
+      - Heat brings out the flavor in the soup.
+      - That sweater brings out the blue in your eyes.
+      - A skilled editor can bring out the humor already present in a script.
+    related:
+      - ACCESSIBLE_TO_AWARENESS_IS_OUT
+    mappings:
+      - source_role: contents
+        target_role: perceived_thing
+  - name: ACCESSIBLE_TO_AWARENESS_IS_OUT
+    source_frame: contents
+    target_frame: becoming-aware
+    families:
+      - Grady primary
+    examples:
+      - The facts in the case will come out sooner or later.
+      - Some interesting details have emerged from the documents.
+      - The truth about the scandal finally came out after years of denial.
+    related:
+      - PERCEPTIBLE_IS_OUT
+      - BECOMING_AWARE_IS_NOTICING
+    mappings:
+      - source_role: contents
+        target_role: content
+  - name: CONSIDERING_IS_LOOKING_AT
+    source_frame: seeing
+    target_frame: thinking-about
+    families:
+      - Mind
+      - Primary
+    examples:
+      - You should really take a good look at your own motives sometime.
+      - We'll be taking a good long look at him as a suspect in this case.
+    related:
+      - KNOWING_IS_SEEING
+      - THINKING_IS_PERCEIVING
+    mappings:
+      - source_role: seer
+        target_role: thinker
+      - source_role: seen_object
+        target_role: thinking_content
+      - source_role: vision
+        target_role: thinking_process
+      - source_role: seen_object_perceived_elements
+        target_role: desired_knowledge
+  - name: ACCESSIBLE_TO_PERCEPTION_IS_UP
+    source_frame: verticality
+    target_frame: becoming-aware
+    families:
+      - Mind
+      - Orientational
+      - Primary
+    examples:
+      - Why did you have to bring that up again?
+      - A couple of interesting facts turned up during the discussion.
+    related:
+      - BECOMING_AWARE_IS_NOTICING
+      - CONSCIOUS_IS_UP
+      - CONSCIOUSNESS_IS_VERTICALITY
+    mappings:
+      - source_role: vertical_entity
+        target_role: content
+  - name: BEING_AWARE_IS_BEING_AWAKE
+    source_frame: awakening
+    target_frame: consciousness
+    families:
+      - Mind
+      - Primary
+    examples:
+      - I wish the board would wake up to what's going on here.
+    related:
+      - CONSCIOUS_IS_UP
+      - CONSCIOUSNESS_IS_VERTICALITY
+      - ACTIVATING_IS_AWAKENING
+    mappings:
+      - source_role: sleeping_entity
+        target_role: conscious_entity
+      - source_role: awake_state
+        target_role: state_of_consciousness
+  - name: BEING_CONSCIOUS_IS_BEING_HERE
+    source_frame: being-at-a-location
+    target_frame: consciousness
+    families:
+      - Grady primary
+      - Mind
+    examples:
+      - I was out for a minute, but quickly came back to consciousness.
+      - I thought he was coming to, but we've lost him again.
+      - The boxer went out cold and didn't come back until the trainers revived him.
+    related:
+      - CONSCIOUSNESS_IS_VERTICALITY
+      - CONSCIOUS_IS_UP
+      - UNCONSCIOUS_IS_DOWN
+      - NOW_IS_HERE
+      - EXISTING_IS_BEING_PHYSICALLY_AT_THIS_LOCATION
+      - BEING_ALIVE_IS_BEING_PHYSICALLY_AT_THIS_LOCATION
+    mappings:
+      - source_role: experiencer
+        target_role: conscious_entity
+      - source_role: current_location
+        target_role: state_of_consciousness
+  - name: MENTAL_STATES_ARE_PLACES
+    source_frame: being-at-a-location
+    target_frame: thinking-about
+    families:
+      - Mind
+    examples:
+      - My mind is wandering.
+      - He's off in his own world again.
+      - She was somewhere else during the whole meeting.
+    related:
+      - RECEIVING_SERIOUS_THOUGHT_IS_BEING_ON_THE_MIND
+      - EXPERIENCING_A_STATE_IS_BEING_AT_A_LOCATION
+    mappings:
+      - source_role: experiencer
+        target_role: thinker
+      - source_role: current_location
+        target_role: thinking_content
+      - source_role: x_schema
+        target_role: thinking_process
+  - name: BELIEFS_ARE_PHYSICAL_POSITIONS
+    source_frame: physical-position
+    target_frame: belief
+    examples:
+      - That's my position and I'm sticking to it.
+      - I have a very different stance on that matter from my partner's.
+      - Her orientation on the issue is quite different from mine.
+    related:
+      - BELIEFS_ARE_POSSESSIONS
+      - BELIEFS_ARE_GUIDES
+      - BELIEFS_ARE_FASHIONS
+    mappings:
+      - source_role: position_holder
+        target_role: believer
+      - source_role: position
+        target_role: belief
+  - name: FIRE_IS_A_HUNGRY_ANIMAL
+    source_frame: eating
+    target_frame: fire
+    examples:
+      - The fire devoured everything in its path.
+      - The fire was already licking at the first row of houses.
+    related:
+      - ANGER_IS_FIRE
+    mappings:
+      - source_role: eater
+        target_role: fire
+      - source_role: eaten_object
+        target_role: burning_object
+  - name: ANGER_IS_STORM
+    source_frame: storm
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - It was a stormy meeting.
+      - He stormed out of the room.
+    related:
+      - ANGER_IS_FIRE
+      - ANGER_IS_HEAT
+      - STORM_IS_ANGER
+    mappings:
+      - source_role: storm
+        target_role: anger
+      - source_role: storm_intensity
+        target_role: anger_level
+  - name: STORM_IS_ANGER
+    source_frame: anger
+    target_frame: storm
+    examples:
+      - The waves grew angry as the storm rolled in.
+      - The storm was raging for hours.
+    related:
+      - ANGER_IS_STORM
+    mappings:
+      - source_role: anger
+        target_role: storm
+      - source_role: anger_level
+        target_role: storm_intensity
+  - name: LIFE_IS_A_SPORTING_GAME
+    source_frame: competitive-sport
+    target_frame: life
+    families:
+      - Life
+    examples:
+      - We're buying a front row box seat, and we're not even getting to see a bad show from the bleachers.
+    related:
+      - LIFE_IS_A_JOURNEY
+    mappings:
+      - source_role: competitor_1
+        target_role: life_liver
+      - source_role: prize
+        target_role: life_goals
+  - name: LOVE_IS_AN_ECONOMIC_EXCHANGE
+    source_frame: investment
+    target_frame: romantic-relationship
+    families:
+      - Emotion
+    examples:
+      - She invested a lot in that relationship.
+      - I'm putting more into this than you are.
+      - Their marriage finally paid off after years of hard work together.
+    related:
+      - LOVE_IS_A_UNITY_OF_TWO_COMPLEMENTARY_PARTS
+    mappings:
+      - source_role: investor
+        target_role: romantic_relationship_participants
+      - source_role: investment_market
+        target_role: relationship
+  - name: LOVE_IS_A_NATURAL_FORCE
+    source_frame: forced-motion
+    target_frame: romantic-relationship
+    families:
+      - Emotion
+    examples:
+      - He was swept off his feet.
+      - She was completely carried away by her feelings for him.
+      - Their whirlwind romance swept them both along before they knew what was happening.
+    related:
+      - LOVE_IS_A_PHYSICAL_FORCE
+    mappings:
+      - source_role: mover
+        target_role: romantic_relationship_participants
+      - source_role: motion_x_schema
+        target_role: course_of_romantic_relationship
+  - name: LOVE_IS_AN_ILLNESS
+    source_frame: physical-affliction
+    target_frame: romantic-relationship
+    families:
+      - Emotion
+    examples:
+      - She has it bad.
+      - He's been lovesick ever since she left town.
+      - I think I've caught a bad case of love.
+    related:
+      - LOVE_IS_MADNESS
+      - LOVE_IS_INTOXICATION
+    mappings:
+      - source_role: patient
+        target_role: romantic_relationship_participants
+      - source_role: affliction
+        target_role: relationship
+  - name: LOVE_IS_INTOXICATION
+    source_frame: intoxication
+    target_frame: romantic-relationship
+    families:
+      - Emotion
+    examples:
+      - He was high on love.
+      - She felt drunk on his attention.
+      - Their new romance left her positively giddy, like she'd had one drink too many.
+    related:
+      - LOVE_IS_MADNESS
+      - LOVE_IS_AN_ILLNESS
+    mappings:
+      - source_role: intoxicated_person
+        target_role: romantic_relationship_participants
+  - name: LOVE_IS_A_GAME
+    source_frame: game
+    target_frame: romantic-relationship
+    families:
+      - Emotion
+    examples:
+      - She's playing hard to get.
+      - He's always playing games with her feelings.
+      - They both knew the rules of the dating game.
+    related:
+      - LOVE_IS_WAR
+    mappings:
+      - source_role: game_player_1
+        target_role: romantic_relationship_participants
+      - source_role: game_player_2
+        target_role: romantic_relationship_participants
+      - source_role: playing_x_schema
+        target_role: course_of_romantic_relationship
+  - name: LIFE_IS_A_MIRROR
+    source_frame: mirror
+    target_frame: life
+    families:
+      - Life
+    examples:
+      - Life is a mirror; if you smile, it smiles back at you, and if you frown, it frowns back.
+      - Treat life kindly, and more often than not, it treats you kindly in return.
+      - The way you approach the world tends to be the way the world comes back at you.
+    mappings:
+      - source_role: mirror
+        target_role: course_of_life
+      - source_role: experiencer
+        target_role: life_liver
+  - name: AFFECTION_IS_HUNGER
+    source_frame: hunger
+    target_frame: affection
+    families:
+      - Emotion
+    examples:
+      - I'm starved for affection.
+      - She's hungry for a little more affection than he gives her.
+      - He's been craving affection ever since the divorce.
+    related:
+      - AFFECTION_IS_WARMTH
+      - DESIRE_IS_HUNGER
+      - GREED_IS_HUNGER
+    mappings:
+      - source_role: experiencer
+        target_role: affection_feeler
+      - source_role: hunger_sensation
+        target_role: degree_of_affection
+  - name: A_LIFETIME_IS_A_DAY
+    source_frame: day
+    target_frame: life-cycle
+    families:
+      - Life
+    examples:
+      - Suns can set and rise again, but once our brief light goes out, there's only an endless night to sleep through.
+      - She was still in the morning of her life when tragedy struck.
+      - He's now in the evening of his years, content and at peace.
+    related:
+      - LIFE_IS_VERTICALITY
+    mappings:
+      - source_role: entity
+        target_role: life_liver
+      - source_role: time_of_day
+        target_role: developmental_stages
+  - name: DEATH_IS_NIGHT
+    source_frame: darkness
+    target_frame: death
+    families:
+      - Primary
+    examples:
+      - Catullus imagined death as one unending night that must be slept through, with no dawn ever coming after.
+      - Black night, death's second self, seals up all in rest.
+    related:
+      - LIFE_IS_LIGHT
+      - EVIL_IS_DARK
+    mappings:
+      - source_role: entity
+        target_role: dead_state
+  - name: LIGHT_IS_A_SUBSTANCE
+    source_frame: substance
+    target_frame: lightness
+    families:
+      - Primary
+    examples:
+      - By and by, black night doth take that twilight away.
+      - A flood of morning light poured through the open curtains.
+    related:
+      - TIME_IS_A_SUBSTANCE
+      - LIFE_IS_LIGHT
+      - GOODNESS_IS_LIGHT
+    mappings:
+      - source_role: substance
+        target_role: entity
+      - source_role: amount_of_substance
+        target_role: light_level
+  - name: LIFE_IS_LIGHT
+    source_frame: lightness
+    target_frame: life
+    families:
+      - Life
+    examples:
+      - In me thou seest the twilight of such day, as after sunset fadeth in the west.
+      - She was in the twilight of her years, though her mind still burned bright.
+    related:
+      - DEATH_IS_NIGHT
+      - LIGHT_IS_A_SUBSTANCE
+      - GOODNESS_IS_LIGHT
+    mappings:
+      - source_role: entity
+        target_role: life_liver
+      - source_role: light_level
+        target_role: life_stages
+  - name: TIME_IS_A_THIEF
+    source_frame: theft
+    target_frame: time
+    families:
+      - Time
+    examples:
+      - How soon hath Time, the subtle thief of youth, stolen on his wing my three and twentieth years!
+    related:
+      - TIME_IS_A_PURSUER
+      - TIME_IS_A_CHANGER
+      - TIME_IS_A_REAPER
+      - TIME_IS_A_DEVOURER
+      - TIME_IS_A_DESTROYER
+      - TIME_IS_AN_EVALUATOR
+    mappings:
+      - source_role: thief
+        target_role: time
+      - source_role: stolen_item
+        target_role: duration_of_time
+  - name: TIME_IS_A_REAPER
+    source_frame: reaper
+    target_frame: time
+    families:
+      - Time
+    examples:
+      - Love's not Time's fool, though rosy lips and cheeks within his bending sickle's compass come.
+    related:
+      - TIME_IS_A_THIEF
+      - TIME_IS_A_PURSUER
+      - TIME_IS_A_DEVOURER
+      - TIME_IS_A_DESTROYER
+      - TIME_IS_AN_EVALUATOR
+    mappings:
+      - source_role: reaper
+        target_role: time
+  - name: TIME_IS_A_DEVOURER
+    source_frame: devourer
+    target_frame: time
+    families:
+      - Time
+    examples:
+      - Time, the devourer of everything, leaves nothing untouched.
+    related:
+      - TIME_IS_A_THIEF
+      - TIME_IS_A_REAPER
+      - TIME_IS_A_DESTROYER
+      - TIME_IS_AN_EVALUATOR
+      - TIME_IS_A_PURSUER
+    mappings:
+      - source_role: devourer
+        target_role: time
+  - name: TIME_IS_A_DESTROYER
+    source_frame: destroying
+    target_frame: time
+    families:
+      - Time
+    examples:
+      - Does it really exist, Time, the destroyer?
+    related:
+      - TIME_IS_A_THIEF
+      - TIME_IS_A_REAPER
+      - TIME_IS_A_DEVOURER
+      - TIME_IS_AN_EVALUATOR
+      - TIME_IS_A_PURSUER
+    mappings:
+      - source_role: damaged_entity
+        target_role: time
+  - name: TIME_IS_AN_EVALUATOR
+    source_frame: evaluation
+    target_frame: time
+    families:
+      - Time
+    examples:
+      - Time is the great corrector of our misjudgments.
+    related:
+      - TIME_IS_A_THIEF
+      - TIME_IS_A_REAPER
+      - TIME_IS_A_DEVOURER
+      - TIME_IS_A_DESTROYER
+      - TIME_IS_A_PURSUER
+    mappings:
+      - source_role: evaluator
+        target_role: time
+  - name: SLEEP_IS_DISABILITY
+    source_frame: disability
+    target_frame: awakening
+    examples:
+      - The houses are blind as moles.
+      - Fast asleep, she was as deaf to the world as if she'd lost her hearing.
+    mappings:
+      - source_role: disability
+        target_role: sleep_state
+      - source_role: patient
+        target_role: sleeping_entity
+  - name: DEATH_IS_SLEEP
+    source_frame: awakening
+    target_frame: death
+    examples:
+      - The old dog was gently put to sleep at the vet's office.
+      - She passed away peacefully in her sleep last night.
+      - He will sleep forever beneath the old oak tree.
+    related:
+      - DYING_IS_DEPARTING_FROM_THIS_LOCATION
+    mappings:
+      - source_role: sleeping_entity
+        target_role: death_protagonist
+      - source_role: sleep_state
+        target_role: dead_state
+  - name: FALLING_IN_LOVE_IS_PHYSICAL_FALLING
+    source_frame: downward-motion
+    target_frame: romantic-relationship
+    families:
+      - Emotion
+    examples:
+      - In Disney's Pocahontas, John Smith and Pocahontas fall in love as they cascade down a waterfall together.
+      - He fell head over heels for her the moment they met.
+      - She fell hard for him before she even knew his last name.
+    related:
+      - DOING_EVIL_IS_FALLING
+    mappings:
+      - source_role: mover
+        target_role: romantic_relationship_participants
+      - source_role: goal
+        target_role: relationship
+  - name: LUST_IS_FIRE
+    source_frame: fire
+    target_frame: lust
+    families:
+      - Emotion
+    examples:
+      - Melanie Griffith seems to smoulder with sexuality.
+      - In Disney's The Hunchback of Notre Dame, Frollo's forbidden lust for Esmeralda is visualized as flames engulfing his chamber.
+      - Their attraction ignited the moment their eyes met across the room.
+    related:
+      - LUST_IS_HEAT
+      - LUST_IS_MADNESS
+    mappings:
+      - source_role: burning_object
+        target_role: lust_feeler
+      - source_role: fire_intensity
+        target_role: degree_of_lust
+      - source_role: cause_of_fire
+        target_role: target_of_lust
+  - name: LOVE_IS_A_BOND
+    source_frame: physical-connection
+    target_frame: romantic-relationship
+    families:
+      - Emotion
+      - Primary
+    examples:
+      - There's a strong bond between them.
+      - Their bond has only grown stronger through hardship.
+      - Nothing could break the bond they shared.
+    related:
+      - LOVE_IS_A_UNITY_OF_TWO_COMPLEMENTARY_PARTS
+      - ASSOCIATION_IS_CONNECTION
+    mappings:
+      - source_role: connected_items
+        target_role: romantic_relationship_participants
+      - source_role: connector
+        target_role: relationship
+  - name: GOD_IS_UP
+    source_frame: verticality
+    target_frame: deity
+    families:
+      - Orientational
+    examples:
+      - Cathedral spires rise skyward, pointing worshippers' eyes toward God.
+      - They lifted their eyes to heaven and prayed to God above.
+      - Our Father, who art in heaven, hallowed be thy name.
+    related:
+      - GOODNESS_IS_VERTICALITY
+    mappings:
+      - source_role: vertical_entity
+        target_role: deity
+  - name: COMMODITIES_ARE_PEOPLE
+    source_frame: person
+    target_frame: commodity
+    examples:
+      - The detergent commercial calls itself your family's best friend.
+      - In the ad, the sports car is styled as a seductive lover waiting to be taken for a ride.
+      - The insurance mascot speaks directly to viewers as a trusted companion who has their back.
+    related:
+      - BUSINESSES_ARE_PEOPLE
+      - CORPORATIONS_ARE_PEOPLE
+    mappings:
+      - source_role: person
+        target_role: commodity
+  - name: LIFE_IS_FIRE
+    source_frame: fire
+    target_frame: life
+    examples:
+      - A single shot was enough to snuff out his life.
+      - She lived every day like a flame burning as bright as it could.
+      - His life was extinguished far too soon.
+    related:
+      - EXISTENCE_IS_LIFE
+      - DEATH_IS_SLEEP
+    mappings:
+      - source_role: burning_object
+        target_role: life_liver
+      - source_role: fire
+        target_role: course_of_life
+  - name: POLITICS_IS_BUSINESS
+    source_frame: business
+    target_frame: politics
+    families:
+      - Governance
+    examples:
+      - The senator spent years building up political capital before cashing it in on this bill.
+      - Party leaders cut a backroom deal to secure the votes they needed.
+      - Lobbyists treat every session of Congress as a chance to close a deal.
+    related:
+      - NATIONAL_POLITICS_IS_A_BATTLEFIELD
+      - GOVERNMENT_IS_A_BUSINESS
+    mappings:
+      - source_role: business
+        target_role: arena_of_politics
+      - source_role: employer
+        target_role: political_actors
+      - source_role: employee
+        target_role: political_actors
+  - name: RESOURCES_ARE_FOOD
+    source_frame: food
+    target_frame: resource
+    families:
+      - Wealth
+    examples:
+      - Natural resources are the bread and butter of the country's economy.
+      - The nation stockpiled grain and gold alike, hoarding resources against the lean years ahead.
+      - After years of plenty, the company now faces a famine of raw materials.
+    related:
+      - IDEAS_ARE_FOOD
+      - ACQUIRING_RESOURCE_IS_CONSUMING_FOOD
+    mappings:
+      - source_role: food
+        target_role: resource
+      - source_role: food_consumer
+        target_role: resource_user
+  - name: EVIL_IS_A_FORCE
+    source_frame: force
+    target_frame: evil
+    families:
+      - Morality
+      - Strict father morality
+    examples:
+      - The forces of evil seemed to gain strength with each passing year.
+      - He felt evil pulling at him, a force he could barely resist.
+      - Only the strongest will can stand firm against the sheer force of evil.
+    related:
+      - EVIL_IS_DARK
+      - DOING_EVIL_IS_FALLING
+      - MORALITY_IS_STRENGTH
+    mappings:
+      - source_role: force
+        target_role: evil_entity
+  - name: QUALITY_IS_QUANTITY
+    source_frame: quantity
+    target_frame: quality
+    examples:
+      - A student's grasp of the material gets boiled down to a single letter grade from A to F.
+      - Sports commentators sum up a player's skill with numbers like batting average and yards per carry.
+    related:
+      - QUALITIES_ARE_SUBSTANCES
+    mappings:
+      - source_role: entity
+        target_role: entity
+      - source_role: entity_amount
+        target_role: degree_of_quality
+      - source_role: measure_of_quantity
+        target_role: quality
+  - name: LIFE_IS_A_STORY
+    source_frame: story
+    target_frame: life
+    examples:
+      - Her biography reads like a story that builds from a hard childhood to a triumphant final chapter.
+      - He wanted the ending of his life to feel like the climax of a well-told tale.
+    related:
+      - LIFE_IS_A_JOURNEY
+    mappings:
+      - source_role: protagonist
+        target_role: life_liver
+      - source_role: plot
+        target_role: course_of_life
+      - source_role: episodes
+        target_role: life_stages
+  - name: SPORT_IS_WAR
+    source_frame: war
+    target_frame: recreational-competition
+    examples:
+      - My team did not use the right strategy.
+      - The two battling teams fought until the final whistle.
+      - The team retreated to their training camp to regroup after the tournament loss.
+    related:
+      - ARGUMENT_IS_WAR
+      - SPORTS_ARE_PHYSICAL_COMBAT
+      - COMPETITION_IS_WAR
+    mappings:
+      - source_role: side_1
+        target_role: competitor_1
+      - source_role: side_2
+        target_role: competitor_2
+      - source_role: victory
+        target_role: outcome
+  - name: LIFE_IS_A_PLAY
+    source_frame: performance
+    target_frame: life
+    families:
+      - Life
+    examples:
+      - All the world's a stage, and all the men and women merely players.
+      - They have their exits and their entrances.
+      - One man in his time plays many parts.
+    related:
+      - LIFE_IS_A_JOURNEY
+      - NATIONAL_POLITICS_IS_A_STAGE
+      - POLITICIANS_ARE_STAGE_ACTORS
+    mappings:
+      - source_role: performer
+        target_role: life_liver
+  - name: BEING_HAPPY_IS_BEING_IN_HEAVEN
+    source_frame: heaven
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - That was heaven on earth.
+      - I was in seventh heaven.
+      - Being reunited with her family felt like paradise.
+    related:
+      - HAPPINESS_IS_VERTICALITY
+      - HAPPY_IS_UP
+      - HAPPINESS_IS_LIGHT
+    mappings:
+      - source_role: occupant
+        target_role: experiencer
+      - source_role: heaven
+        target_role: happiness
+  - name: HAPPINESS_IS_LIGHT
+    source_frame: light-source
+    target_frame: happiness
+    families:
+      - Emotion
+      - Primary
+    examples:
+      - He radiates joy.
+      - She lit up.
+      - Her face brightened the moment she heard the good news.
+    related:
+      - HOPE_IS_LIGHT
+      - HAPPINESS_IS_VERTICALITY
+      - HAPPY_IS_UP
+      - BEING_HAPPY_IS_BEING_IN_HEAVEN
+    mappings:
+      - source_role: light_source
+        target_role: experiencer
+      - source_role: light_level
+        target_role: happiness
+  - name: HAPPINESS_IS_VITALITY
+    source_frame: living
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - He was alive with joy.
+      - That put some life into them.
+    related:
+      - ACTIVE_IS_ALIVE
+    mappings:
+      - source_role: living_protagonist
+        target_role: experiencer
+  - name: HAPPINESS_IS_A_FLUID_IN_A_CONTAINER
+    source_frame: fluid-containment
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - The sight filled them with joy.
+      - I was bursting with happiness.
+    related:
+      - BODY_IS_A_CONTAINER_FOR_EMOTIONS
+      - HAPPINESS_IS_A_CAPTIVE_ANIMAL
+    mappings:
+      - source_role: container
+        target_role: experiencer
+      - source_role: fluid
+        target_role: happiness
+  - name: HAPPINESS_IS_A_CAPTIVE_ANIMAL
+    source_frame: captive-animal
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - I couldn't keep my happiness to myself.
+      - His feelings of joy broke loose.
+    related:
+      - HAPPINESS_IS_A_FLUID_IN_A_CONTAINER
+    mappings:
+      - source_role: animal
+        target_role: happiness
+      - source_role: restrainer
+        target_role: experiencer
+  - name: HAPPINESS_IS_AN_OPPONENT
+    source_frame: physical-combat
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - She was overcome with joy.
+      - He was knocked out!
+    related:
+      - HAPPINESS_IS_A_NATURAL_FORCE
+      - EMOTION_IS_A_FORCE
+    mappings:
+      - source_role: fighter_1
+        target_role: experiencer
+      - source_role: fighter_2
+        target_role: happiness
+  - name: HAPPINESS_IS_A_RAPTURE
+    source_frame: intoxication
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - I was drunk with joy.
+      - I'm on a natural high.
+    related:
+      - HAPPINESS_IS_INSANITY
+    mappings:
+      - source_role: intoxicated_person
+        target_role: experiencer
+  - name: A_HAPPY_PERSON_IS_AN_ANIMAL_THAT_LIVES_WELL
+    source_frame: animal
+    target_frame: person
+    examples:
+      - He was happy as a pig in slop.
+      - She was chirping like a cricket.
+    related:
+      - PEOPLE_ARE_ANIMALS
+      - LUSTFUL_PERSON_IS_AN_ANIMAL
+    mappings:
+      - source_role: animal
+        target_role: person
+  - name: HAPPINESS_IS_A_PLEASURABLE_PHYSICAL_SENSATION
+    source_frame: touching
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - I was purring with delight.
+      - I was tickled pink.
+    related:
+      - KNOWING_IS_TOUCHING
+    mappings:
+      - source_role: toucher
+        target_role: experiencer
+      - source_role: touch_input
+        target_role: happiness
+  - name: HAPPINESS_IS_INSANITY
+    source_frame: insanity
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - They were crazy with happiness.
+      - I was beside myself.
+    related:
+      - ANGER_IS_INSANITY
+      - LOVE_IS_MADNESS
+      - LUST_IS_MADNESS
+      - STRONG_EMOTIONS_ARE_MADNESS
+      - HAPPINESS_IS_A_RAPTURE
+    mappings:
+      - source_role: insane_person
+        target_role: experiencer
+      - source_role: insanity
+        target_role: happiness
+  - name: HAPPINESS_IS_A_NATURAL_FORCE
+    source_frame: force
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - She was overwhelmed with joy.
+      - He was swept off his feet.
+    related:
+      - EMOTION_IS_A_FORCE
+      - HAPPINESS_IS_AN_OPPONENT
+    mappings:
+      - source_role: force
+        target_role: happiness
+  - name: COMPANY_IS_A_BUILDING
+    source_frame: building
+    target_frame: company
+    examples:
+      - He and a partner built up a successful fashion company.
+      - She built the firm from nothing into an industry leader.
+    related:
+      - COMPANY_IS_A_COMPLEX_STRUCTURE
+      - CAREER_IS_A_BUILDING
+    mappings:
+      - source_role: builder
+        target_role: company_leaders
+      - source_role: building_whole
+        target_role: company_whole
+      - source_role: building_framework
+        target_role: company_structure
+  - name: ECONOMY_IS_A_BUILDING
+    source_frame: building
+    target_frame: economy
+    families:
+      - Economics
+    examples:
+      - With its economy in ruins, the country could not afford to get involved in military action.
+      - Years of corruption and neglect left the economy in ruins.
+    related:
+      - ECONOMY_IS_A_COMPLEX_STRUCTURE
+      - ECONOMY_IS_A_MACHINE
+    mappings:
+      - source_role: building_whole
+        target_role: economy_whole
+      - source_role: building_integrity
+        target_role: economic_efficiency
+      - source_role: building_parts
+        target_role: sector
+  - name: EMOTION_IS_FIRE
+    source_frame: fire
+    target_frame: emotion
+    families:
+      - Emotion
+    examples:
+      - The fires of his ambition burned brightly for years.
+      - She was burning with resentment.
+      - Dan burned to know what the reason could be.
+    related:
+      - ANGER_IS_FIRE
+      - EMOTIONALLY_INTENSE_IS_HOT
+    mappings:
+      - source_role: fire
+        target_role: emotion
+      - source_role: burning_object
+        target_role: experiencer
+      - source_role: cause_of_fire
+        target_role: cause_of_emotion
+      - source_role: fire_intensity
+        target_role: emotion_level
+  - name: ARGUMENT_IS_FIRE
+    source_frame: fire
+    target_frame: argument
+    examples:
+      - Their disagreement flared into a blazing row.
+      - The discussion grew more heated once money came up.
+    related:
+      - ARGUMENT_IS_WAR
+      - ANGER_IS_FIRE
+      - EMOTION_IS_FIRE
+    mappings:
+      - source_role: fire
+        target_role: arguing_event
+      - source_role: cause_of_fire
+        target_role: trigger_of_argument
+      - source_role: burning_object
+        target_role: arguers
+  - name: PASSION_IS_FIRE
+    source_frame: fire
+    target_frame: passion
+    families:
+      - Emotion
+    examples:
+      - Some spark had gone out of him since the layoff.
+      - Her passion for the project was still burning strong.
+    related:
+      - PASSION_IS_HEAT
+      - EMOTION_IS_FIRE
+    mappings:
+      - source_role: burning_object
+        target_role: passion_feeler
+      - source_role: fire_intensity
+        target_role: degree_of_passion
+  - name: HUMAN_BEHAVIOR_IS_ANIMAL_BEHAVIOR
+    source_frame: animal
+    target_frame: action
+    examples:
+      - He was an animal on Saturday afternoon.
+      - She bitched about Dan.
+      - The kids were horsing around in the backyard all afternoon.
+    related:
+      - PEOPLE_ARE_ANIMALS
+      - LUSTFUL_PERSON_IS_AN_ANIMAL
+    mappings:
+      - source_role: animal
+        target_role: action_self
+  - name: DIFFICULTY_IS_A_DOG
+    source_frame: animal
+    target_frame: difficulties-in-action
+    examples:
+      - It's going to be a bitch to replace him.
+    related:
+      - DIFFICULTY_IS_HARDNESS
+      - DIFFICULTY_IS_HEAVINESS
+      - DIFFICULTY_IS_PHYSICAL_STRUGGLE
+    mappings:
+      - source_role: animal
+        target_role: difficulty
+  - name: SEXUALLY_ATTRACTIVE_WOMEN_ARE_KITTENS
+    source_frame: animal
+    target_frame: lust
+    families:
+      - Emotion
+    examples:
+      - French sex kitten Brigitte Bardot captivated audiences throughout the 1950s.
+    related:
+      - LUSTFUL_PERSON_IS_AN_ANIMAL
+      - PEOPLE_ARE_ANIMALS
+    mappings:
+      - source_role: animal
+        target_role: target_of_lust
+  - name: CHEERFUL_IS_SUNNY
+    source_frame: lightness
+    target_frame: happiness
+    families:
+      - Emotion
+      - Primary
+    examples:
+      - What a happy, sunny girl she was!
+    related:
+      - HAPPY_IS_UP
+      - HAPPINESS_IS_VERTICALITY
+      - GOODNESS_IS_LIGHT
+    mappings:
+      - source_role: entity
+        target_role: experiencer
+      - source_role: light_level
+        target_role: happiness
+  - name: UNFRIENDLY_IS_ICY
+    source_frame: cold
+    target_frame: affection
+    families:
+      - Emotion
+      - Primary
+    examples:
+      - Vincent met his father's icy stare evenly.
+    related:
+      - AFFECTION_IS_WARMTH
+      - FEAR_IS_COLD
+    mappings:
+      - source_role: entity
+        target_role: affection_feeler
+      - source_role: temperature_level
+        target_role: degree_of_affection
+  - name: INSTITUTION_IS_A_BODY
+    source_frame: body
+    target_frame: institution
+    families:
+      - Ontological
+    examples:
+      - Politicians are being blamed for all the ills of society.
+      - The company has been an ailing business for years.
+      - Excessive state involvement has become a crippling disease within the industry.
+    related:
+      - INSTITUTION_IS_A_MACHINE
+      - GOVERNMENT_INSTITUTION_IS_A_BODY
+      - ECONOMY_IS_A_BODY
+      - SOCIETY_IS_A_BODY
+    mappings:
+      - source_role: functional_status
+        target_role: functional_status
+      - source_role: body_whole
+        target_role: institution_whole
+      - source_role: head
+        target_role: institution_heads
+      - source_role: body_parts
+        target_role: position_holders
+  - name: TOLERANCE_IS_HEART_CAPACITY
+    source_frame: fluid-containment
+    target_frame: tolerance
+    families:
+      - Ontological
+    examples:
+      - This person has a long heart, so he rarely displays anger.
+      - He has a short heart, so he is quick to lose his temper.
+    related:
+      - BODY_IS_A_CONTAINER_FOR_EMOTIONS
+      - ANGER_IS_PRESSURE_IN_A_CONTAINER
+    mappings:
+      - source_role: container
+        target_role: tolerance_feeler
+      - source_role: container_capacity
+        target_role: degree_of_tolerance
+  - name: HAPPINESS_IS_FLOWERS_IN_THE_HEART
+    source_frame: plants
+    target_frame: happiness
+    families:
+      - Emotion
+    examples:
+      - Her heart bloomed with quiet joy at the good news.
+    related:
+      - HAPPY_IS_UP
+      - HAPPINESS_IS_VERTICALITY
+    mappings:
+      - source_role: plant_entity
+        target_role: happiness
+  - name: ANGER_IS_AN_OPPONENT_IN_A_STRUGGLE
+    source_frame: physical-combat
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - He struggled to keep his anger under control.
+      - She was losing the fight against her rising anger.
+      - He fought back his anger and somehow managed to stay calm.
+    related:
+      - ANGER_IS_HEAT
+      - PSYCHOLOGICAL_CONFLICT_IS_PHYSICAL_CONFLICT
+    mappings:
+      - source_role: fighter_1
+        target_role: experiencer
+      - source_role: fighter_2
+        target_role: anger
+      - source_role: physical_interaction_x_schema
+        target_role: anger_x_schema
+  - name: ANGER_IS_A_DANGEROUS_ANIMAL
+    source_frame: animal
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - His pent-up anger was a wild animal ready to break loose.
+      - She unleashed her anger on the whole team.
+      - He couldn't keep his anger caged any longer.
+    related:
+      - ANGER_IS_HEAT
+      - ANGER_IS_INSANITY
+      - PEOPLE_ARE_ANIMALS
+    mappings:
+      - source_role: animal
+        target_role: anger
+  - name: THE_CAUSE_OF_ANGER_IS_PHYSICAL_ANNOYANCE
+    source_frame: physical-annoyance
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - He's such a pain in the neck when he starts complaining.
+      - Stop bugging me about the deadline.
+      - Her constant interruptions were a real irritation by the end of the meeting.
+    related:
+      - CAUSING_ANGER_IS_TRESPASSING
+      - ANGER_IS_HEAT
+    mappings:
+      - source_role: cause_of_annoyance
+        target_role: cause_of_anger
+      - source_role: annoyed_entity
+        target_role: experiencer
+  - name: CAUSING_ANGER_IS_TRESPASSING
+    source_frame: trespassing
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - Get out of my face before I say something I'll regret.
+      - He knew he had stepped over the line by reading her diary.
+      - Don't tread on me.
+    related:
+      - THE_CAUSE_OF_ANGER_IS_PHYSICAL_ANNOYANCE
+      - GOVERNMENTS_HARMFUL_TREATMENT_OF_RIGHTS_IS_TRESPASSING
+    mappings:
+      - source_role: territory_owner
+        target_role: experiencer
+      - source_role: trespasser
+        target_role: cause_of_anger
+  - name: ANGER_IS_A_BURDEN
+    source_frame: burden
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - He carries his anger around with him wherever he goes.
+      - She finally got it off her chest after weeks of simmering resentment.
+      - Don't burden yourself by holding onto that grudge.
+    related:
+      - DIFFICULTIES_IN_ACTION_ARE_PHYSICAL_BURDENS
+      - RESPONSIBILITIES_ARE_BURDENS
+      - ANGER_IS_HEAT
+    mappings:
+      - source_role: burdened_entity
+        target_role: experiencer
+      - source_role: burden
+        target_role: anger
+      - source_role: weight_of_burden
+        target_role: anger_level
+  - name: ANGER_IS_A_NATURAL_FORCE
+    source_frame: weather
+    target_frame: anger
+    families:
+      - Anger
+    examples:
+      - It was a stormy meeting once tempers flared.
+      - A wave of anger swept over her when she read the message.
+      - The sky grew dark with thunderclouds as his anger gathered.
+    related:
+      - CIRCUMSTANCES_ARE_WEATHER
+      - ANGER_IS_HEAT
+    mappings:
+      - source_role: weather
+        target_role: anger
+      - source_role: experiencer
+        target_role: experiencer
+  - name: FREEDOM_TO_ACT_IS_HAVING_THE_HANDS_FREE
+    source_frame: hand
+    target_frame: freedom-of-action
+    examples:
+      - The board gave the new CEO a free hand to restructure the company.
+      - His hands were tied by the strict new regulations.
+      - Once the paperwork cleared, she had a free hand to make her own decisions.
+    related:
+      - FREEDOM_OF_ACTION_IS_THE_LACK_OF_IMPEDIMENTS_TO_MOVEMENT
+      - CONTROL_IS_HOLDING_SOMETHING_IN_THE_HAND
+    mappings:
+      - source_role: hand_owner
+        target_role: actor
+  - name: CONTROL_IS_HOLDING_SOMETHING_IN_THE_HAND
+    source_frame: grasp
+    target_frame: control
+    families:
+      - Possession
+    examples:
+      - She held the power to shut down the whole project in the hollow of her hand.
+      - The situation quickly got out of hand once the rumors started.
+      - He kept a firm grip on the department's finances.
+    related:
+      - CONTROL_IS_A_POSSESSION
+      - POSSESSING_IS_HOLDING
+      - FREEDOM_TO_ACT_IS_HAVING_THE_HANDS_FREE
+    mappings:
+      - source_role: grasper
+        target_role: controlling_entity
+      - source_role: held_entity
+        target_role: dependent_entity
+  - name: ATTENTION_IS_HOLDING_SOMETHING_IN_THE_HAND
+    source_frame: grasp
+    target_frame: attention
+    families:
+      - Mind
+    examples:
+      - The lecture held the students' attention for the full hour.
+      - She kept a firm grip on the audience's attention throughout her speech.
+      - He finally caught her attention with a wave.
+    related:
+      - UNDERSTANDING_IS_GRASPING
+      - POSSESSING_IS_HOLDING
+    mappings:
+      - source_role: grasper
+        target_role: attender
+      - source_role: held_entity
+        target_role: attended_entity
+  - name: THINKING_IS_LOOKING
+    source_frame: seeing
+    target_frame: thinking-about
+    families:
+      - Mind
+    examples:
+      - Look before you leap.
+      - Let's look at this from every angle before deciding.
+      - She looked ahead to see how the decision would play out.
+    related:
+      - THINKING_IS_PERCEIVING
+      - KNOWING_IS_SEEING
+    mappings:
+      - source_role: seer
+        target_role: thinker
+      - source_role: seen_object
+        target_role: thinking_content
+  - name: CAREER_IS_A_JOURNEY
+    source_frame: journey
+    target_frame: career
+    examples:
+      - This can prevent you from seeing which path to take in your career.
+      - A long time ago, I decided on a change of career path—I was going to be a flight steward.
+      - Her career took an unexpected turn after the merger.
+    related:
+      - CAREER_IS_A_BUILDING
+      - CAREER_IS_A_COMPLEX_STRUCTURE
+      - LIFE_IS_A_JOURNEY
+    mappings:
+      - source_role: journeyer
+        target_role: career_follower
+      - source_role: course_of_journey
+        target_role: career_trajectory
+  - name: ABORTION_IS_WAR
+    source_frame: war
+    target_frame: abortion
+    families:
+      - Governance
+    examples:
+      - Pro-life and pro-choice groups have been locked in a decades-long battle over abortion rights.
+      - Lawmakers on both sides say they are bracing for another fight over the issue this session.
+      - The clinic became a new front line in the ongoing abortion war.
+    related:
+      - ARGUMENT_IS_WAR
+      - POLITICAL_OPPOSITION_IS_BEING_IN_OPPOSING_ARMIES
+      - NATIONAL_POLITICS_IS_A_BATTLEFIELD
+    mappings:
+      - source_role: side_1
+        target_role: abortion_stakeholders
+      - source_role: side_2
+        target_role: abortion_stakeholders
+      - source_role: fighting
+        target_role: abortion_conflict
+  - name: TERRORISM_IS_WAR
+    source_frame: war
+    target_frame: terrorism
+    examples:
+      - The coalition launched a sustained campaign against the terrorist network hiding in the mountains.
+      - Officials said the attacks were the opening shots in a war fought without borders or uniforms.
+      - Civilians bore the brunt of the group's relentless assault on the capital.
+    related:
+      - TERRORISM_IS_A_BUSINESS
+      - TERRORISM_IS_A_STRUCTURE
+      - ADDRESSING_GUN_VIOLENCE_IS_WAGING_WAR
+      - ADDRESSING_SOCIAL_PROBLEMS_IS_WAGING_WAR
+    mappings:
+      - source_role: enemy_combatants
+        target_role: terrorist
+      - source_role: civilians
+        target_role: victim
+      - source_role: enemy_attack
+        target_role: terrorist_activity
+  - name: TERRORISM_IS_A_BUSINESS
+    source_frame: business
+    target_frame: terrorism
+    examples:
+      - Kidnappings and ransom payments had become a reliable revenue stream for the group.
+      - Investigators traced a sophisticated funding network that bankrolled cells across three continents.
+      - The organization franchised its brand to local affiliates in exchange for loyalty and cash.
+    related:
+      - TERRORISM_IS_WAR
+      - TERRORISM_IS_A_STRUCTURE
+    mappings:
+      - source_role: business
+        target_role: terrorist_network
+      - source_role: employee
+        target_role: terrorist
+      - source_role: functional_status
+        target_role: terrorist_activity
+  - name: TERRORISM_IS_A_STRUCTURE
+    source_frame: building
+    target_frame: terrorism
+    examples:
+      - Investigators spent years working to dismantle the terrorist network cell by cell.
+      - Removing its top leadership left the group's command structure in ruins.
+      - Analysts said the organization's foundations had been weakened by years of defections.
+    related:
+      - TERRORISM_IS_WAR
+      - TERRORISM_IS_A_BUSINESS
+    mappings:
+      - source_role: building_whole
+        target_role: terrorist_network
+      - source_role: building_parts
+        target_role: terrorist
+  - name: MIGRATION_IS_A_FLOOD
+    source_frame: body-of-water
+    target_frame: immigration
+    examples:
+      - A flood of migrants surged across the southern border last spring.
+      - Local officials warned that the wave of new arrivals could overwhelm the region's shelters.
+      - Border agents described the crossings as a steady stream that showed no sign of ebbing.
+    related:
+      - MIGRATION_IS_A_NATURAL_FORCE
+      - MIGRATION_IS_A_JOURNEY
+      - MIGRATION_IS_A_PATHWAY
+      - MIGRATION_IS_A_DISEASE
+      - A_PROBLEM_IS_A_BODY_OF_WATER
+    mappings:
+      - source_role: water_body
+        target_role: migrant_flow
+      - source_role: contents
+        target_role: migrant
+  - name: MIGRATION_IS_A_NATURAL_FORCE
+    source_frame: destructive-natural-process
+    target_frame: immigration
+    examples:
+      - The exodus swept through the region like a wildfire, leaving local agencies scrambling to keep up.
+      - Towns along the route braced for the human avalanche moving north.
+      - Officials called the sudden influx an unstoppable force reshaping the county overnight.
+    related:
+      - MIGRATION_IS_A_FLOOD
+      - MIGRATION_IS_A_JOURNEY
+      - MIGRATION_IS_A_PATHWAY
+      - MIGRATION_IS_A_DISEASE
+      - CORRUPTION_IS_A_DESTRUCTIVE_NATURAL_PROCESS
+    mappings:
+      - source_role: destructive_process
+        target_role: migrant_flow
+      - source_role: destroyed_entity
+        target_role: destination_country
+      - source_role: destructive_effect
+        target_role: strain_on_resources
+  - name: MIGRATION_IS_A_JOURNEY
+    source_frame: journey
+    target_frame: immigration
+    examples:
+      - Many migrants described a grueling months-long journey across three countries before reaching the border.
+      - Families set out on a perilous trek north, uncertain how long the road ahead would be.
+      - Aid workers met exhausted travelers at the end of a journey that had taken them through five countries.
+    related:
+      - MIGRATION_IS_A_FLOOD
+      - MIGRATION_IS_A_NATURAL_FORCE
+      - MIGRATION_IS_A_PATHWAY
+      - MIGRATION_IS_A_DISEASE
+    mappings:
+      - source_role: journeyer
+        target_role: migrant
+      - source_role: journey_end
+        target_role: destination_country
+  - name: MIGRATION_IS_A_PATHWAY
+    source_frame: source-path-goal
+    target_frame: immigration
+    examples:
+      - Lawmakers debated whether to create a pathway to citizenship for longtime undocumented residents.
+      - Advocates say the current system leaves few legal paths open for asylum seekers.
+      - The bill would clear a route to permanent residency for essential workers.
+    related:
+      - MIGRATION_IS_A_FLOOD
+      - MIGRATION_IS_A_NATURAL_FORCE
+      - MIGRATION_IS_A_JOURNEY
+      - MIGRATION_IS_A_DISEASE
+      - REGULATIONS_ARE_POSSIBLE_PATHS_OF_MOTION
+    mappings:
+      - source_role: trajector
+        target_role: migrant
+      - source_role: path
+        target_role: path_to_citizenship
+      - source_role: goal
+        target_role: destination_country
+      - source_role: source
+        target_role: origin_country
+  - name: MIGRATION_IS_A_DISEASE
+    source_frame: disease
+    target_frame: immigration
+    families:
+      - Disease
+    examples:
+      - The candidate warned that this wave of migration was a contagion the country could no longer ignore.
+      - Critics warned that failing to close the border would let the crisis infect the whole region.
+    related:
+      - MIGRATION_IS_A_FLOOD
+      - MIGRATION_IS_A_NATURAL_FORCE
+      - MIGRATION_IS_A_JOURNEY
+      - MIGRATION_IS_A_PATHWAY
+      - DANGEROUS_BELIEFS_ARE_CONTAGIOUS_DISEASES
+      - CRIME_IS_A_DISEASE
+    mappings:
+      - source_role: diseased_cell
+        target_role: migrant
+      - source_role: infection_process
+        target_role: migrant_flow
+      - source_role: patient
+        target_role: destination_country
+  - name: CLIMATE_CHANGE_IS_WAR
+    source_frame: war
+    target_frame: climate-change
+    families:
+      - Social problems
+    examples:
+      - World leaders declared an all-out war on climate change at the summit.
+      - The mayor said the city was mobilizing every resource to fight rising seas and extreme heat.
+      - Scientists called for a coordinated global offensive against carbon emissions before the decade's end.
+    related:
+      - ADDRESSING_SOCIAL_PROBLEMS_IS_WAGING_WAR
+      - ADDRESSING_POVERTY_IS_WAGING_WAR
+    mappings:
+      - source_role: enemy_combatants
+        target_role: climate_change
+      - source_role: army
+        target_role: responders
+      - source_role: fighting
+        target_role: mitigation_actions
+      - source_role: enemy_attack
+        target_role: climate_impact
+  - name: CLIMATE_CHANGE_IS_A_GAMBLE
+    source_frame: gambling
+    target_frame: climate-change
+    examples:
+      - World leaders are gambling with the planet's future by delaying action on emissions.
+      - Betting on unproven technology to fix the climate later is a wager we cannot afford to lose.
+    related:
+      - CLIMATE_CHANGE_IS_A_BURDEN
+      - CLIMATE_CHANGE_IS_A_RUNAWAY_VEHICLE
+      - CANCER_TREATMENT_IS_GAMBLING
+    mappings:
+      - source_role: bet
+        target_role: stakes
+  - name: CLIMATE_CHANGE_IS_A_BURDEN
+    source_frame: burden
+    target_frame: climate-change
+    examples:
+      - Developing nations argue that wealthy countries should shoulder the greater burden of addressing climate change.
+      - Future generations will carry the weight of decisions being made about emissions today.
+    related:
+      - CLIMATE_CHANGE_IS_A_GAMBLE
+      - CLIMATE_CHANGE_IS_A_RUNAWAY_VEHICLE
+      - RESPONSIBILITIES_ARE_BURDENS
+      - TAXATION_IS_A_BURDEN
+    mappings:
+      - source_role: burden
+        target_role: climate_system
+      - source_role: burdened_entity
+        target_role: affected_party
+      - source_role: weight_of_burden
+        target_role: stakes
+  - name: CLIMATE_CHANGE_IS_A_RUNAWAY_VEHICLE
+    source_frame: vehicular-motion
+    target_frame: climate-change
+    examples:
+      - Scientists warn that without drastic emissions cuts, we risk runaway climate change hurtling out of control.
+      - Once the feedback loops kick in, the warming trend could pick up speed with no one left in the driver's seat.
+    related:
+      - CLIMATE_CHANGE_IS_A_GAMBLE
+      - CLIMATE_CHANGE_IS_A_BURDEN
+      - LEADING_A_NATION_IS_DRIVING_A_VEHICLE
+    mappings:
+      - source_role: vehicle
+        target_role: climate_system
+      - source_role: vehicle_passengers
+        target_role: affected_party
+      - source_role: speed
+        target_role: rate_of_change
+  - name: DRUG_TRAFFICKING_IS_WAR
+    source_frame: war
+    target_frame: drug-trafficking
+    families:
+      - Social problems
+    examples:
+      - Successive administrations have waged war on the cartels flooding American streets with narcotics.
+      - Border communities have become collateral damage in the ongoing fight between authorities and drug traffickers.
+    related:
+      - DRUG_TRAFFICKING_IS_A_DISEASE
+      - ADDRESSING_SOCIAL_PROBLEMS_IS_WAGING_WAR
+      - ADDRESSING_GUN_VIOLENCE_IS_WAGING_WAR
+    mappings:
+      - source_role: side_1
+        target_role: authorities
+      - source_role: side_2
+        target_role: trafficker
+      - source_role: civilians
+        target_role: affected_community
+      - source_role: fighting
+        target_role: trafficking
+  - name: DRUG_TRAFFICKING_IS_A_DISEASE
+    source_frame: disease
+    target_frame: drug-trafficking
+    families:
+      - Disease
+      - Social problems
+    examples:
+      - Officials describe the drug trade as a disease that keeps reinfecting the same border towns no matter how many times it is treated.
+      - Trafficking networks have spread through the region like an untreated infection.
+    related:
+      - DRUG_TRAFFICKING_IS_WAR
+      - CRIME_IS_A_DISEASE
+    mappings:
+      - source_role: disease
+        target_role: trafficking
+      - source_role: doctor
+        target_role: authorities
+      - source_role: patient
+        target_role: affected_community
+  - name: INTELLECTUAL_PROPERTY_IS_PROTECTED_PROPERTY
+    source_frame: protect-against-contact
+    target_frame: intellectual-property
+    examples:
+      - Companies spend millions protecting their intellectual property from counterfeiters and copycats.
+      - The firm built a portfolio of patents to shield its inventions from infringers.
+    related:
+      - INTELLECTUAL_PROPERTY_IS_A_BUSINESS_ASSET
+      - WEALTH_IS_PROTECTION_AGAINST_HARM
+    mappings:
+      - source_role: protected_thing
+        target_role: creation
+      - source_role: threatening_thing
+        target_role: infringer
+  - name: INTELLECTUAL_PROPERTY_IS_A_BUSINESS_ASSET
+    source_frame: resource
+    target_frame: intellectual-property
+    families:
+      - Economics
+    examples:
+      - The startup's patents are its most valuable business asset, worth more than its physical inventory.
+      - The company's licensing revenue shows just how much its trademarks are worth on the balance sheet.
+    related:
+      - INTELLECTUAL_PROPERTY_IS_PROTECTED_PROPERTY
+      - KNOWLEDGE_IS_A_RESOURCE
+    mappings:
+      - source_role: resource
+        target_role: creation
+      - source_role: resource_user
+        target_role: owner
+  - name: MARRIAGE_IS_A_BUILDING
+    source_frame: building
+    target_frame: marriage
+    examples:
+      - Their marriage was built on a foundation of trust and shared history.
+      - After the affair, the couple worried their marriage had collapsed beyond repair.
+    related:
+      - MARRIAGE_IS_CLOTH
+      - MARRIAGE_IS_CONFINEMENT
+      - TRUST_RELATIONSHIPS_ARE_BUILDINGS
+    mappings:
+      - source_role: building_whole
+        target_role: marriage_whole
+      - source_role: building_foundation
+        target_role: shared_history
+  - name: MARRIAGE_IS_A_MACHINE
+    source_frame: machine
+    target_frame: marriage
+    examples:
+      - After years of counseling, their marriage finally seemed to be running smoothly again.
+      - His parents' marriage had broken down like a machine nobody bothered to maintain.
+    related:
+      - MARRIAGE_IS_CLOTH
+      - MARRIAGE_IS_A_BUILDING
+    mappings:
+      - source_role: machine_entity
+        target_role: marriage_whole
+  - name: MARRIAGE_IS_CONFINEMENT
+    source_frame: confinement
+    target_frame: marriage
+    examples:
+      - She felt trapped in a marriage she no longer wanted to be part of.
+      - Years of shared finances and children kept him from ever walking away, even when he wanted to.
+    related:
+      - MARRIAGE_IS_CLOTH
+      - MARRIAGE_IS_A_BUILDING
+      - GOVERNMENT_ASSISTANCE_IS_A_TRAP
+    mappings:
+      - source_role: area_of_confinement
+        target_role: marriage_whole
+      - source_role: bounds_of_confinement
+        target_role: shared_history
+  - name: DEBT_IS_A_BURDEN
+    source_frame: burden
+    target_frame: debt
+    families:
+      - Poverty as an individual problem
+      - Poverty
+    examples:
+      - Crushing student debt has weighed on an entire generation.
+      - She finally paid off the loan and felt the burden lift.
+      - His medical bills piled up until the debt became unbearable to carry.
+    related:
+      - DEBT_IS_PHYSICAL_IMPEDIMENTS_TO_MOTION
+      - DEBT_IS_AN_ABYSS
+      - TAXATION_IS_A_BURDEN
+      - RESPONSIBILITIES_ARE_BURDENS
+    mappings:
+      - source_role: burden
+        target_role: debt
+      - source_role: burdened_entity
+        target_role: debtor
+  - name: DEBT_IS_AN_ABYSS
+    source_frame: abyss
+    target_frame: debt
+    families:
+      - Poverty as an individual problem
+      - Poverty
+    examples:
+      - One missed payment after another dragged the family into an abyss of debt.
+      - He felt like he was sinking further into debt with every passing month.
+      - Once you fall into that debt abyss, climbing back out feels impossible.
+    related:
+      - DEBT_IS_A_BURDEN
+      - DEBT_IS_PHYSICAL_IMPEDIMENTS_TO_MOTION
+      - DEBT_IS_AN_ORGANISM
+      - MENTAL_ILLNESS_IS_AN_ABYSS
+    mappings:
+      - source_role: abyss
+        target_role: debt
+      - source_role: entity_in_abyss
+        target_role: debtor
+  - name: MENTAL_ILLNESS_IS_AN_ABYSS
+    source_frame: abyss
+    target_frame: mental-illness
+    examples:
+      - Depression pulled him into a bottomless abyss he couldn't see out of.
+      - She described her illness as sinking deeper into a dark abyss.
+      - Therapy and medication helped her climb out of that abyss, one day at a time.
+    related:
+      - DEBT_IS_AN_ABYSS
+      - SAD_IS_DOWN
+    mappings:
+      - source_role: abyss
+        target_role: mental_illness
+      - source_role: entity_in_abyss
+        target_role: patient
+      - source_role: depth_of_abyss
+        target_role: severity
+  - name: RELIGION_IS_A_BODY
+    source_frame: body
+    target_frame: religion
+    examples:
+      - The congregation often describes itself as one body of believers.
+      - When one member suffers, the whole body of the church feels it.
+      - Every believer is considered a limb of the same spiritual body.
+    related:
+      - SOCIETY_IS_A_BODY
+      - GROUP_IS_A_BODY
+      - NATION_IS_A_BODY
+      - RELIGION_IS_A_PLANT
+      - RELIGION_IS_A_JOURNEY
+      - RELIGION_IS_A_BUILDING
+    mappings:
+      - source_role: body_whole
+        target_role: religion_whole
+      - source_role: body_parts
+        target_role: adherents
+  - name: RELIGION_IS_A_PLANT
+    source_frame: plants
+    target_frame: religion
+    examples:
+      - Her faith grew stronger through years of quiet devotion.
+      - The old congregation had withered down to a handful of members.
+      - Missionaries planted the seeds of the new faith across the continent.
+    related:
+      - DEMOCRACY_IS_A_PLANT
+      - POVERTY_IS_A_PLANT
+      - SOCIAL_ORGANIZATIONS_ARE_PLANTS
+      - RELIGION_IS_A_BODY
+      - RELIGION_IS_A_JOURNEY
+      - RELIGION_IS_A_BUILDING
+    mappings:
+      - source_role: plant_entity
+        target_role: religion_whole
+      - source_role: plant_life_cycle
+        target_role: developmental_stages
+  - name: RELIGION_IS_A_JOURNEY
+    source_frame: journey
+    target_frame: religion
+    examples:
+      - She described her conversion as the start of a spiritual journey.
+      - He has walked the path of his faith for forty years.
+      - Many pilgrims say they found direction partway through their spiritual journey.
+    related:
+      - LIFE_IS_A_JOURNEY
+      - ROMANTIC_RELATIONSHIP_IS_A_JOURNEY
+      - ACTIVITIES_ARE_JOURNEYS
+      - RELIGION_IS_A_BODY
+      - RELIGION_IS_A_PLANT
+      - RELIGION_IS_A_BUILDING
+    mappings:
+      - source_role: journeyer
+        target_role: adherents
+      - source_role: course_of_journey
+        target_role: course_of_faith
+  - name: RELIGION_IS_A_BUILDING
+    source_frame: building
+    target_frame: religion
+    examples:
+      - Their community was built on the foundation of shared faith.
+      - Doubt threatened to crack the foundation of his belief.
+      - The church has stood on the same doctrinal foundation for centuries.
+    related:
+      - NATION_IS_A_BUILDING
+      - ARGUMENT_IS_A_BUILDING
+      - THEORIES_ARE_BUILDINGS
+      - TRUST_IN_GOVERNMENT_IS_A_BUILDING
+      - MIND_IS_A_BUILDING
+      - RELIGION_IS_A_BODY
+      - RELIGION_IS_A_PLANT
+      - RELIGION_IS_A_JOURNEY
+    mappings:
+      - source_role: building_whole
+        target_role: religion_whole
+      - source_role: building_foundation
+        target_role: core_tenets
+  - name: PUBLIC_HEALTH_CRISES_ARE_WAR
+    source_frame: war
+    target_frame: addressing-public-health-crisis
+    examples:
+      - The nation declared war on the opioid epidemic and mobilized every available resource.
+      - Public health officials say they are fighting the pandemic on every front.
+      - The CDC drew up a new battle plan for containing the outbreak.
+    mappings:
+      - source_role: enemy_combatants
+        target_role: public_health_crisis
+      - source_role: army
+        target_role: responders
+      - source_role: civilians
+        target_role: affected_population
+      - source_role: war_strategies
+        target_role: response_actions
+  - name: DISEASE_IS_A_BUSINESS
+    source_frame: business
+    target_frame: addressing-public-health-crisis
+    related:
+      - PUBLIC_HEALTH_CRISES_ARE_WAR
+    examples:
+      - Cancer treatment has become a multi-billion-dollar industry for drugmakers and hospitals alike.
+      - Critics argue the healthcare system profits more from managing chronic disease than curing it.
+      - Insurers and pharmaceutical companies are the biggest stakeholders in the business of illness.
+    mappings:
+      - source_role: business
+        target_role: public_health_crisis
+      - source_role: employer
+        target_role: responders
+  - name: NATIONAL_POLITICS_IS_A_GAME
+    source_frame: game
+    target_frame: politics
+    families:
+      - Governance
+    related:
+      - NATIONAL_POLITICS_IS_A_BATTLEFIELD
+      - NATIONAL_POLITICS_IS_A_SPORTS_FIELD
+      - POLITICIANS_ARE_STAGE_ACTORS
+      - ELECTION_IS_A_GAME
+    examples:
+      - Critics say lawmakers are just playing political games instead of governing.
+      - He accused his opponent of playing games with people's lives for the sake of votes.
+      - Insiders describe Washington as one long chess match between rival politicians.
+    mappings:
+      - source_role: game_player_1
+        target_role: political_actors
+      - source_role: game_player_2
+        target_role: political_actors
+      - source_role: game_event
+        target_role: arena_of_politics
+  - name: POVERTY_IS_AN_ABYSS
+    source_frame: abyss
+    target_frame: poverty
+    families:
+      - Poverty as an individual problem
+      - Poverty
+    related:
+      - BEING_IMPOVERISHED_IS_BEING_AT_A_LOW_LOCATION
+      - POVERTY_IS_A_MOTION_IMPEDIMENT
+    examples:
+      - Families fell deeper into the abyss of poverty with every missed paycheck.
+      - For many in the region, poverty is a bottomless pit they can never climb out of.
+      - Medical debt pushed them to the edge of a financial abyss.
+    mappings:
+      - source_role: entity_in_abyss
+        target_role: impoverished_entity
+      - source_role: abyss
+        target_role: impoverished_state
+      - source_role: depth_of_abyss
+        target_role: degree_of_poverty
+  - name: POVERTY_IS_A_BURDEN
+    source_frame: burden
+    target_frame: poverty
+    families:
+      - Poverty as an individual problem
+      - Poverty
+    related:
+      - IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_PHYSICAL_BURDEN
+      - POVERTY_IS_A_MOTION_IMPEDIMENT
+    examples:
+      - The weight of poverty bore down on the entire household.
+      - Generations carried the burden of poverty on their shoulders.
+      - Poverty weighed heavily on every decision the family made.
+    mappings:
+      - source_role: burdened_entity
+        target_role: impoverished_entity
+      - source_role: burden
+        target_role: impoverished_state
+      - source_role: weight_of_burden
+        target_role: degree_of_poverty
+  - name: POVERTY_IS_A_PRISON
+    source_frame: confinement
+    target_frame: poverty
+    families:
+      - Poverty as an individual problem
+      - Poverty
+    related:
+      - IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_ENVIRONMENTAL_CONFINEMENT
+      - BEING_IMPOVERISHED_IS_BEING_IN_A_BOUNDED_REGION
+      - POVERTY_IS_A_MOTION_IMPEDIMENT
+    examples:
+      - Poverty locked her into a cycle she could not break free from.
+      - Generations of families have been imprisoned by inherited poverty.
+      - Without access to credit, he felt trapped behind the walls of poverty.
+    mappings:
+      - source_role: confined_entity
+        target_role: impoverished_entity
+      - source_role: area_of_confinement
+        target_role: impoverished_state
+      - source_role: bounds_of_confinement
+        target_role: cause_of_impoverished_state
+  - name: POVERTY_IS_A_MAZE
+    source_frame: maze
+    target_frame: poverty
+    families:
+      - Poverty as an individual problem
+      - Poverty
+    related:
+      - IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_CONFUSING_PATHS_TO_MOVING_OUT_OF_A_LOCATION
+      - POVERTY_IS_A_MOTION_IMPEDIMENT
+    examples:
+      - Navigating out of poverty felt like wandering through an endless maze.
+      - Every program meant to help only led her deeper into the maze of poverty.
+      - Families lost in the maze of poverty often cannot find a way out.
+    mappings:
+      - source_role: maze_traveler
+        target_role: impoverished_entity
+      - source_role: maze
+        target_role: cause_of_impoverished_state
+  - name: TAXATION_IS_A_MACHINE
+    source_frame: machine
+    target_frame: taxation
+    families:
+      - Taxation
+      - Ontological
+    examples:
+      - The tax system grinds on regardless of who is in the White House.
+      - Lobbyists know exactly which levers to pull to keep their loopholes running.
+      - Every April the machinery of withholding and refunds cranks back into motion.
+    related:
+      - TAXATION_IS_A_BURDEN
+      - BUREAUCRACY_IS_A_MACHINE
+    mappings:
+      - source_role: machine_entity
+        target_role: tax
+      - source_role: operator_of_machine
+        target_role: taxer
+      - source_role: machine_users
+        target_role: tax_payer
+  - name: TAXATION_IS_A_CAGE
+    source_frame: confinement
+    target_frame: taxation
+    families:
+      - Taxation
+    examples:
+      - High earners say the top bracket locks them into a cage they can't get out of.
+      - Small business owners feel boxed in by the tax code's endless rules.
+      - She finally felt free once the surtax that had trapped her business was repealed.
+    related:
+      - DECREASING_TAXATION_IS_LIBERATION_FROM_SLAVERY
+      - IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_ENVIRONMENTAL_CONFINEMENT
+    mappings:
+      - source_role: confined_entity
+        target_role: tax_payer
+      - source_role: bounds_of_confinement
+        target_role: tax
+  - name: TAXATION_IS_A_FIERCE_CREATURE
+    source_frame: fierce-animal
+    target_frame: taxation
+    families:
+      - Taxation
+    examples:
+      - The tax bite gets bigger every year, no matter how carefully you plan.
+      - Taxes devoured nearly a third of his bonus before he ever saw it.
+      - Retirees worry the estate tax will take one last bite out of what they leave behind.
+    related:
+      - POVERTY_IS_A_FIERCE_CREATURE
+      - TAXATION_IS_A_BURDEN
+    mappings:
+      - source_role: dangerous_animal
+        target_role: tax
+      - source_role: endangered_entity
+        target_role: tax_payer
+      - source_role: endangering_effect
+        target_role: tax_payment
+  - name: TAXES_ARE_A_BUILDING
+    source_frame: building
+    target_frame: taxation
+    families:
+      - Taxation
+    examples:
+      - The tax code is riddled with loopholes that let the wealthy slip through the cracks.
+      - Lawmakers keep promising to rebuild the tax system from the ground up.
+      - Tax brackets form the framework that decides who pays what.
+    related:
+      - TAXATION_IS_A_MACHINE
+      - GOVERNMENT_INSTITUTION_IS_A_BUILDING
+    mappings:
+      - source_role: building_whole
+        target_role: tax
+      - source_role: building_parts
+        target_role: tax_rate
+  - name: TAXES_ARE_A_PLANT
+    source_frame: plants
+    target_frame: taxation
+    families:
+      - Taxation
+    examples:
+      - Tax rates have grown steadily every year since the last reform.
+      - Once a new surtax takes root, it's almost impossible to get rid of.
+      - Reformers want to prune back decades of overgrown tax code.
+    related:
+      - POVERTY_IS_A_PLANT
+    mappings:
+      - source_role: plant_entity
+        target_role: tax
+      - source_role: plant_size
+        target_role: tax_rate
+  - name: DEMOCRACY_IS_A_BUILDING
+    source_frame: building
+    target_frame: democracy
+    families:
+      - Democracy
+    examples:
+      - Democracy must be built on solid foundations of trust in institutions.
+      - Years of unchecked corruption have cracked the foundations of their democracy.
+      - Ordinary citizens are the pillars that hold up a democratic system.
+    related:
+      - NATION_IS_A_BUILDING
+      - GOVERNMENT_INSTITUTION_IS_A_BUILDING
+      - DEMOCRACY_IS_A_PHYSICAL_ENTITY
+    mappings:
+      - source_role: building_whole
+        target_role: democracy
+      - source_role: building_inhabitants
+        target_role: governed
+      - source_role: builder
+        target_role: governor
+  - name: DEMOCRACY_IS_A_MACHINE
+    source_frame: machine
+    target_frame: democracy
+    families:
+      - Democracy
+      - Ontological
+    examples:
+      - Checks and balances keep the machinery of democracy running smoothly.
+      - Low voter turnout has gummed up the gears of the democratic process.
+      - A free press keeps the engine of democracy well-oiled.
+    related:
+      - GOVERNMENT_INSTITUTION_IS_A_MACHINE
+      - NATION_IS_A_MACHINE
+    mappings:
+      - source_role: machine_entity
+        target_role: democracy
+      - source_role: operator_of_machine
+        target_role: governor
+      - source_role: machine_users
+        target_role: governed
+  - name: DEMOCRACY_IS_A_BEACON
+    source_frame: light-source
+    target_frame: democracy
+    families:
+      - Democracy
+    examples:
+      - Their nation stood as a shining beacon of democracy for the rest of the region.
+      - When the beacon of democracy dims at home, it is harder to inspire it abroad.
+      - Exiled dissidents looked to the old capital as a beacon of democratic hope.
+    related:
+      - HOPE_IS_LIGHT
+      - DEMOCRACY_IS_A_PHYSICAL_ENTITY
+    mappings:
+      - source_role: light_source
+        target_role: democracy
+  - name: DEMOCRACY_IS_A_BODY
+    source_frame: body
+    target_frame: democracy
+    families:
+      - Democracy
+    examples:
+      - A healthy democracy needs every limb of civil society working together.
+      - Without an independent judiciary, the body of democracy loses its balance.
+      - The new president is meant to serve as the head of a democracy, not its master.
+    related:
+      - GOVERNMENT_INSTITUTION_IS_A_BODY
+      - DEMOCRACY_IS_A_BIRD
+    mappings:
+      - source_role: body_whole
+        target_role: democracy
+      - source_role: head
+        target_role: governor
+  - name: GOVERNMENT_IS_AN_ANIMAL
+    source_frame: animal
+    target_frame: government
+    families:
+      - Governance
+    examples:
+      - An unchecked government can turn into a wild animal that tramples its own citizens.
+      - The new charter was written to tame the government, not unleash it.
+      - Critics warned that the agency had become a beast no one could control.
+    related:
+      - GOVERNMENT_IS_A_LEECH
+      - PEOPLE_ARE_ANIMALS
+    mappings:
+      - source_role: animal
+        target_role: governor
+  - name: GUNS_ARE_PROTECTION
+    source_frame: protecting
+    target_frame: personal-weapon
+    families:
+      - Gun debate
+    examples:
+      - Advocates insist that guns protect us, not endanger us.
+      - She keeps a pistol by the bed because it lets her sleep without fear of intruders.
+      - Supporters argue a firearm in the house protects a family more than it threatens one.
+    related:
+      - CITIZEN_RIGHTS_ARE_SHIELDS_FROM_HARM
+      - GUN_RIGHTS_ARE_VALUABLE_POSSESSIONS
+    mappings:
+      - source_role: means_of_protection
+        target_role: weapon_whole
+      - source_role: protected_thing
+        target_role: weapon_user
+  - name: GUNS_ARE_MONSTERS
+    source_frame: fierce-animal
+    target_frame: injurious-gun-use
+    families:
+      - Gun debate
+      - Harm
+    examples:
+      - Once it is out of the safe, that gun becomes a monster no one can fully control.
+      - The rifle turned into a beast in his hands the moment it went off.
+      - An unsecured gun left around children is a monster waiting to strike.
+    related:
+      - CRIME_IS_AN_ANIMAL
+      - GUN_VIOLENCE_IS_PHYSICAL_HARM
+    mappings:
+      - source_role: dangerous_animal
+        target_role: gun
+      - source_role: endangering_action
+        target_role: firing_of_gun
+      - source_role: endangered_entity
+        target_role: injured_party
+      - source_role: endangering_effect
+        target_role: injurious_effect
+  - name: GUNS_ARE_ANIMALS
+    source_frame: animal
+    target_frame: personal-weapon
+    families:
+      - Gun debate
+    examples:
+      - An unsecured gun in the home is like a wild animal waiting to bite.
+      - He treats his rifle like a loyal dog that never leaves his side.
+      - A holstered pistol can seem tame until the moment it isn't.
+    related:
+      - GUNS_ARE_LIVING_ENTITIES
+      - GUNS_ARE_PESTS
+    mappings:
+      - source_role: animal
+        target_role: weapon_whole
+  - name: GUN_RIGHTS_ARE_SHIELDS_FROM_HARM
+    source_frame: protecting
+    target_frame: gun-rights
+    families:
+      - Gun debate
+      - Harm
+      - Rights
+    examples:
+      - Gun owners say their Second Amendment rights are the only thing standing between them and a violent intruder.
+      - For many rural families, the right to bear arms is a shield against crime when help is miles away.
+      - Advocates argue that an armed citizenry protects itself when the law cannot respond in time.
+    related:
+      - RIGHTS_ARE_SHIELDS_FROM_HARM
+      - CITIZEN_RIGHTS_ARE_SHIELDS_FROM_HARM
+    mappings:
+      - source_role: means_of_protection
+        target_role: right_to_own_guns
+      - source_role: protected_thing
+        target_role: gun_rights_owner
+  - name: GUN_RIGHTS_ARE_A_FOUNDATION
+    source_frame: physical-structure
+    target_frame: gun-rights
+    families:
+      - Gun debate
+      - Rights
+    examples:
+      - Gun-rights advocates call the Second Amendment the foundation on which every other freedom rests.
+      - Without the right to bear arms, they argue, the rest of the Bill of Rights has no bedrock to stand on.
+      - The right to keep and bear arms is treated as the cornerstone that holds up all of American liberty.
+    related:
+      - CITIZEN_RIGHTS_ARE_PHYSICAL_STRUCTURES
+      - GUN_OWNERSHIP_IS_A_FOUNDATION
+    mappings:
+      - source_role: foundation_of_structure
+        target_role: right_to_own_guns
+  - name: GUN_CONTROL_IS_A_MACHINE
+    source_frame: machine
+    target_frame: gun-control
+    families:
+      - Gun debate
+    examples:
+      - The federal background-check system grinds through millions of applications a year.
+      - Critics say the licensing process has become a rusty old machine that nobody can fix.
+      - Universal background checks are meant to be the engine that keeps guns out of the wrong hands.
+    related:
+      - BUREAUCRACY_IS_A_MACHINE
+      - ECONOMY_IS_A_MACHINE
+      - GUN_CONTROL_IS_A_PHYSICAL_STRUCTURE
+    mappings:
+      - source_role: machine_entity
+        target_role: controlling_entity
+  - name: GUN_CONTROL_IS_WAR
+    source_frame: war
+    target_frame: gun-control
+    families:
+      - Gun debate
+    examples:
+      - Lawmakers and gun-rights groups are dug in on opposite sides of another battle over background-check legislation.
+      - The push for stricter gun laws has become a pitched war between statehouses and gun owners.
+      - Neither side in the gun-control fight is willing to surrender an inch of ground.
+    related:
+      - ADDRESSING_GUN_VIOLENCE_IS_WAGING_WAR
+      - GUN_CONTROL_ADVOCACY_IS_PHYSICAL_HARM
+    mappings:
+      - source_role: side_1
+        target_role: controlling_entity
+      - source_role: side_2
+        target_role: affected_people
+  - name: GUN_CONTROL_IS_A_PHYSICAL_STRUCTURE
+    source_frame: physical-structure
+    target_frame: gun-control
+    families:
+      - Gun debate
+    examples:
+      - Lawmakers are laying the foundation for a new system of background checks.
+      - Critics say the whole gun-control apparatus rests on shaky legal ground.
+      - It took years of negotiation to build a workable framework for gun regulation.
+    related:
+      - GOVERNMENT_INSTITUTION_IS_A_PHYSICAL_STRUCTURE
+      - GUN_CONTROL_IS_A_MACHINE
+    mappings:
+      - source_role: structure_whole
+        target_role: controlling_entity
+  - name: GUN_CONTROL_IS_A_BURDEN
+    source_frame: burden
+    target_frame: gun-control
+    families:
+      - Gun debate
+    examples:
+      - Gun owners say the new paperwork requirements are an unfair weight to carry.
+      - Universal background checks would saddle law-abiding citizens with yet another burden.
+      - Some hunters feel crushed under the growing pile of state and federal gun regulations.
+    related:
+      - DECREASING_TAXATION_IS_RELIEF_FROM_BURDEN
+      - GUN_CONTROL_REGULATION_IS_PHYSICAL_HARM
+      - GUN_CONTROL_REGULATION_IS_A_MOTION_IMPEDIMENT
+    mappings:
+      - source_role: burden
+        target_role: controlling_entity
+      - source_role: burdened_entity
+        target_role: affected_people
+  - name: GUN_CONTROL_IS_A_COMPETITIVE_GAME
+    source_frame: game
+    target_frame: gun-control
+    families:
+      - Gun debate
+    examples:
+      - To many politicians, gun-control legislation has become a high-stakes game where scoring a win matters more than solving anything.
+      - Gun-rights and gun-control camps trade victories and defeats like two teams locked in overtime.
+      - Every ballot initiative on guns turns into a political contest with clear winners and losers.
+    related:
+      - CONSIDERING_THE_IMPORTANCE_OF_RIGHTS_IS_PLAYING_A_GAME
+      - GUN_CONTROL_IS_WAR
+    mappings:
+      - source_role: game_player_1
+        target_role: controlling_entity
+      - source_role: game_player_2
+        target_role: affected_people
+  - name: GUN_OWNERSHIP_IS_A_FOUNDATION
+    source_frame: physical-structure
+    target_frame: gun-ownership
+    families:
+      - Gun debate
+    examples:
+      - For many families, owning a firearm is the foundation of personal safety.
+      - Rural communities see gun ownership as a bedrock tradition passed from parent to child.
+      - To some, keeping a gun in the house is as foundational as locking the front door.
+    related:
+      - GUN_RIGHTS_ARE_A_FOUNDATION
+      - GUN_OWNERSHIP_IS_INSANITY
+    mappings:
+      - source_role: foundation_of_structure
+        target_role: ownership_level
+  - name: GUN_VIOLENCE_IS_A_DISEASE
+    source_frame: disease
+    target_frame: injurious-gun-use
+    families:
+      - Disease
+      - Gun debate
+      - Physical afflictions
+    examples:
+      - Gun violence has become an epidemic sweeping through American cities.
+      - Public-health researchers increasingly treat shootings as an outbreak requiring its own kind of intervention.
+      - The mayor called gun violence a contagion spreading from block to block.
+    related:
+      - GUN_VIOLENCE_IS_A_PHYSICAL_AFFLICTION
+      - SOCIAL_PROBLEMS_ARE_DISEASES
+      - GUNS_ARE_A_DISEASE
+    mappings:
+      - source_role: disease
+        target_role: injurious_effect
+      - source_role: patient
+        target_role: injured_party
+      - source_role: infection_process
+        target_role: amount_of_gun_violence
+  - name: GUN_VIOLENCE_IS_A_BURDEN
+    source_frame: burden
+    target_frame: injurious-gun-use
+    families:
+      - Gun debate
+    examples:
+      - Gun violence has become a crushing burden that entire communities are forced to carry.
+    related:
+      - GUN_VIOLENCE_IS_A_PHYSICAL_AFFLICTION
+      - GUN_VIOLENCE_IS_PHYSICAL_HARM
+    mappings:
+      - source_role: burdened_entity
+        target_role: injured_party
+      - source_role: burden
+        target_role: injurious_effect
+      - source_role: weight_of_burden
+        target_role: amount_of_gun_violence
+  - name: GUN_DEBATE_IS_A_GAME
+    source_frame: game
+    target_frame: gun-law-decision-making
+    families:
+      - Gun debate
+    examples:
+      - Both sides keep treating the gun control debate like a political game to be won rather than a crisis to be solved.
+    mappings:
+      - source_role: game_event
+        target_role: debate
+  - name: WEALTH_IS_A_BUILDING
+    source_frame: building
+    target_frame: wealth
+    families:
+      - Wealth
+    examples:
+      - He built his fortune brick by brick over three decades of hard work.
+    mappings:
+      - source_role: building_whole
+        target_role: wealth
+      - source_role: builder
+        target_role: wealthy_entity
+  - name: WEALTH_IS_A_BURDEN
+    source_frame: burden
+    target_frame: wealth
+    families:
+      - Wealth
+    examples:
+      - They discovered the hard way that a sudden fortune can be as much a burden as a blessing.
+      - Managing that much inherited money weighed on her more than she ever expected.
+    mappings:
+      - source_role: burdened_entity
+        target_role: wealthy_entity
+      - source_role: burden
+        target_role: wealth
+      - source_role: weight_of_burden
+        target_role: degree_of_wealth
+  - name: WEALTH_IS_A_CROP
+    source_frame: cultivation
+    target_frame: wealth
+    families:
+      - Wealth
+    examples:
+      - He spent decades sowing the seeds of his business before finally reaping a fortune.
+      - Her family has been quietly harvesting the profits of that investment for years.
+    mappings:
+      - source_role: cultivator
+        target_role: wealthy_entity
+      - source_role: cultivatee
+        target_role: wealth
+  - name: ELECTION_IS_THEFT
+    source_frame: theft
+    target_frame: election
+    families:
+      - Election
+    examples:
+      - Supporters insisted the election had been stolen from their candidate.
+      - He refused to concede, insisting the race had been rigged and the victory stolen.
+    related:
+      - TAXATION_IS_THEFT
+      - GOVERNMENTS_HARMFUL_TREATMENT_OF_RIGHTS_IS_THEFT
+    mappings:
+      - source_role: stolen_item
+        target_role: outcome
+      - source_role: thief
+        target_role: candidate_1
+      - source_role: victim
+        target_role: candidate_2
+  - name: ELECTIONS_ARE_A_STORY
+    source_frame: story
+    target_frame: election
+    families:
+      - Election
+    mappings:
+      - source_role: protagonist
+        target_role: candidate_1
+      - source_role: protagonist
+        target_role: candidate_2
+      - source_role: climax
+        target_role: voting_event
+      - source_role: resolution
+        target_role: outcome
+    examples:
+      - The final chapter of this election will be written on voting day, when we finally learn how the story ends.
+    related:
+      - ELECTIONS_ARE_COMPETITIVE_SPORTS_EVENTS
+      - ELECTION_IS_A_GAME
+      - ELECTION_IS_WAR
+      - ELECTION_IS_A_RACE
+  - name: BUREAUCRACY_IS_A_SWAMP
+    source_frame: environmental-restraints
+    target_frame: bureaucracy
+    families:
+      - Bureaucracy
+      - Governance
+    mappings:
+      - source_role: restraining_entity
+        target_role: functions
+      - source_role: mover
+        target_role: individuals_served
+    examples:
+      - Candidates have long promised to drain the swamp of federal bureaucracy.
+      - New hires quickly find themselves bogged down in the agency's swamp of paperwork.
+      - Small business owners felt mired in a permitting process with no solid ground in sight.
+    related:
+      - BUREAUCRACY_IS_A_MAZE
+      - BUREAUCRACY_IS_RED_TAPE
+      - IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_ENVIRONMENTAL_RESTRAINTS
+  - name: BUREAUCRACY_IS_RED_TAPE
+    source_frame: constructed-restraints
+    target_frame: bureaucracy
+    families:
+      - Bureaucracy
+      - Governance
+    mappings:
+      - source_role: restraining_entity
+        target_role: functions
+      - source_role: mover
+        target_role: individuals_served
+    examples:
+      - Entrepreneurs said they were tangled in red tape before they ever opened their doors.
+      - Months of red tape tied up the hospital's expansion plans.
+      - Cutting the red tape let the agency finally move the application forward.
+    related:
+      - BUREAUCRACY_IS_A_MAZE
+      - BUREAUCRACY_IS_A_SWAMP
+      - GUN_CONTROL_IS_PHYSICAL_RESTRAINT
+      - IMPEDIMENTS_TO_IMPROVING_ECONOMIC_STATUS_IS_CONSTRUCTED_RESTRAINTS
+  - name: BUREAUCRACY_IS_A_BURDEN
+    source_frame: burden
+    target_frame: bureaucracy
+    families:
+      - Bureaucracy
+      - Governance
+    mappings:
+      - source_role: burdened_entity
+        target_role: individuals_served
+      - source_role: burden
+        target_role: functions
+    examples:
+      - The mounting paperwork left small business owners feeling weighed down by the whole approval process.
+    related:
+      - BUREAUCRACY_IS_A_MAZE
+      - GOVERNMENT_REGULATION_IS_A_BURDEN
+      - TAXATION_IS_A_BURDEN
+      - RESPONSIBILITIES_ARE_BURDENS
+  - name: TAXPAYERS_ARE_LIVESTOCK
+    source_frame: animal
+    target_frame: taxation
+    families:
+      - Taxation
+    mappings:
+      - source_role: animal
+        target_role: tax_payer
+    examples:
+      - Critics accused the agency of fleecing taxpayers to plug its budget gap.
+      - He complained that the new fee was just another way to milk ordinary taxpayers.
+      - Small business owners joked that April is when they get sheared.
+    related:
+      - PEOPLE_ARE_ANIMALS
+      - BEING_TAXED_IS_CRIME
+      - TAXATION_IS_THEFT

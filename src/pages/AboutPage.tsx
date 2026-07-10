@@ -41,6 +41,55 @@ const CITATIONS = [
       </>
     ),
   },
+  {
+    text: (
+      <>
+        Grady, Joseph Edward. 1997. “Foundations of Meaning: Primary
+        Metaphors and Primary Scenes.” PhD diss., University of California,
+        Berkeley.
+      </>
+    ),
+  },
+  {
+    text: (
+      <>
+        Kövecses, Zoltán. 2010. <em>Metaphor: A Practical Introduction</em>.
+        2nd ed. New York: Oxford University Press.
+      </>
+    ),
+  },
+  {
+    text: (
+      <>
+        Anderson, Wendy, Ellen Bramwell, and Carole Hough, eds.{" "}
+        <em>Mapping Metaphor with the Historical Thesaurus</em>. University
+        of Glasgow.{" "}
+        <a
+          href="https://mappingmetaphor.arts.gla.ac.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-text"
+        >
+          mappingmetaphor.arts.gla.ac.uk
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    text: (
+      <>
+        Mohler, Michael, Mary Brunson, Bryan Rink, and Marc Tomlinson. 2016.
+        “Introducing the LCC Metaphor Datasets.” In{" "}
+        <em>
+          Proceedings of the Tenth International Conference on Language
+          Resources and Evaluation (LREC 2016)
+        </em>
+        , 4221–4227. Portorož, Slovenia: European Language Resources
+        Association.
+      </>
+    ),
+  },
 ];
 
 export function AboutPage() {
@@ -80,9 +129,12 @@ export function AboutPage() {
       <div className="mt-10">
         <p className="font-serif text-lg text-text">Citing this data</p>
         <p className="mt-2 text-sm text-text-muted">
-          This dataset derives from the MetaNet Metaphor Repository and the
-          Master Metaphor List. If you use this data, please cite the underlying
-          sources:
+          This dataset derives from the MetaNet Metaphor Repository, the
+          Master Metaphor List, Joseph Grady's inventory of primary
+          metaphors, Zoltán Kövecses' survey of common source/target
+          domains, the University of Glasgow's Mapping Metaphor project, and
+          the LCC/IARPA Metaphor Datasets. If you use this data, please cite
+          the underlying sources:
         </p>
         <ul className="mt-4 space-y-4">
           {CITATIONS.map((citation, i) => (

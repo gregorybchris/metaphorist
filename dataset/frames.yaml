@@ -11324,3 +11324,789 @@ frames:
       - dig.v up
       - recover.v
       - fetch.v
+  - name: color
+    roles:
+      - name: entity
+      - name: hue
+      - name: color_level
+    lexical_units:
+      - color.n
+      - colorful.a
+      - colored.a
+      - hue.n
+      - tint.n
+      - tinge.n
+      - shade.n
+      - dye.n
+      - tone.n
+      - paint.v
+  - name: stupidity
+    roles:
+      - name: entity
+      - name: stupidity_level
+    lexical_units:
+      - stupid.a
+      - dull.a
+      - dim.a
+      - slow.a
+      - thick.a
+      - dense.a
+  - name: truth
+    roles:
+      - name: statement
+      - name: truth_value
+    lexical_units:
+      - true.a
+      - false.a
+      - truthful.a
+      - lie.v
+      - exaggerate.v
+      - embellish.v
+      - candid.a
+  - name: inexperience
+    roles:
+      - name: entity
+      - name: inexperience_level
+    lexical_units:
+      - green.a
+      - greenhorn.n
+      - novice.n
+      - raw.a
+      - unseasoned.a
+      - callow.a
+  - name: jealousy
+    roles:
+      - name: jealousy_feeler
+      - name: degree_of_jealousy
+    lexical_units:
+      - jealous.a
+      - jealousy.n
+      - envious.a
+      - envy.n
+      - jaundiced.a
+  - name: sweetness
+    roles:
+      - name: entity
+      - name: sweetness_level
+    lexical_units:
+      - sweet.a
+      - sweetness.n
+      - sweetly.adv
+      - honeyed.a
+      - sugared.a
+      - sugary.a
+  - name: bitterness
+    roles:
+      - name: entity
+      - name: bitterness_level
+    lexical_units:
+      - bitter.a
+      - bitterness.n
+      - sour.a
+      - sourness.n
+      - acrimony.n
+      - embitter.v
+  - name: insipidness
+    roles:
+      - name: entity
+      - name: insipidness_level
+    lexical_units:
+      - insipid.a
+      - insipidity.n
+      - wearish.a
+  - name: chafing
+    roles:
+      - name: entity
+      - name: chafing_level
+    lexical_units:
+      - chafe.v
+      - chafing.n
+      - touchy.a
+  - name: flattery
+    roles:
+      - name: flatterer
+      - name: degree_of_flattery
+    lexical_units:
+      - flatter.v
+      - flattery.n
+      - sweet-talk.n
+  - name: licentiousness
+    roles:
+      - name: licentious_entity
+      - name: degree_of_licentiousness
+    lexical_units:
+      - licentious.a
+      - licentiousness.n
+      - indecent.a
+      - lewd.a
+  - name: deception
+    roles:
+      - name: deception
+      - name: embellishment
+    lexical_units:
+      - deceive.v
+      - deception.n
+      - lie.n
+      - falsehood.n
+      - fabrication.n
+      - embroider.v
+      - exaggerate.v
+      - dishonesty.n
+      - tissue of lies.n
+  - name: secrecy
+    roles:
+      - name: secret
+      - name: concealer
+      - name: excluded_party
+    lexical_units:
+      - secret.n
+      - secrecy.n
+      - conceal.v
+      - concealment.n
+      - hide.v
+      - hidden.a
+      - cover-up.n
+      - clandestine.a
+      - covert.a
+      - veil of secrecy.n
+      - cloak of secrecy.n
+  - name: clothing
+    roles:
+      - name: wearer
+      - name: garment
+    lexical_units:
+      - clothing.n
+      - clothes.n
+      - garment.n
+      - attire.n
+      - dress.n
+      - wear.v
+      - collar.n
+      - blue-collar.a
+      - white-collar.a
+      - pinstriped.a
+      - ragged.a
+      - tattered.a
+      - naked.a
+      - bare.a
+      - rags.n
+  - name: loud-sound
+    roles:
+      - name: entity
+      - name: loudness_level
+    lexical_units:
+      - loud.a
+      - loudness.n
+      - boom.v
+      - boom.n
+      - booming.a
+      - roar.v
+      - roar.n
+      - blare.v
+      - thunder.v
+      - bang.n
+      - rumble.v
+  - name: foolishness
+    roles:
+      - name: foolish_person
+    lexical_units:
+      - foolish.a
+      - fool.n
+      - foolishness.n
+      - silly.a
+      - stupid.a
+      - dim-witted.a
+  - name: plant-part
+    roles:
+      - name: root
+      - name: branch
+      - name: leaf
+      - name: stem
+    lexical_units:
+      - root.n
+      - branch.n
+      - leaf.n
+      - stem.n
+      - twig.n
+      - sprout.n
+      - offshoot.n
+      - sprig.n
+      - bough.n
+  - name: migration
+    roles:
+      - name: migrant
+      - name: origin_place
+      - name: destination_place
+    lexical_units:
+      - migrate.v
+      - migration.n
+      - immigrant.n
+      - immigrate.v
+      - transplant.v
+      - uproot.v
+      - colonize.v
+      - colonizer.n
+      - settle.v
+      - settler.n
+  - name: magnetism
+    roles:
+      - name: entity
+      - name: magnetism_level
+      - name: attracted_object
+    lexical_units:
+      - magnet.n
+      - magnetic.a
+      - magnetism.n
+      - lodestone.n
+      - loadstone.n
+      - attract.v
+      - attraction.n
+      - pull.n
+      - repel.v
+  - name: motivation
+    roles:
+      - name: motivation_feeler
+      - name: degree_of_motivation
+      - name: cause_of_motivation
+    lexical_units:
+      - motivate.v
+      - motivation.n
+      - persuade.v
+      - persuasion.n
+      - demotivate.v
+      - drawn.a
+  - name: gemstone
+    roles:
+      - name: entity
+      - name: luster_level
+    lexical_units:
+      - gem.n
+      - gemstone.n
+      - jewel.n
+      - beryl.n
+      - alabaster.n
+      - adamant.n
+      - lustre.n
+      - luster.n
+  - name: beauty
+    roles:
+      - name: beautiful_entity
+      - name: degree_of_beauty
+    lexical_units:
+      - beautiful.a
+      - beauty.n
+      - gorgeous.a
+      - stunning.a
+      - radiant.a
+  - name: vitriol
+    roles:
+      - name: vitriol
+      - name: corroded_object
+      - name: vitriol_level
+    lexical_units:
+      - vitriol.n
+      - vitriolic.a
+      - sulphureous.a
+      - sulfurous.a
+      - caustic.a
+      - corrosive.a
+  - name: esteem
+    roles:
+      - name: esteemed_entity
+      - name: degree_of_esteem
+    lexical_units:
+      - esteem.n
+      - esteemed.a
+      - reputation.n
+      - shine.v
+      - shining.a
+      - lustre.n
+      - luster.n
+      - radiant.a
+  - name: pecking-order
+    roles:
+      - name: flock
+      - name: dominant_bird
+      - name: subordinate_bird
+      - name: bird_rank
+    lexical_units:
+      - pecking order.n
+      - peck.v
+      - flock.n
+      - roost.n
+      - dominant.a
+  - name: courage
+    frame_families:
+      - Emotion
+    roles:
+      - name: courage_feeler
+    lexical_units:
+      - courage.n
+      - courageous.a
+      - brave.a
+      - bravery.n
+      - bold.a
+      - valiant.a
+      - valor.n
+      - lion-hearted.a
+  - name: cunning
+    frame_families:
+      - Emotion
+    roles:
+      - name: cunning_feeler
+    lexical_units:
+      - cunning.n
+      - cunning.a
+      - crafty.a
+      - sly.a
+      - wily.a
+      - foxy.a
+      - vulpine.a
+  - name: humility
+    frame_families:
+      - Emotion
+    roles:
+      - name: humility_feeler
+    lexical_units:
+      - humility.n
+      - humble.a
+      - meek.a
+      - fawning.a
+      - servile.a
+      - submissive.a
+  - name: softness
+    frame_families:
+      - Scale
+    roles:
+      - name: entity
+      - name: softness_level
+    lexical_units:
+      - soft.a
+      - softness.n
+      - nesh.a
+      - tender.a
+      - gentle.a
+      - lax.a
+  - name: deity
+    roles:
+      - name: deity
+    lexical_units:
+      - deity.n
+      - god.n
+      - goddess.n
+      - divine.a
+      - nymph.n
+  - name: depth
+    roles:
+      - name: depth
+    lexical_units:
+      - depth.n
+      - deep.a
+      - deeply.adv
+      - profound.a
+      - profoundly.adv
+  - name: role
+    roles:
+      - name: role
+      - name: role_holder
+    lexical_units:
+      - role.n
+      - function.n
+      - capacity.n
+      - substitute.n
+      - substitute.v
+      - place.n
+  - name: fluid
+    roles:
+      - name: fluid
+      - name: experiencer
+    lexical_units:
+      - immerse.v
+      - immersed.a
+      - plunge.v
+      - submerge.v
+      - submerged.a
+      - engulf.v
+      - swamp.v
+      - awash.a
+      - steep.v
+      - soak.v
+  - name: wakefulness
+    roles:
+      - name: entity
+      - name: wakefulness_level
+    lexical_units:
+      - awake.a
+      - asleep.a
+      - sleepy.a
+      - doze.v
+      - drowsy.a
+      - alert.a
+      - dormant.a
+      - slumber.v
+  - name: moisture
+    roles:
+      - name: moisture_level
+    lexical_units:
+      - wet.a
+      - dry.a
+      - damp.a
+      - moist.a
+      - moisture.n
+      - dryness.n
+      - dripping.a
+      - soggy.a
+      - arid.a
+  - name: correctness
+    roles:
+      - name: correct_entity
+      - name: correctness
+    lexical_units:
+      - correct.a
+      - incorrect.a
+      - right.a
+      - wrong.a
+      - accurate.a
+      - accuracy.n
+      - precise.a
+      - off.a
+  - name: itch
+    roles:
+      - name: experiencer
+      - name: itch_sensation
+      - name: itch_x_schema
+      - name: object_itched_for
+    lexical_units:
+      - itch.n
+      - itch.v
+      - itchy.a
+      - itching.a
+      - scratch.v
+  - name: physical-position
+    roles:
+      - name: position_holder
+      - name: position
+    lexical_units:
+      - position.n
+      - stance.n
+      - standpoint.n
+      - orientation.n
+      - ground.n
+      - footing.n
+  - name: storm
+    roles:
+      - name: storm
+      - name: storm_intensity
+    lexical_units:
+      - storm.n
+      - storm.v
+      - stormy.a
+      - rage.v
+      - raging.a
+      - tempest.n
+      - gale.n
+  - name: mirror
+    roles:
+      - name: mirror
+      - name: experiencer
+    lexical_units:
+      - mirror.n
+      - mirror.v
+      - reflect.v
+      - reflection.n
+      - reflect back.v
+      - smile back.v
+      - frown back.v
+  - name: day
+    frame_families:
+      - Scale
+    roles:
+      - name: entity
+      - name: time_of_day
+    lexical_units:
+      - dawn.n
+      - daybreak.n
+      - morning.n
+      - noon.n
+      - afternoon.n
+      - evening.n
+      - dusk.n
+      - twilight.n
+      - nightfall.n
+      - night.n
+  - name: reaper
+    roles:
+      - name: reaper
+    lexical_units:
+      - reaper.n
+      - harvester.n
+      - scythe.n
+      - sickle.n
+      - reap.v
+      - mow down.v
+      - cut down.v
+  - name: devourer
+    frame_families:
+      - Eating
+    roles:
+      - name: devourer
+    lexical_units:
+      - devourer.n
+      - devour.v
+      - consume.v
+      - gobble up.v
+      - eat away.v
+  - name: disability
+    frame_families:
+      - Perception
+    roles:
+      - name: disability
+      - name: patient
+    lexical_units:
+      - disabled.a
+      - disability.n
+      - blind.a
+      - deaf.a
+      - blindness.n
+      - deafness.n
+      - impaired.a
+      - handicapped.a
+  - name: story
+    roles:
+      - name: protagonist
+      - name: plot
+      - name: episodes
+      - name: climax
+      - name: resolution
+    lexical_units:
+      - story.n
+      - narrative.n
+      - tale.n
+      - plot.n
+      - biography.n
+      - chapter.n
+      - plot twist.n
+      - storyline.n
+      - cliffhanger.n
+      - climax.n
+      - protagonist.n
+      - antagonist.n
+      - subplot.n
+      - narrative arc.n
+      - twist.n
+      - underdog.n
+      - comeback.n
+      - saga.n
+      - resolution.n
+  - name: heaven
+    roles:
+      - name: occupant
+      - name: heaven
+    lexical_units:
+      - heaven.n
+      - paradise.n
+      - seventh heaven.n
+      - Eden.n
+      - Elysium.n
+      - nirvana.n
+  - name: captive-animal
+    roles:
+      - name: animal
+      - name: restrainer
+    lexical_units:
+      - cage.n
+      - cage.v
+      - captive.a
+      - captivity.n
+      - break loose.v
+      - get loose.v
+      - escape.v
+      - cooped up.a
+      - restrain.v
+      - contain.v
+      - unleash.v
+  - name: tolerance
+    roles:
+      - name: tolerance_feeler
+      - name: degree_of_tolerance
+    lexical_units:
+      - tolerant.a
+      - intolerant.a
+      - patience.n
+      - patient.a
+      - impatient.a
+      - long-suffering.a
+      - short-tempered.a
+      - thin-skinned.a
+  - name: physical-annoyance
+    roles:
+      - name: cause_of_annoyance
+      - name: annoyed_entity
+    lexical_units:
+      - annoy.v
+      - annoyance.n
+      - irritate.v
+      - irritation.n
+      - bother.v
+      - nuisance.n
+      - pest.n
+  - name: hand
+    roles:
+      - name: hand_owner
+    lexical_units:
+      - hand.n
+      - free hand.n
+      - hands are tied.v
+      - hands-free.a
+  - name: attention
+    roles:
+      - name: attender
+      - name: attended_entity
+    lexical_units:
+      - attention.n
+      - attend.v
+      - focus.n
+      - focus.v
+      - notice.v
+  - name: abortion
+    roles:
+      - name: abortion_stakeholders
+      - name: abortion_conflict
+    lexical_units:
+      - abortion.n
+      - pro-life.a
+      - pro-choice.a
+      - reproductive rights.n
+  - name: terrorism
+    roles:
+      - name: terrorist
+      - name: victim
+      - name: terrorist_activity
+      - name: terrorist_network
+    lexical_units:
+      - terrorism.n
+      - terrorist.n
+      - terror.n
+      - extremism.n
+      - insurgency.n
+      - radicalization.n
+      - cell.n
+  - name: immigration
+    roles:
+      - name: migrant
+      - name: migrant_flow
+      - name: destination_country
+      - name: origin_country
+      - name: path_to_citizenship
+      - name: strain_on_resources
+    lexical_units:
+      - immigration.n
+      - migration.n
+      - migrant.n
+      - immigrant.n
+      - refugee.n
+      - asylum seeker.n
+      - border.n
+      - deportation.n
+      - naturalization.n
+      - citizenship.n
+  - name: climate-change
+    roles:
+      - name: climate_change
+      - name: responders
+      - name: mitigation_actions
+      - name: climate_impact
+      - name: climate_system
+      - name: affected_party
+      - name: stakes
+      - name: rate_of_change
+    lexical_units:
+      - climate change.n
+      - global warming.n
+      - emissions.n
+      - carbon.n
+      - greenhouse gas.n
+      - climate crisis.n
+      - climate emergency.n
+      - warming.n
+      - carbon emissions.n
+  - name: drug-trafficking
+    roles:
+      - name: trafficking
+      - name: trafficker
+      - name: authorities
+      - name: affected_community
+    lexical_units:
+      - drug trafficking.n
+      - drug trade.n
+      - narcotics trafficking.n
+      - drug smuggling.n
+      - cartel.n
+      - traffic.v
+      - trafficker.n
+  - name: intellectual-property
+    roles:
+      - name: creation
+      - name: owner
+      - name: infringer
+    lexical_units:
+      - intellectual property.n
+      - IP.n
+      - patent.n
+      - copyright.n
+      - trademark.n
+      - trade secret.n
+      - infringe.v
+      - infringement.n
+  - name: abyss
+    roles:
+      - name: abyss
+      - name: entity_in_abyss
+      - name: depth_of_abyss
+    lexical_units:
+      - abyss.n
+      - bottomless.a
+      - chasm.n
+      - plunge.v
+      - plummet.v
+      - pit.n
+      - depths.n
+      - sink.v
+      - gulf.n
+      - void.n
+  - name: mental-illness
+    frame_families:
+      - Disease
+    roles:
+      - name: patient
+      - name: mental_illness
+      - name: severity
+    lexical_units:
+      - depression.n
+      - illness.n
+      - breakdown.n
+  - name: religion
+    frame_families:
+      - Social
+    roles:
+      - name: religion_whole
+      - name: adherents
+      - name: developmental_stages
+      - name: core_tenets
+      - name: course_of_faith
+    lexical_units:
+      - religion.n
+      - faith.n
+      - church.n
+  - name: addressing-public-health-crisis
+    roles:
+      - name: public_health_crisis
+      - name: affected_population
+      - name: responders
+      - name: response_actions
+    lexical_units:
+      - epidemic.n
+      - outbreak.n
+      - pandemic.n
+      - public health.n
+      - crisis.n

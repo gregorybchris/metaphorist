@@ -171,12 +171,14 @@ frame_families:
       - disease-spread
       - disease-treatment
       - health-treatment
+      - mental-illness
       - pest
       - physical-affliction
       - treating-a-physical-affliction
   - name: Eating
     members:
       - chewing
+      - devourer
       - eating
       - excess-body-weight
       - food
@@ -221,6 +223,8 @@ frame_families:
       - affection
       - anger
       - conceit
+      - courage
+      - cunning
       - disgust
       - emotion
       - emotional-intensity
@@ -228,6 +232,7 @@ frame_families:
       - greed
       - happiness
       - hope
+      - humility
       - lust
       - sadness
   - name: Endangerment
@@ -699,6 +704,7 @@ frame_families:
       - cause-to-see
       - darkness
       - directed-vision
+      - disability
       - hearing
       - lightness
       - perception
@@ -816,6 +822,7 @@ frame_families:
       - being-low-on-a-scale
       - cold
       - darkness
+      - day
       - emotional-intensity
       - firmness
       - functionality
@@ -831,6 +838,7 @@ frame_families:
       - quantity
       - scale
       - size
+      - softness
       - stability
       - temperature
       - verticality
@@ -841,6 +849,7 @@ frame_families:
       - community
       - family
       - nuclear-family
+      - religion
       - responsibility
       - social-group
       - social-obligation

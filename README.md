@@ -62,12 +62,16 @@ Four YAML files in `dataset/`:
 
 ### Sources
 
-This dataset derives from the MetaNet Metaphor Repository and the Master Metaphor List. If you use this data, please cite the underlying sources:
+This dataset derives from the MetaNet Metaphor Repository, the Master Metaphor List, Joseph Grady's inventory of primary metaphors, Zoltán Kövecses' survey of common source/target domains, the University of Glasgow's Mapping Metaphor project, and the LCC/IARPA Metaphor Datasets. If you use this data, please cite the underlying sources:
 
 - Lakoff, George, and Mark Johnson. 1980. _Metaphors We Live By_. Chicago: University of Chicago Press.
 - Dodge, Ellen, Jisup Hong, and Elise Stickles. 2015. "MetaNet: Deep semantic automatic metaphor analysis." In _Proceedings of the Third Workshop on Metaphor in NLP_, 40–49. Denver, Colorado: Association for Computational Linguistics.
 - Lakoff, George, Jane Espenson, and Alan Schwartz. 1991. _Master Metaphor List_, 2nd draft copy. Berkeley: Cognitive Linguistics Group, University of California, Berkeley.
 - David, Oana. 2017. "Computational approaches to metaphor: The case of MetaNet." In _The Cambridge Handbook of Cognitive Linguistics_, edited by Barbara Dancygier, 574–589. Cambridge: Cambridge University Press.
+- Grady, Joseph Edward. 1997. "Foundations of Meaning: Primary Metaphors and Primary Scenes." PhD diss., University of California, Berkeley.
+- Kövecses, Zoltán. 2010. _Metaphor: A Practical Introduction_. 2nd ed. New York: Oxford University Press.
+- Anderson, Wendy, Ellen Bramwell, and Carole Hough, eds. _Mapping Metaphor with the Historical Thesaurus_. University of Glasgow. https://mappingmetaphor.arts.gla.ac.uk/
+- Mohler, Michael, Mary Brunson, Bryan Rink, and Marc Tomlinson. 2016. "Introducing the LCC Metaphor Datasets." In _Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)_, 4221–4227. Portorož, Slovenia: European Language Resources Association.
 
 ## Running the app
 
