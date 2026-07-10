@@ -1623,8 +1623,8 @@ frames:
       - Causation
     roles:
       - name: cause
-      - name: entity1
-      - name: entity2
+      - name: entity_1
+      - name: entity_2
     lexical_units:
       - apply.v
       - touch.v
@@ -2133,8 +2133,8 @@ frames:
       - Physical combat
     roles:
       - name: competition_outcome
-      - name: competition_competitor1
-      - name: competition_competitor2
+      - name: competition_competitor_1
+      - name: competition_competitor_2
       - name: competition_x_schema
     lexical_units:
       - adversary.n
@@ -2169,8 +2169,8 @@ frames:
     frame_families:
       - Competition
     roles:
-      - name: competitor1
-      - name: competitor2
+      - name: competitor_1
+      - name: competitor_2
       - name: competitors
       - name: outcome
       - name: prize
@@ -2461,7 +2461,7 @@ frames:
     frame_families:
       - Spatial relations
     roles:
-      - name: entity1
+      - name: entity_1
     lexical_units:
       - brush.v
       - contact.n
@@ -3472,8 +3472,8 @@ frames:
       - Competition
     roles:
       - name: economic_prize
-      - name: economic_competitor1
-      - name: economic_competitor2
+      - name: economic_competitor_1
+      - name: economic_competitor_2
       - name: economic_outcome
     related:
       - competition
@@ -3623,8 +3623,8 @@ frames:
       - Election
       - Governance
     roles:
-      - name: candidate1
-      - name: candidate2
+      - name: candidate_1
+      - name: candidate_2
       - name: office
       - name: outcome
       - name: voting_event
@@ -4666,8 +4666,8 @@ frames:
       - Competition
     roles:
       - name: game_event
-      - name: game_player1
-      - name: game_player2
+      - name: game_player_1
+      - name: game_player_2
       - name: outcome
       - name: playing_x_schema
       - name: prize
@@ -5765,8 +5765,8 @@ frames:
       - Governance
     roles:
       - name: international_relationship
-      - name: nation1
-      - name: nation2
+      - name: nation_1
+      - name: nation_2
       - name: relationship_intensity
     lexical_units:
       - relations.n
@@ -7146,8 +7146,8 @@ frames:
       - bad.a
   - name: neighbor
     roles:
-      - name: neighbor1
-      - name: neighbor2
+      - name: neighbor_1
+      - name: neighbor_2
       - name: neighbor_relation
     lexical_units:
       - neighbor.n
@@ -7527,8 +7527,8 @@ frames:
       - bundle.n
   - name: partnership
     roles:
-      - name: partner1
-      - name: partner2
+      - name: partner_1
+      - name: partner_2
       - name: partnership_relation
     lexical_units:
       - partner.n
@@ -7804,8 +7804,8 @@ frames:
       - Physical combat
       - Physical conflict
     roles:
-      - name: fighter1
-      - name: fighter2
+      - name: fighter_1
+      - name: fighter_2
       - name: outcome
       - name: physical_interaction_x_schema
     lexical_units:
@@ -7851,8 +7851,8 @@ frames:
       - Physical combat
       - Physical conflict
     roles:
-      - name: competitor1
-      - name: competitor2
+      - name: competitor_1
+      - name: competitor_2
       - name: outcome
     related:
       - competition
@@ -8713,8 +8713,8 @@ frames:
       - name: prize
       - name: race_event
       - name: race_x_schema
-      - name: racer1
-      - name: racer2
+      - name: racer_1
+      - name: racer_2
       - name: racers
       - name: starting_position
     lexical_units:
@@ -11244,8 +11244,8 @@ frames:
       - see-through.a
   - name: quarrel
     roles:
-      - name: quarreler1
-      - name: quarreler2
+      - name: quarreler_1
+      - name: quarreler_2
       - name: quarrel_relation
     lexical_units:
       - quarrel.n

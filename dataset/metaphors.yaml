@@ -481,9 +481,9 @@ metaphors:
       - Poverty as a social problem
       - Poverty
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: problem_solvers
-      - source_role: fighter2
+      - source_role: fighter_2
         target_role: poverty
       - source_role: physical_interaction_x_schema
         target_role: problem_solving_actions
@@ -583,7 +583,7 @@ metaphors:
     families:
       - Advocacy
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: advocate
     examples:
       - She has fought tirelessly for stricter safety standards.
@@ -1186,9 +1186,9 @@ metaphors:
       - He attacked every weak point in my argument.
       - I blew her argument out of the water.
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: arguers
-      - source_role: fighter2
+      - source_role: fighter_2
         target_role: arguers
       - source_role: physical_interaction_x_schema
         target_role: arguing_event
@@ -1783,7 +1783,7 @@ metaphors:
       - source_role: romantic_relationship_participants
         target_role: believer
     examples:
-      - He is wedded to a belief in his own infallability.
+      - He is wedded to a belief in his own infallibility.
       - That's a seductive belief.
       - She has totally divorced herself from that belief.
   - name: BELIEFS_ARE_POSSESSIONS
@@ -1996,10 +1996,10 @@ metaphors:
       - The two retailers have been neck and neck for years.
       - The startup came from behind to win over half the market.
     mappings:
-      - source_role: competitor1
-        target_role: economic_competitor1
-      - source_role: competitor2
-        target_role: economic_competitor2
+      - source_role: competitor_1
+        target_role: economic_competitor_1
+      - source_role: competitor_2
+        target_role: economic_competitor_2
       - source_role: prize
         target_role: economic_prize
       - source_role: outcome
@@ -2030,7 +2030,7 @@ metaphors:
     related:
       - CANCER_PATIENT_IS_PHYSICAL_COMBATANT
     mappings:
-      - source_role: fighter2
+      - source_role: fighter_2
         target_role: cancer
   - name: CANCER_PATIENT_IS_PHYSICAL_COMBATANT
     source_frame: physical-combat
@@ -2042,7 +2042,7 @@ metaphors:
       - He came out swinging after every round of chemo.
       - Her family called her a warrior throughout the treatment.
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: cancer_patient
   - name: CANCER_TREATMENT_IS_GAMBLING
     source_frame: gambling
@@ -2613,9 +2613,9 @@ metaphors:
       - Officials asked citizens to team up with them on the recycling plan.
       - The mayor called on the community to join the effort as equal partners.
     mappings:
-      - source_role: partner1
+      - source_role: partner_1
         target_role: governed
-      - source_role: partner2
+      - source_role: partner_2
         target_role: governor
     source_frame: partnership
     target_frame: government
@@ -2727,9 +2727,9 @@ metaphors:
       - Workers and management have been locked in a bitter fight.
       - The strike was just the latest battle in a long class struggle.
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: person_in_social_class
-      - source_role: fighter2
+      - source_role: fighter_2
         target_role: person_in_social_class
   - name: COGNIZING_IS_BODILY_FUNCTIONING
     source_frame: cognizing
@@ -3012,14 +3012,14 @@ metaphors:
       - DIFFERENCES_IN_SUCCESS_ARE_DISTANCES_BETWEEN_LOCATIONS
       - DISPARITY_IS_CHANGE
       - EVALUATIVE_COMPARISON_OF_A_AND_B_IN_A_STATIC_SITUATION_IS_DETERMINED_BY_THE_VERTICAL_DISTANCE_BETWEEN_A_AND_B
-  - name: COMPETITION_IS_1_ON_1_PHYSICAL_AGGRESSION
+  - name: COMPETITION_IS_ONE_ON_ONE_PHYSICAL_AGGRESSION
     source_frame: physical-combat
     target_frame: competition
     mappings:
-      - source_role: fighter1
-        target_role: competition_competitor1
-      - source_role: fighter2
-        target_role: competition_competitor2
+      - source_role: fighter_1
+        target_role: competition_competitor_1
+      - source_role: fighter_2
+        target_role: competition_competitor_2
       - source_role: outcome
         target_role: competition_outcome
       - source_role: physical_interaction_x_schema
@@ -3044,10 +3044,10 @@ metaphors:
       - He's finally pulling ahead of the competition.
       - She's widening her lead with every new product launch.
     mappings:
-      - source_role: racer1
-        target_role: competition_competitor1
-      - source_role: racer2
-        target_role: competition_competitor2
+      - source_role: racer_1
+        target_role: competition_competitor_1
+      - source_role: racer_2
+        target_role: competition_competitor_2
       - source_role: outcome
         target_role: competition_outcome
       - source_role: race_x_schema
@@ -3057,9 +3057,9 @@ metaphors:
     target_frame: competition
     mappings:
       - source_role: side_1
-        target_role: competition_competitor1
+        target_role: competition_competitor_1
       - source_role: side_2
-        target_role: competition_competitor2
+        target_role: competition_competitor_2
       - source_role: victory
         target_role: competition_outcome
       - source_role: fighting
@@ -3070,7 +3070,7 @@ metaphors:
       - We took over the ball deep in their territory.
       - They battled each other over the chess board every week.
     related:
-      - COMPETITION_IS_1_ON_1_PHYSICAL_AGGRESSION
+      - COMPETITION_IS_ONE_ON_ONE_PHYSICAL_AGGRESSION
       - COMPETITION_IS_A_RACE
   - name: COMPLEX_IDEAS_ARE_SENTENCES
     source_frame: sentence
@@ -3084,7 +3084,7 @@ metaphors:
     mappings:
       - source_role: sentence_meaning
         target_role: idea_self
-  - name: COMPLIENCE_IS_FOLLOWING
+  - name: COMPLIANCE_IS_FOLLOWING
     source_frame: pursue
     target_frame: compliance
     mappings:
@@ -3095,7 +3095,7 @@ metaphors:
     examples:
       - He went along with what he was told to do.
       - She followed her orders.
-  - name: COMPLIENCE_IS_TIGHTNESS
+  - name: COMPLIANCE_IS_TIGHTNESS
     source_frame: tight-fit
     target_frame: compliance
     mappings:
@@ -3421,10 +3421,10 @@ metaphors:
       - It's time the rivals started acting like good neighbors.
       - They've mended fences and are neighborly again after years of tension.
     mappings:
-      - source_role: neighbor1
-        target_role: nation1
-      - source_role: neighbor2
-        target_role: nation2
+      - source_role: neighbor_1
+        target_role: nation_1
+      - source_role: neighbor_2
+        target_role: nation_2
       - source_role: neighbor_relation
         target_role: international_relationship
     source_frame: neighbor
@@ -3773,7 +3773,7 @@ metaphors:
       - The curriculum doesn't leave much room to wander off course.
     related:
       - INSTRUCTION_IS_A_GUIDED_JOURNEY
-  - name: CURRICULUM_IS_BOUNDED_REGION
+  - name: CURRICULUM_IS_A_BOUNDED_REGION
     source_frame: bounded-region
     target_frame: curriculum
     families:
@@ -3837,9 +3837,9 @@ metaphors:
       - She landed a solid blow with that rebuttal.
       - The two traded jabs for a full hour without a clear winner.
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: debater_1
-      - source_role: fighter2
+      - source_role: fighter_2
         target_role: debater_2
       - source_role: outcome
         target_role: outcome
@@ -3985,9 +3985,9 @@ metaphors:
       - Democracy only works when both sides hold up their end of the deal.
       - Every voter is a stakeholder in the country's future.
     mappings:
-      - source_role: partner1
+      - source_role: partner_1
         target_role: governed
-      - source_role: partner2
+      - source_role: partner_2
         target_role: governor
       - source_role: partnership_relation
         target_role: democracy
@@ -4137,7 +4137,7 @@ metaphors:
         target_role: desire_x_schema
     examples:
       - They were drawn to each other.
-      - She found the brussel sprouts repulsive.
+      - She found the Brussels sprouts repulsive.
       - He has a lot of animal magnetism.
     related:
       - DESIRE_IS_HUNGER
@@ -4251,9 +4251,9 @@ metaphors:
       - Conservatives and progressives are constantly squaring off.
       - Their worldviews are locked in a fight neither side wants to end.
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: ideology
-      - source_role: fighter2
+      - source_role: fighter_2
         target_role: competing_ideology
   - name: DIFFICULTIES_ARE_CONTAINERS
     source_frame: containment
@@ -4422,9 +4422,9 @@ metaphors:
     families:
       - Education
     mappings:
-      - source_role: competition_competitor1
+      - source_role: competition_competitor_1
         target_role: curriculum_learner
-      - source_role: competition_competitor2
+      - source_role: competition_competitor_2
         target_role: curriculum_subject
     examples:
       - Math 250 was a killer course.
@@ -4782,7 +4782,7 @@ metaphors:
       - Schools in poorer districts are running out of resources to teach with.
     related:
       - EDUCATION_IS_AN_OBJECT
-  - name: EDUCATION_IS_COMPONENT_OF_BUILDING
+  - name: EDUCATION_IS_A_COMPONENT_OF_A_BUILDING
     source_frame: component-of-building
     target_frame: education
     families:
@@ -4912,7 +4912,7 @@ metaphors:
     mappings:
       - source_role: cause
         target_role: cause_of_emotion
-      - source_role: entity1
+      - source_role: entity_1
         target_role: experiencer
     examples:
       - I was touched by her kindness.
@@ -4941,10 +4941,10 @@ metaphors:
       - Election
       - Governance
     mappings:
-      - source_role: competitor1
-        target_role: candidate1
-      - source_role: competitor2
-        target_role: candidate2
+      - source_role: competitor_1
+        target_role: candidate_1
+      - source_role: competitor_2
+        target_role: candidate_2
       - source_role: prize
         target_role: office
       - source_role: outcome
@@ -4967,10 +4967,10 @@ metaphors:
     related:
       - ELECTIONS_ARE_COMPETITIVE_SPORTS_EVENTS
     mappings:
-      - source_role: competitor1
-        target_role: candidate1
-      - source_role: competitor2
-        target_role: candidate2
+      - source_role: competitor_1
+        target_role: candidate_1
+      - source_role: competitor_2
+        target_role: candidate_2
       - source_role: outcome
         target_role: outcome
   - name: ELECTION_IS_A_GAME
@@ -4979,10 +4979,10 @@ metaphors:
     families:
       - Election
     mappings:
-      - source_role: game_player1
-        target_role: candidate1
-      - source_role: game_player2
-        target_role: candidate2
+      - source_role: game_player_1
+        target_role: candidate_1
+      - source_role: game_player_2
+        target_role: candidate_2
       - source_role: outcome
         target_role: outcome
       - source_role: game_event
@@ -4999,10 +4999,10 @@ metaphors:
     families:
       - Election
     mappings:
-      - source_role: racer1
-        target_role: candidate1
-      - source_role: racer2
-        target_role: candidate2
+      - source_role: racer_1
+        target_role: candidate_1
+      - source_role: racer_2
+        target_role: candidate_2
       - source_role: outcome
         target_role: outcome
       - source_role: race_event
@@ -5022,9 +5022,9 @@ metaphors:
       - Election
     mappings:
       - source_role: side_1
-        target_role: candidate1
+        target_role: candidate_1
       - source_role: side_2
-        target_role: candidate2
+        target_role: candidate_2
     examples:
       - The fight for the White House is being waged in every local precinct.
       - Both sides girded for battle, knowing the general election would be hard-won.
@@ -5133,7 +5133,7 @@ metaphors:
       - Emotion
       - Primary
     mappings:
-      - source_role: entity1
+      - source_role: entity_1
         target_role: stability_entity
     examples:
       - She has her feet on the ground.
@@ -5412,9 +5412,9 @@ metaphors:
       - She's racing to keep her GPA ahead of the curve.
       - Only the highest scorers make it to the next round of scholarships.
     mappings:
-      - source_role: competition_competitor1
+      - source_role: competition_competitor_1
         target_role: evaluee
-      - source_role: competition_competitor2
+      - source_role: competition_competitor_2
         target_role: standard
       - source_role: competition_outcome
         target_role: evaluation
@@ -6198,9 +6198,9 @@ metaphors:
     source_frame: competition
     target_frame: intimacy
     mappings:
-      - source_role: competition_competitor1
+      - source_role: competition_competitor_1
         target_role: intimacy_feeler
-      - source_role: competition_competitor2
+      - source_role: competition_competitor_2
         target_role: target_of_intimacy
     examples:
       - He couldn't get to first base with her.
@@ -6515,9 +6515,9 @@ metaphors:
       - We're all stakeholders in getting this policy right.
       - The mayor called on citizens to team up with city hall on the recycling program.
     mappings:
-      - source_role: partner1
+      - source_role: partner_1
         target_role: governed
-      - source_role: partner2
+      - source_role: partner_2
         target_role: governor
     source_frame: partnership
     target_frame: government
@@ -6624,7 +6624,7 @@ metaphors:
         target_role: governor
       - source_role: scalar_position
         target_role: governing_powers
-  - name: GOVERNMENT_CONTROL_OF_GOVERNED_IS_PHYSICAL_CONTROL_OF_ANIMAL
+  - name: GOVERNMENT_CONTROL_OF_GOVERNED_IS_PHYSICAL_CONTROL_OF_AN_ANIMAL
     families:
       - Governance
     examples:
@@ -7010,7 +7010,7 @@ metaphors:
     related:
       - GOVERNMENT_IS_A_PERSON
       - POLITICAL_REGION_IS_A_VEHICLE
-      - STATE_OF_NATION_IS_LOCATION_ALONG_PATH
+      - STATE_OF_NATION_IS_LOCATION_ALONG_A_PATH
   - name: GOVERNMENT_IS_A_LEADER
     source_frame: leadership
     target_frame: government
@@ -7179,7 +7179,7 @@ metaphors:
         target_role: governor_objectives
       - source_role: workplace
         target_role: jurisdiction_region
-  - name: GOVERNMENT_IS_REFEREE
+  - name: GOVERNMENT_IS_A_REFEREE
     source_frame: game
     target_frame: government
     families:
@@ -7194,9 +7194,9 @@ metaphors:
     mappings:
       - source_role: referee
         target_role: governor
-      - source_role: game_player1
+      - source_role: game_player_1
         target_role: governed
-      - source_role: game_player2
+      - source_role: game_player_2
         target_role: governed
       - source_role: playing_x_schema
         target_role: governing_actions
@@ -7375,9 +7375,9 @@ metaphors:
       - Old allies still think of each other as kin.
     mappings:
       - source_role: family_members
-        target_role: nation1
+        target_role: nation_1
       - source_role: family_members
-        target_role: nation2
+        target_role: nation_2
       - source_role: family_member_relations
         target_role: international_relationship
     source_frame: family
@@ -8932,9 +8932,9 @@ metaphors:
       - Germany leads the way among its neighbors on renewable energy.
     mappings:
       - source_role: leader
-        target_role: nation1
+        target_role: nation_1
       - source_role: follower
-        target_role: nation2
+        target_role: nation_2
     source_frame: guided-motion
     target_frame: international-relations
   - name: INFORMATION_IS_CONTENTS
@@ -9083,7 +9083,7 @@ metaphors:
       - This agency is an assembly line for processing claims.
       - The training program cranks out new hires every few weeks.
     related:
-      - ORGANIZATION_IS_PHYSICAL_STRUCTURE
+      - ORGANIZATION_IS_A_PHYSICAL_STRUCTURE
   - name: INSTITUTION_IS_A_MACHINE
     source_frame: machine
     target_frame: institution
@@ -9161,7 +9161,7 @@ metaphors:
     mappings:
       - source_role: distance
         target_role: amount
-  - name: INTELLIGENCE_IDEA_IS_A_CUTTING_INSTRUMENT
+  - name: INTELLIGENCE_IS_A_CUTTING_INSTRUMENT
     source_frame: cut
     target_frame: idea
     mappings:
@@ -9256,10 +9256,10 @@ metaphors:
       - Trade talks broke down after another squabble over tariffs.
       - The countries have been bickering over fishing rights for years.
     mappings:
-      - source_role: quarreler1
-        target_role: nation1
-      - source_role: quarreler2
-        target_role: nation2
+      - source_role: quarreler_1
+        target_role: nation_1
+      - source_role: quarreler_2
+        target_role: nation_2
       - source_role: quarrel_relation
         target_role: international_relationship
     source_frame: quarrel
@@ -9271,9 +9271,9 @@ metaphors:
       - Governance
     mappings:
       - source_role: related_entity_1
-        target_role: nation1
+        target_role: nation_1
       - source_role: related_entity_2
-        target_role: nation2
+        target_role: nation_2
       - source_role: relationship_whole
         target_role: international_relationship
     examples:
@@ -10146,10 +10146,10 @@ metaphors:
     related:
       - ELECTION_IS_A_BOXING_MATCH
     mappings:
-      - source_role: competitor1
-        target_role: candidate1
-      - source_role: competitor2
-        target_role: candidate2
+      - source_role: competitor_1
+        target_role: candidate_1
+      - source_role: competitor_2
+        target_role: candidate_2
       - source_role: outcome
         target_role: outcome
   - name: LOSING_AN_ELECTION_IS_LOSING_A_RACE
@@ -10165,10 +10165,10 @@ metaphors:
     related:
       - ELECTION_IS_A_RACE
     mappings:
-      - source_role: racer1
-        target_role: candidate1
-      - source_role: racer2
-        target_role: candidate2
+      - source_role: racer_1
+        target_role: candidate_1
+      - source_role: racer_2
+        target_role: candidate_2
       - source_role: outcome
         target_role: outcome
   - name: LOSING_AN_ELECTION_IS_LOSING_A_WAR
@@ -10185,9 +10185,9 @@ metaphors:
       - ELECTION_IS_WAR
     mappings:
       - source_role: side_1
-        target_role: candidate1
+        target_role: candidate_1
       - source_role: side_2
-        target_role: candidate2
+        target_role: candidate_2
       - source_role: victory
         target_role: outcome
   - name: LOVED_ONE_IS_A_POSSESSION
@@ -10472,9 +10472,9 @@ metaphors:
       - RELATEDNESS_IS_PROXIMITY
       - RELATIONSHIPS_ARE_COMPLEX_STRUCTURES
     mappings:
-      - source_role: entity1
+      - source_role: entity_1
         target_role: related_entity_1
-      - source_role: entity2
+      - source_role: entity_2
         target_role: related_entity_2
       - source_role: cause
         target_role: relation_basis
@@ -11258,9 +11258,9 @@ metaphors:
       - Both sides are playing hardball over the budget negotiations.
       - The vote came down to the final play before the deadline.
     mappings:
-      - source_role: competitor1
+      - source_role: competitor_1
         target_role: political_actors
-      - source_role: competitor2
+      - source_role: competitor_2
         target_role: political_actors
     source_frame: competitive-sport
     target_frame: politics
@@ -11483,8 +11483,8 @@ metaphors:
       - Old policies kept braking the nation's progress.
     related:
       - NATION_IS_A_COMPLEX_STRUCTURE
-      - STATE_OF_NATION_IS_LOCATION_ALONG_PATH
-  - name: NATION_IS_CONTAINER
+      - STATE_OF_NATION_IS_LOCATION_ALONG_A_PATH
+  - name: NATION_IS_A_CONTAINER
     source_frame: resource-container
     target_frame: nation
     families:
@@ -11541,10 +11541,10 @@ metaphors:
       - The two nations are neighbors, separated only by a shared border.
       - Border disputes have strained relations with the neighboring country.
     mappings:
-      - source_role: neighbor1
-        target_role: nation1
-      - source_role: neighbor2
-        target_role: nation2
+      - source_role: neighbor_1
+        target_role: nation_1
+      - source_role: neighbor_2
+        target_role: nation_2
       - source_role: neighbor_relation
         target_role: international_relationship
     source_frame: neighbor
@@ -11596,7 +11596,7 @@ metaphors:
       - Poverty has crippled entire communities for generations.
       - Unemployment wounded the local economy badly.
       - Debt strangled the family's finances for years.
-  - name: NEGATIVELY_EVALUATED_GOVERNMENT_ACTIVITY_IS_DIRTY_OBJECT
+  - name: NEGATIVELY_EVALUATED_GOVERNMENT_ACTIVITY_IS_A_DIRTY_OBJECT
     families:
       - Governance
     examples:
@@ -11608,7 +11608,7 @@ metaphors:
         target_role: governing_actions
     source_frame: impurity
     target_frame: government
-  - name: NEGATIVELY_EVALUATED_GOVERNMENT_ACTIVITY_IS_DISGUSTING_OBJECT
+  - name: NEGATIVELY_EVALUATED_GOVERNMENT_ACTIVITY_IS_A_DISGUSTING_OBJECT
     families:
       - Governance
     examples:
@@ -11867,8 +11867,8 @@ metaphors:
       - New management got the whole department running like a well-oiled machine.
       - Budget cuts have thrown a wrench into the agency's operations.
     related:
-      - ORGANIZATION_IS_PHYSICAL_STRUCTURE
-  - name: ORGANIZATION_IS_PHYSICAL_STRUCTURE
+      - ORGANIZATION_IS_A_PHYSICAL_STRUCTURE
+  - name: ORGANIZATION_IS_A_PHYSICAL_STRUCTURE
     source_frame: physical-structure
     target_frame: organization
     families:
@@ -12043,10 +12043,10 @@ metaphors:
     related:
       - ELECTION_IS_A_RACE
     mappings:
-      - source_role: racer1
-        target_role: candidate1
-      - source_role: racer2
-        target_role: candidate2
+      - source_role: racer_1
+        target_role: candidate_1
+      - source_role: racer_2
+        target_role: candidate_2
       - source_role: outcome
         target_role: outcome
       - source_role: race_event
@@ -12279,7 +12279,7 @@ metaphors:
         target_role: political_actors
     source_frame: performance
     target_frame: politics
-  - name: POSITIVELY_EVALUATED_GOVERNMENT_ACTIVITY_IS_CLEAN_OBJECT
+  - name: POSITIVELY_EVALUATED_GOVERNMENT_ACTIVITY_IS_A_CLEAN_OBJECT
     families:
       - Governance
     examples:
@@ -12488,7 +12488,7 @@ metaphors:
       - I need to put this on the back burner for a while.
     related:
       - IDEAS_ARE_FOOD
-  - name: PRESIDENT_IS_QUARTERBACK
+  - name: PRESIDENT_IS_A_QUARTERBACK
     families:
       - Governance
     examples:
@@ -12747,7 +12747,7 @@ metaphors:
       - Zoning law strips away some of the rights that come with owning land.
     related:
       - RIGHTS_ARE_POSSESSIONS
-  - name: PROVIDE_EDUCATIONAL_OPPORTUNITY_IS_PROVIDING_A_RESOURCE
+  - name: PROVIDING_EDUCATIONAL_OPPORTUNITY_IS_PROVIDING_A_RESOURCE
     source_frame: resource
     target_frame: educational-opportunities
     families:
@@ -12797,9 +12797,9 @@ metaphors:
     families:
       - Primary
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: self
-      - source_role: fighter2
+      - source_role: fighter_2
         target_role: opposing_impulse
     examples:
       - He's wrestling with his conscience over the decision.
@@ -13117,7 +13117,7 @@ metaphors:
       - Their marriage finally fell apart after years of strain.
       - Their partnership is held together by mutual respect.
     related:
-      - ORGANIZATION_IS_PHYSICAL_STRUCTURE
+      - ORGANIZATION_IS_A_PHYSICAL_STRUCTURE
       - RELATIONSHIPS_ARE_OBJECTS
   - name: RELATIONSHIPS_ARE_CONTAINERS
     source_frame: containing
@@ -13966,9 +13966,9 @@ metaphors:
     source_frame: physical-combat
     target_frame: recreational-competition
     mappings:
-      - source_role: fighter1
+      - source_role: fighter_1
         target_role: competitor_1
-      - source_role: fighter2
+      - source_role: fighter_2
         target_role: competitor_2
       - source_role: outcome
         target_role: outcome
@@ -14025,7 +14025,7 @@ metaphors:
     related:
       - CAUSES_ARE_FORCES
       - CONDITION_IS_SHAPE
-  - name: STATE_OF_NATION_IS_LOCATION_ALONG_PATH
+  - name: STATE_OF_NATION_IS_LOCATION_ALONG_A_PATH
     source_frame: bounded-region
     target_frame: nation
     families:
@@ -14121,7 +14121,7 @@ metaphors:
       - He is working in many areas.
       - This is a fertile area for research.
     related:
-      - CURRICULUM_IS_BOUNDED_REGION
+      - CURRICULUM_IS_A_BOUNDED_REGION
   - name: SUBJUGATION_IS_DOWN
     source_frame: verticality
     target_frame: control
@@ -14146,9 +14146,9 @@ metaphors:
       - Poorer nations are often told what to do like wards under guardianship.
     mappings:
       - source_role: child
-        target_role: nation1
+        target_role: nation_1
       - source_role: caregiver
-        target_role: nation2
+        target_role: nation_2
     source_frame: child
     target_frame: international-relations
   - name: SYMPATHY_IS_WARMTH
@@ -14408,7 +14408,7 @@ metaphors:
     families:
       - Mind
     mappings:
-      - source_role: competition_competitor1
+      - source_role: competition_competitor_1
         target_role: theoretical_domain
       - source_role: competition_x_schema
         target_role: theoretical_process
@@ -15304,10 +15304,10 @@ metaphors:
     related:
       - ELECTION_IS_A_BOXING_MATCH
     mappings:
-      - source_role: competitor1
-        target_role: candidate1
-      - source_role: competitor2
-        target_role: candidate2
+      - source_role: competitor_1
+        target_role: candidate_1
+      - source_role: competitor_2
+        target_role: candidate_2
       - source_role: outcome
         target_role: outcome
   - name: WINNING_AN_ELECTION_IS_WINNING_A_RACE
@@ -15323,10 +15323,10 @@ metaphors:
     related:
       - ELECTION_IS_A_RACE
     mappings:
-      - source_role: racer1
-        target_role: candidate1
-      - source_role: racer2
-        target_role: candidate2
+      - source_role: racer_1
+        target_role: candidate_1
+      - source_role: racer_2
+        target_role: candidate_2
       - source_role: outcome
         target_role: outcome
   - name: WINNING_AN_ELECTION_IS_WINNING_A_WAR
@@ -15343,9 +15343,9 @@ metaphors:
       - ELECTION_IS_WAR
     mappings:
       - source_role: side_1
-        target_role: candidate1
+        target_role: candidate_1
       - source_role: side_2
-        target_role: candidate2
+        target_role: candidate_2
       - source_role: victory
         target_role: outcome
   - name: WORDS_ARE_CONTAINERS
