@@ -7,13 +7,11 @@ import type { Metaphor } from "@/types";
 import {
   BatteryChargingIcon,
   BuildingIcon,
-  GlobeHemisphereWestIcon,
   BeerSteinIcon,
   FireIcon,
   BrainIcon,
   PersonSimpleRunIcon,
   PersonIcon,
-  ScalesIcon,
 } from "@phosphor-icons/react";
 import { KnifeIcon } from "@phosphor-icons/react/dist/ssr";
 
@@ -22,12 +20,10 @@ type IconName =
   | "knife"
   | "battery"
   | "building"
-  | "globe"
   | "brain"
   | "fire"
   | "run"
-  | "person"
-  | "scales";
+  | "person";
 
 /**
  * Hand-picked for maximum "wait, that's a metaphor?" effect — dead idioms
@@ -56,11 +52,6 @@ const SPOTLIGHT_METAPHORS = [
     leftIconName: "person",
     rightIconName: "building",
   },
-  {
-    name: "EMOTIONAL_STABILITY_IS_CONTACT_WITH_THE_GROUND",
-    leftIconName: "scales",
-    rightIconName: "globe",
-  },
 ];
 
 function mapIcon(iconName: IconName) {
@@ -73,10 +64,6 @@ function mapIcon(iconName: IconName) {
       return <BatteryChargingIcon size={20} weight="duotone" color="#777" />;
     case "building":
       return <BuildingIcon size={20} weight="duotone" color="#777" />;
-    case "globe":
-      return (
-        <GlobeHemisphereWestIcon size={20} weight="duotone" color="#777" />
-      );
     case "fire":
       return <FireIcon size={20} weight="duotone" color="#777" />;
     case "brain":
@@ -85,8 +72,6 @@ function mapIcon(iconName: IconName) {
       return <PersonSimpleRunIcon size={20} weight="duotone" color="#777" />;
     case "person":
       return <PersonIcon size={20} weight="duotone" color="#777" />;
-    case "scales":
-      return <ScalesIcon size={20} weight="duotone" color="#777" />;
   }
 }
 
