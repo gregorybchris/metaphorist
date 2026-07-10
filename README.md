@@ -1,10 +1,7 @@
 # Metaphorist
 
 Metaphorist is a browsable explorer for a curated, English-language dataset of
-conceptual metaphors, built on the MetaNet Metaphor Repository and the Master
-Metaphor List.
-
-The dataset formalizes Conceptual Metaphor Theory (Lakoff & Johnson): the idea
+conceptual metaphors. The dataset formalizes Conceptual Metaphor Theory (Lakoff & Johnson): the idea
 that we understand abstract concepts (theories, ideas, time, life) systematically
 in terms of more concrete ones (buildings, food, money, journeys), and that this
 shows up as everyday patterns in language.
