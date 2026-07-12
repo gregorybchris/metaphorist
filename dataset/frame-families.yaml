@@ -10,6 +10,7 @@ frame_families:
       - grasp
       - object-manipulation
       - operating-a-machine
+      - tending-to-plants
   - name: Action
     members:
       - ability-to-act
@@ -64,7 +65,7 @@ frame_families:
       - affected-motion
       - agentive-causation
       - causation
-      - cause-contact
+      - caused-contact
       - caused-change-of-state
       - harm
   - name: Change-related
@@ -74,6 +75,7 @@ frame_families:
       - possession-change
       - replacement
       - self-initiated-state-change
+      - restore-to-life
   - name: Cognition
     members:
       - access-to-knowledge
@@ -86,12 +88,13 @@ frame_families:
       - knowledge
       - learning
       - mind
-      - psychological-attributes
+      - psychological-conflict
       - reasoning
       - selection
       - theory
       - thinking-about
       - understanding
+      - virtual-motion
   - name: Communication
     members:
       - argument
@@ -114,6 +117,7 @@ frame_families:
       - race
       - recreational-competition
       - war
+      - card-game
   - name: Concealment and protection
     members:
       - access-to-an-object
@@ -260,7 +264,7 @@ frame_families:
       - entity
       - fierce-animal
       - geographic-feature
-      - large-geographic-features
+      - large-geographic-feature
       - liquid
       - machine
       - object
@@ -282,6 +286,7 @@ frame_families:
       - analysis
       - evaluation
       - visual-evaluation
+      - citizen-evaluation-of-government
   - name: Event structure
     members:
       - ability-to-act
@@ -473,7 +478,6 @@ frame_families:
       - environmental-restraints
       - fluid-containment
       - freedom-of-action
-      - grasp
       - impediment-to-motion
       - impeding-downward-motion
       - inability-to-access-a-location
@@ -531,8 +535,8 @@ frame_families:
     members:
       - machine
       - operating-a-machine
-      - textile
       - vehicle
+      - computer
   - name: Magic
     members:
       - magic
@@ -600,7 +604,6 @@ frame_families:
       - motion-impediments
       - portals
       - restraints
-      - trespassing
       - water-confinement
   - name: Motion-affecting
     members:
@@ -625,7 +628,7 @@ frame_families:
       - motion-affecting-forces
       - motion-affecting-objects
       - portals
-      - quality-of-landscape
+      - landscape-hazard
       - restraints
       - water-confinement
   - name: Movement
@@ -696,6 +699,8 @@ frame_families:
       - object
       - physical-structure
       - support
+      - complex-physical-object
+      - component-of-building
   - name: Object event structure
     members:
       - access-to-an-object
@@ -716,7 +721,6 @@ frame_families:
   - name: Physical combat
     members:
       - attacking
-      - card-game
       - competition
       - physical-combat
       - physical-competition
@@ -740,6 +744,7 @@ frame_families:
       - size
       - tight-fit
       - weight
+      - physical-entity
   - name: Politicians
     members:
       - politics
@@ -753,6 +758,7 @@ frame_families:
       - being-at-a-low-location
       - being-in-a-bounded-region
       - vertical-position
+      - position
   - name: Possession
     members:
       - gain-possession
