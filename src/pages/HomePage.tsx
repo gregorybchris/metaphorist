@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { MetaphorName } from "@/components/primitives/MetaphorName";
 import { metaphorByName, stats } from "@/data";
 import { entityPath } from "@/lib/format";
+import { DEFAULT_DESCRIPTION, pageTitle, websiteJsonLd } from "@/lib/seo";
+import { useDocumentHead } from "@/lib/useDocumentHead";
 import type { Metaphor } from "@/types";
 import {
   BatteryChargingIcon,
@@ -124,6 +126,13 @@ function SpotlightCard({
 }
 
 export function HomePage() {
+  useDocumentHead({
+    title: pageTitle(),
+    description: DEFAULT_DESCRIPTION,
+    path: "/",
+    jsonLd: websiteJsonLd(),
+  });
+
   const spotlight = SPOTLIGHT_METAPHORS.map(
     ({ name, leftIconName, rightIconName }) => ({
       metaphor: metaphorByName.get(name),
@@ -142,9 +151,9 @@ export function HomePage() {
 
   return (
     <div className="mx-auto max-w-2xl px-6 py-14 md:py-14">
-      <p className="font-serif text-2xl leading-snug text-center text-balance text-text italic sm:text-3xl">
+      <h1 className="font-serif text-2xl leading-snug text-center text-balance text-text italic sm:text-3xl">
         Explore how the metaphors of everyday language shape our thinking.
-      </p>
+      </h1>
 
       <div className="mt-10 space-y-3">
         {spotlight.map((metaphor) => (

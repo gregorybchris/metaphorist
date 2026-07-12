@@ -1,7 +1,18 @@
 import { TruckTrailer } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { pageTitle } from "@/lib/seo";
+import { useDocumentHead } from "@/lib/useDocumentHead";
 
 export function NotFoundPage() {
+  const location = useLocation();
+
+  useDocumentHead({
+    title: pageTitle("Page not found"),
+    description: "This page doesn't exist.",
+    path: location.pathname,
+    noindex: true,
+  });
+
   return (
     <div className="flex h-full flex-col items-center justify-center gap-3 p-8 text-center">
       <TruckTrailer

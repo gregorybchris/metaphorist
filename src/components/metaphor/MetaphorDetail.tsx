@@ -13,9 +13,9 @@ export function MetaphorDetail({ metaphor }: { metaphor: Metaphor }) {
 
   return (
     <div className="mx-auto max-w-2xl p-6 md:p-10">
-      <p className="text-pretty font-serif text-xl leading-snug text-text sm:text-2xl">
+      <h1 className="text-pretty font-serif text-xl leading-snug text-text sm:text-2xl">
         <MetaphorName name={metaphor.name} />
-      </p>
+      </h1>
       {examples.length > 0 && (
         <div className="mt-6 space-y-3">
           {examples.map((example, i) => (

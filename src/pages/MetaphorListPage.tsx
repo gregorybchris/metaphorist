@@ -4,8 +4,16 @@ import { MasterDetailLayout } from "@/components/layout/MasterDetailLayout";
 import { MetaphorDetail } from "@/components/metaphor/MetaphorDetail";
 import { EmptyState } from "@/components/primitives/EmptyState";
 import { SidebarListHeader, SidebarListRow } from "@/components/primitives/SidebarList";
-import { metaphorByName, metaphors } from "@/data";
+import { metaphorByName, metaphors, stats } from "@/data";
 import { entityPath, metaphorDisplayName, metaphorNameFromSlug } from "@/lib/format";
+import {
+  DEFAULT_DESCRIPTION,
+  metaphorDescription,
+  metaphorJsonLd,
+  metaphorTitle,
+  pageTitle,
+} from "@/lib/seo";
+import { useDocumentHead } from "@/lib/useDocumentHead";
 import { useMediaQuery } from "@/lib/useMediaQuery";
 import type { Metaphor } from "@/types";
 
@@ -36,11 +44,34 @@ export function MetaphorListPage() {
     return metaphors.filter((m) => matchesQuery(m, q));
   }, [filter]);
 
+  const selected = name ? metaphorByName.get(name) : undefined;
+
+  useDocumentHead(
+    selected
+      ? {
+          title: metaphorTitle(selected),
+          description: metaphorDescription(selected),
+          path: entityPath("metaphor", selected.name),
+          type: "article",
+          jsonLd: metaphorJsonLd(selected, entityPath("metaphor", selected.name)),
+        }
+      : name
+        ? {
+            title: pageTitle("Metaphor not found"),
+            description: DEFAULT_DESCRIPTION,
+            path: "/metaphors",
+            noindex: true,
+          }
+        : {
+            title: pageTitle("Metaphors"),
+            description: `Browse all ${stats.metaphorCount} conceptual metaphors in the Metaphorist dataset.`,
+            path: "/metaphors",
+          },
+  );
+
   if (!name && isDesktop) {
     return <Navigate to={entityPath("metaphor", metaphors[0].name)} replace />;
   }
-
-  const selected = name ? metaphorByName.get(name) : undefined;
 
   return (
     <MasterDetailLayout

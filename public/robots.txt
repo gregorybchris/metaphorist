@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /curate
+
+Sitemap: https://metaphorist.vercel.app/sitemap.xml

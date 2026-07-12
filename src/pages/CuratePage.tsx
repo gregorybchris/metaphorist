@@ -4,9 +4,18 @@ import { MetaphorDetail } from "@/components/metaphor/MetaphorDetail";
 import { metaphors } from "@/data";
 import { cn } from "@/lib/cn";
 import { type Favorites, type Rating, useFavorites } from "@/lib/curation";
+import { pageTitle } from "@/lib/seo";
+import { useDocumentHead } from "@/lib/useDocumentHead";
 
 /** Personal review tool, not linked from anywhere in the app: only reachable by visiting /curate directly. */
 export function CuratePage() {
+  useDocumentHead({
+    title: pageTitle("Curate"),
+    description: "Internal curation tool.",
+    path: "/curate",
+    noindex: true,
+  });
+
   return <CurateReview />;
 }
 

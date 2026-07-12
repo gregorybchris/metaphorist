@@ -1,5 +1,7 @@
 import { GithubLogo } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
+import { pageTitle } from "@/lib/seo";
+import { useDocumentHead } from "@/lib/useDocumentHead";
 
 const GITHUB_URL = "https://github.com/gregorybchris/metaphorist";
 
@@ -93,11 +95,19 @@ const CITATIONS = [
 ];
 
 export function AboutPage() {
+  useDocumentHead({
+    title: pageTitle("About"),
+    description:
+      "About the Metaphorist dataset: its sources in Conceptual Metaphor Theory, how to get " +
+      "the data, and how to cite it.",
+    path: "/about",
+  });
+
   return (
     <div className="mx-auto max-w-2xl p-6 md:p-10">
-      <p className="font-serif text-2xl text-text sm:text-3xl">
+      <h1 className="font-serif text-2xl text-text sm:text-3xl">
         About this project
-      </p>
+      </h1>
 
       <div className="mt-6 space-y-4 text-pretty leading-relaxed text-text-muted">
         <p>
