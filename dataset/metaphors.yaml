@@ -2387,6 +2387,7 @@ metaphors:
       - CAUSES_ARE_FORCES
       - CHANGE_OF_STATE_IS_CHANGE_OF_LOCATION
       - EXPERIENCING_A_STATE_IS_BEING_AT_A_LOCATION
+      - INCREASING_LIKELIHOOD_IS_FORCED_MOTION_TOWARD_AN_OUTCOME
   - name: CAUSATION_IS_OBJECT_TRANSFER
     source_frame: transfer-scenario
     target_frame: causation
@@ -2472,6 +2473,8 @@ metaphors:
       - That setback pushed him over the edge.
     related:
       - DIRECT_CAUSATION_IS_DIRECT_APPLICATION_OF_FORCE
+      - INCREASING_LIKELIHOOD_IS_FORCED_MOTION_TOWARD_AN_OUTCOME
+      - INCREASING_LIKELIHOOD_IS_TIPPING_A_SCALE
     mappings:
       - source_role: force
         target_role: causer
@@ -9367,6 +9370,53 @@ metaphors:
         target_role: government_debt
     source_frame: body-of-water
     target_frame: government-debt
+  - name: INCREASING_LIKELIHOOD_IS_FORCED_MOTION_TOWARD_AN_OUTCOME
+    source_frame: forced-motion
+    target_frame: probability
+    families:
+      - Location event structure
+      - States are locations
+      - Probability
+    mappings:
+      - source_role: forceful_action
+        target_role: cause_of_likelihood_shift
+      - source_role: mover
+        target_role: probable_event
+      - source_role: motion_x_schema
+        target_role: likelihood_level
+      - source_role: goal
+        target_role: probable_outcome
+    examples:
+      - The ad nudged consumers toward the pricier option.
+      - The recession pushed thousands of families into poverty.
+      - The scandal shoved the senator's approval ratings off a cliff.
+      - Desperation drove her to steal.
+      - The low prices pulled shoppers in.
+    related:
+      - CAUSES_ARE_FORCES
+      - CAUSATION_IS_FORCED_MOVEMENT
+      - COMPULSION_IS_A_COMPELLING_FORCE
+      - INCREASING_LIKELIHOOD_IS_TIPPING_A_SCALE
+  - name: INCREASING_LIKELIHOOD_IS_TIPPING_A_SCALE
+    source_frame: balance-scale
+    target_frame: probability
+    families:
+      - Scalar
+      - Probability
+    mappings:
+      - source_role: weight
+        target_role: cause_of_likelihood_shift
+      - source_role: side_tipped_toward
+        target_role: probable_outcome
+      - source_role: balance_x_schema
+        target_role: likelihood_level
+    examples:
+      - That testimony tipped the jury toward acquittal.
+      - The scandal tipped public opinion against the incumbent.
+      - One more supply shock could tip the economy into recession.
+    related:
+      - CAUSES_ARE_FORCES
+      - INCREASING_LIKELIHOOD_IS_FORCED_MOTION_TOWARD_AN_OUTCOME
   - name: INCREASING_TAXATION_IS_INCREASING_BURDEN
     families:
       - Governance

@@ -782,6 +782,28 @@ frames:
     roles:
       - name: bad_entity
       - name: badness
+  - name: balance-scale
+    frame_families:
+      - Force dynamic
+      - Image schemas
+    roles:
+      - name: balance_x_schema
+      - name: side_tipped_toward
+      - name: weight
+    lexical_units:
+      - balance.n
+      - balance.v
+      - fulcrum.n
+      - outweigh.v
+      - scale.n
+      - seesaw.n
+      - teeter.v
+      - tip.v
+      - tip.v toward
+      - weigh.v
+    related:
+      - force
+      - force-dynamic-interaction
   - name: barrier
     frame_families:
       - Impediment and enablement
@@ -4511,6 +4533,7 @@ frames:
       - power.n
       - pressure.n
     related:
+      - balance-scale
       - force-transfer
   - name: force-dynamic-interaction
     frame_families:
@@ -4521,6 +4544,7 @@ frames:
       - name: force_receiver
       - name: forceful_process
     related:
+      - balance-scale
       - force-transfer
     lexical_units:
       - force.n
@@ -4574,8 +4598,13 @@ frames:
       - draw.v
       - drive.v
       - drive.v into
+      - nudge.v
+      - nudge.v toward
       - pull.v
+      - push.v
       - push.v into
+      - shove.v
+      - shove.v into
       - swing.v
       - yank.v
       - yank.v into
@@ -8538,6 +8567,30 @@ frames:
       - build.v up
       - release.v
       - vent.v
+  - name: probability
+    frame_families:
+      - Probability
+      - Scale
+    roles:
+      - name: cause_of_likelihood_shift
+      - name: likelihood_level
+      - name: probable_event
+      - name: probable_outcome
+    lexical_units:
+      - certain.a
+      - certainty.n
+      - chance.n
+      - likelihood.n
+      - likely.a
+      - odds.n
+      - possibility.n
+      - possible.a
+      - probability.n
+      - probable.a
+      - unlikely.a
+    related:
+      - quantity
+      - scale
   - name: problem
     roles:
       - name: problem
@@ -8861,6 +8914,7 @@ frames:
       - more.a
       - quantity.n
     related:
+      - probability
       - scale
   - name: race
     frame_families:
@@ -9274,6 +9328,7 @@ frames:
       - name: parameter
       - name: position_on_scale
     related:
+      - probability
       - state
     lexical_units:
       - scale.n

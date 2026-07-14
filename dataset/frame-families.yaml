@@ -338,6 +338,7 @@ frame_families:
   - name: Force dynamic
     members:
       - antagonistic-force
+      - balance-scale
       - destructive-force
       - force
       - force-dynamic-interaction
@@ -454,6 +455,7 @@ frame_families:
       - natural-disaster
   - name: Image schemas
     members:
+      - balance-scale
       - center-periphery
       - part-whole
       - proximal-distal
@@ -784,6 +786,9 @@ frame_families:
       - negatively-evaluated-condition
       - poverty
       - social-problems
+  - name: Probability
+    members:
+      - probability
   - name: Property-related
     members:
       - attribute
@@ -840,6 +845,7 @@ frame_families:
       - nausea
       - physical-strength
       - positivity-scale
+      - probability
       - proximity
       - quantity
       - scale
