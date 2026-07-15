@@ -1,7 +1,9 @@
 import { ChevronRight } from "lucide-react";
+import { useId, useState } from "react";
 import { Link } from "react-router-dom";
 import { MetaphorName } from "@/components/primitives/MetaphorName";
 import { metaphorByName, stats } from "@/data";
+import { cn } from "@/lib/cn";
 import { entityPath } from "@/lib/format";
 import { DEFAULT_DESCRIPTION, pageTitle, websiteJsonLd } from "@/lib/seo";
 import { useDocumentHead } from "@/lib/useDocumentHead";
@@ -87,10 +89,23 @@ function SpotlightCard({
   rightIconName: IconName;
 }) {
   const examples = metaphor.examples ?? [];
+  const [open, setOpen] = useState(false);
+  const contentId = useId();
 
   return (
-    <details className="group overflow-hidden rounded-lg border border-border bg-surface transition-colors open:bg-surface-hover/30">
-      <summary className="flex cursor-pointer list-none divide-x divide-border select-none">
+    <div
+      className={cn(
+        "overflow-hidden rounded-lg border border-border bg-surface transition-colors",
+        open && "bg-surface-hover/30",
+      )}
+    >
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        aria-controls={contentId}
+        className="flex w-full cursor-pointer divide-x divide-border select-none"
+      >
         <div className="flex shrink-0 items-center justify-center bg-surface-hover px-4 sm:px-5">
           {mapIcon(leftIconName)}
         </div>
@@ -101,35 +116,54 @@ function SpotlightCard({
           </span>
           <ChevronRight
             size={16}
-            className="shrink-0 rotate-90 text-text-faint transition-transform duration-200 group-open:-rotate-90"
+            className={cn(
+              "shrink-0 rotate-90 text-text-faint transition-transform duration-300 ease-in-out",
+              open && "-rotate-90",
+            )}
           />
         </div>
 
         <div className="flex shrink-0 items-center justify-center bg-surface-hover px-4 sm:px-5">
           {mapIcon(rightIconName)}
         </div>
-      </summary>
-      <div className="border-t border-border px-5 py-5 sm:px-6">
-        <ul className="list-none space-y-4">
-          {examples.map((example, i) => (
-            <li
-              key={i}
-              className="text-pretty border-l-2 border-border pl-4 font-serif text-lg leading-relaxed text-text-muted italic"
-            >
-              “{example}”
-            </li>
-          ))}
-        </ul>
-        <div className="mt-5 border-t border-border pt-4">
-          <Link
-            to={entityPath("metaphor", metaphor.name)}
-            className="inline-block text-sm text-text-faint underline decoration-dotted underline-offset-2 hover:text-text-muted hover:decoration-solid"
+      </button>
+
+      <div
+        id={contentId}
+        className={cn(
+          "grid transition-[grid-template-rows] duration-300 ease-in-out",
+          open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+        )}
+      >
+        <div className="overflow-hidden">
+          <div
+            className={cn(
+              "border-t border-border bg-surface px-5 py-5 transition-opacity duration-300 sm:px-6",
+              open ? "opacity-100" : "opacity-0",
+            )}
           >
-            View metaphor →
-          </Link>
+            <ul className="list-none space-y-4">
+              {examples.map((example, i) => (
+                <li
+                  key={i}
+                  className="text-pretty border-l-2 border-border pl-4 font-serif text-lg leading-relaxed text-text italic"
+                >
+                  “{example}”
+                </li>
+              ))}
+            </ul>
+            <div className="mt-5 border-t border-border pt-4">
+              <Link
+                to={entityPath("metaphor", metaphor.name)}
+                className="inline-block text-sm text-text-faint underline decoration-dotted underline-offset-2 hover:text-text-muted hover:decoration-solid"
+              >
+                View metaphor →
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-    </details>
+    </div>
   );
 }
 
