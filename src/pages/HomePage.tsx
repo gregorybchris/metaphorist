@@ -89,21 +89,25 @@ function SpotlightCard({
   const examples = metaphor.examples ?? [];
 
   return (
-    <details className="group rounded-lg border border-border bg-surface transition-colors open:bg-surface-hover/30">
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 select-none sm:px-6">
-        <div className="flex items-center gap-3">
+    <details className="group overflow-hidden rounded-lg border border-border bg-surface transition-colors open:bg-surface-hover/30">
+      <summary className="flex cursor-pointer list-none divide-x divide-border select-none">
+        <div className="flex shrink-0 items-center justify-center bg-surface-hover px-4 sm:px-5">
           {mapIcon(leftIconName)}
+        </div>
 
+        <div className="flex flex-1 flex-col items-center justify-center gap-2 px-4 py-4 text-center sm:px-6 sm:py-5">
           <span className="font-serif text-base text-text sm:text-lg">
             <MetaphorName name={metaphor.name} />
           </span>
+          <ChevronRight
+            size={16}
+            className="shrink-0 rotate-90 text-text-faint transition-transform duration-200 group-open:-rotate-90"
+          />
+        </div>
 
+        <div className="flex shrink-0 items-center justify-center bg-surface-hover px-4 sm:px-5">
           {mapIcon(rightIconName)}
         </div>
-        <ChevronRight
-          size={18}
-          className="shrink-0 text-text-faint transition-transform duration-200 group-open:rotate-90"
-        />
       </summary>
       <div className="space-y-3 border-t border-border px-5 pt-4 pb-5 sm:px-6">
         {examples.map((example, i) => (
