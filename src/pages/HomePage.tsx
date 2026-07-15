@@ -37,6 +37,11 @@ type IconName =
  */
 const SPOTLIGHT_METAPHORS = [
   {
+    name: "PEOPLE_ARE_BATTERIES",
+    leftIconName: "run",
+    rightIconName: "battery",
+  },
+  {
     name: "INTOXICATION_IS_GETTING_BURNED_OR_COOKED",
     leftIconName: "beer",
     rightIconName: "fire",
@@ -45,11 +50,6 @@ const SPOTLIGHT_METAPHORS = [
     name: "INTELLIGENCE_IS_A_CUTTING_INSTRUMENT",
     leftIconName: "brain",
     rightIconName: "knife",
-  },
-  {
-    name: "PEOPLE_ARE_BATTERIES",
-    leftIconName: "run",
-    rightIconName: "battery",
   },
   {
     name: "BODIES_ARE_BUILDINGS",
@@ -110,7 +110,7 @@ function SpotlightCard({
           {mapIcon(leftIconName)}
         </div>
 
-        <div className="flex flex-1 flex-col items-center justify-center gap-2 px-4 py-4 text-center sm:px-6 sm:py-5">
+        <div className="flex flex-1 flex-col items-center justify-center gap-1 px-4 py-3 text-center sm:px-6 sm:py-3">
           <span className="font-serif text-base text-text sm:text-lg">
             <MetaphorName name={metaphor.name} />
           </span>
