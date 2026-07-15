@@ -109,21 +109,25 @@ function SpotlightCard({
           {mapIcon(rightIconName)}
         </div>
       </summary>
-      <div className="space-y-3 border-t border-border px-5 pt-4 pb-5 sm:px-6">
-        {examples.map((example, i) => (
-          <p
-            key={i}
-            className="text-pretty font-serif text-lg leading-snug text-text-muted"
+      <div className="border-t border-border px-5 py-5 sm:px-6">
+        <ul className="list-none space-y-4">
+          {examples.map((example, i) => (
+            <li
+              key={i}
+              className="text-pretty border-l-2 border-border pl-4 font-serif text-lg leading-relaxed text-text-muted italic"
+            >
+              “{example}”
+            </li>
+          ))}
+        </ul>
+        <div className="mt-5 border-t border-border pt-4">
+          <Link
+            to={entityPath("metaphor", metaphor.name)}
+            className="inline-block text-sm text-text-faint underline decoration-dotted underline-offset-2 hover:text-text-muted hover:decoration-solid"
           >
-            “{example}”
-          </p>
-        ))}
-        <Link
-          to={entityPath("metaphor", metaphor.name)}
-          className="inline-block text-sm text-text-faint underline decoration-dotted underline-offset-2 hover:text-text-muted hover:decoration-solid"
-        >
-          View metaphor →
-        </Link>
+            View metaphor →
+          </Link>
+        </div>
       </div>
     </details>
   );
