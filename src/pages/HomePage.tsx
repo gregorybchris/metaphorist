@@ -16,6 +16,12 @@ import {
   BrainIcon,
   PersonSimpleRunIcon,
   PersonIcon,
+  LightbulbIcon,
+  BowlFoodIcon,
+  MoneyIcon,
+  DropIcon,
+  SteeringWheelIcon,
+  HandGrabbingIcon,
 } from "@phosphor-icons/react";
 import { KnifeIcon } from "@phosphor-icons/react/dist/ssr";
 
@@ -27,7 +33,13 @@ type IconName =
   | "brain"
   | "fire"
   | "run"
-  | "person";
+  | "person"
+  | "lightbulb"
+  | "food"
+  | "money"
+  | "drop"
+  | "steeringWheel"
+  | "handGrabbing";
 
 /**
  * Hand-picked for maximum "wait, that's a metaphor?" effect — dead idioms
@@ -56,6 +68,16 @@ const SPOTLIGHT_METAPHORS = [
     leftIconName: "person",
     rightIconName: "building",
   },
+  {
+    name: "IDEAS_ARE_FOOD",
+    leftIconName: "lightbulb",
+    rightIconName: "food",
+  },
+  {
+    name: "MONEY_IS_A_LIQUID",
+    leftIconName: "money",
+    rightIconName: "drop",
+  },
 ];
 
 function mapIcon(iconName: IconName) {
@@ -76,6 +98,18 @@ function mapIcon(iconName: IconName) {
       return <PersonSimpleRunIcon size={20} weight="duotone" color="#777" />;
     case "person":
       return <PersonIcon size={20} weight="duotone" color="#777" />;
+    case "lightbulb":
+      return <LightbulbIcon size={20} weight="duotone" color="#777" />;
+    case "food":
+      return <BowlFoodIcon size={20} weight="duotone" color="#777" />;
+    case "money":
+      return <MoneyIcon size={20} weight="duotone" color="#777" />;
+    case "drop":
+      return <DropIcon size={20} weight="duotone" color="#777" />;
+    case "steeringWheel":
+      return <SteeringWheelIcon size={20} weight="duotone" color="#777" />;
+    case "handGrabbing":
+      return <HandGrabbingIcon size={20} weight="duotone" color="#777" />;
   }
 }
 

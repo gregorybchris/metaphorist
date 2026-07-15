@@ -9797,9 +9797,9 @@ metaphors:
       - source_role: cutter
         target_role: idea_cognizer
     examples:
-      - She is very incisive.
       - He always cuts to the heart of the problem.
-      - He used extensive reading to hone his intellect.
+      - You are very incisive.
+      - She read extensively to hone her intellect.
   - name: INTENSITY_OF_ACTIVITY_IS_HEAT
     source_frame: heat
     target_frame: activity
@@ -9985,10 +9985,9 @@ metaphors:
       - source_role: heat_level
         target_role: intoxication_level
     examples:
-      - They were baked.
-      - They were fried.
-      - They were toasted.
-      - They were stewed.
+      - We're all getting baked if you want to join.
+      - She got completely toasted last night.
+      - Dude, you look totally fried.
   - name: INTOXICATION_IS_GETTING_DESTROYED
     source_frame: destroying
     target_frame: intoxication
@@ -11035,7 +11034,6 @@ metaphors:
       - PEOPLE_ARE_ANIMALS
       - A_HAPPY_PERSON_IS_AN_ANIMAL_THAT_LIVES_WELL
       - HUMAN_BEHAVIOR_IS_ANIMAL_BEHAVIOR
-      - SEXUALLY_ATTRACTIVE_WOMEN_ARE_KITTENS
   - name: LUST_IS_HEAT
     source_frame: heat
     target_frame: lust
@@ -11503,7 +11501,7 @@ metaphors:
     examples:
       - The money dried up before the project could finish.
       - Cash flowed freely during the boom years.
-      - He's just sponging off his parents.
+      - He poured his life savings into the new restaurant.
     related:
       - MONEY_IS_A_SUBSTANCE
       - RESOURCE_IS_A_LIQUID
@@ -12765,8 +12763,8 @@ metaphors:
         target_role: functional_status
     examples:
       - Eyes are windows to the soul.
-      - There's not much going on upstairs.
-      - There's snow on the roof, but a fire in the furnace.
+      - He's built like a brick house.
+      - Her knees aren't as structurally sound as they used to be.
   - name: PERCEPTION_IS_RECEPTION
     source_frame: gain-possession
     target_frame: perception
@@ -18703,21 +18701,6 @@ metaphors:
     mappings:
       - source_role: animal
         target_role: difficulty
-  - name: SEXUALLY_ATTRACTIVE_WOMEN_ARE_KITTENS
-    source_frame: animal
-    target_frame: lust
-    families:
-      - Emotion
-    examples:
-      - French sex kitten Brigitte Bardot captivated audiences throughout the 1950s.
-      - The magazine crowned her its newest kitten of the month.
-      - Heads turned as the sultry kitten sauntered into the party.
-    related:
-      - LUSTFUL_PERSON_IS_AN_ANIMAL
-      - PEOPLE_ARE_ANIMALS
-    mappings:
-      - source_role: animal
-        target_role: target_of_lust
   - name: CHEERFUL_IS_SUNNY
     source_frame: lightness
     target_frame: happiness
