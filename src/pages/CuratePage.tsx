@@ -93,6 +93,9 @@ function CurateReview() {
   const ratingValues = Object.values(ratings);
   const goodCount = ratingValues.filter((r) => r === "up").length;
   const badCount = ratingValues.filter((r) => r === "down").length;
+  const ratedCount = goodCount + badCount;
+  const goodPct = (goodCount / metaphors.length) * 100;
+  const badPct = (badCount / metaphors.length) * 100;
 
   return (
     <div className="flex h-full flex-col">
@@ -106,6 +109,24 @@ function CurateReview() {
         <span>
           {index + 1} of {metaphors.length}
         </span>
+      </div>
+
+      <div
+        role="progressbar"
+        aria-label="Metaphors rated"
+        aria-valuenow={ratedCount}
+        aria-valuemin={0}
+        aria-valuemax={metaphors.length}
+        className="flex h-1.5 shrink-0 overflow-hidden bg-surface-hover"
+      >
+        <div
+          className="h-full bg-fern-500 transition-[width]"
+          style={{ width: `${goodPct}%` }}
+        />
+        <div
+          className="h-full bg-garnet-500 transition-[width]"
+          style={{ width: `${badPct}%` }}
+        />
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto">
