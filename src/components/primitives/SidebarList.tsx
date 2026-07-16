@@ -1,6 +1,7 @@
 import { forwardRef, type ComponentPropsWithoutRef } from "react";
 import { Link } from "react-router-dom";
 import { CircleX, Search, Star } from "lucide-react";
+import { MetaphorName } from "@/components/primitives/MetaphorName";
 import { cn } from "@/lib/cn";
 import { displayName, entityPath } from "@/lib/format";
 import type { EntityKind } from "@/types";
@@ -88,14 +89,24 @@ export const SidebarListRow = forwardRef<HTMLAnchorElement, SidebarListRowProps>
         )}
         {...linkProps}
       >
-        <span
-          className={cn(
-            "min-w-0 flex-1 truncate font-serif text-[15px] text-text",
-            active && ROW_ACTIVE_TEXT[kind],
-          )}
-        >
-          {displayName(kind, name)}
-        </span>
+        {kind === "metaphor" ? (
+          <MetaphorName
+            name={name}
+            className={cn(
+              "min-w-0 flex-1 truncate font-serif text-[15px] text-text",
+              active && ROW_ACTIVE_TEXT[kind],
+            )}
+          />
+        ) : (
+          <span
+            className={cn(
+              "min-w-0 flex-1 truncate font-serif text-[15px] text-text",
+              active && ROW_ACTIVE_TEXT[kind],
+            )}
+          >
+            {displayName(kind, name)}
+          </span>
+        )}
         {starred && (
           <Star
             size={13}
