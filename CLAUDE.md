@@ -7,12 +7,12 @@ A curated, English-only export of the MetaNet Metaphor Repository (UC Berkeley I
 This repo has three independent parts that all read the same `dataset/`:
 
 - **`dataset/`** — the data itself: `metaphors.yaml`, `frames.yaml`, `metaphor-families.yaml`, `frame-families.yaml`. Hand- and agent-edited directly; no build step, no generator script in this repo.
-- **`src/`, `index.html`, `vite.config.ts`, `vite-plugin-*.ts`** (repo root) — the React/Vite frontend that browses the dataset. `vite-plugin-dataset.ts` reads the four `dataset/*.yaml` files at build/dev time and exposes them as the `virtual:metaphor-dataset` module (`src/data/index.ts` imports it) — the browser never parses YAML. `vite-plugin-curation.ts` backs a dev-only `/__curation` endpoint that reads/writes `curation/favorites.json` for the hidden curation UI (`?curate=true`, `src/pages/CuratePage.tsx`).
+- **`src/`, `index.html`, `vite.config.ts`, `vite-plugin-*.ts`** (repo root) — the React/Vite frontend that browses the dataset. `vite-plugin-dataset.ts` reads the four `dataset/*.yaml` files at build/dev time and exposes them as the `virtual:metaphor-dataset` module (`src/data/index.ts` imports it) — the browser never parses YAML. `vite-plugin-curation.ts` backs a dev-only `/__curation` endpoint that reads/writes `curation/ratings.json` for the hidden curation UI (`?curate=true`, `src/pages/CuratePage.tsx`). Metaphors rated "bad" there are filtered out of the browsable app in `src/data/index.ts`, along with any frame left with no surviving metaphor reference.
 - **`validation/`** — a separate Python project (own `pyproject.toml`, `uv.lock`, `.venv`, `Makefile`) that validates the dataset: `validation/tests/` (pytest suite — structural/format/reference checks against `dataset/*.yaml`) and `validation/scripts/dataset_lib.py` (shared validation logic the tests import).
 
 Frontend files live at the repo root (not under `frontend/`) and validation files live under `validation/` (not at the root) — this is intentional, not a leftover from a move. Path logic in `vite-plugin-*.ts` is relative to the repo root; path logic in `validation/**/*.py` (`Path(__file__).parent...`) needs to walk up far enough to reach the repo root from inside `validation/`, one level deeper than it looks.
 
-Other top-level dirs: `curation/` (favorites data for the curation UI), `planning/` (scratch notes, gitignored contents).
+Other top-level dirs: `curation/` (ratings data for the curation UI), `planning/` (scratch notes, gitignored contents).
 
 ## Commands
 

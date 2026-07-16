@@ -5,7 +5,7 @@ import { MetaphorDetail } from "@/components/metaphor/MetaphorDetail";
 import { EmptyState } from "@/components/primitives/EmptyState";
 import { SidebarListHeader, SidebarListRow } from "@/components/primitives/SidebarList";
 import { metaphorByName, metaphors, stats } from "@/data";
-import { favorites } from "@/lib/curation";
+import { ratings } from "@/lib/curation";
 import { entityPath, metaphorDisplayName, metaphorNameFromSlug } from "@/lib/format";
 import {
   DEFAULT_DESCRIPTION,
@@ -98,7 +98,7 @@ export function MetaphorListPage() {
                   kind="metaphor"
                   name={m.name}
                   active={m.name === name}
-                  starred={favorites[m.name] === "up"}
+                  starred={ratings[m.name] === "up"}
                 />
               ))}
             </div>

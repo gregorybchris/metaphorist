@@ -4,25 +4,25 @@ import { fileURLToPath } from "node:url";
 import type { Plugin } from "vite";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const FAVORITES_PATH = resolve(HERE, "curation/favorites.json");
+const RATINGS_PATH = resolve(HERE, "curation/ratings.json");
 
-const VIRTUAL_ID = "virtual:curation-favorites";
+const VIRTUAL_ID = "virtual:curation-ratings";
 const RESOLVED_ID = "\0" + VIRTUAL_ID;
 
 type Rating = "up" | "down";
-type Favorites = Record<string, Rating>;
+type Ratings = Record<string, Rating>;
 
-function readFavorites(): Favorites {
-  if (!existsSync(FAVORITES_PATH)) return {};
-  return JSON.parse(readFileSync(FAVORITES_PATH, "utf-8"));
+function readRatings(): Ratings {
+  if (!existsSync(RATINGS_PATH)) return {};
+  return JSON.parse(readFileSync(RATINGS_PATH, "utf-8"));
 }
 
-function writeFavorites(favorites: Favorites) {
-  mkdirSync(dirname(FAVORITES_PATH), { recursive: true });
+function writeRatings(ratings: Ratings) {
+  mkdirSync(dirname(RATINGS_PATH), { recursive: true });
   const sorted = Object.fromEntries(
-    Object.entries(favorites).sort(([a], [b]) => a.localeCompare(b)),
+    Object.entries(ratings).sort(([a], [b]) => a.localeCompare(b)),
   );
-  writeFileSync(FAVORITES_PATH, `${JSON.stringify(sorted, null, 2)}\n`);
+  writeFileSync(RATINGS_PATH, `${JSON.stringify(sorted, null, 2)}\n`);
 }
 
 function readBody(req: import("node:http").IncomingMessage): Promise<string> {
@@ -42,14 +42,15 @@ function invalidateVirtualModule(server: import("vite").ViteDevServer) {
 
 /**
  * Dev-server-only endpoint backing the hidden curation UI (?curate=true).
- * Reads/writes curation/favorites.json directly on disk so ratings are
+ * Reads/writes curation/ratings.json directly on disk so ratings are
  * plain, git-diffable data rather than browser-local state. Not available
  * in the production build — this is a for-me tool, not a served feature.
  *
- * Also exposes curation/favorites.json as the `virtual:curation-favorites`
+ * Also exposes curation/ratings.json as the `virtual:curation-ratings`
  * module, baked in at build time like vite-plugin-dataset.ts, so the
- * production app can read ratings (e.g. to star favorited metaphors)
- * without hitting the dev-only /__curation endpoint.
+ * production app can read ratings (e.g. to star favorited metaphors, or
+ * filter out badly-rated ones) without hitting the dev-only /__curation
+ * endpoint.
  */
 export function curationPlugin(): Plugin {
   return {
@@ -59,19 +60,19 @@ export function curationPlugin(): Plugin {
     },
     load(id) {
       if (id !== RESOLVED_ID) return;
-      this.addWatchFile(FAVORITES_PATH);
-      return `export default ${JSON.stringify(readFavorites())};`;
+      this.addWatchFile(RATINGS_PATH);
+      return `export default ${JSON.stringify(readRatings())};`;
     },
     configureServer(server) {
-      server.watcher.add(FAVORITES_PATH);
+      server.watcher.add(RATINGS_PATH);
       server.watcher.on("change", (file) => {
-        if (file === FAVORITES_PATH) invalidateVirtualModule(server);
+        if (file === RATINGS_PATH) invalidateVirtualModule(server);
       });
 
       server.middlewares.use("/__curation", async (req, res) => {
         if (req.method === "GET") {
           res.setHeader("Content-Type", "application/json");
-          res.end(JSON.stringify(readFavorites()));
+          res.end(JSON.stringify(readRatings()));
           return;
         }
 
@@ -80,13 +81,13 @@ export function curationPlugin(): Plugin {
             name: string;
             rating: Rating | null;
           };
-          const favorites = readFavorites();
-          if (rating) favorites[name] = rating;
-          else delete favorites[name];
-          writeFavorites(favorites);
+          const ratings = readRatings();
+          if (rating) ratings[name] = rating;
+          else delete ratings[name];
+          writeRatings(ratings);
           invalidateVirtualModule(server);
           res.setHeader("Content-Type", "application/json");
-          res.end(JSON.stringify(favorites));
+          res.end(JSON.stringify(ratings));
           return;
         }
 

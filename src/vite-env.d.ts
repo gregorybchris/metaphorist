@@ -6,7 +6,7 @@ declare module "virtual:metaphor-dataset" {
   export default dataset;
 }
 
-declare module "virtual:curation-favorites" {
-  const favorites: Record<string, "up" | "down">;
-  export default favorites;
+declare module "virtual:curation-ratings" {
+  const ratings: Record<string, "up" | "down">;
+  export default ratings;
 }

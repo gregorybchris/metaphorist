@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { load } from "js-yaml";
@@ -6,16 +6,23 @@ import type { Plugin } from "vite";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DATASET_DIR = resolve(HERE, "dataset");
+const RATINGS_PATH = resolve(HERE, "curation/ratings.json");
 const SITE_URL = "https://metaphorist.vercel.app";
 
 const STATIC_ROUTES = ["/", "/metaphors", "/frames", "/about"];
 
-function readNames(file: string, key: string): string[] {
-  const doc = load(readFileSync(resolve(DATASET_DIR, file), "utf-8")) as Record<
-    string,
-    { name: string }[]
-  >;
-  return doc[key].map((entry) => entry.name);
+type MetaphorEntry = { name: string; source_frame?: string; target_frame?: string };
+type FrameEntry = { name: string };
+type Ratings = Record<string, "up" | "down">;
+
+function readYaml<T>(file: string, key: string): T[] {
+  const doc = load(readFileSync(resolve(DATASET_DIR, file), "utf-8")) as Record<string, T[]>;
+  return doc[key];
+}
+
+function readRatings(): Ratings {
+  if (!existsSync(RATINGS_PATH)) return {};
+  return JSON.parse(readFileSync(RATINGS_PATH, "utf-8"));
 }
 
 /** ANGER_IS_HEAT -> anger-is-heat, mirrors src/lib/format.ts#metaphorSlug */
@@ -28,13 +35,26 @@ function xmlEscape(value: string): string {
 }
 
 function buildSitemap(): string {
-  const metaphorNames = readNames("metaphors.yaml", "metaphors");
-  const frameNames = readNames("frames.yaml", "frames");
+  const allMetaphors = readYaml<MetaphorEntry>("metaphors.yaml", "metaphors");
+  const allFrames = readYaml<FrameEntry>("frames.yaml", "frames");
+  const ratings = readRatings();
+
+  // Mirrors the filtering in src/data/index.ts: bad-rated metaphors and any
+  // frame left with no surviving metaphor reference are excluded from the
+  // browsable app, so they shouldn't be advertised to search engines either.
+  const metaphors = allMetaphors.filter((m) => ratings[m.name] !== "down");
+
+  const referencedFrameNames = new Set<string>();
+  for (const m of metaphors) {
+    if (m.source_frame) referencedFrameNames.add(m.source_frame);
+    if (m.target_frame) referencedFrameNames.add(m.target_frame);
+  }
+  const frames = allFrames.filter((f) => referencedFrameNames.has(f.name));
 
   const paths = [
     ...STATIC_ROUTES,
-    ...metaphorNames.map((name) => `/metaphors/${encodeURIComponent(metaphorSlug(name))}`),
-    ...frameNames.map((name) => `/frames/${encodeURIComponent(name)}`),
+    ...metaphors.map(({ name }) => `/metaphors/${encodeURIComponent(metaphorSlug(name))}`),
+    ...frames.map(({ name }) => `/frames/${encodeURIComponent(name)}`),
   ];
 
   const body = paths

@@ -1,39 +1,39 @@
 import { useCallback, useEffect, useState } from "react";
-import rawFavorites from "virtual:curation-favorites";
+import rawRatings from "virtual:curation-ratings";
 
 export type Rating = "up" | "down";
-export type Favorites = Record<string, Rating>;
+export type Ratings = Record<string, Rating>;
 
 const ENDPOINT = "/__curation";
 
 /**
- * Baked in from curation/favorites.json at build time (see
- * vite-plugin-curation.ts), unlike useFavorites below — available in the
+ * Baked in from curation/ratings.json at build time (see
+ * vite-plugin-curation.ts), unlike useRatings below — available in the
  * production build for read-only display, e.g. starring favorited
- * metaphors in the main sidebar.
+ * metaphors in the main sidebar, or filtering out badly-rated ones.
  */
-export const favorites: Favorites = rawFavorites;
+export const ratings: Ratings = rawRatings;
 
 /**
  * Talks to the dev-server-only /__curation middleware (vite-plugin-curation.ts),
- * which reads/writes curation/favorites.json on disk. Only wired up under
+ * which reads/writes curation/ratings.json on disk. Only wired up under
  * `vite dev` — the curation UI is a for-me tool, not part of the production
  * build, so requests here 404 harmlessly outside dev.
  */
-export function useFavorites() {
-  const [favorites, setFavorites] = useState<Favorites>({});
+export function useRatings() {
+  const [ratings, setRatings] = useState<Ratings>({});
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     fetch(ENDPOINT)
       .then((res) => (res.ok ? res.json() : {}))
-      .then((data: Favorites) => setFavorites(data))
-      .catch(() => setFavorites({}))
+      .then((data: Ratings) => setRatings(data))
+      .catch(() => setRatings({}))
       .finally(() => setLoaded(true));
   }, []);
 
   const setRating = useCallback((name: string, rating: Rating | null) => {
-    setFavorites((prev) => {
+    setRatings((prev) => {
       const next = { ...prev };
       if (rating) next[name] = rating;
       else delete next[name];
@@ -47,5 +47,5 @@ export function useFavorites() {
     }).catch(() => {});
   }, []);
 
-  return { favorites, loaded, setRating };
+  return { ratings, loaded, setRating };
 }

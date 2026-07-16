@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, RotateCcw, ThumbsDown, ThumbsUp } from "lucide-react";
 import { MetaphorDetail } from "@/components/metaphor/MetaphorDetail";
-import { metaphors } from "@/data";
+import { allMetaphors as metaphors } from "@/data";
 import { cn } from "@/lib/cn";
-import { type Favorites, type Rating, useFavorites } from "@/lib/curation";
+import { type Rating, type Ratings, useRatings } from "@/lib/curation";
 import { pageTitle } from "@/lib/seo";
 import { useDocumentHead } from "@/lib/useDocumentHead";
 
@@ -19,20 +19,20 @@ export function CuratePage() {
   return <CurateReview />;
 }
 
-function firstUnratedIndex(favorites: Favorites): number {
-  const i = metaphors.findIndex((m) => !favorites[m.name]);
+function firstUnratedIndex(ratings: Ratings): number {
+  const i = metaphors.findIndex((m) => !ratings[m.name]);
   return i === -1 ? 0 : i;
 }
 
 function CurateReview() {
-  const { favorites, loaded, setRating } = useFavorites();
+  const { ratings, loaded, setRating } = useRatings();
   const [index, setIndex] = useState<number | null>(null);
 
-  // Jump to the first unrated metaphor once favorites load, but only once —
+  // Jump to the first unrated metaphor once ratings load, but only once —
   // otherwise every mark made during the session would yank focus forward.
   useEffect(() => {
-    if (loaded && index === null) setIndex(firstUnratedIndex(favorites));
-  }, [loaded, favorites, index]);
+    if (loaded && index === null) setIndex(firstUnratedIndex(ratings));
+  }, [loaded, ratings, index]);
 
   const goNext = useCallback(() => {
     setIndex((i) => Math.min((i ?? 0) + 1, metaphors.length - 1));
@@ -42,16 +42,16 @@ function CurateReview() {
   }, []);
 
   const current = index !== null ? metaphors[index] : undefined;
-  const currentRating = current ? favorites[current.name] : undefined;
+  const currentRating = current ? ratings[current.name] : undefined;
 
   const rate = useCallback(
     (value: Rating) => {
       if (!current) return;
-      const isUndo = favorites[current.name] === value;
+      const isUndo = ratings[current.name] === value;
       setRating(current.name, isUndo ? null : value);
       if (!isUndo) goNext();
     },
-    [current, favorites, setRating, goNext],
+    [current, ratings, setRating, goNext],
   );
   const reset = useCallback(() => {
     if (!current) return;
@@ -90,9 +90,9 @@ function CurateReview() {
     return <div className="p-8 text-text-muted">Loading…</div>;
   }
 
-  const ratings = Object.values(favorites);
-  const goodCount = ratings.filter((r) => r === "up").length;
-  const badCount = ratings.filter((r) => r === "down").length;
+  const ratingValues = Object.values(ratings);
+  const goodCount = ratingValues.filter((r) => r === "up").length;
+  const badCount = ratingValues.filter((r) => r === "down").length;
 
   return (
     <div className="flex h-full flex-col">
