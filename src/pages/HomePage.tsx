@@ -49,6 +49,16 @@ type IconName =
  */
 const SPOTLIGHT_METAPHORS = [
   {
+    name: "IDEAS_ARE_FOOD",
+    leftIconName: "lightbulb",
+    rightIconName: "food",
+  },
+  {
+    name: "MONEY_IS_A_LIQUID",
+    leftIconName: "money",
+    rightIconName: "drop",
+  },
+  {
     name: "PEOPLE_ARE_BATTERIES",
     leftIconName: "run",
     rightIconName: "battery",
@@ -62,21 +72,6 @@ const SPOTLIGHT_METAPHORS = [
     name: "INTELLIGENCE_IS_A_CUTTING_INSTRUMENT",
     leftIconName: "brain",
     rightIconName: "knife",
-  },
-  {
-    name: "BODIES_ARE_BUILDINGS",
-    leftIconName: "person",
-    rightIconName: "building",
-  },
-  {
-    name: "IDEAS_ARE_FOOD",
-    leftIconName: "lightbulb",
-    rightIconName: "food",
-  },
-  {
-    name: "MONEY_IS_A_LIQUID",
-    leftIconName: "money",
-    rightIconName: "drop",
   },
 ];
 
