@@ -14501,18 +14501,6 @@ metaphors:
         target_role: violence_x_schema
     related:
       - SEQUENCES_OF_EVENTS_ARE_FLUIDS
-  - name: SEXUALITY_IS_AN_OFFENSIVE_WEAPON
-    source_frame: personal-weapon
-    target_frame: sexuality
-    mappings:
-      - source_role: weapon_whole
-        target_role: sexuality
-      - source_role: weapon_user
-        target_role: sexuality_feeler
-    examples:
-      - He's a real pistol when he turns on the charm.
-      - She knew her looks were loaded, and she wasn't afraid to pull the trigger.
-      - His flirting was locked and loaded, ready to go off the moment she looked his way.
   - name: SHAPES_ARE_CONTAINERS
     source_frame: containment
     target_frame: physical-attributes

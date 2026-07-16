@@ -6474,7 +6474,6 @@ frames:
       - craving.n
     related:
       - emotion
-      - sexuality
   - name: machine
     frame_families:
       - Entity
@@ -9578,16 +9577,6 @@ frames:
       - subjugate.v
       - subjugation.n
       - thralldom.n
-  - name: sexuality
-    roles:
-      - name: sexuality
-      - name: sexuality_feeler
-    lexical_units:
-      - sexuality.n
-      - sexual.a
-      - sexually.adv
-      - seductive.a
-      - seduction.n
   - name: shepherding
     roles:
       - name: objectives
