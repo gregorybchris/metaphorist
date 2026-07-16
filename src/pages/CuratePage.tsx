@@ -90,13 +90,15 @@ function CurateReview() {
     return <div className="p-8 text-text-muted">Loading…</div>;
   }
 
-  const ratedCount = Object.keys(favorites).length;
+  const ratings = Object.values(favorites);
+  const goodCount = ratings.filter((r) => r === "up").length;
+  const badCount = ratings.filter((r) => r === "down").length;
 
   return (
     <div className="flex h-full flex-col">
       <div className="flex shrink-0 items-center justify-between border-b border-border px-4 py-2.5 text-sm text-text-muted">
         <span>
-          {ratedCount} / {metaphors.length} reviewed
+          {goodCount} good · {badCount} bad
         </span>
         <span className="hidden text-xs text-text-faint sm:inline">
           ↑/k good · ↓/j bad · ←/→ navigate
